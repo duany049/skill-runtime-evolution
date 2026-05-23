@@ -1,84 +1,84 @@
 ---
-description: 从 idea graph 编译论文大纲：编译 evidence map → 叙事结构 → 章节计划 + figure plan + citation plan，Review LLM review 必选
+description: Compile a paper outline from the idea graph — evidence map → narrative structure → section plan + figure plan + citation plan, Review LLM review mandatory
 argument-hint: <idea-slugs...> --venue <ICLR|NeurIPS|ICML|ACL|CVPR|IEEE> [--title <working-title>]
 ---
 
 # /paper-plan
 
-> 从 wiki 的 idea graph 编译论文大纲。
-> 输入 target ideas（status: validated 或 in_progress 且具备 succeeded 实验），指定目标会议/期刊，
-> 从 wiki 编译 evidence map → 确定叙事结构 → 生成章节大纲 + figure plan + citation plan。
-> Review LLM review 是必选步骤（作为 area chair 审查大纲说服力）。
-> 输出 PAPER_PLAN.md 到 wiki/outputs/。
+> Compile a paper outline from the wiki's idea graph.
+> Input target ideas (status: validated or in-progress with succeeded experiments), specify the target venue,
+> compile an evidence map from the wiki → determine narrative structure → generate a section outline + figure plan + citation plan.
+> Review LLM review is a mandatory step (acting as area chair to assess outline persuasiveness).
+> Output PAPER_PLAN.md to wiki/outputs/.
 >
-> 关键差异：大纲由 idea graph 驱动 — 每个 section 存在是因为它支撑某个 idea（或其证据/方法），
-> 而非因为论文惯例要求有该 section。
+> Key distinction: the outline is idea-graph-driven — each section exists because it supports an idea (or its evidence/methods),
+> not because paper convention requires that section.
 
 ## Inputs
 
-- `ideas`：目标 idea 的 slug 列表（空格分隔）
-  - 每个 idea 应为 `status: validated`，或为 `in_progress` 且至少有一个 `succeeded` 实验
-  - 若包含 `proposed` 或 `invalidated` 状态的 idea，发出警告但继续
-- `--venue`（必选）：目标会议/期刊，决定页数限制和格式要求
-  - 支持：`ICLR` / `NeurIPS` / `ICML` / `ACL` / `CVPR` / `IEEE`
-- `--title`（可选）：工作标题，若不提供则从 target ideas 生成
+- `ideas`: list of target idea slugs (space-separated)
+  - each idea should have `status: validated` or be `in_progress` with at least one `succeeded` experiment
+  - if `proposed` or `invalidated` ideas are included, warn but continue
+- `--venue` (required): target venue, determines page limit and format requirements
+  - supported: `ICLR` / `NeurIPS` / `ICML` / `ACL` / `CVPR` / `IEEE`
+- `--title` (optional): working title; if omitted, generated from target ideas
 
 ## Outputs
 
-- `wiki/outputs/paper-plan-{slug}-{date}.md` — 完整论文计划（PAPER_PLAN.md）
-- `wiki/graph/edges.jsonl` — 新增 derived_from 边（plan → source ideas/papers）
-- `wiki/graph/context_brief.md` — 重建
-- `wiki/log.md` — 追加日志
-- **PAPER_PLAN_REPORT**（输出到终端）— 计划摘要
+- `wiki/outputs/paper-plan-{slug}-{date}.md` — complete paper plan (PAPER_PLAN.md)
+- `wiki/graph/edges.jsonl` — new derived_from edges (plan → source ideas/papers)
+- `wiki/graph/context_brief.md` — rebuilt
+- `wiki/log.md` — appended log entry
+- **PAPER_PLAN_REPORT** (printed to terminal) — plan summary
 
 ## Wiki Interaction
 
 ### Reads
-- `wiki/ideas/*.md` — Hypothesis、Motivation、Approach sketch、Novelty argument、status、novelty_score、target_venue、linked_experiments、origin_gaps
-- `wiki/experiments/*.md` — 支撑实验（通过 `linked_idea` 关联）、results、metrics、key_result
-- `wiki/methods/*.md` — idea 的 Approach sketch 中引用的方法（Mechanism、Procedure、source_papers）
-- `wiki/papers/*.md` — evidence 来源论文（Method、Results、Related）
-- `wiki/concepts/*.md` — idea 的 `origin_gaps` 指向的概念（Definition、Variants、Comparison）
-- `wiki/topics/*.md` — idea 的 `origin_gaps` 指向的研究方向（Overview、Open problems）
-- `wiki/graph/context_brief.md` — 全局上下文
-- `wiki/graph/open_questions.md` — 知识缺口（标注论文 limitation）
-- `wiki/graph/edges.jsonl` — 关系图谱（构建叙事逻辑链）
-- `.claude/skills/shared-references/academic-writing.md` — 写作原则
-- `.claude/skills/shared-references/citation-verification.md` — 引用纪律
+- `wiki/ideas/*.md` — Hypothesis, Motivation, Approach sketch, Novelty argument, status, novelty_score, target_venue, linked_experiments, origin_gaps
+- `wiki/experiments/*.md` — supporting experiments (linked via `linked_idea`); results, metrics, key_result
+- `wiki/methods/*.md` — methods referenced by the idea's Approach sketch (Mechanism, Procedure, source_papers)
+- `wiki/papers/*.md` — evidence source papers (Method, Results, Related)
+- `wiki/concepts/*.md` — concepts the idea's `origin_gaps` points to (Definition, Variants, Comparison)
+- `wiki/topics/*.md` — topics the idea's `origin_gaps` points to (Overview, Open problems)
+- `wiki/graph/context_brief.md` — global context
+- `wiki/graph/open_questions.md` — knowledge gaps (annotate paper limitations)
+- `wiki/graph/edges.jsonl` — relationship graph (build narrative logic chain)
+- `.claude/skills/shared-references/academic-writing.md` — writing principles
+- `.claude/skills/shared-references/citation-verification.md` — citation discipline
 
 ### Writes
-- `wiki/outputs/paper-plan-{slug}-{date}.md` — 论文计划文件
-- `wiki/graph/edges.jsonl` — derived_from 边
-- `wiki/graph/context_brief.md` — 重建
-- `wiki/log.md` — 追加操作日志
+- `wiki/outputs/paper-plan-{slug}-{date}.md` — paper plan file
+- `wiki/graph/edges.jsonl` — derived_from edges
+- `wiki/graph/context_brief.md` — rebuilt
+- `wiki/log.md` — appended operation log
 
 ### Graph edges created
-- `derived_from`：paper-plan → ideas（计划从哪些 ideas 派生）
-- `derived_from`：paper-plan → papers（计划引用哪些论文）
+- `derived_from`: paper-plan → ideas (which ideas the plan is derived from)
+- `derived_from`: paper-plan → papers (which papers the plan cites)
 
 ## Workflow
 
-**前置**：确认工作目录为 wiki 项目根（包含 `wiki/`、`raw/`、`tools/` 的目录）。
+**Precondition**: confirm the working directory is the wiki project root (the directory containing `wiki/`, `raw/`, `tools/`).
 
-### Step 1: 加载 Idea Graph
+### Step 1: Load Idea Graph
 
-1. 读取所有 target ideas 的 `wiki/ideas/{slug}.md`
-2. 对每个 idea，遍历：
-   - `linked_experiments` → 读取每个 `wiki/experiments/{slug}.md`（key_result、metrics、outcome）
-   - `origin_gaps` → 读取每个 `wiki/concepts/{slug}.md` 和 `wiki/topics/{slug}.md`（背景上下文）
-   - `## Approach sketch` 正文中的 wikilink → 读取每个 `wiki/methods/{slug}.md` 和 `wiki/papers/{slug}.md`
-3. 读取 `wiki/graph/context_brief.md` 获取全局上下文
-4. 读取 `wiki/graph/open_questions.md` 标注 known limitations
-5. 从 `wiki/graph/edges.jsonl` 加载相关边，构建 ideas 之间的关系
+1. Read `wiki/ideas/{slug}.md` for all target ideas
+2. For each idea, traverse:
+   - `linked_experiments` → read each `wiki/experiments/{slug}.md` (key_result, metrics, outcome)
+   - `origin_gaps` → read each `wiki/concepts/{slug}.md` and `wiki/topics/{slug}.md` (background context)
+   - `## Approach sketch` body wikilinks → read each `wiki/methods/{slug}.md` and `wiki/papers/{slug}.md`
+3. Read `wiki/graph/context_brief.md` for global context
+4. Read `wiki/graph/open_questions.md` to annotate known limitations
+5. Load relevant edges from `wiki/graph/edges.jsonl` to build relationships between ideas
 
-**验证**：
-- 若任何 target idea 的 status 为 `proposed`：警告「idea 尚未验证，论文可能缺乏证据支撑」
-- 若任何 target idea 的 `novelty_score` 为空或 `novelty_score <= 2`：警告「idea 新颖性较弱，建议先运行 `/novelty`」
-- 若任何 target idea 的 `linked_experiments` 中没有任何一个 `succeeded` 结果：错误「至少需要一个支撑实验才能规划论文」
+**Validation**:
+- If any target idea has `status: proposed`: warn "idea is unvalidated; paper may lack evidence support"
+- If any target idea has empty `novelty_score` OR `novelty_score <= 2`: warn "idea novelty is thin; consider running `/novelty` first"
+- If no `linked_experiments` resolve to a `succeeded` outcome for any target idea: error "at least one supporting experiment is required to plan a paper"
 
-### Step 2: 从 Wiki 编译 Evidence Map
+### Step 2: Compile Evidence Map from Wiki
 
-生成一个结构化矩阵，映射 ideas → evidence → sections：
+Generate a structured matrix mapping ideas → evidence → sections:
 
 ```markdown
 | Idea | Status | linked experiments | Methods/Concepts | Section |
@@ -88,38 +88,38 @@ argument-hint: <idea-slugs...> --venue <ICLR|NeurIPS|ICML|ACL|CVPR|IEEE> [--titl
 | [[supporting-idea-2]] | in_progress | [[exp-scaling]] (inconclusive) | [[concept-scaling]] | Exp 5.4 (Scaling) |
 ```
 
-按维度映射 ideas 到论文结构：
-- **Primary idea** → 核心贡献，驱动 Abstract + Introduction + Method
-- **Decomposition ideas** → 各因素贡献，驱动 Ablation subsections
-- **Concepts/topics（来自 origin_gaps）** → 背景知识，驱动 Related Work + Introduction
+Map ideas to paper structure along each dimension:
+- **Primary idea** → core contribution, drives Abstract + Introduction + Method
+- **Decomposition ideas** → factor contributions, drives Ablation subsections
+- **Concepts/topics from origin_gaps** → background knowledge, drives Related Work + Introduction
 
-### Step 3: 确定叙事结构
+### Step 3: Determine Narrative Structure
 
-遵循 `shared-references/academic-writing.md` 的 hourglass 原则：
+Follow the hourglass principle in `shared-references/academic-writing.md`:
 
-1. **确定 paper 的核心故事线**：
-   - Gap（从 idea 的 `## Motivation` 和 `origin_gaps` 提取）
-   - Solution（从 idea 的 `## Approach sketch` 和关联的 methods 提取）
-   - Evidence（从 `linked_experiments` 的 results 提取）
-   - Impact（从 idea 的 `novelty_score` + 实验范围推断）
+1. **Identify the paper's core storyline**:
+   - Gap (extracted from idea's `## Motivation` and `origin_gaps`)
+   - Solution (extracted from idea's `## Approach sketch` and linked methods)
+   - Evidence (extracted from `linked_experiments` results)
+   - Impact (inferred from idea `novelty_score` + experiment scope)
 
-2. **确定叙事角度**：
-   - 论文解决什么问题？（问题驱动 vs 方法驱动 vs 数据驱动）
-   - 主要读者是谁？（理论/系统/应用）
-   - 与最近最相关的 3 篇论文如何区分？
+2. **Determine the narrative angle**:
+   - What problem does the paper solve? (problem-driven vs. method-driven vs. data-driven)
+   - Who is the primary audience? (theory / systems / applications)
+   - How does it differentiate from the 3 most relevant recent papers?
 
-3. **建立 section → idea 映射**：
-   每个 section 必须至少支撑一个 idea（或其支撑证据/方法）。无 idea 支撑的 section 是填充，应删除。
+3. **Establish section → idea mapping**:
+   Every section must support at least one idea (or its supporting evidence/methods). A section with no idea support is filler and should be removed.
 
-### Step 4: 生成章节大纲
+### Step 4: Generate Section Outline
 
-按 venue 格式要求生成大纲，每个 section 包含：
+Generate the outline according to venue format requirements; each section includes:
 
 ```markdown
 ## 1. Introduction (1.5 pages)
 
 ### Ideas addressed
-- Gap framing: {existing approaches lack X because Y}（来自 `origin_gaps`）
+- Gap framing: {existing approaches lack X because Y} (from `origin_gaps`)
 - Primary contribution idea: [[primary-idea]]
 
 ### Paragraph plan
@@ -144,14 +144,14 @@ argument-hint: <idea-slugs...> --venue <ICLR|NeurIPS|ICML|ACL|CVPR|IEEE> [--titl
 - Direction C: {papers, our position}
 
 ### Ideas addressed
-- 用每个 idea 的 `origin_gaps` 中的背景 concepts/topics 区分本文与既往工作
+- Background concepts/topics from each idea's `origin_gaps` distinguishing this work from prior work
 
 ---
 
 ## 3. Method (2-3 pages)
 
 ### Ideas addressed
-- [[primary-idea]]: section 3.1-3.2（Approach sketch + 引用的 [[method-slug]]）
+- [[primary-idea]]: section 3.1-3.2 (Approach sketch + referenced [[method-slug]])
 - [[supporting-idea-1]]: section 3.3
 
 ### Subsection plan
@@ -192,17 +192,17 @@ argument-hint: <idea-slugs...> --venue <ICLR|NeurIPS|ICML|ACL|CVPR|IEEE> [--titl
 - {one sentence the reader should remember}
 
 ### Limitations
-- {来自 gap_map 或各 idea 的 `## Risks`}
+- {from gap_map or each idea's `## Risks`}
 
 ### Future work
-- {来自 gap_map 的 open questions 与各 idea 的 `## Lessons learned`}
+- {from gap_map open questions and each idea's `## Lessons learned`}
 ```
 
-**Page budget**：根据 `--venue` 分配（参考 academic-writing.md 的 venue 表），总 section 页数 <= venue 主文限制。
+**Page budget**: allocated by `--venue` (refer to the venue table in academic-writing.md); total section pages <= venue main-body limit.
 
 ### Step 5: Figure Plan
 
-为每个计划中的 figure/table 设计：
+Design each planned figure/table:
 
 ```markdown
 ## Figure Plan
@@ -230,20 +230,20 @@ argument-hint: <idea-slugs...> --venue <ICLR|NeurIPS|ICML|ACL|CVPR|IEEE> [--titl
 
 ### Step 6: Citation Plan
 
-参照 `shared-references/citation-verification.md`：
+Following `shared-references/citation-verification.md`:
 
-1. 列出大纲中所有 `[[slug]]` 引用的 wiki papers
-2. 对每篇论文，pre-fetch BibTeX：
-   - 先 DBLP，再 CrossRef，再 S2
-   - 成功：记录 BibTeX key + 来源
-   - 失败：标记 `[UNCONFIRMED]`
-3. 生成 citation coverage 报告：
+1. List all wiki papers referenced via `[[slug]]` in the outline
+2. For each paper, pre-fetch BibTeX:
+   - DBLP first, then CrossRef, then S2
+   - Success: record BibTeX key + source
+   - Failure: mark `[UNCONFIRMED]`
+3. Generate citation coverage report:
    ```
    Citations: 15 total, 12 verified (DBLP: 8, CrossRef: 3, S2: 1), 3 [UNCONFIRMED]
    ```
-4. 对 [UNCONFIRMED] 条目，提供建议的手动检查 URL
+4. For [UNCONFIRMED] entries, provide suggested URLs for manual verification
 
-### Step 7: Review LLM Review（必选）
+### Step 7: Review LLM Review (mandatory)
 
 ```
 mcp__llm-review__chat:
@@ -274,25 +274,25 @@ mcp__llm-review__chat:
     5. Are the figures/tables sufficient to tell the story?
 ```
 
-根据 Review LLM 反馈修改大纲（补充 section、调整 page budget、添加 figure/table、修正叙事结构）。
+Revise the outline based on Review LLM feedback (add sections, adjust page budget, add figures/tables, correct narrative structure).
 
-### Step 8: 输出到 Wiki
+### Step 8: Write to Wiki
 
-1. **生成 slug**：
+1. **Generate slug**:
    ```bash
    python3 tools/research_wiki.py slug "<working-title>"
    ```
 
-2. **写入 PAPER_PLAN.md**：
-   创建 `wiki/outputs/paper-plan-{slug}-{date}.md`，包含：
-   - 元信息（venue、title、date、target ideas）
-   - Evidence Map（Step 2）
-   - 完整章节大纲（Step 4，含 Review LLM 修改）
-   - Figure/Table Plan（Step 5）
-   - Citation Plan + coverage report（Step 6）
-   - Review LLM Review Summary（Step 7 关键反馈和修改记录）
+2. **Write PAPER_PLAN.md**:
+   Create `wiki/outputs/paper-plan-{slug}-{date}.md` containing:
+   - Metadata (venue, title, date, target ideas)
+   - Evidence Map (Step 2)
+   - Complete section outline (Step 4, with Review LLM revisions)
+   - Figure/Table Plan (Step 5)
+   - Citation Plan + coverage report (Step 6)
+   - Review LLM Review Summary (Step 7 key feedback and revision record)
 
-3. **添加 graph edges**：
+3. **Add graph edges**:
    ```bash
    # plan → target idea
    python3 tools/research_wiki.py add-edge wiki/ \
@@ -305,18 +305,18 @@ mcp__llm-review__chat:
      --type derived_from --evidence "Paper plan cites this paper"
    ```
 
-4. **重建派生数据**：
+4. **Rebuild derived data**:
    ```bash
    python3 tools/research_wiki.py rebuild-context-brief wiki/
    ```
 
-5. **追加日志**：
+5. **Append log**:
    ```bash
    python3 tools/research_wiki.py log wiki/ \
      "paper-plan | {venue} paper outline for [[{slug}]] | ideas: {idea-list} | citations: {verified}/{total}"
    ```
 
-6. **输出 PAPER_PLAN_REPORT 到终端**：
+6. **Print PAPER_PLAN_REPORT to terminal**:
    ```markdown
    # Paper Plan Report
 
@@ -352,48 +352,48 @@ mcp__llm-review__chat:
 
 ## Constraints
 
-- **--venue 必选**：不同会议的页数限制、格式要求差异大，不可省略
-- **至少一个 experiment evidence**：纯理论 idea 不足以支撑实验性论文，需至少一个支撑实验
-- **page budget 必须可行**：总 section 页数 <= venue 主文限制，否则调整（压缩或移至 appendix）
-- **Review LLM review 必选**：不可跳过。大纲阶段发现问题成本最低
-- **所有引用来自 wiki**：citation plan 中的每篇论文必须在 wiki/papers/ 中存在
-- **idea → section 映射完整**：每个 target idea 必须出现在至少一个 section 中
-- **每个 section 必须有 idea**：无 idea 支撑的 section 视为填充，应删除或合并
-- **graph edges 使用 tools/research_wiki.py**：不手动编辑 edges.jsonl
-- **引用使用 [[slug]]**：大纲中所有引用使用 wikilink 语法
+- **--venue is required**: page limits and format requirements vary significantly by venue; cannot be omitted
+- **At least one experiment evidence**: purely theoretical ideas are insufficient for an empirical paper; at least one supporting experiment is required
+- **Page budget must be feasible**: total section pages <= venue main-body limit; otherwise adjust (compress or move to appendix)
+- **Review LLM review is mandatory**: cannot be skipped; catching problems at the outline stage has the lowest cost
+- **All citations from wiki**: every paper in the citation plan must exist in wiki/papers/
+- **idea → section mapping must be complete**: every target idea must appear in at least one section
+- **Every section must have an idea**: a section with no idea support is filler and should be removed or merged
+- **Graph edges via tools/research_wiki.py**: do not manually edit edges.jsonl
+- **Citations use [[slug]]**: all citations in the outline use wikilink syntax
 
 ## Error Handling
 
-- **idea 状态不足**：若所有 ideas 均为 `proposed`，报错「ideas 尚未验证，建议先运行实验」
-- **无 experiment evidence**：报错「至少需要一个实验结果」，建议先运行 /exp-design + /exp-run
-- **wiki papers 不足**：若 citation plan 中 wiki 论文 < 5 篇，警告「相关工作覆盖不足，建议先 /ingest 更多论文」
-- **page budget 超限**：自动将低优先级 section 移至 appendix 计划，报告调整
-- **Review LLM 不可用**：降级为 Claude 自审，报告标注「single-model review — cross-model verification unavailable」
-- **BibTeX 获取失败**：标记 [UNCONFIRMED]，在 citation plan 报告中汇总
-- **slug 冲突**：追加日期后缀
-- **target idea 找不到**：报错，列出 wiki/ideas/ 中候选
+- **Insufficient idea status**: if all ideas are `proposed`, error "ideas are unvalidated; run experiments first"
+- **No experiment evidence**: error "at least one experimental result is required"; suggest running /exp-design + /exp-run first
+- **Insufficient wiki papers**: if the citation plan has fewer than 5 wiki papers, warn "related work coverage is insufficient; consider /ingest of more papers first"
+- **Page budget exceeded**: automatically move lower-priority sections to appendix plan; report the adjustment
+- **Review LLM unavailable**: fall back to Claude self-review; report annotated "single-model review — cross-model verification unavailable"
+- **BibTeX fetch failed**: mark [UNCONFIRMED]; summarize in the citation plan report
+- **Slug conflict**: append date suffix
+- **Target idea not found**: error; list candidates in wiki/ideas/
 
 ## Dependencies
 
 ### Tools（via Bash）
-- `python3 tools/research_wiki.py slug "<title>"` — 生成 slug
-- `python3 tools/research_wiki.py add-edge wiki/ ...` — 添加 graph edge
-- `python3 tools/research_wiki.py rebuild-context-brief wiki/` — 重建 query_pack
-- `python3 tools/research_wiki.py log wiki/ "<message>"` — 追加日志
-- `python3 tools/fetch_s2.py search "<title>"` — Semantic Scholar 搜索（citation plan fallback）
+- `python3 tools/research_wiki.py slug "<title>"` — generate slug
+- `python3 tools/research_wiki.py add-edge wiki/ ...` — add graph edge
+- `python3 tools/research_wiki.py rebuild-context-brief wiki/` — rebuild query_pack
+- `python3 tools/research_wiki.py log wiki/ "<message>"` — append log
+- `python3 tools/fetch_s2.py search "<title>"` — Semantic Scholar search (citation plan fallback)
 
 ### MCP Servers
-- `mcp__llm-review__chat` — Step 7 大纲审查（必选）
+- `mcp__llm-review__chat` — Step 7 outline review (mandatory)
 
 ### Claude Code Native
-- `Read` — 读取 wiki 页面
-- `Glob` — 查找 ideas、experiments、methods、papers
-- `WebFetch` — DBLP / CrossRef BibTeX 获取（Step 6）
+- `Read` — read wiki pages
+- `Glob` — find ideas, experiments, methods, papers
+- `WebFetch` — DBLP / CrossRef BibTeX fetch (Step 6)
 
 ### Shared References
-- `.claude/skills/shared-references/academic-writing.md` — 叙事结构和章节设计原则
-- `.claude/skills/shared-references/citation-verification.md` — 引用获取和验证规则
+- `.claude/skills/shared-references/academic-writing.md` — narrative structure and section design principles
+- `.claude/skills/shared-references/citation-verification.md` — citation fetch and verification rules
 
 ### Called by
-- `/research` Stage 5（论文写作阶段）
-- 用户手动调用
+- `/research` Stage 5 (paper writing stage)
+- Manual user invocation

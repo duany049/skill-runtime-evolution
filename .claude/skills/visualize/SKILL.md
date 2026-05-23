@@ -1,87 +1,96 @@
 ---
-description: 生成并更新可视化产物 —— Obsidian 图谱配置与 Canvas 知识地图。交互式网页图谱视图位于 SPA 的 app/modules/graph.js（由 tools/serve.py 提供服务）。
+description: Generate and update visualization artifacts — Obsidian graph config and Canvas knowledge maps. The interactive web graph view lives in the SPA at app/modules/graph.js (served by tools/serve.py).
 argument-hint: [--obsidian] [--canvas] [--focus <node_id>] [--depth N] [--types <page-type,...>] [--edge-types <edge-type,...>] [--all]
 ---
 
 # /visualize
 
-> 为 OmegaWiki 知识图谱生成可视化产物。
-> 产出 Obsidian 图谱配置（按实体类型分色组）以及带类型标签边的精选 Canvas 视图。
-> 交互式网页探索请使用 SPA 的 Graph 视图（先跑 `tools/serve.py`，然后访问 `#/graph`）。
+> Generate visualization artifacts for the OmegaWiki knowledge graph.
+> Produces Obsidian graph config (color groups by entity type) and curated
+> Canvas views with labeled typed edges. For interactive web exploration
+> use the SPA Graph view (`tools/serve.py`, then `#/graph`).
 
 ## Inputs
 
-- `--obsidian`（可选）：生成或更新 `.obsidian/graph.json`，按实体类型分色组
-- `--canvas`（可选）：基于图谱数据生成 Obsidian Canvas（`.canvas`），边带类型标签
-- `--focus <node_id>`（可选）：把 Canvas 聚焦到某个具体节点（例如 `methods/my-method`）
-- `--depth N`（可选）：聚焦 Canvas 的 BFS 深度（默认：2）
-- `--types <list>`（可选）：把节点过滤到这些 page type，逗号分隔（例如 `papers,concepts`）
-- `--edge-types <list>`（可选）：把边过滤到这些语义类型，逗号分隔（例如 `builds_on,surveys`）
-- `--all`（可选，没传任何 flag 时即默认）：生成全部可视化产物
+- `--obsidian` (optional): Generate/update `.obsidian/graph.json` with entity-type color groups
+- `--canvas` (optional): Generate Obsidian Canvas (`.canvas`) from graph data with labeled edges
+- `--focus <node_id>` (optional): Center canvas on a specific node (e.g., `methods/my-method`)
+- `--depth N` (optional): BFS depth for focused canvas (default: 2)
+- `--types <list>` (optional): Filter nodes to these page types, comma-separated (e.g., `papers,concepts`)
+- `--edge-types <list>` (optional): Filter edges to these semantic types, comma-separated (e.g., `builds_on,surveys`)
+- `--all` (optional, default if no flags): Generate all visualization artifacts
 
 ## Outputs
 
-- `wiki/.obsidian/graph.json` —— Obsidian 图谱颜色配置（按实体类型分色组）
-- `wiki/.obsidian/app.json` —— Obsidian 应用设置（仅当不存在时才创建）
-- `wiki/canvases/knowledge-map.canvas` —— 完整知识地图 Canvas，边带标签
-- `wiki/canvases/idea-evidence.canvas` —— 以 idea 为中心的子图 Canvas
-- `wiki/canvases/focus-{node-id}.canvas` —— 聚焦 Canvas（使用 `--focus` 时）
-- 终端输出：Obsidian 插件推荐与设置说明
+- `wiki/.obsidian/graph.json` — Obsidian graph color configuration (per-entity-type color groups)
+- `wiki/.obsidian/app.json` — Obsidian app settings (only if not exists)
+- `wiki/canvases/knowledge-map.canvas` — Full knowledge map Canvas with labeled edges
+- `wiki/canvases/idea-evidence.canvas` — Idea-centric subgraph Canvas
+- `wiki/canvases/focus-{node-id}.canvas` — Focused Canvas (when --focus is used)
+- Console output: Obsidian plugin recommendations and setup instructions
 
-独立 HTML 探索器（`wiki/graph-view.html`）已停产；同样的用法由 SPA Graph 视图（`app/modules/graph.js`，由 `tools/serve.py` 提供服务）覆盖，且与前端其余部分共用同一份代码库。
+The standalone-HTML explorer (`wiki/graph-view.html`) was retired; the
+SPA Graph view at `app/modules/graph.js` (served by `tools/serve.py`)
+covers the same use case and lives in the same codebase as the rest of
+the frontend.
 
 ## Wiki Interaction
 
 ### Reads
 
-- `wiki/graph/edges.jsonl` —— 带类型的语义边
-- `wiki/graph/citations.jsonl` —— 论文引用
-- `wiki/*/` —— 全部 entity 目录的 frontmatter
-- `config/visualize.json` —— 颜色调色板与可视化偏好
+- `wiki/graph/edges.jsonl` — typed semantic edges
+- `wiki/graph/citations.jsonl` — bibliographic paper citations
+- `wiki/*/` — all entity directories for page metadata (frontmatter)
+- `config/visualize.json` — color palette and visualization preferences
 
 ### Writes
 
-- `wiki/.obsidian/graph.json` —— CREATE/OVERWRITE（本地产物，已 gitignore；每次都从 `config/visualize.json` 重生成）
-- `wiki/.obsidian/app.json` —— 仅在不存在时 CREATE（不覆盖用户自定义；已 gitignore）
-- `wiki/canvases/*.canvas` —— CREATE/OVERWRITE（本地产物，已 gitignore）
+- `wiki/.obsidian/graph.json` — CREATE/OVERWRITE (local-only artifact, gitignored; regenerated each run from `config/visualize.json`)
+- `wiki/.obsidian/app.json` — CREATE only (never overwrite user customizations; gitignored)
+- `wiki/canvases/*.canvas` — CREATE/OVERWRITE (local-only artifact, gitignored)
 
 ## Workflow
 
-**前置条件**：确认当前工作目录是 wiki 项目根（包含 `wiki/`、`raw/`、`tools/`）。
-设 `WIKI_ROOT=wiki/`。
+**Precondition**: confirm working directory is the wiki project root (containing `wiki/`, `raw/`, `tools/`).
+Set `WIKI_ROOT=wiki/`.
 
-### Step 0: 确认图谱数据存在
+### Step 0: Verify graph data exists
 
-检查 `wiki/graph/edges.jsonl` 存在且非空。若为空，提示尚无图谱数据，建议先运行 `/ingest`。
+Check that `wiki/graph/edges.jsonl` exists and is non-empty. If empty, report that no graph data
+exists yet and suggest running `/ingest` first.
 
-### Step 1: 生成 Obsidian 配置（`--obsidian` 或 `--all`）
+### Step 1: Generate Obsidian config (--obsidian or --all)
 
 ```bash
 python3 tools/visualize.py generate-obsidian-config wiki/
 ```
 
-创建 `.obsidian/graph.json`，包含 9 类实体的色组，使用 `path:{entity_type}` 形式的查询。
-`.obsidian/app.json` 仅在不存在时才创建。
+Creates `.obsidian/graph.json` with 9 per-entity-type color groups using `path:{entity_type}` queries.
+Creates `.obsidian/app.json` only if it does not already exist.
 
-### Step 2: 生成 Canvas 视图（`--canvas` 或 `--all`）
+### Step 2: Generate Canvas views (--canvas or --all)
 
-完整知识地图：
+Full knowledge map:
 
 ```bash
 python3 tools/visualize.py generate-canvas wiki/
 ```
 
-聚焦 Canvas（聚焦到某个具体节点）：
+Focused canvas (centered on a specific node):
 
 ```bash
 python3 tools/visualize.py generate-canvas wiki/ --focus <node_id> --depth <N>
 ```
 
-**`--focus` BFS 逻辑**：从目标节点开始，在 `edges.jsonl` + `citations.jsonl` 上做广度优先搜索，收集 `--depth` 跳之内的全部节点和边。只渲染该邻域子图。若 `node_id` 找不到，中止并列出 5 个最相近的 slug 候选。
+**`--focus` BFS logic**: starting from the target node, run breadth-first search over
+`edges.jsonl` + `citations.jsonl`, collecting all nodes and edges within `--depth` hops.
+Render only that neighbourhood subgraph. If `node_id` is not found, abort and list the
+5 closest slug matches.
 
-**Canvas 布局**：按 `page_type` 把节点分到不同列；列内按 `importance` 倒序排序（1–5，默认 3）。跟踪边界框避免重叠。
+**Canvas layout**: group nodes by `page_type` into columns; sort within each column by
+`importance` descending (1–5, default 3). Track bounding boxes to avoid overlaps.
 
-Canvas 节点 schema：
+Canvas node schema:
 
 ```json
 {
@@ -96,7 +105,7 @@ Canvas 节点 schema：
 }
 ```
 
-Canvas 边 schema：
+Canvas edge schema:
 
 ```json
 {
@@ -107,45 +116,49 @@ Canvas 边 schema：
 }
 ```
 
-若设置了 `--types`，丢弃不在列表里的节点，并丢弃 source 或 target 已被丢弃的边。
-若设置了 `--edge-types`，丢弃不在列表里的边。
+If `--types` is set, drop nodes not in the list and drop edges whose source or target was dropped.
+If `--edge-types` is set, drop edges not in the list.
 
-### Step 3: SPA Graph 视图（取代已停产的 generate-html 步）
+### Step 3: SPA Graph view (replaces the retired generate-html step)
 
-之前的独立 HTML 探索器已停产。如需交互式网页探索，启动 SPA 后端：
+The previous standalone-HTML explorer was retired. For interactive web
+exploration, run the SPA backend:
 
 ```bash
 python3 tools/serve.py
-# 然后打开 http://127.0.0.1:8765/#/graph
+# Then open http://127.0.0.1:8765/#/graph
 ```
 
-SPA Graph 视图（`app/modules/graph.js`）是真正的 ES module，包含与原单文件生成器一样的 Cytoscape + 力导向布局 + 过滤器 + BFS 搜索，并集成了双击跳转到 SPA Reader 视图的能力。`/visualize` 不再重新生成 `wiki/graph-view.html`。
+The SPA Graph view (`app/modules/graph.js`) is a real ES module with
+the same Cytoscape + force layout + filters + BFS search as the old
+single-page generator, plus integrated double-click navigation to the
+SPA Reader view. `/visualize` no longer regenerates `wiki/graph-view.html`.
 
-### Step 4: 打印推荐
+### Step 4: Print recommendations
 
 ```bash
 python3 tools/visualize.py list-recommendations
 ```
 
-打印推荐的 Obsidian 插件（Graph Analysis、Dataview、Excalidraw）以及配置说明。
+Prints recommended Obsidian plugins (Graph Analysis, Dataview, Excalidraw) and setup instructions.
 
-### Step 5: 日志
+### Step 5: Log
 
 ```bash
-python3 tools/research_wiki.py log wiki/ "visualize | generated: [产物列表]"
+python3 tools/research_wiki.py log wiki/ "visualize | generated: [list of artifacts]"
 ```
 
-标准日志格式：
+Standard log format:
 
 ```markdown
 ## [YYYY-MM-DD] /visualize | <format> — <n> nodes, <m> edges<focus-note>
 ```
 
-`<focus-note>` 在使用 `--focus` 时为 ` (focus: <node_id>, depth <N>)`，否则为空。
+Where `<focus-note>` is ` (focus: <node_id>, depth <N>)` when `--focus` was used, or empty otherwise.
 
 ## Color Palette
 
-### 节点颜色（按 page_type）
+### Node colors (by page_type)
 
 | page_type     | HTML hex  | Obsidian color ID |
 | ------------- | --------- | ----------------- |
@@ -159,45 +172,45 @@ python3 tools/research_wiki.py log wiki/ "visualize | generated: [产物列表]"
 | `Summary`     | `#90BE6D` | `"4"`             |
 | `foundations` | `#B5B5B5` | `"6"`             |
 
-### 边颜色（HTML 模式，按语义类别）
+### Edge colors (HTML mode, by semantic category)
 
-| 类别        | 类型                                                                  | Hex       |
-| ----------- | --------------------------------------------------------------------- | --------- |
-| 相似        | `same_problem_as`、`similar_method_to`、`complementary_to`            | `#ADB5BD` |
-| 谱系        | `builds_on`、`extends_concept`、`derived_from`、`inspired_by`         | `#4C9BE8` |
-| 比较        | `compares_against`、`improves_on`、`challenges`、`critiques_concept`  | `#E76F51` |
-| 综述        | `surveys`                                                             | `#2A9D8F` |
-| 概念使用    | `introduces_concept`、`uses_concept`                                  | `#F4A261` |
-| 证据        | `supports`、`contradicts`、`tested_by`、`invalidates`                 | `#9B5DE5` |
-| Gap         | `addresses_gap`                                                       | `#F9C74F` |
-| Citation    | `cites`                                                               | `#B5B5B5` |
+| Category    | Types                                                                | Hex       |
+| ----------- | -------------------------------------------------------------------- | --------- |
+| Similarity  | `same_problem_as`, `similar_method_to`, `complementary_to`           | `#ADB5BD` |
+| Lineage     | `builds_on`, `extends_concept`, `derived_from`, `inspired_by`        | `#4C9BE8` |
+| Comparison  | `compares_against`, `improves_on`, `challenges`, `critiques_concept` | `#E76F51` |
+| Survey      | `surveys`                                                            | `#2A9D8F` |
+| Concept use | `introduces_concept`, `uses_concept`                                 | `#F4A261` |
+| Evidence    | `supports`, `contradicts`, `tested_by`, `invalidates`                | `#9B5DE5` |
+| Gap         | `addresses_gap`                                                      | `#F9C74F` |
+| Citation    | `cites`                                                              | `#B5B5B5` |
 
 ## Constraints
 
-- 不要手动改 `wiki/graph/` —— 只读
-- `config/visualize.json` 是用户拥有的 —— 不要覆盖
-- `.obsidian/app.json` 仅在缺失时创建（尊重用户自定义）
-- Canvas 文件每次运行重生成（幂等覆盖）
-- 不依赖外部 Python 包（仅用 stdlib）
-- `wiki/.obsidian/` 与 `wiki/canvases/` 都是已 gitignore 的本地产物；source of truth 是 `config/visualize.json` + `wiki/graph/`。`/init` Step 6 与直接调用 `/visualize` 都会幂等地重生成它们 —— 永远不要 commit 它们。
+- Never edit `wiki/graph/` manually — only read from it
+- `config/visualize.json` is user-owned — never overwrite it
+- `.obsidian/app.json` is created only if missing (respect user customizations)
+- Canvas files are regenerated on each run (idempotent overwrite)
+- No external Python dependencies required (stdlib only)
+- `wiki/.obsidian/` and `wiki/canvases/` are gitignored as local-only artifacts; the source of truth is `config/visualize.json` + `wiki/graph/`. `/init` Step 6 and direct `/visualize` invocations regenerate them deterministically — never commit them.
 
 ## Error Handling
 
-- **没有图谱数据**：提醒用户先跑 `/ingest` 建立知识库
-- **`config/visualize.json` 缺失**：报错，文件应当存在于 `config/visualize.json`
-- **`--focus` 节点找不到**：中止并打印 `Error: node "<node_id>" not found`；列出 5 个最相近的 slug 候选
-- **过滤后没有节点**：中止并汇总当前过滤器与可用类型
-- **Canvas 节点超过 500 个**：警告大型 Canvas 可能很慢；建议用 `--focus` 或 `--types` 缩小范围
-- **entity 目录缺失**：静默跳过，只处理存在的目录
-- **JSONL 行格式不正确**：静默跳过，继续处理后续行
-- **`wiki/canvases/` 不存在**：写入前先创建目录
+- **No graph data**: inform user to run `/ingest` first to build the knowledge base
+- **config/visualize.json missing**: report error, file should exist at `config/visualize.json`
+- **--focus node not found**: abort with `Error: node "<node_id>" not found`; list 5 closest slug matches
+- **No nodes after filtering**: abort with summary of filters applied and types available
+- **Canvas > 500 nodes**: warn that large canvases may be slow; suggest `--focus` or `--types` to narrow scope
+- **Entity directory missing**: skip silently, only process directories that exist
+- **Malformed JSONL lines**: skip silently, continue processing remaining lines
+- **wiki/canvases/ missing**: create directory before writing
 
 ## Dependencies
 
-### Tools（via Bash）
+### Tools (via Bash)
 
-- `python3 tools/visualize.py generate-obsidian-config wiki/` —— Obsidian 配置
-- `python3 tools/visualize.py generate-canvas wiki/ [--focus <node_id>] [--depth N]` —— Canvas 生成
-- `python3 tools/visualize.py list-recommendations` —— 插件推荐
-- `python3 tools/research_wiki.py log wiki/ "<message>"` —— 追加日志
-- `python3 tools/serve.py` —— 本地 SPA 服务器（Graph 视图位于 `#/graph`）
+- `python3 tools/visualize.py generate-obsidian-config wiki/` — Obsidian config
+- `python3 tools/visualize.py generate-canvas wiki/ [--focus <node_id>] [--depth N]` — Canvas generation
+- `python3 tools/visualize.py list-recommendations` — Plugin recommendations
+- `python3 tools/research_wiki.py log wiki/ "<message>"` — append log entry
+- `python3 tools/serve.py` — local SPA server (Graph view at `#/graph`)

@@ -1,175 +1,176 @@
 ---
-description: 从已撰写的论文生成学术海报 —— 提炼章节为单页 HTML 海报,包含配图和段落间过渡
+description: Generate an academic poster from a drafted paper — distill sections into a single-page HTML poster with figures and inter-section transitions
 argument-hint: "[paper-dir] [--review] [--anonymous] [--no-figures] [--no-logos] [--no-refine]"
 ---
 
 # /poster
 
-> 从已撰写的论文生成学术 HTML 海报。读取 `paper/main.tex`、章节文件与图片;
-> 构建 PaperX 兼容的 `dag.json` 中间格式;将每个章节提炼为 2–5 句话摘要;
-> 选取代表性配图;渲染为自包含的 HTML 海报(三栏自适应布局)。
+> Generate an academic HTML poster from a drafted paper. Reads `paper/main.tex`,
+> section files, and figures; builds a PaperX-compatible `dag.json` intermediate;
+> distills each section into a 2–5 sentence summary; selects representative figures;
+> renders into a self-contained HTML poster with a 3-column auto-fit layout.
 
 ## Inputs
 
-### 常用
+### Common
 
-- `paper_dir`(可选,默认 `paper/`):LaTeX 项目目录,需包含 `main.tex` 和 `sections/`
-- `--review`(可选):调用 Review LLM 对生成的海报内容进行跨模型评审
-- `--anonymous`(可选):强制将作者写为 "Anonymous",忽略 `\author{}`、`paper/.author_display.txt` 缓存以及 `--authors` flag
-- `--no-figures`(可选):所有章节渲染为纯文本(适合文本密集型海报,或配图尚未准备好时)
-- `--no-logos`(可选):跳过 affiliation / conference logo 询问,header 只显示 venue 文本
-- `--no-refine`(可选):跳过 Step 5.5 critique-revise(默认会跑 1 轮)
+- `paper_dir` (optional, default `paper/`): LaTeX project directory containing `main.tex` and `sections/`
+- `--review` (optional): cross-model Review LLM critique of the generated poster content
+- `--anonymous` (optional): force authors to "Anonymous" regardless of `\author{}` content, the `paper/.author_display.txt` cache, or `--authors`
+- `--no-figures` (optional): render every section as text-only (useful for text-heavy posters, or when figures aren't ready)
+- `--no-logos` (optional): skip the affiliation/conference-logo prompts; header shows venue text only
+- `--no-refine` (optional): skip Step 5.5 critique-revise (default runs 1 iteration via Claude)
 
-### 进阶(脚本化使用;交互场景一般用不到)
+### Power-user (scripted use; rarely needed in interactive runs)
 
-- `--authors STR`:覆盖海报上的作者文本(例如 `--authors "Mingtian Yang, Co-Author"`)。一次性覆盖用;日常需求由 Step 0 Q1 的 `paper/.author_display.txt` 缓存自动处理。`--anonymous` 同时传入时仍以 `--anonymous` 为准。
-- `--venue STR`:header 右块的 venue 文本(例如 `"NeurIPS 2026"`)。跳过 Step 0 的 venue 询问。
-- `--affiliation-logo PATH` / `--conference-logo PATH`:logo 文件路径(PNG/JPG/PDF);各自跳过 Step 0 对应的询问。
-- `--layout corners|stacked`(默认 `corners`):header 布局。`corners` = 单位 logo 左上 + 会议 logo 右上;`stacked` = 两个 logo 都叠在右侧 `.conf` 区,venue 文本在最上。
-- `--auto-figures`:跳过 Step 2.5 的逐章节配图询问,直接为每章选择面积最大的候选图(旧的 "largest wins" 行为)。
-- `--refine-iterations N`(默认 1,硬上限 2):Step 5.5 的迭代次数。`0` 等同于 `--no-refine`。文字密集且首轮可能无法收敛时,调到 2。
+- `--authors STR`: override the authors text on the poster (e.g. `--authors "Morrow Yang, Co-Author"`). Useful for one-off override; everyday use is handled by the `paper/.author_display.txt` cache populated in Step 0 Q1. Ignored if `--anonymous` is also set.
+- `--venue STR`: venue text for the header right block (e.g. `"NeurIPS 2026"`). Skips Step 0 venue prompt.
+- `--affiliation-logo PATH` / `--conference-logo PATH`: logo file paths (PNG/JPG/PDF); each skips the matching Step 0 prompt.
+- `--layout corners|stacked` (default `corners`): header layout. `corners` = affiliation top-left, conference top-right; `stacked` = both logos in the right `.conf` area with venue text above.
+- `--auto-figures`: skip the per-section figure questions; pick the largest candidate for each section (legacy behavior). The ⚠ wide marker on aspect-extreme figures (≥ 2.0 or ≤ 0.5) is informational only — every selected figure renders inline within its section regardless of aspect.
+- `--refine-iterations N` (default 1, cap 2): number of critique-revise passes in Step 5.5. `0` is equivalent to `--no-refine`. Bump to 2 if a first pass might not converge on dense content.
 
 ## Outputs
 
-- `poster/dag.json` —— PaperX 兼容的中间格式(未来可被 `/slides`、`/pr` 复用)
-- `poster/outline.html` —— 模板注入前的 `<section>` 块拼接结果
-- `poster/poster.html` —— 最终自包含的 HTML 海报(浏览器打开即可;若需 PDF:**Cmd/Ctrl+P → 另存为 PDF**,打印设置见 Step 7 报告)
-- `poster/poster.png` —— 2× CSS 尺寸的渲染截图(默认 2800×1800),见 Step 5b
-- `poster/images/` —— 从 `paper/figures/` 复制/转换(PDF→PNG @ 200 DPI)而来的图片
-- **POSTER_REPORT**(输出到终端)
-- `wiki/log.md` —— 追加日志条目
+- `poster/dag.json` — PaperX-compatible intermediate (reusable by future `/slides`, `/pr`)
+- `poster/outline.html` — concatenated `<section>` blocks before template injection
+- `poster/poster.html` — final self-contained HTML poster (open in browser; **Cmd/Ctrl+P → Save as PDF** if you need a PDF — see Step 7 report for print settings)
+- `poster/poster.png` — rendered screenshot at 2× CSS dimensions (default 2800×1800) — see Step 5b
+- `poster/images/` — figures copied/converted (PDF→PNG @ 200 DPI) from `paper/figures/`
+- **POSTER_REPORT** (printed to terminal)
+- `wiki/log.md` — appended log entry
 
 ## Wiki Interaction
 
 ### Reads
-- `paper/main.tex` + `paper/sections/*.tex` + `paper/figures/` —— 论文源
-- `wiki/outputs/paper-plan-*.md`(可选)—— 叙事线、配图计划、证据图
-- `wiki/ideas/*.md`(可选)—— 假设、新颖性论证,用于海报开头
-- `wiki/experiments/*.md`(可选)—— 关键数值与结果,用于结果区 callout
-- `.claude/skills/shared-references/academic-writing.md` —— 去 AI 风格化规则
+- `paper/main.tex` + `paper/sections/*.tex` + `paper/figures/` — paper source
+- `wiki/outputs/paper-plan-*.md` (optional) — narrative arc, figure plan, evidence map
+- `wiki/ideas/*.md` (optional) — hypothesis, novelty argument for poster opening
+- `wiki/experiments/*.md` (optional) — key results, outcome numbers for headline callouts
+- `.claude/skills/shared-references/academic-writing.md` — de-AI polish rules
 
 ### Writes
-- `poster/` 目录(完整列于 Outputs)
-- `wiki/log.md` —— 追加
+- `poster/` directory (all files listed in Outputs)
+- `wiki/log.md` — appended
 
 ### Graph edges created
-- 无(海报是展示产物,不是知识实体)
+- None (the poster is a presentation artifact, not a knowledge entity)
 
 ## Workflow
 
-**前置**:确认 `paper/main.tex` 存在。否则报错:"先运行 /paper-draft"。
+**Precondition**: confirm `paper/main.tex` exists. If not, error with "Run /paper-draft first."
 
-### Step 0: 交互式 header 配置
+### Step 0: Interactive header configuration
 
-目标:收集 venue 文本与(可选的)两个 logo,用于海报 header 渲染。如果用户已通过 CLI flag 传入对应值,则静默跳过该项。
+Goal: collect venue text and (optionally) two logos to render in the poster header. Skipped silently for any field the user already supplied as a CLI flag.
 
-整个交互流程用 `AskUserQuestion` 做是/否/布局选择,自由文本(路径与 venue)直接读取下一条用户消息。
+The flow uses `AskUserQuestion` for the yes/no/layout choices, then asks for paths and venue text in free-form (Claude reads the next user message as the answer).
 
-1. **作者** —— 论文级别的元数据,按下面的优先级解析:
+1. **Authors** — paper-level metadata, resolved with this precedence:
 
-   1. 传入 `--authors STR` flag → 用它,不问也不持久化。
-   2. 传入 `--anonymous` flag → 强制 "Anonymous",不问也不持久化。
-   3. `paper/.author_display.txt` 存在 → 用文件内容,不问。这是"问一次,以后复用"的缓存。未来 `/paper-draft` 会在写作阶段填这个文件;在那之前,`/poster` Step 0 维护它(见下)。
-   4. dag.json 根节点 `content` (来自 `main.tex` 的 `\author{...}`) 非空且不是字面 "Anonymous" → 用它,不问。
-   5. **否则(匿名稿且没有缓存的 display name)**:问用户。
+   1. `--authors STR` flag → use that, do not prompt, do not persist.
+   2. `--anonymous` flag → force "Anonymous", do not prompt, do not persist.
+   3. `paper/.author_display.txt` exists → use its content, do not prompt. This is the "ask once, reuse" cache. Future `/paper-draft` is expected to seed this file during the writing stage; until then, `/poster` Step 0 maintains it (see below).
+   4. dag.json root `content` (from `\author{...}` in `main.tex`) is non-empty AND not literally "Anonymous" → use it, do not prompt.
+   5. **Otherwise (anonymized paper, no cached display name)**: ASK the user.
 
-   询问流程(只在第 5 条触发时进入):
-   - 用 `AskUserQuestion`,选项:
-     - `"Keep 'Anonymous' (double-blind submission)"`(Recommended)
+   Asking flow (only when reached):
+   - Use `AskUserQuestion`:
+     - `"Keep 'Anonymous' (double-blind submission)"` (Recommended)
      - `"Provide author names (I'll ask for the string)"`
-   - 若选 "Provide author names":自由文本询问 *"海报上应显示什么作者字符串?例如 `Mingtian Yang, Co-Author Name`。回复字符串,或回复 `skip` 保留 'Anonymous'。"* 把下一条用户消息取作 authors 字符串。
-   - **把答案持久化** 到 `paper/.author_display.txt`(单行,不要末尾换行)。下一次 `/poster` 跑时文件已存在 → step 0 Q1 静默跳过。用户想改的话,自己编辑或删除这个文件。
-   - 两个分支("Keep Anonymous" 或 自定义字符串)都要持久化 —— 目标是 **除非用户主动删文件,否则不再被问**。
+   - If "Provide author names": ask free-text *"What author string should appear? e.g. `Morrow Yang, Co-Author Name`. Reply with the string, or `skip` to keep 'Anonymous'."* Take the next user message as the authors string.
+   - **Persist the answer** to `paper/.author_display.txt` (one line, no trailing newline beyond the string). On the *next* `/poster` run, the file exists → step 0 Q1 is silent. To change later, the user edits or deletes that file.
+   - Either branch ("Keep Anonymous" or a provided string) gets persisted — the goal is *no more prompts unless the user opts back in by removing the file*.
 
-2. **Venue 文本** —— 若未传入 `--venue`:
-   - 询问:*"海报 header 要显示什么 venue 文本?例如 `NeurIPS 2026`。回复文本,或回复 `skip` 留空。"*
-   - 把下一条用户消息原文取作 venue。`skip`(不区分大小写)视为空。
+2. **Venue text** — if `--venue` was not provided:
+   - Ask: *"What venue text should appear in the poster header? e.g. `NeurIPS 2026`. Reply with the text, or `skip` to leave it blank."*
+   - Take the next user message verbatim. Treat the literal string `skip` (case-insensitive) as empty.
 
-3. **单位/实验室 logo** —— 若未传入 `--affiliation-logo` 且未传入 `--no-logos`:
-   - 用 `AskUserQuestion` 询问,选项:`"Yes, I have a logo file"` / `"No, skip the affiliation logo"`。
-   - 若选 yes:询问 *"单位 logo 文件路径?(PNG / JPG / PDF;相对路径或绝对路径都可以)"*。把下一条用户消息当作路径。校验文件存在;若不存在,提示错误后再询问一次,仍失败则按 skip 处理。
+3. **Affiliation logo** — if `--affiliation-logo` was not provided AND `--no-logos` was not passed:
+   - Use `AskUserQuestion` with options: `"Yes, I have a logo file"` / `"No, skip the affiliation logo"`.
+   - If yes: ask *"What's the path to the affiliation logo? (PNG / JPG / PDF; relative or absolute)."* Take the next user message as the path. Verify the file exists; if not, re-ask once with the resolved-path issue surfaced, then either accept a new path or treat as skipped.
 
-4. **会议/期刊 logo** —— 若未传入 `--conference-logo` 且未传入 `--no-logos`:
-   - 流程同上(yes/no 用 `AskUserQuestion`,路径自由文本)。
+4. **Conference / journal logo** — if `--conference-logo` was not provided AND `--no-logos` was not passed:
+   - Same flow as the affiliation logo (yes/no via `AskUserQuestion`, path via free text).
 
-5. **布局** —— 若至少一个 logo 被提供,且未传入 `--layout`:
-   - 用 `AskUserQuestion` 询问,选项:
-     - `"corners —— 单位 logo 左上、会议 logo 右上"`(Recommended)
-     - `"stacked —— 两个 logo 叠在右侧 conf 区,venue 文本在上方"`
-   - 若只有 venue 没有 logo:跳过布局询问(默认 `corners` 即可,只用 venue 文本槽)。
+5. **Layout** — if at least one logo was provided AND `--layout` was not passed:
+   - Use `AskUserQuestion` with options:
+     - `"corners — affiliation top-left, conference top-right"` (Recommended)
+     - `"stacked — both logos stacked in the right conf area, venue text on top"`
+   - If only `--venue` and no logos: skip the layout question (default `corners` is fine — only the venue text slot is used).
 
-6. **配置摘要** —— 打印一行:
+6. **Final summary** — print one line:
    - `Header config: authors='{...}', venue='{...}', affiliation={path|none}, conference={path|none}, layout={...}`
 
-作者字符串通过 Step 5 的 `python3 tools/poster.py inject-title --authors "..."` 应用;venue 与 logo 通过 `python3 tools/poster.py inject-header` 应用。
+The authors string is applied in Step 5 via `python3 tools/poster.py inject-title --authors "..."`; the venue/logos are applied via `python3 tools/poster.py inject-header`.
 
-### Step 1: 构建 dag.json
+### Step 1: Build dag.json
 
 ```bash
 python3 tools/wiki2dag.py build --paper-dir paper/ --output poster/dag.json
 ```
 
-若用户传入 `--anonymous`,在命令上加 `--anonymous`。
+Add `--anonymous` if the user passed it.
 
-桥接工具生成三类节点:
-- **Root**(`level: 0`):`name` 为论文标题,`content` 为作者,`edge` 为按顺序排列的章节名
-- **Section**(`level: 1`):`name` 为章节标题,`content` 为完整正文,`visual_node` 为该章节引用的图片
-- **Visual**(`level: 2`):`name` 为 markdown 图片引用,`content` 为 caption,`resolution` 为 `WxH`
+The bridge produces three node types:
+- **Root** (`level: 0`): paper title in `name`, authors in `content`, ordered section names in `edge`
+- **Section** (`level: 1`): section heading in `name`, full prose in `content`, figure refs in `visual_node`
+- **Visual** (`level: 2`): markdown image ref in `name`, caption in `content`, `WxH` in `resolution`
 
-`wiki2dag.py` 保留论文中的:
-- **数学公式**:`$…$`、`$$…$$`、`\(…\)`、`\[…\]` 原样进入章节内容,后续由海报 HTML 中的 KaTeX 渲染。`math_commands.tex` 里的宏会被展开,残留的 `\ensuremath{X}` 包装会被解包为 `$X$`,让 KaTeX 能识别。
-- **引用** —— *默认丢弃*:`\citep{key}` / `\citet{...}` 标记被剥成空。基于对 CCF-A 海报的调研,实际会场上的海报通常不在正文里渲染 `[N]` 内联标注(没地方放参考文献列表)。如果你的海报样式确实需要它们,在 `wiki2dag.py build` 上加 `--citations` flag 可以恢复为 `[N]` / `[N, M]`(按首次出现顺序的 `bibkey → ordinal`)。未来支持参考文献页脚的样式可以默认开启。
-- **表格**:`\begin{table}…\end{table}` envs(包括通过 `\input{tables/foo}` 内联的)被转为活的 HTML `<table class="poster-table">` 块,booktabs caption 渲染为 `<caption>`,`\multicolumn`、`\textbf`、`\emph`、`\textit`、`\texttt` 在 cell 层处理。Step 3 的 LLM 在 `SECTION_JSON.content` 中看到这段 HTML,必须**原样**插入到 summary 段落之后(见 Step 3)。fit() 算法会与正文文字一起缩放表格字号;若表格仍然溢出,Step 5.5 的 DOM 溢出探针会发现并要求修剪。
-- **TikZ 图**:`\begin{figure}` envs 中含 `\begin{tikzpicture}` 但**没有** `\includegraphics{}` 的,通过 `tools/rasterize_latex.py`(pdflatex + pdftoppm)自动光栅化到 `paper/figures/_tikz_<sec>_<label>.png`。生成的 PNG 在桥接层眼里就是普通 visual node,Step 3 完全一样处理。若同一个 figure env 里**同时**有 `\includegraphics{}`,现有流水线优先(TikZ 跳过)。光栅化失败时 stderr 告警 + 丢弃该图,其它流程继续。跨次运行缓存 —— 删除 PNG 即强制重建。
+`wiki2dag.py` preserves the paper's:
+- **Math**: `$…$`, `$$…$$`, `\(…\)`, `\[…\]` pass through into section content untouched, then render via KaTeX in the poster HTML. Macros defined in `math_commands.tex` are expanded and any surviving `\ensuremath{X}` wrapper is unwrapped to `$X$` so KaTeX picks it up.
+- **Citations** — *dropped by default*: `\citep{key}` / `\citet{...}` markers are stripped to empty. Real-world conference posters (per CCF-A research) typically omit inline citation markers because there's no room for a reference list. Pass `--citations` to `wiki2dag.py build` if you want them back as `[N]` / `[N, M]` (built from a first-appearance `bibkey → ordinal` map). Future poster styles that render a reference footer can opt in.
+- **Tables**: `\begin{table}…\end{table}` envs (including tables inlined via `\input{tables/foo}`) are converted to live HTML `<table class="poster-table">` blocks with the booktabs caption rendered as a `<caption>` and `\multicolumn`, `\textbf`, `\emph`, `\textit`, `\texttt` handled at the cell level. The Step 3 LLM sees this HTML inside `SECTION_JSON.content` and must include it verbatim after the summary paragraph (see Step 3). The fit() algorithm sizes table fonts alongside body text; if a table still clips, Step 5.5 sees it via the DOM overflow probe and trims.
+- **TikZ figures**: `\begin{figure}` envs containing `\begin{tikzpicture}` but no `\includegraphics{}` are auto-rasterized to `paper/figures/_tikz_<sec>_<label>.png` via `tools/rasterize_latex.py` (pdflatex + pdftoppm). The resulting PNG is a regular visual node from the bridge's perspective — Step 3 picks it up exactly like any other figure. If `\includegraphics{}` is also present in the same env, the existing pipeline takes precedence (TikZ extraction is skipped). Failed rasterizations are logged to stderr and the figure is dropped; the rest of the pipeline continues. Cached across runs — delete the PNG to force regeneration.
 
-### Step 2: 编译 WIKI_CONTEXT(可选)
+### Step 2: Compile WIKI_CONTEXT (optional)
 
-目标:可选地用论文自己的规划产物(假设陈述、新颖性论证、关联 ideas/experiments 的关键数值)为 Step 3 的蒸馏提示词提供锚点。**始终告知用户当前发生了什么 —— 不要静默采用。**
+Goal: optionally ground the Step 3 distillation prompts in the paper's own planning artifacts (hypothesis statement, novelty argument, key-result numbers from linked ideas/experiments). Always surface what's happening — do not adopt silently.
 
-**检测与透明度**:
+**Detection + transparency**:
 
-- **不存在 plan 文件**:打印一行 —— `Step 2: 在 wiki/outputs/ 未找到 paper-plan-*.md —— Step 3 将在没有 WIKI_CONTEXT 的情况下运行。` 跳到 Step 2.5。
+- **No plan file present**: print one line — `Step 2: no paper-plan-*.md found in wiki/outputs/ — Step 3 will run without WIKI_CONTEXT.` Skip to Step 2.5.
 
-- **存在 plan 文件**:打印一行总结找到了什么,例如 `Step 2: 找到 wiki/outputs/paper-plan-2026-05-17.md(3 个 idea,2 个 experiment)。` 然后用 `AskUserQuestion`:
-  - `"Yes —— 作为 WIKI_CONTEXT 锚点采用"`(推荐)
-  - `"No —— 仅基于论文源蒸馏"`
+- **Plan file present**: print one line summarizing what was found, e.g. `Step 2: found wiki/outputs/paper-plan-2026-05-17.md (3 linked ideas, 2 experiments).` Then `AskUserQuestion`:
+  - `"Yes — adopt as WIKI_CONTEXT grounding"` (Recommended)
+  - `"No — distill from paper source only"`
 
-若用户选 **Yes**:读取 plan 获取 venue、叙事弧线、关联 idea slug。对每个 idea slug,读取 `wiki/ideas/<slug>.md` 的假设(hypothesis)与新颖性论证;对每个关联的 `wiki/experiments/*.md`,读取 `outcome` 与 `key_result` 字段。按章节聚合成一个 `WIKI_CONTEXT` 字符串:
+If the user picks **Yes**: read the plan for venue, narrative arc, and linked idea slugs. For each idea slug, read `wiki/ideas/<slug>.md` for the hypothesis statement and novelty argument. For each linked `wiki/experiments/*.md`, read the `outcome` and `key_result` fields. Assemble into a single `WIKI_CONTEXT` string keyed by section:
 
 ```
 [INTRODUCTION]
-hypothesis: <来自 idea 的一句话>
-novelty: <来自 idea 的一句话>
+hypothesis: <one sentence from idea>
+novelty: <one sentence from idea>
 
 [EXPERIMENTS]
-key_result: <来自 experiments 的关键数值>
-outcome: <一句话总结>
+key_result: <headline numbers from experiments>
+outcome: <one line summary>
 ```
 
-若用户选 **No**:`WIKI_CONTEXT` 保持为空。
+If the user picks **No**: leave `WIKI_CONTEXT` empty.
 
-此字符串通过 Step 3 提示词中的 `{WIKI_CONTEXT}` 槽位传入。Step 3 提示词显式允许此槽位为空。
+This block is passed into the Step 3 prompt under the `{WIKI_CONTEXT}` slot. The Step 3 prompt explicitly tolerates an empty slot.
 
-### Step 2.5: 配图选择
+### Step 2.5: Figure selection
 
-目标:决定每个被选中的章节应配哪张图(或无图)。在 `dag.json` 构建之后、LLM 提炼之前运行,使配图选择成为 Step 3 的*输入*,而不是让 LLM 猜。每张图都内联渲染在章节中;manifest 中的 ⚠ wide 标记仅作信息提示 —— 提醒比例极端的图在单列里可能被压扁,用户可以选其它图或跳过。
+Goal: decide which figure (if any) belongs in each selected section. Runs after `dag.json` is built and before any LLM distillation, so the figure choice becomes an *input* to Step 3 rather than something the LLM guesses. Every figure renders inline within its section; the ⚠ wide marker in the manifest is purely informational — a heads-up that an aspect-extreme figure may look cramped in a single column, so the user can pick an alternative figure or skip it.
 
-**章节选择**(优先级表,硬上限 6 个章节,保持 1400×900 下可读):
+**Section selection** (priority list, hard-capped at 6 sections to keep the poster legible at 1400×900):
 
-1. **Introduction**(摘要或第一节)
-2. **Method**(方法/方案章节)
-3. **主要结果**(Experiments / Replication / 主结果章节)
-4. **次要结果 / 消融**(空间允许时)
-5. **分析 / 讨论**(一个核心 insight)
-6. **Conclusion**(简短结论)
+1. **Introduction** (Abstract or first section)
+2. **Method** (the section describing the approach)
+3. **Primary results** (Experiments / Replication / main result section)
+4. **Secondary results / ablation** (if space permits)
+5. **Analysis / discussion** (one key insight)
+6. **Conclusion** (brief takeaway)
 
-**模式判定**:
+**Mode resolution**:
 
-- 传入 `--no-figures` → 模式 = `none`;所有章节渲染为纯文本,跳过所有询问。
-- 传入 `--auto-figures` → 模式 = `auto`;为每章选面积最大的 visual(`resolution` 的 W×H),跳过所有询问。
-- 否则 → 模式 = `interactive`,执行下面的 manifest + 询问。
+- `--no-figures` passed → mode = `none`; every section renders text-only. Skip all questions.
+- `--auto-figures` passed → mode = `auto`; for each section, pick the visual with the largest area (W×H from `resolution`). Skip all questions.
+- Otherwise → mode = `interactive`. Run the manifest + questions below.
 
-**打印配图 manifest**(任何模式下都打印),示例:
+**Print the figure manifest** (always, regardless of mode), e.g.:
 
 ```
 Figure candidates per section:
@@ -179,84 +180,84 @@ Figure candidates per section:
   Experiments     — 2 candidates:
                     [a] layer_curves.png   2378x618  aspect 3.85  ⚠ wide
                     [b] bootstrap.png       974x612  aspect 1.59
-  Discussion     — text only
-  Conclusion     — text only
+  Discussion      — text only
+  Conclusion      — text only
 ```
 
-aspect 由 `resolution`(W×H)计算。⚠ wide 标记来自 dag.json 的 `wide` 字段(aspect ≥ 2.0 或 ≤ 0.5 时为 true)。
+Compute aspect from `resolution` (W×H). The ⚠ wide marker comes from the `wide` field in dag.json (true when aspect ≥ 2.0 or ≤ 0.5).
 
-**交互流程**(仅模式 = `interactive`):
+**Interactive flow** (mode = `interactive` only):
 
-逐章节,按候选数与 wide 标记决定如何询问:
+For each section, decide what to ask based on candidate count and wide-flags:
 
-| 候选数 | Wide? | 行为 |
+| Candidates | Wide? | Action |
 |---|---|---|
-| 0 | — | 无图(不询问,静默) |
-| 1 | any | 静默 inline 使用(manifest 已展示;若 `wide`,⚠ 标记即提示)。用户可重跑加 `--no-figures` 来移除。 |
-| ≥2 | any | **询问 Q-Pick**(多选):*"Which figure(s) for {Section}?"* —— `AskUserQuestion` 配 `multiSelect: true`,选项:每个候选(标签包含 ⚠ wide 标记如适用) / `Let Claude decide (pick largest one)` / `No figure`。用户可选一张、多张或全部。 |
+| 0 | — | No figure (no question, silent) |
+| 1 | any | Use it inline (no question — the manifest already showed it; if `wide`, the ⚠ marker is the heads-up). User can re-run with `--no-figures` to drop it. |
+| ≥2 | any | **Ask Q-Pick** (multi-select): *"Which figure(s) for {Section}?"* — `AskUserQuestion` with `multiSelect: true`, options: each candidate (label includes ⚠ wide marker if applicable) / `Let Claude decide (pick largest one)` / `No figure`. User may pick one, several, or all. |
 
-每次询问用 `AskUserQuestion`,选项数 ≤ 4。若某章节有 4 个以上候选,去掉 `Let Claude decide` 这一项以满足上限(用户已经在显式选了)。
+Use `AskUserQuestion` for each prompt; cap at 4 options total. When a section has 4+ candidates, drop the `Let Claude decide` option to stay within the limit (the user is being explicit anyway).
 
-**跟进:同一章节选了 ≥2 张时询问布局。** 用 `AskUserQuestion`(单选):
+**Follow-up: layout when ≥2 figures were picked for the same section.** Ask via `AskUserQuestion` (single-select):
 
-| 选项 | 行为 | 何时推荐 |
+| Option | What it does | When to recommend |
 |---|---|---|
-| `side-by-side` | 所有选中图都放进 **一个** `<div class="img-section">`;flex 布局自动水平平分宽度。 | 默认。3 列海报里最省空间。零 CSS 改动。 |
-| `vertical-stack` | 每张图一个独立 `<div class="img-section">`,自上而下堆叠。每张图占满列宽。 | 单图细节重要时;但章节会很高,fit() 会更激进地缩小文字。 |
-| `after-table` | 章节里**同时有** `<table class="poster-table">` 时使用,figures 横向并排,放在表格**之后**。 | 章节内容密;尊重论文阅读顺序。 |
+| `side-by-side` | Both/all chosen figures inside ONE `<div class="img-section">`; the template's flex layout splits horizontal space evenly. | Default. Most space-efficient for a 3-col poster. Works zero-CSS-changes. |
+| `vertical-stack` | One `<div class="img-section">` per figure, stacked top-to-bottom. Each figure gets full column width. | When fine detail matters per figure; risks tall section + fit() shrinking text aggressively. |
+| `after-table` | Used when the section ALSO contains a `<table class="poster-table">`. Figures go side-by-side AFTER the table. | The section is content-dense; respect paper's read order. |
 
-HTML 模板已原生支持 `side-by-side` 与 `vertical-stack`(flex 布局 + 多个 `.img-section`)。`after-table` 只是放置变体,不是新 CSS 类。
+The HTML template already supports both `side-by-side` and `vertical-stack` natively (flex layout, plus the option of multiple `.img-section` divs). `after-table` is a placement variant, not a new CSS class.
 
-所有决策做完后,打印一行汇总:
+After all decisions, print a final summary line:
 
 ```
 Figures chosen:
   Experiments → fig2.png + fig3.png (side-by-side)
   Method      → tikz_chain.png (inline)
-  (其他章节:仅文字)
+  (other sections: text only)
 ```
 
-**决策记录**:用按章节显示名作 key 的内存 dict 保留选择:
+**Decision record**: persist the choices in an in-memory dict keyed by section display name:
 
 ```python
 {
   "Experiments": {
-    "figures": ["images/fig2.png", "images/fig3.png"],   # 列表,即使只 1 张
-    "alts":    ["<caption fig2>",  "<caption fig3>"],    # 平行列表
-    "layout":  "inline-multi-side",                       # 见下
+    "figures": ["images/fig2.png", "images/fig3.png"],   # list, even when 1
+    "alts":    ["<caption fig2>",  "<caption fig3>"],    # parallel list
+    "layout":  "inline-multi-side",                       # see below
   },
   "Method": {
     "figures": ["images/tikz_chain.png"],
     "alts":    ["<caption>"],
-    "layout":  "inline",                                  # 单图场景
+    "layout":  "inline",                                  # single-figure case
   },
   "Conclusion": {"figures": [], "alts": [], "layout": "none"},
   ...
 }
 ```
 
-`layout` 取值:
-- `"none"` —— 章节仅文字,无图
-- `"inline"` —— 一张图在一个 `.img-section` 中(向后兼容单图流程)
-- `"inline-multi-side"` —— ≥2 张图放进**同一个** `.img-section`(flex 水平)
-- `"inline-multi-stack"` —— ≥2 张图,每张一个 `.img-section`(垂直堆叠)
-- `"inline-multi-after-table"` —— ≥2 张图横向并排,放在章节内容的 `<table class="poster-table">` **之后**
+`layout` enum:
+- `"none"` — section is text-only, no figures
+- `"inline"` — exactly one figure inside one `.img-section` (back-compat with single-figure flow)
+- `"inline-multi-side"` — 2+ figures inside ONE `.img-section` (flex side-by-side)
+- `"inline-multi-stack"` — 2+ figures, each in its own `.img-section` (vertical stack)
+- `"inline-multi-after-table"` — 2+ figures side-by-side, placed AFTER any `<table class="poster-table">` in the section content
 
-Step 3 会消费此 dict 填入每章节的提示词变量。
+This dict is consumed in Step 3 to fill the per-section prompt variables.
 
-### Step 3: 提炼海报章节
+### Step 3: Distill poster sections
 
-加载 `poster/dag.json` 与 Step 2.5 的决策 dict。按顺序遍历被选中的章节节点。
+Load `poster/dag.json` and the figure-decision dict from Step 2.5. Iterate the selected section nodes in order.
 
-对每个章节,准备下面提示词所需的变量。配图相关变量从 Step 2.5 的决策 dict 取,**不要**在这里重新算。
+For each selected section, prepare the variables for the prompt below. Figure variables come from the Step 2.5 decision dict — do NOT re-derive them here.
 
-- `SECTION_JSON`:从 `poster/dag.json` 取该 section 节点,**去掉** `visual_node` 字段(visual 单独传入)。只保留 `name`, `content`, `level`。
-- `LAYOUT`:`"none"` / `"inline"` / `"inline-multi-side"` / `"inline-multi-stack"` / `"inline-multi-after-table"` 之一,从 `decisions[section_name]["layout"]` 取。决定 HTML 模板分支。
-- `IMAGE_SRCS`:图源列表,从 `decisions[section_name]["figures"]` 取(如 `["images/fig2.png", "images/fig3.png"]`)。`LAYOUT == "none"` 时为空列表。
-- `ALT_TEXTS`:与 `IMAGE_SRCS` 一一对应的 caption 列表(`decisions[section_name]["alts"]`)。
-- `WIKI_CONTEXT`(可选):Step 2 编译出的字符串(假设、新颖性、关键数值)。无 wiki 上下文时为空。
+- `SECTION_JSON`: the section node from `poster/dag.json` with the `visual_node` field **removed** (the visual is conveyed separately). Keep only `name`, `content`, `level`.
+- `LAYOUT`: one of `"none"` / `"inline"` / `"inline-multi-side"` / `"inline-multi-stack"` / `"inline-multi-after-table"` from `decisions[section_name]["layout"]`. Drives the HTML template branch.
+- `IMAGE_SRCS`: list of image sources from `decisions[section_name]["figures"]`, e.g. `["images/fig2.png", "images/fig3.png"]`. Empty list if `LAYOUT == "none"`.
+- `ALT_TEXTS`: parallel list of captions from `decisions[section_name]["alts"]`. Same length as `IMAGE_SRCS`.
+- `WIKI_CONTEXT` (optional): a short block compiled from Step 2 — hypothesis statement, novelty argument, key-result numbers from linked ideas/experiments. Empty string if no wiki context was loaded.
 
-对每个章节调用下面的提示词(从 PaperX `poster_outline_prompt` 移植,扩展了 `LAYOUT` 与 `WIKI_CONTEXT`):
+Run the following prompt for each section (ported from PaperX `poster_outline_prompt`, extended for `LAYOUT` and `WIKI_CONTEXT`):
 
 > You are given a section node JSON (SECTION_JSON) from a paper DAG. The section JSON you see has NO `visual_node` field and must be treated as authoritative.
 >
@@ -289,7 +290,7 @@ Step 3 会消费此 dict 填入每章节的提示词变量。
 > - LAYOUT == `"inline-multi-after-table"`: same as `"inline-multi-side"` (one `.img-section` with all `<img>` tags) but place that `.img-section` AFTER the `<table class="poster-table">` block(s) inside `<div class="section-body">`. Useful when the section's table is the primary artifact and figures serve as visual support.
 > - **TABLES**: if `SECTION_JSON.content` contains one or more `<table class="poster-table">…</table>` blocks, include EACH ONE verbatim (preserve the entire block byte-for-byte, including `<caption>`, `<thead>`, `<tbody>`, all `<tr>` / `<th>` / `<td>` tags and their attributes) inside `<div class="section-body">` AFTER your summary `<p>`. Do NOT paraphrase, restructure, or trim the table HTML. Exception — drop a table only if it is obviously too large for one column (> 5 columns AND > 6 rows) AND summarizing 2–3 key cells in prose would preserve the result; in that case, drop the table and call out the key numbers in your summary `<p>`.
 >
-> **Required HTML templates**(按 LAYOUT 选择对应变体):
+> **Required HTML templates** (pick the one matching LAYOUT):
 >
 > *LAYOUT = "none"*:
 > ```html
@@ -370,13 +371,13 @@ Step 3 会消费此 dict 填入每章节的提示词变量。
 > </section>
 > ```
 
-按 `shared-references/academic-writing.md` 做去 AI 风格化(变换句首、避免 "leverage"/"comprehensive"/"delve" 等 AI 签名词)。从 `WIKI_CONTEXT` 拉取关键数值,让结果具体可信。
+Apply de-AI polish per `shared-references/academic-writing.md` (vary sentence openings, drop signature words like "leverage", "comprehensive", "delve"). Pull headline numbers from `WIKI_CONTEXT` when present — these make poster results concrete.
 
-按选择顺序将所有块写入 `poster/outline.html`。
+Write all blocks (in selection order) to `poster/outline.html`.
 
-### Step 4: 添加章节间过渡句
+### Step 4: Add inter-section transitions
 
-对拼接后的 outline 应用以下提示词(改写自 PaperX):
+Apply the following prompt to the assembled outline (adapted from PaperX):
 
 > **Prompt**: You are given an HTML-like poster outline of multiple `<section class="section">` blocks. Each section has a title in `<div class="section-bar">` and main text in the first `<p>` inside `<div class="section-body">`.
 >
@@ -389,9 +390,9 @@ Step 3 会消费此 dict 填入每章节的提示词变量。
 > - When the next section is experimental: "Next, we evaluate \<subject\> to demonstrate ..." or "We then conduct experiments on \<task\> to empirically validate ..."
 > - Always reference the next section's topic without introducing new technical claims.
 
-解析返回的 JSON 数组。对每个字符串,追加到对应章节的第一个 `<p>` 末尾。最后一个章节不加过渡句。
+Parse the JSON array. For each string, append it to the end of the corresponding section's first `<p>` in `poster/outline.html`. The last section gets no bridge.
 
-### Step 5: 构建海报
+### Step 5: Build the poster
 
 ```bash
 python3 tools/poster.py build \
@@ -401,16 +402,16 @@ python3 tools/poster.py build \
 
 python3 tools/poster.py inject-title \
   --dag poster/dag.json \
-  [--authors "{Step 0 收集到的 authors 覆盖串,或 --authors flag 的值}"] \
+  [--authors "{authors override from Step 0 or --authors flag}"] \
   poster/poster.html
 ```
 
-`--anonymous` 已在 Step 1(`wiki2dag.py`)生效 —— `dag.json` 中的标题/作者已是最终值,`inject-title` 默认从那里读。当论文的 `\author{}` 因双盲投稿而留空但海报需要显示真实作者时,传入 `--authors` 覆盖。同时传入 `--anonymous` 时仍以 `--anonymous` 为准。
+The `--anonymous` flag is applied at Step 1 (`wiki2dag.py`) — `dag.json` already carries the canonical title/authors, so `inject-title` reads from there by default. Pass `--authors` to override when the paper's `\author{}` was intentionally left empty (e.g. for double-blind submission) but a real author string is desired on the poster. `--anonymous` (on `inject-title`) still wins over `--authors` if both are set.
 
 ```bash
-# 应用 Step 0 收集到的 venue 与 logo。用户跳过的项就不要传对应 flag。
+# Apply the venue text + logos from Step 0. Omit flags that the user skipped.
 python3 tools/poster.py inject-header \
-  --venue "{Step 0 的 venue}" \
+  --venue "{venue from Step 0}" \
   [--affiliation-logo {path}] \
   [--conference-logo {path}] \
   --layout {corners|stacked} \
@@ -424,66 +425,66 @@ python3 tools/poster.py inject-figures \
 python3 tools/poster.py validate poster/poster.html
 ```
 
-`inject-figures` 直接拷贝 PNG/JPG,对 PDF 源使用 `pdftoppm` 以 200 DPI 转为 PNG。`validate` 检查每个 `<img src=...>` 能解析、标题非空、章节数 ≥ 3、不存在 `TODO`/`FIXME`/`[UNCONFIRMED]` 标记。
+`inject-figures` copies PNG/JPG sources verbatim and converts PDF sources to PNG at 200 DPI via `pdftoppm`. `validate` checks that every `<img src=...>` resolves, the title is non-empty, at least 3 sections are present, and no `TODO`/`FIXME`/`[UNCONFIRMED]` markers remain.
 
-### Step 5b: 渲染 PNG
+### Step 5b: Render PNG
 
-`validate` 通过后,把 HTML 海报渲染成 PNG,供用户预览,也作为后续 Step 5.5 critique-revise 的输入:
+After validation passes, render the HTML poster to PNG so the user has a flat screenshot (also used as input by the future Step 5.5 critique-revise pass):
 
 ```bash
 python3 tools/poster.py render poster/poster.html
 ```
 
-产出 `poster/poster.png`,默认 2× CSS 像素(2800×1800)。用 `--scale {1,2,3}` 覆盖(1 = 快速预览,3 = 印刷质量)。
+This writes `poster/poster.png` at 2× the CSS pixel dimensions (default 2800×1800). Override with `--scale {1,2,3}` (1 = fast preview, 3 = print quality).
 
-**渲染引擎**:优先 Playwright(Chromium),其次是系统浏览器的子进程兜底。Playwright 之所以首选,是因为它在截图前**等到特定事件触发**——`document.fonts.ready`、所有 `<img>` `load` 事件、`flow.scrollWidth` 连续 10 帧不变(即 fit() 收敛)。子进程路径用 `--virtual-time-budget=5000` 这种 wall-clock 超时,在 CDN 慢响应时可能在 Google Fonts / KaTeX 加载前就截图。这正是 PaperX 用的等待语义。
+**Render engine**: prefers Playwright (Chromium) when available, falls back to subprocess against a system browser. Playwright is strongly preferred because it waits on **specific events** before screenshotting — `document.fonts.ready`, all `<img>` `load` events, and `flow.scrollWidth` stable for 10 consecutive animation frames (fit() converged). The subprocess fallback uses `--virtual-time-budget=5000`, a wall-clock timeout that can race with slow CDN responses for Google Fonts / KaTeX. This is the exact wait semantics PaperX uses.
 
-**安装 Playwright**(一次性,推荐):`pip install playwright && python -m playwright install chromium`。即使不装,`render` 也能走子进程路径;输出里会显示 `browser: chromium`(子进程)或 `browser: playwright-chromium`(首选)。
+**Install Playwright** (one-time, recommended): `pip install playwright && python -m playwright install chromium`. Without it, `render` still works via the subprocess path; print output shows `browser: chromium` (subprocess) vs `browser: playwright-chromium` (preferred).
 
-**子进程兜底的浏览器探测**:Chrome → Edge → Chromium → Firefox(最后兜底)。Chrome/Edge/Chromium 三者等价(同引擎、同 CLI flag)。Firefox 也能用,但有两个限制 —— 不支持 HiDPI 缩放(无论 `--scale` 传什么,PNG 都是 1×);也没有 `--virtual-time-budget` 等价物。退化到 Firefox 时 `render` 会向 stderr 打印警告。
+**Subprocess fallback browser detection**: Chrome → Edge → Chromium → Firefox (last resort). Chrome/Edge/Chromium are equivalent (same engine, identical CLI flags). Firefox works but with two caveats — no HiDPI scaling (PNG comes out 1× regardless of `--scale`) and no `--virtual-time-budget` equivalent. `render` prints warnings to stderr when it falls back to Firefox.
 
-**不支持 Safari** —— Safari 没有 headless CLI 截图 flag;接入需要 `safaridriver` + Selenium WebDriver。macOS 上只有 Safari 的用户可以 `brew install --cask google-chrome`(一行命令)解锁完整流程。
+**Safari is not supported** — it has no headless CLI screenshot flag; integration would require `safaridriver` + Selenium WebDriver. macOS-only users with only Safari should `brew install --cask google-chrome` (one command) to unlock the full pipeline.
 
-若找不到任何支持的浏览器,`render` 以平台对应的安装提示退出。HTML 海报本身在任何浏览器里都能打开 —— 用户依然可以 `open poster/poster.html`。
+If no supported browser is found, `render` exits with platform-specific install hints. The HTML poster remains usable in any browser — the user can still `open poster/poster.html` directly.
 
-### Step 5.5: Critique-revise(截图 + DOM 溢出报告双驱动)
+### Step 5.5: Critique-revise via Claude (screenshot + DOM overflow report)
 
-目标:用**程序化的溢出报告**(从渲染后的 DOM 取的 ground truth)结合**截图**(视觉上下文)来修订 HTML。DOM 报告是 fit() 和 LLM 都可能漏看的东西 —— 它精确测量每个叶子元素的 bottom / right 与 flow 边缘的差,精确报出任何 clipping。LLM **不能**在报告显示 clipping 的情况下声明收敛,必须修剪文字直到报告 ok。
+Goal: refine the HTML using both a **programmatic overflow report** (ground truth from the rendered DOM) and the **screenshot** (visual context). The DOM report is what fit() and the LLM can both miss — it measures every leaf element's bottom/right vs the flow's edges and reports any clipping precisely. The LLM cannot declare convergence while the report shows clipping; it must trim prose until the report comes back clean.
 
-自动应用,无用户交互。
+Auto-applied; no user interaction.
 
-**跳过条件**:
-- 传入 `--no-refine` → 完全跳过。
-- `--refine-iterations 0` → 等同 `--no-refine`。
-- Step 5b 没产出 `poster/poster.png`(无可用 headless 浏览器)→ 警告后跳过。
+**Skip conditions**:
+- `--no-refine` flag passed → skip Step 5.5 entirely.
+- `--refine-iterations 0` → equivalent to `--no-refine`.
+- Step 5b failed to produce `poster/poster.png` (no supported browser installed) → skip with a warning.
 
-**迭代次数**:由 `--refine-iterations N` 决定(默认 1,硬上限 2)。注意:收敛不再只看文字稳定,而是依赖溢出报告 —— 见下面的终止条件。
+**Iteration count**: from `--refine-iterations N` (default 1, hard cap 2). Note: convergence is gated on the overflow report, not just on prose stability — see Termination below.
 
-**单轮迭代流程**(i = 1..N):
+**Workflow per iteration** (i = 1..N):
 
-1. 确保 `poster/poster.png` 反映当前 `poster/poster.html`。若 HTML 自上次渲染后有改动,重跑 `python3 tools/poster.py render poster/poster.html`。
-2. 运行 `python3 tools/poster.py check-overflow poster/poster.html --output raw/tmp/poster.overflow.json`(scratch 路径 —— `poster/` 里只放最终产物)。读取该 JSON。
-3. **提前收敛(仅溢出报告路径)**:若 `i == 1` 且 `overflow.ok == true`,且认真比对截图后没看到任何明显的 LaTeX / 编码 / 编号问题(对自己应用下面 refinement 提示词里的强制 checklist),**可以**在这里就声明收敛:记录 `"converged after 0 iterations — DOM clean, no visible content issues"` 并退出。如果有**任何**疑虑就不要走这条捷径 —— 跑一轮 refinement 的成本远小于交付一张细节有问题的海报。
-4. 在内存里快照 `pre_html = <当前 poster.html>` —— 用于后面的文字稳定性判定。
-5. 读取 `poster/poster.png`(多模态)、`poster/poster.html`、以及 `raw/tmp/poster.overflow.json`(ground truth 的 clipping 报告)。
-6. 应用下面的 refinement 提示词。把 overflow JSON 作为 prompt 的一部分传入 —— LLM 凭它**精确**知道哪些章节要 trim,而不是从截图里猜。用 Claude(会话内,已多模态)。**不要**用 `mcp__llm-review__chat`,它按 `mcp-servers/llm-review/server.py` 只接受文本。
-7. 解析 LLM 输出:从第一个 ```` ```html ```` 围栏代码块里提取 HTML。
-8. 把修订后的 HTML 写回 `poster/poster.html`,并快照为 `post_html`。
-9. 重跑 `python3 tools/poster.py validate poster/poster.html`。若 validate 失败:停止,告诉用户具体问题,HTML 保留原样。
-10. 重新渲染 `poster/poster.png`。重跑 `check-overflow --output raw/tmp/poster.overflow.json` → 更新报告。
-11. **收敛检查(两个条件**都满足才算收敛**)**:
-    - (a) 新的 overflow 报告 `ok == true`,且
-    - (b) `pre_html` 与 `post_html` 在 `.flow` 区域字符差异 < 50。
+1. Ensure `poster/poster.png` reflects the current `poster/poster.html`. If the HTML was modified since the last render, re-run `python3 tools/poster.py render poster/poster.html`.
+2. Run `python3 tools/poster.py check-overflow poster/poster.html --output raw/tmp/poster.overflow.json` (scratch path — `poster/` only ever contains final artifacts). Read the JSON.
+3. **Early convergence (overflow-only path)**: if `i == 1` AND `overflow.ok == true` AND no obvious LaTeX/encoding/numbering issues are visible in the screenshot at a careful look (apply the mandatory checklist in the refinement prompt below to your own evaluation), you MAY declare convergence here: record `"converged after 0 iterations — DOM clean, no visible content issues"` and exit. Skip this shortcut if you have *any* doubt — the cost of one refinement pass is small compared to shipping a poster with subtle issues.
+4. Snapshot `pre_html = <current poster.html>` in memory — needed for the prose-stability convergence check.
+5. Read `poster/poster.png` (multimodal), `poster/poster.html`, and `raw/tmp/poster.overflow.json` (the ground-truth clipping report).
+6. Apply the refinement prompt below. Pass the overflow JSON as part of the prompt — the LLM uses it to know *exactly* which sections need trimming, instead of guessing from the screenshot. Use Claude (in-session, multimodal). Do NOT use `mcp__llm-review__chat` — text-only per `mcp-servers/llm-review/server.py`.
+7. Parse the LLM output: extract HTML from the first ```` ```html ```` fenced block.
+8. Write the revised HTML back to `poster/poster.html`. Snapshot it as `post_html`.
+9. Re-run `python3 tools/poster.py validate poster/poster.html`. If validation fails: stop, surface issues to the user, leave HTML as-is.
+10. Re-render to `poster/poster.png`. Re-run `check-overflow --output raw/tmp/poster.overflow.json` → updated report.
+11. **Convergence check (requires BOTH)**:
+    - (a) New overflow report shows `ok == true`, AND
+    - (b) `pre_html` and `post_html` differ by < 50 chars inside the `.flow` region.
     
-    都满足:声明收敛(`"converged after {i} iteration(s) — DOM clean and prose stable"`)并退出。
+    If both: declare convergence (`"converged after {i} iteration(s) — DOM clean and prose stable"`) and exit.
     
-    overflow.ok 仍为 false:下一轮**必须**继续 refine;即使 prose 稳定也不能停。LLM 没 trim 够。
+    If overflow.ok is still false: refinement is **mandatory** for the next iteration; the loop continues even if prose-stable. The LLM didn't trim enough.
     
-    迭代预算用尽但 overflow.ok 还是 false:停止,清晰提示("Step 5.5 跑完 N 轮但仍有 DOM clipping —— 考虑 `--refine-iterations 2`,或在 `poster/outline.html` 里手动 trim 最长那节的文字"),HTML / PNG 留着给用户人工检查。
+    If iteration budget is exhausted but overflow.ok is still false: stop with a clear warning ("Step 5.5 ran N iterations but couldn't clear DOM overflow — consider re-running with `--refine-iterations 2`, or hand-trim the longest section's prose in `poster/outline.html`"). Leave HTML / PNG as-is for the user to inspect.
 
-**为什么这么设计**:上一版让 LLM 看降采样的 PNG 后凭感觉声明收敛。列边缘的细微 clipping 被漏掉。DOM 溢出报告把"clipping 的检测"从 LLM 判断里拿出来 —— 现在 clipping 是测量值,不是猜测。LLM 的活变成专门**修复**报告里标出的东西,不再兼职决定"有没有要修的"。
+**Why this design**: in the previous version, the LLM declared convergence based on a casual visual scan of a downscaled PNG. Subtle clipping at column edges slipped through. The DOM overflow report removes LLM judgment from the *detection* of clipping — clipping is now a measurement, not a guess. The LLM's job becomes specifically *fixing* what the report flags, not also deciding whether there's anything to fix.
 
-**Refinement 提示词**(从 PaperX `poster_refinement_prompt` 移植;新增 overflow JSON 输入 + 强制 pre-flight checklist):
+**Refinement prompt** (ported from PaperX `poster_refinement_prompt`; extended with the overflow JSON input + mandatory pre-flight checklist):
 
 > You are an expert Academic Poster Designer and Web Developer. Your task is to refine an existing HTML poster based on its visual rendering (screenshot), the current HTML code, and a structured DOM overflow report.
 >
@@ -543,18 +544,18 @@ python3 tools/poster.py render poster/poster.html
 > **Screenshot**:
 > *(the contents of poster/poster.png attached via the Read tool — Claude reads it as an image)*
 
-**终止条件**:
-- **收敛(首选)**:overflow.ok=true 且 prose diff < 50 字符。正常退出。
-- **达到迭代上限且 overflow.ok=true**:也算正常退出。
-- **达到迭代上限但 overflow.ok=false**:停止并向用户告警 —— 预算不够清除全部 clipping。建议 `--refine-iterations 2`,或在 `poster/outline.html` 里手动 trim 最长那节的文字。
-- **LLM 输出缺 JSON checklist 块** → 停止,告警("refinement LLM 未产出强制 pre-flight checklist"),HTML 保留原样。
-- **LLM 输出缺 HTML 围栏块** → 停止,告警,HTML 保留原样。
-- **修订后 validate 失败** → 停止,告诉用户具体问题,HTML 保留原样。
-- **LLM 在 overflow.ok=false 的情况下声明 `will_revise: false`** → 告警("refinement LLM 忽略了 DOM clipping 报告"),若预算还有就继续下一轮,否则告警用户。
+**Termination conditions**:
+- **Convergence (preferred)**: overflow.ok=true AND prose diff < 50 chars. Exit normally.
+- **Iteration cap reached with overflow.ok=true**: also exit normally.
+- **Iteration cap reached with overflow.ok=false**: stop and warn the user — the budget wasn't enough to clear all clipping. Suggest `--refine-iterations 2` or hand-trimming the longest section's prose in `poster/outline.html`.
+- **LLM output missing the JSON checklist block** → stop, log warning ("refinement LLM did not produce the mandatory pre-flight checklist"), leave HTML as-is.
+- **LLM output missing the HTML fenced block** → stop, log warning, leave HTML as-is.
+- **Validation fails after revision** → stop, surface validation issues, leave HTML as-is.
+- **LLM declares `will_revise: false` but overflow.ok is false** → log warning ("refinement LLM ignored DOM clipping report"), continue to next iteration if budget remains; otherwise warn user.
 
-### Step 6: 可选 Review LLM 评审(`--review`)
+### Step 6: Optional Review LLM critique (`--review`)
 
-若传入 `--review`,把海报 HTML 发给 Review LLM:
+If `--review` is passed, send the poster HTML to the Review LLM:
 
 ```
 mcp__llm-review__chat
@@ -564,119 +565,119 @@ mcp__llm-review__chat
            (5) Are transitions between sections logical? (6) Would a passerby understand the contribution in 30 seconds?"
   message: |
     ## Poster HTML
-    {poster/poster.html 的完整内容}
+    {full content of poster/poster.html}
 
     ## DAG
-    {poster/dag.json 的完整内容}
+    {full content of poster/dag.json}
 
     Review for: content completeness, text density, figure selection, narrative flow.
     Flag any section that is unclear, off-topic, or missing key context.
 ```
 
-根据反馈编辑 `poster/outline.html` 并重新执行 Step 5。评审-修订循环最多 2 轮。
+Apply revisions by editing `poster/outline.html` and re-running Step 5. Do not loop more than 2 review-revision rounds.
 
-### Step 7: 日志与报告
+### Step 7: Log and report
 
 ```bash
 python3 tools/research_wiki.py log wiki/ \
   "poster | generated poster for '{title}' | {N} sections, {M} figures | reviewed: {yes/no}"
 ```
 
-打印 POSTER_REPORT:
+Print POSTER_REPORT:
 
 ```markdown
-# 海报报告
+# Poster Report
 
-## 来源
-- 论文:{title}
-- 作者:{authors}
-- 论文目录:{paper_dir}
+## Source
+- Paper: {title}
+- Authors: {authors}
+- Paper directory: {paper_dir}
 
-## 生成情况
-- 包含章节:{N}/{可用总数}
-- 配图选择模式:{interactive | auto | none}
-- 嵌入配图:{M}
-- PDF→PNG 转换:{K}
-- Header:venue='{venue}', affiliation={path|none}, conference={path|none}, layout={corners|stacked}
-- Critique-revise(Step 5.5):{k/N 轮已应用 | 第 k/N 轮收敛(无实质修改) | 已跳过(--no-refine) | 已跳过(无可用 headless 浏览器)}
-- Review LLM(Step 6):{已调用 / 已跳过}
+## Generation
+- Sections included: {N}/{total available}
+- Figure selection mode: {interactive | auto | none}
+- Figures embedded: {M}
+- PDF→PNG conversions: {K}
+- Header: venue='{venue}', affiliation={path|none}, conference={path|none}, layout={corners|stacked}
+- Critique-revise (Step 5.5): {k/N iterations applied | converged after k/N (no material changes) | skipped (--no-refine) | skipped (no headless browser)}
+- Review LLM (Step 6): {invoked / skipped}
 
-## 输出
-- poster/poster.html ← 浏览器打开
-- poster/poster.png ← 平面截图,2× CSS(默认 2800×1800)
-- poster/dag.json(中间产物,可被 /slides /pr 复用)
+## Output
+- poster/poster.html ← open in a browser
+- poster/poster.png ← flat screenshot, 2× CSS (default 2800×1800)
+- poster/dag.json (intermediate, reusable by /slides /pr)
 
-## 导出 PDF
-在 Chrome / Edge / Firefox 中打开 `poster/poster.html`,按 **Cmd+P**(macOS)
-或 **Ctrl+P**(Win/Linux) → **另存为 PDF**。推荐打印设置:
-- 方向:**横向**
-- 纸张尺寸:**自定义 1400×900 px**(若不支持自定义,退回 Letter / A3 横向)
-- 边距:**无**
-- 缩放:**100%**(若 100% 溢出,改为"适应页面")
-- 背景图形:**开启**(让蓝色 header 与 section bar 正常渲染)
+## Export to PDF
+Open `poster/poster.html` in Chrome / Edge / Firefox, then **Cmd+P** (macOS)
+or **Ctrl+P** (Win/Linux) → **Save as PDF**. Recommended print settings:
+- Layout: **Landscape**
+- Paper size: **Custom 1400×900 px** (fall back to Letter / A3 Landscape if Custom is unavailable)
+- Margins: **None**
+- Scale: **100%** (or "Fit to page" if 100% overflows)
+- Background graphics: **On** (so the blue header + section bars render)
 
-## 备注
-- {警告项,如缺失图片、选中章节等}
+## Notes
+- {any warnings, e.g. missing figures, sections selected, etc.}
 ```
 
 ## Constraints
 
-- **不修改 `paper/` 源文件**:本 skill 对 LaTeX 源(`main.tex`、`sections/*.tex`、`figures/`、`references.bib`、`math_commands.tex`)只读。`paper/` 下允许写入的只有:(a) `paper/.author_display.txt`(Step 0 作者缓存);(b) `paper/figures/_tikz_<sec>_<label>.png`(Step 1 的 TikZ 光栅化缓存,见 Step 1 "TikZ 图")。`_tikz_` 前缀标识它们是从 `paper/sections/*.tex` 派生的产物;删除安全(下次运行重建)。其它输出全部写到 `poster/`。
-- **不创建 wiki 实体或图边**:海报是展示产物,不进知识图。
-- **复用已编译图**:不重新执行 `paper/figures/plot_*.py`,用户已运行过 `/paper-compile`。
-- **遵循 `--anonymous`**:开启时,作者在 `dag.json` 与海报 header 中都写为 "Anonymous"。
-- **章节数上限**:硬上限 6 个章节,保证 1400×900 下可读。章节按 Step 2.5 的优先级表选;论文章节数超过上限时,Related Work / Background / Appendix 优先被丢弃。
-- **40 词摘要**:按 poster_outline_prompt,每章正文段在加过渡句前不超过 40 词。
-- **强制去 AI 风格化**:按 `shared-references/academic-writing.md`。避开 "In this work" / "We propose" / "Our approach" 等签名开头,把 "leverage" 换成 "use","delve" 换成 "examine"。
-- **严格模板注入**:`tools/poster.py build` 仅注入到 `<div class="flow" id="flow">...</div>` 之间,不修改模板的 CSS 与 fit 算法。
-- **配图选择默认交互**:未传入 `--auto-figures` 也未传入 `--no-figures` 时,跑 Step 2.5 manifest + 询问流程。这些 flag 按 CLAUDE.md 规则 5 归用户所有 —— 不要替用户推断;不确定时,询问用户。
-- **wide 图无特殊布局**:任何图都在 `<section>` 内 inline 渲染。visual 节点上的 `wide` 字段仅作信息提示 —— 用来在 manifest 中显示 ⚠ 标记,让用户选别的图或跳过过宽/过高的图。未来的图像生成 skill 预期会在源头解决比例问题,产出适配海报的图。
+- **Do not modify `paper/` source files**: this skill is read-only over LaTeX source (`main.tex`, `sections/*.tex`, `figures/`, `references.bib`, `math_commands.tex`). The only allowed writes to `paper/` are: (a) `paper/.author_display.txt` — Step 0 author cache; (b) `paper/figures/_tikz_<sec>_<label>.png` — rasterized TikZ figure cache (Step 1, see "TikZ figures" in Step 1's preservation list). The `_tikz_` prefix marks these as derived from `paper/sections/*.tex`; they're safe to delete (next run rebuilds). All other output goes to `poster/`.
+- **Do not create wiki entities or graph edges**: the poster is a presentation artifact.
+- **Reuse compiled figures**: do not regenerate figures from `paper/figures/plot_*.py`. The user already ran `/paper-compile`.
+- **Respect `--anonymous`**: when set, authors become "Anonymous" in both `dag.json` and the poster header.
+- **Max section limit**: hard-coded at 6 sections to keep the poster legible at 1400×900. Sections are selected from the priority list in Step 2.5; Related Work / Background / Appendix get dropped first when papers have more sections than the cap.
+- **40-word summary**: per the poster_outline_prompt, each section paragraph stays ≤ 40 words before transitions are added.
+- **De-AI polish is mandatory**: per `shared-references/academic-writing.md`. Avoid signature openings ("In this work", "We propose", "Our approach"), replace inflated verbs ("leverage" → "use", "delve" → "examine").
+- **Strict template injection**: `tools/poster.py build` only injects between `<div class="flow" id="flow">...</div>`; do not edit the template's CSS or JavaScript fit algorithm.
+- **Figure selection is interactive by default**: omitting both `--auto-figures` and `--no-figures` runs the Step 2.5 manifest + question flow. The flags are user-owned per CLAUDE.md rule 5 — do not infer them; ask if unsure which mode to use.
+- **No special layout for wide figures**: every figure renders inline within its `<section>`. The `wide` flag on visual nodes is informational only — used to surface the ⚠ marker in the manifest so the user can pick an alternative or skip a cramped figure. A future figure-generation skill is expected to solve the aspect-ratio problem upstream by producing poster-fit figures.
 
 ## Error Handling
 
-- **`paper/main.tex` 不存在**:报错并提示 "先运行 /paper-draft 生成论文"。
-- **`\input{sections/...}` 未找到章节**:列出搜索过的路径,提示检查 `main.tex` 是否使用了非标准的 section include。
-- **没有图片引用**:文本-only 章节继续渲染;在 POSTER_REPORT 中给出警告。
-- **`pdftoppm` 未安装**:PDF 图无法转 PNG;提示 `brew install poppler`(macOS)或 `apt install poppler-utils`(Linux)。海报仍能渲染但这些图会显示为 broken img。
-- **嵌套图路径**(如 `paper/figures/exp1/foo.pdf`):桥接工具会扁平化为 `images/foo.png`,且图片解析只在 `paper/figures/` 顶层查找。若多个图片跨子目录同名,后者会覆盖前者。当前仅支持扁平的 `paper/figures/` 布局。
-- **`PIL`/Pillow 未安装**:图片分辨率无法计算,`dag.json` 的 visuals `resolution` 为空;poster_outline_prompt 的 "最高分辨率优先" 规则失效,Claude 按章节顺序选图。提示 `pip install Pillow`。
-- **validate 失败**:把所有问题写入 stderr,不删除已有输出。用户改正 outline 后从 Step 5 继续。
-- **`render` 找不到可用浏览器**:打印对应平台的安装提示并继续(推荐 Chrome / Edge / Chromium;Firefox 作为兜底也可)。HTML 海报仍可用,只是少了 PNG。Step 5.5 critique-revise 也会跳过(无截图可参考)。Safari 不支持(没有 headless CLI)。
-- **退化到 Firefox**:`render` 会向 stderr 打印警告(不支持 HiDPI 缩放,layout 可能尚未收敛)。输出仍能用,但比 Chrome/Edge 质量低。建议用户装一个 Chromium 系浏览器以获得最佳效果。
-- **Refinement 输出格式异常(Step 5.5)**:若 LLM 没返回包含合法 `<section>` 与 `<h1 class="title">` 的 ```` ```html ```` 围栏,停止迭代,HTML 保留不变,告警提示。**不要**用残缺输出覆盖 HTML。
-- **Review LLM 不可用**:跳过 Step 6,在报告中标注,继续。
+- **`paper/main.tex` not found**: error with "Run /paper-draft first to generate the paper."
+- **No sections found in `\input{sections/...}`**: error with the list of files searched; suggest checking `main.tex` for non-standard section includes.
+- **No figures referenced**: continue with text-only sections; warn in POSTER_REPORT.
+- **`pdftoppm` not installed**: PDF figures fail to convert; warn and suggest `brew install poppler` (macOS) or `apt install poppler-utils` (Linux). The poster will still render but with broken image refs for those figures.
+- **Nested figure paths** (`paper/figures/exp1/foo.pdf`): the bridge currently flattens to `images/foo.png` and the figure resolver looks only in `paper/figures/`. If two figures across nested dirs share the same basename, the second one wins. Flat `paper/figures/` is the supported layout for now.
+- **`PIL`/Pillow not installed**: image resolutions cannot be computed; `dag.json` visuals have empty `resolution`. The poster_outline_prompt loses its "highest-resolution wins" tiebreaker — Claude picks by section order instead. Suggest `pip install Pillow`.
+- **Validation fails**: print all issues to stderr; do not delete the partial output. User can fix the outline and re-run from Step 5.
+- **No supported browser found for `render`**: print install instructions per platform (Chrome / Edge / Chromium recommended; Firefox accepted as fallback) and continue. The HTML poster is still usable; only the PNG is missing. Step 5.5 critique-revise also skips (no screenshot → nothing to critique). Safari is not supported (no headless CLI).
+- **Firefox fallback in use**: `render` prints warnings to stderr (no HiDPI scale, layout may not be fully converged). Output is functional but lower quality than Chrome/Edge. Suggest the user install a Chromium-based browser for best results.
+- **Refinement output malformed (Step 5.5)**: if the LLM does not return a fenced ```` ```html ```` block containing a valid `<section>` + `<h1 class="title">`, stop the iteration loop, leave the HTML unchanged, and surface a warning. Do NOT overwrite the HTML with broken output.
+- **Review LLM unreachable**: skip Step 6, note in report, continue.
 
 ## Dependencies
 
-### Tools(via Bash)
-- `python3 tools/wiki2dag.py build --paper-dir <dir> --output <path> [--anonymous] [--citations]` —— 构建 dag.json;`--citations` 选择性恢复内联 `[N]` 标记(默认丢弃,海报上不渲染参考文献列表)
-- `python3 tools/poster.py build --template <path> --outline <path> --output <path>` —— 注入 outline
-- `python3 tools/poster.py inject-title --dag <path> <poster.html> [--anonymous] [--authors STR]` —— 写入标题/作者;`--authors` 覆盖 dag.json 中的作者字段,适用于源论文已匿名的情况
-- `python3 tools/poster.py inject-header <poster.html> [--venue STR] [--affiliation-logo PATH] [--conference-logo PATH] [--layout corners|stacked]` —— venue 文本 + 可选 logo
-- `python3 tools/poster.py inject-figures --dag <path> --paper-dir <path> --poster-dir <path>` —— 复制/转换图片
-- `python3 tools/poster.py validate <poster.html>` —— 健康检查
-- `python3 tools/poster.py render <poster.html> [--scale 1|2|3] [--output PATH]` —— HTML → PNG,走 headless 浏览器(优先 Chrome / Edge / Chromium,Firefox 兜底)
-- `python3 tools/poster.py check-overflow <poster.html> [--output PATH]` —— 用 Playwright 查询渲染后的 DOM,产出 poster.overflow.json。Step 5.5 用它做 ground truth。
-- `python3 tools/research_wiki.py log wiki/ "<message>"` —— 追加日志
-- `pdflatex`(TeX Live)—— Step 1 的 TikZ 光栅化必需;`brew install --cask mactex` / `apt install texlive-full` 安装。需要 `tikz`、`pgfplots`、`standalone`、`booktabs`、`multirow`、`array`、`xcolor`、`amsmath`、`amssymb` 等包。若未安装,figure env 中没有 `\includegraphics{}` 的 TikZ 图会被 stderr 告警 + 丢弃,其余构建继续。
-- `pdftoppm`(poppler)—— PDF → PNG @ 200 DPI(用于论文 PDF 图和 TikZ 光栅化产物)
-- `pdfinfo`(poppler)—— PDF 页面尺寸,用于 resolution
-- Playwright + Chromium(推荐,可选)—— `pip install playwright && python -m playwright install chromium`。启用事件驱动等待(字体/图片/fit 稳定)。若未安装会自动兜底。
-- 系统 headless 浏览器(兜底)—— 自动探测顺序:Google Chrome → Microsoft Edge → Chromium → Firefox。Chrome/Edge/Chromium 完全等价;Firefox 只能在 1× 尺度渲染且无 sync-wait。Safari 不支持(无 headless CLI)。
+### Tools (via Bash)
+- `python3 tools/wiki2dag.py build --paper-dir <dir> --output <path> [--anonymous] [--citations]` — build dag.json; `--citations` opts back in to inline `[N]` markers (default: dropped, no reference list on the poster)
+- `python3 tools/poster.py build --template <path> --outline <path> --output <path>` — inject outline
+- `python3 tools/poster.py inject-title --dag <path> <poster.html> [--anonymous] [--authors STR]` — set title/authors; `--authors` overrides dag.json's author field when the paper was anonymized at the source
+- `python3 tools/poster.py inject-header <poster.html> [--venue STR] [--affiliation-logo PATH] [--conference-logo PATH] [--layout corners|stacked]` — venue text + optional logos
+- `python3 tools/poster.py inject-figures --dag <path> --paper-dir <path> --poster-dir <path>` — figure copy/convert
+- `python3 tools/poster.py validate <poster.html>` — sanity checks
+- `python3 tools/poster.py render <poster.html> [--scale 1|2|3] [--output PATH]` — HTML → PNG via headless browser (Chrome / Edge / Chromium preferred, Firefox fallback)
+- `python3 tools/poster.py check-overflow <poster.html> [--output PATH]` — Playwright DOM query for clipped content; emits poster.overflow.json. Used as ground truth by Step 5.5.
+- `python3 tools/research_wiki.py log wiki/ "<message>"` — append log
+- `pdflatex` (TeX Live) — required for TikZ figure rasterization (Step 1); install via `brew install --cask mactex` / `apt install texlive-full`. With `tikz`, `pgfplots`, `standalone`, `booktabs`, `multirow`, `array`, `xcolor`, `amsmath`, `amssymb` packages. If absent, TikZ figures inside `\begin{figure}` envs without `\includegraphics{}` are dropped with a stderr warning; the rest of the build continues.
+- `pdftoppm` (poppler) — PDF → PNG conversion at 200 DPI (used both for paper figures and for rasterized TikZ)
+- `pdfinfo` (poppler) — PDF page-size for resolution
+- Playwright + Chromium (preferred, optional) — `pip install playwright && python -m playwright install chromium`. Enables event-driven waits (fonts/images/fit-stable). Falls back gracefully if missing.
+- Headless system browser (fallback) — auto-detected in this order: Google Chrome → Microsoft Edge → Chromium → Firefox. Chrome/Edge/Chromium are equivalent; Firefox renders at 1× scale only and without sync-wait. Safari is not supported (no headless CLI).
 
 ### MCP Servers
-- `mcp__llm-review__chat` —— 可选的跨模型评审(`--review`)
+- `mcp__llm-review__chat` — optional cross-model review (`--review`)
 
 ### Claude Code Native
-- `Read` —— 读 .tex / dag.json / outline.html / poster.png(多模态)
-- `Write` —— 写 outline.html
-- `Edit` —— 给 outline.html 注入过渡句,或在 Step 5.5 写回修订后的 HTML
-- `Bash` —— 调用 wiki2dag / poster / research_wiki
+- `Read` — read .tex, dag.json, outline.html
+- `Write` — write outline.html
+- `Edit` — apply transition sentences to outline.html
+- `Bash` — invoke wiki2dag, poster, research_wiki tools
 
 ### Shared References
-- `.claude/skills/shared-references/academic-writing.md` —— 去 AI 风格化规则
-- `.claude/skills/shared-references/cross-model-review.md` —— Review LLM 协议(`--review` 时)
+- `.claude/skills/shared-references/academic-writing.md` — de-AI polish standards
+- `.claude/skills/shared-references/cross-model-review.md` — Review LLM protocol (when `--review`)
 
 ### Called by
-- 用户手动调用
-- 未来:`/research` Stage 5b(`/paper-compile` 之后)
+- Manual user invocation
+- Future: `/research` Stage 5b (post paper-compile)

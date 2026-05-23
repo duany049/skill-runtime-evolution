@@ -1,78 +1,78 @@
 ---
-description: 扫描全 wiki 发现健康问题，生成分级修复建议报告（覆盖 runtime/schema/entities.yaml 中全部 entity 类型 + graph 一致性）
+description: Scan the full wiki to detect health issues and produce a tiered fix-recommendation report (covers all entity types in runtime/schema/entities.yaml + graph consistency)
 ---
 
 # /check
 
-> 扫描全 wiki，发现结构、链接、字段、graph 的健康问题，生成分级修复建议。
-> 覆盖 `runtime/schema/entities.yaml` 中声明的所有 entity 类型（papers, concepts, topics, people, ideas, experiments, methods, Summary, foundations），以及 graph edge / citation 一致性。重点检查包括：idea novelty-score 合理性、idea 失败原因完整性、experiment `linked_idea` 有效性。
+> Scans the full wiki to detect structural, link, field, and graph health issues, and generates a tiered fix-recommendation report.
+> Covers every entity type declared in `runtime/schema/entities.yaml` (papers, concepts, topics, people, ideas, experiments, methods, Summary, foundations), plus graph edge / citation consistency. Highlights include: idea novelty-score plausibility, idea failure-reason completeness, experiment `linked_idea` validity.
 
 ## Inputs
 
-- 全 wiki 目录（默认 `wiki/`）
-- 可选：`--json` 标志（通过 tools/lint.py 输出 JSON 格式）
-- 可选：`--fix` 标志（自动修复确定性问题）
-- 可选：`--fix --dry-run`（预览修复但不执行）
-- 可选：`--suggest` 标志（显示非自动修复问题的建议）
+- Full wiki directory (default `wiki/`)
+- Optional: `--json` flag (output JSON format via `tools/lint.py`)
+- Optional: `--fix` flag (auto-fix deterministic issues)
+- Optional: `--fix --dry-run` (preview fixes without applying them)
+- Optional: `--suggest` flag (show recommendations for issues that cannot be auto-fixed)
 
 ## Outputs
 
-- Lint report（直接报告给用户）
-- 可选写入文件：`wiki/outputs/lint-report-{date}.md`
+- Lint report (reported directly to the user)
+- Optional file write: `wiki/outputs/lint-report-{date}.md`
 
 ## Wiki Interaction
 
 ### Reads
-- `wiki/papers/*.md` — 论文页面字段和链接
-- `wiki/concepts/*.md` — 概念页面字段和链接
-- `wiki/topics/*.md` — 方向页面字段和链接
-- `wiki/people/*.md` — 人物页面字段和链接
-- `wiki/ideas/*.md` — idea status、novelty_score、failure_reason、origin_gaps、target_venue
-- `wiki/experiments/*.md` — experiment status、linked_idea、outcome
-- `wiki/methods/*.md` — method type、source_papers、parent/child 链
-- `wiki/Summary/*.md` — 综述页面字段
-- `wiki/foundations/*.md` — foundations(终端 — 仅检查入链)
-- `wiki/graph/edges.jsonl` — semantic graph edge 一致性检查
-- `wiki/graph/citations.jsonl` — bibliographic citation 一致性检查
-- `wiki/index.md` — 对照页面完整性
+- `wiki/papers/*.md` — paper page fields and links
+- `wiki/concepts/*.md` — concept page fields and links
+- `wiki/topics/*.md` — topic page fields and links
+- `wiki/people/*.md` — people page fields and links
+- `wiki/ideas/*.md` — idea status, novelty_score, failure_reason, origin_gaps, target_venue
+- `wiki/experiments/*.md` — experiment status, linked_idea, outcome
+- `wiki/methods/*.md` — method type, source_papers, parent/child chains
+- `wiki/Summary/*.md` — survey page fields
+- `wiki/foundations/*.md` — foundations (terminal — incoming-link checks only)
+- `wiki/graph/edges.jsonl` — semantic graph edge consistency check
+- `wiki/graph/citations.jsonl` — bibliographic citation consistency check
+- `wiki/index.md` — cross-check page completeness
 
 ### Writes
-- 不直接修改 wiki 内容（仅报告，除非指定 `--fix`）
-- `wiki/log.md` — 通过 `tools/research_wiki.py log` 记录 lint 结果摘要
+- Does not directly modify wiki content (reports only, unless `--fix` is set)
+- `wiki/log.md` — records lint result summary via `tools/research_wiki.py log`
 
 ## Workflow
 
-**前置**：确认工作目录为 wiki 项目根（包含 `wiki/`、`raw/`、`tools/` 的目录）。
-设 `WIKI_ROOT=wiki/`。
+**Pre-conditions**: confirm the working directory is the wiki project root (directory containing `wiki/`, `raw/`, `tools/`).
+Set `WIKI_ROOT=wiki/`.
 
-### Step 1: 运行自动化 lint 工具
+### Step 1: Run the Automated Lint Tool
 
-**默认模式（只报告）**：
+**Default mode (report only)**:
 ```bash
 python3 tools/lint.py --wiki-dir wiki/ --json
 ```
 
-**自动修复模式**（用户指定 `--fix` 时）：
+**Auto-fix mode** (when user specifies `--fix`):
 ```bash
 python3 tools/lint.py --wiki-dir wiki/ --fix --json
 ```
-自动修复确定性问题（xref 反向链接补全、缺失字段填默认值），输出修复报告。
+Auto-fixes deterministic issues (xref reverse-link completion, missing fields filled with default values) and outputs a fix report.
 
-**预览模式**（用户指定 `--fix --dry-run` 时）：
+**Preview mode** (when user specifies `--fix --dry-run`):
 ```bash
 python3 tools/lint.py --wiki-dir wiki/ --fix --dry-run --json
 ```
-预览会修复什么，不实际执行。
+Previews what would be fixed without applying any changes.
 
-解析 JSON 输出，获取所有自动检测到的 issues（及修复结果）。
+Parse the JSON output to obtain all automatically detected issues (and fix results).
 
-### Step 2: 结构完整性（自动化覆盖）
+### Step 2: Structural Completeness (automated coverage)
 
-自动化工具检查以下项目：
+The automated tool checks:
 
-1. **Broken wikilinks**：`[[slug]]` 目标文件不存在
-2. **Orphan pages**：无任何入链的页面
-3. **必填字段缺失**（按 `runtime/schema/entities.yaml` 中声明的每种 entity）。权威源：`runtime.loader.REQUIRED_FIELDS`。当前集合：
+1. **Broken wikilinks**: `[[slug]]` target file does not exist
+2. **Orphan pages**: pages with no incoming links
+3. **Missing required fields** (per entity declared in `runtime/schema/entities.yaml`). Authoritative source: `runtime.loader.REQUIRED_FIELDS`. Current set:
    - papers: title, slug, tags, importance
    - concepts: title, tags, maturity, key_papers
    - topics: title, tags
@@ -83,9 +83,9 @@ python3 tools/lint.py --wiki-dir wiki/ --fix --dry-run --json
    - experiments: title, slug, status, linked_idea, hypothesis, tags
    - foundations: title, slug, domain, status
 
-### Step 3: 字段值验证（自动化覆盖）
+### Step 3: Field Value Validation (automated coverage)
 
-1. **Enum 值检查**（来源：`runtime.loader.VALID_VALUES`）：
+1. **Enum value checks** (sourced from `runtime.loader.VALID_VALUES`):
    - papers.importance ∈ {1,2,3,4,5}
    - concepts.maturity ∈ {stable, active, emerging, deprecated}
    - ideas.status ∈ {proposed, in_progress, tested, validated, failed}
@@ -94,98 +94,98 @@ python3 tools/lint.py --wiki-dir wiki/ --fix --dry-run --json
    - experiments.outcome ∈ {succeeded, failed, inconclusive}
    - methods.type ∈ {architecture, training, inference, evaluation, data, benchmark, system, optimization, prompting, protocol, other}
    - foundations.status ∈ {mainstream, historical}
-2. **Idea novelty_score**（若存在）∈ [1, 5]（整数）
-3. **Idea failure_reason**：status=failed 时必须非空（anti-repetition memory）
-4. **Experiment linked_idea**：引用的 idea 页面必须存在
+2. **Idea novelty_score** (when present) ∈ [1, 5] (integer)
+3. **Idea failure_reason**: must be non-empty when status=failed (anti-repetition memory)
+4. **Experiment linked_idea**: the referenced idea page must exist
 
-### Step 4: Cross Reference 对称性（自动化覆盖）
+### Step 4: Cross Reference Symmetry (automated coverage)
 
-检查 `runtime/schema/xref.yaml` 中定义的所有双向链接规则：
+Check all bidirectional link rules defined in `runtime/schema/xref.yaml`:
 
-| 正向链接 | 检查的反向链接 |
-|----------|---------------|
-| `papers ## Related → concepts` | `concepts.key_papers` 含 paper slug |
-| `papers wikilink → people` | `people ## Recent work` 含 paper slug |
-| `topics.key_people → people` | `people ## Research areas` 含 topic slug |
-| `concepts.key_papers → papers` | `papers ## Related` 含 concept slug |
-| `ideas.origin_gaps → concepts` | `concepts.linked_ideas` 含 idea slug |
-| `ideas.origin_gaps → topics` | `topics.linked_ideas` 含 idea slug |
-| `experiments.linked_idea → ideas` | `ideas.linked_experiments` 含 experiment slug |
-| `methods.source_papers → papers` | `papers ## Related` 含 method slug |
-| `methods.parent_methods ↔ methods.child_methods` | 互逆 |
+| Forward link | Reverse link checked |
+|--------------|---------------------|
+| `papers ## Related → concepts` | `concepts.key_papers` contains paper slug |
+| `papers wikilink → people` | `people ## Recent work` contains paper slug |
+| `topics.key_people → people` | `people ## Research areas` contains topic slug |
+| `concepts.key_papers → papers` | `papers ## Related` contains concept slug |
+| `ideas.origin_gaps → concepts` | `concepts.linked_ideas` contains idea slug |
+| `ideas.origin_gaps → topics` | `topics.linked_ideas` contains idea slug |
+| `experiments.linked_idea → ideas` | `ideas.linked_experiments` contains experiment slug |
+| `methods.source_papers → papers` | `papers ## Related` contains method slug |
+| `methods.parent_methods ↔ methods.child_methods` | reciprocity |
 
-### Step 5: Graph Edge 一致性（自动化覆盖）
+### Step 5: Graph Edge Consistency (automated coverage)
 
-1. **JSON 格式有效性**：每行都是合法 JSON
-2. **必填字段**：每条 edge 有 from, to, type
-3. **Edge type 合法性**：semantic edges 使用当前 endpoint-aware type set；旧 paper-paper / paper-concept 类型给出迁移 warning
-4. **Edge confidence**：`/ingest` 写出的 paper-paper 与 paper-concept semantic edges 使用 `confidence: high|medium|low`
-5. **Citation layer**：`graph/citations.jsonl` 使用 `type: cites`、合法 source/date、paper endpoints，且不写 confidence 字段
-6. **Dangling nodes**：from/to 引用的 wiki 页面必须存在
+1. **JSON format validity**: every line is valid JSON
+2. **Required fields**: each edge has from, to, type
+3. **Edge type validity**: semantic edges use the current endpoint-aware type sets; legacy paper-paper / paper-concept types produce migration warnings
+4. **Edge confidence**: `/ingest` paper-paper and paper-concept semantic edges use `confidence: high|medium|low`
+5. **Citation layer**: `graph/citations.jsonl` rows use `type: cites`, valid source/date, paper endpoints, and no confidence field
+6. **Dangling nodes**: wiki pages referenced by from/to must exist
 
-### Step 6: 内容质量（LLM 辅助）
+### Step 6: Content Quality (LLM-assisted)
 
-自动化工具可检测的：
-1. importance=5 的论文无 concept 页引用
-2. maturity=stable 的 concept 只有 1 篇 key_paper
-3. topics 的 `## Open problems` 章节为空（同样标记空的 `### Known gaps` / `### Methodological gaps` 子章节）
+Items detectable by the automated tool:
+1. Papers with importance=5 have no concept page referencing them
+2. Concepts with maturity=stable have only 1 key_paper
+3. Topics have empty `## Open problems` sections (also flag empty `### Known gaps` / `### Methodological gaps` subsections)
 
-LLM 额外判断（需要阅读内容）：
-1. **Concept 近似重复检测**：扫描所有 concept 页面的 title + aliases，判断是否有语义相同/高度相似的概念对（如 "attention mechanism" 和 "self-attention"）。对疑似重复对输出合并建议。
-2. **Method 近似重复检测**：在 `wiki/methods/*.md` 上做相同检测，对比 `name` + `tags` + `## Mechanism` 摘要。
-3. 矛盾表述检测（不同页面对同一事实的描述不一致）
-4. SOTA 记录超过 6 个月未更新
-5. people 的 `## Recent work` 超过 6 个月未更新
-6. Idea novelty_score 与 `## Novelty argument` 强度不匹配（低分 + 论证扎实，或高分 + 论证薄弱）
-7. 高 priority idea 长期停留在 proposed 状态且无 `linked_experiments`
+Additional LLM judgments (require reading content):
+1. **Concept near-duplicate detection**: scan all concept page titles + aliases and assess whether any pairs are semantically identical or highly similar (e.g. "attention mechanism" and "self-attention"). Output merge recommendations for suspected duplicates.
+2. **Method near-duplicate detection**: same exercise across `wiki/methods/*.md`, comparing `name` + `tags` + `## Mechanism` summaries.
+3. Contradictory statement detection (inconsistent descriptions of the same fact across different pages)
+4. SOTA records not updated in over 6 months
+5. People `## Recent work` not updated in over 6 months
+6. Idea novelty_score inconsistent with the strength of its `## Novelty argument` (low score + bold argument, or high score + thin argument)
+7. High-priority idea stuck in proposed status for a long time without `linked_experiments`
 
-### Step 7: 生成报告
+### Step 7: Generate Report
 
-按优先级排序输出：
+Output sorted by priority:
 
 ```
 ## Lint Report — YYYY-MM-DD
 
 **Summary**: N 🔴, M 🟡, K 🔵
 
-### 🔴 需立即修复
+### 🔴 Fix Immediately
 1. [file] — {issue description}
 
-### 🟡 建议修复
+### 🟡 Recommended Fixes
 1. [file] — {issue description}
 
-### 🔵 可选优化
+### 🔵 Optional Improvements
 1. [file] — {issue description}
 ```
 
-分类标准：
-- **🔴 需立即修复**：broken links、missing required fields、invalid enum values、failed idea without failure_reason、invalid JSON in edges、novelty_score 越界
-- **🟡 建议修复**：xref asymmetry、dangling graph edges、broken `linked_idea` 引用、unknown edge types
-- **🔵 可选优化**：orphan pages、quality suggestions、empty sections
+Classification:
+- **🔴 Fix Immediately**: broken links, missing required fields, invalid enum values, failed idea without failure_reason, invalid JSON in edges, novelty_score out of range
+- **🟡 Recommended Fixes**: xref asymmetry, dangling graph edges, broken `linked_idea` references, unknown edge types
+- **🔵 Optional Improvements**: orphan pages, quality suggestions, empty sections
 
-记录日志：
+Append log:
 ```bash
 python3 tools/research_wiki.py log wiki/ "check | report: N 🔴, M 🟡, K 🔵"
 ```
 
 ## Constraints
 
-- **默认只报告**：不带 `--fix` 时只报告不修复
-- **`--fix` 仅修复确定性问题**：xref 反向链接补全、缺失字段填安全默认值。不确定的问题输出建议（`--suggest`），由用户手动批准
-- **raw/ 只读**：不修改 `raw/` 下的文件
-- **graph/ 只读**：lint 不修改 graph 文件，仅检查一致性
-- **LLM 判断标注来源**：自动化检查和 LLM 判断在报告中明确区分
-- **幂等**：多次运行产生相同结果（除非 wiki 内容变化）
+- **Report-only by default**: without `--fix`, only reports, no modifications
+- **`--fix` only repairs deterministic issues**: xref reverse-link completion, missing fields filled with safe default values. Non-deterministic issues output recommendations (`--suggest`) for user approval
+- **raw/ is read-only**: do not modify files under `raw/`
+- **graph/ is read-only**: lint does not modify graph files, checks consistency only
+- **LLM judgments labeled by source**: automated checks and LLM judgments are clearly distinguished in the report
+- **Idempotent**: running multiple times produces the same result (unless wiki content changes)
 
 ## Error Handling
 
-- **wiki/ 不存在**：报错并建议运行 `/init`
-- **graph 文件不存在**：跳过缺失 graph 文件的检查，在报告中注明
-- **部分目录缺失**：跳过缺失目录的检查，在报告中列出缺失目录
+- **wiki/ does not exist**: report error and suggest running `/init`
+- **graph files do not exist**: skip the missing graph-file checks, note in report
+- **Partial directory missing**: skip checks for missing directories, list missing directories in report
 
 ## Dependencies
 
 ### Tools（via Bash）
-- `python3 tools/lint.py --wiki-dir wiki/ [--json] [--fix] [--dry-run] [--suggest]` — 自动化结构检查 + 修复（核心依赖）
-- `python3 tools/research_wiki.py log wiki/ "<message>"` — 追加日志
-- `python3 tools/research_wiki.py stats wiki/` — 获取统计信息（可选，用于报告）
+- `python3 tools/lint.py --wiki-dir wiki/ [--json] [--fix] [--dry-run] [--suggest]` — automated structural check + fix (core dependency)
+- `python3 tools/research_wiki.py log wiki/ "<message>"` — append log
+- `python3 tools/research_wiki.py stats wiki/` — get statistics (optional, for the report)
