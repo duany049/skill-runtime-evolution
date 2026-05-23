@@ -1,0 +1,236 @@
+[
+  {
+    "rank": 1,
+    "candidate_id": "local:papers-2604-17308-skillflow-pdf",
+    "arxiv_id": "2604.17308",
+    "title": "SkillFlow: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2604-17308-skillflow-pdf-arxiv-src",
+    "branch": "init-main-1-2604-17308",
+    "wt_path": "../.worktrees/init-main-1-2604-17308"
+  },
+  {
+    "rank": 2,
+    "candidate_id": "local:papers-2505-17673-bottom-up-agent",
+    "arxiv_id": "2505.17673",
+    "title": "Rethinking Agent Design: From Top-Down Workflows to Bottom-Up Skill Evolution",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2505-17673-bottom-up-agent-arxiv-src",
+    "branch": "init-main-2-2505-17673",
+    "wt_path": "../.worktrees/init-main-2-2505-17673"
+  },
+  {
+    "rank": 3,
+    "candidate_id": "local:papers-2604-04323-how-well-skills",
+    "arxiv_id": "2604.04323",
+    "title": "How Well Do Agentic Skills Work in the Wild: Benchmarking LLM Skill Usage in Realistic Settings",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2604-04323-how-well-skills-arxiv-src",
+    "branch": "init-main-3-2604-04323",
+    "wt_path": "../.worktrees/init-main-3-2604-04323"
+  },
+  {
+    "rank": 4,
+    "candidate_id": "local:papers-2604-20087-skilllearnbench-pdf",
+    "arxiv_id": "2604.20087",
+    "title": "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2604-20087-skilllearnbench-pdf-arxiv-src",
+    "branch": "init-main-4-2604-20087",
+    "wt_path": "../.worktrees/init-main-4-2604-20087"
+  },
+  {
+    "rank": 5,
+    "candidate_id": "local:papers-2603-07978-osexpert-pdf",
+    "arxiv_id": "2603.07978",
+    "title": "OSExpert: Computer-Use Agents Learning Professional Skills via Exploration",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2603-07978-osexpert-pdf-arxiv-src",
+    "branch": "init-main-5-2603-07978",
+    "wt_path": "../.worktrees/init-main-5-2603-07978"
+  },
+  {
+    "rank": 6,
+    "candidate_id": "local:papers-2602-02474-memskill-pdf",
+    "arxiv_id": "2602.02474",
+    "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2602-02474-memskill-pdf-arxiv-src",
+    "branch": "init-main-6-2602-02474",
+    "wt_path": "../.worktrees/init-main-6-2602-02474"
+  },
+  {
+    "rank": 7,
+    "candidate_id": "local:papers-2311-05997-jarvis-pdf",
+    "arxiv_id": "2311.05997",
+    "title": "JARVIS-1: Open-world Multi-task Agents with Memory-Augmented Multimodal Language Models",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2311-05997-jarvis-pdf-arxiv-src",
+    "branch": "init-main-7-2311-05997",
+    "wt_path": "../.worktrees/init-main-7-2311-05997"
+  },
+  {
+    "rank": 8,
+    "candidate_id": "local:papers-2512-23880-cascade-pdf",
+    "arxiv_id": "2512.23880",
+    "title": "CASCADE: Cumulative Agentic Skill Creation through Autonomous Development and Evolution",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2512-23880-cascade-pdf-arxiv-src",
+    "branch": "init-main-8-2512-23880",
+    "wt_path": "../.worktrees/init-main-8-2512-23880"
+  },
+  {
+    "rank": 9,
+    "candidate_id": "local:papers-2409-07429-awm-pdf",
+    "arxiv_id": "2409.07429",
+    "title": "Agent Workflow Memory",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2409-07429-awm-pdf-arxiv-src",
+    "branch": "init-main-9-2409-07429",
+    "wt_path": "../.worktrees/init-main-9-2409-07429"
+  },
+  {
+    "rank": 10,
+    "candidate_id": "local:papers-2506-06698-cer-pdf",
+    "arxiv_id": "2506.06698",
+    "title": "Contextual Experience Replay for Self-Improvement of Language Agents",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2506-06698-cer-pdf-arxiv-src",
+    "branch": "init-main-10-2506-06698",
+    "wt_path": "../.worktrees/init-main-10-2506-06698"
+  },
+  {
+    "rank": 11,
+    "candidate_id": "local:papers-2510-04851-legomem-pdf",
+    "arxiv_id": "2510.04851",
+    "title": "LEGOMem: Modular Procedural Memory for Multi-agent LLM Systems for Workflow Automation",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2510-04851-legomem-pdf-arxiv-src",
+    "branch": "init-main-11-2510-04851",
+    "wt_path": "../.worktrees/init-main-11-2510-04851"
+  },
+  {
+    "rank": 12,
+    "candidate_id": "local:papers-2601-01885-agentic-memory-pdf",
+    "arxiv_id": "2601.01885",
+    "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2601-01885-agentic-memory-pdf-arxiv-src",
+    "branch": "init-main-12-2601-01885",
+    "wt_path": "../.worktrees/init-main-12-2601-01885"
+  },
+  {
+    "rank": 13,
+    "candidate_id": "local:papers-2601-08323-atommem-pdf",
+    "arxiv_id": "2601.08323",
+    "title": "AtomMem: Learnable Dynamic Agentic Memory with Atomic Memory Operation",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2601-08323-atommem-pdf-arxiv-src",
+    "branch": "init-main-13-2601-08323",
+    "wt_path": "../.worktrees/init-main-13-2601-08323"
+  },
+  {
+    "rank": 14,
+    "candidate_id": "local:papers-2601-18204-memweaver-pdf",
+    "arxiv_id": "2601.18204",
+    "title": "MemWeaver: Weaving Hybrid Memories for Traceable Long-Horizon Agentic Reasoning",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2601-18204-memweaver-pdf-arxiv-src",
+    "branch": "init-main-14-2601-18204",
+    "wt_path": "../.worktrees/init-main-14-2601-18204"
+  },
+  {
+    "rank": 15,
+    "candidate_id": "local:papers-2602-05832-ui-mem-pdf",
+    "arxiv_id": "2602.05832",
+    "title": "UI-Mem: Self-Evolving Experience Memory for Online Reinforcement Learning in Mobile GUI Agents",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2602-05832-ui-mem-pdf-arxiv-src",
+    "branch": "init-main-15-2602-05832",
+    "wt_path": "../.worktrees/init-main-15-2602-05832"
+  },
+  {
+    "rank": 16,
+    "candidate_id": "local:papers-2602-02369-live-evo-pdf",
+    "arxiv_id": "2602.02369",
+    "title": "Live-Evo: Online Evolution of Agentic Memory from Continuous Feedback",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2602-02369-live-evo-pdf-arxiv-src",
+    "branch": "init-main-16-2602-02369",
+    "wt_path": "../.worktrees/init-main-16-2602-02369"
+  },
+  {
+    "rank": 17,
+    "candidate_id": "local:papers-2305-16291-voyager-pdf",
+    "arxiv_id": "2305.16291",
+    "title": "VOYAGER: An Open-Ended Embodied Agent with Large Language Models",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2305-16291-voyager-pdf-arxiv-src",
+    "branch": "init-main-17-2305-16291",
+    "wt_path": "../.worktrees/init-main-17-2305-16291"
+  },
+  {
+    "rank": 18,
+    "candidate_id": "local:papers-2603-18743-memento-skills-pdf",
+    "arxiv_id": "2603.18743",
+    "title": "Memento-Skills: Let Agents Design Agents",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2603-18743-memento-skills-pdf-arxiv-src",
+    "branch": "init-main-18-2603-18743",
+    "wt_path": "../.worktrees/init-main-18-2603-18743"
+  },
+  {
+    "rank": 19,
+    "candidate_id": "local:papers-2604-08377-skillclaw-pdf",
+    "arxiv_id": "2604.08377",
+    "title": "SkillClaw: Let Skills Evolve Collectively with Agentic Evolver",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2604-08377-skillclaw-pdf-arxiv-src",
+    "branch": "init-main-19-2604-08377",
+    "wt_path": "../.worktrees/init-main-19-2604-08377"
+  },
+  {
+    "rank": 20,
+    "candidate_id": "local:papers-2512-10696-reme-pdf",
+    "arxiv_id": "2512.10696",
+    "title": "Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2512-10696-reme-pdf-arxiv-src",
+    "branch": "init-main-20-2512-10696",
+    "wt_path": "../.worktrees/init-main-20-2512-10696"
+  },
+  {
+    "rank": 21,
+    "candidate_id": "local:papers-2512-18746-memevolve-pdf",
+    "arxiv_id": "2512.18746",
+    "title": "MemEvolve: Meta-Evolution of Agent Memory Systems",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2512-18746-memevolve-pdf-arxiv-src",
+    "branch": "init-main-21-2512-18746",
+    "wt_path": "../.worktrees/init-main-21-2512-18746"
+  },
+  {
+    "rank": 22,
+    "candidate_id": "local:papers-2601-22758-autorefine-pdf",
+    "arxiv_id": "2601.22758",
+    "title": "AutoRefine: From Trajectories to Reusable Expertise for Continual LLM Agent Refinement",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2601-22758-autorefine-pdf-arxiv-src",
+    "branch": "init-main-22-2601-22758",
+    "wt_path": "../.worktrees/init-main-22-2601-22758"
+  },
+  {
+    "rank": 23,
+    "candidate_id": "local:papers-2508-06433-memp-pdf",
+    "arxiv_id": "2508.06433",
+    "title": "Memp: Exploring Agent Procedural Memory",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2508-06433-memp-pdf-arxiv-src",
+    "branch": "init-main-23-2508-06433",
+    "wt_path": "../.worktrees/init-main-23-2508-06433"
+  },
+  {
+    "rank": 24,
+    "candidate_id": "local:papers-2603-24533-ui-voyager-pdf",
+    "arxiv_id": "2603.24533",
+    "title": "UI-Voyager: A Self-Evolving GUI Agent Learning via Failed Experience",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2603-24533-ui-voyager-pdf-arxiv-src",
+    "branch": "init-main-24-2603-24533",
+    "wt_path": "../.worktrees/init-main-24-2603-24533"
+  },
+  {
+    "rank": 25,
+    "candidate_id": "local:papers-2602-01869-procmem-pdf",
+    "arxiv_id": "2602.01869",
+    "title": "Skill-Pro: Learning Reusable Skills from Experience via Non-Parametric PPO for LLM Agents",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2602-01869-procmem-pdf-arxiv-src",
+    "branch": "init-main-25-2602-01869",
+    "wt_path": "../.worktrees/init-main-25-2602-01869"
+  },
+  {
+    "rank": 26,
+    "candidate_id": "local:papers-2601-18510-jitrl-pdf",
+    "arxiv_id": "2601.18510",
+    "title": "Just-In-Time Reinforcement Learning: Continual Learning in LLM Agents Without Gradient Updates",
+    "canonical_ingest_path": "raw/tmp/papers/papers-2601-18510-jitrl-pdf-arxiv-src",
+    "branch": "init-main-26-2601-18510",
+    "wt_path": "../.worktrees/init-main-26-2601-18510"
+  }
+]

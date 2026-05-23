@@ -1,0 +1,34 @@
+# Secrets / local machine config
+.env
+*.env.local
+.claude/settings.local.json
+.claude/.current-lang
+
+# Claude local runtime state
+.claude/worktrees/
+.claude/scheduled_tasks.lock
+
+# Generated intermediate paper-prep files
+raw/tmp/
+
+# Runtime-only checkpoints
+wiki/.checkpoints/
+
+# Daily arXiv scratch
+/.daily-arxiv/
+
+# Python / local env
+.venv/
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo

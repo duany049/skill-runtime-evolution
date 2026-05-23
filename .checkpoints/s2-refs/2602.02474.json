@@ -1,0 +1,4285 @@
+[
+  {
+    "paperId": "fc6e9b47819d2f5cdfd8f47829f7894d37e2059c",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2512-18746",
+      "ArXiv": "2512.18746",
+      "DOI": "10.48550/arXiv.2512.18746",
+      "CorpusId": 284078455
+    },
+    "url": "https://www.semanticscholar.org/paper/fc6e9b47819d2f5cdfd8f47829f7894d37e2059c",
+    "title": "MemEvolve: Meta-Evolution of Agent Memory Systems",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 34,
+    "influentialCitationCount": 2,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2512.18746, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2385476833",
+        "name": "Guibin Zhang"
+      },
+      {
+        "authorId": "2282935379",
+        "name": "Haotian Ren"
+      },
+      {
+        "authorId": "2400139824",
+        "name": "Chong Zhan"
+      },
+      {
+        "authorId": "2354329261",
+        "name": "Zhen Zhou"
+      },
+      {
+        "authorId": "2378897041",
+        "name": "Junhao Wang"
+      },
+      {
+        "authorId": "2373267831",
+        "name": "He Zhu"
+      },
+      {
+        "authorId": "2322149547",
+        "name": "Wangchunshu Zhou"
+      },
+      {
+        "authorId": "2367752546",
+        "name": "Shuicheng Yan"
+      }
+    ],
+    "abstract": "Self-evolving memory systems are unprecedentedly reshaping the evolutionary paradigm of large language model (LLM)-based agents. Prior work has predominantly relied on manually engineered memory architectures to store trajectories, distill experience, and synthesize reusable tools, enabling agents to evolve on the fly within environment interactions. However, this paradigm is fundamentally constrained by the staticity of the memory system itself: while memory facilitates agent-level evolving, the underlying memory architecture cannot be meta-adapted to diverse task contexts. To address this gap, we propose MemEvolve, a meta-evolutionary framework that jointly evolves agents'experiential knowledge and their memory architecture, allowing agent systems not only to accumulate experience but also to progressively refine how they learn from it. To ground MemEvolve in prior research and foster openness in future self-evolving systems, we introduce EvolveLab, a unified self-evolving memory codebase that distills twelve representative memory systems into a modular design space (encode, store, retrieve, manage), providing both a standardized implementation substrate and a fair experimental arena. Extensive evaluations on four challenging agentic benchmarks demonstrate that MemEvolve achieves (I) substantial performance gains, improving frameworks such as SmolAgent and Flash-Searcher by up to $17.06\\%$; and (II) strong cross-task and cross-LLM generalization, designing memory architectures that transfer effectively across diverse benchmarks and backbone models.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "d362b7619fcd2df4241696a19aec95961b8a729c",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2512-13564",
+      "ArXiv": "2512.13564",
+      "DOI": "10.48550/arXiv.2512.13564",
+      "CorpusId": 283897233
+    },
+    "url": "https://www.semanticscholar.org/paper/d362b7619fcd2df4241696a19aec95961b8a729c",
+    "title": "Memory in the Age of AI Agents",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 144,
+    "influentialCitationCount": 12,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2512.13564, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2398804888",
+        "name": "Yuyang Hu"
+      },
+      {
+        "authorId": "2211905760",
+        "name": "Shichun Liu"
+      },
+      {
+        "authorId": "2282473982",
+        "name": "Yanwei Yue"
+      },
+      {
+        "authorId": "2385476833",
+        "name": "Guibin Zhang"
+      },
+      {
+        "authorId": "2386131465",
+        "name": "Boyang Liu"
+      },
+      {
+        "authorId": "2281631416",
+        "name": "Fangyi Zhu"
+      },
+      {
+        "authorId": "2399060433",
+        "name": "Jiahang Lin"
+      },
+      {
+        "authorId": "2269420111",
+        "name": "Honglin Guo"
+      },
+      {
+        "authorId": "2042683163",
+        "name": "Shihan Dou"
+      },
+      {
+        "authorId": "2218237934",
+        "name": "Zhiheng Xi"
+      },
+      {
+        "authorId": "2219131195",
+        "name": "Senjie Jin"
+      },
+      {
+        "authorId": "2157217564",
+        "name": "Jiejun Tan"
+      },
+      {
+        "authorId": "2347755910",
+        "name": "Yanbin Yin"
+      },
+      {
+        "authorId": "1830383266",
+        "name": "Jiongnan Liu"
+      },
+      {
+        "authorId": "2338154361",
+        "name": "Zeyu Zhang"
+      },
+      {
+        "authorId": "2109820280",
+        "name": "ZhongXiang Sun"
+      },
+      {
+        "authorId": "1900406",
+        "name": "Yutao Zhu"
+      },
+      {
+        "authorId": "2391692289",
+        "name": "Hao Sun"
+      },
+      {
+        "authorId": "2314827534",
+        "name": "Boci Peng"
+      },
+      {
+        "authorId": "2291136152",
+        "name": "Zhenrong Cheng"
+      },
+      {
+        "authorId": "2359593960",
+        "name": "Xuanbo Fan"
+      },
+      {
+        "authorId": "1838933693",
+        "name": "Jiaxin Guo"
+      },
+      {
+        "authorId": "2375282079",
+        "name": "Xinlei Yu"
+      },
+      {
+        "authorId": "2236011027",
+        "name": "Zhenhong Zhou"
+      },
+      {
+        "authorId": "115312522",
+        "name": "Zewen Hu"
+      },
+      {
+        "authorId": "2307004760",
+        "name": "Jiahao Huo"
+      },
+      {
+        "authorId": "2378897041",
+        "name": "Junhao Wang"
+      },
+      {
+        "authorId": "2340179030",
+        "name": "Yu Niu"
+      },
+      {
+        "authorId": "2362291348",
+        "name": "Yu Wang"
+      },
+      {
+        "authorId": "2375156038",
+        "name": "Zhe Yin"
+      },
+      {
+        "authorId": "2382924542",
+        "name": "Xiaobin Hu"
+      },
+      {
+        "authorId": "2384076299",
+        "name": "Yue Liao"
+      },
+      {
+        "authorId": "2307464424",
+        "name": "Qiankun Li"
+      },
+      {
+        "authorId": "2119043458",
+        "name": "Kun Wang"
+      },
+      {
+        "authorId": "2322149547",
+        "name": "Wangchunshu Zhou"
+      },
+      {
+        "authorId": "2130192950",
+        "name": "Yixin Liu"
+      },
+      {
+        "authorId": "2282580031",
+        "name": "Dawei Cheng"
+      },
+      {
+        "authorId": "2340209173",
+        "name": "Qi Zhang"
+      },
+      {
+        "authorId": "2067331064",
+        "name": "Tao Gui"
+      },
+      {
+        "authorId": "2302831053",
+        "name": "Shirui Pan"
+      },
+      {
+        "authorId": "2365831099",
+        "name": "Yan Zhang"
+      },
+      {
+        "authorId": "2325901137",
+        "name": "Philip Torr"
+      },
+      {
+        "authorId": "1897235",
+        "name": "Zhicheng Dou"
+      },
+      {
+        "authorId": "2368753051",
+        "name": "Jingwen Wen"
+      },
+      {
+        "authorId": "2257129989",
+        "name": "Xuanjing Huang"
+      },
+      {
+        "authorId": "2394203475",
+        "name": "Yu-gang Jiang"
+      },
+      {
+        "authorId": "2367752546",
+        "name": "Shuicheng Yan"
+      }
+    ],
+    "abstract": "Memory has emerged, and will continue to remain, a core capability of foundation model-based agents. As research on agent memory rapidly expands and attracts unprecedented attention, the field has also become increasingly fragmented. Existing works that fall under the umbrella of agent memory often differ substantially in their motivations, implementations, and evaluation protocols, while the proliferation of loosely defined memory terminologies has further obscured conceptual clarity. Traditional taxonomies such as long/short-term memory have proven insufficient to capture the diversity of contemporary agent memory systems. This work aims to provide an up-to-date landscape of current agent memory research. We begin by clearly delineating the scope of agent memory and distinguishing it from related concepts such as LLM memory, retrieval augmented generation (RAG), and context engineering. We then examine agent memory through the unified lenses of forms, functions, and dynamics. From the perspective of forms, we identify three dominant realizations of agent memory, namely token-level, parametric, and latent memory. From the perspective of functions, we propose a finer-grained taxonomy that distinguishes factual, experiential, and working memory. From the perspective of dynamics, we analyze how memory is formed, evolved, and retrieved over time. To support practical development, we compile a comprehensive summary of memory benchmarks and open-source frameworks. Beyond consolidation, we articulate a forward-looking perspective on emerging research frontiers, including memory automation, reinforcement learning integration, multimodal memory, multi-agent memory, and trustworthiness issues. We hope this survey serves not only as a reference for existing work, but also as a conceptual foundation for rethinking memory as a first-class primitive in the design of future agentic intelligence.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "87dc9cf7adf0a6446c07231c6ff2ae71d48235d3",
+    "externalIds": {
+      "ArXiv": "2511.20857",
+      "DBLP": "journals/corr/abs-2511-20857",
+      "DOI": "10.48550/arXiv.2511.20857",
+      "CorpusId": 283261706
+    },
+    "url": "https://www.semanticscholar.org/paper/87dc9cf7adf0a6446c07231c6ff2ae71d48235d3",
+    "title": "Evo-Memory: Benchmarking LLM Agent Test-time Learning with Self-Evolving Memory",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 61,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.20857, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2319175383",
+        "name": "Tianxin Wei"
+      },
+      {
+        "authorId": "40705044",
+        "name": "Noveen Sachdeva"
+      },
+      {
+        "authorId": "2240537645",
+        "name": "Benjamin Coleman"
+      },
+      {
+        "authorId": "2394578347",
+        "name": "Zhankui He"
+      },
+      {
+        "authorId": "2394305012",
+        "name": "Yuanchen Bei"
+      },
+      {
+        "authorId": "2266396687",
+        "name": "Xuying Ning"
+      },
+      {
+        "authorId": "2336866952",
+        "name": "Mengting Ai"
+      },
+      {
+        "authorId": "2394493314",
+        "name": "Yunzhe Li"
+      },
+      {
+        "authorId": "2303885774",
+        "name": "Jingrui He"
+      },
+      {
+        "authorId": "2254270179",
+        "name": "E. Chi"
+      },
+      {
+        "authorId": "2394925268",
+        "name": "Chi Wang"
+      },
+      {
+        "authorId": "2350423219",
+        "name": "Shuo Chen"
+      },
+      {
+        "authorId": "2395895395",
+        "name": "Fernando Pereira"
+      },
+      {
+        "authorId": "2317030657",
+        "name": "Wang-Cheng Kang"
+      },
+      {
+        "authorId": "48573272",
+        "name": "D. Cheng"
+      }
+    ],
+    "abstract": "Statefulness is essential for large language model (LLM) agents to perform long-term planning and problem-solving. This makes memory a critical component, yet its management and evolution remain largely underexplored. Existing evaluations mostly focus on static conversational settings, where memory is passively retrieved from dialogue to answer queries, overlooking the dynamic ability to accumulate and reuse experience across evolving task streams. In real-world environments such as interactive problem assistants or embodied agents, LLMs are required to handle continuous task streams, yet often fail to learn from accumulated interactions, losing valuable contextual insights, a limitation that calls for test-time evolution, where LLMs retrieve, integrate, and update memory continuously during deployment. To bridge this gap, we introduce Evo-Memory, a comprehensive streaming benchmark and framework for evaluating self-evolving memory in LLM agents. Evo-Memory structures datasets into sequential task streams, requiring LLMs to search, adapt, and evolve memory after each interaction. We unify and implement over ten representative memory modules and evaluate them across 10 diverse multi-turn goal-oriented and single-turn reasoning and QA datasets. To better benchmark experience reuse, we provide a baseline method, ExpRAG, for retrieving and utilizing prior experience, and further propose ReMem, an action-think-memory refine pipeline that tightly integrates reasoning, task actions, and memory updates to achieve continual improvement.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "dde18f29056365d8d84460f8cd8a3532077b3137",
+    "externalIds": {
+      "ArXiv": "2511.10395",
+      "DBLP": "journals/corr/abs-2511-10395",
+      "DOI": "10.48550/arXiv.2511.10395",
+      "CorpusId": 282992095
+    },
+    "url": "https://www.semanticscholar.org/paper/dde18f29056365d8d84460f8cd8a3532077b3137",
+    "title": "AgentEvolver: Towards Efficient Self-Evolving Agent System",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 39,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.10395, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2354340288",
+        "name": "Yunpeng Zhai"
+      },
+      {
+        "authorId": "2364781892",
+        "name": "Shuchang Tao"
+      },
+      {
+        "authorId": "2366646181",
+        "name": "Cheng Chen"
+      },
+      {
+        "authorId": "2386607830",
+        "name": "Anni Zou"
+      },
+      {
+        "authorId": "2282652796",
+        "name": "Ziqian Chen"
+      },
+      {
+        "authorId": "2387893379",
+        "name": "Qingxu Fu"
+      },
+      {
+        "authorId": "2392262309",
+        "name": "Shinji Mai"
+      },
+      {
+        "authorId": "2392371709",
+        "name": "Li Yu"
+      },
+      {
+        "authorId": "2394258152",
+        "name": "Jiaji Deng"
+      },
+      {
+        "authorId": "2253004027",
+        "name": "Zouying Cao"
+      },
+      {
+        "authorId": "2386531463",
+        "name": "Zhaoyang Liu"
+      },
+      {
+        "authorId": "2375391270",
+        "name": "Bolin Ding"
+      },
+      {
+        "authorId": "2237499232",
+        "name": "Jingren Zhou"
+      }
+    ],
+    "abstract": "Autonomous agents powered by large language models (LLMs) have the potential to significantly enhance human productivity by reasoning, using tools, and executing complex tasks in diverse environments. However, current approaches to developing such agents remain costly and inefficient, as they typically require manually constructed task datasets and reinforcement learning (RL) pipelines with extensive random exploration. These limitations lead to prohibitively high data-construction costs, low exploration efficiency, and poor sample utilization. To address these challenges, we present AgentEvolver, a self-evolving agent system that leverages the semantic understanding and reasoning capabilities of LLMs to drive autonomous agent learning. AgentEvolver introduces three synergistic mechanisms: (i) self-questioning, which enables curiosity-driven task generation in novel environments, reducing dependence on handcrafted datasets; (ii) self-navigating, which improves exploration efficiency through experience reuse and hybrid policy guidance; and (iii) self-attributing, which enhances sample efficiency by assigning differentiated rewards to trajectory states and actions based on their contribution. By integrating these mechanisms into a unified framework, AgentEvolver enables scalable, cost-effective, and continual improvement of agent capabilities. Preliminary experiments indicate that AgentEvolver achieves more efficient exploration, better sample utilization, and faster adaptation compared to traditional RL-based baselines.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "94c37b23cd55ea3ac152c22bc9c6e973f5e96135",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2510-23595",
+      "ArXiv": "2510.23595",
+      "DOI": "10.48550/arXiv.2510.23595",
+      "CorpusId": 282388544
+    },
+    "url": "https://www.semanticscholar.org/paper/94c37b23cd55ea3ac152c22bc9c6e973f5e96135",
+    "title": "Multi-Agent Evolve: LLM Self-Improve through Co-evolution",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 28,
+    "influentialCitationCount": 5,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.23595, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2257095405",
+        "name": "Yixin Chen"
+      },
+      {
+        "authorId": "2267025893",
+        "name": "Yiding Wang"
+      },
+      {
+        "authorId": "2385439065",
+        "name": "Siqi Zhu"
+      },
+      {
+        "authorId": "2378896259",
+        "name": "Hao Yu"
+      },
+      {
+        "authorId": "2386952100",
+        "name": "Tao Feng"
+      },
+      {
+        "authorId": "2388016715",
+        "name": "Muhan Zhang"
+      },
+      {
+        "authorId": "66870756",
+        "name": "M. Patwary"
+      },
+      {
+        "authorId": "2261495159",
+        "name": "Jiaxuan You"
+      }
+    ],
+    "abstract": "Reinforcement Learning (RL) has demonstrated significant potential in enhancing the reasoning capabilities of large language models (LLMs). However, the success of RL for LLMs heavily relies on human-curated datasets and verifiable rewards, which limit their scalability and generality. Recent Self-Play RL methods, inspired by the success of the paradigm in games and Go, aim to enhance LLM reasoning capabilities without human-annotated data. However, their methods primarily depend on a grounded environment for feedback (e.g., a Python interpreter or a game engine); extending them to general domains remains challenging. To address these challenges, we propose Multi-Agent Evolve (MAE), a framework that enables LLMs to self-evolve in solving diverse tasks, including mathematics, reasoning, and general knowledge Q&A. The core design of MAE is based on a triplet of interacting agents (Proposer, Solver, Judge) that are instantiated from a single LLM, and applies reinforcement learning to optimize their behaviors. The Proposer generates questions, the Solver attempts solutions, and the Judge evaluates both while co-evolving. Experiments on Qwen2.5-3B-Instruct demonstrate that MAE achieves an average improvement of 4.54% on multiple benchmarks. These results highlight MAE as a scalable, data-efficient method for enhancing the general reasoning abilities of LLMs with minimal reliance on human-curated supervision.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "26f887d7fd771f2e32ce52833a114d35df36aab2",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2510-16079",
+      "ArXiv": "2510.16079",
+      "DOI": "10.48550/arXiv.2510.16079",
+      "CorpusId": 282210254
+    },
+    "url": "https://www.semanticscholar.org/paper/26f887d7fd771f2e32ce52833a114d35df36aab2",
+    "title": "EvolveR: Self-Evolving LLM Agents through an Experience-Driven Lifecycle",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 45,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.16079, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2363400631",
+        "name": "Rong Wu"
+      },
+      {
+        "authorId": "2376089020",
+        "name": "Xiaoman Wang"
+      },
+      {
+        "authorId": "2106504583",
+        "name": "Jianbiao Mei"
+      },
+      {
+        "authorId": "26978261",
+        "name": "Pinlong Cai"
+      },
+      {
+        "authorId": "150967272",
+        "name": "Daocheng Fu"
+      },
+      {
+        "authorId": "2383101848",
+        "name": "Cheng Yang"
+      },
+      {
+        "authorId": "153109152",
+        "name": "Licheng Wen"
+      },
+      {
+        "authorId": "2265828805",
+        "name": "Xuemeng Yang"
+      },
+      {
+        "authorId": "2295796069",
+        "name": "Yufan Shen"
+      },
+      {
+        "authorId": "2344891171",
+        "name": "Yuxin Wang"
+      },
+      {
+        "authorId": "2278899936",
+        "name": "Botian Shi"
+      }
+    ],
+    "abstract": "Current Large Language Model (LLM) agents show strong performance in tool use, but lack the crucial capability to systematically learn from their own experiences. While existing frameworks mainly focus on mitigating external knowledge gaps, they fail to address a more fundamental limitation: the inability to iteratively refine problem-solving strategies. In this work, we introduce EvolveR, a framework designed to enable agent to self-improve through a complete, closed-loop experience lifecycle. This lifecycle comprises two key stages: (1) Offline Self-Distillation, where the agent's interaction trajectories are synthesized into a structured repository of abstract, reusable strategic principles; (2) Online Interaction, where the agent interacts with tasks and actively retrieves distilled principles to guide its decision-making, accumulating a diverse set of behavioral trajectories. This loop employs a policy reinforcement mechanism to iteratively update the agent based on its performance. We demonstrate the effectiveness of EvolveR on complex multi-hop question-answering benchmarks, where it achieves superior performance over strong agentic baselines. Our work presents a comprehensive blueprint for agents that learn not only from external data but also from the consequences of their own actions, paving the way for more autonomous and continuously improving systems. Code is available at https://github.com/Edaizi/EvolveR.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "9df0947ec8a14c43e69f3b72ece5e9af2b8e8215",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2508-19828",
+      "ArXiv": "2508.19828",
+      "DOI": "10.48550/arXiv.2508.19828",
+      "CorpusId": 280918480
+    },
+    "url": "https://www.semanticscholar.org/paper/9df0947ec8a14c43e69f3b72ece5e9af2b8e8215",
+    "title": "Memory-R1: Enhancing Large Language Model Agents to Manage and Utilize Memories via Reinforcement Learning",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 98,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.19828, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2365440320",
+        "name": "Sikuan Yan"
+      },
+      {
+        "authorId": "2304711524",
+        "name": "Xiufeng Yang"
+      },
+      {
+        "authorId": "2203968754",
+        "name": "Zuchao Huang"
+      },
+      {
+        "authorId": "2197254657",
+        "name": "Ercong Nie"
+      },
+      {
+        "authorId": "2046761003",
+        "name": "Zifeng Ding"
+      },
+      {
+        "authorId": "2377740835",
+        "name": "Zonggen Li"
+      },
+      {
+        "authorId": "48577928",
+        "name": "Xiaowen Ma"
+      },
+      {
+        "authorId": "2130001188",
+        "name": "Hinrich Schutze"
+      },
+      {
+        "authorId": "2271282409",
+        "name": "Volker Tresp"
+      },
+      {
+        "authorId": "2362602394",
+        "name": "Yunpu Ma"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) have demonstrated impressive capabilities across a wide range of NLP tasks, but they remain fundamentally stateless, constrained by limited context windows that hinder long-horizon reasoning. Recent efforts to address this limitation often augment LLMs with an external memory bank, yet most existing pipelines are static and heuristic-driven, lacking a learned mechanism for deciding what to store, update, or retrieve. We present Memory-R1, a reinforcement learning (RL) framework that equips LLMs with the ability to actively manage and utilize external memory through two specialized agents: a Memory Manager that learns structured operations, including ADD, UPDATE, DELETE, and NOOP; and an Answer Agent that pre-selects and reasons over relevant entries. Both agents are fine-tuned with outcome-driven RL (PPO and GRPO), enabling adaptive memory management with minimal supervision. With only 152 training QA pairs, Memory-R1 outperforms strong baselines and generalizes across diverse question types, three benchmarks (LoCoMo, MSC, LongMemEval), and multiple model scales (3B-14B).",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1385ac414416374b63acfd82ccd6d91ed62fe101",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2508-05004",
+      "ArXiv": "2508.05004",
+      "DOI": "10.48550/arXiv.2508.05004",
+      "CorpusId": 280546127
+    },
+    "url": "https://www.semanticscholar.org/paper/1385ac414416374b63acfd82ccd6d91ed62fe101",
+    "title": "R-Zero: Self-Evolving Reasoning LLM from Zero Data",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 115,
+    "influentialCitationCount": 25,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.05004, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "31937655",
+        "name": "Chengsong Huang"
+      },
+      {
+        "authorId": "2265843326",
+        "name": "Wenhao Yu"
+      },
+      {
+        "authorId": "2274038505",
+        "name": "Xiaoyang Wang"
+      },
+      {
+        "authorId": "2254831297",
+        "name": "Hongming Zhang"
+      },
+      {
+        "authorId": "2375157272",
+        "name": "Zongxia Li"
+      },
+      {
+        "authorId": "2033082027",
+        "name": "Ruosen Li"
+      },
+      {
+        "authorId": "2300246276",
+        "name": "Jiaxin Huang"
+      },
+      {
+        "authorId": "2238955130",
+        "name": "Haitao Mi"
+      },
+      {
+        "authorId": "2303999735",
+        "name": "Dong Yu"
+      }
+    ],
+    "abstract": "Self-evolving Large Language Models (LLMs) offer a scalable path toward super-intelligence by autonomously generating, refining, and learning from their own experiences. However, existing methods for training such models still rely heavily on vast human-curated tasks and labels, typically via fine-tuning or reinforcement learning, which poses a fundamental bottleneck to advancing AI systems toward capabilities beyond human intelligence. To overcome this limitation, we introduce R-Zero, a fully autonomous framework that generates its own training data from scratch. Starting from a single base LLM, R-Zero initializes two independent models with distinct roles, a Challenger and a Solver. These models are optimized separately and co-evolve through interaction: the Challenger is rewarded for proposing tasks near the edge of the Solver capability, and the Solver is rewarded for solving increasingly challenging tasks posed by the Challenger. This process yields a targeted, self-improving curriculum without any pre-existing tasks and labels. Empirically, R-Zero substantially improves reasoning capability across different backbone LLMs, e.g., boosting the Qwen3-4B-Base by +6.49 on math-reasoning benchmarks and +7.54 on general-domain reasoning benchmarks.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "80a0548be8c857421aaf0602c6d83d3ef934a251",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2507-02259",
+      "ArXiv": "2507.02259",
+      "DOI": "10.48550/arXiv.2507.02259",
+      "CorpusId": 280047896
+    },
+    "url": "https://www.semanticscholar.org/paper/80a0548be8c857421aaf0602c6d83d3ef934a251",
+    "title": "MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 132,
+    "influentialCitationCount": 12,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.02259, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2363723160",
+        "name": "Hongli Yu"
+      },
+      {
+        "authorId": "2288187529",
+        "name": "Ting Chen"
+      },
+      {
+        "authorId": "2372316104",
+        "name": "Jiangtao Feng"
+      },
+      {
+        "authorId": "2350758463",
+        "name": "Jiangjie Chen"
+      },
+      {
+        "authorId": "2352019542",
+        "name": "Weinan Dai"
+      },
+      {
+        "authorId": "2354247190",
+        "name": "Qiying Yu"
+      },
+      {
+        "authorId": "2286392970",
+        "name": "Ya-Qin Zhang"
+      },
+      {
+        "authorId": "2268308866",
+        "name": "Wei-Ying Ma"
+      },
+      {
+        "authorId": "2293350427",
+        "name": "Jingjing Liu"
+      },
+      {
+        "authorId": "2285763682",
+        "name": "Mingxuan Wang"
+      },
+      {
+        "authorId": "2363595990",
+        "name": "Hao Zhou"
+      }
+    ],
+    "abstract": "Despite improvements by length extrapolation, efficient attention and memory modules, handling infinitely long documents with linear complexity without performance degradation during extrapolation remains the ultimate challenge in long-text processing. We directly optimize for long-text tasks in an end-to-end fashion and introduce a novel agent workflow, MemAgent, which reads text in segments and updates the memory using an overwrite strategy. We extend the DAPO algorithm to facilitate training via independent-context multi-conversation generation. MemAgent has demonstrated superb long-context capabilities, being able to extrapolate from an 8K context trained on 32K text to a 3.5M QA task with performance loss<5% and achieves 95%+ in 512K RULER test.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ed32e5bb11a9e5e2f03ea805782e8670a6e10efd",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2506-13131",
+      "ArXiv": "2506.13131",
+      "DOI": "10.48550/arXiv.2506.13131",
+      "CorpusId": 278658695
+    },
+    "url": "https://www.semanticscholar.org/paper/ed32e5bb11a9e5e2f03ea805782e8670a6e10efd",
+    "title": "AlphaEvolve: A coding agent for scientific and algorithmic discovery",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 451,
+    "influentialCitationCount": 65,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.13131, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2274227521",
+        "name": "Alexander Novikov"
+      },
+      {
+        "authorId": "2361627583",
+        "name": "Ngân V˜u"
+      },
+      {
+        "authorId": "41022419",
+        "name": "Marvin Eisenberger"
+      },
+      {
+        "authorId": "2274228249",
+        "name": "Emilien Dupont"
+      },
+      {
+        "authorId": "2268826600",
+        "name": "Po-Sen Huang"
+      },
+      {
+        "authorId": "2333642957",
+        "name": "Adam Zsolt Wagner"
+      },
+      {
+        "authorId": "74346544",
+        "name": "S. Shirobokov"
+      },
+      {
+        "authorId": "93972621",
+        "name": "B. Kozlovskii"
+      },
+      {
+        "authorId": "2274226620",
+        "name": "Francisco J. R. Ruiz"
+      },
+      {
+        "authorId": "2265579036",
+        "name": "Abbas Mehrabian"
+      },
+      {
+        "authorId": "2275617322",
+        "name": "M. P. Kumar"
+      },
+      {
+        "authorId": "2268761249",
+        "name": "Abigail See"
+      },
+      {
+        "authorId": "2248225759",
+        "name": "Swarat Chaudhuri"
+      },
+      {
+        "authorId": "2256999012",
+        "name": "George Holland"
+      },
+      {
+        "authorId": "2257008027",
+        "name": "Alex Davies"
+      },
+      {
+        "authorId": "2388416",
+        "name": "Sebastian Nowozin"
+      },
+      {
+        "authorId": "143967473",
+        "name": "Pushmeet Kohli"
+      },
+      {
+        "authorId": "2265578914",
+        "name": "Matej Balog"
+      },
+      {
+        "authorId": "2135683701",
+        "name": "Google DeepMind"
+      }
+    ],
+    "abstract": "In this white paper, we present AlphaEvolve, an evolutionary coding agent that substantially enhances capabilities of state-of-the-art LLMs on highly challenging tasks such as tackling open scientific problems or optimizing critical pieces of computational infrastructure. AlphaEvolve orchestrates an autonomous pipeline of LLMs, whose task is to improve an algorithm by making direct changes to the code. Using an evolutionary approach, continuously receiving feedback from one or more evaluators, AlphaEvolve iteratively improves the algorithm, potentially leading to new scientific and practical discoveries. We demonstrate the broad applicability of this approach by applying it to a number of important computational problems. When applied to optimizing critical components of large-scale computational stacks at Google, AlphaEvolve developed a more efficient scheduling algorithm for data centers, found a functionally equivalent simplification in the circuit design of hardware accelerators, and accelerated the training of the LLM underpinning AlphaEvolve itself. Furthermore, AlphaEvolve discovered novel, provably correct algorithms that surpass state-of-the-art solutions on a spectrum of problems in mathematics and computer science, significantly expanding the scope of prior automated discovery methods (Romera-Paredes et al., 2023). Notably, AlphaEvolve developed a search algorithm that found a procedure to multiply two $4 \\times 4$ complex-valued matrices using $48$ scalar multiplications; offering the first improvement, after 56 years, over Strassen's algorithm in this setting. We believe AlphaEvolve and coding agents like it can have a significant impact in improving solutions of problems across many areas of science and computation.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "680ce7341b47e2979073142e4a7388b34257cdbc",
+    "externalIds": {
+      "DBLP": "conf/emnlp/KangJZB25",
+      "ArXiv": "2506.06326",
+      "DOI": "10.48550/arXiv.2506.06326",
+      "CorpusId": 279250574
+    },
+    "url": "https://www.semanticscholar.org/paper/680ce7341b47e2979073142e4a7388b34257cdbc",
+    "title": "Memory OS of AI Agent",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2025,
+    "citationCount": 49,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.06326, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2337865927",
+        "name": "Jiazheng Kang"
+      },
+      {
+        "authorId": "2343346001",
+        "name": "Mingming Ji"
+      },
+      {
+        "authorId": "2319084644",
+        "name": "Zhe Zhao"
+      },
+      {
+        "authorId": "2337798954",
+        "name": "Ting Bai"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) face a crucial challenge from fixed context windows and inadequate memory management, leading to a severe shortage of long-term memory capabilities and limited personalization in the interactive experience with AI agents. To overcome this challenge, we innovatively propose a Memory Operating System, i.e., MemoryOS, to achieve comprehensive and efficient memory management for AI agents. Inspired by the memory management principles in operating systems, MemoryOS designs a hierarchical storage architecture and consists of four key modules: Memory Storage, Updating, Retrieval, and Generation. Specifically, the architecture comprises three levels of storage units: short-term memory, mid-term memory, and long-term personal memory. Key operations within MemoryOS include dynamic updates between storage units: short-term to mid-term updates follow a dialogue-chain-based FIFO principle, while mid-term to long-term updates use a segmented page organization strategy. Our pioneering MemoryOS enables hierarchical memory integration and dynamic updating. Extensive experiments on the LoCoMo benchmark show an average improvement of 49.11% on F1 and 46.18% on BLEU-1 over the baselines on GPT-4o-mini, showing contextual coherence and personalized memory retention in long conversations. The implementation code is open-sourced at https://github.com/BAI-LAB/MemoryOS.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "d2d84d56f730f81d276a02b48d5d44db5bde0b4a",
+    "externalIds": {
+      "ArXiv": "2505.09388",
+      "CorpusId": 278602855
+    },
+    "url": "https://www.semanticscholar.org/paper/d2d84d56f730f81d276a02b48d5d44db5bde0b4a",
+    "title": "Qwen3 Technical Report",
+    "venue": "",
+    "year": 2025,
+    "citationCount": 5039,
+    "influentialCitationCount": 699,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.09388, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2311633047",
+        "name": "An Yang"
+      },
+      {
+        "authorId": "2361479189",
+        "name": "Anfeng Li"
+      },
+      {
+        "authorId": "2257101724",
+        "name": "Baosong Yang"
+      },
+      {
+        "authorId": "2321681508",
+        "name": "Beichen Zhang"
+      },
+      {
+        "authorId": "2321578848",
+        "name": "Binyuan Hui"
+      },
+      {
+        "authorId": "2312091718",
+        "name": "Bo Zheng"
+      },
+      {
+        "authorId": "2325918197",
+        "name": "Bowen Yu"
+      },
+      {
+        "authorId": "2365401535",
+        "name": "Chang Gao"
+      },
+      {
+        "authorId": "2361217109",
+        "name": "Chengen Huang"
+      },
+      {
+        "authorId": "2361413133",
+        "name": "Chenxu Lv"
+      },
+      {
+        "authorId": "146452866",
+        "name": "Chujie Zheng"
+      },
+      {
+        "authorId": "2248487202",
+        "name": "Dayiheng Liu"
+      },
+      {
+        "authorId": "2361487279",
+        "name": "Fan Zhou"
+      },
+      {
+        "authorId": "152159016",
+        "name": "Fei Huang"
+      },
+      {
+        "authorId": "2333427902",
+        "name": "Feng Hu"
+      },
+      {
+        "authorId": "2361190071",
+        "name": "Hao Ge"
+      },
+      {
+        "authorId": "2312183452",
+        "name": "Haoran Wei"
+      },
+      {
+        "authorId": "2314068968",
+        "name": "Huan Lin"
+      },
+      {
+        "authorId": "2299550823",
+        "name": "Jialong Tang"
+      },
+      {
+        "authorId": "2243424858",
+        "name": "Jian Yang"
+      },
+      {
+        "authorId": "2321581897",
+        "name": "Jianhong Tu"
+      },
+      {
+        "authorId": "2323510768",
+        "name": "Jianwei Zhang"
+      },
+      {
+        "authorId": "2336243053",
+        "name": "Jianxin Yang"
+      },
+      {
+        "authorId": "2328943044",
+        "name": "Jiaxin Yang"
+      },
+      {
+        "authorId": "2284490340",
+        "name": "Jingren Zhou"
+      },
+      {
+        "authorId": "2284490340",
+        "name": "Jingren Zhou"
+      },
+      {
+        "authorId": "2256800184",
+        "name": "Junyan Lin"
+      },
+      {
+        "authorId": "2247877609",
+        "name": "K. Dang"
+      },
+      {
+        "authorId": "2387215667",
+        "name": "Keqin Bao"
+      },
+      {
+        "authorId": "2276574101",
+        "name": "Ke‐Pei Yang"
+      },
+      {
+        "authorId": "2337769689",
+        "name": "Le Yu"
+      },
+      {
+        "authorId": "2183217926",
+        "name": "Li-Chun Deng"
+      },
+      {
+        "authorId": "2223106060",
+        "name": "Mei Li"
+      },
+      {
+        "authorId": "2301649171",
+        "name": "Min Xue"
+      },
+      {
+        "authorId": "2341170611",
+        "name": "Mingze Li"
+      },
+      {
+        "authorId": "2288896179",
+        "name": "Pei Zhang"
+      },
+      {
+        "authorId": "2350271637",
+        "name": "Peng Wang"
+      },
+      {
+        "authorId": "2152206465",
+        "name": "Qin Zhu"
+      },
+      {
+        "authorId": "47447639",
+        "name": "Rui Men"
+      },
+      {
+        "authorId": "2311453186",
+        "name": "Ruize Gao"
+      },
+      {
+        "authorId": "2342418896",
+        "name": "Shi-Qiang Liu"
+      },
+      {
+        "authorId": "2361707616",
+        "name": "Shuang Luo"
+      },
+      {
+        "authorId": "2309297259",
+        "name": "Tianhao Li"
+      },
+      {
+        "authorId": "2330000216",
+        "name": "Tianyi Tang"
+      },
+      {
+        "authorId": "2340016724",
+        "name": "Wenbiao Yin"
+      },
+      {
+        "authorId": "2274095735",
+        "name": "Xingzhang Ren"
+      },
+      {
+        "authorId": "2324389546",
+        "name": "Xinyu Wang"
+      },
+      {
+        "authorId": "2294009097",
+        "name": "Xinyu Zhang"
+      },
+      {
+        "authorId": "2312110505",
+        "name": "Xuancheng Ren"
+      },
+      {
+        "authorId": "2303618719",
+        "name": "Yang Fan"
+      },
+      {
+        "authorId": "2261076135",
+        "name": "Yang Su"
+      },
+      {
+        "authorId": "2163069125",
+        "name": "Yi-Chao Zhang"
+      },
+      {
+        "authorId": "2361272322",
+        "name": "Yinger Zhang"
+      },
+      {
+        "authorId": "2281036440",
+        "name": "Yu Wan"
+      },
+      {
+        "authorId": "2348413627",
+        "name": "Yuqiong Liu"
+      },
+      {
+        "authorId": "2108727290",
+        "name": "Zekun Wang"
+      },
+      {
+        "authorId": "2248072386",
+        "name": "Zeyu Cui"
+      },
+      {
+        "authorId": "2321656193",
+        "name": "Zhenru Zhang"
+      },
+      {
+        "authorId": "2322119011",
+        "name": "Zhipeng Zhou"
+      },
+      {
+        "authorId": "2337236034",
+        "name": "Zihan Qiu"
+      }
+    ],
+    "abstract": "In this work, we present Qwen3, the latest version of the Qwen model family. Qwen3 comprises a series of large language models (LLMs) designed to advance performance, efficiency, and multilingual capabilities. The Qwen3 series includes models of both dense and Mixture-of-Expert (MoE) architectures, with parameter scales ranging from 0.6 to 235 billion. A key innovation in Qwen3 is the integration of thinking mode (for complex, multi-step reasoning) and non-thinking mode (for rapid, context-driven responses) into a unified framework. This eliminates the need to switch between different models--such as chat-optimized models (e.g., GPT-4o) and dedicated reasoning models (e.g., QwQ-32B)--and enables dynamic mode switching based on user queries or chat templates. Meanwhile, Qwen3 introduces a thinking budget mechanism, allowing users to allocate computational resources adaptively during inference, thereby balancing latency and performance based on task complexity. Moreover, by leveraging the knowledge from the flagship models, we significantly reduce the computational resources required to build smaller-scale models, while ensuring their highly competitive performance. Empirical evaluations demonstrate that Qwen3 achieves state-of-the-art results across diverse benchmarks, including tasks in code generation, mathematical reasoning, agent tasks, etc., competitive against larger MoE models and proprietary models. Compared to its predecessor Qwen2.5, Qwen3 expands multilingual support from 29 to 119 languages and dialects, enhancing global accessibility through improved cross-lingual understanding and generation capabilities. To facilitate reproducibility and community-driven research and development, all Qwen3 models are publicly accessible under Apache 2.0.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "09b2a0f0d7c1164ab334e13e70eb0d65b5b96393",
+    "externalIds": {
+      "ArXiv": "2505.03335",
+      "DBLP": "journals/corr/abs-2505-03335",
+      "DOI": "10.48550/arXiv.2505.03335",
+      "CorpusId": 278339737
+    },
+    "url": "https://www.semanticscholar.org/paper/09b2a0f0d7c1164ab334e13e70eb0d65b5b96393",
+    "title": "Absolute Zero: Reinforced Self-play Reasoning with Zero Data",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 217,
+    "influentialCitationCount": 14,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.03335, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2136104377",
+        "name": "Andrew Zhao"
+      },
+      {
+        "authorId": "2115853457",
+        "name": "Yiran Wu"
+      },
+      {
+        "authorId": "2256993684",
+        "name": "Yang Yue"
+      },
+      {
+        "authorId": "2359399605",
+        "name": "Tong Wu"
+      },
+      {
+        "authorId": "2232847317",
+        "name": "Quentin Xu"
+      },
+      {
+        "authorId": "2036238525",
+        "name": "Matthieu Lin"
+      },
+      {
+        "authorId": "2219056193",
+        "name": "Shenzhi Wang"
+      },
+      {
+        "authorId": "2359252053",
+        "name": "Qingyun Wu"
+      },
+      {
+        "authorId": "49774254",
+        "name": "Zilong Zheng"
+      },
+      {
+        "authorId": "2293323333",
+        "name": "Gao Huang"
+      }
+    ],
+    "abstract": "Reinforcement learning with verifiable rewards (RLVR) has shown promise in enhancing the reasoning capabilities of large language models by learning directly from outcome-based rewards. Recent RLVR works that operate under the zero setting avoid supervision in labeling the reasoning process, but still depend on manually curated collections of questions and answers for training. The scarcity of high-quality, human-produced examples raises concerns about the long-term scalability of relying on human supervision, a challenge already evident in the domain of language model pretraining. Furthermore, in a hypothetical future where AI surpasses human intelligence, tasks provided by humans may offer limited learning potential for a superintelligent system. To address these concerns, we propose a new RLVR paradigm called Absolute Zero, in which a single model learns to propose tasks that maximize its own learning progress and improves reasoning by solving them, without relying on any external data. Under this paradigm, we introduce the Absolute Zero Reasoner (AZR), a system that self-evolves its training curriculum and reasoning ability by using a code executor to both validate proposed code reasoning tasks and verify answers, serving as an unified source of verifiable reward to guide open-ended yet grounded learning. Despite being trained entirely without external data, AZR achieves overall SOTA performance on coding and mathematical reasoning tasks, outperforming existing zero-setting models that rely on tens of thousands of in-domain human-curated examples. Furthermore, we demonstrate that AZR can be effectively applied across different model scales and is compatible with various model classes.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1d9c21a0fdb1cc16a32c5d490ebaf98436a23382",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2504-19413",
+      "ArXiv": "2504.19413",
+      "DOI": "10.48550/arXiv.2504.19413",
+      "CorpusId": 278165315
+    },
+    "url": "https://www.semanticscholar.org/paper/1d9c21a0fdb1cc16a32c5d490ebaf98436a23382",
+    "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+    "venue": "European Conference on Artificial Intelligence",
+    "year": 2025,
+    "citationCount": 317,
+    "influentialCitationCount": 53,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.19413, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "1416534710",
+        "name": "P. Chhikara"
+      },
+      {
+        "authorId": "2357971314",
+        "name": "Dev Khant"
+      },
+      {
+        "authorId": "2344539330",
+        "name": "Saket Aryan"
+      },
+      {
+        "authorId": "2112769962",
+        "name": "Taranjeet Singh"
+      },
+      {
+        "authorId": "24508084",
+        "name": "Deshraj Yadav"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable prowess in generating contextually coherent responses, yet their fixed context windows pose fundamental challenges for maintaining consistency over prolonged multi-session dialogues. We introduce Mem0, a scalable memory-centric architecture that addresses this issue by dynamically extracting, consolidating, and retrieving salient information from ongoing conversations. Building on this foundation, we further propose an enhanced variant that leverages graph-based memory representations to capture complex relational structures among conversational elements. Through comprehensive evaluations on LOCOMO benchmark, we systematically compare our approaches against six baseline categories: (i) established memory-augmented systems, (ii) retrieval-augmented generation (RAG) with varying chunk sizes and k-values, (iii) a full-context approach that processes the entire conversation history, (iv) an open-source memory solution, (v) a proprietary model system, and (vi) a dedicated memory management platform. Empirical results show that our methods consistently outperform all existing memory systems across four question categories: single-hop, temporal, multi-hop, and open-domain. Notably, Mem0 achieves 26% relative improvements in the LLM-as-a-Judge metric over OpenAI, while Mem0 with graph memory achieves around 2% higher overall score than the base configuration. Beyond accuracy gains, we also markedly reduce computational overhead compared to full-context method. In particular, Mem0 attains a 91% lower p95 latency and saves more than 90% token cost, offering a compelling balance between advanced reasoning capabilities and practical deployment constraints. Our findings highlight critical role of structured, persistent memory mechanisms for long-term conversational coherence, paving the way for more reliable and efficient LLM-driven AI agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1d03586baa32b3d6ff657a180053821543e11abb",
+    "externalIds": {
+      "ArXiv": "2504.20073",
+      "DBLP": "journals/corr/abs-2504-20073",
+      "DOI": "10.48550/arXiv.2504.20073",
+      "CorpusId": 278170861
+    },
+    "url": "https://www.semanticscholar.org/paper/1d03586baa32b3d6ff657a180053821543e11abb",
+    "title": "RAGEN: Understanding Self-Evolution in LLM Agents via Multi-Turn Reinforcement Learning",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 208,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.20073, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2243360876",
+        "name": "Zihan Wang"
+      },
+      {
+        "authorId": "2325203435",
+        "name": "Kangrui Wang"
+      },
+      {
+        "authorId": "2282995868",
+        "name": "Qineng Wang"
+      },
+      {
+        "authorId": "2358313156",
+        "name": "Pingyue Zhang"
+      },
+      {
+        "authorId": "2264413993",
+        "name": "Linjie Li"
+      },
+      {
+        "authorId": "2149231840",
+        "name": "Zhengyuan Yang"
+      },
+      {
+        "authorId": "2261261790",
+        "name": "Kefan Yu"
+      },
+      {
+        "authorId": "2196178979",
+        "name": "Minh Nhat Nguyen"
+      },
+      {
+        "authorId": "2358114291",
+        "name": "Licheng Liu"
+      },
+      {
+        "authorId": "69445965",
+        "name": "Eli Gottlieb"
+      },
+      {
+        "authorId": "2284995743",
+        "name": "Monica S. Lam"
+      },
+      {
+        "authorId": "2358714179",
+        "name": "Yiping Lu"
+      },
+      {
+        "authorId": "2274932202",
+        "name": "Kyunghyun Cho"
+      },
+      {
+        "authorId": "2326444500",
+        "name": "Jiajun Wu"
+      },
+      {
+        "authorId": "2253964624",
+        "name": "Fei-Fei Li"
+      },
+      {
+        "authorId": "2316559955",
+        "name": "Lijuan Wang"
+      },
+      {
+        "authorId": "2358193730",
+        "name": "Yejin Choi"
+      },
+      {
+        "authorId": "3361240",
+        "name": "Manling Li"
+      }
+    ],
+    "abstract": "Training large language models (LLMs) as interactive agents presents unique challenges including long-horizon decision making and interacting with stochastic environment feedback. While reinforcement learning (RL) has enabled progress in static tasks, multi-turn agent RL training remains underexplored. We propose StarPO (State-Thinking-Actions-Reward Policy Optimization), a general framework for trajectory-level agent RL, and introduce RAGEN, a modular system for training and evaluating LLM agents. Our study on four stylized environments reveals three core findings. First, our agent RL training shows a recurring mode of Echo Trap where reward variance cliffs and gradient spikes; we address this with StarPO-S, a stabilized variant with trajectory filtering, critic incorporation, and gradient stabilization. Second, we find the shaping of RL rollouts would benefit from diverse initial states, medium interaction granularity and more frequent sampling. Third, we show that without fine-grained, reasoning-aware reward signals, agent reasoning hardly emerge through multi-turn RL and they may show shallow strategies or hallucinated thoughts. Code and environments are available at https://github.com/RAGEN-AI/RAGEN.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "69768fdcb8c2bbf5c658c737b33d9c95ea98f60f",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2504-07079",
+      "ArXiv": "2504.07079",
+      "DOI": "10.48550/arXiv.2504.07079",
+      "CorpusId": 277634081
+    },
+    "url": "https://www.semanticscholar.org/paper/69768fdcb8c2bbf5c658c737b33d9c95ea98f60f",
+    "title": "SkillWeaver: Web Agents can Self-Improve by Discovering and Honing Skills",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 62,
+    "influentialCitationCount": 5,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.07079, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2112670551",
+        "name": "Boyuan Zheng"
+      },
+      {
+        "authorId": "2192713722",
+        "name": "Michael Y. Fatemi"
+      },
+      {
+        "authorId": "2346309962",
+        "name": "Xiaolong Jin"
+      },
+      {
+        "authorId": "2307569999",
+        "name": "Z. Wang"
+      },
+      {
+        "authorId": "2354334142",
+        "name": "Apurva Gandhi"
+      },
+      {
+        "authorId": "2290031618",
+        "name": "Yueqi Song"
+      },
+      {
+        "authorId": "2022231256",
+        "name": "Yu Gu"
+      },
+      {
+        "authorId": "2089885442",
+        "name": "Jayanth Srinivasa"
+      },
+      {
+        "authorId": "2284307754",
+        "name": "Gaowen Liu"
+      },
+      {
+        "authorId": "2337795179",
+        "name": "Graham Neubig"
+      },
+      {
+        "authorId": "1758652",
+        "name": "Yu Su"
+      }
+    ],
+    "abstract": "To survive and thrive in complex environments, humans have evolved sophisticated self-improvement mechanisms through environment exploration, hierarchical abstraction of experiences into reuseable skills, and collaborative construction of an ever-growing skill repertoire. Despite recent advancements, autonomous web agents still lack crucial self-improvement capabilities, struggling with procedural knowledge abstraction, refining skills, and skill composition. In this work, we introduce SkillWeaver, a skill-centric framework enabling agents to self-improve by autonomously synthesizing reusable skills as APIs. Given a new website, the agent autonomously discovers skills, executes them for practice, and distills practice experiences into robust APIs. Iterative exploration continually expands a library of lightweight, plug-and-play APIs, significantly enhancing the agent's capabilities. Experiments on WebArena and real-world websites demonstrate the efficacy of SkillWeaver, achieving relative success rate improvements of 31.8% and 39.8%, respectively. Additionally, APIs synthesized by strong agents substantially enhance weaker agents through transferable skills, yielding improvements of up to 54.3% on WebArena. These results demonstrate the effectiveness of honing diverse website interactions into APIs, which can be seamlessly shared among various web agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1f35a15fe9df43d24ec6ea551ec6c9766c17eccf",
+    "externalIds": {
+      "ArXiv": "2502.12110",
+      "DBLP": "journals/corr/abs-2502-12110",
+      "DOI": "10.48550/arXiv.2502.12110",
+      "CorpusId": 276421617
+    },
+    "url": "https://www.semanticscholar.org/paper/1f35a15fe9df43d24ec6ea551ec6c9766c17eccf",
+    "title": "A-MEM: Agentic Memory for LLM Agents",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 492,
+    "influentialCitationCount": 68,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.12110, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2042705246",
+        "name": "Wujiang Xu"
+      },
+      {
+        "authorId": "2260912606",
+        "name": "Zujie Liang"
+      },
+      {
+        "authorId": "2261740874",
+        "name": "Kai Mei"
+      },
+      {
+        "authorId": "2296705466",
+        "name": "Hang Gao"
+      },
+      {
+        "authorId": "2110449137",
+        "name": "Juntao Tan"
+      },
+      {
+        "authorId": "2296729361",
+        "name": "Yongfeng Zhang"
+      }
+    ],
+    "abstract": "While large language model (LLM) agents can effectively use external tools for complex real-world tasks, they require memory systems to leverage historical experiences. Current memory systems enable basic storage and retrieval but lack sophisticated memory organization, despite recent attempts to incorporate graph databases. Moreover, these systems'fixed operations and structures limit their adaptability across diverse tasks. To address this limitation, this paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way. Following the basic principles of the Zettelkasten method, we designed our memory system to create interconnected knowledge networks through dynamic indexing and linking. When a new memory is added, we generate a comprehensive note containing multiple structured attributes, including contextual descriptions, keywords, and tags. The system then analyzes historical memories to identify relevant connections, establishing links where meaningful similarities exist. Additionally, this process enables memory evolution - as new memories are integrated, they can trigger updates to the contextual representations and attributes of existing historical memories, allowing the memory network to continuously refine its understanding. Our approach combines the structured organization principles of Zettelkasten with the flexibility of agent-driven decision making, allowing for more adaptive and context-aware memory management. Empirical experiments on six foundation models show superior improvement against existing SOTA baselines. The source code for evaluating performance is available at https://github.com/WujiangXu/A-mem, while the source code of the agentic memory system is available at https://github.com/WujiangXu/A-mem-sys.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "fd48dc6b433cfcd220b6e769c6179d8ef6fcf862",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2410-10813",
+      "ArXiv": "2410.10813",
+      "DOI": "10.48550/arXiv.2410.10813",
+      "CorpusId": 273345961
+    },
+    "url": "https://www.semanticscholar.org/paper/fd48dc6b433cfcd220b6e769c6179d8ef6fcf862",
+    "title": "LongMemEval: Benchmarking Chat Assistants on Long-Term Interactive Memory",
+    "venue": "International Conference on Learning Representations",
+    "year": 2024,
+    "citationCount": 260,
+    "influentialCitationCount": 65,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2410.10813, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2107535909",
+        "name": "Di Wu"
+      },
+      {
+        "authorId": "2261392960",
+        "name": "Hongwei Wang"
+      },
+      {
+        "authorId": "2309885350",
+        "name": "Wenhao Yu"
+      },
+      {
+        "authorId": "2284259968",
+        "name": "Yuwei Zhang"
+      },
+      {
+        "authorId": "2257127887",
+        "name": "Kai-Wei Chang"
+      },
+      {
+        "authorId": "2303999735",
+        "name": "Dong Yu"
+      }
+    ],
+    "abstract": "Recent large language model (LLM)-driven chat assistant systems have integrated memory components to track user-assistant chat histories, enabling more accurate and personalized responses. However, their long-term memory capabilities in sustained interactions remain underexplored. We introduce LongMemEval, a comprehensive benchmark designed to evaluate five core long-term memory abilities of chat assistants: information extraction, multi-session reasoning, temporal reasoning, knowledge updates, and abstention. With 500 meticulously curated questions embedded within freely scalable user-assistant chat histories, LongMemEval presents a significant challenge to existing long-term memory systems, with commercial chat assistants and long-context LLMs showing a 30% accuracy drop on memorizing information across sustained interactions. We then present a unified framework that breaks down the long-term memory design into three stages: indexing, retrieval, and reading. Built upon key experimental insights, we propose several memory design optimizations including session decomposition for value granularity, fact-augmented key expansion for indexing, and time-aware query expansion for refining the search scope. Extensive experiments show that these optimizations greatly improve both memory recall and downstream question answering on LongMemEval. Overall, our study provides valuable resources and guidance for advancing the long-term memory capabilities of LLM-based chat assistants, paving the way toward more personalized and reliable conversational AI. Our benchmark and code are publicly available at https://github.com/xiaowu0162/LongMemEval.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "c9537f656e7d9713fd4108ce7bf512290f48e562",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2408-08435",
+      "ArXiv": "2408.08435",
+      "DOI": "10.48550/arXiv.2408.08435",
+      "CorpusId": 271892234
+    },
+    "url": "https://www.semanticscholar.org/paper/c9537f656e7d9713fd4108ce7bf512290f48e562",
+    "title": "Automated Design of Agentic Systems",
+    "venue": "International Conference on Learning Representations",
+    "year": 2024,
+    "citationCount": 183,
+    "influentialCitationCount": 31,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2408.08435, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2029238065",
+        "name": "Shengran Hu"
+      },
+      {
+        "authorId": "2110752472",
+        "name": "Cong Lu"
+      },
+      {
+        "authorId": "2303255568",
+        "name": "Jeff Clune"
+      }
+    ],
+    "abstract": "Researchers are investing substantial effort in developing powerful general-purpose agents, wherein Foundation Models are used as modules within agentic systems (e.g. Chain-of-Thought, Self-Reflection, Toolformer). However, the history of machine learning teaches us that hand-designed solutions are eventually replaced by learned solutions. We describe a newly forming research area, Automated Design of Agentic Systems (ADAS), which aims to automatically create powerful agentic system designs, including inventing novel building blocks and/or combining them in new ways. We further demonstrate that there is an unexplored yet promising approach within ADAS where agents can be defined in code and new agents can be automatically discovered by a meta agent programming ever better ones in code. Given that programming languages are Turing Complete, this approach theoretically enables the learning of any possible agentic system: including novel prompts, tool use, workflows, and combinations thereof. We present a simple yet effective algorithm named Meta Agent Search to demonstrate this idea, where a meta agent iteratively programs interesting new agents based on an ever-growing archive of previous discoveries. Through extensive experiments across multiple domains including coding, science, and math, we show that our algorithm can progressively invent agents with novel designs that greatly outperform state-of-the-art hand-designed agents. Importantly, we consistently observe the surprising result that agents invented by Meta Agent Search maintain superior performance even when transferred across domains and models, demonstrating their robustness and generality. Provided we develop it safely, our work illustrates the potential of an exciting new research direction toward automatically designing ever-more powerful agentic systems to benefit humanity.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "40e8af970329135ec95057d73e239dab805ad128",
+    "externalIds": {
+      "ArXiv": "2407.21783",
+      "CorpusId": 271571434
+    },
+    "url": "https://www.semanticscholar.org/paper/40e8af970329135ec95057d73e239dab805ad128",
+    "title": "The Llama 3 Herd of Models",
+    "venue": "",
+    "year": 2024,
+    "citationCount": 15097,
+    "influentialCitationCount": 2868,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2407.21783, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2479521",
+        "name": "Abhimanyu Dubey"
+      },
+      {
+        "authorId": "2369482",
+        "name": "Abhinav Jauhri"
+      },
+      {
+        "authorId": "2299944289",
+        "name": "Abhinav Pandey"
+      },
+      {
+        "authorId": "89942851",
+        "name": "Abhishek Kadian"
+      },
+      {
+        "authorId": "2313916217",
+        "name": "Ahmad Al-Dahle"
+      },
+      {
+        "authorId": "2313924937",
+        "name": "Aiesha Letman"
+      },
+      {
+        "authorId": "2313975817",
+        "name": "Akhil Mathur"
+      },
+      {
+        "authorId": "14279694",
+        "name": "A. Schelten"
+      },
+      {
+        "authorId": "2329138320",
+        "name": "Amy Yang"
+      },
+      {
+        "authorId": "2247818297",
+        "name": "Angela Fan"
+      },
+      {
+        "authorId": "2313918197",
+        "name": "Anirudh Goyal"
+      },
+      {
+        "authorId": "2129047988",
+        "name": "Anthony S. Hartshorn"
+      },
+      {
+        "authorId": "2269467670",
+        "name": "Aobo Yang"
+      },
+      {
+        "authorId": "2313926281",
+        "name": "Archi Mitra"
+      },
+      {
+        "authorId": "2313918952",
+        "name": "A. Sravankumar"
+      },
+      {
+        "authorId": "2294453195",
+        "name": "A. Korenev"
+      },
+      {
+        "authorId": "2279336258",
+        "name": "Arthur Hinsvark"
+      },
+      {
+        "authorId": "2314521400",
+        "name": "Arun Rao"
+      },
+      {
+        "authorId": "2313922587",
+        "name": "Aston Zhang"
+      },
+      {
+        "authorId": "2166043087",
+        "name": "Aur'elien Rodriguez"
+      },
+      {
+        "authorId": "2313910288",
+        "name": "Austen Gregerson"
+      },
+      {
+        "authorId": "2295667288",
+        "name": "Ava Spataru"
+      },
+      {
+        "authorId": "2313953240",
+        "name": "Baptiste Rozière"
+      },
+      {
+        "authorId": "2313916233",
+        "name": "B. Biron"
+      },
+      {
+        "authorId": "2237987675",
+        "name": "Binh Tang"
+      },
+      {
+        "authorId": "2079950350",
+        "name": "Bobbie Chern"
+      },
+      {
+        "authorId": "83928755",
+        "name": "Charlotte Caucheteux"
+      },
+      {
+        "authorId": "2313917653",
+        "name": "Chaya Nayak"
+      },
+      {
+        "authorId": "2313909658",
+        "name": "Chloe Bi"
+      },
+      {
+        "authorId": "2313913576",
+        "name": "Chris Marra"
+      },
+      {
+        "authorId": "2217959550",
+        "name": "Chris McConnell"
+      },
+      {
+        "authorId": "2313909741",
+        "name": "Christian Keller"
+      },
+      {
+        "authorId": "103277778",
+        "name": "C. Touret"
+      },
+      {
+        "authorId": "2268428822",
+        "name": "Chunyang Wu"
+      },
+      {
+        "authorId": "2273700455",
+        "name": "C. Wong"
+      },
+      {
+        "authorId": "66286536",
+        "name": "Cristian Canton Ferrer"
+      },
+      {
+        "authorId": "2273414632",
+        "name": "Cyrus Nikolaidis"
+      },
+      {
+        "authorId": "2362698133",
+        "name": "Damien Allonsius"
+      },
+      {
+        "authorId": "2273006690",
+        "name": "D. Song"
+      },
+      {
+        "authorId": "2313909437",
+        "name": "D. Pintz"
+      },
+      {
+        "authorId": "2313918299",
+        "name": "D. Livshits"
+      },
+      {
+        "authorId": "71039937",
+        "name": "David Esiobu"
+      },
+      {
+        "authorId": "2303390957",
+        "name": "Dhruv Choudhary"
+      },
+      {
+        "authorId": "2267338678",
+        "name": "Dhruv Mahajan"
+      },
+      {
+        "authorId": "1405390891",
+        "name": "Diego Garcia-Olano"
+      },
+      {
+        "authorId": "2306842160",
+        "name": "Diego Perino"
+      },
+      {
+        "authorId": "3449411",
+        "name": "Dieuwke Hupkes"
+      },
+      {
+        "authorId": "2343773325",
+        "name": "Egor Lakomkin"
+      },
+      {
+        "authorId": "1394834533",
+        "name": "Ehab A. AlBadawy"
+      },
+      {
+        "authorId": "2313918680",
+        "name": "E. Lobanova"
+      },
+      {
+        "authorId": "31461304",
+        "name": "Emily Dinan"
+      },
+      {
+        "authorId": "2268821751",
+        "name": "E. Smith"
+      },
+      {
+        "authorId": "2708577",
+        "name": "Filip Radenovic"
+      },
+      {
+        "authorId": "2313967211",
+        "name": "Frank Zhang"
+      },
+      {
+        "authorId": "2282478",
+        "name": "Gabriel Synnaeve"
+      },
+      {
+        "authorId": "2314074302",
+        "name": "Gabrielle Lee"
+      },
+      {
+        "authorId": "2313919767",
+        "name": "Georgia Lewis Anderson"
+      },
+      {
+        "authorId": "2268397654",
+        "name": "G. Nail"
+      },
+      {
+        "authorId": "51888120",
+        "name": "G. Mialon"
+      },
+      {
+        "authorId": "2264339927",
+        "name": "Guanglong Pang"
+      },
+      {
+        "authorId": "2313924900",
+        "name": "Guillem Cucurell"
+      },
+      {
+        "authorId": "2314075528",
+        "name": "Hailey Nguyen"
+      },
+      {
+        "authorId": "103405110",
+        "name": "Hannah Korevaar"
+      },
+      {
+        "authorId": "2314125186",
+        "name": "Hu Xu"
+      },
+      {
+        "authorId": "2290402489",
+        "name": "Hugo Touvron"
+      },
+      {
+        "authorId": "121929334",
+        "name": "Iliyan Zarov"
+      },
+      {
+        "authorId": "34921162",
+        "name": "Imanol Arrieta Ibarra"
+      },
+      {
+        "authorId": "2207049",
+        "name": "Isabel M. Kloumann"
+      },
+      {
+        "authorId": "2267241285",
+        "name": "Ishan Misra"
+      },
+      {
+        "authorId": "2264288587",
+        "name": "Ivan Evtimov"
+      },
+      {
+        "authorId": "1805998294",
+        "name": "Jade Copet"
+      },
+      {
+        "authorId": "2314056661",
+        "name": "Jaewon Lee"
+      },
+      {
+        "authorId": "2350357790",
+        "name": "Jan Geffert"
+      },
+      {
+        "authorId": "2313917660",
+        "name": "Jana Vranes"
+      },
+      {
+        "authorId": "2314078634",
+        "name": "Jason Park"
+      },
+      {
+        "authorId": "3222225",
+        "name": "Jay Mahadeokar"
+      },
+      {
+        "authorId": "2313919733",
+        "name": "Jeet Shah"
+      },
+      {
+        "authorId": "35721567",
+        "name": "J. V. D. Linde"
+      },
+      {
+        "authorId": "2313909388",
+        "name": "J. Billock"
+      },
+      {
+        "authorId": "2287049560",
+        "name": "Jenny Hong"
+      },
+      {
+        "authorId": "2223749565",
+        "name": "Jenya Lee"
+      },
+      {
+        "authorId": "2430465950",
+        "name": "Jeremy Fu"
+      },
+      {
+        "authorId": "31357678",
+        "name": "Jianfeng Chi"
+      },
+      {
+        "authorId": "2314428565",
+        "name": "Jianyu Huang"
+      },
+      {
+        "authorId": "2314080357",
+        "name": "Jiawen Liu"
+      },
+      {
+        "authorId": "2314602001",
+        "name": "Jie Wang"
+      },
+      {
+        "authorId": "2314078877",
+        "name": "Jiecao Yu"
+      },
+      {
+        "authorId": "1749686057",
+        "name": "Joanna Bitton"
+      },
+      {
+        "authorId": "90591458",
+        "name": "Joe Spisak"
+      },
+      {
+        "authorId": "2149161568",
+        "name": "Jongsoo Park"
+      },
+      {
+        "authorId": "2313925205",
+        "name": "Joseph Rocca"
+      },
+      {
+        "authorId": "2313912873",
+        "name": "J. Johnstun"
+      },
+      {
+        "authorId": "2273413914",
+        "name": "Joshua Saxe"
+      },
+      {
+        "authorId": "2211671694",
+        "name": "Ju-Qing Jia"
+      },
+      {
+        "authorId": "2313918589",
+        "name": "Kalyan Vasuden Alwala"
+      },
+      {
+        "authorId": "17097160",
+        "name": "K. Upasani"
+      },
+      {
+        "authorId": "2313918427",
+        "name": "Kate Plawiak"
+      },
+      {
+        "authorId": "2313920868",
+        "name": "Keqian Li"
+      },
+      {
+        "authorId": "1702066",
+        "name": "Kenneth Heafield"
+      },
+      {
+        "authorId": "2282542714",
+        "name": "Kevin R. Stone"
+      },
+      {
+        "authorId": "1405642252",
+        "name": "Khalid El-Arini"
+      },
+      {
+        "authorId": "2273645788",
+        "name": "Krithika Iyer"
+      },
+      {
+        "authorId": "2279924280",
+        "name": "Kshitiz Malik"
+      },
+      {
+        "authorId": "2313925316",
+        "name": "Kuen-ley Chiu"
+      },
+      {
+        "authorId": "2313913532",
+        "name": "Kunal Bhalla"
+      },
+      {
+        "authorId": "2313915935",
+        "name": "Lauren Rantala-Yeary"
+      },
+      {
+        "authorId": "1803520",
+        "name": "L. Maaten"
+      },
+      {
+        "authorId": "2314080073",
+        "name": "Lawrence Chen"
+      },
+      {
+        "authorId": "2313924605",
+        "name": "Liang Tan"
+      },
+      {
+        "authorId": "2313918409",
+        "name": "Liz Jenkins"
+      },
+      {
+        "authorId": "2249724552",
+        "name": "Louis Martin"
+      },
+      {
+        "authorId": "151093281",
+        "name": "Lovish Madaan"
+      },
+      {
+        "authorId": "2313912794",
+        "name": "Lubo Malo"
+      },
+      {
+        "authorId": "2040305955",
+        "name": "Lukas Blecher"
+      },
+      {
+        "authorId": "2313925619",
+        "name": "Lukas Landzaat"
+      },
+      {
+        "authorId": "2314194315",
+        "name": "Luke de Oliveira"
+      },
+      {
+        "authorId": "2000839712",
+        "name": "M. Muzzi"
+      },
+      {
+        "authorId": "2351135162",
+        "name": "Ma-hesh Pasupuleti"
+      },
+      {
+        "authorId": "152964870",
+        "name": "Mannat Singh"
+      },
+      {
+        "authorId": "2210374",
+        "name": "Manohar Paluri"
+      },
+      {
+        "authorId": "2059886128",
+        "name": "Marcin Kardas"
+      },
+      {
+        "authorId": "2313909379",
+        "name": "Mathew Oldham"
+      },
+      {
+        "authorId": "2313912870",
+        "name": "Mathieu Rita"
+      },
+      {
+        "authorId": "2313905186",
+        "name": "Maya Pavlova"
+      },
+      {
+        "authorId": "2165660870",
+        "name": "M. Kambadur"
+      },
+      {
+        "authorId": "2247796743",
+        "name": "Mike Lewis"
+      },
+      {
+        "authorId": "2310234768",
+        "name": "Min Si"
+      },
+      {
+        "authorId": "2247874378",
+        "name": "Mitesh Kumar Singh"
+      },
+      {
+        "authorId": "2314434867",
+        "name": "Mona Hassan"
+      },
+      {
+        "authorId": "39589154",
+        "name": "Naman Goyal"
+      },
+      {
+        "authorId": "2911626",
+        "name": "Narjes Torabi"
+      },
+      {
+        "authorId": "2223756247",
+        "name": "Niko-lay Bashlykov"
+      },
+      {
+        "authorId": "3444222",
+        "name": "Nikolay Bogoychev"
+      },
+      {
+        "authorId": "22193324",
+        "name": "Niladri S. Chatterji"
+      },
+      {
+        "authorId": "2096643450",
+        "name": "Olivier Duchenne"
+      },
+      {
+        "authorId": "2166310112",
+        "name": "Onur cCelebi"
+      },
+      {
+        "authorId": "2037772368",
+        "name": "Patrick Alrassy"
+      },
+      {
+        "authorId": "2336857761",
+        "name": "Pengchuan Zhang"
+      },
+      {
+        "authorId": "2273574279",
+        "name": "Pengwei Li"
+      },
+      {
+        "authorId": "2268221163",
+        "name": "Petar Vasić"
+      },
+      {
+        "authorId": "2313915931",
+        "name": "Peter Weng"
+      },
+      {
+        "authorId": "51229603",
+        "name": "Prajjwal Bhargava"
+      },
+      {
+        "authorId": "46175439",
+        "name": "P. Dubal"
+      },
+      {
+        "authorId": "2304450089",
+        "name": "Praveen Krishnan"
+      },
+      {
+        "authorId": "2146367061",
+        "name": "Punit Singh Koura"
+      },
+      {
+        "authorId": "2214843767",
+        "name": "Puxin Xu"
+      },
+      {
+        "authorId": "2314186827",
+        "name": "Q. He"
+      },
+      {
+        "authorId": "2313912601",
+        "name": "Qingxiao Dong"
+      },
+      {
+        "authorId": "2313910187",
+        "name": "R. Srinivasan"
+      },
+      {
+        "authorId": "2313925467",
+        "name": "R. Ganapathy"
+      },
+      {
+        "authorId": "98804036",
+        "name": "Ramon Calderer"
+      },
+      {
+        "authorId": "2313909428",
+        "name": "Ricardo Silveira Cabral"
+      },
+      {
+        "authorId": "1962768",
+        "name": "Robert Stojnic"
+      },
+      {
+        "authorId": "48647153",
+        "name": "R. Raileanu"
+      },
+      {
+        "authorId": "3102850",
+        "name": "Rohit Girdhar"
+      },
+      {
+        "authorId": "2313913363",
+        "name": "Rohit Patel"
+      },
+      {
+        "authorId": "2007285239",
+        "name": "Romain Sauvestre"
+      },
+      {
+        "authorId": "2313925210",
+        "name": "Ron-nie Polidoro"
+      },
+      {
+        "authorId": "1722889",
+        "name": "Roshan Sumbaly"
+      },
+      {
+        "authorId": "2110697298",
+        "name": "Ross Taylor"
+      },
+      {
+        "authorId": "2214818043",
+        "name": "Ruan Silva"
+      },
+      {
+        "authorId": "2266467782",
+        "name": "Rui Hou"
+      },
+      {
+        "authorId": "2248766592",
+        "name": "Rui Wang"
+      },
+      {
+        "authorId": "2268759462",
+        "name": "S. Hosseini"
+      },
+      {
+        "authorId": "2273416143",
+        "name": "Sa-hana Chennabasappa"
+      },
+      {
+        "authorId": "2313985129",
+        "name": "Sanjay Singh"
+      },
+      {
+        "authorId": "2277511475",
+        "name": "Sean Bell"
+      },
+      {
+        "authorId": "2281792543",
+        "name": "S. Kim"
+      },
+      {
+        "authorId": "2068070",
+        "name": "Sergey Edunov"
+      },
+      {
+        "authorId": "35557488",
+        "name": "Shaoliang Nie"
+      },
+      {
+        "authorId": "46617804",
+        "name": "Sharan Narang"
+      },
+      {
+        "authorId": "1498636613",
+        "name": "S. Raparthy"
+      },
+      {
+        "authorId": "2191455",
+        "name": "Sheng Shen"
+      },
+      {
+        "authorId": "2272846244",
+        "name": "Shengye Wan"
+      },
+      {
+        "authorId": "2116473",
+        "name": "Shruti Bhosale"
+      },
+      {
+        "authorId": "2314071119",
+        "name": "Shun Zhang"
+      },
+      {
+        "authorId": "83754395",
+        "name": "Simon Vandenhende"
+      },
+      {
+        "authorId": "47505161",
+        "name": "Soumya Batra"
+      },
+      {
+        "authorId": "2273415395",
+        "name": "Spencer Whitman"
+      },
+      {
+        "authorId": "31460313",
+        "name": "Sten Sootla"
+      },
+      {
+        "authorId": "2313909594",
+        "name": "S. Collot"
+      },
+      {
+        "authorId": "40895369",
+        "name": "Suchin Gururangan"
+      },
+      {
+        "authorId": "148016419",
+        "name": "S. Borodinsky"
+      },
+      {
+        "authorId": "2313925454",
+        "name": "Tamar Herman"
+      },
+      {
+        "authorId": "2313918585",
+        "name": "T. Fowler"
+      },
+      {
+        "authorId": "2313917558",
+        "name": "Tarek Sheasha"
+      },
+      {
+        "authorId": "2313910328",
+        "name": "Thomas Georgiou"
+      },
+      {
+        "authorId": "2073456043",
+        "name": "Thomas Scialom"
+      },
+      {
+        "authorId": "2313915815",
+        "name": "Tobias Speckbacher"
+      },
+      {
+        "authorId": "39980906",
+        "name": "Todor Mihaylov"
+      },
+      {
+        "authorId": "2313914277",
+        "name": "Tong Xiao"
+      },
+      {
+        "authorId": "46907106",
+        "name": "Ujjwal Karn"
+      },
+      {
+        "authorId": "28554843",
+        "name": "Vedanuj Goswami"
+      },
+      {
+        "authorId": "2314332514",
+        "name": "Vibhor Gupta"
+      },
+      {
+        "authorId": "34066479",
+        "name": "Vignesh Ramanathan"
+      },
+      {
+        "authorId": "2190957318",
+        "name": "Viktor Kerkez"
+      },
+      {
+        "authorId": "2313913380",
+        "name": "Vincent Gonguet"
+      },
+      {
+        "authorId": "2313918349",
+        "name": "Virginie Do"
+      },
+      {
+        "authorId": "2232955561",
+        "name": "Vish Vogeti"
+      },
+      {
+        "authorId": "2162195471",
+        "name": "Vladan Petrovic"
+      },
+      {
+        "authorId": "2266751414",
+        "name": "Weiwei Chu"
+      },
+      {
+        "authorId": "2290750668",
+        "name": "Wenhan Xiong"
+      },
+      {
+        "authorId": "2223742000",
+        "name": "Wenyin Fu"
+      },
+      {
+        "authorId": "2313913371",
+        "name": "Whit-ney Meers"
+      },
+      {
+        "authorId": "1490887583",
+        "name": "X. Martinet"
+      },
+      {
+        "authorId": "2297930724",
+        "name": "Xiaodong Wang"
+      },
+      {
+        "authorId": "2249851858",
+        "name": "X. Tan"
+      },
+      {
+        "authorId": "2285798957",
+        "name": "Xinfeng Xie"
+      },
+      {
+        "authorId": "2313910170",
+        "name": "Xuchao Jia"
+      },
+      {
+        "authorId": "2314067352",
+        "name": "Xuewei Wang"
+      },
+      {
+        "authorId": "1404341450",
+        "name": "Yaelle Goldschlag"
+      },
+      {
+        "authorId": "2334648",
+        "name": "Yashesh Gaur"
+      },
+      {
+        "authorId": "2223764353",
+        "name": "Yasmine Babaei"
+      },
+      {
+        "authorId": "148416622",
+        "name": "Yiqian Wen"
+      },
+      {
+        "authorId": "2314381758",
+        "name": "Yiwen Song"
+      },
+      {
+        "authorId": "2108473229",
+        "name": "Yuchen Zhang"
+      },
+      {
+        "authorId": "2297839847",
+        "name": "Yue Li"
+      },
+      {
+        "authorId": "2272672481",
+        "name": "Yuning Mao"
+      },
+      {
+        "authorId": "2297187212",
+        "name": "Zacharie Delpierre Coudert"
+      },
+      {
+        "authorId": "2293992938",
+        "name": "Zhengxu Yan"
+      },
+      {
+        "authorId": "2266490735",
+        "name": "Zhengxing Chen"
+      },
+      {
+        "authorId": "51149919",
+        "name": "Zoe Papakipos"
+      },
+      {
+        "authorId": "2306863572",
+        "name": "Aaditya K. Singh"
+      },
+      {
+        "authorId": "2233294011",
+        "name": "Aaron Grattafiori"
+      },
+      {
+        "authorId": "2312019070",
+        "name": "Abha Jain"
+      },
+      {
+        "authorId": "2313915967",
+        "name": "A. Kelsey"
+      },
+      {
+        "authorId": "116814432",
+        "name": "Adam Shajnfeld"
+      },
+      {
+        "authorId": "2077604116",
+        "name": "Adi Gangidi"
+      },
+      {
+        "authorId": "2313910256",
+        "name": "Adolfo Victoria"
+      },
+      {
+        "authorId": "2313913221",
+        "name": "Ahuva Goldstand"
+      },
+      {
+        "authorId": "2313925780",
+        "name": "A. Menon"
+      },
+      {
+        "authorId": "2314067298",
+        "name": "Ajay Sharma"
+      },
+      {
+        "authorId": "2313915843",
+        "name": "Alex Boesenberg"
+      },
+      {
+        "authorId": "2313910116",
+        "name": "Alex Vaughan"
+      },
+      {
+        "authorId": "14667698",
+        "name": "Alexei Baevski"
+      },
+      {
+        "authorId": "2313918472",
+        "name": "Allie Feinstein"
+      },
+      {
+        "authorId": "122882087",
+        "name": "Amanda Kallet"
+      },
+      {
+        "authorId": "2313918666",
+        "name": "Amit Sangani"
+      },
+      {
+        "authorId": "2313925473",
+        "name": "Anam Yunus"
+      },
+      {
+        "authorId": "2266838640",
+        "name": "Andrei Lupu"
+      },
+      {
+        "authorId": "2243192949",
+        "name": "Andres Alvarado"
+      },
+      {
+        "authorId": "2313925570",
+        "name": "A. Caples"
+      },
+      {
+        "authorId": "2313913152",
+        "name": "Andrew Gu"
+      },
+      {
+        "authorId": "2313919243",
+        "name": "Andrew Ho"
+      },
+      {
+        "authorId": "2282542314",
+        "name": "Andrew Poulton"
+      },
+      {
+        "authorId": "2313909933",
+        "name": "Andrew Ryan"
+      },
+      {
+        "authorId": "1453469113",
+        "name": "Ankit Ramchandani"
+      },
+      {
+        "authorId": "2313918528",
+        "name": "Annie Franco"
+      },
+      {
+        "authorId": "51912276",
+        "name": "Aparajita Saraf"
+      },
+      {
+        "authorId": "2313917455",
+        "name": "Arkabandhu Chowdhury"
+      },
+      {
+        "authorId": "2313925699",
+        "name": "Ashley Gabriel"
+      },
+      {
+        "authorId": "2313909987",
+        "name": "Ashwin Bharambe"
+      },
+      {
+        "authorId": "35198582",
+        "name": "Assaf Eisenman"
+      },
+      {
+        "authorId": "2313915928",
+        "name": "Azadeh Yazdan"
+      },
+      {
+        "authorId": "2313918606",
+        "name": "Beau James"
+      },
+      {
+        "authorId": "2313913272",
+        "name": "Ben Maurer"
+      },
+      {
+        "authorId": "2897362",
+        "name": "B. Leonhardi"
+      },
+      {
+        "authorId": "2319973",
+        "name": "Po-Yao (Bernie) Huang"
+      },
+      {
+        "authorId": "2313918673",
+        "name": "Beth Loyd"
+      },
+      {
+        "authorId": "2313909983",
+        "name": "Beto de Paola"
+      },
+      {
+        "authorId": "8005713",
+        "name": "Bhargavi Paranjape"
+      },
+      {
+        "authorId": "2314014642",
+        "name": "Bing Liu"
+      },
+      {
+        "authorId": "2314069142",
+        "name": "Bo Wu"
+      },
+      {
+        "authorId": "2313909094",
+        "name": "B. Ni"
+      },
+      {
+        "authorId": "2313916282",
+        "name": "Braden Hancock"
+      },
+      {
+        "authorId": "46240090",
+        "name": "Bram Wasti"
+      },
+      {
+        "authorId": "2313918213",
+        "name": "Brandon Spence"
+      },
+      {
+        "authorId": "2313918219",
+        "name": "B. Stojkovic"
+      },
+      {
+        "authorId": "2313925572",
+        "name": "Brian Gamido"
+      },
+      {
+        "authorId": "2313917587",
+        "name": "Britt Montalvo"
+      },
+      {
+        "authorId": "2313919256",
+        "name": "Carl Parker"
+      },
+      {
+        "authorId": "2313913658",
+        "name": "Carly Burton"
+      },
+      {
+        "authorId": "2313917281",
+        "name": "Catalina Mejia"
+      },
+      {
+        "authorId": "2313925537",
+        "name": "Changhan Wang"
+      },
+      {
+        "authorId": "2314071777",
+        "name": "Changkyu Kim"
+      },
+      {
+        "authorId": "2314072280",
+        "name": "Chao Zhou"
+      },
+      {
+        "authorId": "2313982652",
+        "name": "Chester Hu"
+      },
+      {
+        "authorId": "2290129157",
+        "name": "Ching-Hsiang Chu"
+      },
+      {
+        "authorId": "2263867885",
+        "name": "Chris Cai"
+      },
+      {
+        "authorId": "2313925773",
+        "name": "Chris Tindal"
+      },
+      {
+        "authorId": "2322150",
+        "name": "Christoph Feichtenhofer"
+      },
+      {
+        "authorId": "50986776",
+        "name": "Damon Civin"
+      },
+      {
+        "authorId": "2313913237",
+        "name": "D. Beaty"
+      },
+      {
+        "authorId": "3046707",
+        "name": "Daniel Kreymer"
+      },
+      {
+        "authorId": "2530311",
+        "name": "Shang-Wen Li"
+      },
+      {
+        "authorId": "2313916159",
+        "name": "Danny Wyatt"
+      },
+      {
+        "authorId": "2161835643",
+        "name": "David Adkins"
+      },
+      {
+        "authorId": "2313915190",
+        "name": "David Xu"
+      },
+      {
+        "authorId": "2273657478",
+        "name": "Davide Testuggine"
+      },
+      {
+        "authorId": "2311498203",
+        "name": "Delia David"
+      },
+      {
+        "authorId": "2248278031",
+        "name": "Devi Parikh"
+      },
+      {
+        "authorId": "2145259939",
+        "name": "Diana Liskovich"
+      },
+      {
+        "authorId": "2313925798",
+        "name": "Didem Foss"
+      },
+      {
+        "authorId": "2283843884",
+        "name": "Dingkang Wang"
+      },
+      {
+        "authorId": "145267619",
+        "name": "Duc Le"
+      },
+      {
+        "authorId": "2313913567",
+        "name": "Dustin Holland"
+      },
+      {
+        "authorId": "2313916034",
+        "name": "Edward Dowling"
+      },
+      {
+        "authorId": "2313916009",
+        "name": "Eissa Jamil"
+      },
+      {
+        "authorId": "2313925401",
+        "name": "Elaine Montgomery"
+      },
+      {
+        "authorId": "6072807",
+        "name": "Eleonora Presani"
+      },
+      {
+        "authorId": "2313914699",
+        "name": "Emily Hahn"
+      },
+      {
+        "authorId": "2313913986",
+        "name": "Emily Wood"
+      },
+      {
+        "authorId": "2313913160",
+        "name": "Erik Brinkman"
+      },
+      {
+        "authorId": "2064373270",
+        "name": "E. Arcaute"
+      },
+      {
+        "authorId": "2313915853",
+        "name": "Evan Dunbar"
+      },
+      {
+        "authorId": "2313918562",
+        "name": "Evan Smothers"
+      },
+      {
+        "authorId": "2314197755",
+        "name": "Fei Sun"
+      },
+      {
+        "authorId": "32653170",
+        "name": "F. Kreuk"
+      },
+      {
+        "authorId": "2313907929",
+        "name": "Feng Tian"
+      },
+      {
+        "authorId": "2160885118",
+        "name": "Firat Ozgenel"
+      },
+      {
+        "authorId": "31292058",
+        "name": "Francesco Caggioni"
+      },
+      {
+        "authorId": "144204682",
+        "name": "Francisco (Paco) Guzmán"
+      },
+      {
+        "authorId": "3360115",
+        "name": "Frank J. Kanayet"
+      },
+      {
+        "authorId": "2243280567",
+        "name": "Frank Seide"
+      },
+      {
+        "authorId": "2313913137",
+        "name": "Gabriela Medina Florez"
+      },
+      {
+        "authorId": "2313925846",
+        "name": "Gabriella Schwarz"
+      },
+      {
+        "authorId": "2313918570",
+        "name": "Gada Badeer"
+      },
+      {
+        "authorId": "2313916006",
+        "name": "Georgia Swee"
+      },
+      {
+        "authorId": "2313925677",
+        "name": "Gil Halpern"
+      },
+      {
+        "authorId": "2028300167",
+        "name": "Govind Thattai"
+      },
+      {
+        "authorId": "2313918648",
+        "name": "Grant Herman"
+      },
+      {
+        "authorId": "2266304177",
+        "name": "Grigory Sizov"
+      },
+      {
+        "authorId": "47776500",
+        "name": "Guangyi Zhang"
+      },
+      {
+        "authorId": "2289832027",
+        "name": "G. Lakshminarayanan"
+      },
+      {
+        "authorId": "2343773236",
+        "name": "Hamid Shojanazeri"
+      },
+      {
+        "authorId": "2313908554",
+        "name": "Han Zou"
+      },
+      {
+        "authorId": "2314725059",
+        "name": "Hannah Wang"
+      },
+      {
+        "authorId": "2261827291",
+        "name": "Han Zha"
+      },
+      {
+        "authorId": "30279076",
+        "name": "Haroun Habeeb"
+      },
+      {
+        "authorId": "2313913215",
+        "name": "Harrison Rudolph"
+      },
+      {
+        "authorId": "2297942583",
+        "name": "Helen Suk"
+      },
+      {
+        "authorId": "87085411",
+        "name": "Henry Aspegren"
+      },
+      {
+        "authorId": "2313910892",
+        "name": "Hunter Goldman"
+      },
+      {
+        "authorId": "2322981055",
+        "name": "Igor Molybog"
+      },
+      {
+        "authorId": "2032201719",
+        "name": "Igor Tufanov"
+      },
+      {
+        "authorId": "2127473751",
+        "name": "Irina-Elena Veliche"
+      },
+      {
+        "authorId": "2064713742",
+        "name": "Itai Gat"
+      },
+      {
+        "authorId": "2313913125",
+        "name": "J. Weissman"
+      },
+      {
+        "authorId": "2313913133",
+        "name": "James Geboski"
+      },
+      {
+        "authorId": "2313917982",
+        "name": "James Kohli"
+      },
+      {
+        "authorId": "2313909751",
+        "name": "Japhet Asher"
+      },
+      {
+        "authorId": "2131867883",
+        "name": "Jean-Baptiste Gaya"
+      },
+      {
+        "authorId": "2313917933",
+        "name": "Jeff Marcus"
+      },
+      {
+        "authorId": "2314079720",
+        "name": "Jeff Tang"
+      },
+      {
+        "authorId": "2313924089",
+        "name": "J. Chan"
+      },
+      {
+        "authorId": "2313906372",
+        "name": "Jenny Zhen"
+      },
+      {
+        "authorId": "39906022",
+        "name": "J. Reizenstein"
+      },
+      {
+        "authorId": "2313925697",
+        "name": "J. Teboul"
+      },
+      {
+        "authorId": "2314712137",
+        "name": "J. Zhong"
+      },
+      {
+        "authorId": "2314696266",
+        "name": "Jian Jin"
+      },
+      {
+        "authorId": "2314170063",
+        "name": "Jingyi Yang"
+      },
+      {
+        "authorId": "2313921009",
+        "name": "Joe Cummings"
+      },
+      {
+        "authorId": "2313916920",
+        "name": "J. Carvill"
+      },
+      {
+        "authorId": "2313918017",
+        "name": "Jon Shepard"
+      },
+      {
+        "authorId": "2313925667",
+        "name": "J. McPhie"
+      },
+      {
+        "authorId": "2314554743",
+        "name": "J. Torres"
+      },
+      {
+        "authorId": "2313925786",
+        "name": "Josh Ginsburg"
+      },
+      {
+        "authorId": "2314072216",
+        "name": "Junjie Wang"
+      },
+      {
+        "authorId": "2115598555",
+        "name": "Kaixing(Kai) Wu"
+      },
+      {
+        "authorId": "2313913073",
+        "name": "U. KamHou"
+      },
+      {
+        "authorId": "2313917036",
+        "name": "Karan Saxena"
+      },
+      {
+        "authorId": "2313913208",
+        "name": "Karthik Prasad"
+      },
+      {
+        "authorId": "40267343",
+        "name": "Kartikay Khandelwal"
+      },
+      {
+        "authorId": "2158995926",
+        "name": "Katayoun Zand"
+      },
+      {
+        "authorId": "2313926373",
+        "name": "Kathy Matosich"
+      },
+      {
+        "authorId": "2262920209",
+        "name": "K. Veeraraghavan"
+      },
+      {
+        "authorId": "2313925800",
+        "name": "Kelly Michelena"
+      },
+      {
+        "authorId": "2313920868",
+        "name": "Keqian Li"
+      },
+      {
+        "authorId": "2314883034",
+        "name": "Kun Huang"
+      },
+      {
+        "authorId": "2313918835",
+        "name": "Kunal Chawla"
+      },
+      {
+        "authorId": "1410624139",
+        "name": "Kushal Lakhotia"
+      },
+      {
+        "authorId": "2314883036",
+        "name": "Kyle Huang"
+      },
+      {
+        "authorId": "2197533966",
+        "name": "Lailin Chen"
+      },
+      {
+        "authorId": "2313913092",
+        "name": "Lakshya Garg"
+      },
+      {
+        "authorId": "2313926370",
+        "name": "A. Lavender"
+      },
+      {
+        "authorId": "2314073913",
+        "name": "Leandro Silva"
+      },
+      {
+        "authorId": "2313926731",
+        "name": "Lee Bell"
+      },
+      {
+        "authorId": "2313951052",
+        "name": "Lei Zhang"
+      },
+      {
+        "authorId": "2314460078",
+        "name": "Liangpeng Guo"
+      },
+      {
+        "authorId": "2269696579",
+        "name": "Licheng Yu"
+      },
+      {
+        "authorId": "2313918301",
+        "name": "Liron Moshkovich"
+      },
+      {
+        "authorId": "2331511165",
+        "name": "Luca Wehrstedt"
+      },
+      {
+        "authorId": "2072010",
+        "name": "Madian Khabsa"
+      },
+      {
+        "authorId": "2313918577",
+        "name": "Manav Avalani"
+      },
+      {
+        "authorId": "2273002871",
+        "name": "M. Bhatt"
+      },
+      {
+        "authorId": "2010057",
+        "name": "M. Tsimpoukelli"
+      },
+      {
+        "authorId": "98800979",
+        "name": "Martynas Mankus"
+      },
+      {
+        "authorId": "2093466943",
+        "name": "Matan Hasson"
+      },
+      {
+        "authorId": "2343773752",
+        "name": "M. Lennie"
+      },
+      {
+        "authorId": "2248340971",
+        "name": "Matthias Reso"
+      },
+      {
+        "authorId": "2313918566",
+        "name": "M. Groshev"
+      },
+      {
+        "authorId": "2290016941",
+        "name": "M. Naumov"
+      },
+      {
+        "authorId": "52097509",
+        "name": "Maya Lathi"
+      },
+      {
+        "authorId": "2313926376",
+        "name": "Meghan Keneally"
+      },
+      {
+        "authorId": "1727524",
+        "name": "M. Seltzer"
+      },
+      {
+        "authorId": "1806291",
+        "name": "Michal Valko"
+      },
+      {
+        "authorId": "2313917797",
+        "name": "Michelle Restrepo"
+      },
+      {
+        "authorId": "2314105463",
+        "name": "M. Patel"
+      },
+      {
+        "authorId": "2313909990",
+        "name": "Mik Vyatskov"
+      },
+      {
+        "authorId": "49089678",
+        "name": "Mikayel Samvelyan"
+      },
+      {
+        "authorId": "2314111844",
+        "name": "Mike Clark"
+      },
+      {
+        "authorId": "2313910746",
+        "name": "M. Macey"
+      },
+      {
+        "authorId": "2314078208",
+        "name": "Mike Wang"
+      },
+      {
+        "authorId": "147487949",
+        "name": "Miquel Jubert Hermoso"
+      },
+      {
+        "authorId": "2313913313",
+        "name": "Mo Metanat"
+      },
+      {
+        "authorId": "32371083",
+        "name": "Mohammad Rastegari"
+      },
+      {
+        "authorId": "2313910172",
+        "name": "Mun-ish Bansal"
+      },
+      {
+        "authorId": "2265554054",
+        "name": "N. Santhanam"
+      },
+      {
+        "authorId": "2313916856",
+        "name": "Natascha Parks"
+      },
+      {
+        "authorId": "2313910535",
+        "name": "Natasha White"
+      },
+      {
+        "authorId": "2313918859",
+        "name": "Navy-ata Bawa"
+      },
+      {
+        "authorId": "40943290",
+        "name": "Nayan Singhal"
+      },
+      {
+        "authorId": "2313909893",
+        "name": "Nick Egebo"
+      },
+      {
+        "authorId": "1746841",
+        "name": "Nicolas Usunier"
+      },
+      {
+        "authorId": "2285597551",
+        "name": "Nikolay Pavlovich Laptev"
+      },
+      {
+        "authorId": "2313910396",
+        "name": "Ning Dong"
+      },
+      {
+        "authorId": "2314687456",
+        "name": "Ning Zhang"
+      },
+      {
+        "authorId": "2313916655",
+        "name": "Norman Cheng"
+      },
+      {
+        "authorId": "1405690366",
+        "name": "Oleg Chernoguz"
+      },
+      {
+        "authorId": "2313918980",
+        "name": "O. Hart"
+      },
+      {
+        "authorId": "1778909324",
+        "name": "Omkar Salpekar"
+      },
+      {
+        "authorId": "1729960",
+        "name": "Ozlem Kalinli"
+      },
+      {
+        "authorId": "2313916098",
+        "name": "Parkin Kent"
+      },
+      {
+        "authorId": "2313909999",
+        "name": "Parth Parekh"
+      },
+      {
+        "authorId": "2313915995",
+        "name": "Paul Saab"
+      },
+      {
+        "authorId": "2307470796",
+        "name": "Pavan Balaji"
+      },
+      {
+        "authorId": "31915793",
+        "name": "Pe-dro Rittner"
+      },
+      {
+        "authorId": "14171685",
+        "name": "Philip Bontrager"
+      },
+      {
+        "authorId": "2313919367",
+        "name": "Pierre Roux"
+      },
+      {
+        "authorId": "2257254817",
+        "name": "Piotr Dollár"
+      },
+      {
+        "authorId": "2163709899",
+        "name": "Polina Zvyagina"
+      },
+      {
+        "authorId": "2459737",
+        "name": "Prashant Ratanchandani"
+      },
+      {
+        "authorId": "41020300",
+        "name": "P. Yuvraj"
+      },
+      {
+        "authorId": "2313916229",
+        "name": "Qian Liang"
+      },
+      {
+        "authorId": "2313909804",
+        "name": "Rachad Alao"
+      },
+      {
+        "authorId": "2313934481",
+        "name": "R. Rodriguez"
+      },
+      {
+        "authorId": "14714641",
+        "name": "Rafi Ayub"
+      },
+      {
+        "authorId": "2313909891",
+        "name": "Raghotham Murthy"
+      },
+      {
+        "authorId": "2313918294",
+        "name": "Raghu Nayani"
+      },
+      {
+        "authorId": "2264459586",
+        "name": "Rahul Mitra"
+      },
+      {
+        "authorId": "2313919671",
+        "name": "Raymond Li"
+      },
+      {
+        "authorId": "2313918488",
+        "name": "Rebekkah Hogan"
+      },
+      {
+        "authorId": "2313913081",
+        "name": "Robin Battey"
+      },
+      {
+        "authorId": "46886013",
+        "name": "Rocky Wang"
+      },
+      {
+        "authorId": "2313918943",
+        "name": "R. Maheswari"
+      },
+      {
+        "authorId": "1410913697",
+        "name": "Russ Howes"
+      },
+      {
+        "authorId": "1905713",
+        "name": "Ruty Rinott"
+      },
+      {
+        "authorId": "2313916859",
+        "name": "Sai Jayesh Bondu"
+      },
+      {
+        "authorId": "19200118",
+        "name": "Samyak Datta"
+      },
+      {
+        "authorId": "2313913104",
+        "name": "Sara Chugh"
+      },
+      {
+        "authorId": "4320304",
+        "name": "Sara Hunt"
+      },
+      {
+        "authorId": "2313919311",
+        "name": "Sargun Dhillon"
+      },
+      {
+        "authorId": "2105932549",
+        "name": "S. Sidorov"
+      },
+      {
+        "authorId": "3315729",
+        "name": "S. Pan"
+      },
+      {
+        "authorId": "2368297117",
+        "name": "Saurabh Verma"
+      },
+      {
+        "authorId": "2314406059",
+        "name": "Seiji Yamamoto"
+      },
+      {
+        "authorId": "48347720",
+        "name": "Sharadh Ramaswamy"
+      },
+      {
+        "authorId": "2313926214",
+        "name": "Shaun Lindsay"
+      },
+      {
+        "authorId": "2314693028",
+        "name": "Sheng Feng"
+      },
+      {
+        "authorId": "2311565327",
+        "name": "Shenghao Lin"
+      },
+      {
+        "authorId": "2815926",
+        "name": "Shengxin Zha"
+      },
+      {
+        "authorId": "2313916766",
+        "name": "S. Shankar"
+      },
+      {
+        "authorId": "2237076180",
+        "name": "Shuqiang Zhang"
+      },
+      {
+        "authorId": "2237101143",
+        "name": "Sinong Wang"
+      },
+      {
+        "authorId": "50230355",
+        "name": "Sneha Agarwal"
+      },
+      {
+        "authorId": "2423558",
+        "name": "Soji Sajuyigbe"
+      },
+      {
+        "authorId": "2127604",
+        "name": "Soumith Chintala"
+      },
+      {
+        "authorId": "2313919129",
+        "name": "Stephanie Max"
+      },
+      {
+        "authorId": "2125208891",
+        "name": "Stephen Chen"
+      },
+      {
+        "authorId": "2313926357",
+        "name": "Steve Kehoe"
+      },
+      {
+        "authorId": "2313909787",
+        "name": "Steve Satterfield"
+      },
+      {
+        "authorId": "2313918283",
+        "name": "Sudarshan Govindaprasad"
+      },
+      {
+        "authorId": "2157683980",
+        "name": "S. Gupta"
+      },
+      {
+        "authorId": "2286537482",
+        "name": "Sung-Bae Cho"
+      },
+      {
+        "authorId": "2313919117",
+        "name": "Sunny Virk"
+      },
+      {
+        "authorId": "2313914940",
+        "name": "Suraj Subramanian"
+      },
+      {
+        "authorId": "89754631",
+        "name": "Sy Choudhury"
+      },
+      {
+        "authorId": "2313908725",
+        "name": "Sydney Goldman"
+      },
+      {
+        "authorId": "2211633",
+        "name": "Tal Remez"
+      },
+      {
+        "authorId": "2071335303",
+        "name": "Tamar Glaser"
+      },
+      {
+        "authorId": "2313910221",
+        "name": "Tamara Best"
+      },
+      {
+        "authorId": "2189305275",
+        "name": "Thilo Kohler"
+      },
+      {
+        "authorId": "2313919760",
+        "name": "Thomas Robinson"
+      },
+      {
+        "authorId": "2314332791",
+        "name": "Tianhe Li"
+      },
+      {
+        "authorId": "1993655237",
+        "name": "Tianjun Zhang"
+      },
+      {
+        "authorId": "2313919132",
+        "name": "Tim Matthews"
+      },
+      {
+        "authorId": "2313919289",
+        "name": "Timothy Chou"
+      },
+      {
+        "authorId": "2313919174",
+        "name": "Tzook Shaked"
+      },
+      {
+        "authorId": "2273415095",
+        "name": "Varun Vontimitta"
+      },
+      {
+        "authorId": "2313918541",
+        "name": "Victoria O Ajayi"
+      },
+      {
+        "authorId": "2313910202",
+        "name": "Victoria Montanez"
+      },
+      {
+        "authorId": "2313916470",
+        "name": "Vijai Mohan"
+      },
+      {
+        "authorId": "2314056846",
+        "name": "Vinay Kumar"
+      },
+      {
+        "authorId": "71203676",
+        "name": "Vishal Mangla"
+      },
+      {
+        "authorId": "2313685593",
+        "name": "Vlad Ionescu"
+      },
+      {
+        "authorId": "144386035",
+        "name": "V. Poenaru"
+      },
+      {
+        "authorId": "2051654054",
+        "name": "Vlad T. Mihailescu"
+      },
+      {
+        "authorId": "2313920446",
+        "name": "V. Ivanov"
+      },
+      {
+        "authorId": "2293767405",
+        "name": "Wei Li"
+      },
+      {
+        "authorId": "2314069334",
+        "name": "Wenchen Wang"
+      }
+    ],
+    "abstract": "Modern artificial intelligence (AI) systems are powered by foundation models. This paper presents a new set of foundation models, called Llama 3. It is a herd of language models that natively support multilinguality, coding, reasoning, and tool usage. Our largest model is a dense Transformer with 405B parameters and a context window of up to 128K tokens. This paper presents an extensive empirical evaluation of Llama 3. We find that Llama 3 delivers comparable quality to leading language models such as GPT-4 on a plethora of tasks. We publicly release Llama 3, including pre-trained and post-trained versions of the 405B parameter language model and our Llama Guard 3 model for input and output safety. The paper also presents the results of experiments in which we integrate image, video, and speech capabilities into Llama 3 via a compositional approach. We observe this approach performs competitively with the state-of-the-art on image, video, and speech recognition tasks. The resulting models are not yet being broadly released as they are still under development.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "0bf3a1867f7245b8a702093901c66b08b518eafc",
+    "externalIds": {
+      "ArXiv": "2402.17753",
+      "DBLP": "journals/corr/abs-2402-17753",
+      "DOI": "10.48550/arXiv.2402.17753",
+      "CorpusId": 268041615
+    },
+    "url": "https://www.semanticscholar.org/paper/0bf3a1867f7245b8a702093901c66b08b518eafc",
+    "title": "Evaluating Very Long-Term Conversational Memory of LLM Agents",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2024,
+    "citationCount": 430,
+    "influentialCitationCount": 88,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.17753, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "8785371",
+        "name": "Adyasha Maharana"
+      },
+      {
+        "authorId": "2266803131",
+        "name": "Dong-Ho Lee"
+      },
+      {
+        "authorId": "145582202",
+        "name": "S. Tulyakov"
+      },
+      {
+        "authorId": "2285969697",
+        "name": "Mohit Bansal"
+      },
+      {
+        "authorId": "2266751000",
+        "name": "Francesco Barbieri"
+      },
+      {
+        "authorId": "2267220081",
+        "name": "Yuwei Fang"
+      }
+    ],
+    "abstract": "Existing works on long-term open-domain dialogues focus on evaluating model responses within contexts spanning no more than five chat sessions. Despite advancements in long-context large language models (LLMs) and retrieval augmented generation (RAG) techniques, their efficacy in very long-term dialogues remains unexplored. To address this research gap, we introduce a machine-human pipeline to generate high-quality, very long-term dialogues by leveraging LLM-based agent architectures and grounding their dialogues on personas and temporal event graphs. Moreover, we equip each agent with the capability of sharing and reacting to images. The generated conversations are verified and edited by human annotators for long-range consistency and grounding to the event graphs. Using this pipeline, we collect LoCoMo, a dataset of very long-term conversations, each encompassing 300 turns and 9K tokens on avg., over up to 35 sessions. Based on LoCoMo, we present a comprehensive evaluation benchmark to measure long-term memory in models, encompassing question answering, event summarization, and multi-modal dialogue generation tasks. Our experimental results indicate that LLMs exhibit challenges in understanding lengthy conversations and comprehending long-range temporal and causal dynamics within dialogues. Employing strategies like long-context LLMs or RAG can offer improvements but these models still substantially lag behind human performance.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ce0d07a82ec152258d9ebf2496a16a6737cf89f6",
+    "externalIds": {
+      "ArXiv": "2402.09727",
+      "DBLP": "conf/icml/LeeCFCF24",
+      "DOI": "10.48550/arXiv.2402.09727",
+      "CorpusId": 267682093
+    },
+    "url": "https://www.semanticscholar.org/paper/ce0d07a82ec152258d9ebf2496a16a6737cf89f6",
+    "title": "A Human-Inspired Reading Agent with Gist Memory of Very Long Contexts",
+    "venue": "International Conference on Machine Learning",
+    "year": 2024,
+    "citationCount": 110,
+    "influentialCitationCount": 11,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.09727, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2284306150",
+        "name": "Kuang-Huei Lee"
+      },
+      {
+        "authorId": "2284302591",
+        "name": "Xinyun Chen"
+      },
+      {
+        "authorId": "2052903664",
+        "name": "Hiroki Furuta"
+      },
+      {
+        "authorId": "2253784975",
+        "name": "John F. Canny"
+      },
+      {
+        "authorId": "2284224093",
+        "name": "Ian Fischer"
+      }
+    ],
+    "abstract": "Current Large Language Models (LLMs) are not only limited to some maximum context length, but also are not able to robustly consume long inputs. To address these limitations, we propose ReadAgent, an LLM agent system that increases effective context length up to 20x in our experiments. Inspired by how humans interactively read long documents, we implement ReadAgent as a simple prompting system that uses the advanced language capabilities of LLMs to (1) decide what content to store together in a memory episode, (2) compress those memory episodes into short episodic memories called gist memories, and (3) take actions to look up passages in the original text if ReadAgent needs to remind itself of relevant details to complete a task. We evaluate ReadAgent against baselines using retrieval methods, using the original long contexts, and using the gist memories. These evaluations are performed on three long-document reading comprehension tasks: QuALITY, NarrativeQA, and QMSum. ReadAgent outperforms the baselines on all three tasks while extending the effective context window by 3.5-20x.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "6489640b1d30a8a3e7cb906bb6557f1ccd0d799d",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2311-09210",
+      "ACL": "2024.emnlp-main.813",
+      "ArXiv": "2311.09210",
+      "DOI": "10.48550/arXiv.2311.09210",
+      "CorpusId": 265212816
+    },
+    "url": "https://www.semanticscholar.org/paper/6489640b1d30a8a3e7cb906bb6557f1ccd0d799d",
+    "title": "Chain-of-Note: Enhancing Robustness in Retrieval-Augmented Language Models",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "citationCount": 205,
+    "influentialCitationCount": 13,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2311.09210, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "38767143",
+        "name": "W. Yu"
+      },
+      {
+        "authorId": "2254831297",
+        "name": "Hongming Zhang"
+      },
+      {
+        "authorId": "2243367575",
+        "name": "Xiaoman Pan"
+      },
+      {
+        "authorId": "22244290",
+        "name": "Kaixin Ma"
+      },
+      {
+        "authorId": "2261392960",
+        "name": "Hongwei Wang"
+      },
+      {
+        "authorId": "2261392681",
+        "name": "Dong Yu"
+      }
+    ],
+    "abstract": "Retrieval-augmented language model (RALM) represents a significant advancement in mitigating factual hallucination by leveraging external knowledge sources. However, the reliability of the retrieved information is not always guaranteed, and the retrieval of irrelevant data can mislead the response generation. Moreover, standard RALMs frequently neglect their intrinsic knowledge due to the interference from retrieved information. In instances where the retrieved information is irrelevant, RALMs should ideally utilize their intrinsic knowledge or, in the absence of both intrinsic and retrieved knowledge, opt to respond with “unknown” to avoid hallucination. In this paper, we introduces Chain-of-Note (CoN), a novel approach to improve robustness of RALMs in facing noisy, irrelevant documents and in handling unknown scenarios. The core idea of CoN is to generate sequential reading notes for each retrieved document, enabling a thorough evaluation of their relevance to the given question and integrating this information to formulate the final answer. Our experimental results show that GPT-4, when equipped with CoN, outperforms the Chain-of-Thought approach. Besides, we utilized GPT-4 to create 10K CoN data, subsequently trained on smaller models like OPT and LLaMa-2. Our experiments across four open-domain QA benchmarks show that fine-tuned RALMs equipped with CoN significantly outperform standard fine-tuned RALMs.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "5e4597eb21a393b23e473cf66cb5ae8b27cab03e",
+    "externalIds": {
+      "DBLP": "conf/aaai/Zhao0XLLH24",
+      "ArXiv": "2308.10144",
+      "DOI": "10.48550/arXiv.2308.10144",
+      "CorpusId": 261048772
+    },
+    "url": "https://www.semanticscholar.org/paper/5e4597eb21a393b23e473cf66cb5ae8b27cab03e",
+    "title": "ExpeL: LLM Agents Are Experiential Learners",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2023,
+    "citationCount": 508,
+    "influentialCitationCount": 59,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2308.10144",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2308.10144, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2136104377",
+        "name": "Andrew Zhao"
+      },
+      {
+        "authorId": "46307329",
+        "name": "Daniel Huang"
+      },
+      {
+        "authorId": "2232847317",
+        "name": "Quentin Xu"
+      },
+      {
+        "authorId": "2036238525",
+        "name": "Matthieu Lin"
+      },
+      {
+        "authorId": "1679704",
+        "name": "Y. Liu"
+      },
+      {
+        "authorId": "2115218570",
+        "name": "Gao Huang"
+      }
+    ],
+    "abstract": "The recent surge in research interest in applying large language models (LLMs) to decision-making tasks has flourished by leveraging the extensive world knowledge embedded in LLMs. While there is a growing demand to tailor LLMs for custom decision-making tasks, finetuning them for specific tasks is resource-intensive and may diminish the model's generalization capabilities. Moreover, state-of-the-art language models like GPT-4 and Claude are primarily accessible through API calls, with their parametric weights remaining proprietary and unavailable to the public. This scenario emphasizes the growing need for new methodologies that allow learning from agent experiences without requiring parametric updates. To address these problems, we introduce the Experiential Learning (ExpeL) agent. Our agent autonomously gathers experiences and extracts knowledge using natural language from a collection of training tasks. At inference, the agent recalls its extracted insights and past experiences to make informed decisions. Our empirical results highlight the robust learning efficacy of the ExpeL agent, indicating a consistent enhancement in its performance as it accumulates experiences. We further explore the emerging capabilities and transfer learning potential of the ExpeL agent through qualitative observations and additional experiments.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "4f4a409f701f7552d45c46a5b0fea69dca6f8e84",
+    "externalIds": {
+      "ArXiv": "2112.09118",
+      "DBLP": "journals/tmlr/IzacardCHRBJG22",
+      "CorpusId": 249097975
+    },
+    "url": "https://www.semanticscholar.org/paper/4f4a409f701f7552d45c46a5b0fea69dca6f8e84",
+    "title": "Unsupervised Dense Information Retrieval with Contrastive Learning",
+    "venue": "Trans. Mach. Learn. Res.",
+    "year": 2021,
+    "citationCount": 1475,
+    "influentialCitationCount": 237,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2112.09118, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "1410231361",
+        "name": "Gautier Izacard"
+      },
+      {
+        "authorId": "2062862676",
+        "name": "Mathilde Caron"
+      },
+      {
+        "authorId": "26360550",
+        "name": "Lucas Hosseini"
+      },
+      {
+        "authorId": "48662861",
+        "name": "Sebastian Riedel"
+      },
+      {
+        "authorId": "2329288",
+        "name": "Piotr Bojanowski"
+      },
+      {
+        "authorId": "2319608",
+        "name": "Armand Joulin"
+      },
+      {
+        "authorId": "3024698",
+        "name": "Edouard Grave"
+      }
+    ],
+    "abstract": "Recently, information retrieval has seen the emergence of dense retrievers, using neural networks, as an alternative to classical sparse methods based on term-frequency. These models have obtained state-of-the-art results on datasets and tasks where large training sets are available. However, they do not transfer well to new applications with no training data, and are outperformed by unsupervised term-frequency methods such as BM25. In this work, we explore the limits of contrastive learning as a way to train unsupervised dense retrievers and show that it leads to strong performance in various retrieval settings. On the BEIR benchmark our unsupervised model outperforms BM25 on 11 out of 15 datasets for the Recall@100. When used as pre-training before fine-tuning, either on a few thousands in-domain examples or on the large MS~MARCO dataset, our contrastive model leads to improvements on the BEIR benchmark. Finally, we evaluate our approach for multi-lingual retrieval, where training data is even scarcer than for English, and show that our approach leads to strong unsupervised performance. Our model also exhibits strong cross-lingual transfer when fine-tuned on supervised English data only and evaluated on low resources language such as Swahili. We show that our unsupervised models can perform cross-lingual retrieval between different scripts, such as retrieving English documents from Arabic queries, which would not be possible with term matching methods.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "398a0625e8707a0b41ac58eaec51e8feb87dd7cb",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2010-03768",
+      "MAG": "3092516542",
+      "ArXiv": "2010.03768",
+      "CorpusId": 222208810
+    },
+    "url": "https://www.semanticscholar.org/paper/398a0625e8707a0b41ac58eaec51e8feb87dd7cb",
+    "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+    "venue": "International Conference on Learning Representations",
+    "year": 2020,
+    "citationCount": 853,
+    "influentialCitationCount": 180,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2010.03768, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "33516562",
+        "name": "Mohit Shridhar"
+      },
+      {
+        "authorId": "2854297",
+        "name": "Xingdi Yuan"
+      },
+      {
+        "authorId": "40638665",
+        "name": "Marc-Alexandre Côté"
+      },
+      {
+        "authorId": "3312309",
+        "name": "Yonatan Bisk"
+      },
+      {
+        "authorId": "3382568",
+        "name": "Adam Trischler"
+      },
+      {
+        "authorId": "3308897",
+        "name": "Matthew J. Hausknecht"
+      }
+    ],
+    "abstract": "Given a simple request (e.g., Put a washed apple in the kitchen fridge), humans can reason in purely abstract terms by imagining action sequences and scoring their likelihood of success, prototypicality, and efficiency, all without moving a muscle. Once we see the kitchen in question, we can update our abstract plans to fit the scene. Embodied agents require the same abilities, but existing work does not yet provide the infrastructure necessary for both reasoning abstractly and executing concretely. We address this limitation by introducing ALFWorld, a simulator that enables agents to learn abstract, text-based policies in TextWorld (Cote et al., 2018) and then execute goals from the ALFRED benchmark (Shridhar et al., 2020) in a rich visual environment. ALFWorld enables the creation of a new BUTLER agent whose abstract knowledge, learned in TextWorld, corresponds directly to concrete, visually grounded actions. In turn, as we demonstrate empirically, this fosters better agent generalization than training only in the visually grounded environment. BUTLER's simple, modular design factors the problem to allow researchers to focus on models for improving every piece of the pipeline (language understanding, planning, navigation, visual scene understanding, and so forth).",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "b462bd9e3c4c991722b77fe696fda0a0372bf6dd",
+    "externalIds": {
+      "ArXiv": "1903.06059",
+      "MAG": "2950791134",
+      "DBLP": "conf/icml/KoolHW19",
+      "CorpusId": 76662039
+    },
+    "url": "https://www.semanticscholar.org/paper/b462bd9e3c4c991722b77fe696fda0a0372bf6dd",
+    "title": "Stochastic Beams and Where to Find Them: The Gumbel-Top-k Trick for Sampling Sequences Without Replacement",
+    "venue": "International Conference on Machine Learning",
+    "year": 2019,
+    "citationCount": 301,
+    "influentialCitationCount": 24,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1903.06059, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Mathematics"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "50349716",
+        "name": "W. Kool"
+      },
+      {
+        "authorId": "47662867",
+        "name": "H. V. Hoof"
+      },
+      {
+        "authorId": "1678311",
+        "name": "M. Welling"
+      }
+    ],
+    "abstract": "The well-known Gumbel-Max trick for sampling from a categorical distribution can be extended to sample $k$ elements without replacement. We show how to implicitly apply this 'Gumbel-Top-$k$' trick on a factorized distribution over sequences, allowing to draw exact samples without replacement using a Stochastic Beam Search. Even for exponentially large domains, the number of model evaluations grows only linear in $k$ and the maximum sampled sequence length. The algorithm creates a theoretical connection between sampling and (deterministic) beam search and can be used as a principled intermediate alternative. In a translation task, the proposed method compares favourably against alternatives to obtain diverse yet good quality translations. We show that sequences sampled without replacement can be used to construct low-variance estimators for expected sentence-level BLEU score and model entropy.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "22655979df781d222eaf812b0d325fa9adf11594",
+    "externalIds": {
+      "ACL": "D18-1259",
+      "DBLP": "journals/corr/abs-1809-09600",
+      "MAG": "2952862139",
+      "ArXiv": "1809.09600",
+      "DOI": "10.18653/v1/D18-1259",
+      "CorpusId": 52822214
+    },
+    "url": "https://www.semanticscholar.org/paper/22655979df781d222eaf812b0d325fa9adf11594",
+    "title": "HotpotQA: A Dataset for Diverse, Explainable Multi-hop Question Answering",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2018,
+    "citationCount": 4402,
+    "influentialCitationCount": 933,
+    "openAccessPdf": {
+      "url": "https://www.aclweb.org/anthology/D18-1259.pdf",
+      "status": "HYBRID",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1809.09600, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2109512754",
+        "name": "Zhilin Yang"
+      },
+      {
+        "authorId": "50531624",
+        "name": "Peng Qi"
+      },
+      {
+        "authorId": "35097114",
+        "name": "Saizheng Zhang"
+      },
+      {
+        "authorId": "1751762",
+        "name": "Yoshua Bengio"
+      },
+      {
+        "authorId": "50056360",
+        "name": "William W. Cohen"
+      },
+      {
+        "authorId": "145124475",
+        "name": "R. Salakhutdinov"
+      },
+      {
+        "authorId": "144783904",
+        "name": "Christopher D. Manning"
+      }
+    ],
+    "abstract": "Existing question answering (QA) datasets fail to train QA systems to perform complex reasoning and provide explanations for answers. We introduce HotpotQA, a new dataset with 113k Wikipedia-based question-answer pairs with four key features: (1) the questions require finding and reasoning over multiple supporting documents to answer; (2) the questions are diverse and not constrained to any pre-existing knowledge bases or knowledge schemas; (3) we provide sentence-level supporting facts required for reasoning, allowing QA systems to reason with strong supervision and explain the predictions; (4) we offer a new type of factoid comparison questions to test QA systems’ ability to extract relevant facts and perform necessary comparison. We show that HotpotQA is challenging for the latest QA systems, and the supporting facts enable models to improve performance and make explainable predictions.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "dce6f9d4017b1785979e7520fd0834ef8cf02f4b",
+    "externalIds": {
+      "MAG": "2736601468",
+      "DBLP": "journals/corr/SchulmanWDRK17",
+      "ArXiv": "1707.06347",
+      "CorpusId": 28695052
+    },
+    "url": "https://www.semanticscholar.org/paper/dce6f9d4017b1785979e7520fd0834ef8cf02f4b",
+    "title": "Proximal Policy Optimization Algorithms",
+    "venue": "arXiv.org",
+    "year": 2017,
+    "citationCount": 27386,
+    "influentialCitationCount": 4756,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1707.06347, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "47971768",
+        "name": "John Schulman"
+      },
+      {
+        "authorId": "143909660",
+        "name": "Filip Wolski"
+      },
+      {
+        "authorId": "6515819",
+        "name": "Prafulla Dhariwal"
+      },
+      {
+        "authorId": "38909097",
+        "name": "Alec Radford"
+      },
+      {
+        "authorId": "2067138712",
+        "name": "Oleg Klimov"
+      }
+    ],
+    "abstract": "We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a \"surrogate\" objective function using stochastic gradient ascent. Whereas standard policy gradient methods perform one gradient update per data sample, we propose a novel objective function that enables multiple epochs of minibatch updates. The new methods, which we call proximal policy optimization (PPO), have some of the benefits of trust region policy optimization (TRPO), but they are much simpler to implement, more general, and have better sample complexity (empirically). Our experiments test PPO on a collection of benchmark tasks, including simulated robotic locomotion and Atari game playing, and we show that PPO outperforms other online policy gradient methods, and overall strikes a favorable balance between sample complexity, simplicity, and wall-time.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Mem-{\\ alpha } : Learning memory construction via reinforcement learning",
+    "venue": "arXiv preprint",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "operating",
+    "venue": "Memgpt: Towards llms as",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Action type: [INSERT only — UPDATE only] Output ONLY the JSON, no other text",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Memo-rybank: Enhancing large language models with long-term memory",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence , volume 38",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "LangChain",
+    "venue": "Langmem",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  }
+]

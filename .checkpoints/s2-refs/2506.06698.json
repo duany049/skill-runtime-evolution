@@ -1,0 +1,1891 @@
+[
+  {
+    "paperId": "2e20395786ebaf45b3cee398b3db3531bc4851d6",
+    "externalIds": {
+      "ArXiv": "2501.10893",
+      "DBLP": "conf/iclr/Su0YY0A25",
+      "DOI": "10.48550/arXiv.2501.10893",
+      "CorpusId": 275757520
+    },
+    "url": "https://www.semanticscholar.org/paper/2e20395786ebaf45b3cee398b3db3531bc4851d6",
+    "title": "Learn-by-interact: A Data-Centric Framework for Self-Adaptive Agents in Realistic Environments",
+    "venue": "International Conference on Learning Representations",
+    "year": 2025,
+    "citationCount": 77,
+    "influentialCitationCount": 7,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.10893, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2152173042",
+        "name": "Hongjin Su"
+      },
+      {
+        "authorId": "2313049168",
+        "name": "Ruoxi Sun"
+      },
+      {
+        "authorId": "2256335437",
+        "name": "Jinsung Yoon"
+      },
+      {
+        "authorId": "2265492003",
+        "name": "Pengcheng Yin"
+      },
+      {
+        "authorId": "2312346274",
+        "name": "Tao Yu"
+      },
+      {
+        "authorId": "2676352",
+        "name": "Sercan Ö. Arik"
+      }
+    ],
+    "abstract": "Autonomous agents powered by large language models (LLMs) have the potential to enhance human capabilities, assisting with digital tasks from sending emails to performing data analysis. The abilities of existing LLMs at such tasks are often hindered by the lack of high-quality agent data from the corresponding environments they interact with. We propose Learn-by-interact, a data-centric framework to adapt LLM agents to any given environments without human annotations. Learn-by-interact synthesizes trajectories of agent-environment interactions based on documentations, and constructs instructions by summarizing or abstracting the interaction histories, a process called backward construction. We assess the quality of our synthetic data by using them in both training-based scenarios and training-free in-context learning (ICL), where we craft innovative retrieval approaches optimized for agents. Extensive experiments on SWE-bench, WebArena, OSWorld and Spider2-V spanning across realistic coding, web, and desktop environments show the effectiveness of Learn-by-interact in various downstream agentic tasks -- baseline results are improved by up to 12.2\\% for ICL with Claude-3.5 and 19.5\\% for training with Codestral-22B. We further demonstrate the critical role of backward construction, which provides up to 14.0\\% improvement for training. Our ablation studies demonstrate the efficiency provided by our synthesized data in ICL and the superiority of our retrieval pipeline over alternative approaches like conventional retrieval-augmented generation (RAG). We expect that Learn-by-interact will serve as a foundation for agent data synthesis as LLMs are increasingly deployed at real-world environments.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "aed8f01122d1a89c43900e995c80bfda7936568e",
+    "externalIds": {
+      "ArXiv": "2404.06474",
+      "DBLP": "journals/corr/abs-2404-06474",
+      "DOI": "10.48550/arXiv.2404.06474",
+      "CorpusId": 269009430
+    },
+    "url": "https://www.semanticscholar.org/paper/aed8f01122d1a89c43900e995c80bfda7936568e",
+    "title": "Autonomous Evaluation and Refinement of Digital Agents",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 123,
+    "influentialCitationCount": 14,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.06474, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2152946868",
+        "name": "Jiayi Pan"
+      },
+      {
+        "authorId": "46868553",
+        "name": "Yichi Zhang"
+      },
+      {
+        "authorId": "1391385991",
+        "name": "Nicholas Tomlin"
+      },
+      {
+        "authorId": "2288585404",
+        "name": "Yifei Zhou"
+      },
+      {
+        "authorId": "2268967207",
+        "name": "Sergey Levine"
+      },
+      {
+        "authorId": "2295729823",
+        "name": "Alane Suhr"
+      }
+    ],
+    "abstract": "We show that domain-general automatic evaluators can significantly improve the performance of agents for web navigation and device control. We experiment with multiple evaluation models that trade off between inference cost, modularity of design, and accuracy. We validate the performance of these models in several popular benchmarks for digital agents, finding between 74.4 and 92.9% agreement with oracle evaluation metrics. Finally, we use these evaluators to improve the performance of existing agents via fine-tuning and inference-time guidance. Without any additional supervision, we improve state-of-the-art performance by 29% on the popular benchmark WebArena, and achieve around 75% relative improvement in device control settings.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "788a8c36f2638091905f50090f9191da908bd08a",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2403-08978",
+      "ArXiv": "2403.08978",
+      "DOI": "10.48550/arXiv.2403.08978",
+      "CorpusId": 274446149
+    },
+    "url": "https://www.semanticscholar.org/paper/788a8c36f2638091905f50090f9191da908bd08a",
+    "title": "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+    "venue": "Neural Information Processing Systems",
+    "year": 2024,
+    "citationCount": 44,
+    "influentialCitationCount": 5,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.08978, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2220920590",
+        "name": "Yao Fu"
+      },
+      {
+        "authorId": "2261690694",
+        "name": "Dong-Ki Kim"
+      },
+      {
+        "authorId": "65924935",
+        "name": "Jaekyeom Kim"
+      },
+      {
+        "authorId": "144832576",
+        "name": "Sungryull Sohn"
+      },
+      {
+        "authorId": "2876316",
+        "name": "Lajanugen Logeswaran"
+      },
+      {
+        "authorId": "40290697",
+        "name": "Kyunghoon Bae"
+      },
+      {
+        "authorId": "2431697516",
+        "name": "Honglak Lee"
+      }
+    ],
+    "abstract": "Recent advances in large language models (LLMs) have empowered AI agents capable of performing various sequential decision-making tasks. However, effectively guiding LLMs to perform well in unfamiliar domains like web navigation, where they lack sufficient knowledge, has proven to be difficult with the demonstration-based in-context learning paradigm. In this paper, we introduce a novel framework, called AutoGuide, which addresses this limitation by automatically generating context-aware guidelines from offline experiences. Importantly, each context-aware guideline is expressed in concise natural language and follows a conditional structure, clearly describing the context where it is applicable. As a result, our guidelines facilitate the provision of relevant knowledge for the agent's current decision-making process, overcoming the limitations of the conventional demonstration-based learning paradigm. Our evaluation demonstrates that AutoGuide significantly outperforms competitive baselines in complex benchmark domains, including real-world web navigation.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "fa96417f8766568ba570088513940bbf14e3b356",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2403-07718",
+      "ArXiv": "2403.07718",
+      "DOI": "10.48550/arXiv.2403.07718",
+      "CorpusId": 268363855
+    },
+    "url": "https://www.semanticscholar.org/paper/fa96417f8766568ba570088513940bbf14e3b356",
+    "title": "WorkArena: How Capable Are Web Agents at Solving Common Knowledge Work Tasks?",
+    "venue": "International Conference on Machine Learning",
+    "year": 2024,
+    "citationCount": 204,
+    "influentialCitationCount": 26,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.07718, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2253399166",
+        "name": "Alexandre Drouin"
+      },
+      {
+        "authorId": "2290916316",
+        "name": "Maxime Gasse"
+      },
+      {
+        "authorId": "1750641",
+        "name": "Massimo Caccia"
+      },
+      {
+        "authorId": "3266173",
+        "name": "I. Laradji"
+      },
+      {
+        "authorId": "1477284365",
+        "name": "Manuel Del Verme"
+      },
+      {
+        "authorId": "2290917693",
+        "name": "Tom Marty"
+      },
+      {
+        "authorId": "2290847852",
+        "name": "L'eo Boisvert"
+      },
+      {
+        "authorId": "2264977662",
+        "name": "Megh Thakkar"
+      },
+      {
+        "authorId": "1907863",
+        "name": "Quentin Cappart"
+      },
+      {
+        "authorId": "2275588082",
+        "name": "David Vázquez"
+      },
+      {
+        "authorId": "2748188",
+        "name": "Nicolas Chapados"
+      },
+      {
+        "authorId": "2289400560",
+        "name": "Alexandre Lacoste"
+      }
+    ],
+    "abstract": "We study the use of large language model-based agents for interacting with software via web browsers. Unlike prior work, we focus on measuring the agents' ability to perform tasks that span the typical daily work of knowledge workers utilizing enterprise software systems. To this end, we propose WorkArena, a remote-hosted benchmark of 33 tasks based on the widely-used ServiceNow platform. We also introduce BrowserGym, an environment for the design and evaluation of such agents, offering a rich set of actions as well as multimodal observations. Our empirical evaluation reveals that while current agents show promise on WorkArena, there remains a considerable gap towards achieving full task automation. Notably, our analysis uncovers a significant performance disparity between open and closed-source LLMs, highlighting a critical area for future exploration and development in the field.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "f0227a0500f2875d9af3d62b5afb3bb93c2b4561",
+    "externalIds": {
+      "ArXiv": "2310.10634",
+      "DBLP": "journals/corr/abs-2310-10634",
+      "DOI": "10.48550/arXiv.2310.10634",
+      "CorpusId": 264172893
+    },
+    "url": "https://www.semanticscholar.org/paper/f0227a0500f2875d9af3d62b5afb3bb93c2b4561",
+    "title": "OpenAgents: An Open Platform for Language Agents in the Wild",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 156,
+    "influentialCitationCount": 6,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.10634, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2057038673",
+        "name": "Tianbao Xie"
+      },
+      {
+        "authorId": "2153433679",
+        "name": "Fan Zhou"
+      },
+      {
+        "authorId": "2258309092",
+        "name": "Zhoujun Cheng"
+      },
+      {
+        "authorId": "2321562456",
+        "name": "Peng Shi"
+      },
+      {
+        "authorId": "2186416127",
+        "name": "Luoxuan Weng"
+      },
+      {
+        "authorId": "2243302973",
+        "name": "Yitao Liu"
+      },
+      {
+        "authorId": "2258947427",
+        "name": "T. Hua"
+      },
+      {
+        "authorId": "2333739514",
+        "name": "Jun Zhao"
+      },
+      {
+        "authorId": "1409707585",
+        "name": "Qian Liu"
+      },
+      {
+        "authorId": "2284681534",
+        "name": "Che Liu"
+      },
+      {
+        "authorId": "2335562396",
+        "name": "Leo Liu"
+      },
+      {
+        "authorId": "3032611",
+        "name": "Yiheng Xu"
+      },
+      {
+        "authorId": "2152173042",
+        "name": "Hongjin Su"
+      },
+      {
+        "authorId": "2260644979",
+        "name": "Dongchan Shin"
+      },
+      {
+        "authorId": "2256976968",
+        "name": "Caiming Xiong"
+      },
+      {
+        "authorId": "2256865348",
+        "name": "Tao Yu"
+      }
+    ],
+    "abstract": "Language agents show potential in being capable of utilizing natural language for varied and intricate tasks in diverse environments, particularly when built upon large language models (LLMs). Current language agent frameworks aim to facilitate the construction of proof-of-concept language agents while neglecting the non-expert user access to agents and paying little attention to application-level designs. We present OpenAgents, an open platform for using and hosting language agents in the wild of everyday life. OpenAgents includes three agents: (1) Data Agent for data analysis with Python/SQL and data tools; (2) Plugins Agent with 200+ daily API tools; (3) Web Agent for autonomous web browsing. OpenAgents enables general users to interact with agent functionalities through a web user interface optimized for swift responses and common failures while offering developers and researchers a seamless deployment experience on local setups, providing a foundation for crafting innovative language agents and facilitating real-world evaluations. We elucidate the challenges and opportunities, aspiring to set a foundation for future research and development of real-world language agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "8147cec9245d34d13732a08e915c920a1a499bb5",
+    "externalIds": {
+      "ArXiv": "2310.06830",
+      "DBLP": "conf/iclr/XuSXMLSHZLXCZKW24",
+      "DOI": "10.48550/arXiv.2310.06830",
+      "CorpusId": 263831032
+    },
+    "url": "https://www.semanticscholar.org/paper/8147cec9245d34d13732a08e915c920a1a499bb5",
+    "title": "Lemur: Harmonizing Natural Language and Code for Language Agents",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 93,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2310.06830",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.06830, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "3032611",
+        "name": "Yiheng Xu"
+      },
+      {
+        "authorId": "2152173042",
+        "name": "Hongjin Su"
+      },
+      {
+        "authorId": "2257193066",
+        "name": "Chen Xing"
+      },
+      {
+        "authorId": "2257002702",
+        "name": "Boyu Mi"
+      },
+      {
+        "authorId": "1409707585",
+        "name": "Qian Liu"
+      },
+      {
+        "authorId": "2257597409",
+        "name": "Weijia Shi"
+      },
+      {
+        "authorId": "2257002316",
+        "name": "Binyuan Hui"
+      },
+      {
+        "authorId": "2153433679",
+        "name": "Fan Zhou"
+      },
+      {
+        "authorId": "2243302973",
+        "name": "Yitao Liu"
+      },
+      {
+        "authorId": "2057038673",
+        "name": "Tianbao Xie"
+      },
+      {
+        "authorId": "2258309092",
+        "name": "Zhoujun Cheng"
+      },
+      {
+        "authorId": "2243033718",
+        "name": "Siheng Zhao"
+      },
+      {
+        "authorId": "2249986569",
+        "name": "Lingpeng Kong"
+      },
+      {
+        "authorId": "2257144126",
+        "name": "Bailin Wang"
+      },
+      {
+        "authorId": "2256976968",
+        "name": "Caiming Xiong"
+      },
+      {
+        "authorId": "2256865348",
+        "name": "Tao Yu"
+      }
+    ],
+    "abstract": "We introduce Lemur and Lemur-Chat, openly accessible language models optimized for both natural language and coding capabilities to serve as the backbone of versatile language agents. The evolution from language chat models to functional language agents demands that models not only master human interaction, reasoning, and planning but also ensure grounding in the relevant environments. This calls for a harmonious blend of language and coding capabilities in the models. Lemur and Lemur-Chat are proposed to address this necessity, demonstrating balanced proficiencies in both domains, unlike existing open-source models that tend to specialize in either. Through meticulous pre-training using a code-intensive corpus and instruction fine-tuning on text and code data, our models achieve state-of-the-art averaged performance across diverse text and coding benchmarks among open-source models. Comprehensive experiments demonstrate Lemur's superiority over existing open-source models and its proficiency across various agent tasks involving human communication, tool usage, and interaction under fully- and partially- observable environments. The harmonization between natural and programming languages enables Lemur-Chat to significantly narrow the gap with proprietary models on agent abilities, providing key insights into developing advanced open-source agents adept at reasoning, planning, and operating seamlessly across environments. https://github.com/OpenLemur/Lemur",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "700bd9681f1b9e9e2212e10415d27b11c7e6836b",
+    "externalIds": {
+      "ArXiv": "2310.04406",
+      "DBLP": "journals/corr/abs-2310-04406",
+      "DOI": "10.48550/arXiv.2310.04406",
+      "CorpusId": 263829963
+    },
+    "url": "https://www.semanticscholar.org/paper/700bd9681f1b9e9e2212e10415d27b11c7e6836b",
+    "title": "Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models",
+    "venue": "International Conference on Machine Learning",
+    "year": 2023,
+    "citationCount": 463,
+    "influentialCitationCount": 38,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.04406, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2244620107",
+        "name": "Andy Zhou"
+      },
+      {
+        "authorId": "2256998882",
+        "name": "Kai Yan"
+      },
+      {
+        "authorId": "2256998400",
+        "name": "Michal Shlapentokh-Rothman"
+      },
+      {
+        "authorId": "2256769308",
+        "name": "Haohan Wang"
+      },
+      {
+        "authorId": "2257110226",
+        "name": "Yu-Xiong Wang"
+      }
+    ],
+    "abstract": "While language models (LMs) have shown potential across a range of decision-making tasks, their reliance on simple acting processes limits their broad deployment as autonomous agents. In this paper, we introduce Language Agent Tree Search (LATS) -- the first general framework that synergizes the capabilities of LMs in reasoning, acting, and planning. By leveraging the in-context learning ability of LMs, we integrate Monte Carlo Tree Search into LATS to enable LMs as agents, along with LM-powered value functions and self-reflections for proficient exploration and enhanced decision-making. A key feature of our approach is the incorporation of an environment for external feedback, which offers a more deliberate and adaptive problem-solving mechanism that surpasses the constraints of existing techniques. Our experimental evaluation across diverse domains, including programming, interactive question-answering (QA), web navigation, and math, validates the effectiveness and generality of LATS in decision-making while maintaining competitive or improved reasoning performance. Notably, LATS achieves state-of-the-art pass@1 accuracy (92.7%) for programming on HumanEval with GPT-4 and demonstrates gradient-free performance (average score of 75.9) comparable to gradient-based fine-tuning for web navigation on WebShop with GPT-3.5. Code can be found at https://github.com/lapisrocks/LanguageAgentTreeSearch",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "268e28f8d5235031dcd7bfae0f857439e27e8564",
+    "externalIds": {
+      "ArXiv": "2310.03720",
+      "CorpusId": 263671958
+    },
+    "url": "https://www.semanticscholar.org/paper/268e28f8d5235031dcd7bfae0f857439e27e8564",
+    "title": "SteP: Stacked LLM Policies for Web Actions",
+    "venue": "",
+    "year": 2023,
+    "citationCount": 63,
+    "influentialCitationCount": 8,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.03720, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2254267756",
+        "name": "Paloma Sodhi"
+      },
+      {
+        "authorId": "1741598",
+        "name": "S. Branavan"
+      },
+      {
+        "authorId": "2066324938",
+        "name": "Yoav Artzi"
+      },
+      {
+        "authorId": "2254260284",
+        "name": "Ryan Mcdonald"
+      }
+    ],
+    "abstract": "Performing tasks on the web presents fundamental challenges to large language models (LLMs), including combinatorially large open-world tasks and variations across web interfaces. Simply specifying a large prompt to handle all possible behaviors and states is extremely complex, and results in behavior leaks between unrelated behaviors. Decomposition to distinct policies can address this challenge, but requires carefully handing off control between policies. We propose Stacked LLM Policies for Web Actions (SteP), an approach to dynamically compose policies to solve a diverse set of web tasks. SteP defines a Markov Decision Process where the state is a stack of policies representing the control state, i.e., the chain of policy calls. Unlike traditional methods that are restricted to static hierarchies, SteP enables dynamic control that adapts to the complexity of the task. We evaluate SteP against multiple baselines and web environments including WebArena, MiniWoB++, and a CRM. On WebArena, SteP improves (14.9\\% to 33.5\\%) over SOTA that use GPT-4 policies, while on MiniWob++, SteP is competitive with prior works while using significantly less data. Our code and data are available at https://asappresearch.github.io/webagents-step.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ecb6a8003d4726cc1e9e9f3c2d8ff6c0627e4e95",
+    "externalIds": {
+      "DBLP": "conf/iclr/XieZWLLZY024",
+      "ArXiv": "2309.11489",
+      "CorpusId": 270063618
+    },
+    "url": "https://www.semanticscholar.org/paper/ecb6a8003d4726cc1e9e9f3c2d8ff6c0627e4e95",
+    "title": "Text2Reward: Reward Shaping with Language Models for Reinforcement Learning",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 146,
+    "influentialCitationCount": 15,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.11489, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2057038673",
+        "name": "Tianbao Xie"
+      },
+      {
+        "authorId": "2243033718",
+        "name": "Siheng Zhao"
+      },
+      {
+        "authorId": "114621402",
+        "name": "Chen Henry Wu"
+      },
+      {
+        "authorId": "2243302973",
+        "name": "Yitao Liu"
+      },
+      {
+        "authorId": "2242962339",
+        "name": "Q. Luo"
+      },
+      {
+        "authorId": "2243226284",
+        "name": "Victor Zhong"
+      },
+      {
+        "authorId": "2243300847",
+        "name": "Yanchao Yang"
+      },
+      {
+        "authorId": "2256865348",
+        "name": "Tao Yu"
+      }
+    ],
+    "abstract": "Designing reward functions is a longstanding challenge in reinforcement learning (RL); it requires specialized knowledge or domain data, leading to high costs for development. To address this, we introduce Text2Reward, a data-free framework that automates the generation and shaping of dense reward functions based on large language models (LLMs). Given a goal described in natural language, Text2Reward generates shaped dense reward functions as an executable program grounded in a compact representation of the environment. Unlike inverse RL and recent work that uses LLMs to write sparse reward codes or unshaped dense rewards with a constant function across timesteps, Text2Reward produces interpretable, free-form dense reward codes that cover a wide range of tasks, utilize existing packages, and allow iterative refinement with human feedback. We evaluate Text2Reward on two robotic manipulation benchmarks (ManiSkill2, MetaWorld) and two locomotion environments of MuJoCo. On 13 of the 17 manipulation tasks, policies trained with generated reward codes achieve similar or better task success rates and convergence speed than expert-written reward codes. For locomotion tasks, our method learns six novel locomotion behaviors with a success rate exceeding 94%. Furthermore, we show that the policies trained in the simulator with our method can be deployed in the real world. Finally, Text2Reward further improves the policies by refining their reward functions with human feedback. Video results are available at https://text-to-reward.github.io/ .",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "5e4597eb21a393b23e473cf66cb5ae8b27cab03e",
+    "externalIds": {
+      "DBLP": "conf/aaai/Zhao0XLLH24",
+      "ArXiv": "2308.10144",
+      "DOI": "10.48550/arXiv.2308.10144",
+      "CorpusId": 261048772
+    },
+    "url": "https://www.semanticscholar.org/paper/5e4597eb21a393b23e473cf66cb5ae8b27cab03e",
+    "title": "ExpeL: LLM Agents Are Experiential Learners",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2023,
+    "citationCount": 508,
+    "influentialCitationCount": 59,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2308.10144",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2308.10144, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2136104377",
+        "name": "Andrew Zhao"
+      },
+      {
+        "authorId": "46307329",
+        "name": "Daniel Huang"
+      },
+      {
+        "authorId": "2232847317",
+        "name": "Quentin Xu"
+      },
+      {
+        "authorId": "2036238525",
+        "name": "Matthieu Lin"
+      },
+      {
+        "authorId": "1679704",
+        "name": "Y. Liu"
+      },
+      {
+        "authorId": "2115218570",
+        "name": "Gao Huang"
+      }
+    ],
+    "abstract": "The recent surge in research interest in applying large language models (LLMs) to decision-making tasks has flourished by leveraging the extensive world knowledge embedded in LLMs. While there is a growing demand to tailor LLMs for custom decision-making tasks, finetuning them for specific tasks is resource-intensive and may diminish the model's generalization capabilities. Moreover, state-of-the-art language models like GPT-4 and Claude are primarily accessible through API calls, with their parametric weights remaining proprietary and unavailable to the public. This scenario emphasizes the growing need for new methodologies that allow learning from agent experiences without requiring parametric updates. To address these problems, we introduce the Experiential Learning (ExpeL) agent. Our agent autonomously gathers experiences and extracts knowledge using natural language from a collection of training tasks. At inference, the agent recalls its extracted insights and past experiences to make informed decisions. Our empirical results highlight the robust learning efficacy of the ExpeL agent, indicating a consistent enhancement in its performance as it accumulates experiences. We further explore the emerging capabilities and transfer learning potential of the ExpeL agent through qualitative observations and additional experiments.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "eaa7853facb9b49444b48a96192cb4be66b62671",
+    "externalIds": {
+      "DBLP": "conf/iclr/ZhengWW024",
+      "ArXiv": "2306.07863",
+      "CorpusId": 259145391
+    },
+    "url": "https://www.semanticscholar.org/paper/eaa7853facb9b49444b48a96192cb4be66b62671",
+    "title": "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 136,
+    "influentialCitationCount": 12,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2306.07863, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2115811864",
+        "name": "Longtao Zheng"
+      },
+      {
+        "authorId": "103856029",
+        "name": "R. Wang"
+      },
+      {
+        "authorId": "143706345",
+        "name": "Bo An"
+      }
+    ],
+    "abstract": "Building agents with large language models (LLMs) for computer control is a burgeoning research area, where the agent receives computer states and performs actions to complete complex tasks. Previous computer agents have demonstrated the benefits of in-context learning (ICL); however, their performance is hindered by several issues. First, the limited context length of LLMs and complex computer states restrict the number of exemplars, as a single webpage can consume the entire context. Second, the exemplars in current methods, such as high-level plans and multi-choice questions, cannot represent complete trajectories, leading to suboptimal performance in long-horizon tasks. Third, existing computer agents rely on task-specific exemplars and overlook the similarity among tasks, resulting in poor generalization to novel tasks. To address these challenges, we introduce Synapse, a computer agent featuring three key components: i) state abstraction, which filters out task-irrelevant information from raw states, allowing more exemplars within the limited context, ii) trajectory-as-exemplar prompting, which prompts the LLM with complete trajectories of the abstracted states and actions to improve multi-step decision-making, and iii) exemplar memory, which stores the embeddings of exemplars and retrieves them via similarity search for generalization to novel tasks. We evaluate Synapse on MiniWoB++, a standard task suite, and Mind2Web, a real-world website benchmark. In MiniWoB++, Synapse achieves a 99.2% average success rate (a 10% relative improvement) across 64 tasks using demonstrations from only 48 tasks. Notably, Synapse is the first ICL method to solve the book-flight task in MiniWoB++. Synapse also exhibits a 56% relative improvement in average step success rate over the previous state-of-the-art prompting scheme in Mind2Web.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "58f8925a8b87054ad0635a6398a7fe24935b1604",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2306-06070",
+      "ArXiv": "2306.06070",
+      "DOI": "10.48550/arXiv.2306.06070",
+      "CorpusId": 259129428
+    },
+    "url": "https://www.semanticscholar.org/paper/58f8925a8b87054ad0635a6398a7fe24935b1604",
+    "title": "Mind2Web: Towards a Generalist Agent for the Web",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 1053,
+    "influentialCitationCount": 171,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2306.06070",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2306.06070, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "145924070",
+        "name": "Xiang Deng"
+      },
+      {
+        "authorId": "2022231256",
+        "name": "Yu Gu"
+      },
+      {
+        "authorId": "2112670551",
+        "name": "Boyuan Zheng"
+      },
+      {
+        "authorId": "2115939351",
+        "name": "Shijie Chen"
+      },
+      {
+        "authorId": "1480968444",
+        "name": "Samuel Stevens"
+      },
+      {
+        "authorId": "7425689",
+        "name": "Boshi Wang"
+      },
+      {
+        "authorId": "1515546612",
+        "name": "Huan Sun"
+      },
+      {
+        "authorId": "1758652",
+        "name": "Yu Su"
+      }
+    ],
+    "abstract": "We introduce Mind2Web, the first dataset for developing and evaluating generalist agents for the web that can follow language instructions to complete complex tasks on any website. Existing datasets for web agents either use simulated websites or only cover a limited set of websites and tasks, thus not suitable for generalist web agents. With over 2,000 open-ended tasks collected from 137 websites spanning 31 domains and crowdsourced action sequences for the tasks, Mind2Web provides three necessary ingredients for building generalist web agents: 1) diverse domains, websites, and tasks, 2) use of real-world websites instead of simulated and simplified ones, and 3) a broad spectrum of user interaction patterns. Based on Mind2Web, we conduct an initial exploration of using large language models (LLMs) for building generalist web agents. While the raw HTML of real-world websites are often too large to be fed to LLMs, we show that first filtering it with a small LM significantly improves the effectiveness and efficiency of LLMs. Our solution demonstrates a decent level of performance, even on websites or entire domains the model has never seen before, but there is still a substantial room to improve towards truly generalizable agents. We open-source our dataset, model implementation, and trained models (https://osu-nlp-group.github.io/Mind2Web) to facilitate further research on building a generalist agent for the web.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "0671fd553dd670a4e820553a974bc48040ba0819",
+    "externalIds": {
+      "DBLP": "conf/nips/ShinnCGNY23",
+      "ArXiv": "2303.11366",
+      "DOI": "10.52202/075280-0377",
+      "CorpusId": 258833055
+    },
+    "url": "https://www.semanticscholar.org/paper/0671fd553dd670a4e820553a974bc48040ba0819",
+    "title": "Reflexion: language agents with verbal reinforcement learning",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 3441,
+    "influentialCitationCount": 280,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2303.11366, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2212367248",
+        "name": "Noah Shinn"
+      },
+      {
+        "authorId": "2197063831",
+        "name": "Federico Cassano"
+      },
+      {
+        "authorId": "2212367414",
+        "name": "Beck Labash"
+      },
+      {
+        "authorId": "2162047785",
+        "name": "A. Gopinath"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      },
+      {
+        "authorId": "47188964",
+        "name": "Shunyu Yao"
+      }
+    ],
+    "abstract": "Large language models (LLMs) have been increasingly used to interact with external environments (e.g., games, compilers, APIs) as goal-driven agents. However, it remains challenging for these language agents to quickly and efficiently learn from trial-and-error as traditional reinforcement learning methods require extensive training samples and expensive model fine-tuning. We propose Reflexion, a novel framework to reinforce language agents not by updating weights, but instead through linguistic feedback. Concretely, Reflexion agents verbally reflect on task feedback signals, then maintain their own reflective text in an episodic memory buffer to induce better decision-making in subsequent trials. Reflexion is flexible enough to incorporate various types (scalar values or free-form language) and sources (external or internally simulated) of feedback signals, and obtains significant improvements over a baseline agent across diverse tasks (sequential decision-making, coding, language reasoning). For example, Reflexion achieves a 91% pass@1 accuracy on the HumanEval coding benchmark, surpassing the previous state-of-the-art GPT-4 that achieves 80%. We also conduct ablation and analysis studies using different feedback signals, feedback incorporation methods, and agent types, and provide insights into how they affect performance.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "23525374cfd3af714f3ffb7a203b1ef3253333fe",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2207-01206",
+      "ArXiv": "2207.01206",
+      "DOI": "10.48550/arXiv.2207.01206",
+      "CorpusId": 250264533
+    },
+    "url": "https://www.semanticscholar.org/paper/23525374cfd3af714f3ffb7a203b1ef3253333fe",
+    "title": "WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents",
+    "venue": "Neural Information Processing Systems",
+    "year": 2022,
+    "citationCount": 995,
+    "influentialCitationCount": 167,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2207.01206",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2207.01206, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2093302161",
+        "name": "Shunyu Yao"
+      },
+      {
+        "authorId": "2108271953",
+        "name": "Howard Chen"
+      },
+      {
+        "authorId": "2109727379",
+        "name": "John Yang"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      }
+    ],
+    "abstract": "Existing benchmarks for grounding language in interactive environments either lack real-world linguistic elements, or prove difficult to scale up due to substantial human involvement in the collection of data or feedback signals. To bridge this gap, we develop WebShop -- a simulated e-commerce website environment with $1.18$ million real-world products and $12,087$ crowd-sourced text instructions. Given a text instruction specifying a product requirement, an agent needs to navigate multiple types of webpages and issue diverse actions to find, customize, and purchase an item. WebShop provides several challenges for language grounding including understanding compositional instructions, query (re-)formulation, comprehending and acting on noisy text in webpages, and performing strategic exploration. We collect over $1,600$ human demonstrations for the task, and train and evaluate a diverse range of agents using reinforcement learning, imitation learning, and pre-trained image and language models. Our best model achieves a task success rate of $29\\%$, which outperforms rule-based heuristics ($9.6\\%$) but is far lower than human expert performance ($59\\%$). We also analyze agent and human trajectories and ablate various model components to provide insights for developing future agents with stronger language understanding and decision making abilities. Finally, we show that agents trained on WebShop exhibit non-trivial sim-to-real transfer when evaluated on amazon.com and ebay.com, indicating the potential value of WebShop in developing practical web-based agents that can operate in the wild.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "acbdbf49f9bc3f151b93d9ca9a06009f4f6eb269",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2107-03374",
+      "ArXiv": "2107.03374",
+      "CorpusId": 235755472
+    },
+    "url": "https://www.semanticscholar.org/paper/acbdbf49f9bc3f151b93d9ca9a06009f4f6eb269",
+    "title": "Evaluating Large Language Models Trained on Code",
+    "venue": "arXiv.org",
+    "year": 2021,
+    "citationCount": 9525,
+    "influentialCitationCount": 1496,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2107.03374, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2108828435",
+        "name": "Mark Chen"
+      },
+      {
+        "authorId": "2065005836",
+        "name": "Jerry Tworek"
+      },
+      {
+        "authorId": "35450887",
+        "name": "Heewoo Jun"
+      },
+      {
+        "authorId": "153930486",
+        "name": "Qiming Yuan"
+      },
+      {
+        "authorId": "2117715024",
+        "name": "Henrique Pondé"
+      },
+      {
+        "authorId": "2053807409",
+        "name": "Jared Kaplan"
+      },
+      {
+        "authorId": "144632352",
+        "name": "Harrison Edwards"
+      },
+      {
+        "authorId": "51178856",
+        "name": "Yura Burda"
+      },
+      {
+        "authorId": "2117706920",
+        "name": "Nicholas Joseph"
+      },
+      {
+        "authorId": "2065151121",
+        "name": "Greg Brockman"
+      },
+      {
+        "authorId": "2064770039",
+        "name": "Alex Ray"
+      },
+      {
+        "authorId": "41158993",
+        "name": "Raul Puri"
+      },
+      {
+        "authorId": "2064404342",
+        "name": "Gretchen Krueger"
+      },
+      {
+        "authorId": "2136008481",
+        "name": "Michael Petrov"
+      },
+      {
+        "authorId": "2103414",
+        "name": "Heidy Khlaaf"
+      },
+      {
+        "authorId": "144864359",
+        "name": "G. Sastry"
+      },
+      {
+        "authorId": "2051714782",
+        "name": "Pamela Mishkin"
+      },
+      {
+        "authorId": "1466431052",
+        "name": "Brooke Chan"
+      },
+      {
+        "authorId": "145565184",
+        "name": "Scott Gray"
+      },
+      {
+        "authorId": "39849748",
+        "name": "Nick Ryder"
+      },
+      {
+        "authorId": "2068123790",
+        "name": "Mikhail Pavlov"
+      },
+      {
+        "authorId": "146162186",
+        "name": "Alethea Power"
+      },
+      {
+        "authorId": "40527594",
+        "name": "Lukasz Kaiser"
+      },
+      {
+        "authorId": "2275251620",
+        "name": "Mo Bavarian"
+      },
+      {
+        "authorId": "2059411355",
+        "name": "Clemens Winter"
+      },
+      {
+        "authorId": "2275252092",
+        "name": "P. Tillet"
+      },
+      {
+        "authorId": "9927844",
+        "name": "F. Such"
+      },
+      {
+        "authorId": "80876468",
+        "name": "D. Cummings"
+      },
+      {
+        "authorId": "3407285",
+        "name": "Matthias Plappert"
+      },
+      {
+        "authorId": "2117714459",
+        "name": "Fotios Chantzis"
+      },
+      {
+        "authorId": "2057742918",
+        "name": "Elizabeth Barnes"
+      },
+      {
+        "authorId": "1404060687",
+        "name": "Ariel Herbert-Voss"
+      },
+      {
+        "authorId": "39121861",
+        "name": "William H. Guss"
+      },
+      {
+        "authorId": "38967461",
+        "name": "Alex Nichol"
+      },
+      {
+        "authorId": "2256699302",
+        "name": "Igor Babuschkin"
+      },
+      {
+        "authorId": "2054519183",
+        "name": "S. Balaji"
+      },
+      {
+        "authorId": "150298413",
+        "name": "Shantanu Jain"
+      },
+      {
+        "authorId": "153480842",
+        "name": "A. Carr"
+      },
+      {
+        "authorId": "2990741",
+        "name": "Jan Leike"
+      },
+      {
+        "authorId": "2318703608",
+        "name": "Josh Achiam"
+      },
+      {
+        "authorId": "40055795",
+        "name": "Vedant Misra"
+      },
+      {
+        "authorId": "1404556973",
+        "name": "Evan Morikawa"
+      },
+      {
+        "authorId": "38909097",
+        "name": "Alec Radford"
+      },
+      {
+        "authorId": "3555117",
+        "name": "M. Knight"
+      },
+      {
+        "authorId": "35167962",
+        "name": "Miles Brundage"
+      },
+      {
+        "authorId": "2117715631",
+        "name": "M. Murati"
+      },
+      {
+        "authorId": "2059169400",
+        "name": "Katie Mayer"
+      },
+      {
+        "authorId": "2930640",
+        "name": "Peter Welinder"
+      },
+      {
+        "authorId": "39593364",
+        "name": "Bob McGrew"
+      },
+      {
+        "authorId": "2698777",
+        "name": "Dario Amodei"
+      },
+      {
+        "authorId": "52238703",
+        "name": "Sam McCandlish"
+      },
+      {
+        "authorId": "1701686",
+        "name": "I. Sutskever"
+      },
+      {
+        "authorId": "2563432",
+        "name": "Wojciech Zaremba"
+      }
+    ],
+    "abstract": "We introduce Codex, a GPT language model fine-tuned on publicly available code from GitHub, and study its Python code-writing capabilities. A distinct production version of Codex powers GitHub Copilot. On HumanEval, a new evaluation set we release to measure functional correctness for synthesizing programs from docstrings, our model solves 28.8% of the problems, while GPT-3 solves 0% and GPT-J solves 11.4%. Furthermore, we find that repeated sampling from the model is a surprisingly effective strategy for producing working solutions to difficult prompts. Using this method, we solve 70.2% of our problems with 100 samples per problem. Careful investigation of our model reveals its limitations, including difficulty with docstrings describing long chains of operations and with binding operations to variables. Finally, we discuss the potential broader impacts of deploying powerful code generation technologies, covering safety, security, and economics.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "398a0625e8707a0b41ac58eaec51e8feb87dd7cb",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2010-03768",
+      "MAG": "3092516542",
+      "ArXiv": "2010.03768",
+      "CorpusId": 222208810
+    },
+    "url": "https://www.semanticscholar.org/paper/398a0625e8707a0b41ac58eaec51e8feb87dd7cb",
+    "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+    "venue": "International Conference on Learning Representations",
+    "year": 2020,
+    "citationCount": 853,
+    "influentialCitationCount": 180,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2010.03768, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "33516562",
+        "name": "Mohit Shridhar"
+      },
+      {
+        "authorId": "2854297",
+        "name": "Xingdi Yuan"
+      },
+      {
+        "authorId": "40638665",
+        "name": "Marc-Alexandre Côté"
+      },
+      {
+        "authorId": "3312309",
+        "name": "Yonatan Bisk"
+      },
+      {
+        "authorId": "3382568",
+        "name": "Adam Trischler"
+      },
+      {
+        "authorId": "3308897",
+        "name": "Matthew J. Hausknecht"
+      }
+    ],
+    "abstract": "Given a simple request (e.g., Put a washed apple in the kitchen fridge), humans can reason in purely abstract terms by imagining action sequences and scoring their likelihood of success, prototypicality, and efficiency, all without moving a muscle. Once we see the kitchen in question, we can update our abstract plans to fit the scene. Embodied agents require the same abilities, but existing work does not yet provide the infrastructure necessary for both reasoning abstractly and executing concretely. We address this limitation by introducing ALFWorld, a simulator that enables agents to learn abstract, text-based policies in TextWorld (Cote et al., 2018) and then execute goals from the ALFRED benchmark (Shridhar et al., 2020) in a rich visual environment. ALFWorld enables the creation of a new BUTLER agent whose abstract knowledge, learned in TextWorld, corresponds directly to concrete, visually grounded actions. In turn, as we demonstrate empirically, this fosters better agent generalization than training only in the visually grounded environment. BUTLER's simple, modular design factors the problem to allow researchers to focus on models for improving every piece of the pipeline (language understanding, planning, navigation, visual scene understanding, and so forth).",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "814a4f680b9ba6baba23b93499f4b48af1a27678",
+    "externalIds": {
+      "ArXiv": "2009.03300",
+      "DBLP": "journals/corr/abs-2009-03300",
+      "MAG": "3083410900",
+      "CorpusId": 221516475
+    },
+    "url": "https://www.semanticscholar.org/paper/814a4f680b9ba6baba23b93499f4b48af1a27678",
+    "title": "Measuring Massive Multitask Language Understanding",
+    "venue": "International Conference on Learning Representations",
+    "year": 2020,
+    "citationCount": 8031,
+    "influentialCitationCount": 1544,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2009.03300, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "3422872",
+        "name": "Dan Hendrycks"
+      },
+      {
+        "authorId": "90909974",
+        "name": "Collin Burns"
+      },
+      {
+        "authorId": "104444594",
+        "name": "Steven Basart"
+      },
+      {
+        "authorId": "1380103052",
+        "name": "Andy Zou"
+      },
+      {
+        "authorId": "16787428",
+        "name": "Mantas Mazeika"
+      },
+      {
+        "authorId": "143711382",
+        "name": "D. Song"
+      },
+      {
+        "authorId": "5164568",
+        "name": "J. Steinhardt"
+      }
+    ],
+    "abstract": "We propose a new test to measure a text model's multitask accuracy. The test covers 57 tasks including elementary mathematics, US history, computer science, law, and more. To attain high accuracy on this test, models must possess extensive world knowledge and problem solving ability. We find that while most recent models have near random-chance accuracy, the very largest GPT-3 model improves over random chance by almost 20 percentage points on average. However, on every one of the 57 tasks, the best models still need substantial improvements before they can reach expert-level accuracy. Models also have lopsided performance and frequently do not know when they are wrong. Worse, they still have near-random accuracy on some socially important subjects such as morality and law. By comprehensively evaluating the breadth and depth of a model's academic and professional understanding, our test can be used to analyze models across many tasks and to identify important shortcomings.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "d9ff7a9344dd5d6653bd7a02bfd704422bb29951",
+    "externalIds": {
+      "MAG": "2970586779",
+      "DBLP": "conf/nips/RolnickASLW19",
+      "ArXiv": "1811.11682",
+      "CorpusId": 53860287
+    },
+    "url": "https://www.semanticscholar.org/paper/d9ff7a9344dd5d6653bd7a02bfd704422bb29951",
+    "title": "Experience Replay for Continual Learning",
+    "venue": "Neural Information Processing Systems",
+    "year": 2018,
+    "citationCount": 1589,
+    "influentialCitationCount": 131,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1811.11682, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Mathematics"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2346588790",
+        "name": "David Rolnick"
+      },
+      {
+        "authorId": "37968006",
+        "name": "Arun Ahuja"
+      },
+      {
+        "authorId": "144735987",
+        "name": "Jonathan Schwarz"
+      },
+      {
+        "authorId": "2542999",
+        "name": "T. Lillicrap"
+      },
+      {
+        "authorId": "89504302",
+        "name": "Greg Wayne"
+      }
+    ],
+    "abstract": "Continual learning is the problem of learning new tasks or knowledge while protecting old knowledge and ideally generalizing from old experience to learn new tasks faster. Neural networks trained by stochastic gradient descent often degrade on old tasks when trained successively on new tasks with different data distributions. This phenomenon, referred to as catastrophic forgetting, is considered a major hurdle to learning with non-stationary data or sequences of new tasks, and prevents networks from continually accumulating knowledge and skills. We examine this issue in the context of reinforcement learning, in a setting where an agent is exposed to tasks in a sequence. Unlike most other work, we do not provide an explicit indication to the model of task boundaries, which is the most general circumstance for a learning agent exposed to continuous experience. While various methods to counteract catastrophic forgetting have recently been proposed, we explore a straightforward, general, and seemingly overlooked solution - that of using experience replay buffers for all past events - with a mixture of on- and off-policy learning, leveraging behavioral cloning. We show that this strategy can still learn new tasks quickly yet can substantially reduce catastrophic forgetting in both Atari and DMLab domains, even matching the performance of methods that require task identities. When buffer storage is constrained, we confirm that a simple mechanism for randomly discarding data allows a limited size buffer to perform almost as well as an unbounded one.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "c6170fa90d3b2efede5a2e1660cb23e1c824f2ca",
+    "externalIds": {
+      "MAG": "2963477884",
+      "ArXiv": "1511.05952",
+      "DBLP": "journals/corr/SchaulQAS15",
+      "CorpusId": 13022595
+    },
+    "url": "https://www.semanticscholar.org/paper/c6170fa90d3b2efede5a2e1660cb23e1c824f2ca",
+    "title": "Prioritized Experience Replay",
+    "venue": "International Conference on Learning Representations",
+    "year": 2015,
+    "citationCount": 4388,
+    "influentialCitationCount": 470,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1511.05952, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Mathematics",
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "1725157",
+        "name": "T. Schaul"
+      },
+      {
+        "authorId": "34660073",
+        "name": "John Quan"
+      },
+      {
+        "authorId": "2460849",
+        "name": "Ioannis Antonoglou"
+      },
+      {
+        "authorId": "145824029",
+        "name": "David Silver"
+      }
+    ],
+    "abstract": "Experience replay lets online reinforcement learning agents remember and reuse experiences from the past. In prior work, experience transitions were uniformly sampled from a replay memory. However, this approach simply replays transitions at the same frequency that they were originally experienced, regardless of their significance. In this paper we develop a framework for prioritizing experience, so as to replay important transitions more frequently, and therefore learn more efficiently. We use prioritized experience replay in Deep Q-Networks (DQN), a reinforcement learning algorithm that achieved human-level performance across many Atari games. DQN with prioritized experience replay achieves a new state-of-the-art, outperforming DQN with uniform replay on 41 out of 49 games.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "288d7952b6648749fcbdcedabedf8f43cf7fda52",
+    "externalIds": {
+      "DBLP": "conf/atal/FranklinG97",
+      "MAG": "2096178388",
+      "DOI": "10.1007/BFb0013570",
+      "CorpusId": 13975932
+    },
+    "url": "https://www.semanticscholar.org/paper/288d7952b6648749fcbdcedabedf8f43cf7fda52",
+    "title": "Is it an Agent, or Just a Program?: A Taxonomy for Autonomous Agents",
+    "venue": "ATAL",
+    "year": 1996,
+    "citationCount": 2982,
+    "influentialCitationCount": 122,
+    "openAccessPdf": {
+      "url": "",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/BFb0013570?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/BFb0013570, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "145796793",
+        "name": "S. Franklin"
+      },
+      {
+        "authorId": "1769251",
+        "name": "A. Graesser"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "f554b22d2ccf786a6d61d5858f43024ba9115e15",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2401-13649",
+      "DOI": "10.48550/arXiv.2401.13649",
+      "CorpusId": 267199749
+    },
+    "url": "https://www.semanticscholar.org/paper/f554b22d2ccf786a6d61d5858f43024ba9115e15",
+    "title": "VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2024,
+    "citationCount": 485,
+    "influentialCitationCount": 52,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2401.13649?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2401.13649, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "23978705",
+        "name": "Jing Yu Koh"
+      },
+      {
+        "authorId": "145250604",
+        "name": "Robert Lo"
+      },
+      {
+        "authorId": "2280901917",
+        "name": "L. Jang"
+      },
+      {
+        "authorId": "2223753659",
+        "name": "Vikram Duvvur"
+      },
+      {
+        "authorId": "2280879326",
+        "name": "Ming Chong Lim"
+      },
+      {
+        "authorId": "2281408098",
+        "name": "Po-Yu Huang"
+      },
+      {
+        "authorId": "1700325",
+        "name": "Graham Neubig"
+      },
+      {
+        "authorId": "2149163534",
+        "name": "Shuyan Zhou"
+      },
+      {
+        "authorId": "2280902225",
+        "name": "Ruslan Salakhutdinov"
+      },
+      {
+        "authorId": "2259931814",
+        "name": "Daniel Fried"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "8c30fa1242bec1926693a647e6247f0e3b2dfed0",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2405-16247",
+      "DOI": "10.48550/arXiv.2405.16247",
+      "CorpusId": 270063765
+    },
+    "url": "https://www.semanticscholar.org/paper/8c30fa1242bec1926693a647e6247f0e3b2dfed0",
+    "title": "AutoManual: Generating Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 13,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2405.16247?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2405.16247, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2276034736",
+        "name": "Minghao Chen"
+      },
+      {
+        "authorId": "2303406595",
+        "name": "Yihang Li"
+      },
+      {
+        "authorId": "2303415296",
+        "name": "Yanting Yang"
+      },
+      {
+        "authorId": "2304150758",
+        "name": "Shiyu Yu"
+      },
+      {
+        "authorId": "2258304162",
+        "name": "Binbin Lin"
+      },
+      {
+        "authorId": "2257432345",
+        "name": "Xiaofei He"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "99832586d55f540f603637e458a292406a0ed75d",
+    "externalIds": {
+      "CorpusId": 252762395
+    },
+    "url": "https://www.semanticscholar.org/paper/99832586d55f540f603637e458a292406a0ed75d",
+    "title": "LANGUAGE MODELS",
+    "venue": "",
+    "year": 2023,
+    "citationCount": 7349,
+    "influentialCitationCount": 846,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2093302161",
+        "name": "Shunyu Yao"
+      },
+      {
+        "authorId": "2144551262",
+        "name": "Jeffrey Zhao"
+      },
+      {
+        "authorId": "150978762",
+        "name": "Dian Yu"
+      },
+      {
+        "authorId": "2140321952",
+        "name": "Nan Du"
+      },
+      {
+        "authorId": "1697494",
+        "name": "Izhak Shafran"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      },
+      {
+        "authorId": "145144022",
+        "name": "Yuan Cao"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "96a6df2b4aa50cfbd8984933e9c66b0763fc08a6",
+    "externalIds": {
+      "CorpusId": 264172201
+    },
+    "url": "https://www.semanticscholar.org/paper/96a6df2b4aa50cfbd8984933e9c66b0763fc08a6",
+    "title": "Set-of-Mark Prompting Unleashes Extraordinary Visual Grounding in GPT-4V",
+    "venue": "",
+    "year": 2023,
+    "citationCount": 400,
+    "influentialCitationCount": 35,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "120157163",
+        "name": "Jianwei Yang"
+      },
+      {
+        "authorId": "2315254849",
+        "name": "Hao Zhang"
+      },
+      {
+        "authorId": "2152978390",
+        "name": "Feng Li"
+      },
+      {
+        "authorId": "1882962264",
+        "name": "Xueyan Zou"
+      },
+      {
+        "authorId": "2109738542",
+        "name": "Chun-yue Li"
+      },
+      {
+        "authorId": "2256227183",
+        "name": "Jianfeng Gao"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ad52689f5041600fc10545b03a0f8554d1451193",
+    "externalIds": {
+      "MAG": "2951556544",
+      "CorpusId": 110240164
+    },
+    "url": "https://www.semanticscholar.org/paper/ad52689f5041600fc10545b03a0f8554d1451193",
+    "title": "Sources of Power: How People Make Decisions",
+    "venue": "",
+    "year": 1998,
+    "citationCount": 2899,
+    "influentialCitationCount": 258,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": [
+      "Psychology"
+    ],
+    "publicationTypes": [
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "145320331",
+        "name": "Gary Klein"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Artificial Intelligence: A Modern Approach",
+    "venue": "",
+    "year": 1995,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "c83e6a46aa91ad6aa42f2d20102407e2c372faee",
+    "externalIds": {
+      "DOI": "10.1037//0033-295x.87.1.1",
+      "CorpusId": 14488376,
+      "PubMed": "7375607"
+    },
+    "url": "https://www.semanticscholar.org/paper/c83e6a46aa91ad6aa42f2d20102407e2c372faee",
+    "title": "How does a brain build a cognitive code?",
+    "venue": "Psychology Review",
+    "year": 1980,
+    "citationCount": 743,
+    "influentialCitationCount": 80,
+    "openAccessPdf": {
+      "url": "",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1037//0033-295x.87.1.1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1037//0033-295x.87.1.1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Medicine"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2251694593",
+        "name": "Stephen Grossberg"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "de8ba9b01c9ab7cbabf5c33b80b7bbc618857627",
+    "externalIds": {
+      "CorpusId": 268232499
+    },
+    "url": "https://www.semanticscholar.org/paper/de8ba9b01c9ab7cbabf5c33b80b7bbc618857627",
+    "title": "The Claude 3 Model Family: Opus, Sonnet, Haiku",
+    "venue": "",
+    "year": null,
+    "citationCount": 1622,
+    "influentialCitationCount": 242,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "for distillation modules,",
+    "venue": "CER. Figure 3 and 4 show the system prompts",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "The number of training tasks varies across web-sites, ranging from five to ten, and accounts for approximately 5% of the test set",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2023. Generative agents: Interactive sim-ulacra of human behavior",
+    "venue": "Proceedings of the 36th Annual ACM Symposium on User Interface Software and Technology",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "International Conference on Learning Representations A Appendix A.1 CER prompts Here we provide detailed prompts for each module",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "section 4.1",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2023. Gemini: A family of highly capable multimodal models",
+    "venue": "arXiv preprint",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2023. Self-refine: Iterative refinement with",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2023. Gpt-4 technical report",
+    "venue": "arXiv preprint",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "A.3 Self-guided exploration prompt As mentioned in section A.5, we prompt",
+    "venue": "a",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2024b. Agent workflow memory",
+    "venue": "ArXiv",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "corresponding trajectories",
+    "venue": "Figure 9",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2024a. Voyager: An open-ended embodied agent with large language models",
+    "venue": "Trans-actions on Machine Learning Research",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2022. Chain of thought prompting elicits reasoning in large language models",
+    "venue": "Advances in Neural Information Processing Systems",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  }
+]

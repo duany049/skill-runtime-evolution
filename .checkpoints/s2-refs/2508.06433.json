@@ -1,0 +1,3308 @@
+[
+  {
+    "paperId": "d4b9917737a520c471a7dd0e0e80520b7508562a",
+    "externalIds": {
+      "ArXiv": "2507.06229",
+      "DBLP": "journals/corr/abs-2507-06229",
+      "DOI": "10.48550/arXiv.2507.06229",
+      "CorpusId": 280047833
+    },
+    "url": "https://www.semanticscholar.org/paper/d4b9917737a520c471a7dd0e0e80520b7508562a",
+    "title": "Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 46,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.06229, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "47274259",
+        "name": "Xiangru Tang"
+      },
+      {
+        "authorId": "2366567233",
+        "name": "Tianrui Qin"
+      },
+      {
+        "authorId": "2367741262",
+        "name": "Tianhao Peng"
+      },
+      {
+        "authorId": "2373773549",
+        "name": "Ziyang Zhou"
+      },
+      {
+        "authorId": "2308941736",
+        "name": "Yanjun Shao"
+      },
+      {
+        "authorId": "2276847133",
+        "name": "TingTing Du"
+      },
+      {
+        "authorId": "2217579583",
+        "name": "Xinming Wei"
+      },
+      {
+        "authorId": "2261083308",
+        "name": "Peng Xia"
+      },
+      {
+        "authorId": "2284292287",
+        "name": "Fang Wu"
+      },
+      {
+        "authorId": "2373267831",
+        "name": "He Zhu"
+      },
+      {
+        "authorId": "2366560952",
+        "name": "Ge Zhang"
+      },
+      {
+        "authorId": "2294523552",
+        "name": "Jiaheng Liu"
+      },
+      {
+        "authorId": "2349629533",
+        "name": "Xingyao Wang"
+      },
+      {
+        "authorId": "2004160930",
+        "name": "Sirui Hong"
+      },
+      {
+        "authorId": "2326297106",
+        "name": "Chenglin Wu"
+      },
+      {
+        "authorId": "2292343983",
+        "name": "Hao Cheng"
+      },
+      {
+        "authorId": "2372478439",
+        "name": "Chi Wang"
+      },
+      {
+        "authorId": "2284803168",
+        "name": "Wangchunshu Zhou"
+      }
+    ],
+    "abstract": "AI agent frameworks operate in isolation, forcing agents to rediscover solutions and repeat mistakes across different systems. Despite valuable problem-solving experiences accumulated by frameworks like smolagents, OpenHands, and OWL, this knowledge remains trapped within individual systems, preventing the emergence of collective intelligence. Current memory systems focus on individual agents or framework-specific demonstrations, failing to enable cross-architecture knowledge transfer. We introduce AGENT KB, a universal memory infrastructure enabling seamless experience sharing across heterogeneous agent frameworks without retraining. AGENT KB aggregates trajectories into a structured knowledge base and serves lightweight APIs. At inference time, hybrid retrieval operates through two stages: planning seeds agents with cross-domain workflows, while feedback applies targeted diagnostic fixes. A disagreement gate ensures retrieved knowledge enhances rather than disrupts reasoning, addressing knowledge interference in cross-framework transfer. We validate AGENT KB across major frameworks on GAIA, Humanity's Last Exam, GPQA, and SWE-bench. Results show substantial improvements across diverse model families: compared to baseline pass@1, smolagents with AGENT KB achieve up to 18.7pp gains at pass@3 (55.2% ->73.9%), while OpenHands improves 4.0pp on SWE-bench pass@1 (24.3% ->28.3%). Similar improvements are observed across all base model families. Ablations confirm that hybrid retrieval and feedback stages are essential, with automatically generated experiences matching manual curation. This establishes the foundation for collective agent intelligence through shared memory infrastructures.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "196eaa8c259542e924b4f6429e6dd3514760c2e3",
+    "externalIds": {
+      "ArXiv": "2507.03724",
+      "DBLP": "journals/corr/abs-2507-03724",
+      "DOI": "10.48550/arXiv.2507.03724",
+      "CorpusId": 280093879
+    },
+    "url": "https://www.semanticscholar.org/paper/196eaa8c259542e924b4f6429e6dd3514760c2e3",
+    "title": "MemOS: A Memory OS for AI System",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 66,
+    "influentialCitationCount": 2,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.03724, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2268429641",
+        "name": "Zhiyu Li"
+      },
+      {
+        "authorId": "2268434524",
+        "name": "Shichao Song"
+      },
+      {
+        "authorId": "2303402664",
+        "name": "Chenyang Xi"
+      },
+      {
+        "authorId": "2284861141",
+        "name": "Hanyu Wang"
+      },
+      {
+        "authorId": "2346963378",
+        "name": "Chen Tang"
+      },
+      {
+        "authorId": "2268393907",
+        "name": "Simin Niu"
+      },
+      {
+        "authorId": "2278580159",
+        "name": "Ding Chen"
+      },
+      {
+        "authorId": "2330372656",
+        "name": "Jiawei Yang"
+      },
+      {
+        "authorId": "2363891019",
+        "name": "Chunyu Li"
+      },
+      {
+        "authorId": "2278590555",
+        "name": "Qingchen Yu"
+      },
+      {
+        "authorId": "2326243408",
+        "name": "Jihao Zhao"
+      },
+      {
+        "authorId": "2299332188",
+        "name": "Yezhaohui Wang"
+      },
+      {
+        "authorId": "2374351907",
+        "name": "Peng Liu"
+      },
+      {
+        "authorId": "2372874666",
+        "name": "Zehao Lin"
+      },
+      {
+        "authorId": "2339245029",
+        "name": "Pengyuan Wang"
+      },
+      {
+        "authorId": "2363814114",
+        "name": "Jiahao Huo"
+      },
+      {
+        "authorId": "2364534661",
+        "name": "Tianyi Chen"
+      },
+      {
+        "authorId": "2293291072",
+        "name": "Kai Chen"
+      },
+      {
+        "authorId": "2268754500",
+        "name": "Ke-Rong Li"
+      },
+      {
+        "authorId": "2216907225",
+        "name": "Zhenzhen Tao"
+      },
+      {
+        "authorId": "2364840090",
+        "name": "Junpeng Ren"
+      },
+      {
+        "authorId": "2349573796",
+        "name": "Huayi Lai"
+      },
+      {
+        "authorId": "2282083454",
+        "name": "Hao Wu"
+      },
+      {
+        "authorId": "2268400606",
+        "name": "Bo Tang"
+      },
+      {
+        "authorId": "2373433278",
+        "name": "Zhenren Wang"
+      },
+      {
+        "authorId": "2346645031",
+        "name": "Zhaoxin Fan"
+      },
+      {
+        "authorId": "2349639731",
+        "name": "Ningyu Zhang"
+      },
+      {
+        "authorId": "2324284749",
+        "name": "Linfeng Zhang"
+      },
+      {
+        "authorId": "2373580811",
+        "name": "Junchi Yan"
+      },
+      {
+        "authorId": "2316893179",
+        "name": "Ming-Zhou Yang"
+      },
+      {
+        "authorId": "2309122834",
+        "name": "Tong Xu"
+      },
+      {
+        "authorId": "2373713670",
+        "name": "Wei Xu"
+      },
+      {
+        "authorId": "2144200945",
+        "name": "Huajun Chen"
+      },
+      {
+        "authorId": "2337837645",
+        "name": "Haofen Wang"
+      },
+      {
+        "authorId": "2309755519",
+        "name": "Hongkang Yang"
+      },
+      {
+        "authorId": "2240768525",
+        "name": "Wentao Zhang"
+      },
+      {
+        "authorId": "2349654090",
+        "name": "Zhikun Xu"
+      },
+      {
+        "authorId": "2111637832",
+        "name": "Siheng Chen"
+      },
+      {
+        "authorId": "2268399953",
+        "name": "Feiyu Xiong"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) have become an essential infrastructure for Artificial General Intelligence (AGI), yet their lack of well-defined memory management systems hinders the development of long-context reasoning, continual personalization, and knowledge consistency.Existing models mainly rely on static parameters and short-lived contextual states, limiting their ability to track user preferences or update knowledge over extended periods.While Retrieval-Augmented Generation (RAG) introduces external knowledge in plain text, it remains a stateless workaround without lifecycle control or integration with persistent representations.Recent work has modeled the training and inference cost of LLMs from a memory hierarchy perspective, showing that introducing an explicit memory layer between parameter memory and external retrieval can substantially reduce these costs by externalizing specific knowledge. Beyond computational efficiency, LLMs face broader challenges arising from how information is distributed over time and context, requiring systems capable of managing heterogeneous knowledge spanning different temporal scales and sources. To address this challenge, we propose MemOS, a memory operating system that treats memory as a manageable system resource. It unifies the representation, scheduling, and evolution of plaintext, activation-based, and parameter-level memories, enabling cost-efficient storage and retrieval. As the basic unit, a MemCube encapsulates both memory content and metadata such as provenance and versioning. MemCubes can be composed, migrated, and fused over time, enabling flexible transitions between memory types and bridging retrieval with parameter-based learning. MemOS establishes a memory-centric system framework that brings controllability, plasticity, and evolvability to LLMs, laying the foundation for continual learning and personalized modeling.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "80a0548be8c857421aaf0602c6d83d3ef934a251",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2507-02259",
+      "ArXiv": "2507.02259",
+      "DOI": "10.48550/arXiv.2507.02259",
+      "CorpusId": 280047896
+    },
+    "url": "https://www.semanticscholar.org/paper/80a0548be8c857421aaf0602c6d83d3ef934a251",
+    "title": "MemAgent: Reshaping Long-Context LLM with Multi-Conv RL-based Memory Agent",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 132,
+    "influentialCitationCount": 12,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.02259, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2363723160",
+        "name": "Hongli Yu"
+      },
+      {
+        "authorId": "2288187529",
+        "name": "Ting Chen"
+      },
+      {
+        "authorId": "2372316104",
+        "name": "Jiangtao Feng"
+      },
+      {
+        "authorId": "2350758463",
+        "name": "Jiangjie Chen"
+      },
+      {
+        "authorId": "2352019542",
+        "name": "Weinan Dai"
+      },
+      {
+        "authorId": "2354247190",
+        "name": "Qiying Yu"
+      },
+      {
+        "authorId": "2286392970",
+        "name": "Ya-Qin Zhang"
+      },
+      {
+        "authorId": "2268308866",
+        "name": "Wei-Ying Ma"
+      },
+      {
+        "authorId": "2293350427",
+        "name": "Jingjing Liu"
+      },
+      {
+        "authorId": "2285763682",
+        "name": "Mingxuan Wang"
+      },
+      {
+        "authorId": "2363595990",
+        "name": "Hao Zhou"
+      }
+    ],
+    "abstract": "Despite improvements by length extrapolation, efficient attention and memory modules, handling infinitely long documents with linear complexity without performance degradation during extrapolation remains the ultimate challenge in long-text processing. We directly optimize for long-text tasks in an end-to-end fashion and introduce a novel agent workflow, MemAgent, which reads text in segments and updates the memory using an overwrite strategy. We extend the DAPO algorithm to facilitate training via independent-context multi-conversation generation. MemAgent has demonstrated superb long-context capabilities, being able to extrapolate from an 8K context trained on 32K text to a 3.5M QA task with performance loss<5% and achieves 95%+ in 512K RULER test.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "6c5f3dd82ee674d929a8eb4b256ca2045e02ae60",
+    "externalIds": {
+      "ArXiv": "2506.15841",
+      "DBLP": "journals/corr/abs-2506-15841",
+      "DOI": "10.48550/arXiv.2506.15841",
+      "CorpusId": 279465470
+    },
+    "url": "https://www.semanticscholar.org/paper/6c5f3dd82ee674d929a8eb4b256ca2045e02ae60",
+    "title": "MEM1: Learning to Synergize Memory and Reasoning for Efficient Long-Horizon Agents",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 117,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.15841, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2303303353",
+        "name": "Zijian Zhou"
+      },
+      {
+        "authorId": "2283843071",
+        "name": "A. Qu"
+      },
+      {
+        "authorId": "2146045435",
+        "name": "Zhaoxuan Wu"
+      },
+      {
+        "authorId": "2295169937",
+        "name": "Sunghwan Kim"
+      },
+      {
+        "authorId": "2410444493",
+        "name": "Sunghwan Kim"
+      },
+      {
+        "authorId": "2303255291",
+        "name": "Alok Prakash"
+      },
+      {
+        "authorId": "2303255706",
+        "name": "Daniela Rus"
+      },
+      {
+        "authorId": "2365044797",
+        "name": "Jinhua Zhao"
+      },
+      {
+        "authorId": "40222533",
+        "name": "B. Low"
+      },
+      {
+        "authorId": "2366078131",
+        "name": "Paul Liang"
+      }
+    ],
+    "abstract": "Modern language agents must operate over long-horizon, multi-turn interactions, where they retrieve external information, adapt to observations, and answer interdependent queries. Yet, most LLM systems rely on full-context prompting, appending all past turns regardless of their relevance. This leads to unbounded memory growth, increased computational costs, and degraded reasoning performance on out-of-distribution input lengths. We introduce MEM1, an end-to-end reinforcement learning framework that enables agents to operate with constant memory across long multi-turn tasks. At each turn, MEM1 updates a compact shared internal state that jointly supports memory consolidation and reasoning. This state integrates prior memory with new observations from the environment while strategically discarding irrelevant or redundant information. To support training in more realistic and compositional settings, we propose a simple yet effective and scalable approach to constructing multi-turn environments by composing existing datasets into arbitrarily complex task sequences. Experiments across three domains, including internal retrieval QA, open-domain web QA, and multi-turn web shopping, show that MEM1-7B improves performance by 3.5x while reducing memory usage by 3.7x compared to Qwen2.5-14B-Instruct on a 16-objective multi-hop QA task, and generalizes beyond the training horizon. Our results demonstrate the promise of reasoning-driven memory consolidation as a scalable alternative to existing solutions for training long-horizon interactive agents, where both efficiency and performance are optimized.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1526c2db582e6b691e010dd2dacffdd9ca7c13cc",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2506-10974",
+      "ArXiv": "2506.10974",
+      "DOI": "10.48550/arXiv.2506.10974",
+      "CorpusId": 279318390
+    },
+    "url": "https://www.semanticscholar.org/paper/1526c2db582e6b691e010dd2dacffdd9ca7c13cc",
+    "title": "AutoMind: Adaptive Knowledgeable Agent for Automated Data Science",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 12,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.10974, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2196928874",
+        "name": "Yixin Ou"
+      },
+      {
+        "authorId": "2278889197",
+        "name": "Yujie Luo"
+      },
+      {
+        "authorId": "2366533745",
+        "name": "Jingsheng Zheng"
+      },
+      {
+        "authorId": "2337843897",
+        "name": "Lanning Wei"
+      },
+      {
+        "authorId": "2190751119",
+        "name": "Shuofei Qiao"
+      },
+      {
+        "authorId": "2253784578",
+        "name": "Jintian Zhang"
+      },
+      {
+        "authorId": "2337932297",
+        "name": "Da Zheng"
+      },
+      {
+        "authorId": "2144200945",
+        "name": "Huajun Chen"
+      },
+      {
+        "authorId": "2285053825",
+        "name": "Ningyu Zhang"
+      }
+    ],
+    "abstract": "Large Language Model (LLM) agents have shown great potential in addressing real-world data science problems. LLM-driven data science agents promise to automate the entire machine learning pipeline, yet their real-world effectiveness remains limited. Existing frameworks depend on rigid, pre-defined workflows and inflexible coding strategies; consequently, they excel only on relatively simple, classical problems and fail to capture the empirical expertise that human practitioners bring to complex, innovative tasks. In this work, we introduce AutoMind, an adaptive, knowledgeable LLM-agent framework that overcomes these deficiencies through three key advances: (1) a curated expert knowledge base that grounds the agent in domain expert knowledge, (2) an agentic knowledgeable tree search algorithm that strategically explores possible solutions, and (3) a self-adaptive coding strategy that dynamically tailors code generation to task complexity. Evaluations on two automated data science benchmarks demonstrate that AutoMind delivers superior performance versus state-of-the-art baselines. Additional analyses confirm favorable effectiveness, efficiency, and qualitative solution quality, highlighting AutoMind as an efficient and robust step toward fully automated data science. Code is at https://github.com/innovatingAI/AutoMind.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "204246f01e8870d7244450e5042a32c560263089",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2506-06698",
+      "ArXiv": "2506.06698",
+      "DOI": "10.48550/arXiv.2506.06698",
+      "CorpusId": 279250810
+    },
+    "url": "https://www.semanticscholar.org/paper/204246f01e8870d7244450e5042a32c560263089",
+    "title": "Contextual Experience Replay for Self-Improvement of Language Agents",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2025,
+    "citationCount": 25,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.06698, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2308814467",
+        "name": "Yitao Liu"
+      },
+      {
+        "authorId": "152358188",
+        "name": "Chenglei Si"
+      },
+      {
+        "authorId": "2360305970",
+        "name": "Karthik R. Narasimhan"
+      },
+      {
+        "authorId": "2256984659",
+        "name": "Shunyu Yao"
+      }
+    ],
+    "abstract": "Large language model (LLM) agents have been applied to sequential decision-making tasks such as web navigation, but without any environment-specific experiences, they often fail in these complex tasks. Moreover, current LLM agents are not designed to continually learn from past experiences during inference time, which could be crucial for them to gain these environment-specific experiences. To address this, we propose Contextual Experience Replay (CER), a training-free framework to enable efficient self-improvement for language agents in their context window. Specifically, CER accumulates and synthesizes past experiences into a dynamic memory buffer. These experiences encompass environment dynamics and common decision-making patterns, allowing the agents to retrieve and augment themselves with relevant knowledge in new tasks, enhancing their adaptability in complex environments. We evaluate CER on the challenging WebArena and VisualWebArena benchmarks. On VisualWebArena, CER achieves a competitive performance of 31.9%. On WebArena, CER also gets a competitive average success rate of 36.7%, relatively improving the success rate of the GPT-4o agent baseline by 51.0%. We also conduct a comprehensive analysis on it to prove its efficiency, validity and understand it better.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "3bc2e11edf61b80dbbccfed50a39d157f1a514b1",
+    "externalIds": {
+      "ArXiv": "2505.23723",
+      "DBLP": "journals/corr/abs-2505-23723",
+      "DOI": "10.48550/arXiv.2505.23723",
+      "CorpusId": 278995935
+    },
+    "url": "https://www.semanticscholar.org/paper/3bc2e11edf61b80dbbccfed50a39d157f1a514b1",
+    "title": "ML-Agent: Reinforcing LLM Agents for Autonomous Machine Learning Engineering",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 16,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.23723, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2275193557",
+        "name": "Zexi Liu"
+      },
+      {
+        "authorId": "2273563877",
+        "name": "Jingyi Chai"
+      },
+      {
+        "authorId": "2273554007",
+        "name": "Xinyu Zhu"
+      },
+      {
+        "authorId": "2283546526",
+        "name": "Shuo Tang"
+      },
+      {
+        "authorId": "2273620042",
+        "name": "Rui Ye"
+      },
+      {
+        "authorId": "2141897317",
+        "name": "Bo Zhang"
+      },
+      {
+        "authorId": "2364171564",
+        "name": "Lei Bai"
+      },
+      {
+        "authorId": "2111637832",
+        "name": "Siheng Chen"
+      }
+    ],
+    "abstract": "The emergence of large language model (LLM)-based agents has significantly advanced the development of autonomous machine learning (ML) engineering. However, the dominant prompt-based paradigm exhibits limitations: smaller models lack the capacity to learn from execution trajectories for generalization, while large proprietary models incur high computational overhead, restricting accessibility and scalability. Focusing on this, for the first time, we explore the paradigm of learning-based agentic ML, where an LLM agent learns through interactive experimentation on ML tasks using online reinforcement learning (RL). To realize this, we propose a novel agentic ML training framework with three key components: (1) exploration-enriched fine-tuning, which enables LLM agents to generate diverse actions for enhanced RL exploration; (2) step-wise RL, which enables training on a single action step, accelerating experience collection and improving training efficiency; (3) an agentic ML-specific reward module, which unifies varied ML feedback signals into consistent rewards for RL optimization. Leveraging this framework, we train ML-Agent, driven by a 7B-sized Qwen-2.5 LLM for autonomous ML. Despite training on only 9 ML tasks, our 7B-sized ML-Agent achieves comparable performance to agents using much larger proprietary LLMs (e.g., GPT-5) but at significantly lower computational cost, demonstrating strong performance and cross-task generalization.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "390c85a27878efb0cce801b64c26873b4b50bea4",
+    "externalIds": {
+      "ArXiv": "2505.17716",
+      "DBLP": "journals/corr/abs-2505-17716",
+      "DOI": "10.48550/arXiv.2505.17716",
+      "CorpusId": 278886024
+    },
+    "url": "https://www.semanticscholar.org/paper/390c85a27878efb0cce801b64c26873b4b50bea4",
+    "title": "Get Experience from Practice: LLM Agents with Record & Replay",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 12,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.17716, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2123111601",
+        "name": "Erhu Feng"
+      },
+      {
+        "authorId": "2219848412",
+        "name": "Wenbo Zhou"
+      },
+      {
+        "authorId": "2364553552",
+        "name": "Zibin Liu"
+      },
+      {
+        "authorId": "2223238291",
+        "name": "Le Chen"
+      },
+      {
+        "authorId": "2363473124",
+        "name": "Yunpeng Dong"
+      },
+      {
+        "authorId": "2364006010",
+        "name": "Cheng Zhang"
+      },
+      {
+        "authorId": "2363408836",
+        "name": "Yisheng Zhao"
+      },
+      {
+        "authorId": "2065275439",
+        "name": "Dong Du"
+      },
+      {
+        "authorId": "2380083059",
+        "name": "Zhijian Zhou"
+      },
+      {
+        "authorId": "2348516202",
+        "name": "Yubin Xia"
+      },
+      {
+        "authorId": "2285722270",
+        "name": "Haibo Chen"
+      }
+    ],
+    "abstract": "AI agents, empowered by Large Language Models (LLMs) and communication protocols such as MCP and A2A, have rapidly evolved from simple chatbots to autonomous entities capable of executing complex, multi-step tasks, demonstrating great potential. However, the LLMs' inherent uncertainty and heavy computational resource requirements pose four significant challenges to the development of safe and efficient agents: reliability, privacy, cost and performance. Existing approaches, like model alignment, workflow constraints and on-device model deployment, can partially alleviate some issues but often with limitations, failing to fundamentally resolve these challenges. This paper proposes a new paradigm called AgentRR (Agent Record&Replay), which introduces the classical record-and-replay mechanism into AI agent frameworks. The core idea is to: 1. Record an agent's interaction trace with its environment and internal decision process during task execution, 2. Summarize this trace into a structured\"experience\"encapsulating the workflow and constraints, and 3. Replay these experiences in subsequent similar tasks to guide the agent's behavior. We detail a multi-level experience abstraction method and a check function mechanism in AgentRR: the former balances experience specificity and generality, while the latter serves as a trust anchor to ensure completeness and safety during replay. In addition, we explore multiple application modes of AgentRR, including user-recorded task demonstration, large-small model collaboration and privacy-aware agent execution, and envision an experience repository for sharing and reusing knowledge to further reduce deployment cost.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ea9591cf281409ffcbc284129d52050fea9cc115",
+    "externalIds": {
+      "ArXiv": "2505.16282",
+      "DBLP": "journals/corr/abs-2505-16282",
+      "DOI": "10.48550/arXiv.2505.16282",
+      "CorpusId": 278789371
+    },
+    "url": "https://www.semanticscholar.org/paper/ea9591cf281409ffcbc284129d52050fea9cc115",
+    "title": "ARPO:End-to-End Policy Optimization for GUI Agents with Experience Replay",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 56,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.16282, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2174735677",
+        "name": "Fanbin Lu"
+      },
+      {
+        "authorId": "2294147935",
+        "name": "Zhisheng Zhong"
+      },
+      {
+        "authorId": "2278256143",
+        "name": "Shu Liu"
+      },
+      {
+        "authorId": "2352958132",
+        "name": "Chi-Wing Fu"
+      },
+      {
+        "authorId": "2273012826",
+        "name": "Jiaya Jia"
+      }
+    ],
+    "abstract": "Training large language models (LLMs) as interactive agents for controlling graphical user interfaces (GUIs) presents a unique challenge to optimize long-horizon action sequences with multimodal feedback from complex environments. While recent works have advanced multi-turn reinforcement learning (RL) for reasoning and tool-using capabilities in LLMs, their application to GUI-based agents remains relatively underexplored due to the difficulty of sparse rewards, delayed feedback, and high rollout costs. In this paper, we investigate end-to-end policy optimization for vision-language-based GUI agents with the aim of improving performance on complex, long-horizon computer tasks. We propose Agentic Replay Policy Optimization (ARPO), an end-to-end RL approach that augments Group Relative Policy Optimization (GRPO) with a replay buffer to reuse the successful experience across training iterations. To further stabilize the training process, we propose a task selection strategy that filters tasks based on baseline agent performance, allowing the agent to focus on learning from informative interactions. Additionally, we compare ARPO with offline preference optimization approaches, highlighting the advantages of policy-based methods in GUI environments. Experiments on the OSWorld benchmark demonstrate that ARPO achieves competitive results, establishing a new performance baseline for LLM-based GUI agents trained via reinforcement learning. Our findings underscore the effectiveness of reinforcement learning for training multi-turn, vision-language GUI agents capable of managing complex real-world UI interactions. Codes and models:https://github.com/dvlab-research/ARPO.git.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "6377419f06813197e5bbdcdbc8a03b7584c8ae49",
+    "externalIds": {
+      "DBLP": "conf/www/TanLQQCX025",
+      "DOI": "10.1145/3701716.3715247",
+      "CorpusId": 278822756
+    },
+    "url": "https://www.semanticscholar.org/paper/6377419f06813197e5bbdcdbc8a03b7584c8ae49",
+    "title": "Meta-Agent-Workflow: Streamlining Tool Usage in LLMs through Workflow Construction, Retrieval, and Refinement",
+    "venue": "The Web Conference",
+    "year": 2025,
+    "citationCount": 16,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1145/3701716.3715247?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1145/3701716.3715247, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Book",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2155269979",
+        "name": "X. Tan"
+      },
+      {
+        "authorId": "2301084822",
+        "name": "Bin Li"
+      },
+      {
+        "authorId": "2281059618",
+        "name": "Xihe Qiu"
+      },
+      {
+        "authorId": "2268107128",
+        "name": "Chao Qu"
+      },
+      {
+        "authorId": "2215626889",
+        "name": "Wei Chu"
+      },
+      {
+        "authorId": "2266466742",
+        "name": "Yinghui Xu"
+      },
+      {
+        "authorId": "2192603365",
+        "name": "Yuan Qi"
+      }
+    ],
+    "abstract": "Large language models (LLMs) have recently shown significant advancements and are increasingly used as key components in automated agents for various web-based tasks. Typically, this agentization is achieved by carefully prompting LLMs to guide their behavior in using tools for specific tasks. However, this approach can be limited by the complexity of tasks and the inherent capabilities of LLMs. To enhance task-specific performance, a pre-defined workflow approach can be employed, reducing repetitive and error-prone planning for particular tasks. This workflow-driven process is especially well-suited for industrial applications, where task-specific agents can be easily configured using visual interfaces supported by various open-source platforms. In this paper, we introduce a novel framework called Meta-Agent-Workflowto create, retrieve, and refine agent workflows. Experiments on ToolBench demonstrate that our framework effectively transforms LLM tool-reasoning processes into task-specific workflows, retrieves workflows for different tasks based on various queries, and updates them based on execution feedback. We also open-source our code and follow the workflow architecture of an open-source agent platform (e.g., Dify) to facilitate further industrial and community use. The Meta-Agent-Workflow will be open-sourced in https://github.com/testlbin/meta_agent_workflows.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "b12b7e05de83d3a3b345cf9392e79a03f8c2712e",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2504-10458",
+      "ArXiv": "2504.10458",
+      "DOI": "10.48550/arXiv.2504.10458",
+      "CorpusId": 277781711
+    },
+    "url": "https://www.semanticscholar.org/paper/b12b7e05de83d3a3b345cf9392e79a03f8c2712e",
+    "title": "GUI-R1 : A Generalist R1-Style Vision-Language Action Model For GUI Agents",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 201,
+    "influentialCitationCount": 26,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.10458, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2240531270",
+        "name": "Run Luo"
+      },
+      {
+        "authorId": "2356448329",
+        "name": "Lu Wang"
+      },
+      {
+        "authorId": "66583249",
+        "name": "Wanwei He"
+      },
+      {
+        "authorId": "2308850042",
+        "name": "Xiaobo Xia"
+      }
+    ],
+    "abstract": "Existing efforts in building Graphical User Interface (GUI) agents largely rely on the training paradigm of supervised fine-tuning on Large Vision-Language Models (LVLMs). However, this approach not only demands extensive amounts of training data but also struggles to effectively understand GUI screenshots and generalize to unseen interfaces. The issue significantly limits its application in real-world scenarios, especially for high-level tasks. Inspired by Reinforcement Fine-Tuning (RFT) in large reasoning models (e.g., DeepSeek-R1), which efficiently enhances the problem-solving capabilities of large language models in real-world settings, we propose \\name, the first reinforcement learning framework designed to enhance the GUI capabilities of LVLMs in high-level real-world task scenarios, through unified action space rule modeling. By leveraging a small amount of carefully curated high-quality data across multiple platforms (including Windows, Linux, MacOS, Android, and Web) and employing policy optimization algorithms such as Group Relative Policy Optimization (GRPO) to update the model, \\name achieves superior performance using only 0.02\\% of the data (3K vs. 13M) compared to previous state-of-the-art methods like OS-Atlas across eight benchmarks spanning three different platforms (mobile, desktop, and web). These results demonstrate the immense potential of reinforcement learning based on unified action space rule modeling in improving the execution capabilities of LVLMs for real-world GUI agent tasks.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "251c24a045976586f9ae0deb45ec48c112e50d99",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2504-03561",
+      "ArXiv": "2504.03561",
+      "DOI": "10.48550/arXiv.2504.03561",
+      "CorpusId": 277596246
+    },
+    "url": "https://www.semanticscholar.org/paper/251c24a045976586f9ae0deb45ec48c112e50d99",
+    "title": "SynWorld: Virtual Scenario Synthesis for Agentic Action Knowledge Refinement",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2025,
+    "citationCount": 8,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.03561, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2278840339",
+        "name": "Runnan Fang"
+      },
+      {
+        "authorId": "2353949865",
+        "name": "Xiaobin Wang"
+      },
+      {
+        "authorId": "2354564031",
+        "name": "Yuan Liang"
+      },
+      {
+        "authorId": "2190751119",
+        "name": "Shuofei Qiao"
+      },
+      {
+        "authorId": "2240542238",
+        "name": "Jialong Wu"
+      },
+      {
+        "authorId": "2229632309",
+        "name": "Zekun Xi"
+      },
+      {
+        "authorId": "2153010067",
+        "name": "Ningyu Zhang"
+      },
+      {
+        "authorId": "2256747040",
+        "name": "Yong Jiang"
+      },
+      {
+        "authorId": "35930962",
+        "name": "Pengjun Xie"
+      },
+      {
+        "authorId": "2276428076",
+        "name": "Fei Huang"
+      },
+      {
+        "authorId": "2144200945",
+        "name": "Huajun Chen"
+      }
+    ],
+    "abstract": "In the interaction between agents and their environments, agents expand their capabilities by planning and executing actions. However, LLM-based agents face substantial challenges when deployed in novel environments or required to navigate unconventional action spaces. To empower agents to autonomously explore environments, optimize workflows, and enhance their understanding of actions, we propose SynWorld, a framework that allows agents to synthesize possible scenarios with multi-step action invocation within the action space and perform Monte Carlo Tree Search (MCTS) exploration to effectively refine their action knowledge in the current environment. Our experiments demonstrate that SynWorld is an effective and general approach to learning action knowledge in new environments. Code is available at https://github.com/zjunlp/SynWorld.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "305a7422a34a89fb79a84a9cdbecbae5021d6d83",
+    "externalIds": {
+      "ArXiv": "2504.01990",
+      "DBLP": "journals/corr/abs-2504-01990",
+      "DOI": "10.48550/arXiv.2504.01990",
+      "CorpusId": 277510453
+    },
+    "url": "https://www.semanticscholar.org/paper/305a7422a34a89fb79a84a9cdbecbae5021d6d83",
+    "title": "Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 131,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.01990, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2288274546",
+        "name": "Bangbang Liu"
+      },
+      {
+        "authorId": "2144405890",
+        "name": "Xinfeng Li"
+      },
+      {
+        "authorId": "2288348676",
+        "name": "Jiayi Zhang"
+      },
+      {
+        "authorId": "2267427792",
+        "name": "Jinlin Wang"
+      },
+      {
+        "authorId": "2354506008",
+        "name": "Tanjin He"
+      },
+      {
+        "authorId": "2004160930",
+        "name": "Sirui Hong"
+      },
+      {
+        "authorId": "2353419005",
+        "name": "Hongzhang Liu"
+      },
+      {
+        "authorId": "2116579935",
+        "name": "Shaokun Zhang"
+      },
+      {
+        "authorId": "2371389115",
+        "name": "Kaitao Song"
+      },
+      {
+        "authorId": "2337360144",
+        "name": "Kunlun Zhu"
+      },
+      {
+        "authorId": "2153513408",
+        "name": "Yuheng Cheng"
+      },
+      {
+        "authorId": "1643451565",
+        "name": "Suyuchen Wang"
+      },
+      {
+        "authorId": "2294510615",
+        "name": "Xiaoqian Wang"
+      },
+      {
+        "authorId": "2325963851",
+        "name": "Yuyu Luo"
+      },
+      {
+        "authorId": "2304364004",
+        "name": "Haibo Jin"
+      },
+      {
+        "authorId": "2268429760",
+        "name": "Peiyan Zhang"
+      },
+      {
+        "authorId": "2065919693",
+        "name": "Ollie Liu"
+      },
+      {
+        "authorId": "2065919693",
+        "name": "Ollie Liu"
+      },
+      {
+        "authorId": "2325990655",
+        "name": "Jiaqi Chen"
+      },
+      {
+        "authorId": "2109067179",
+        "name": "Huan-Rui Zhang"
+      },
+      {
+        "authorId": "2310389702",
+        "name": "Zhaoyang Yu"
+      },
+      {
+        "authorId": "2339325621",
+        "name": "Hao Shi"
+      },
+      {
+        "authorId": "2304516904",
+        "name": "Boyan Li"
+      },
+      {
+        "authorId": "2314527961",
+        "name": "D. Wu"
+      },
+      {
+        "authorId": "48198605",
+        "name": "Dekun Wu"
+      },
+      {
+        "authorId": "2308628628",
+        "name": "Xiao Jia"
+      },
+      {
+        "authorId": "2401627061",
+        "name": "Jiawei Xu"
+      },
+      {
+        "authorId": "2325887081",
+        "name": "Jinyu Xiang"
+      },
+      {
+        "authorId": "2289032497",
+        "name": "Yizhang Lin"
+      },
+      {
+        "authorId": "2284791939",
+        "name": "Tianming Liu"
+      },
+      {
+        "authorId": "2353560912",
+        "name": "Tongliang Liu"
+      },
+      {
+        "authorId": "1758652",
+        "name": "Yu Su"
+      },
+      {
+        "authorId": "2278123075",
+        "name": "Huan Sun"
+      },
+      {
+        "authorId": "2380042705",
+        "name": "Glen Berseth"
+      },
+      {
+        "authorId": "2338595022",
+        "name": "Jianyun Nie"
+      },
+      {
+        "authorId": "2258049965",
+        "name": "Ian T. Foster"
+      },
+      {
+        "authorId": "2256987355",
+        "name": "Logan Ward"
+      },
+      {
+        "authorId": "2254166618",
+        "name": "Qingyun Wu"
+      },
+      {
+        "authorId": "2022231256",
+        "name": "Yu Gu"
+      },
+      {
+        "authorId": "1722264111",
+        "name": "Mingchen Zhuge"
+      },
+      {
+        "authorId": "2353765519",
+        "name": "Xiangru Tang"
+      },
+      {
+        "authorId": "2340799788",
+        "name": "Haohan Wang"
+      },
+      {
+        "authorId": "2348519246",
+        "name": "Jiaxuan You"
+      },
+      {
+        "authorId": "2353560249",
+        "name": "Chi Wang"
+      },
+      {
+        "authorId": "2308035427",
+        "name": "Jian Pei"
+      },
+      {
+        "authorId": "2353439028",
+        "name": "Qiang Yang"
+      },
+      {
+        "authorId": "1729414245",
+        "name": "Xiaoli Qi"
+      },
+      {
+        "authorId": "2326297106",
+        "name": "Chenglin Wu"
+      }
+    ],
+    "abstract": "The advent of large language models (LLMs) has catalyzed a transformative shift in artificial intelligence, paving the way for advanced intelligent agents capable of sophisticated reasoning, robust perception, and versatile action across diverse domains. As these agents increasingly drive AI research and practical applications, their design, evaluation, and continuous improvement present intricate, multifaceted challenges. This book provides a comprehensive overview, framing intelligent agents within modular, brain-inspired architectures that integrate principles from cognitive science, neuroscience, and computational research. We structure our exploration into four interconnected parts. First, we systematically investigate the modular foundation of intelligent agents, systematically mapping their cognitive, perceptual, and operational modules onto analogous human brain functionalities and elucidating core components such as memory, world modeling, reward processing, goal, and emotion. Second, we discuss self-enhancement and adaptive evolution mechanisms, exploring how agents autonomously refine their capabilities, adapt to dynamic environments, and achieve continual learning through automated optimization paradigms. Third, we examine multi-agent systems, investigating the collective intelligence emerging from agent interactions, cooperation, and societal structures. Finally, we address the critical imperative of building safe and beneficial AI systems, emphasizing intrinsic and extrinsic security threats, ethical alignment, robustness, and practical mitigation strategies necessary for trustworthy real-world deployment. By synthesizing modular AI architectures with insights from different disciplines, this survey identifies key research challenges and opportunities, encouraging innovations that harmonize technological advancement with meaningful societal benefit.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1f35a15fe9df43d24ec6ea551ec6c9766c17eccf",
+    "externalIds": {
+      "ArXiv": "2502.12110",
+      "DBLP": "journals/corr/abs-2502-12110",
+      "DOI": "10.48550/arXiv.2502.12110",
+      "CorpusId": 276421617
+    },
+    "url": "https://www.semanticscholar.org/paper/1f35a15fe9df43d24ec6ea551ec6c9766c17eccf",
+    "title": "A-MEM: Agentic Memory for LLM Agents",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 492,
+    "influentialCitationCount": 68,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.12110, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2042705246",
+        "name": "Wujiang Xu"
+      },
+      {
+        "authorId": "2260912606",
+        "name": "Zujie Liang"
+      },
+      {
+        "authorId": "2261740874",
+        "name": "Kai Mei"
+      },
+      {
+        "authorId": "2296705466",
+        "name": "Hang Gao"
+      },
+      {
+        "authorId": "2110449137",
+        "name": "Juntao Tan"
+      },
+      {
+        "authorId": "2296729361",
+        "name": "Yongfeng Zhang"
+      }
+    ],
+    "abstract": "While large language model (LLM) agents can effectively use external tools for complex real-world tasks, they require memory systems to leverage historical experiences. Current memory systems enable basic storage and retrieval but lack sophisticated memory organization, despite recent attempts to incorporate graph databases. Moreover, these systems'fixed operations and structures limit their adaptability across diverse tasks. To address this limitation, this paper proposes a novel agentic memory system for LLM agents that can dynamically organize memories in an agentic way. Following the basic principles of the Zettelkasten method, we designed our memory system to create interconnected knowledge networks through dynamic indexing and linking. When a new memory is added, we generate a comprehensive note containing multiple structured attributes, including contextual descriptions, keywords, and tags. The system then analyzes historical memories to identify relevant connections, establishing links where meaningful similarities exist. Additionally, this process enables memory evolution - as new memories are integrated, they can trigger updates to the contextual representations and attributes of existing historical memories, allowing the memory network to continuously refine its understanding. Our approach combines the structured organization principles of Zettelkasten with the flexibility of agent-driven decision making, allowing for more adaptive and context-aware memory management. Empirical experiments on six foundation models show superior improvement against existing SOTA baselines. The source code for evaluating performance is available at https://github.com/WujiangXu/A-mem, while the source code of the agentic memory system is available at https://github.com/WujiangXu/A-mem-sys.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "88620b06b8b13682db2d3f699e1cda3fee5ca2db",
+    "externalIds": {
+      "DBLP": "journals/titb/LanTLCPCP25",
+      "DOI": "10.1109/JBHI.2025.3530794",
+      "CorpusId": 276281406,
+      "PubMed": "40031690"
+    },
+    "url": "https://www.semanticscholar.org/paper/88620b06b8b13682db2d3f699e1cda3fee5ca2db",
+    "title": "The Large Language Models on Biomedical Data Analysis: A Survey",
+    "venue": "IEEE journal of biomedical and health informatics",
+    "year": 2025,
+    "citationCount": 57,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.1109/JBHI.2025.3530794?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/JBHI.2025.3530794, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Medicine"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2265393699",
+        "name": "Wei Lan"
+      },
+      {
+        "authorId": "2340941694",
+        "name": "Zhentao Tang"
+      },
+      {
+        "authorId": "2275553492",
+        "name": "Mingyang Liu"
+      },
+      {
+        "authorId": "2309195963",
+        "name": "Qingfeng Chen"
+      },
+      {
+        "authorId": "2275127690",
+        "name": "Wei Peng"
+      },
+      {
+        "authorId": "2223689824",
+        "name": "Yi-Ping Phoebe Chen"
+      },
+      {
+        "authorId": "2107251680",
+        "name": "Yi Pan"
+      }
+    ],
+    "abstract": "With the rapid development of Large Language Model (LLM) technology, it has become an indispensable force in biomedical data analysis research. However, biomedical researchers currently have limited knowledge about LLM. Therefore, there is an urgent need for a summary of LLM applications in biomedical data analysis. Herein, we propose this review by summarizing the latest research work on LLM in biomedicine. In this review, LLM techniques are first outlined. We then discuss biomedical datasets and frameworks for biomedical data analysis, followed by a detailed analysis of LLM applications in genomics, proteomics, transcriptomics, radiomics, single-cell analysis, medical texts and drug discovery. Finally, the challenges of LLM in biomedical data analysis are discussed. In summary, this review is intended for researchers interested in LLM technology and aims to help them understand and apply LLM in biomedical data analysis research.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "3b49ee933ce8773b46e4e65e0089559a05f479c3",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2502-03358",
+      "ArXiv": "2502.03358",
+      "DOI": "10.48550/arXiv.2502.03358",
+      "CorpusId": 276116638
+    },
+    "url": "https://www.semanticscholar.org/paper/3b49ee933ce8773b46e4e65e0089559a05f479c3",
+    "title": "Minerva: A Programmable Memory Test Benchmark for Language Models",
+    "venue": "International Conference on Machine Learning",
+    "year": 2025,
+    "citationCount": 10,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.03358, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2268399421",
+        "name": "Menglin Xia"
+      },
+      {
+        "authorId": "2343830573",
+        "name": "Victor Ruehle"
+      },
+      {
+        "authorId": "2336867866",
+        "name": "Saravan Rajmohan"
+      },
+      {
+        "authorId": "2312204778",
+        "name": "Reza Shokri"
+      }
+    ],
+    "abstract": "How effectively can LLM-based AI assistants utilize their memory (context) to perform various tasks? Traditional data benchmarks, which are often manually crafted, suffer from several limitations: they are static, susceptible to overfitting, difficult to interpret, and lack actionable insights--failing to pinpoint the specific capabilities a model lacks when it does not pass a test. In this paper, we present a framework for automatically generating a comprehensive set of tests to evaluate models' abilities to use their memory effectively. Our framework extends the range of capability tests beyond the commonly explored (passkey, key-value, needle in the haystack) search, a dominant focus in the literature. Specifically, we evaluate models on atomic tasks such as searching, recalling, editing, matching, comparing information in context memory, performing basic operations when inputs are structured into distinct blocks, and maintaining state while operating on memory, simulating real-world data. Additionally, we design composite tests to investigate the models' ability to perform more complex, integrated tasks. Our benchmark enables an interpretable, detailed assessment of memory capabilities of LLMs.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "6360743823ac1a551a417585ca3a8b223c678a23",
+    "externalIds": {
+      "ArXiv": "2501.12851",
+      "CorpusId": 275789180
+    },
+    "url": "https://www.semanticscholar.org/paper/6360743823ac1a551a417585ca3a8b223c678a23",
+    "title": "ACEBench: Who Wins the Match Point in Tool Usage?",
+    "venue": "",
+    "year": 2025,
+    "citationCount": 45,
+    "influentialCitationCount": 6,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.12851, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2341673156",
+        "name": "Chen Chen"
+      },
+      {
+        "authorId": "2319803268",
+        "name": "Xinlong Hao"
+      },
+      {
+        "authorId": "2281903918",
+        "name": "Weiwen Liu"
+      },
+      {
+        "authorId": "2236672137",
+        "name": "Xu Huang"
+      },
+      {
+        "authorId": "2329903868",
+        "name": "Xingshan Zeng"
+      },
+      {
+        "authorId": "2319400570",
+        "name": "Shuai Yu"
+      },
+      {
+        "authorId": "2284449061",
+        "name": "Dexun Li"
+      },
+      {
+        "authorId": "2327032191",
+        "name": "Shuai Wang"
+      },
+      {
+        "authorId": "2319373060",
+        "name": "Weinan Gan"
+      },
+      {
+        "authorId": "2239389807",
+        "name": "Yue-Run Huang"
+      },
+      {
+        "authorId": "2342989060",
+        "name": "Wulong Liu"
+      },
+      {
+        "authorId": "2319420767",
+        "name": "Xinzhi Wang"
+      },
+      {
+        "authorId": "1862782",
+        "name": "Defu Lian"
+      },
+      {
+        "authorId": "2341534031",
+        "name": "Baoqun Yin"
+      },
+      {
+        "authorId": "2282544603",
+        "name": "Yasheng Wang"
+      },
+      {
+        "authorId": "2342989060",
+        "name": "Wulong Liu"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) have demonstrated significant potential in decision-making and reasoning, particularly when integrated with various tools to effectively solve complex problems. However, existing benchmarks for evaluating LLMs'tool usage face several limitations: (1) limited evaluation scenarios, often lacking assessments in real multi-turn dialogue contexts; (2) narrow evaluation dimensions, with insufficient detailed assessments of how LLMs use tools; and (3) reliance on LLMs or real API executions for evaluation, which introduces significant overhead. To address these challenges, we introduce ACEBench, a comprehensive benchmark for assessing tool usage in LLMs. ACEBench categorizes data into three primary types based on evaluation methodology: Normal, Special, and Agent.\"Normal\"evaluates tool usage in basic scenarios;\"Special\"evaluates tool usage in situations with ambiguous or incomplete instructions;\"Agent\"evaluates tool usage through multi-agent interactions to simulate real-world, multi-turn dialogues. We conducted extensive experiments using ACEBench, analyzing various LLMs in-depth and providing a more granular examination of error causes across different data types.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "23c5d8fb6de30553efd1e38f796b40f2bff33453",
+    "externalIds": {
+      "ArXiv": "2501.12326",
+      "DBLP": "journals/corr/abs-2501-12326",
+      "DOI": "10.48550/arXiv.2501.12326",
+      "CorpusId": 275788034
+    },
+    "url": "https://www.semanticscholar.org/paper/23c5d8fb6de30553efd1e38f796b40f2bff33453",
+    "title": "UI-TARS: Pioneering Automated GUI Interaction with Native Agents",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 417,
+    "influentialCitationCount": 139,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.12326, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "50625437",
+        "name": "Yujia Qin"
+      },
+      {
+        "authorId": "2114059497",
+        "name": "Yining Ye"
+      },
+      {
+        "authorId": "2257383989",
+        "name": "Junjie Fang"
+      },
+      {
+        "authorId": "2256769104",
+        "name": "Haoming Wang"
+      },
+      {
+        "authorId": "2242676146",
+        "name": "Shihao Liang"
+      },
+      {
+        "authorId": "2267335977",
+        "name": "Shizuo Tian"
+      },
+      {
+        "authorId": "2313698025",
+        "name": "Junda Zhang"
+      },
+      {
+        "authorId": "2341645752",
+        "name": "Jiahao Li"
+      },
+      {
+        "authorId": "2118046679",
+        "name": "Yunxin Li"
+      },
+      {
+        "authorId": "2355659792",
+        "name": "Shijue Huang"
+      },
+      {
+        "authorId": "2290075391",
+        "name": "Wanjun Zhong"
+      },
+      {
+        "authorId": "2342211812",
+        "name": "Kuanye Li"
+      },
+      {
+        "authorId": "2283259425",
+        "name": "Jiale Yang"
+      },
+      {
+        "authorId": "2342402525",
+        "name": "Yu Miao"
+      },
+      {
+        "authorId": "2341574934",
+        "name": "Woyu Lin"
+      },
+      {
+        "authorId": "2341669513",
+        "name": "Longxiang Liu"
+      },
+      {
+        "authorId": "2298950344",
+        "name": "Xu Jiang"
+      },
+      {
+        "authorId": "2341926113",
+        "name": "Qianli Ma"
+      },
+      {
+        "authorId": "2362012430",
+        "name": "Jingyu Li"
+      },
+      {
+        "authorId": "2342370116",
+        "name": "Xiaojun Xiao"
+      },
+      {
+        "authorId": "2341532207",
+        "name": "Kai Cai"
+      },
+      {
+        "authorId": "2338046731",
+        "name": "Chuang Li"
+      },
+      {
+        "authorId": "2341817744",
+        "name": "Yaowei Zheng"
+      },
+      {
+        "authorId": "2342473322",
+        "name": "Chaolin Jin"
+      },
+      {
+        "authorId": "2341650593",
+        "name": "Chen Li"
+      },
+      {
+        "authorId": "2280894798",
+        "name": "Xiao Zhou"
+      },
+      {
+        "authorId": "2341667371",
+        "name": "Minchao Wang"
+      },
+      {
+        "authorId": "2322977057",
+        "name": "Haolin Chen"
+      },
+      {
+        "authorId": "2342494238",
+        "name": "Zhaojian Li"
+      },
+      {
+        "authorId": "2341718487",
+        "name": "Haihua Yang"
+      },
+      {
+        "authorId": "2293616160",
+        "name": "Haifeng Liu"
+      },
+      {
+        "authorId": "2244388506",
+        "name": "Feng Lin"
+      },
+      {
+        "authorId": "2176212612",
+        "name": "Tao Peng"
+      },
+      {
+        "authorId": "2268443737",
+        "name": "Xin Liu"
+      },
+      {
+        "authorId": "2343036261",
+        "name": "Guang Shi"
+      }
+    ],
+    "abstract": "This paper introduces UI-TARS, a native GUI agent model that solely perceives the screenshots as input and performs human-like interactions (e.g., keyboard and mouse operations). Unlike prevailing agent frameworks that depend on heavily wrapped commercial models (e.g., GPT-4o) with expert-crafted prompts and workflows, UI-TARS is an end-to-end model that outperforms these sophisticated frameworks. Experiments demonstrate its superior performance: UI-TARS achieves SOTA performance in 10+ GUI agent benchmarks evaluating perception, grounding, and GUI task execution. Notably, in the OSWorld benchmark, UI-TARS achieves scores of 24.6 with 50 steps and 22.7 with 15 steps, outperforming Claude (22.0 and 14.9 respectively). In AndroidWorld, UI-TARS achieves 46.6, surpassing GPT-4o (34.5). UI-TARS incorporates several key innovations: (1) Enhanced Perception: leveraging a large-scale dataset of GUI screenshots for context-aware understanding of UI elements and precise captioning; (2) Unified Action Modeling, which standardizes actions into a unified space across platforms and achieves precise grounding and interaction through large-scale action traces; (3) System-2 Reasoning, which incorporates deliberate reasoning into multi-step decision making, involving multiple reasoning patterns such as task decomposition, reflection thinking, milestone recognition, etc. (4) Iterative Training with Reflective Online Traces, which addresses the data bottleneck by automatically collecting, filtering, and reflectively refining new interaction traces on hundreds of virtual machines. Through iterative training and reflection tuning, UI-TARS continuously learns from its mistakes and adapts to unforeseen situations with minimal human intervention. We also analyze the evolution path of GUI agents to guide the further development of this domain.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "52babb057c4c6493bef95ae7a67984d7f365e2a8",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2501-11733",
+      "ArXiv": "2501.11733",
+      "DOI": "10.48550/arXiv.2501.11733",
+      "CorpusId": 275757225
+    },
+    "url": "https://www.semanticscholar.org/paper/52babb057c4c6493bef95ae7a67984d7f365e2a8",
+    "title": "Mobile-Agent-E: Self-Evolving Mobile Assistant for Complex Tasks",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 106,
+    "influentialCitationCount": 13,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.11733, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2052036545",
+        "name": "Zhenhailong Wang"
+      },
+      {
+        "authorId": "2341400186",
+        "name": "Haiyang Xu"
+      },
+      {
+        "authorId": "2261888736",
+        "name": "Junyang Wang"
+      },
+      {
+        "authorId": "2304527137",
+        "name": "Xi Zhang"
+      },
+      {
+        "authorId": "2114009661",
+        "name": "Mingshi Yan"
+      },
+      {
+        "authorId": "2281901929",
+        "name": "Ji Zhang"
+      },
+      {
+        "authorId": "2262080010",
+        "name": "Fei Huang"
+      },
+      {
+        "authorId": "2257039194",
+        "name": "Heng Ji"
+      }
+    ],
+    "abstract": "Smartphones have become indispensable in modern life, yet navigating complex tasks on mobile devices often remains frustrating. Recent advancements in large multimodal model (LMM)-based mobile agents have demonstrated the ability to perceive and act in mobile environments. However, current approaches face significant limitations: they fall short in addressing real-world human needs, struggle with reasoning-intensive and long-horizon tasks, and lack mechanisms to learn and improve from prior experiences. To overcome these challenges, we introduce Mobile-Agent-E, a hierarchical multi-agent framework capable of self-evolution through past experience. By hierarchical, we mean an explicit separation of high-level planning and low-level action execution. The framework comprises a Manager, responsible for devising overall plans by breaking down complex tasks into subgoals, and four subordinate agents--Perceptor, Operator, Action Reflector, and Notetaker--which handle fine-grained visual perception, immediate action execution, error verification, and information aggregation, respectively. Mobile-Agent-E also features a novel self-evolution module which maintains a persistent long-term memory comprising Tips and Shortcuts. Tips are general guidance and lessons learned from prior tasks on how to effectively interact with the environment. Shortcuts are reusable, executable sequences of atomic operations tailored for specific subroutines. The inclusion of Tips and Shortcuts facilitates continuous refinement in performance and efficiency. Alongside this framework, we introduce Mobile-Eval-E, a new benchmark featuring complex mobile tasks requiring long-horizon, multi-app interactions. Empirical results show that Mobile-Agent-E achieves a 22% absolute improvement over previous state-of-the-art approaches across three foundation model backbones. Project page: https://x-plug.github.io/MobileAgent.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2e20395786ebaf45b3cee398b3db3531bc4851d6",
+    "externalIds": {
+      "ArXiv": "2501.10893",
+      "DBLP": "conf/iclr/Su0YY0A25",
+      "DOI": "10.48550/arXiv.2501.10893",
+      "CorpusId": 275757520
+    },
+    "url": "https://www.semanticscholar.org/paper/2e20395786ebaf45b3cee398b3db3531bc4851d6",
+    "title": "Learn-by-interact: A Data-Centric Framework for Self-Adaptive Agents in Realistic Environments",
+    "venue": "International Conference on Learning Representations",
+    "year": 2025,
+    "citationCount": 77,
+    "influentialCitationCount": 7,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.10893, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2152173042",
+        "name": "Hongjin Su"
+      },
+      {
+        "authorId": "2313049168",
+        "name": "Ruoxi Sun"
+      },
+      {
+        "authorId": "2256335437",
+        "name": "Jinsung Yoon"
+      },
+      {
+        "authorId": "2265492003",
+        "name": "Pengcheng Yin"
+      },
+      {
+        "authorId": "2312346274",
+        "name": "Tao Yu"
+      },
+      {
+        "authorId": "2676352",
+        "name": "Sercan Ö. Arik"
+      }
+    ],
+    "abstract": "Autonomous agents powered by large language models (LLMs) have the potential to enhance human capabilities, assisting with digital tasks from sending emails to performing data analysis. The abilities of existing LLMs at such tasks are often hindered by the lack of high-quality agent data from the corresponding environments they interact with. We propose Learn-by-interact, a data-centric framework to adapt LLM agents to any given environments without human annotations. Learn-by-interact synthesizes trajectories of agent-environment interactions based on documentations, and constructs instructions by summarizing or abstracting the interaction histories, a process called backward construction. We assess the quality of our synthetic data by using them in both training-based scenarios and training-free in-context learning (ICL), where we craft innovative retrieval approaches optimized for agents. Extensive experiments on SWE-bench, WebArena, OSWorld and Spider2-V spanning across realistic coding, web, and desktop environments show the effectiveness of Learn-by-interact in various downstream agentic tasks -- baseline results are improved by up to 12.2\\% for ICL with Claude-3.5 and 19.5\\% for training with Codestral-22B. We further demonstrate the critical role of backward construction, which provides up to 14.0\\% improvement for training. Our ablation studies demonstrate the efficiency provided by our synthesized data in ICL and the superiority of our retrieval pipeline over alternative approaches like conventional retrieval-augmented generation (RAG). We expect that Learn-by-interact will serve as a foundation for agent data synthesis as LLMs are increasingly deployed at real-world environments.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "eaa6ffc25363ce88d7887f58f5b03a0c26231c36",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2501-07572",
+      "ArXiv": "2501.07572",
+      "DOI": "10.48550/arXiv.2501.07572",
+      "CorpusId": 275471576
+    },
+    "url": "https://www.semanticscholar.org/paper/eaa6ffc25363ce88d7887f58f5b03a0c26231c36",
+    "title": "WebWalker: Benchmarking LLMs in Web Traversal",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2025,
+    "citationCount": 133,
+    "influentialCitationCount": 15,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.07572, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2240542238",
+        "name": "Jialong Wu"
+      },
+      {
+        "authorId": "2340016724",
+        "name": "Wenbiao Yin"
+      },
+      {
+        "authorId": "2256747040",
+        "name": "Yong Jiang"
+      },
+      {
+        "authorId": "2272270014",
+        "name": "Zhenglin Wang"
+      },
+      {
+        "authorId": "2229632309",
+        "name": "Zekun Xi"
+      },
+      {
+        "authorId": "2278840339",
+        "name": "Runnan Fang"
+      },
+      {
+        "authorId": "2273570867",
+        "name": "Deyu Zhou"
+      },
+      {
+        "authorId": "35930962",
+        "name": "Pengjun Xie"
+      },
+      {
+        "authorId": "2276428076",
+        "name": "Fei Huang"
+      }
+    ],
+    "abstract": "Retrieval-augmented generation (RAG) demonstrates remarkable performance across tasks in open-domain question-answering. However, traditional search engines may retrieve shallow content, limiting the ability of LLMs to handle complex, multi-layered information. To address it, we introduce WebWalkerQA, a benchmark designed to assess the ability of LLMs to perform web traversal. It evaluates the capacity of LLMs to traverse a website's subpages to extract high-quality data systematically. We propose WebWalker, which is a multi-agent framework that mimics human-like web navigation through an explore-critic paradigm. Extensive experimental results show that WebWalkerQA is challenging and demonstrates the effectiveness of RAG combined with WebWalker, through the horizontal and vertical integration in real-world scenarios.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "a7fb4245b412f0e54ec26d5973f041d52c83c0ad",
+    "externalIds": {
+      "DBLP": "conf/acl/HuCC0S025",
+      "ArXiv": "2408.09559",
+      "DOI": "10.48550/arXiv.2408.09559",
+      "CorpusId": 271903203
+    },
+    "url": "https://www.semanticscholar.org/paper/a7fb4245b412f0e54ec26d5973f041d52c83c0ad",
+    "title": "HiAgent: Hierarchical Working Memory Management for Solving Long-Horizon Agent Tasks with Large Language Model",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2024,
+    "citationCount": 57,
+    "influentialCitationCount": 2,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2408.09559, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2166455111",
+        "name": "Mengkang Hu"
+      },
+      {
+        "authorId": "2316455829",
+        "name": "Tianxing Chen"
+      },
+      {
+        "authorId": "2133447633",
+        "name": "Qiguang Chen"
+      },
+      {
+        "authorId": "2248348669",
+        "name": "Yao Mu"
+      },
+      {
+        "authorId": "1485702259",
+        "name": "Wenqi Shao"
+      },
+      {
+        "authorId": "2286732887",
+        "name": "Ping Luo"
+      }
+    ],
+    "abstract": "Large Language Model (LLM)-based agents exhibit significant potential across various domains, operating as interactive systems that process environmental observations to generate executable actions for target tasks. The effectiveness of these agents is significantly influenced by their memory mechanism, which records historical experiences as sequences of action-observation pairs. We categorize memory into two types: cross-trial memory, accumulated across multiple attempts, and in-trial memory (working memory), accumulated within a single attempt. While considerable research has optimized performance through cross-trial memory, the enhancement of agent performance through improved working memory utilization remains underexplored. Instead, existing approaches often involve directly inputting entire historical action-observation pairs into LLMs, leading to redundancy in long-horizon tasks. Inspired by human problem-solving strategies, this paper introduces HiAgent, a framework that leverages subgoals as memory chunks to manage the working memory of LLM-based agents hierarchically. Specifically, HiAgent prompts LLMs to formulate subgoals before generating executable actions and enables LLMs to decide proactively to replace previous subgoals with summarized observations, retaining only the action-observation pairs relevant to the current subgoal. Experimental results across five long-horizon tasks demonstrate that HiAgent achieves a twofold increase in success rate and reduces the average number of steps required by 3.8. Additionally, our analysis shows that HiAgent consistently improves performance across various steps, highlighting its robustness and generalizability. Project Page: https://github.com/HiAgent2024/HiAgent .",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "48c9c29cc7f08012f98474acae912396412d58f3",
+    "externalIds": {
+      "ArXiv": "2406.18532",
+      "DBLP": "journals/corr/abs-2406-18532",
+      "DOI": "10.48550/arXiv.2406.18532",
+      "CorpusId": 270737580
+    },
+    "url": "https://www.semanticscholar.org/paper/48c9c29cc7f08012f98474acae912396412d58f3",
+    "title": "Symbolic Learning Enables Self-Evolving Agents",
+    "venue": "AI Open",
+    "year": 2024,
+    "citationCount": 82,
+    "influentialCitationCount": 6,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2406.18532, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "150341221",
+        "name": "Wangchunshu Zhou"
+      },
+      {
+        "authorId": "2196928874",
+        "name": "Yixin Ou"
+      },
+      {
+        "authorId": "2282097999",
+        "name": "Shengwei Ding"
+      },
+      {
+        "authorId": "2240651745",
+        "name": "Long Li"
+      },
+      {
+        "authorId": "2240542238",
+        "name": "Jialong Wu"
+      },
+      {
+        "authorId": "2118916175",
+        "name": "Tiannan Wang"
+      },
+      {
+        "authorId": "2281899463",
+        "name": "Jiamin Chen"
+      },
+      {
+        "authorId": "2241329032",
+        "name": "Shuai Wang"
+      },
+      {
+        "authorId": "2281906558",
+        "name": "Xiaohua Xu"
+      },
+      {
+        "authorId": "2153010067",
+        "name": "Ningyu Zhang"
+      },
+      {
+        "authorId": "2144200945",
+        "name": "Huajun Chen"
+      },
+      {
+        "authorId": "2134457930",
+        "name": "Y. Jiang"
+      }
+    ],
+    "abstract": "The AI community has been exploring a pathway to artificial general intelligence (AGI) by developing\"language agents\", which are complex large language models (LLMs) pipelines involving both prompting techniques and tool usage methods. While language agents have demonstrated impressive capabilities for many real-world tasks, a fundamental limitation of current language agents research is that they are model-centric, or engineering-centric. That's to say, the progress on prompts, tools, and pipelines of language agents requires substantial manual engineering efforts from human experts rather than automatically learning from data. We believe the transition from model-centric, or engineering-centric, to data-centric, i.e., the ability of language agents to autonomously learn and evolve in environments, is the key for them to possibly achieve AGI. In this work, we introduce agent symbolic learning, a systematic framework that enables language agents to optimize themselves on their own in a data-centric way using symbolic optimizers. Specifically, we consider agents as symbolic networks where learnable weights are defined by prompts, tools, and the way they are stacked together. Agent symbolic learning is designed to optimize the symbolic network within language agents by mimicking two fundamental algorithms in connectionist learning: back-propagation and gradient descent. Instead of dealing with numeric weights, agent symbolic learning works with natural language simulacrums of weights, loss, and gradients. We conduct proof-of-concept experiments on both standard benchmarks and complex real-world tasks and show that agent symbolic learning enables language agents to update themselves after being created and deployed in the wild, resulting in\"self-evolving agents\".",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "70aa016c1f68fd5c0261f26ad20017b8307650af",
+    "externalIds": {
+      "ArXiv": "2406.12045",
+      "DBLP": "journals/corr/abs-2406-12045",
+      "DOI": "10.48550/arXiv.2406.12045",
+      "CorpusId": 270562578
+    },
+    "url": "https://www.semanticscholar.org/paper/70aa016c1f68fd5c0261f26ad20017b8307650af",
+    "title": "τ-bench: A Benchmark for Tool-Agent-User Interaction in Real-World Domains",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 546,
+    "influentialCitationCount": 78,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2406.12045, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2256984659",
+        "name": "Shunyu Yao"
+      },
+      {
+        "authorId": "2212367248",
+        "name": "Noah Shinn"
+      },
+      {
+        "authorId": "2395098792",
+        "name": "Pedram Razavi"
+      },
+      {
+        "authorId": "2135381714",
+        "name": "Karthik Narasimhan"
+      }
+    ],
+    "abstract": "Existing benchmarks do not test language agents on their interaction with human users or ability to follow domain-specific rules, both of which are vital for deploying them in real world applications. We propose $\\tau$-bench, a benchmark emulating dynamic conversations between a user (simulated by language models) and a language agent provided with domain-specific API tools and policy guidelines. We employ an efficient and faithful evaluation process that compares the database state at the end of a conversation with the annotated goal state. We also propose a new metric (pass^k) to evaluate the reliability of agent behavior over multiple trials. Our experiments show that even state-of-the-art function calling agents (like gpt-4o) succeed on<50% of the tasks, and are quite inconsistent (pass^8<25% in retail). Our findings point to the need for methods that can improve the ability of agents to act consistently and follow rules reliably.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "6d1f2974c60761c518f0122bf451fe6671f49663",
+    "externalIds": {
+      "DBLP": "conf/nips/0001LYYL024",
+      "ArXiv": "2405.16247",
+      "DOI": "10.52202/079017-0019",
+      "CorpusId": 276117233
+    },
+    "url": "https://www.semanticscholar.org/paper/6d1f2974c60761c518f0122bf451fe6671f49663",
+    "title": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+    "venue": "Neural Information Processing Systems",
+    "year": 2024,
+    "citationCount": 29,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.16247, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2276034736",
+        "name": "Minghao Chen"
+      },
+      {
+        "authorId": "2303406595",
+        "name": "Yihang Li"
+      },
+      {
+        "authorId": "2303415296",
+        "name": "Yanting Yang"
+      },
+      {
+        "authorId": "2304150758",
+        "name": "Shiyu Yu"
+      },
+      {
+        "authorId": "2258304162",
+        "name": "Binbin Lin"
+      },
+      {
+        "authorId": "2257432345",
+        "name": "Xiaofei He"
+      }
+    ],
+    "abstract": "Large Language Models (LLM) based agents have shown promise in autonomously completing tasks across various domains, e.g., robotics, games, and web navigation. However, these agents typically require elaborate design and expert prompts to solve tasks in specific domains, which limits their adaptability. We introduce AutoManual, a framework enabling LLM agents to autonomously build their understanding through interaction and adapt to new environments. AutoManual categorizes environmental knowledge into diverse rules and optimizes them in an online fashion by two agents: 1) The Planner codes actionable plans based on current rules for interacting with the environment. 2) The Builder updates the rules through a well-structured rule system that facilitates online rule management and essential detail retention. To mitigate hallucinations in managing rules, we introduce a *case-conditioned prompting* strategy for the Builder. Finally, the Formulator agent compiles these rules into a comprehensive manual. The self-generated manual can not only improve the adaptability but also guide the planning of smaller LLMs while being human-readable. Given only one simple demonstration, AutoManual significantly improves task success rates, achieving 97.4\\% with GPT-4-turbo and 86.2\\% with GPT-3.5-turbo on ALFWorld benchmark tasks. The code is available at https://github.com/minghchen/automanual.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "e4eb81ad222ba047770d5a90bdd7406c138c6126",
+    "externalIds": {
+      "ArXiv": "2404.17605",
+      "DBLP": "journals/corr/abs-2404-17605",
+      "DOI": "10.48550/arXiv.2404.17605",
+      "CorpusId": 269448624
+    },
+    "url": "https://www.semanticscholar.org/paper/e4eb81ad222ba047770d5a90bdd7406c138c6126",
+    "title": "Autonomous LLM-driven research from data to human-verifiable research papers",
+    "venue": "NEJM AI",
+    "year": 2024,
+    "citationCount": 56,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.17605, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Biology"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2298900687",
+        "name": "Tal Ifargan"
+      },
+      {
+        "authorId": "46959587",
+        "name": "L. Hafner"
+      },
+      {
+        "authorId": "49079077",
+        "name": "M. Kern"
+      },
+      {
+        "authorId": "2298896286",
+        "name": "Ori Alcalay"
+      },
+      {
+        "authorId": "2298897594",
+        "name": "Roy Kishony"
+      }
+    ],
+    "abstract": "As AI promises to accelerate scientific discovery, it remains unclear whether fully AI-driven research is possible and whether it can adhere to key scientific values, such as transparency, traceability and verifiability. Mimicking human scientific practices, we built data-to-paper, an automation platform that guides interacting LLM agents through a complete stepwise research process, while programmatically back-tracing information flow and allowing human oversight and interactions. In autopilot mode, provided with annotated data alone, data-to-paper raised hypotheses, designed research plans, wrote and debugged analysis codes, generated and interpreted results, and created complete and information-traceable research papers. Even though research novelty was relatively limited, the process demonstrated autonomous generation of de novo quantitative insights from data. For simple research goals, a fully-autonomous cycle can create manuscripts which recapitulate peer-reviewed publications without major errors in about 80-90%, yet as goal complexity increases, human co-piloting becomes critical for assuring accuracy. Beyond the process itself, created manuscripts too are inherently verifiable, as information-tracing allows to programmatically chain results, methods and data. Our work thereby demonstrates a potential for AI-driven acceleration of scientific discovery while enhancing, rather than jeopardizing, traceability, transparency and verifiability.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "b6ab16c8eade03a39830493071d99fc48a736fac",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2404-13501",
+      "ArXiv": "2404.13501",
+      "DOI": "10.1145/3748302",
+      "CorpusId": 269293320
+    },
+    "url": "https://www.semanticscholar.org/paper/b6ab16c8eade03a39830493071d99fc48a736fac",
+    "title": "A Survey on the Memory Mechanism of Large Language Model-based Agents",
+    "venue": "ACM Trans. Inf. Syst.",
+    "year": 2024,
+    "citationCount": 506,
+    "influentialCitationCount": 13,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.13501, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2223760889",
+        "name": "Zeyu Zhang"
+      },
+      {
+        "authorId": "29969336",
+        "name": "Quanyu Dai"
+      },
+      {
+        "authorId": "2226446789",
+        "name": "Xiaohe Bo"
+      },
+      {
+        "authorId": "2297986012",
+        "name": "Chen Ma"
+      },
+      {
+        "authorId": "2297891767",
+        "name": "Rui Li"
+      },
+      {
+        "authorId": "2258445639",
+        "name": "Xu Chen"
+      },
+      {
+        "authorId": "2240695630",
+        "name": "Jieming Zhu"
+      },
+      {
+        "authorId": "2276747916",
+        "name": "Zhenhua Dong"
+      },
+      {
+        "authorId": "2287918455",
+        "name": "Ji-Rong Wen"
+      }
+    ],
+    "abstract": "Large language model (LLM)-based agents have recently attracted much attention from the research and industry communities. Compared with original LLMs, LLM-based agents are featured in their self-evolving capability, which is the basis for solving real-world problems that need long-term and complex agent-environment interactions. The key component to support agent-environment interactions is the memory of the agents. While previous studies have proposed many promising memory mechanisms, they are scattered in different papers, and there lacks a systematical review to summarize and compare these works from a holistic perspective, failing to abstract common and effective designing patterns for inspiring future studies. To bridge this gap, in this article, we propose a comprehensive survey on the memory mechanism of LLM-based agents. In specific, we first discuss “what is” and “why do we need” the memory in LLM-based agents. Then, we systematically review previous studies on how to design and evaluate the memory module. In addition, we also present many agent applications, where the memory module plays an important role. At last, we analyze the limitations of existing work and show important future directions. To keep up with the latest advances in this field, we create a repository at https://github.com/nuster1128/LLM_Agent_Memory_Survey.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "4af6b20591bc58bbadcec42e4dfa53ab8f4ceef2",
+    "externalIds": {
+      "ArXiv": "2404.00573",
+      "DBLP": "conf/chi/HouTM24",
+      "DOI": "10.1145/3613905.3650839",
+      "CorpusId": 268819055
+    },
+    "url": "https://www.semanticscholar.org/paper/4af6b20591bc58bbadcec42e4dfa53ab8f4ceef2",
+    "title": "\"My agent understands me better\": Integrating Dynamic Human-like Memory Recall and Consolidation in LLM-Based Agents",
+    "venue": "CHI Extended Abstracts",
+    "year": 2024,
+    "citationCount": 52,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3613905.3650839",
+      "status": "BRONZE",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.00573, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "Book",
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2294689659",
+        "name": "Yuki Hou"
+      },
+      {
+        "authorId": "2294359395",
+        "name": "Haruki Tamoto"
+      },
+      {
+        "authorId": "2294356763",
+        "name": "Homei Miyashita"
+      }
+    ],
+    "abstract": "In this study, we propose a novel human-like memory architecture designed for enhancing the cognitive abilities of large language model (LLM)-based dialogue agents. Our proposed architecture enables agents to autonomously recall memories necessary for response generation, effectively addressing a limitation in the temporal cognition of LLMs. We adopt the human memory cue recall as a trigger for accurate and efficient memory recall. Moreover, we developed a mathematical model that dynamically quantifies memory consolidation, considering factors such as contextual relevance, elapsed time, and recall frequency. The agent stores memories retrieved from the user’s interaction history in a database that encapsulates each memory’s content and temporal context. Thus, this strategic storage allows agents to recall specific memories and understand their significance to the user in a temporal context, similar to how humans recognize and recall past experiences.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "11155af5ccd1889277f4269f6bb349a7633554f4",
+    "externalIds": {
+      "DBLP": "conf/icml/Xie0CZLTX024",
+      "ArXiv": "2402.01622",
+      "DOI": "10.48550/arXiv.2402.01622",
+      "CorpusId": 267406800
+    },
+    "url": "https://www.semanticscholar.org/paper/11155af5ccd1889277f4269f6bb349a7633554f4",
+    "title": "TravelPlanner: A Benchmark for Real-World Planning with Language Agents",
+    "venue": "International Conference on Machine Learning",
+    "year": 2024,
+    "citationCount": 380,
+    "influentialCitationCount": 54,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.01622, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2153624353",
+        "name": "Jian Xie"
+      },
+      {
+        "authorId": "145086492",
+        "name": "Kai Zhang"
+      },
+      {
+        "authorId": "5040052",
+        "name": "Jiangjie Chen"
+      },
+      {
+        "authorId": "2222400339",
+        "name": "Tinghui Zhu"
+      },
+      {
+        "authorId": "2118614649",
+        "name": "Renze Lou"
+      },
+      {
+        "authorId": "2285362895",
+        "name": "Yuandong Tian"
+      },
+      {
+        "authorId": "2282543969",
+        "name": "Yanghua Xiao"
+      },
+      {
+        "authorId": "1758652",
+        "name": "Yu Su"
+      }
+    ],
+    "abstract": "Planning has been part of the core pursuit for artificial intelligence since its conception, but earlier AI agents mostly focused on constrained settings because many of the cognitive substrates necessary for human-level planning have been lacking. Recently, language agents powered by large language models (LLMs) have shown interesting capabilities such as tool use and reasoning. Are these language agents capable of planning in more complex settings that are out of the reach of prior AI agents? To advance this investigation, we propose TravelPlanner, a new planning benchmark that focuses on travel planning, a common real-world planning scenario. It provides a rich sandbox environment, various tools for accessing nearly four million data records, and 1,225 meticulously curated planning intents and reference plans. Comprehensive evaluations show that the current language agents are not yet capable of handling such complex planning tasks-even GPT-4 only achieves a success rate of 0.6%. Language agents struggle to stay on task, use the right tools to collect information, or keep track of multiple constraints. However, we note that the mere possibility for language agents to tackle such a complex problem is in itself non-trivial progress. TravelPlanner provides a challenging yet meaningful testbed for future language agents.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "425f1edd88fe3539c40ddd93c3e07c95de67ba00",
+    "externalIds": {
+      "ArXiv": "2311.16714",
+      "DBLP": "journals/corr/abs-2311-16714",
+      "DOI": "10.1109/CVPR52733.2024.02482",
+      "CorpusId": 265466250
+    },
+    "url": "https://www.semanticscholar.org/paper/425f1edd88fe3539c40ddd93c3e07c95de67ba00",
+    "title": "Embodied Multi-Modal Agent trained by an LLM from a Parallel TextWorld",
+    "venue": "Computer Vision and Pattern Recognition",
+    "year": 2023,
+    "citationCount": 91,
+    "influentialCitationCount": 6,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2311.16714",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2311.16714, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2108568169",
+        "name": "Yijun Yang"
+      },
+      {
+        "authorId": "2268859756",
+        "name": "Tianyi Zhou"
+      },
+      {
+        "authorId": "2268677450",
+        "name": "Kanxue Li"
+      },
+      {
+        "authorId": "2268493071",
+        "name": "Dapeng Tao"
+      },
+      {
+        "authorId": "2268580598",
+        "name": "Lusong Li"
+      },
+      {
+        "authorId": "2268685121",
+        "name": "Li Shen"
+      },
+      {
+        "authorId": "2303786320",
+        "name": "Xiaodong He"
+      },
+      {
+        "authorId": "2268722420",
+        "name": "Jing Jiang"
+      },
+      {
+        "authorId": "2268655816",
+        "name": "Yuhui Shi"
+      }
+    ],
+    "abstract": "While large language models (LLMs) excel in a simulated world of texts, they struggle to interact with the more realistic world without perceptions of other modalities such as visual or audio signals. Although vision-language models (VLMs) integrate LLM modules (1) aligned with static image features, and (2) may possess prior knowledge of world dynamics (as demonstrated in the text world), they have not been trained in an embodied visual world and thus cannot align with its dynamics. On the other hand, training an embodied agent in a noisy visual world without expert guidance is often chal-lenging and inefficient. In this paper, we train a VLM agent living in a visual world using an LLM agent excelling in a parallel text world. Specifically, we distill LLM's reflection outcomes (improved actions by analyzing mistakes) in a text world's tasks to finetune the VLM on the same tasks of the visual world, resulting in an Embodied Multi-Modal Agent (EMMA) quickly adapting to the visual world dy-namics. Such cross-modality imitation learning between the two parallel worlds is achieved by a novel DAgger-DPO algorithm, enabling EMMA to generalize to a broad scope of new tasks without any further guidance from the LLM expert. Extensive evaluations on the ALFWorld benchmark's diverse tasks highlight EMMA's superior performance to SOTA VLM-based agents, e.g., 20%-70% improvement in the success rate.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "695b9fb4d56cb281146b288c30cd06d50f0857f9",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2309-11359",
+      "ArXiv": "2309.11359",
+      "DOI": "10.1109/ICRA57147.2024.10610948",
+      "CorpusId": 261974876
+    },
+    "url": "https://www.semanticscholar.org/paper/695b9fb4d56cb281146b288c30cd06d50f0857f9",
+    "title": "Prompt, Plan, Perform: LLM-based Humanoid Control via Quantized Imitation Learning",
+    "venue": "IEEE International Conference on Robotics and Automation",
+    "year": 2023,
+    "citationCount": 49,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.11359, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2243709540",
+        "name": "Jingkai Sun"
+      },
+      {
+        "authorId": "2230253713",
+        "name": "Qiang Zhang"
+      },
+      {
+        "authorId": "2242618660",
+        "name": "Yiqun Duan"
+      },
+      {
+        "authorId": "2242756196",
+        "name": "Xiaoyang Jiang"
+      },
+      {
+        "authorId": "2329321364",
+        "name": "Chong Cheng"
+      },
+      {
+        "authorId": "2243405867",
+        "name": "Renjing Xu"
+      }
+    ],
+    "abstract": "In recent years, reinforcement learning and imitation learning have shown great potential for controlling humanoid robots’ motion. However, these methods typically create simulation environments and rewards for specific tasks, resulting in the requirements of multiple policies and limited capabilities for tackling complex and unknown tasks. To overcome these issues, we present a novel approach that combines adversarial imitation learning with large language models (LLMs). This innovative method enables the agent to learn reusable skills with a single policy and solve zero-shot tasks under the guidance of LLMs. In particular, we utilize the LLM as a strategic planner for applying previously learned skills to novel tasks through the comprehension of task-specific prompts. This empowers the robot to perform the specified actions in a sequence. To improve our model, we incorporate codebook-based vector quantization, allowing the agent to generate suitable actions in response to unseen textual commands from LLMs. Furthermore, we design general reward functions that consider the distinct motion features of humanoid robots, ensuring the agent imitates the motion data while maintaining goal orientation without additional guiding direction approaches or policies. To the best of our knowledge, this is the first framework that controls humanoid robots using a single learning policy network and LLM as a planner. Extensive experiments demonstrate that our method exhibits efficient and adaptive ability in complicated motion tasks.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "012c552ef548582875349f8457b0645dabc3e662",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2309-07870",
+      "ArXiv": "2309.07870",
+      "DOI": "10.48550/arXiv.2309.07870",
+      "CorpusId": 261822166
+    },
+    "url": "https://www.semanticscholar.org/paper/012c552ef548582875349f8457b0645dabc3e662",
+    "title": "Agents: An Open-source Framework for Autonomous Language Agents",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 141,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2309.07870",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.07870, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "150341221",
+        "name": "Wangchunshu Zhou"
+      },
+      {
+        "authorId": "2134457930",
+        "name": "Y. Jiang"
+      },
+      {
+        "authorId": "2240651745",
+        "name": "Long Li"
+      },
+      {
+        "authorId": "2240542238",
+        "name": "Jialong Wu"
+      },
+      {
+        "authorId": "2118916175",
+        "name": "Tiannan Wang"
+      },
+      {
+        "authorId": "2240525157",
+        "name": "Shi Qiu"
+      },
+      {
+        "authorId": "2253784578",
+        "name": "Jintian Zhang"
+      },
+      {
+        "authorId": "2284489311",
+        "name": "Jing Chen"
+      },
+      {
+        "authorId": "2324223496",
+        "name": "Ruipu Wu"
+      },
+      {
+        "authorId": "2241329032",
+        "name": "Shuai Wang"
+      },
+      {
+        "authorId": "2338858512",
+        "name": "Shiding Zhu"
+      },
+      {
+        "authorId": "2352880532",
+        "name": "Jiyu Chen"
+      },
+      {
+        "authorId": "2240768525",
+        "name": "Wentao Zhang"
+      },
+      {
+        "authorId": "47274259",
+        "name": "Xiangru Tang"
+      },
+      {
+        "authorId": "2608639",
+        "name": "Ningyu Zhang"
+      },
+      {
+        "authorId": "2144200945",
+        "name": "Huajun Chen"
+      },
+      {
+        "authorId": "2052469799",
+        "name": "Peng Cui"
+      },
+      {
+        "authorId": "2790926",
+        "name": "Mrinmaya Sachan"
+      }
+    ],
+    "abstract": "Recent advances on large language models (LLMs) enable researchers and developers to build autonomous language agents that can automatically solve various tasks and interact with environments, humans, and other agents using natural language interfaces. We consider language agents as a promising direction towards artificial general intelligence and release Agents, an open-source library with the goal of opening up these advances to a wider non-specialist audience. Agents is carefully engineered to support important features including planning, memory, tool usage, multi-agent communication, and fine-grained symbolic control. Agents is user-friendly as it enables non-specialists to build, customize, test, tune, and deploy state-of-the-art autonomous language agents without much coding. The library is also research-friendly as its modularized design makes it easily extensible for researchers. Agents is available at https://github.com/aiwaves-cn/agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "0c72450890a54b68d63baa99376131fda8f06cf9",
+    "externalIds": {
+      "ArXiv": "2309.07864",
+      "DBLP": "journals/corr/abs-2309-07864",
+      "DOI": "10.48550/arXiv.2309.07864",
+      "CorpusId": 261817592
+    },
+    "url": "https://www.semanticscholar.org/paper/0c72450890a54b68d63baa99376131fda8f06cf9",
+    "title": "The Rise and Potential of Large Language Model Based Agents: A Survey",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 1702,
+    "influentialCitationCount": 68,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2309.07864",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.07864, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2190751523",
+        "name": "Zhiheng Xi"
+      },
+      {
+        "authorId": "2240538633",
+        "name": "Wenxiang Chen"
+      },
+      {
+        "authorId": "2240675422",
+        "name": "Xin Guo"
+      },
+      {
+        "authorId": "2241408708",
+        "name": "Wei He"
+      },
+      {
+        "authorId": "2240473116",
+        "name": "Yiwen Ding"
+      },
+      {
+        "authorId": "2240450431",
+        "name": "Boyang Hong"
+      },
+      {
+        "authorId": "2240574799",
+        "name": "Ming Zhang"
+      },
+      {
+        "authorId": "2240465418",
+        "name": "Junzhe Wang"
+      },
+      {
+        "authorId": "2219131195",
+        "name": "Senjie Jin"
+      },
+      {
+        "authorId": "2240446306",
+        "name": "Enyu Zhou"
+      },
+      {
+        "authorId": "2058585152",
+        "name": "Rui Zheng"
+      },
+      {
+        "authorId": "2241140630",
+        "name": "Xiaoran Fan"
+      },
+      {
+        "authorId": "2118451107",
+        "name": "Xiao Wang"
+      },
+      {
+        "authorId": "2222630539",
+        "name": "Limao Xiong"
+      },
+      {
+        "authorId": "2109185819",
+        "name": "Qin Liu"
+      },
+      {
+        "authorId": "2212175381",
+        "name": "Yuhao Zhou"
+      },
+      {
+        "authorId": "2240703461",
+        "name": "Weiran Wang"
+      },
+      {
+        "authorId": "2240482661",
+        "name": "Changhao Jiang"
+      },
+      {
+        "authorId": "51192034",
+        "name": "Yicheng Zou"
+      },
+      {
+        "authorId": "2144226697",
+        "name": "Xiangyang Liu"
+      },
+      {
+        "authorId": "2155273086",
+        "name": "Zhangyue Yin"
+      },
+      {
+        "authorId": "2042683163",
+        "name": "Shihan Dou"
+      },
+      {
+        "authorId": "24009282",
+        "name": "Rongxiang Weng"
+      },
+      {
+        "authorId": "2211998291",
+        "name": "Wensen Cheng"
+      },
+      {
+        "authorId": "2256972399",
+        "name": "Qi Zhang"
+      },
+      {
+        "authorId": "2240455955",
+        "name": "Wenjuan Qin"
+      },
+      {
+        "authorId": "2240450583",
+        "name": "Yongyan Zheng"
+      },
+      {
+        "authorId": "1767521",
+        "name": "Xipeng Qiu"
+      },
+      {
+        "authorId": "48111107",
+        "name": "X. Huan"
+      },
+      {
+        "authorId": "2067331064",
+        "name": "Tao Gui"
+      }
+    ],
+    "abstract": "For a long time, humanity has pursued artificial intelligence (AI) equivalent to or surpassing the human level, with AI agents considered a promising vehicle for this pursuit. AI agents are artificial entities that sense their environment, make decisions, and take actions. Many efforts have been made to develop intelligent agents, but they mainly focus on advancement in algorithms or training strategies to enhance specific capabilities or performance on particular tasks. Actually, what the community lacks is a general and powerful model to serve as a starting point for designing AI agents that can adapt to diverse scenarios. Due to the versatile capabilities they demonstrate, large language models (LLMs) are regarded as potential sparks for Artificial General Intelligence (AGI), offering hope for building general AI agents. Many researchers have leveraged LLMs as the foundation to build AI agents and have achieved significant progress. In this paper, we perform a comprehensive survey on LLM-based agents. We start by tracing the concept of agents from its philosophical origins to its development in AI, and explain why LLMs are suitable foundations for agents. Building upon this, we present a general framework for LLM-based agents, comprising three main components: brain, perception, and action, and the framework can be tailored for different applications. Subsequently, we explore the extensive applications of LLM-based agents in three aspects: single-agent scenarios, multi-agent scenarios, and human-agent cooperation. Following this, we delve into agent societies, exploring the behavior and personality of LLM-based agents, the social phenomena that emerge from an agent society, and the insights they offer for human society. Finally, we discuss several key topics and open problems within the field. A repository for the related papers at https://github.com/WooooDyy/LLM-Agent-Paper-List.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "28c6ac721f54544162865f41c5692e70d61bccab",
+    "externalIds": {
+      "DBLP": "journals/fcsc/WangMFZYZCTCLZWW24",
+      "ArXiv": "2308.11432",
+      "DOI": "10.1007/s11704-024-40231-1",
+      "CorpusId": 261064713
+    },
+    "url": "https://www.semanticscholar.org/paper/28c6ac721f54544162865f41c5692e70d61bccab",
+    "title": "A survey on large language model based autonomous agents",
+    "venue": "Frontiers of Computer Science",
+    "year": 2023,
+    "citationCount": 2857,
+    "influentialCitationCount": 125,
+    "openAccessPdf": {
+      "url": "https://doi.org/10.1007/s11704-024-40231-1",
+      "status": "HYBRID",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2308.11432, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2152509786",
+        "name": "Lei Wang"
+      },
+      {
+        "authorId": "33754380",
+        "name": "Chengbang Ma"
+      },
+      {
+        "authorId": "2163940136",
+        "name": "Xueyang Feng"
+      },
+      {
+        "authorId": "2223760889",
+        "name": "Zeyu Zhang"
+      },
+      {
+        "authorId": "11325431",
+        "name": "Hao-ran Yang"
+      },
+      {
+        "authorId": "2144163813",
+        "name": "Jingsen Zhang"
+      },
+      {
+        "authorId": "2128141801",
+        "name": "Zhi-Yang Chen"
+      },
+      {
+        "authorId": "144010962",
+        "name": "Jiakai Tang"
+      },
+      {
+        "authorId": "2144230136",
+        "name": "Xu Chen"
+      },
+      {
+        "authorId": "2149202150",
+        "name": "Yankai Lin"
+      },
+      {
+        "authorId": "2542603",
+        "name": "Wayne Xin Zhao"
+      },
+      {
+        "authorId": "12457830",
+        "name": "Zhewei Wei"
+      },
+      {
+        "authorId": "153693432",
+        "name": "Ji-rong Wen"
+      }
+    ],
+    "abstract": "Autonomous agents have long been a research focus in academic and industry communities. Previous research often focuses on training agents with limited knowledge within isolated environments, which diverges significantly from human learning processes, and makes the agents hard to achieve human-like decisions. Recently, through the acquisition of vast amounts of Web knowledge, large language models (LLMs) have shown potential in human-level intelligence, leading to a surge in research on LLM-based autonomous agents. In this paper, we present a comprehensive survey of these studies, delivering a systematic review of LLM-based autonomous agents from a holistic perspective. We first discuss the construction of LLM-based autonomous agents, proposing a unified framework that encompasses much of previous work. Then, we present a overview of the diverse applications of LLM-based autonomous agents in social science, natural science, and engineering. Finally, we delve into the evaluation strategies commonly used for LLM-based autonomous agents. Based on the previous studies, we also present several challenges and future directions in this field.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "a53c8ba374d430d6c3786d13c04edb200d547750",
+    "externalIds": {
+      "DBLP": "conf/iclr/GurFHSMEF24",
+      "ArXiv": "2307.12856",
+      "DOI": "10.48550/arXiv.2307.12856",
+      "CorpusId": 260126067
+    },
+    "url": "https://www.semanticscholar.org/paper/a53c8ba374d430d6c3786d13c04edb200d547750",
+    "title": "A Real-World WebAgent with Planning, Long Context Understanding, and Program Synthesis",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 362,
+    "influentialCitationCount": 13,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2307.12856",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2307.12856, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "3737312",
+        "name": "Izzeddin Gur"
+      },
+      {
+        "authorId": "2052903664",
+        "name": "Hiroki Furuta"
+      },
+      {
+        "authorId": "2054859790",
+        "name": "Austin Huang"
+      },
+      {
+        "authorId": "2093894693",
+        "name": "Mustafa Safdari"
+      },
+      {
+        "authorId": "2153732825",
+        "name": "Yutaka Matsuo"
+      },
+      {
+        "authorId": "2396681",
+        "name": "D. Eck"
+      },
+      {
+        "authorId": "145520045",
+        "name": "Aleksandra Faust"
+      }
+    ],
+    "abstract": "Pre-trained large language models (LLMs) have recently achieved better generalization and sample efficiency in autonomous web automation. However, the performance on real-world websites has still suffered from (1) open domainness, (2) limited context length, and (3) lack of inductive bias on HTML. We introduce WebAgent, an LLM-driven agent that learns from self-experience to complete tasks on real websites following natural language instructions. WebAgent plans ahead by decomposing instructions into canonical sub-instructions, summarizes long HTML documents into task-relevant snippets, and acts on websites via Python programs generated from those. We design WebAgent with Flan-U-PaLM, for grounded code generation, and HTML-T5, new pre-trained LLMs for long HTML documents using local and global attention mechanisms and a mixture of long-span denoising objectives, for planning and summarization. We empirically demonstrate that our modular recipe improves the success on real websites by over 50%, and that HTML-T5 is the best model to solve various HTML understanding tasks; achieving 18.7% higher success rate than the prior method on MiniWoB web automation benchmark, and SoTA performance on Mind2Web, an offline task planning evaluation.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "eaa7853facb9b49444b48a96192cb4be66b62671",
+    "externalIds": {
+      "DBLP": "conf/iclr/ZhengWW024",
+      "ArXiv": "2306.07863",
+      "CorpusId": 259145391
+    },
+    "url": "https://www.semanticscholar.org/paper/eaa7853facb9b49444b48a96192cb4be66b62671",
+    "title": "Synapse: Trajectory-as-Exemplar Prompting with Memory for Computer Control",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 136,
+    "influentialCitationCount": 12,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2306.07863, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2115811864",
+        "name": "Longtao Zheng"
+      },
+      {
+        "authorId": "103856029",
+        "name": "R. Wang"
+      },
+      {
+        "authorId": "143706345",
+        "name": "Bo An"
+      }
+    ],
+    "abstract": "Building agents with large language models (LLMs) for computer control is a burgeoning research area, where the agent receives computer states and performs actions to complete complex tasks. Previous computer agents have demonstrated the benefits of in-context learning (ICL); however, their performance is hindered by several issues. First, the limited context length of LLMs and complex computer states restrict the number of exemplars, as a single webpage can consume the entire context. Second, the exemplars in current methods, such as high-level plans and multi-choice questions, cannot represent complete trajectories, leading to suboptimal performance in long-horizon tasks. Third, existing computer agents rely on task-specific exemplars and overlook the similarity among tasks, resulting in poor generalization to novel tasks. To address these challenges, we introduce Synapse, a computer agent featuring three key components: i) state abstraction, which filters out task-irrelevant information from raw states, allowing more exemplars within the limited context, ii) trajectory-as-exemplar prompting, which prompts the LLM with complete trajectories of the abstracted states and actions to improve multi-step decision-making, and iii) exemplar memory, which stores the embeddings of exemplars and retrieves them via similarity search for generalization to novel tasks. We evaluate Synapse on MiniWoB++, a standard task suite, and Mind2Web, a real-world website benchmark. In MiniWoB++, Synapse achieves a 99.2% average success rate (a 10% relative improvement) across 64 tasks using demonstrations from only 48 tasks. Notably, Synapse is the first ICL method to solve the book-flight task in MiniWoB++. Synapse also exhibits a 56% relative improvement in average step success rate over the previous state-of-the-art prompting scheme in Mind2Web.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "3b8871e4c25d3aaca2bee6606c07bc870337253c",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2306-02224",
+      "ArXiv": "2306.02224",
+      "DOI": "10.48550/arXiv.2306.02224",
+      "CorpusId": 259075577
+    },
+    "url": "https://www.semanticscholar.org/paper/3b8871e4c25d3aaca2bee6606c07bc870337253c",
+    "title": "Auto-GPT for Online Decision Making: Benchmarks and Additional Opinions",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 301,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2306.02224",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2306.02224, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2156110830",
+        "name": "Hui Yang"
+      },
+      {
+        "authorId": "2219548768",
+        "name": "Sifu Yue"
+      },
+      {
+        "authorId": "7737839",
+        "name": "Yunzhong He"
+      }
+    ],
+    "abstract": "Auto-GPT is an autonomous agent that leverages recent advancements in adapting Large Language Models (LLMs) for decision-making tasks. While there has been a growing interest in Auto-GPT stypled agents, questions remain regarding the effectiveness and flexibility of Auto-GPT in solving real-world decision-making tasks. Its limited capability for real-world engagement and the absence of benchmarks contribute to these uncertainties. In this paper, we present a comprehensive benchmark study of Auto-GPT styled agents in decision-making tasks that simulate real-world scenarios. Our aim is to gain deeper insights into this problem and understand the adaptability of GPT-based agents. We compare the performance of popular LLMs such as GPT-4, GPT-3.5, Claude, and Vicuna in Auto-GPT styled decision-making tasks. Furthermore, we introduce the Additional Opinions algorithm, an easy and effective method that incorporates supervised/imitation-based learners into the Auto-GPT scheme. This approach enables lightweight supervised learning without requiring fine-tuning of the foundational LLMs. We demonstrate through careful baseline comparisons and ablation studies that the Additional Opinions algorithm significantly enhances performance in online decision-making benchmarks, including WebShop and ALFWorld.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "7bf72a3b5fbac8bc0f461780810fbc781c28ef53",
+    "externalIds": {
+      "DBLP": "conf/nips/LiHIKG23",
+      "ArXiv": "2303.17760",
+      "DOI": "10.52202/075280-2264",
+      "CorpusId": 268042527
+    },
+    "url": "https://www.semanticscholar.org/paper/7bf72a3b5fbac8bc0f461780810fbc781c28ef53",
+    "title": "CAMEL: Communicative Agents for \"Mind\" Exploration of Large Language Model Society",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 1359,
+    "influentialCitationCount": 55,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2303.17760, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "49461641",
+        "name": "G. Li"
+      },
+      {
+        "authorId": "1500194870",
+        "name": "Hasan Hammoud"
+      },
+      {
+        "authorId": "46606949",
+        "name": "Hani Itani"
+      },
+      {
+        "authorId": "2213415527",
+        "name": "Dmitrii Khizbullin"
+      },
+      {
+        "authorId": "2274278297",
+        "name": "Bernard Ghanem"
+      }
+    ],
+    "abstract": "The rapid advancement of chat-based language models has led to remarkable progress in complex task-solving. However, their success heavily relies on human input to guide the conversation, which can be challenging and time-consuming. This paper explores the potential of building scalable techniques to facilitate autonomous cooperation among communicative agents, and provides insight into their\"cognitive\"processes. To address the challenges of achieving autonomous cooperation, we propose a novel communicative agent framework named role-playing. Our approach involves using inception prompting to guide chat agents toward task completion while maintaining consistency with human intentions. We showcase how role-playing can be used to generate conversational data for studying the behaviors and capabilities of a society of agents, providing a valuable resource for investigating conversational language models. In particular, we conduct comprehensive studies on instruction-following cooperation in multi-agent settings. Our contributions include introducing a novel communicative agent framework, offering a scalable approach for studying the cooperative behaviors and capabilities of multi-agent systems, and open-sourcing our library to support research on communicative agents and beyond: https://github.com/camel-ai/camel.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "6845bea94b2fb17d4377b3bb2bd10f73a959f9cc",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2212-09597",
+      "ArXiv": "2212.09597",
+      "ACL": "2023.acl-long.294",
+      "DOI": "10.48550/arXiv.2212.09597",
+      "CorpusId": 254854219
+    },
+    "url": "https://www.semanticscholar.org/paper/6845bea94b2fb17d4377b3bb2bd10f73a959f9cc",
+    "title": "Reasoning with Language Model Prompting: A Survey",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2022,
+    "citationCount": 426,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2212.09597",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2212.09597, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2190751119",
+        "name": "Shuofei Qiao"
+      },
+      {
+        "authorId": "2196928874",
+        "name": "Yixin Ou"
+      },
+      {
+        "authorId": "2608639",
+        "name": "Ningyu Zhang"
+      },
+      {
+        "authorId": null,
+        "name": "Xiang Chen"
+      },
+      {
+        "authorId": "4841460",
+        "name": "Yunzhi Yao"
+      },
+      {
+        "authorId": "152931849",
+        "name": "Shumin Deng"
+      },
+      {
+        "authorId": "2111727840",
+        "name": "Chuanqi Tan"
+      },
+      {
+        "authorId": "143857288",
+        "name": "Fei Huang"
+      },
+      {
+        "authorId": "2144200945",
+        "name": "Huajun Chen"
+      }
+    ],
+    "abstract": "Reasoning, as an essential ability for complex problem-solving, can provide back-end support for various real-world applications, such as medical diagnosis, negotiation, etc. This paper provides a comprehensive survey of cutting-edge research on reasoning with language model prompting. We introduce research works with comparisons and summaries and provide systematic resources to help beginners. We also discuss the potential reasons for emerging such reasoning abilities and highlight future research directions. Resources are available at https://github.com/zjunlp/Prompt4ReasoningPapers (updated periodically).",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "398a0625e8707a0b41ac58eaec51e8feb87dd7cb",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2010-03768",
+      "MAG": "3092516542",
+      "ArXiv": "2010.03768",
+      "CorpusId": 222208810
+    },
+    "url": "https://www.semanticscholar.org/paper/398a0625e8707a0b41ac58eaec51e8feb87dd7cb",
+    "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+    "venue": "International Conference on Learning Representations",
+    "year": 2020,
+    "citationCount": 853,
+    "influentialCitationCount": 180,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2010.03768, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "33516562",
+        "name": "Mohit Shridhar"
+      },
+      {
+        "authorId": "2854297",
+        "name": "Xingdi Yuan"
+      },
+      {
+        "authorId": "40638665",
+        "name": "Marc-Alexandre Côté"
+      },
+      {
+        "authorId": "3312309",
+        "name": "Yonatan Bisk"
+      },
+      {
+        "authorId": "3382568",
+        "name": "Adam Trischler"
+      },
+      {
+        "authorId": "3308897",
+        "name": "Matthew J. Hausknecht"
+      }
+    ],
+    "abstract": "Given a simple request (e.g., Put a washed apple in the kitchen fridge), humans can reason in purely abstract terms by imagining action sequences and scoring their likelihood of success, prototypicality, and efficiency, all without moving a muscle. Once we see the kitchen in question, we can update our abstract plans to fit the scene. Embodied agents require the same abilities, but existing work does not yet provide the infrastructure necessary for both reasoning abstractly and executing concretely. We address this limitation by introducing ALFWorld, a simulator that enables agents to learn abstract, text-based policies in TextWorld (Cote et al., 2018) and then execute goals from the ALFRED benchmark (Shridhar et al., 2020) in a rich visual environment. ALFWorld enables the creation of a new BUTLER agent whose abstract knowledge, learned in TextWorld, corresponds directly to concrete, visually grounded actions. In turn, as we demonstrate empirically, this fosters better agent generalization than training only in the visually grounded environment. BUTLER's simple, modular design factors the problem to allow researchers to focus on models for improving every piece of the pipeline (language understanding, planning, navigation, visual scene understanding, and so forth).",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "812fd36846ffd57b063690e791abd1e686ca3c8d",
+    "externalIds": {
+      "DBLP": "journals/automatica/LeizarowitzS08",
+      "MAG": "2124821240",
+      "ArXiv": "0711.2185",
+      "DOI": "10.1016/j.automatica.2007.09.013",
+      "CorpusId": 2903353
+    },
+    "url": "https://www.semanticscholar.org/paper/812fd36846ffd57b063690e791abd1e686ca3c8d",
+    "title": "Exact finite approximations of average-cost countable Markov decision processes",
+    "venue": "at - Automatisierungstechnik",
+    "year": 2007,
+    "citationCount": 789,
+    "influentialCitationCount": 129,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/0711.2185",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/0711.2185, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Mathematics",
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "3037476",
+        "name": "A. Leizarowitz"
+      },
+      {
+        "authorId": "7300196",
+        "name": "A. Shwartz"
+      }
+    ],
+    "abstract": "For a countable-state Markov decision process we introduce an embedding which produces a finite-state Markov decision process. The finite-state embedded process has the same optimal cost, and moreover, it has the same dynamics as the original process when restricting to the approximating set. The embedded process can be used as an approximation which, being finite, is more convenient for computation and implementation.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "159fe10445539cb7c7392a691ec045137ef58e8d",
+    "externalIds": {
+      "MAG": "2108915251",
+      "DOI": "10.1037/0033-295X.109.2.401",
+      "CorpusId": 18345421,
+      "PubMed": "11990324"
+    },
+    "url": "https://www.semanticscholar.org/paper/159fe10445539cb7c7392a691ec045137ef58e8d",
+    "title": "Theoretical and computational analysis of skill learning, repetition priming, and procedural memory.",
+    "venue": "Psychology Review",
+    "year": 2002,
+    "citationCount": 161,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1037/0033-295X.109.2.401?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1037/0033-295X.109.2.401, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Psychology",
+      "Medicine"
+    ],
+    "publicationTypes": [
+      "Review",
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "35150092",
+        "name": "P. Gupta"
+      },
+      {
+        "authorId": "3063941",
+        "name": "N. Cohen"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "31a2e1910788f74d7dc15f61de0620ddd71c097d",
+    "externalIds": {
+      "MAG": "2082389353",
+      "DOI": "10.1126/SCIENCE.7414331",
+      "CorpusId": 19690059,
+      "PubMed": "7414331"
+    },
+    "url": "https://www.semanticscholar.org/paper/31a2e1910788f74d7dc15f61de0620ddd71c097d",
+    "title": "Preserved learning and retention of pattern-analyzing skill in amnesia: dissociation of knowing how and knowing that.",
+    "venue": "Science",
+    "year": 1980,
+    "citationCount": 2357,
+    "influentialCitationCount": 64,
+    "openAccessPdf": {
+      "url": "",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1126/SCIENCE.7414331?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1126/SCIENCE.7414331, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Psychology",
+      "Medicine"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "3063941",
+        "name": "N. Cohen"
+      },
+      {
+        "authorId": "2890841",
+        "name": "L. Squire"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": ". Introduction to the soar cognitive architecture",
+    "venue": "",
+    "year": 2022,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2025. Tool-star: Empowering llm-brained multi-tool reasoner via reinforcement learning",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2025. Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2023. Cognitive architectures for language agents",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "OpenAI. 2025.",
+    "venue": "Deep research system card",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2024a. Memorybank: Enhancing large language models with long-term memory",
+    "venue": "Proceedings of the AAAI Conference on Artificial Intelligence , volume 38",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "OpenAI. 2022. Gpt-4 system card",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2024a. Qwen2. 5 technical report",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "1 others",
+    "venue": "Advances and challenges in foundation agents: From brain-inspired intelligence to evolutionary, collaborative, and safe systems",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2025. Benchmarking agen-tic workflow generation",
+    "venue": "The Thirteenth International Conference on Learning Representations, ICLR 2025, Singapore, April 24-28, 2025",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "2023. Voyager: An open-ended embodied agent with large language models",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  }
+]

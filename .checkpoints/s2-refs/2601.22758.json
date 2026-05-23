@@ -1,0 +1,2523 @@
+[
+  {
+    "paperId": "b00636045c382dac69fc76733fd1913bdbe60601",
+    "externalIds": {
+      "ArXiv": "2509.25586",
+      "DBLP": "journals/corr/abs-2509-25586",
+      "DOI": "10.48550/arXiv.2509.25586",
+      "CorpusId": 281682470
+    },
+    "url": "https://www.semanticscholar.org/paper/b00636045c382dac69fc76733fd1913bdbe60601",
+    "title": "ATLAS: Constraints-Aware Multi-Agent Collaboration for Real-World Travel Planning",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 8,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.25586, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2116551496",
+        "name": "Jihye Choi"
+      },
+      {
+        "authorId": "2256335437",
+        "name": "Jinsung Yoon"
+      },
+      {
+        "authorId": "2382999539",
+        "name": "Jiefeng Chen"
+      },
+      {
+        "authorId": "2244205925",
+        "name": "Somesh Jha"
+      },
+      {
+        "authorId": "2382765500",
+        "name": "Tomas Pfister"
+      }
+    ],
+    "abstract": "While Large Language Models (LLMs) have shown remarkable advancements in reasoning and tool use, they often fail to generate optimal, grounded solutions under complex constraints. Real-world travel planning exemplifies these challenges, evaluating agents'abilities to handle constraints that are explicit, implicit, and even evolving based on interactions with dynamic environments and user needs. In this paper, we present ATLAS, a general multi-agent framework designed to effectively handle such complex nature of constraints awareness in real-world travel planning tasks. ATLAS introduces a principled approach to address the fundamental challenges of constraint-aware planning through dedicated mechanisms for dynamic constraint management, iterative plan critique, and adaptive interleaved search. ATLAS demonstrates state-of-the-art performance on the TravelPlanner benchmark, improving the final pass rate from 23.3% to 44.4% over its best alternative. More importantly, our work is the first to demonstrate quantitative effectiveness on real-world travel planning tasks with live information search and multi-turn feedback. In this realistic setting, ATLAS showcases its superior overall planning performance, achieving an 84% final pass rate which significantly outperforms baselines including ReAct (59%) and a monolithic agent (27%).",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "1125a01656e1a022c82b15b539129e501ea8d007",
+    "externalIds": {
+      "ArXiv": "2505.00234",
+      "DBLP": "journals/corr/abs-2505-00234",
+      "DOI": "10.48550/arXiv.2505.00234",
+      "CorpusId": 278237252
+    },
+    "url": "https://www.semanticscholar.org/paper/1125a01656e1a022c82b15b539129e501ea8d007",
+    "title": "Self-Generated In-Context Examples Improve LLM Agents for Sequential Decision-Making Tasks",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 11,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.00234, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "121334617",
+        "name": "Vishnu Sarukkai"
+      },
+      {
+        "authorId": "2387131467",
+        "name": "Zhiqiang Xie"
+      },
+      {
+        "authorId": "2789576",
+        "name": "Kayvon Fatahalian"
+      }
+    ],
+    "abstract": "Improving Large Language Model (LLM) agents for sequential decision-making tasks typically requires extensive task-specific knowledge engineering--custom prompts, curated examples, and specialized observation/action spaces. We investigate a different approach where agents automatically improve by learning from their own successful experiences without human intervention. Our method constructs and refines a database of self-generated trajectories that serve as in-context examples for future tasks. Even naive accumulation of successful trajectories yields substantial performance gains across three diverse benchmarks: ALFWorld (73% to 89%), Wordcraft (55% to 64%), and InterCode-SQL (75% to 79%). These improvements exceed those achieved by upgrading from gpt-4o-mini to gpt-4o and match the performance of allowing multiple attempts per task. We further enhance this approach with two innovations: database-level curation using population-based training to propagate high-performing example collections, and exemplar-level curation that selectively retains trajectories based on their empirical utility as in-context examples. With these enhancements, our method achieves 93% success on ALFWorld--surpassing approaches that use more powerful LLMs and hand-crafted components. Our trajectory bootstrapping technique demonstrates that agents can autonomously improve through experience, offering a scalable alternative to labor-intensive knowledge engineering.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "6d1f2974c60761c518f0122bf451fe6671f49663",
+    "externalIds": {
+      "DBLP": "conf/nips/0001LYYL024",
+      "ArXiv": "2405.16247",
+      "DOI": "10.52202/079017-0019",
+      "CorpusId": 276117233
+    },
+    "url": "https://www.semanticscholar.org/paper/6d1f2974c60761c518f0122bf451fe6671f49663",
+    "title": "AutoManual: Constructing Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+    "venue": "Neural Information Processing Systems",
+    "year": 2024,
+    "citationCount": 29,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2405.16247, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2276034736",
+        "name": "Minghao Chen"
+      },
+      {
+        "authorId": "2303406595",
+        "name": "Yihang Li"
+      },
+      {
+        "authorId": "2303415296",
+        "name": "Yanting Yang"
+      },
+      {
+        "authorId": "2304150758",
+        "name": "Shiyu Yu"
+      },
+      {
+        "authorId": "2258304162",
+        "name": "Binbin Lin"
+      },
+      {
+        "authorId": "2257432345",
+        "name": "Xiaofei He"
+      }
+    ],
+    "abstract": "Large Language Models (LLM) based agents have shown promise in autonomously completing tasks across various domains, e.g., robotics, games, and web navigation. However, these agents typically require elaborate design and expert prompts to solve tasks in specific domains, which limits their adaptability. We introduce AutoManual, a framework enabling LLM agents to autonomously build their understanding through interaction and adapt to new environments. AutoManual categorizes environmental knowledge into diverse rules and optimizes them in an online fashion by two agents: 1) The Planner codes actionable plans based on current rules for interacting with the environment. 2) The Builder updates the rules through a well-structured rule system that facilitates online rule management and essential detail retention. To mitigate hallucinations in managing rules, we introduce a *case-conditioned prompting* strategy for the Builder. Finally, the Formulator agent compiles these rules into a comprehensive manual. The self-generated manual can not only improve the adaptability but also guide the planning of smaller LLMs while being human-readable. Given only one simple demonstration, AutoManual significantly improves task success rates, achieving 97.4\\% with GPT-4-turbo and 86.2\\% with GPT-3.5-turbo on ALFWorld benchmark tasks. The code is available at https://github.com/minghchen/automanual.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "788a8c36f2638091905f50090f9191da908bd08a",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2403-08978",
+      "ArXiv": "2403.08978",
+      "DOI": "10.48550/arXiv.2403.08978",
+      "CorpusId": 274446149
+    },
+    "url": "https://www.semanticscholar.org/paper/788a8c36f2638091905f50090f9191da908bd08a",
+    "title": "AutoGuide: Automated Generation and Selection of Context-Aware Guidelines for Large Language Model Agents",
+    "venue": "Neural Information Processing Systems",
+    "year": 2024,
+    "citationCount": 44,
+    "influentialCitationCount": 5,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.08978, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2220920590",
+        "name": "Yao Fu"
+      },
+      {
+        "authorId": "2261690694",
+        "name": "Dong-Ki Kim"
+      },
+      {
+        "authorId": "65924935",
+        "name": "Jaekyeom Kim"
+      },
+      {
+        "authorId": "144832576",
+        "name": "Sungryull Sohn"
+      },
+      {
+        "authorId": "2876316",
+        "name": "Lajanugen Logeswaran"
+      },
+      {
+        "authorId": "40290697",
+        "name": "Kyunghoon Bae"
+      },
+      {
+        "authorId": "2431697516",
+        "name": "Honglak Lee"
+      }
+    ],
+    "abstract": "Recent advances in large language models (LLMs) have empowered AI agents capable of performing various sequential decision-making tasks. However, effectively guiding LLMs to perform well in unfamiliar domains like web navigation, where they lack sufficient knowledge, has proven to be difficult with the demonstration-based in-context learning paradigm. In this paper, we introduce a novel framework, called AutoGuide, which addresses this limitation by automatically generating context-aware guidelines from offline experiences. Importantly, each context-aware guideline is expressed in concise natural language and follows a conditional structure, clearly describing the context where it is applicable. As a result, our guidelines facilitate the provision of relevant knowledge for the agent's current decision-making process, overcoming the limitations of the conventional demonstration-based learning paradigm. Our evaluation demonstrates that AutoGuide significantly outperforms competitive baselines in complex benchmark domains, including real-world web navigation.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "789485978d69e248832df358ee0fb062012925b8",
+    "externalIds": {
+      "ArXiv": "2402.17574",
+      "DBLP": "conf/acl/ZhangTWW0HTLZ024",
+      "DOI": "10.48550/arXiv.2402.17574",
+      "CorpusId": 268032624
+    },
+    "url": "https://www.semanticscholar.org/paper/789485978d69e248832df358ee0fb062012925b8",
+    "title": "Agent-Pro: Learning to Evolve via Policy-Level Reflection and Optimization",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2024,
+    "citationCount": 102,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.17574, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2135282890",
+        "name": "Wenqi Zhang"
+      },
+      {
+        "authorId": "2392710101",
+        "name": "K. Tang"
+      },
+      {
+        "authorId": "2287760920",
+        "name": "Hai Wu"
+      },
+      {
+        "authorId": "2287809102",
+        "name": "Mengna Wang"
+      },
+      {
+        "authorId": "1471660296",
+        "name": "Yongliang Shen"
+      },
+      {
+        "authorId": "2273676684",
+        "name": "Guiyang Hou"
+      },
+      {
+        "authorId": "2092670555",
+        "name": "Zeqi Tan"
+      },
+      {
+        "authorId": "2288185017",
+        "name": "Peng Li"
+      },
+      {
+        "authorId": "2056432541",
+        "name": "Y. Zhuang"
+      },
+      {
+        "authorId": "1776903",
+        "name": "Weiming Lu"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) exhibit robust problem-solving capabilities for diverse tasks. However, most LLM-based agents are designed as specific task solvers with sophisticated prompt engineering, rather than agents capable of learning and evolving through interactions. These task solvers necessitate manually crafted prompts to inform task rules and regulate LLM behaviors, inherently incapacitating to address complex dynamic scenarios e.g., large interactive games. In light of this, we propose Agent-Pro: an LLM-based Agent with Policy-level Reflection and Optimization that can learn a wealth of expertise from interactive experiences and progressively elevate its behavioral policy. Specifically, it involves a dynamic belief generation and reflection process for policy evolution. Rather than action-level reflection, Agent-Pro iteratively reflects on past trajectories and beliefs, fine-tuning its irrational beliefs for a better policy. Moreover, a depth-first search is employed for policy optimization, ensuring continual enhancement in policy payoffs. Agent-Pro is evaluated across two games: Blackjack and Texas Hold'em, outperforming vanilla LLM and specialized models. Our results show Agent-Pro can learn and evolve in complex and dynamic scenes, which also benefits numerous LLM-based applications.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "494cf86c8a4b8d9464f3888dcd69ec1371aaf43d",
+    "externalIds": {
+      "ArXiv": "2402.03610",
+      "DBLP": "journals/corr/abs-2402-03610",
+      "DOI": "10.48550/arXiv.2402.03610",
+      "CorpusId": 267500377
+    },
+    "url": "https://www.semanticscholar.org/paper/494cf86c8a4b8d9464f3888dcd69ec1371aaf43d",
+    "title": "RAP: Retrieval-Augmented Planning with Contextual Memory for Multimodal LLM Agents",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 81,
+    "influentialCitationCount": 9,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.03610, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "35344001",
+        "name": "Tomoyuki Kagaya"
+      },
+      {
+        "authorId": "2282957491",
+        "name": "Thong Jing Yuan"
+      },
+      {
+        "authorId": "2053694448",
+        "name": "Yuxuan Lou"
+      },
+      {
+        "authorId": "1785111",
+        "name": "J. Karlekar"
+      },
+      {
+        "authorId": "2668358",
+        "name": "Sugiri Pranata"
+      },
+      {
+        "authorId": "2282964850",
+        "name": "Akira Kinose"
+      },
+      {
+        "authorId": "2282968472",
+        "name": "Koki Oguri"
+      },
+      {
+        "authorId": "2282969684",
+        "name": "Felix Wick"
+      },
+      {
+        "authorId": "2282982772",
+        "name": "Yang You"
+      }
+    ],
+    "abstract": "Owing to recent advancements, Large Language Models (LLMs) can now be deployed as agents for increasingly complex decision-making applications in areas including robotics, gaming, and API integration. However, reflecting past experiences in current decision-making processes, an innate human behavior, continues to pose significant challenges. Addressing this, we propose Retrieval-Augmented Planning (RAP) framework, designed to dynamically leverage past experiences corresponding to the current situation and context, thereby enhancing agents' planning capabilities. RAP distinguishes itself by being versatile: it excels in both text-only and multimodal environments, making it suitable for a wide range of tasks. Empirical evaluations demonstrate RAP's effectiveness, where it achieves SOTA performance in textual scenarios and notably enhances multimodal LLM agents' performance for embodied tasks. These results highlight RAP's potential in advancing the functionality and applicability of LLM agents in complex, real-world applications.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "11155af5ccd1889277f4269f6bb349a7633554f4",
+    "externalIds": {
+      "DBLP": "conf/icml/Xie0CZLTX024",
+      "ArXiv": "2402.01622",
+      "DOI": "10.48550/arXiv.2402.01622",
+      "CorpusId": 267406800
+    },
+    "url": "https://www.semanticscholar.org/paper/11155af5ccd1889277f4269f6bb349a7633554f4",
+    "title": "TravelPlanner: A Benchmark for Real-World Planning with Language Agents",
+    "venue": "International Conference on Machine Learning",
+    "year": 2024,
+    "citationCount": 380,
+    "influentialCitationCount": 54,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.01622, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2153624353",
+        "name": "Jian Xie"
+      },
+      {
+        "authorId": "145086492",
+        "name": "Kai Zhang"
+      },
+      {
+        "authorId": "5040052",
+        "name": "Jiangjie Chen"
+      },
+      {
+        "authorId": "2222400339",
+        "name": "Tinghui Zhu"
+      },
+      {
+        "authorId": "2118614649",
+        "name": "Renze Lou"
+      },
+      {
+        "authorId": "2285362895",
+        "name": "Yuandong Tian"
+      },
+      {
+        "authorId": "2282543969",
+        "name": "Yanghua Xiao"
+      },
+      {
+        "authorId": "1758652",
+        "name": "Yu Su"
+      }
+    ],
+    "abstract": "Planning has been part of the core pursuit for artificial intelligence since its conception, but earlier AI agents mostly focused on constrained settings because many of the cognitive substrates necessary for human-level planning have been lacking. Recently, language agents powered by large language models (LLMs) have shown interesting capabilities such as tool use and reasoning. Are these language agents capable of planning in more complex settings that are out of the reach of prior AI agents? To advance this investigation, we propose TravelPlanner, a new planning benchmark that focuses on travel planning, a common real-world planning scenario. It provides a rich sandbox environment, various tools for accessing nearly four million data records, and 1,225 meticulously curated planning intents and reference plans. Comprehensive evaluations show that the current language agents are not yet capable of handling such complex planning tasks-even GPT-4 only achieves a success rate of 0.6%. Language agents struggle to stay on task, use the right tools to collect information, or keep track of multiple constraints. However, we note that the mere possibility for language agents to tackle such a complex problem is in itself non-trivial progress. TravelPlanner provides a challenging yet meaningful testbed for future language agents.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "1eb1a8c7f88de27af224153f43ecdd41774600f2",
+    "externalIds": {
+      "ArXiv": "2310.16427",
+      "DBLP": "journals/corr/abs-2310-16427",
+      "DOI": "10.48550/arXiv.2310.16427",
+      "CorpusId": 264451925
+    },
+    "url": "https://www.semanticscholar.org/paper/1eb1a8c7f88de27af224153f43ecdd41774600f2",
+    "title": "PromptAgent: Strategic Planning with Language Models Enables Expert-level Prompt Optimization",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 233,
+    "influentialCitationCount": 14,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.16427, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2261680539",
+        "name": "Xinyuan Wang"
+      },
+      {
+        "authorId": "2261673860",
+        "name": "Chenxi Li"
+      },
+      {
+        "authorId": "2261683280",
+        "name": "Zhen Wang"
+      },
+      {
+        "authorId": "143832416",
+        "name": "Fan Bai"
+      },
+      {
+        "authorId": "2261698849",
+        "name": "Haotian Luo"
+      },
+      {
+        "authorId": "2144134012",
+        "name": "Jiayou Zhang"
+      },
+      {
+        "authorId": "2235694378",
+        "name": "Nebojsa Jojic"
+      },
+      {
+        "authorId": "2259944106",
+        "name": "Eric P. Xing"
+      },
+      {
+        "authorId": "2749311",
+        "name": "Zhiting Hu"
+      }
+    ],
+    "abstract": "Highly effective, task-specific prompts are often heavily engineered by experts to integrate detailed instructions and domain insights based on a deep understanding of both instincts of large language models (LLMs) and the intricacies of the target task. However, automating the generation of such expert-level prompts remains elusive. Existing prompt optimization methods tend to overlook the depth of domain knowledge and struggle to efficiently explore the vast space of expert-level prompts. Addressing this, we present PromptAgent, an optimization method that autonomously crafts prompts equivalent in quality to those handcrafted by experts. At its core, PromptAgent views prompt optimization as a strategic planning problem and employs a principled planning algorithm, rooted in Monte Carlo tree search, to strategically navigate the expert-level prompt space. Inspired by human-like trial-and-error exploration, PromptAgent induces precise expert-level insights and in-depth instructions by reflecting on model errors and generating constructive error feedback. Such a novel framework allows the agent to iteratively examine intermediate prompts (states), refine them based on error feedbacks (actions), simulate future rewards, and search for high-reward paths leading to expert prompts. We apply PromptAgent to 12 tasks spanning three practical domains: BIG-Bench Hard (BBH), as well as domain-specific and general NLP tasks, showing it significantly outperforms strong Chain-of-Thought and recent prompt optimization baselines. Extensive analyses emphasize its capability to craft expert-level, detailed, and domain-insightful prompts with great efficiency and generalizability.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "767a7e949ba4520888e7442ee01e6a37c254fc53",
+    "externalIds": {
+      "ArXiv": "2310.10134",
+      "DBLP": "journals/corr/abs-2310-10134",
+      "DOI": "10.48550/arXiv.2310.10134",
+      "CorpusId": 264146262
+    },
+    "url": "https://www.semanticscholar.org/paper/767a7e949ba4520888e7442ee01e6a37c254fc53",
+    "title": "CLIN: A Continually Learning Language Agent for Rapid Task Adaptation and Generalization",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 73,
+    "influentialCitationCount": 7,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.10134, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "3165738",
+        "name": "Bodhisattwa Prasad Majumder"
+      },
+      {
+        "authorId": "40135250",
+        "name": "Bhavana Dalvi"
+      },
+      {
+        "authorId": "144949918",
+        "name": "Peter Alexander Jansen"
+      },
+      {
+        "authorId": "3385516",
+        "name": "Oyvind Tafjord"
+      },
+      {
+        "authorId": "2261389843",
+        "name": "Niket Tandon"
+      },
+      {
+        "authorId": "2258934061",
+        "name": "Li Zhang"
+      },
+      {
+        "authorId": "1763608",
+        "name": "Chris Callison-Burch"
+      },
+      {
+        "authorId": "2258709497",
+        "name": "Peter Clark"
+      }
+    ],
+    "abstract": "Language agents have shown some ability to interact with an external environment, e.g., a virtual world such as ScienceWorld, to perform complex tasks, e.g., growing a plant, without the startup costs of reinforcement learning. However, despite their zero-shot capabilities, these agents to date do not continually improve over time beyond performance refinement on a specific task. Here we present CLIN, the first language-based agent to achieve this, so that it continually improves over multiple trials, including when both the environment and task are varied, and without requiring parameter updates. Our approach is to use a persistent, dynamic, textual memory centered on causal abstractions (rather than general\"helpful hints\") that is regularly updated after each trial so that the agent gradually learns useful knowledge for new trials. In the ScienceWorld benchmark, CLIN is able to continually improve on repeated trials on the same task and environment, outperforming state-of-the-art reflective language agents like Reflexion by 23 absolute points. CLIN can also transfer its learning to new environments (or new tasks), improving its zero-shot performance by 4 points (13 for new tasks) and can further improve performance there through continual memory updates, enhancing performance by an additional 17 points (7 for new tasks). This suggests a new architecture for agents built on frozen models that can still continually and rapidly improve over time.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "700bd9681f1b9e9e2212e10415d27b11c7e6836b",
+    "externalIds": {
+      "ArXiv": "2310.04406",
+      "DBLP": "journals/corr/abs-2310-04406",
+      "DOI": "10.48550/arXiv.2310.04406",
+      "CorpusId": 263829963
+    },
+    "url": "https://www.semanticscholar.org/paper/700bd9681f1b9e9e2212e10415d27b11c7e6836b",
+    "title": "Language Agent Tree Search Unifies Reasoning Acting and Planning in Language Models",
+    "venue": "International Conference on Machine Learning",
+    "year": 2023,
+    "citationCount": 463,
+    "influentialCitationCount": 38,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.04406, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2244620107",
+        "name": "Andy Zhou"
+      },
+      {
+        "authorId": "2256998882",
+        "name": "Kai Yan"
+      },
+      {
+        "authorId": "2256998400",
+        "name": "Michal Shlapentokh-Rothman"
+      },
+      {
+        "authorId": "2256769308",
+        "name": "Haohan Wang"
+      },
+      {
+        "authorId": "2257110226",
+        "name": "Yu-Xiong Wang"
+      }
+    ],
+    "abstract": "While language models (LMs) have shown potential across a range of decision-making tasks, their reliance on simple acting processes limits their broad deployment as autonomous agents. In this paper, we introduce Language Agent Tree Search (LATS) -- the first general framework that synergizes the capabilities of LMs in reasoning, acting, and planning. By leveraging the in-context learning ability of LMs, we integrate Monte Carlo Tree Search into LATS to enable LMs as agents, along with LM-powered value functions and self-reflections for proficient exploration and enhanced decision-making. A key feature of our approach is the incorporation of an environment for external feedback, which offers a more deliberate and adaptive problem-solving mechanism that surpasses the constraints of existing techniques. Our experimental evaluation across diverse domains, including programming, interactive question-answering (QA), web navigation, and math, validates the effectiveness and generality of LATS in decision-making while maintaining competitive or improved reasoning performance. Notably, LATS achieves state-of-the-art pass@1 accuracy (92.7%) for programming on HumanEval with GPT-4 and demonstrates gradient-free performance (average score of 75.9) comparable to gradient-based fine-tuning for web navigation on WebShop with GPT-3.5. Code can be found at https://github.com/lapisrocks/LanguageAgentTreeSearch",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2069aaaa281eb13bcd9330fc4d43f24f6b436a53",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2310-03714",
+      "ArXiv": "2310.03714",
+      "CorpusId": 263671701
+    },
+    "url": "https://www.semanticscholar.org/paper/2069aaaa281eb13bcd9330fc4d43f24f6b436a53",
+    "title": "DSPy: Compiling Declarative Language Model Calls into Self-Improving Pipelines",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 695,
+    "influentialCitationCount": 71,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.03714, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "144112155",
+        "name": "O. Khattab"
+      },
+      {
+        "authorId": "2254255045",
+        "name": "Arnav Singhvi"
+      },
+      {
+        "authorId": "2254255478",
+        "name": "Paridhi Maheshwari"
+      },
+      {
+        "authorId": "2254328887",
+        "name": "Zhiyuan Zhang"
+      },
+      {
+        "authorId": "50818255",
+        "name": "Keshav Santhanam"
+      },
+      {
+        "authorId": "2254280701",
+        "name": "Sri Vardhamanan"
+      },
+      {
+        "authorId": "2254283599",
+        "name": "Saiful Haq"
+      },
+      {
+        "authorId": "2270665301",
+        "name": "Ashutosh Sharma"
+      },
+      {
+        "authorId": "2254254367",
+        "name": "Thomas T. Joshi"
+      },
+      {
+        "authorId": "2254263890",
+        "name": "Hanna Moazam"
+      },
+      {
+        "authorId": "2254284512",
+        "name": "Heather Miller"
+      },
+      {
+        "authorId": "2253469012",
+        "name": "Matei Zaharia"
+      },
+      {
+        "authorId": "2254255092",
+        "name": "Christopher Potts"
+      }
+    ],
+    "abstract": "The ML community is rapidly exploring techniques for prompting language models (LMs) and for stacking them into pipelines that solve complex tasks. Unfortunately, existing LM pipelines are typically implemented using hard-coded\"prompt templates\", i.e. lengthy strings discovered via trial and error. Toward a more systematic approach for developing and optimizing LM pipelines, we introduce DSPy, a programming model that abstracts LM pipelines as text transformation graphs, i.e. imperative computational graphs where LMs are invoked through declarative modules. DSPy modules are parameterized, meaning they can learn (by creating and collecting demonstrations) how to apply compositions of prompting, finetuning, augmentation, and reasoning techniques. We design a compiler that will optimize any DSPy pipeline to maximize a given metric. We conduct two case studies, showing that succinct DSPy programs can express and optimize sophisticated LM pipelines that reason about math word problems, tackle multi-hop retrieval, answer complex questions, and control agent loops. Within minutes of compiling, a few lines of DSPy allow GPT-3.5 and llama2-13b-chat to self-bootstrap pipelines that outperform standard few-shot prompting (generally by over 25% and 65%, respectively) and pipelines with expert-created demonstrations (by up to 5-46% and 16-40%, respectively). On top of that, DSPy programs compiled to open and relatively small LMs like 770M-parameter T5 and llama2-13b-chat are competitive with approaches that rely on expert-written prompt chains for proprietary GPT-3.5. DSPy is available at https://github.com/stanfordnlp/dspy",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "f8a2dca1e8fe56e698984c077f7ff58d8ca867e9",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2309-03409",
+      "ArXiv": "2309.03409",
+      "DOI": "10.48550/arXiv.2309.03409",
+      "CorpusId": 261582296
+    },
+    "url": "https://www.semanticscholar.org/paper/f8a2dca1e8fe56e698984c077f7ff58d8ca867e9",
+    "title": "Large Language Models as Optimizers",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 834,
+    "influentialCitationCount": 94,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2309.03409",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.03409, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2238207777",
+        "name": "Chengrun Yang"
+      },
+      {
+        "authorId": "2275277634",
+        "name": "Xuezhi Wang"
+      },
+      {
+        "authorId": "2141538599",
+        "name": "Yifeng Lu"
+      },
+      {
+        "authorId": "2391802",
+        "name": "Hanxiao Liu"
+      },
+      {
+        "authorId": "2827616",
+        "name": "Quoc V. Le"
+      },
+      {
+        "authorId": "65855107",
+        "name": "Denny Zhou"
+      },
+      {
+        "authorId": "2238263119",
+        "name": "Xinyun Chen"
+      }
+    ],
+    "abstract": "Optimization is ubiquitous. While derivative-based algorithms have been powerful tools for various problems, the absence of gradient imposes challenges on many real-world applications. In this work, we propose Optimization by PROmpting (OPRO), a simple and effective approach to leverage large language models (LLMs) as optimizers, where the optimization task is described in natural language. In each optimization step, the LLM generates new solutions from the prompt that contains previously generated solutions with their values, then the new solutions are evaluated and added to the prompt for the next optimization step. We first showcase OPRO on linear regression and traveling salesman problems, then move on to our main application in prompt optimization, where the goal is to find instructions that maximize the task accuracy. With a variety of LLMs, we demonstrate that the best prompts optimized by OPRO outperform human-designed prompts by up to 8% on GSM8K, and by up to 50% on Big-Bench Hard tasks. Code at https://github.com/google-deepmind/opro.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "5e4597eb21a393b23e473cf66cb5ae8b27cab03e",
+    "externalIds": {
+      "DBLP": "conf/aaai/Zhao0XLLH24",
+      "ArXiv": "2308.10144",
+      "DOI": "10.48550/arXiv.2308.10144",
+      "CorpusId": 261048772
+    },
+    "url": "https://www.semanticscholar.org/paper/5e4597eb21a393b23e473cf66cb5ae8b27cab03e",
+    "title": "ExpeL: LLM Agents Are Experiential Learners",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2023,
+    "citationCount": 508,
+    "influentialCitationCount": 59,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2308.10144",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2308.10144, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2136104377",
+        "name": "Andrew Zhao"
+      },
+      {
+        "authorId": "46307329",
+        "name": "Daniel Huang"
+      },
+      {
+        "authorId": "2232847317",
+        "name": "Quentin Xu"
+      },
+      {
+        "authorId": "2036238525",
+        "name": "Matthieu Lin"
+      },
+      {
+        "authorId": "1679704",
+        "name": "Y. Liu"
+      },
+      {
+        "authorId": "2115218570",
+        "name": "Gao Huang"
+      }
+    ],
+    "abstract": "The recent surge in research interest in applying large language models (LLMs) to decision-making tasks has flourished by leveraging the extensive world knowledge embedded in LLMs. While there is a growing demand to tailor LLMs for custom decision-making tasks, finetuning them for specific tasks is resource-intensive and may diminish the model's generalization capabilities. Moreover, state-of-the-art language models like GPT-4 and Claude are primarily accessible through API calls, with their parametric weights remaining proprietary and unavailable to the public. This scenario emphasizes the growing need for new methodologies that allow learning from agent experiences without requiring parametric updates. To address these problems, we introduce the Experiential Learning (ExpeL) agent. Our agent autonomously gathers experiences and extracts knowledge using natural language from a collection of training tasks. At inference, the agent recalls its extracted insights and past experiences to make informed decisions. Our empirical results highlight the robust learning efficacy of the ExpeL agent, indicating a consistent enhancement in its performance as it accumulates experiences. We further explore the emerging capabilities and transfer learning potential of the ExpeL agent through qualitative observations and additional experiments.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "0bfc804e31eecfd77f45e4ee7f4d629fffdcd628",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2307-16789",
+      "ArXiv": "2307.16789",
+      "DOI": "10.48550/arXiv.2307.16789",
+      "CorpusId": 260334759
+    },
+    "url": "https://www.semanticscholar.org/paper/0bfc804e31eecfd77f45e4ee7f4d629fffdcd628",
+    "title": "ToolLLM: Facilitating Large Language Models to Master 16000+ Real-world APIs",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 1532,
+    "influentialCitationCount": 218,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2307.16789",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2307.16789, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "50625437",
+        "name": "Yujia Qin"
+      },
+      {
+        "authorId": "2163374235",
+        "name": "Shi Liang"
+      },
+      {
+        "authorId": "2114059497",
+        "name": "Yining Ye"
+      },
+      {
+        "authorId": "2214586034",
+        "name": "Kunlun Zhu"
+      },
+      {
+        "authorId": "2214613855",
+        "name": "Lan Yan"
+      },
+      {
+        "authorId": "2191753738",
+        "name": "Ya-Ting Lu"
+      },
+      {
+        "authorId": "2149202150",
+        "name": "Yankai Lin"
+      },
+      {
+        "authorId": "2214579778",
+        "name": "X. Cong"
+      },
+      {
+        "authorId": "47274259",
+        "name": "Xiangru Tang"
+      },
+      {
+        "authorId": "2226120351",
+        "name": "Bill Qian"
+      },
+      {
+        "authorId": "2226184989",
+        "name": "Sihan Zhao"
+      },
+      {
+        "authorId": "2214603370",
+        "name": "Runchu Tian"
+      },
+      {
+        "authorId": "3360722",
+        "name": "Ruobing Xie"
+      },
+      {
+        "authorId": "49640256",
+        "name": "Jie Zhou"
+      },
+      {
+        "authorId": "152573911",
+        "name": "Marc H. Gerstein"
+      },
+      {
+        "authorId": "2144118403",
+        "name": "Dahai Li"
+      },
+      {
+        "authorId": "2141313179",
+        "name": "Zhiyuan Liu"
+      },
+      {
+        "authorId": "1753344",
+        "name": "Maosong Sun"
+      }
+    ],
+    "abstract": "Despite the advancements of open-source large language models (LLMs), e.g., LLaMA, they remain significantly limited in tool-use capabilities, i.e., using external tools (APIs) to fulfill human instructions. The reason is that current instruction tuning largely focuses on basic language tasks but ignores the tool-use domain. This is in contrast to the excellent tool-use capabilities of state-of-the-art (SOTA) closed-source LLMs, e.g., ChatGPT. To bridge this gap, we introduce ToolLLM, a general tool-use framework encompassing data construction, model training, and evaluation. We first present ToolBench, an instruction-tuning dataset for tool use, which is constructed automatically using ChatGPT. Specifically, the construction can be divided into three stages: (i) API collection: we collect 16,464 real-world RESTful APIs spanning 49 categories from RapidAPI Hub; (ii) instruction generation: we prompt ChatGPT to generate diverse instructions involving these APIs, covering both single-tool and multi-tool scenarios; (iii) solution path annotation: we use ChatGPT to search for a valid solution path (chain of API calls) for each instruction. To enhance the reasoning capabilities of LLMs, we develop a novel depth-first search-based decision tree algorithm. It enables LLMs to evaluate multiple reasoning traces and expand the search space. Moreover, to evaluate the tool-use capabilities of LLMs, we develop an automatic evaluator: ToolEval. Based on ToolBench, we fine-tune LLaMA to obtain an LLM ToolLLaMA, and equip it with a neural API retriever to recommend appropriate APIs for each instruction. Experiments show that ToolLLaMA demonstrates a remarkable ability to execute complex instructions and generalize to unseen APIs, and exhibits comparable performance to ChatGPT. Our ToolLLaMA also demonstrates strong zero-shot generalization ability in an out-of-distribution tool-use dataset: APIBench.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "38939304bb760473141c2aca0305e44fbe04e6e8",
+    "externalIds": {
+      "ArXiv": "2307.15818",
+      "DBLP": "conf/corl/ZitkovichYXXXXW23",
+      "DOI": "10.48550/arXiv.2307.15818",
+      "CorpusId": 260293142
+    },
+    "url": "https://www.semanticscholar.org/paper/38939304bb760473141c2aca0305e44fbe04e6e8",
+    "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+    "venue": "Conference on Robot Learning",
+    "year": 2023,
+    "citationCount": 2983,
+    "influentialCitationCount": 176,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2307.15818",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2307.15818, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "118025075",
+        "name": "Anthony Brohan"
+      },
+      {
+        "authorId": "2161343011",
+        "name": "Noah Brown"
+      },
+      {
+        "authorId": "2196517336",
+        "name": "Justice Carbajal"
+      },
+      {
+        "authorId": "2527420",
+        "name": "Yevgen Chebotar"
+      },
+      {
+        "authorId": "1805203",
+        "name": "K. Choromanski"
+      },
+      {
+        "authorId": "95691186",
+        "name": "Tianli Ding"
+      },
+      {
+        "authorId": "2283848260",
+        "name": "Danny Driess"
+      },
+      {
+        "authorId": "89890133",
+        "name": "Kumar Avinava Dubey"
+      },
+      {
+        "authorId": "46881670",
+        "name": "Chelsea Finn"
+      },
+      {
+        "authorId": "47686265",
+        "name": "Peter R. Florence"
+      },
+      {
+        "authorId": "3430433",
+        "name": "Chuyuan Fu"
+      },
+      {
+        "authorId": "153134021",
+        "name": "Montse Gonzalez Arenas"
+      },
+      {
+        "authorId": "2161342233",
+        "name": "K. Gopalakrishnan"
+      },
+      {
+        "authorId": "2273880591",
+        "name": "Kehang Han"
+      },
+      {
+        "authorId": "1944801",
+        "name": "Karol Hausman"
+      },
+      {
+        "authorId": "1505793452",
+        "name": "Alexander Herzog"
+      },
+      {
+        "authorId": "2726592",
+        "name": "Jasmine Hsu"
+      },
+      {
+        "authorId": "2704814",
+        "name": "Brian Ichter"
+      },
+      {
+        "authorId": "17818078",
+        "name": "A. Irpan"
+      },
+      {
+        "authorId": "2052368480",
+        "name": "Nikhil J. Joshi"
+      },
+      {
+        "authorId": "144885996",
+        "name": "Ryan C. Julian"
+      },
+      {
+        "authorId": "48313860",
+        "name": "Dmitry Kalashnikov"
+      },
+      {
+        "authorId": "2161342687",
+        "name": "Yuheng Kuang"
+      },
+      {
+        "authorId": "2057988112",
+        "name": "Isabel Leal"
+      },
+      {
+        "authorId": "1736651",
+        "name": "S. Levine"
+      },
+      {
+        "authorId": "47407464",
+        "name": "H. Michalewski"
+      },
+      {
+        "authorId": "2080746",
+        "name": "Igor Mordatch"
+      },
+      {
+        "authorId": "31719101",
+        "name": "Karl Pertsch"
+      },
+      {
+        "authorId": "2251957",
+        "name": "Kanishka Rao"
+      },
+      {
+        "authorId": "2163522073",
+        "name": "Krista Reymann"
+      },
+      {
+        "authorId": "1766489",
+        "name": "M. Ryoo"
+      },
+      {
+        "authorId": "2196524735",
+        "name": "Grecia Salazar"
+      },
+      {
+        "authorId": "2840758",
+        "name": "Pannag R. Sanketi"
+      },
+      {
+        "authorId": "3142556",
+        "name": "P. Sermanet"
+      },
+      {
+        "authorId": "2196040785",
+        "name": "Jaspiar Singh"
+      },
+      {
+        "authorId": "2111007256",
+        "name": "Anikait Singh"
+      },
+      {
+        "authorId": "1737285",
+        "name": "Radu Soricut"
+      },
+      {
+        "authorId": "2195355151",
+        "name": "Huong Tran"
+      },
+      {
+        "authorId": "2657155",
+        "name": "Vincent Vanhoucke"
+      },
+      {
+        "authorId": "144579461",
+        "name": "Q. Vuong"
+      },
+      {
+        "authorId": "88728227",
+        "name": "Ayzaan Wahid"
+      },
+      {
+        "authorId": "69426588",
+        "name": "Stefan Welker"
+      },
+      {
+        "authorId": "3202367",
+        "name": "Paul Wohlhart"
+      },
+      {
+        "authorId": "9961095",
+        "name": "Ted Xiao"
+      },
+      {
+        "authorId": "10909315",
+        "name": "Tianhe Yu"
+      },
+      {
+        "authorId": "2196524598",
+        "name": "Brianna Zitkovich"
+      }
+    ],
+    "abstract": "We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization and enable emergent semantic reasoning. Our goal is to enable a single end-to-end trained model to both learn to map robot observations to actions and enjoy the benefits of large-scale pretraining on language and vision-language data from the web. To this end, we propose to co-fine-tune state-of-the-art vision-language models on both robotic trajectory data and Internet-scale vision-language tasks, such as visual question answering. In contrast to other approaches, we propose a simple, general recipe to achieve this goal: in order to fit both natural language responses and robotic actions into the same format, we express the actions as text tokens and incorporate them directly into the training set of the model in the same way as natural language tokens. We refer to such category of models as vision-language-action models (VLA) and instantiate an example of such a model, which we call RT-2. Our extensive evaluation (6k evaluation trials) shows that our approach leads to performant robotic policies and enables RT-2 to obtain a range of emergent capabilities from Internet-scale training. This includes significantly improved generalization to novel objects, the ability to interpret commands not present in the robot training data (such as placing an object onto a particular number or icon), and the ability to perform rudimentary reasoning in response to user commands (such as picking up the smallest or largest object, or the one closest to another object). We further show that incorporating chain of thought reasoning allows RT-2 to perform multi-stage semantic reasoning, for example figuring out which object to pick up for use as an improvised hammer (a rock), or which type of drink is best suited for someone who is tired (an energy drink).",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "e41482f4ee984f17382f6cdd900df094d928be06",
+    "externalIds": {
+      "DBLP": "conf/iclr/ZhouX0ZLSCOBF0N24",
+      "ArXiv": "2307.13854",
+      "DOI": "10.48550/arXiv.2307.13854",
+      "CorpusId": 260164780
+    },
+    "url": "https://www.semanticscholar.org/paper/e41482f4ee984f17382f6cdd900df094d928be06",
+    "title": "WebArena: A Realistic Web Environment for Building Autonomous Agents",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 1257,
+    "influentialCitationCount": 170,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2307.13854",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2307.13854, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2149163534",
+        "name": "Shuyan Zhou"
+      },
+      {
+        "authorId": "40027632",
+        "name": "Frank F. Xu"
+      },
+      {
+        "authorId": "2115313911",
+        "name": "Hao Zhu"
+      },
+      {
+        "authorId": "144101734",
+        "name": "Xuhui Zhou"
+      },
+      {
+        "authorId": "145250604",
+        "name": "Robert Lo"
+      },
+      {
+        "authorId": "66820957",
+        "name": "Abishek Sridhar"
+      },
+      {
+        "authorId": "144691454",
+        "name": "Xianyi Cheng"
+      },
+      {
+        "authorId": "3312309",
+        "name": "Yonatan Bisk"
+      },
+      {
+        "authorId": "47070750",
+        "name": "Daniel Fried"
+      },
+      {
+        "authorId": "47051926",
+        "name": "Uri Alon"
+      },
+      {
+        "authorId": "1700325",
+        "name": "Graham Neubig"
+      }
+    ],
+    "abstract": "With advances in generative AI, there is now potential for autonomous agents to manage daily tasks via natural language commands. However, current agents are primarily created and tested in simplified synthetic environments, leading to a disconnect with real-world scenarios. In this paper, we build an environment for language-guided agents that is highly realistic and reproducible. Specifically, we focus on agents that perform tasks on the web, and create an environment with fully functional websites from four common domains: e-commerce, social forum discussions, collaborative software development, and content management. Our environment is enriched with tools (e.g., a map) and external knowledge bases (e.g., user manuals) to encourage human-like task-solving. Building upon our environment, we release a set of benchmark tasks focusing on evaluating the functional correctness of task completions. The tasks in our benchmark are diverse, long-horizon, and designed to emulate tasks that humans routinely perform on the internet. We experiment with several baseline agents, integrating recent techniques such as reasoning before acting. The results demonstrate that solving complex tasks is challenging: our best GPT-4-based agent only achieves an end-to-end task success rate of 14.41%, significantly lower than the human performance of 78.24%. These results highlight the need for further development of robust agents, that current state-of-the-art large language models are far from perfect performance in these real-life tasks, and that WebArena can be used to measure such progress.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "0d1c76d45afa012ded7ab741194baf142117c495",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2305-18290",
+      "ArXiv": "2305.18290",
+      "DOI": "10.52202/075280-2338",
+      "CorpusId": 258959321
+    },
+    "url": "https://www.semanticscholar.org/paper/0d1c76d45afa012ded7ab741194baf142117c495",
+    "title": "Direct Preference Optimization: Your Language Model is Secretly a Reward Model",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 8566,
+    "influentialCitationCount": 1875,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.18290, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "102801230",
+        "name": "Rafael Rafailov"
+      },
+      {
+        "authorId": "50465276",
+        "name": "Archit Sharma"
+      },
+      {
+        "authorId": "49688913",
+        "name": "E. Mitchell"
+      },
+      {
+        "authorId": "2490652",
+        "name": "Stefano Ermon"
+      },
+      {
+        "authorId": "144783904",
+        "name": "Christopher D. Manning"
+      },
+      {
+        "authorId": "46881670",
+        "name": "Chelsea Finn"
+      }
+    ],
+    "abstract": "While large-scale unsupervised language models (LMs) learn broad world knowledge and some reasoning skills, achieving precise control of their behavior is difficult due to the completely unsupervised nature of their training. Existing methods for gaining such steerability collect human labels of the relative quality of model generations and fine-tune the unsupervised LM to align with these preferences, often with reinforcement learning from human feedback (RLHF). However, RLHF is a complex and often unstable procedure, first fitting a reward model that reflects the human preferences, and then fine-tuning the large unsupervised LM using reinforcement learning to maximize this estimated reward without drifting too far from the original model. In this paper we introduce a new parameterization of the reward model in RLHF that enables extraction of the corresponding optimal policy in closed form, allowing us to solve the standard RLHF problem with only a simple classification loss. The resulting algorithm, which we call Direct Preference Optimization (DPO), is stable, performant, and computationally lightweight, eliminating the need for sampling from the LM during fine-tuning or performing significant hyperparameter tuning. Our experiments show that DPO can fine-tune LMs to align with human preferences as well as or better than existing methods. Notably, fine-tuning with DPO exceeds PPO-based RLHF in ability to control sentiment of generations, and matches or improves response quality in summarization and single-turn dialogue while being substantially simpler to implement and train.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "8e37dc1215681aa153a51c07078ba8befd6a6e01",
+    "externalIds": {
+      "ArXiv": "2305.16653",
+      "DBLP": "conf/nips/SunZK0Z23",
+      "DOI": "10.48550/arXiv.2305.16653",
+      "CorpusId": 258947337
+    },
+    "url": "https://www.semanticscholar.org/paper/8e37dc1215681aa153a51c07078ba8befd6a6e01",
+    "title": "AdaPlanner: Adaptive Planning from Feedback with Language Models",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 214,
+    "influentialCitationCount": 25,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.16653",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.16653, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2118180896",
+        "name": "Haotian Sun"
+      },
+      {
+        "authorId": "8103389",
+        "name": "Yuchen Zhuang"
+      },
+      {
+        "authorId": "2865034",
+        "name": "Lingkai Kong"
+      },
+      {
+        "authorId": "2218437288",
+        "name": "Bo Dai"
+      },
+      {
+        "authorId": "145657504",
+        "name": "Chao Zhang"
+      }
+    ],
+    "abstract": "Large language models (LLMs) have recently demonstrated the potential in acting as autonomous agents for sequential decision-making tasks. However, most existing methods either take actions greedily without planning or rely on static plans that are not adaptable to environmental feedback. Consequently, the sequential decision-making performance of LLM agents degenerates with problem complexity and plan horizons increase. We propose a closed-loop approach, AdaPlanner, which allows the LLM agent to refine its self-generated plan adaptively in response to environmental feedback. In AdaPlanner, the LLM agent adaptively refines its plan from feedback with both in-plan and out-of-plan refinement strategies. To mitigate hallucination, we develop a code-style LLM prompt structure that facilitates plan generation across a variety of tasks, environments, and agent capabilities. Furthermore, we propose a skill discovery mechanism that leverages successful plans as few-shot exemplars, enabling the agent to plan and refine with fewer task demonstrations. Our experiments in the ALFWorld and MiniWoB++ environments demonstrate that AdaPlanner outperforms state-of-the-art baselines by 3.73% and 4.11% while utilizing 2x and 600x fewer samples, respectively.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "f197bf0fc2f228483f6af3285000d54d8d97f9eb",
+    "externalIds": {
+      "ArXiv": "2305.16291",
+      "DBLP": "journals/tmlr/WangX0MXZFA24",
+      "DOI": "10.48550/arXiv.2305.16291",
+      "CorpusId": 258887849
+    },
+    "url": "https://www.semanticscholar.org/paper/f197bf0fc2f228483f6af3285000d54d8d97f9eb",
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "venue": "Trans. Mach. Learn. Res.",
+    "year": 2023,
+    "citationCount": 1622,
+    "influentialCitationCount": 128,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.16291",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.16291, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "96374437",
+        "name": "Guanzhi Wang"
+      },
+      {
+        "authorId": "2218866691",
+        "name": "Yuqi Xie"
+      },
+      {
+        "authorId": "2171112793",
+        "name": "Yunfan Jiang"
+      },
+      {
+        "authorId": "49686756",
+        "name": "A. Mandlekar"
+      },
+      {
+        "authorId": "2723309",
+        "name": "Chaowei Xiao"
+      },
+      {
+        "authorId": "2117748",
+        "name": "Yuke Zhu"
+      },
+      {
+        "authorId": "3275727",
+        "name": "Linxi (Jim) Fan"
+      },
+      {
+        "authorId": "47627049",
+        "name": "Anima Anandkumar"
+      }
+    ],
+    "abstract": "We introduce Voyager, the first LLM-powered embodied lifelong learning agent in Minecraft that continuously explores the world, acquires diverse skills, and makes novel discoveries without human intervention. Voyager consists of three key components: 1) an automatic curriculum that maximizes exploration, 2) an ever-growing skill library of executable code for storing and retrieving complex behaviors, and 3) a new iterative prompting mechanism that incorporates environment feedback, execution errors, and self-verification for program improvement. Voyager interacts with GPT-4 via blackbox queries, which bypasses the need for model parameter fine-tuning. The skills developed by Voyager are temporally extended, interpretable, and compositional, which compounds the agent's abilities rapidly and alleviates catastrophic forgetting. Empirically, Voyager shows strong in-context lifelong learning capability and exhibits exceptional proficiency in playing Minecraft. It obtains 3.3x more unique items, travels 2.3x longer distances, and unlocks key tech tree milestones up to 15.3x faster than prior SOTA. Voyager is able to utilize the learned skill library in a new Minecraft world to solve novel tasks from scratch, while other techniques struggle to generalize. We open-source our full codebase and prompts at https://voyager.minedojo.org/.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "c695c4e68561347564ea0daa50dc339dff73d8c5",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2305-17144",
+      "ArXiv": "2305.17144",
+      "DOI": "10.48550/arXiv.2305.17144",
+      "CorpusId": 258959262
+    },
+    "url": "https://www.semanticscholar.org/paper/c695c4e68561347564ea0daa50dc339dff73d8c5",
+    "title": "Ghost in the Minecraft: Generally Capable Agents for Open-World Environments via Large Language Models with Text-based Knowledge and Memory",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 328,
+    "influentialCitationCount": 26,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.17144",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.17144, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2578924",
+        "name": "Xizhou Zhu"
+      },
+      {
+        "authorId": "2798406",
+        "name": "Yuntao Chen"
+      },
+      {
+        "authorId": "50007795",
+        "name": "Hao Tian"
+      },
+      {
+        "authorId": "150959424",
+        "name": "Chenxin Tao"
+      },
+      {
+        "authorId": "145499378",
+        "name": "Weijie Su"
+      },
+      {
+        "authorId": null,
+        "name": "Chenyu Yang"
+      },
+      {
+        "authorId": "2115218570",
+        "name": "Gao Huang"
+      },
+      {
+        "authorId": "2218579598",
+        "name": "Bin Li"
+      },
+      {
+        "authorId": "152309485",
+        "name": "Lewei Lu"
+      },
+      {
+        "authorId": "2137313794",
+        "name": "Xiaogang Wang"
+      },
+      {
+        "authorId": "145858545",
+        "name": "Y. Qiao"
+      },
+      {
+        "authorId": "2175272847",
+        "name": "Zhaoxiang Zhang"
+      },
+      {
+        "authorId": "3304536",
+        "name": "Jifeng Dai"
+      }
+    ],
+    "abstract": "The captivating realm of Minecraft has attracted substantial research interest in recent years, serving as a rich platform for developing intelligent agents capable of functioning in open-world environments. However, the current research landscape predominantly focuses on specific objectives, such as the popular\"ObtainDiamond\"task, and has not yet shown effective generalization to a broader spectrum of tasks. Furthermore, the current leading success rate for the\"ObtainDiamond\"task stands at around 20%, highlighting the limitations of Reinforcement Learning (RL) based controllers used in existing methods. To tackle these challenges, we introduce Ghost in the Minecraft (GITM), a novel framework integrates Large Language Models (LLMs) with text-based knowledge and memory, aiming to create Generally Capable Agents (GCAs) in Minecraft. These agents, equipped with the logic and common sense capabilities of LLMs, can skillfully navigate complex, sparse-reward environments with text-based interactions. We develop a set of structured actions and leverage LLMs to generate action plans for the agents to execute. The resulting LLM-based agent markedly surpasses previous methods, achieving a remarkable improvement of +47.5% in success rate on the\"ObtainDiamond\"task, demonstrating superior robustness compared to traditional RL-based controllers. Notably, our agent is the first to procure all items in the Minecraft Overworld technology tree, demonstrating its extensive capabilities. GITM does not need any GPU for training, but a single CPU node with 32 CPU cores is enough. This research shows the potential of LLMs in developing capable agents for handling long-horizon, complex tasks and adapting to uncertainties in open-world environments. See the project website at https://github.com/OpenGVLab/GITM.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "7d8905a1fd288068f12c8347caeabefd36d0dd6c",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2305-15334",
+      "ArXiv": "2305.15334",
+      "DOI": "10.52202/079017-4020",
+      "CorpusId": 258865184
+    },
+    "url": "https://www.semanticscholar.org/paper/7d8905a1fd288068f12c8347caeabefd36d0dd6c",
+    "title": "Gorilla: Large Language Model Connected with Massive APIs",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 1182,
+    "influentialCitationCount": 112,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.15334, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "80887461",
+        "name": "Shishir G. Patil"
+      },
+      {
+        "authorId": "1993655237",
+        "name": "Tianjun Zhang"
+      },
+      {
+        "authorId": "2153692009",
+        "name": "Xin Wang"
+      },
+      {
+        "authorId": "49988044",
+        "name": "Joseph E. Gonzalez"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) have seen an impressive wave of advances recently, with models now excelling in a variety of tasks, such as mathematical reasoning and program synthesis. However, their potential to effectively use tools via API calls remains unfulfilled. This is a challenging task even for today's state-of-the-art LLMs such as GPT-4, largely due to their inability to generate accurate input arguments and their tendency to hallucinate the wrong usage of an API call. We release Gorilla, a finetuned LLaMA-based model that surpasses the performance of GPT-4 on writing API calls. When combined with a document retriever, Gorilla demonstrates a strong capability to adapt to test-time document changes, enabling flexible user updates or version changes. It also substantially mitigates the issue of hallucination, commonly encountered when prompting LLMs directly. To evaluate the model's ability, we introduce APIBench, a comprehensive dataset consisting of HuggingFace, TorchHub, and TensorHub APIs. The successful integration of the retrieval system with Gorilla demonstrates the potential for LLMs to use tools more accurately, keep up with frequently updated documentation, and consequently increase the reliability and applicability of their outputs. Gorilla's code, model, data, and demo are available at https://gorilla.cs.berkeley.edu",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2f3822eb380b5e753a6d579f31dfc3ec4c4a0820",
+    "externalIds": {
+      "ArXiv": "2305.10601",
+      "DBLP": "journals/corr/abs-2305-10601",
+      "DOI": "10.48550/arXiv.2305.10601",
+      "CorpusId": 258762525
+    },
+    "url": "https://www.semanticscholar.org/paper/2f3822eb380b5e753a6d579f31dfc3ec4c4a0820",
+    "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 3971,
+    "influentialCitationCount": 274,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.10601",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.10601, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2093302161",
+        "name": "Shunyu Yao"
+      },
+      {
+        "authorId": "150978762",
+        "name": "Dian Yu"
+      },
+      {
+        "authorId": "2144551262",
+        "name": "Jeffrey Zhao"
+      },
+      {
+        "authorId": "1697494",
+        "name": "Izhak Shafran"
+      },
+      {
+        "authorId": "1799860",
+        "name": "T. Griffiths"
+      },
+      {
+        "authorId": "145144022",
+        "name": "Yuan Cao"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      }
+    ],
+    "abstract": "Language models are increasingly being deployed for general problem solving across a wide range of tasks, but are still confined to token-level, left-to-right decision-making processes during inference. This means they can fall short in tasks that require exploration, strategic lookahead, or where initial decisions play a pivotal role. To surmount these challenges, we introduce a new framework for language model inference, Tree of Thoughts (ToT), which generalizes over the popular Chain of Thought approach to prompting language models, and enables exploration over coherent units of text (thoughts) that serve as intermediate steps toward problem solving. ToT allows LMs to perform deliberate decision making by considering multiple different reasoning paths and self-evaluating choices to decide the next course of action, as well as looking ahead or backtracking when necessary to make global choices. Our experiments show that ToT significantly enhances language models' problem-solving abilities on three novel tasks requiring non-trivial planning or search: Game of 24, Creative Writing, and Mini Crosswords. For instance, in Game of 24, while GPT-4 with chain-of-thought prompting only solved 4% of tasks, our method achieved a success rate of 74%. Code repo with all prompts: https://github.com/princeton-nlp/tree-of-thought-llm.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "5278a8eb2ba2429d4029745caf4e661080073c81",
+    "externalIds": {
+      "DBLP": "conf/uist/ParkOCMLB23",
+      "ArXiv": "2304.03442",
+      "DOI": "10.1145/3586183.3606763",
+      "CorpusId": 258040990
+    },
+    "url": "https://www.semanticscholar.org/paper/5278a8eb2ba2429d4029745caf4e661080073c81",
+    "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+    "venue": "ACM Symposium on User Interface Software and Technology",
+    "year": 2023,
+    "citationCount": 4043,
+    "influentialCitationCount": 262,
+    "openAccessPdf": {
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3586183.3606763",
+      "status": "BRONZE",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2304.03442, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "Book",
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2116649486",
+        "name": "J. Park"
+      },
+      {
+        "authorId": "2213764034",
+        "name": "Joseph O'Brien"
+      },
+      {
+        "authorId": "145941081",
+        "name": "Carrie J. Cai"
+      },
+      {
+        "authorId": "144844426",
+        "name": "M. Morris"
+      },
+      {
+        "authorId": "145419642",
+        "name": "Percy Liang"
+      },
+      {
+        "authorId": "145879842",
+        "name": "Michael S. Bernstein"
+      }
+    ],
+    "abstract": "Believable proxies of human behavior can empower interactive applications ranging from immersive environments to rehearsal spaces for interpersonal communication to prototyping tools. In this paper, we introduce generative agents: computational software agents that simulate believable human behavior. Generative agents wake up, cook breakfast, and head to work; artists paint, while authors write; they form opinions, notice each other, and initiate conversations; they remember and reflect on days past as they plan the next day. To enable generative agents, we describe an architecture that extends a large language model to store a complete record of the agent’s experiences using natural language, synthesize those memories over time into higher-level reflections, and retrieve them dynamically to plan behavior. We instantiate generative agents to populate an interactive sandbox environment inspired by The Sims, where end users can interact with a small town of twenty-five agents using natural language. In an evaluation, these generative agents produce believable individual and emergent social behaviors. For example, starting with only a single user-specified notion that one agent wants to throw a Valentine’s Day party, the agents autonomously spread invitations to the party over the next two days, make new acquaintances, ask each other out on dates to the party, and coordinate to show up for the party together at the right time. We demonstrate through ablation that the components of our agent architecture—observation, planning, and reflection—each contribute critically to the believability of agent behavior. By fusing large language models with computational interactive agents, this work introduces architectural and interaction patterns for enabling believable simulations of human behavior.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "3aaf6a2cbad5850ad81ab5c163599cb3d523436f",
+    "externalIds": {
+      "ArXiv": "2303.17651",
+      "DBLP": "journals/corr/abs-2303-17651",
+      "DOI": "10.48550/arXiv.2303.17651",
+      "CorpusId": 257900871
+    },
+    "url": "https://www.semanticscholar.org/paper/3aaf6a2cbad5850ad81ab5c163599cb3d523436f",
+    "title": "Self-Refine: Iterative Refinement with Self-Feedback",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 3421,
+    "influentialCitationCount": 246,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2303.17651",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2303.17651, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "21626987",
+        "name": "Aman Madaan"
+      },
+      {
+        "authorId": "1721168",
+        "name": "Niket Tandon"
+      },
+      {
+        "authorId": "1491232062",
+        "name": "Prakhar Gupta"
+      },
+      {
+        "authorId": "1474550731",
+        "name": "Skyler Hallinan"
+      },
+      {
+        "authorId": "49715441",
+        "name": "Luyu Gao"
+      },
+      {
+        "authorId": "35823986",
+        "name": "Sarah Wiegreffe"
+      },
+      {
+        "authorId": "47051926",
+        "name": "Uri Alon"
+      },
+      {
+        "authorId": "46217681",
+        "name": "Nouha Dziri"
+      },
+      {
+        "authorId": "9358910",
+        "name": "Shrimai Prabhumoye"
+      },
+      {
+        "authorId": "46286308",
+        "name": "Yiming Yang"
+      },
+      {
+        "authorId": "2129663",
+        "name": "S. Welleck"
+      },
+      {
+        "authorId": "3165738",
+        "name": "Bodhisattwa Prasad Majumder"
+      },
+      {
+        "authorId": "2152953535",
+        "name": "Shashank Gupta"
+      },
+      {
+        "authorId": "2112229",
+        "name": "A. Yazdanbakhsh"
+      },
+      {
+        "authorId": "48323507",
+        "name": "Peter Clark"
+      }
+    ],
+    "abstract": "Like humans, large language models (LLMs) do not always generate the best output on their first try. Motivated by how humans refine their written text, we introduce Self-Refine, an approach for improving initial outputs from LLMs through iterative feedback and refinement. The main idea is to generate an initial output using an LLMs; then, the same LLMs provides feedback for its output and uses it to refine itself, iteratively. Self-Refine does not require any supervised training data, additional training, or reinforcement learning, and instead uses a single LLM as the generator, refiner, and feedback provider. We evaluate Self-Refine across 7 diverse tasks, ranging from dialog response generation to mathematical reasoning, using state-of-the-art (GPT-3.5, ChatGPT, and GPT-4) LLMs. Across all evaluated tasks, outputs generated with Self-Refine are preferred by humans and automatic metrics over those generated with the same LLM using conventional one-step generation, improving by ~20% absolute on average in task performance. Our work demonstrates that even state-of-the-art LLMs like GPT-4 can be further improved at test time using our simple, standalone approach.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "9a75e23639bfcc3a51da57a3b682a984d1d8ac0b",
+    "externalIds": {
+      "ArXiv": "2303.17491",
+      "DBLP": "conf/nips/KimBM23",
+      "DOI": "10.48550/arXiv.2303.17491",
+      "CorpusId": 257834038
+    },
+    "url": "https://www.semanticscholar.org/paper/9a75e23639bfcc3a51da57a3b682a984d1d8ac0b",
+    "title": "Language Models can Solve Computer Tasks",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 499,
+    "influentialCitationCount": 32,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2303.17491",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2303.17491, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2176466425",
+        "name": "Geunwoo Kim"
+      },
+      {
+        "authorId": "144902513",
+        "name": "P. Baldi"
+      },
+      {
+        "authorId": "143953836",
+        "name": "S. McAleer"
+      }
+    ],
+    "abstract": "Agents capable of carrying out general tasks on a computer can improve efficiency and productivity by automating repetitive tasks and assisting in complex problem-solving. Ideally, such agents should be able to solve new computer tasks presented to them through natural language commands. However, previous approaches to this problem require large amounts of expert demonstrations and task-specific reward functions, both of which are impractical for new tasks. In this work, we show that a pre-trained large language model (LLM) agent can execute computer tasks guided by natural language using a simple prompting scheme where the agent Recursively Criticizes and Improves its output (RCI). The RCI approach significantly outperforms existing LLM methods for automating computer tasks and surpasses supervised learning (SL) and reinforcement learning (RL) approaches on the MiniWoB++ benchmark. We compare multiple LLMs and find that RCI with the InstructGPT-3+RLHF LLM is state-of-the-art on MiniWoB++, using only a handful of demonstrations per task rather than tens of thousands, and without a task-specific reward function. Furthermore, we demonstrate RCI prompting's effectiveness in enhancing LLMs' reasoning abilities on a suite of natural language reasoning tasks, outperforming chain of thought (CoT) prompting with external feedback. We find that RCI combined with CoT performs better than either separately. Our code can be found here: https://github.com/posgnu/rci-agent.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "0671fd553dd670a4e820553a974bc48040ba0819",
+    "externalIds": {
+      "DBLP": "conf/nips/ShinnCGNY23",
+      "ArXiv": "2303.11366",
+      "DOI": "10.52202/075280-0377",
+      "CorpusId": 258833055
+    },
+    "url": "https://www.semanticscholar.org/paper/0671fd553dd670a4e820553a974bc48040ba0819",
+    "title": "Reflexion: language agents with verbal reinforcement learning",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 3441,
+    "influentialCitationCount": 280,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2303.11366, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2212367248",
+        "name": "Noah Shinn"
+      },
+      {
+        "authorId": "2197063831",
+        "name": "Federico Cassano"
+      },
+      {
+        "authorId": "2212367414",
+        "name": "Beck Labash"
+      },
+      {
+        "authorId": "2162047785",
+        "name": "A. Gopinath"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      },
+      {
+        "authorId": "47188964",
+        "name": "Shunyu Yao"
+      }
+    ],
+    "abstract": "Large language models (LLMs) have been increasingly used to interact with external environments (e.g., games, compilers, APIs) as goal-driven agents. However, it remains challenging for these language agents to quickly and efficiently learn from trial-and-error as traditional reinforcement learning methods require extensive training samples and expensive model fine-tuning. We propose Reflexion, a novel framework to reinforce language agents not by updating weights, but instead through linguistic feedback. Concretely, Reflexion agents verbally reflect on task feedback signals, then maintain their own reflective text in an episodic memory buffer to induce better decision-making in subsequent trials. Reflexion is flexible enough to incorporate various types (scalar values or free-form language) and sources (external or internally simulated) of feedback signals, and obtains significant improvements over a baseline agent across diverse tasks (sequential decision-making, coding, language reasoning). For example, Reflexion achieves a 91% pass@1 accuracy on the HumanEval coding benchmark, surpassing the previous state-of-the-art GPT-4 that achieves 80%. We also conduct ablation and analysis studies using different feedback signals, feedback incorporation methods, and agent types, and provide insights into how they affect performance.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "53d128ea815bcc0526856eb5a9c42cc977cb36a7",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2302-04761",
+      "ArXiv": "2302.04761",
+      "DOI": "10.48550/arXiv.2302.04761",
+      "CorpusId": 256697342
+    },
+    "url": "https://www.semanticscholar.org/paper/53d128ea815bcc0526856eb5a9c42cc977cb36a7",
+    "title": "Toolformer: Language Models Can Teach Themselves to Use Tools",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 3816,
+    "influentialCitationCount": 155,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2302.04761",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2302.04761, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "32246932",
+        "name": "Timo Schick"
+      },
+      {
+        "authorId": "2173509991",
+        "name": "Jane Dwivedi-Yu"
+      },
+      {
+        "authorId": "145188261",
+        "name": "Roberto Dessì"
+      },
+      {
+        "authorId": "48647153",
+        "name": "R. Raileanu"
+      },
+      {
+        "authorId": "3376175",
+        "name": "M. Lomeli"
+      },
+      {
+        "authorId": "1982950",
+        "name": "Luke Zettlemoyer"
+      },
+      {
+        "authorId": "2313189469",
+        "name": "Nicola Cancedda"
+      },
+      {
+        "authorId": "90745780",
+        "name": "Thomas Scialom"
+      }
+    ],
+    "abstract": "Language models (LMs) exhibit remarkable abilities to solve new tasks from just a few examples or textual instructions, especially at scale. They also, paradoxically, struggle with basic functionality, such as arithmetic or factual lookup, where much simpler and smaller models excel. In this paper, we show that LMs can teach themselves to use external tools via simple APIs and achieve the best of both worlds. We introduce Toolformer, a model trained to decide which APIs to call, when to call them, what arguments to pass, and how to best incorporate the results into future token prediction. This is done in a self-supervised way, requiring nothing more than a handful of demonstrations for each API. We incorporate a range of tools, including a calculator, a Q\\&A system, two different search engines, a translation system, and a calendar. Toolformer achieves substantially improved zero-shot performance across a variety of downstream tasks, often competitive with much larger models, without sacrificing its core language modeling abilities.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "4610ffb1b016acaa82a2065ffd1a3adbae1ce722",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2211-01910",
+      "ArXiv": "2211.01910",
+      "DOI": "10.48550/arXiv.2211.01910",
+      "CorpusId": 253265328
+    },
+    "url": "https://www.semanticscholar.org/paper/4610ffb1b016acaa82a2065ffd1a3adbae1ce722",
+    "title": "Large Language Models Are Human-Level Prompt Engineers",
+    "venue": "International Conference on Learning Representations",
+    "year": 2022,
+    "citationCount": 1353,
+    "influentialCitationCount": 119,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2211.01910",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2211.01910, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2189664830",
+        "name": "Yongchao Zhou"
+      },
+      {
+        "authorId": "2189543935",
+        "name": "Andrei Ioan Muresanu"
+      },
+      {
+        "authorId": "2157194659",
+        "name": "Ziwen Han"
+      },
+      {
+        "authorId": "73775191",
+        "name": "Keiran Paster"
+      },
+      {
+        "authorId": "32305445",
+        "name": "Silviu Pitis"
+      },
+      {
+        "authorId": "41228532",
+        "name": "Harris Chan"
+      },
+      {
+        "authorId": "2503659",
+        "name": "Jimmy Ba"
+      }
+    ],
+    "abstract": "By conditioning on natural language instructions, large language models (LLMs) have displayed impressive capabilities as general-purpose computers. However, task performance depends significantly on the quality of the prompt used to steer the model, and most effective prompts have been handcrafted by humans. Inspired by classical program synthesis and the human approach to prompt engineering, we propose Automatic Prompt Engineer (APE) for automatic instruction generation and selection. In our method, we treat the instruction as the\"program,\"optimized by searching over a pool of instruction candidates proposed by an LLM in order to maximize a chosen score function. To evaluate the quality of the selected instruction, we evaluate the zero-shot performance of another LLM following the selected instruction. Experiments on 24 NLP tasks show that our automatically generated instructions outperform the prior LLM baseline by a large margin and achieve better or comparable performance to the instructions generated by human annotators on 19/24 tasks. We conduct extensive qualitative and quantitative analyses to explore the performance of APE. We show that APE-engineered prompts can be applied to steer models toward truthfulness and/or informativeness, as well as to improve few-shot learning performance by simply prepending them to standard in-context learning prompts. Please check out our webpage at https://sites.google.com/view/automatic-prompt-engineer.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "91deaf9d324c8feafc189da0da03e60a60287bca",
+    "externalIds": {
+      "ArXiv": "2209.07753",
+      "DBLP": "conf/icra/LiangHXXHIFZ23",
+      "DOI": "10.1109/ICRA48891.2023.10160591",
+      "CorpusId": 252355542
+    },
+    "url": "https://www.semanticscholar.org/paper/91deaf9d324c8feafc189da0da03e60a60287bca",
+    "title": "Code as Policies: Language Model Programs for Embodied Control",
+    "venue": "IEEE International Conference on Robotics and Automation",
+    "year": 2022,
+    "citationCount": 1507,
+    "influentialCitationCount": 107,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2209.07753",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2209.07753, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "6454541",
+        "name": "Jacky Liang"
+      },
+      {
+        "authorId": "2158105356",
+        "name": "Wenlong Huang"
+      },
+      {
+        "authorId": "144956443",
+        "name": "F. Xia"
+      },
+      {
+        "authorId": "2153917744",
+        "name": "Peng Xu"
+      },
+      {
+        "authorId": "1944801",
+        "name": "Karol Hausman"
+      },
+      {
+        "authorId": "2704814",
+        "name": "Brian Ichter"
+      },
+      {
+        "authorId": "47686265",
+        "name": "Peter R. Florence"
+      },
+      {
+        "authorId": "38591293",
+        "name": "Andy Zeng"
+      }
+    ],
+    "abstract": "Large language models (LLMs) trained on code-completion have been shown to be capable of synthesizing simple Python programs from docstrings [1]. We find that these code-writing LLMs can be re-purposed to write robot policy code, given natural language commands. Specifically, policy code can express functions or feedback loops that process perception outputs (e.g., from object detectors [2], [3]) and parameterize control primitive APIs. When provided as input several example language commands (formatted as comments) followed by corresponding policy code (via few-shot prompting), LLMs can take in new commands and autonomously re-compose API calls to generate new policy code respectively. By chaining classic logic structures and referencing third-party libraries (e.g., NumPy, Shapely) to perform arithmetic, LLMs used in this way can write robot policies that (i) exhibit spatial-geometric reasoning, (ii) generalize to new instructions, and (iii) prescribe precise values (e.g., velocities) to ambiguous descriptions (‘faster’) depending on context (i.e., behavioral commonsense). This paper presents Code as Policies: a robot-centric formulation of language model generated programs (LMPs) that can represent reactive policies (e.g., impedance controllers), as well as waypoint-based policies (vision-based pick and place, trajectory-based control), demonstrated across multiple real robot platforms. Central to our approach is prompting hierarchical code-gen (recursively defining undefined functions), which can write more complex code and also improves state-of-the-art to solve 39.8% of problems on the HumanEval [1] benchmark. Code and videos are available at https://code-as-policies.github.io",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "0286b2736a114198b25fb5553c671c33aed5d477",
+    "externalIds": {
+      "ArXiv": "2204.05862",
+      "DBLP": "journals/corr/abs-2204-05862",
+      "DOI": "10.48550/arXiv.2204.05862",
+      "CorpusId": 248118878
+    },
+    "url": "https://www.semanticscholar.org/paper/0286b2736a114198b25fb5553c671c33aed5d477",
+    "title": "Training a Helpful and Harmless Assistant with Reinforcement Learning from Human Feedback",
+    "venue": "arXiv.org",
+    "year": 2022,
+    "citationCount": 3962,
+    "influentialCitationCount": 485,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2204.05862",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2204.05862, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "1486307451",
+        "name": "Yuntao Bai"
+      },
+      {
+        "authorId": "2149890773",
+        "name": "Andy Jones"
+      },
+      {
+        "authorId": "1978097132",
+        "name": "Kamal Ndousse"
+      },
+      {
+        "authorId": "119609682",
+        "name": "Amanda Askell"
+      },
+      {
+        "authorId": "2111073313",
+        "name": "Anna Chen"
+      },
+      {
+        "authorId": "2142833890",
+        "name": "Nova Dassarma"
+      },
+      {
+        "authorId": "1943097969",
+        "name": "Dawn Drain"
+      },
+      {
+        "authorId": "30176974",
+        "name": "Stanislav Fort"
+      },
+      {
+        "authorId": "2081806483",
+        "name": "Deep Ganguli"
+      },
+      {
+        "authorId": "103143311",
+        "name": "T. Henighan"
+      },
+      {
+        "authorId": "2117706920",
+        "name": "Nicholas Joseph"
+      },
+      {
+        "authorId": "148070327",
+        "name": "Saurav Kadavath"
+      },
+      {
+        "authorId": "1583434563",
+        "name": "John Kernion"
+      },
+      {
+        "authorId": "2154608209",
+        "name": "Tom Conerly"
+      },
+      {
+        "authorId": "1403602266",
+        "name": "S. El-Showk"
+      },
+      {
+        "authorId": "2866708",
+        "name": "Nelson Elhage"
+      },
+      {
+        "authorId": "1573482302",
+        "name": "Zac Hatfield-Dodds"
+      },
+      {
+        "authorId": "39182747",
+        "name": "Danny Hernandez"
+      },
+      {
+        "authorId": "2162194147",
+        "name": "Tristan Hume"
+      },
+      {
+        "authorId": "2154610174",
+        "name": "Scott Johnston"
+      },
+      {
+        "authorId": "49604482",
+        "name": "Shauna Kravec"
+      },
+      {
+        "authorId": "2154608229",
+        "name": "Liane Lovitt"
+      },
+      {
+        "authorId": "2051128902",
+        "name": "Neel Nanda"
+      },
+      {
+        "authorId": "2061321863",
+        "name": "Catherine Olsson"
+      },
+      {
+        "authorId": "2698777",
+        "name": "Dario Amodei"
+      },
+      {
+        "authorId": "31035595",
+        "name": "Tom B. Brown"
+      },
+      {
+        "authorId": "2115193883",
+        "name": "Jack Clark"
+      },
+      {
+        "authorId": "52238703",
+        "name": "Sam McCandlish"
+      },
+      {
+        "authorId": "2287268442",
+        "name": "Chris Olah"
+      },
+      {
+        "authorId": "2056658938",
+        "name": "Benjamin Mann"
+      },
+      {
+        "authorId": "2053807409",
+        "name": "Jared Kaplan"
+      }
+    ],
+    "abstract": "We apply preference modeling and reinforcement learning from human feedback (RLHF) to ﬁnetune language models to act as helpful and harmless assistants. We ﬁnd this alignment training improves performance on almost all NLP evaluations, and is fully compatible with training for specialized skills such as python coding and summarization. We explore an iterated online mode of training, where preference models and RL policies are updated on a weekly cadence with fresh human feedback data, efﬁciently improving our datasets and models. Finally, we investigate the robustness of RLHF training, and identify a roughly linear relation between the RL reward and the square root of the KL divergence between the policy and its initialization. Alongside our main results, we perform peripheral analyses on calibration, competing objectives, and the use of OOD detection, compare our models with human writers, and provide samples from our models using prompts appearing in recent related work. Figure These plots show that PM accuracy decreases as we focus exclusively on comparisons between pairs of samples with high score. We have normalized all preference models to have the same mean score on a held-out dataset so that they’re directly comparable, and then plotted accuracy for the comparisons where both samples have scores above a speciﬁc threshold.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "0e41fd22d483047bd8fdb1757d90c7702493567e",
+    "externalIds": {
+      "ArXiv": "2203.07540",
+      "ACL": "2022.emnlp-main.775",
+      "DBLP": "conf/emnlp/WangJCA22",
+      "DOI": "10.48550/arXiv.2203.07540",
+      "CorpusId": 247451124
+    },
+    "url": "https://www.semanticscholar.org/paper/0e41fd22d483047bd8fdb1757d90c7702493567e",
+    "title": "ScienceWorld: Is your Agent Smarter than a 5th Grader?",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2022,
+    "citationCount": 218,
+    "influentialCitationCount": 46,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2203.07540",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2203.07540, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2108693930",
+        "name": "Ruoyao Wang"
+      },
+      {
+        "authorId": "144949918",
+        "name": "Peter Alexander Jansen"
+      },
+      {
+        "authorId": "40638665",
+        "name": "Marc-Alexandre Côté"
+      },
+      {
+        "authorId": "19179135",
+        "name": "Prithviraj Ammanabrolu"
+      }
+    ],
+    "abstract": "We present ScienceWorld, a benchmark to test agents’ scientific reasoning abilities in a new interactive text environment at the level of a standard elementary school science curriculum. Despite the transformer-based progress seen in question-answering and scientific text processing, we find that current models cannot reason about or explain learned science concepts in novel contexts. For instance, models can easily answer what the conductivity of a known material is but struggle when asked how they would conduct an experiment in a grounded environment to find the conductivity of an unknown material. This begs the question of whether current models are simply retrieving answers by way of seeing a large number of similar examples or if they have learned to reason about concepts in a reusable manner. We hypothesize that agents need to be grounded in interactive environments to achieve such reasoning capabilities. Our experiments provide empirical evidence supporting this hypothesis – showing that a 1.5 million parameter agent trained interactively for 100k steps outperforms a 11 billion parameter model statically trained for scientific question-answering and reasoning from millions of expert demonstrations.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1b6e810ce0afd0dd093f789d2b2742d047e316d5",
+    "externalIds": {
+      "DBLP": "conf/nips/Wei0SBIXCLZ22",
+      "ArXiv": "2201.11903",
+      "DOI": "10.52202/068431-1800",
+      "CorpusId": 246411621
+    },
+    "url": "https://www.semanticscholar.org/paper/1b6e810ce0afd0dd093f789d2b2742d047e316d5",
+    "title": "Chain of Thought Prompting Elicits Reasoning in Large Language Models",
+    "venue": "Neural Information Processing Systems",
+    "year": 2022,
+    "citationCount": 18149,
+    "influentialCitationCount": 1272,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2201.11903, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "119640649",
+        "name": "Jason Wei"
+      },
+      {
+        "authorId": "2275277634",
+        "name": "Xuezhi Wang"
+      },
+      {
+        "authorId": "1714772",
+        "name": "Dale Schuurmans"
+      },
+      {
+        "authorId": "40377863",
+        "name": "Maarten Bosma"
+      },
+      {
+        "authorId": "2226805",
+        "name": "Ed H. Chi"
+      },
+      {
+        "authorId": "144956443",
+        "name": "F. Xia"
+      },
+      {
+        "authorId": "1998340269",
+        "name": "Quoc Le"
+      },
+      {
+        "authorId": "65855107",
+        "name": "Denny Zhou"
+      }
+    ],
+    "abstract": "We explore how generating a chain of thought -- a series of intermediate reasoning steps -- significantly improves the ability of large language models to perform complex reasoning. In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via a simple method called chain of thought prompting, where a few chain of thought demonstrations are provided as exemplars in prompting. Experiments on three large language models show that chain of thought prompting improves performance on a range of arithmetic, commonsense, and symbolic reasoning tasks. The empirical gains can be striking. For instance, prompting a 540B-parameter language model with just eight chain of thought exemplars achieves state of the art accuracy on the GSM8K benchmark of math word problems, surpassing even finetuned GPT-3 with a verifier.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "398a0625e8707a0b41ac58eaec51e8feb87dd7cb",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2010-03768",
+      "MAG": "3092516542",
+      "ArXiv": "2010.03768",
+      "CorpusId": 222208810
+    },
+    "url": "https://www.semanticscholar.org/paper/398a0625e8707a0b41ac58eaec51e8feb87dd7cb",
+    "title": "ALFWorld: Aligning Text and Embodied Environments for Interactive Learning",
+    "venue": "International Conference on Learning Representations",
+    "year": 2020,
+    "citationCount": 853,
+    "influentialCitationCount": 180,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2010.03768, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "33516562",
+        "name": "Mohit Shridhar"
+      },
+      {
+        "authorId": "2854297",
+        "name": "Xingdi Yuan"
+      },
+      {
+        "authorId": "40638665",
+        "name": "Marc-Alexandre Côté"
+      },
+      {
+        "authorId": "3312309",
+        "name": "Yonatan Bisk"
+      },
+      {
+        "authorId": "3382568",
+        "name": "Adam Trischler"
+      },
+      {
+        "authorId": "3308897",
+        "name": "Matthew J. Hausknecht"
+      }
+    ],
+    "abstract": "Given a simple request (e.g., Put a washed apple in the kitchen fridge), humans can reason in purely abstract terms by imagining action sequences and scoring their likelihood of success, prototypicality, and efficiency, all without moving a muscle. Once we see the kitchen in question, we can update our abstract plans to fit the scene. Embodied agents require the same abilities, but existing work does not yet provide the infrastructure necessary for both reasoning abstractly and executing concretely. We address this limitation by introducing ALFWorld, a simulator that enables agents to learn abstract, text-based policies in TextWorld (Cote et al., 2018) and then execute goals from the ALFRED benchmark (Shridhar et al., 2020) in a rich visual environment. ALFWorld enables the creation of a new BUTLER agent whose abstract knowledge, learned in TextWorld, corresponds directly to concrete, visually grounded actions. In turn, as we demonstrate empirically, this fosters better agent generalization than training only in the visually grounded environment. BUTLER's simple, modular design factors the problem to allow researchers to focus on models for improving every piece of the pipeline (language understanding, planning, navigation, visual scene understanding, and so forth).",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "f0079e5b0ad1db63c0b22723883c2dd3a13a66f7",
+    "externalIds": {
+      "MAG": "2525439566",
+      "DOI": "10.1007/3-540-45354-7_2",
+      "CorpusId": 62933988
+    },
+    "url": "https://www.semanticscholar.org/paper/f0079e5b0ad1db63c0b22723883c2dd3a13a66f7",
+    "title": "The application scenario",
+    "venue": "",
+    "year": 2009,
+    "citationCount": 6,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/3-540-45354-7_2?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/3-540-45354-7_2, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "3efcb97c1de1c87832a7a1d99e91801992a938ec",
+    "externalIds": {
+      "MAG": "1532854728",
+      "DBLP": "conf/icml/Langley00",
+      "CorpusId": 11738364
+    },
+    "url": "https://www.semanticscholar.org/paper/3efcb97c1de1c87832a7a1d99e91801992a938ec",
+    "title": "Crafting Papers on Machine Learning",
+    "venue": "International Conference on Machine Learning",
+    "year": 2000,
+    "citationCount": 941,
+    "influentialCitationCount": 5,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "1713919",
+        "name": "P. Langley"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "985298bd0b6f4c84ab34bb15cfed0b092f43b83a",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2412-16720",
+      "DOI": "10.48550/arXiv.2412.16720",
+      "CorpusId": 272648256
+    },
+    "url": "https://www.semanticscholar.org/paper/985298bd0b6f4c84ab34bb15cfed0b092f43b83a",
+    "title": "OpenAI o1 System Card",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 1757,
+    "influentialCitationCount": 133,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2412.16720?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2412.16720, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "1398503968",
+        "name": "Ahmed El-Kishky"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "99832586d55f540f603637e458a292406a0ed75d",
+    "externalIds": {
+      "CorpusId": 252762395
+    },
+    "url": "https://www.semanticscholar.org/paper/99832586d55f540f603637e458a292406a0ed75d",
+    "title": "LANGUAGE MODELS",
+    "venue": "",
+    "year": 2023,
+    "citationCount": 7349,
+    "influentialCitationCount": 846,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2093302161",
+        "name": "Shunyu Yao"
+      },
+      {
+        "authorId": "2144551262",
+        "name": "Jeffrey Zhao"
+      },
+      {
+        "authorId": "150978762",
+        "name": "Dian Yu"
+      },
+      {
+        "authorId": "2140321952",
+        "name": "Nan Du"
+      },
+      {
+        "authorId": "1697494",
+        "name": "Izhak Shafran"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      },
+      {
+        "authorId": "145144022",
+        "name": "Yuan Cao"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "expected_outcome",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "operating",
+    "venue": "Memgpt: Towards llms as",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Reinforcement learning: An introduction. by richard’s sutton",
+    "venue": "SIAM Rev",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Prog-prompt: Generating situated robot task plans using large language models",
+    "venue": "arXiv preprint",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Deepseek-r1: In-centivizing reasoning capability in llms via reinforcement learning",
+    "venue": "arXiv preprint",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  }
+]

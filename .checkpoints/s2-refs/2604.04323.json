@@ -1,0 +1,1386 @@
+[
+  {
+    "paperId": "f055a7c2b303b4331106b4dd9dc0b25facc7c85b",
+    "externalIds": {
+      "ArXiv": "2603.22455",
+      "CorpusId": 286770530
+    },
+    "url": "https://www.semanticscholar.org/paper/f055a7c2b303b4331106b4dd9dc0b25facc7c85b",
+    "title": "SkillRouter: Skill Routing for LLM Agents at Scale",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 12,
+    "influentialCitationCount": 2,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.22455, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2158969657",
+        "name": "Yanzhao Zheng"
+      },
+      {
+        "authorId": "2298209330",
+        "name": "Zhentao Zhang"
+      },
+      {
+        "authorId": "2112663161",
+        "name": "Chao Ma"
+      },
+      {
+        "authorId": "2174535931",
+        "name": "Yuanqiang Yu"
+      },
+      {
+        "authorId": "2427430245",
+        "name": "Jihuai Zhu"
+      },
+      {
+        "authorId": "2290907197",
+        "name": "Yongliang Wu"
+      },
+      {
+        "authorId": "2374431783",
+        "name": "Tianze Xu"
+      },
+      {
+        "authorId": "2294748312",
+        "name": "Baohua Dong"
+      },
+      {
+        "authorId": "2365433512",
+        "name": "Hangcheng Zhu"
+      },
+      {
+        "authorId": "2294815905",
+        "name": "Ruohui Huang"
+      },
+      {
+        "authorId": "2354348299",
+        "name": "Gang Yu"
+      }
+    ],
+    "abstract": "Reusable skills let LLM agents package task-specific procedures, tool affordances, and execution guidance into modular building blocks. As skill ecosystems grow to tens of thousands of entries, exposing every skill at inference time becomes infeasible. This creates a skill-routing problem: given a user task, the system must identify relevant skills before downstream planning or execution. Existing agent stacks often rely on progressive disclosure, exposing only skill names and descriptions while hiding the full implementation body. We examine this design choice on a SkillsBench-derived benchmark with approximately 80K candidate skills, targeting the practically important setting of large skill registries with heavy overlap. Across representative sparse, dense, and reranking baselines on this setting, hiding the skill body causes a 31--44 percentage point drop in routing accuracy, showing that full skill text is a critical routing signal in this setting rather than a minor metadata refinement. Motivated by this finding, we present SkillRouter, a compact 1.2B full-text retrieve-and-rerank pipeline. SkillRouter achieves 74.0% Hit@1 on our benchmark -- the strongest average top-1 routing performance among the baselines we evaluate -- while using 13$\\times$ fewer parameters and running 5.8$\\times$ faster than the strongest base pipeline. The ranking gains further generalize to a supplementary benchmark independently constructed from three skill sources. In a complementary end-to-end study across four coding agents, routing gains transfer to improved task success, with larger gains for more capable agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "28f0b6f57e57337c7db267ae4ac52c12cbb5d376",
+    "externalIds": {
+      "ArXiv": "2602.01869",
+      "CorpusId": 285269532
+    },
+    "url": "https://www.semanticscholar.org/paper/28f0b6f57e57337c7db267ae4ac52c12cbb5d376",
+    "title": "Skill-Pro: Learning Reusable Skills from Experience via Non-Parametric PPO for LLM Agents",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 7,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.01869, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2152055663",
+        "name": "Qirui Mi"
+      },
+      {
+        "authorId": "2238083644",
+        "name": "Zhijian Ma"
+      },
+      {
+        "authorId": "145788064",
+        "name": "Mengyue Yang"
+      },
+      {
+        "authorId": "2320105104",
+        "name": "Haoxuan Li"
+      },
+      {
+        "authorId": "2257103809",
+        "name": "Yisen Wang"
+      },
+      {
+        "authorId": "2247479851",
+        "name": "Haifeng Zhang"
+      },
+      {
+        "authorId": "2152812755",
+        "name": "Jun Wang"
+      }
+    ],
+    "abstract": "LLM-driven agents demonstrate strong performance in sequential decision-making but often rely on on-the-fly reasoning, re-deriving solutions even in recurring scenarios. This insufficient experience reuse leads to computational redundancy and execution instability. To bridge this gap, we propose Skill-Pro, a framework that enables agents to autonomously learn reusable procedural skills from interaction experiences without parameter updates. By formalizing a Skill-MDP, Skill-Pro transforms passive episodic narratives into executable Skills defined by activation, execution, and termination conditions to ensure executability. To achieve reliable reusability without capability degradation, we introduce Non-Parametric PPO, which leverages semantic gradients for high-quality candidate generation and a PPO Gate for robust Skill verification. Through score-based maintenance, Skill-Pro sustains compact, high-quality procedural memory. Experimental results across in-domain, cross-task, and cross-agent scenarios demonstrate that Skill-Pro achieves superior reuse rates and significant performance gains with extreme memory compression. Visualized evolutionary trajectories and Skill distributions further reveal how Skill-Pro transparently accumulates, refines, and reuses procedural knowledge to facilitate long-term autonomy.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "7e1d54579d59d2bfcaae7be7ddf9c2441efd7089",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2602-02196",
+      "ArXiv": "2602.02196",
+      "DOI": "10.48550/arXiv.2602.02196",
+      "CorpusId": 285271376
+    },
+    "url": "https://www.semanticscholar.org/paper/7e1d54579d59d2bfcaae7be7ddf9c2441efd7089",
+    "title": "TIDE: Trajectory-based Diagnostic Evaluation of Test-Time Improvement in LLM Agents",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 5,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.02196, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2350982840",
+        "name": "Hang Yan"
+      },
+      {
+        "authorId": "2408464177",
+        "name": "Xinyu Che"
+      },
+      {
+        "authorId": "2330168859",
+        "name": "Fangzhi Xu"
+      },
+      {
+        "authorId": "2350520649",
+        "name": "Qiushi Sun"
+      },
+      {
+        "authorId": "2284245211",
+        "name": "Zichen Ding"
+      },
+      {
+        "authorId": "2273946511",
+        "name": "Kanzhi Cheng"
+      },
+      {
+        "authorId": "2367767769",
+        "name": "Jian Zhang"
+      },
+      {
+        "authorId": "2297071706",
+        "name": "Tao Qin"
+      },
+      {
+        "authorId": "2267153105",
+        "name": "Jun Liu"
+      },
+      {
+        "authorId": "144562160",
+        "name": "Qika Lin"
+      }
+    ],
+    "abstract": "Recent advances in autonomous LLM agents demonstrate their ability to improve performance through iterative interaction with the environment. We define this paradigm as Test-Time Improvement (TTI). However, the mechanisms under how and why TTI succeed or fail remain poorly understood, and existing evaluation metrics fail to capture their task optimization efficiency, behavior adaptation after erroneous actions, and the specific utility of working memory for task completion. To address these gaps, we propose Test-time Improvement Diagnostic Evaluation (TIDE), an agent-agnostic and environment-agnostic framework that decomposes TTI into three comprehensive and interconnected dimensions. The framework measures (1) the overall temporal dynamics of task completion and (2) identifies whether performance is primarily constrained by recursive looping behaviors or (3) by burdensome accumulated memory. Through extensive experiments across diverse agents and environments, TIDE highlights that improving agent performance requires more than scaling internal reasoning, calling for explicitly optimizing the interaction dynamics between the agent and the environment.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "95ff2f3598d9593edbf976fb18daf17277d657ba",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2602-02369",
+      "ArXiv": "2602.02369",
+      "DOI": "10.48550/arXiv.2602.02369",
+      "CorpusId": 285269492
+    },
+    "url": "https://www.semanticscholar.org/paper/95ff2f3598d9593edbf976fb18daf17277d657ba",
+    "title": "Live-Evo: Online Evolution of Agentic Memory from Continuous Feedback",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 4,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.02369, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2263657729",
+        "name": "Yao Zhang"
+      },
+      {
+        "authorId": "2115853457",
+        "name": "Yiran Wu"
+      },
+      {
+        "authorId": "2376527185",
+        "name": "Yi Yu"
+      },
+      {
+        "authorId": "2257162610",
+        "name": "Qingyun Wu"
+      },
+      {
+        "authorId": "2257095799",
+        "name": "Huazheng Wang"
+      }
+    ],
+    "abstract": "Large language model (LLM) agents are increasingly equipped with memory, which are stored experience and reusable guidance that can improve task-solving performance. Recent \\emph{self-evolving} systems update memory based on interaction outcomes, but most existing evolution pipelines are developed for static train/test splits and only approximate online learning by folding static benchmarks, making them brittle under true distribution shift and continuous feedback. We introduce \\textsc{Live-Evo}, an online self-evolving memory system that learns from a stream of incoming data over time. \\textsc{Live-Evo} decouples \\emph{what happened} from \\emph{how to use it} via an Experience Bank and a Meta-Guideline Bank, compiling task-adaptive guidelines from retrieved experiences for each task. To manage memory online, \\textsc{Live-Evo} maintains experience weights and updates them from feedback: experiences that consistently help are reinforced and retrieved more often, while misleading or stale experiences are down-weighted and gradually forgotten, analogous to reinforcement and decay in human memory. On the live \\textit{Prophet Arena} benchmark over a 10-week horizon, \\textsc{Live-Evo} improves Brier score by 20.8\\% and increases market returns by 12.9\\%, while also transferring to deep-research benchmarks with consistent gains over strong baselines. Our code is available at https://github.com/ag2ai/Live-Evo.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ef0fcf2f99c74918ceed21f529c1b99f782ac33e",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2601-11868",
+      "ArXiv": "2601.11868",
+      "DOI": "10.48550/arXiv.2601.11868",
+      "CorpusId": 284911857
+    },
+    "url": "https://www.semanticscholar.org/paper/ef0fcf2f99c74918ceed21f529c1b99f782ac33e",
+    "title": "Terminal-Bench: Benchmarking Agents on Hard, Realistic Tasks in Command Line Interfaces",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 106,
+    "influentialCitationCount": 20,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.11868, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2297185552",
+        "name": "Mike A. Merrill"
+      },
+      {
+        "authorId": "2312442525",
+        "name": "Alexander G Shaw"
+      },
+      {
+        "authorId": "2365115789",
+        "name": "Nicholas Carlini"
+      },
+      {
+        "authorId": "2394091201",
+        "name": "Boxuan Li"
+      },
+      {
+        "authorId": "2378757267",
+        "name": "Harsh Raj"
+      },
+      {
+        "authorId": "2366018523",
+        "name": "I. Bercovich"
+      },
+      {
+        "authorId": "2305925735",
+        "name": "Lin Shi"
+      },
+      {
+        "authorId": "2316095027",
+        "name": "J. Shin"
+      },
+      {
+        "authorId": "2389332288",
+        "name": "Thomas Walshe"
+      },
+      {
+        "authorId": "2336877105",
+        "name": "E. K. Buchanan"
+      },
+      {
+        "authorId": "2269118801",
+        "name": "Junhong Shen"
+      },
+      {
+        "authorId": "1753871691",
+        "name": "Guanghao Ye"
+      },
+      {
+        "authorId": "2372664232",
+        "name": "Hao Lin"
+      },
+      {
+        "authorId": "7245508",
+        "name": "Jason Poulos"
+      },
+      {
+        "authorId": "2288752126",
+        "name": "Maoyu Wang"
+      },
+      {
+        "authorId": "2174178585",
+        "name": "Marianna Nezhurina"
+      },
+      {
+        "authorId": "2191688",
+        "name": "J. Jitsev"
+      },
+      {
+        "authorId": "2387129493",
+        "name": "Di Lu"
+      },
+      {
+        "authorId": "1978772089",
+        "name": "O. M. Mastromichalakis"
+      },
+      {
+        "authorId": "2254325443",
+        "name": "Zhiwei Xu"
+      },
+      {
+        "authorId": "2326326988",
+        "name": "Zizhao Chen"
+      },
+      {
+        "authorId": "2283355537",
+        "name": "Yue Liu"
+      },
+      {
+        "authorId": "2119062534",
+        "name": "Robert Zhang"
+      },
+      {
+        "authorId": "2146073251",
+        "name": "L. Chen"
+      },
+      {
+        "authorId": "2052965045",
+        "name": "Anurag Kashyap"
+      },
+      {
+        "authorId": "2220631332",
+        "name": "Jan-Lucas Uslu"
+      },
+      {
+        "authorId": "2287821949",
+        "name": "Jeffrey Li"
+      },
+      {
+        "authorId": "2302781884",
+        "name": "Jianbo Wu"
+      },
+      {
+        "authorId": "2263988785",
+        "name": "Minghao Yan"
+      },
+      {
+        "authorId": "2342276462",
+        "name": "Song Bian"
+      },
+      {
+        "authorId": "2406484417",
+        "name": "Vedang Sharma"
+      },
+      {
+        "authorId": "2407816422",
+        "name": "Ke Sun"
+      },
+      {
+        "authorId": "2333363742",
+        "name": "Steven Dillmann"
+      },
+      {
+        "authorId": "2313160570",
+        "name": "Akshay Anand"
+      },
+      {
+        "authorId": "2312202594",
+        "name": "Andrew Lanpouthakoun"
+      },
+      {
+        "authorId": "2405816209",
+        "name": "Bardia Koopah"
+      },
+      {
+        "authorId": "2295937151",
+        "name": "Changran Hu"
+      },
+      {
+        "authorId": "2179104354",
+        "name": "E. Guha"
+      },
+      {
+        "authorId": "2325727722",
+        "name": "Gabriel H. S. Dreiman"
+      },
+      {
+        "authorId": "1870353",
+        "name": "Jiacheng Zhu"
+      },
+      {
+        "authorId": "2265975127",
+        "name": "Karl Krauth"
+      },
+      {
+        "authorId": "2287937401",
+        "name": "Li Zhong"
+      },
+      {
+        "authorId": "2037383772",
+        "name": "Niklas Muennighoff"
+      },
+      {
+        "authorId": "4798533",
+        "name": "Robert K. Amanfu"
+      },
+      {
+        "authorId": "2275830490",
+        "name": "Shangyin Tan"
+      },
+      {
+        "authorId": "2187585049",
+        "name": "Shreyas Pimpalgaonkar"
+      },
+      {
+        "authorId": "2281744612",
+        "name": "Tushar Aggarwal"
+      },
+      {
+        "authorId": "145724540",
+        "name": "Xia Lin"
+      },
+      {
+        "authorId": "2405714069",
+        "name": "Xin Lan"
+      },
+      {
+        "authorId": "150345512",
+        "name": "Xuandong Zhao"
+      },
+      {
+        "authorId": "2257367768",
+        "name": "Yiqing Liang"
+      },
+      {
+        "authorId": "2389170126",
+        "name": "Yuanli Wang"
+      },
+      {
+        "authorId": "2265487043",
+        "name": "Zilong Wang"
+      },
+      {
+        "authorId": "2300675202",
+        "name": "Changzhi Zhou"
+      },
+      {
+        "authorId": "2375902374",
+        "name": "David Heineman"
+      },
+      {
+        "authorId": "2385506498",
+        "name": "Hange Liu"
+      },
+      {
+        "authorId": "6365809",
+        "name": "H. Trivedi"
+      },
+      {
+        "authorId": "2346284658",
+        "name": "John Yang"
+      },
+      {
+        "authorId": "2311427666",
+        "name": "Junhong Lin"
+      },
+      {
+        "authorId": "2275599530",
+        "name": "Manish Shetty"
+      },
+      {
+        "authorId": "2110603190",
+        "name": "Michael Yang"
+      },
+      {
+        "authorId": "2328412793",
+        "name": "Nabil Omi"
+      },
+      {
+        "authorId": "2065899387",
+        "name": "Negin Raoof"
+      },
+      {
+        "authorId": "2257057803",
+        "name": "Shanda Li"
+      },
+      {
+        "authorId": "2080123731",
+        "name": "Terry Yue Zhuo"
+      },
+      {
+        "authorId": "2112406019",
+        "name": "Wu Lin"
+      },
+      {
+        "authorId": "2321354925",
+        "name": "Yiwei Dai"
+      },
+      {
+        "authorId": "2344891171",
+        "name": "Yuxin Wang"
+      },
+      {
+        "authorId": "2324574706",
+        "name": "Wenhao Chai"
+      },
+      {
+        "authorId": "2367092694",
+        "name": "Shang Zhou"
+      },
+      {
+        "authorId": "2230414556",
+        "name": "Dariush Wahdany"
+      },
+      {
+        "authorId": "2126990654",
+        "name": "Ziyu She"
+      },
+      {
+        "authorId": "2405824560",
+        "name": "Jiaming Hu"
+      },
+      {
+        "authorId": "2386598941",
+        "name": "Zhikang Dong"
+      },
+      {
+        "authorId": "2405833335",
+        "name": "Yuxuan Zhu"
+      },
+      {
+        "authorId": "2374300501",
+        "name": "Sasha Cui"
+      },
+      {
+        "authorId": "2033775348",
+        "name": "Ahson Saiyed"
+      },
+      {
+        "authorId": "68978244",
+        "name": "Arinbjörn Kolbeinsson"
+      },
+      {
+        "authorId": "2405828784",
+        "name": "Jesse Hu"
+      },
+      {
+        "authorId": "2131041347",
+        "name": "Christopher Rytting"
+      },
+      {
+        "authorId": "2365261533",
+        "name": "Ryan Marten"
+      },
+      {
+        "authorId": "2405755653",
+        "name": "Yixin Wang"
+      },
+      {
+        "authorId": "2257301126",
+        "name": "A. Dimakis"
+      },
+      {
+        "authorId": "2371549",
+        "name": "A. Konwinski"
+      },
+      {
+        "authorId": "2352216817",
+        "name": "Ludwig Schmidt"
+      }
+    ],
+    "abstract": "AI agents may soon become capable of autonomously completing valuable, long-horizon tasks in diverse domains. Current benchmarks either do not measure real-world tasks, or are not sufficiently difficult to meaningfully measure frontier models. To this end, we present Terminal-Bench 2.0: a carefully curated hard benchmark composed of 89 tasks in computer terminal environments inspired by problems from real workflows. Each task features a unique environment, human-written solution, and comprehensive tests for verification. We show that frontier models and agents score less than 65\\% on the benchmark and conduct an error analysis to identify areas for model and agent improvement. We publish the dataset and evaluation harness to assist developers and researchers in future work at https://www.tbench.ai/ .",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "522d70c946fbcd715937a9c53e63da1ed14c0d68",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2512-17102",
+      "ArXiv": "2512.17102",
+      "DOI": "10.48550/arXiv.2512.17102",
+      "CorpusId": 284058483
+    },
+    "url": "https://www.semanticscholar.org/paper/522d70c946fbcd715937a9c53e63da1ed14c0d68",
+    "title": "Reinforcement Learning for Self-Improving Agent with Skill Library",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 29,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2512.17102, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2110170885",
+        "name": "Jiong Wang"
+      },
+      {
+        "authorId": "2349076953",
+        "name": "Qiaojing Yan"
+      },
+      {
+        "authorId": "2385732217",
+        "name": "Yawei Wang"
+      },
+      {
+        "authorId": "2355580074",
+        "name": "Yijun Tian"
+      },
+      {
+        "authorId": "2350329332",
+        "name": "Soumya Smruti Mishra"
+      },
+      {
+        "authorId": "2385782256",
+        "name": "Zhichao Xu"
+      },
+      {
+        "authorId": "2265426281",
+        "name": "Megha Gandhi"
+      },
+      {
+        "authorId": "2248954229",
+        "name": "Panpan Xu"
+      },
+      {
+        "authorId": "2181832422",
+        "name": "Lin Lee Cheong"
+      }
+    ],
+    "abstract": "Large Language Model (LLM)-based agents have demonstrated remarkable capabilities in complex reasoning and multi-turn interactions but struggle to continuously improve and adapt when deployed in new environments. One promising approach is implementing skill libraries that allow agents to learn, validate, and apply new skills. However, current skill library approaches rely primarily on LLM prompting, making consistent skill library implementation challenging. To overcome these challenges, we propose a Reinforcement Learning (RL)-based approach to enhance agents'self-improvement capabilities with a skill library. Specifically, we introduce Skill Augmented GRPO for self-Evolution (SAGE), a novel RL framework that systematically incorporates skills into learning. The framework's key component, Sequential Rollout, iteratively deploys agents across a chain of similar tasks for each rollout. As agents navigate through the task chain, skills generated from previous tasks accumulate in the library and become available for subsequent tasks. Additionally, the framework enhances skill generation and utilization through a Skill-integrated Reward that complements the original outcome-based rewards. Experimental results on AppWorld demonstrate that SAGE, when applied to supervised-finetuned model with expert experience, achieves 8.9% higher Scenario Goal Completion while requiring 26% fewer interaction steps and generating 59% fewer tokens, substantially outperforming existing approaches in both accuracy and efficiency.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "75281eba6988c401eab67d0f404c06daf8eb53f6",
+    "externalIds": {
+      "DBLP": "journals/tmlr/LiuWCSYWLBLC26",
+      "ArXiv": "2511.04137",
+      "DOI": "10.48550/arXiv.2511.04137",
+      "CorpusId": 282812086
+    },
+    "url": "https://www.semanticscholar.org/paper/75281eba6988c401eab67d0f404c06daf8eb53f6",
+    "title": "Learning from Online Videos at Inference Time for Computer-Use Agents",
+    "venue": "Trans. Mach. Learn. Res.",
+    "year": 2025,
+    "citationCount": 2,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.04137, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2266811126",
+        "name": "Yujian Liu"
+      },
+      {
+        "authorId": "2336047375",
+        "name": "Ze Wang"
+      },
+      {
+        "authorId": "2366542462",
+        "name": "Hao Chen"
+      },
+      {
+        "authorId": "2335618942",
+        "name": "Ximeng Sun"
+      },
+      {
+        "authorId": "2339225241",
+        "name": "Xiaodong Yu"
+      },
+      {
+        "authorId": "2339249470",
+        "name": "Jialian Wu"
+      },
+      {
+        "authorId": "2335604069",
+        "name": "Jiang Liu"
+      },
+      {
+        "authorId": "2271751612",
+        "name": "E. Barsoum"
+      },
+      {
+        "authorId": "2334872571",
+        "name": "Zicheng Liu"
+      },
+      {
+        "authorId": "2191955409",
+        "name": "Shiyu Chang"
+      }
+    ],
+    "abstract": "Computer-use agents can operate computers and automate laborious tasks, but despite recent rapid progress, they still lag behind human users, especially when tasks require domain-specific procedural knowledge about particular applications, platforms, and multi-step workflows. Humans can bridge this gap by watching video tutorials: we search, skim, and selectively imitate short segments that match our current subgoal. In this paper, we study how to enable computer-use agents to learn from online videos at inference time effectively. We propose a framework that retrieves and filters tutorial videos, converts them into structured demonstration trajectories, and dynamically selects trajectories as in-context guidance during execution. Particularly, using a VLM, we infer UI actions, segment videos into short subsequences of actions, and assign each subsequence a textual objective. At inference time, a two-stage selection mechanism dynamically chooses a single trajectory to add in context at each step, focusing the agent on the most helpful local guidance for its next decision. Experiments on two widely used benchmarks show that our framework consistently outperforms strong base agents and variants that use only textual tutorials or transcripts. Analyses highlight the importance of trajectory segmentation and selection, action filtering, and visual information, suggesting that abundant online videos can be systematically distilled into actionable guidance that improves computer-use agents at inference time. Our code is available at https://github.com/UCSB-NLP-Chang/video_demo.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "36baccf77336559bdc37853566f1e4121c66f9e8",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2508-16153",
+      "ArXiv": "2508.16153",
+      "DOI": "10.48550/arXiv.2508.16153",
+      "CorpusId": 280708996
+    },
+    "url": "https://www.semanticscholar.org/paper/36baccf77336559bdc37853566f1e4121c66f9e8",
+    "title": "Memento: Fine-tuning LLM Agents without Fine-tuning LLMs",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 56,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.16153, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2338518016",
+        "name": "Huichi Zhou"
+      },
+      {
+        "authorId": "2370956570",
+        "name": "Yihang Chen"
+      },
+      {
+        "authorId": "2403295925",
+        "name": "Siyuan Guo"
+      },
+      {
+        "authorId": "2110708365",
+        "name": "Xu Yan"
+      },
+      {
+        "authorId": "2338546377",
+        "name": "Kin-Hei Lee"
+      },
+      {
+        "authorId": "2376510814",
+        "name": "Zihan Wang"
+      },
+      {
+        "authorId": "2376527337",
+        "name": "K. Lee"
+      },
+      {
+        "authorId": "2044459",
+        "name": "Guchun Zhang"
+      },
+      {
+        "authorId": "2275194161",
+        "name": "Kun Shao"
+      },
+      {
+        "authorId": "2366614050",
+        "name": "Linyi Yang"
+      },
+      {
+        "authorId": "2376553213",
+        "name": "Jun Wang"
+      }
+    ],
+    "abstract": "In this paper, we introduce a novel learning paradigm for Adaptive Large Language Model (LLM) agents that eliminates the need for fine-tuning the underlying LLMs. Existing approaches are often either rigid, relying on static, handcrafted reflection workflows, or computationally intensive, requiring gradient updates of LLM model parameters. In contrast, our method enables low-cost continual adaptation via memory-based online reinforcement learning. We formalise this as a Memory-augmented Markov Decision Process (M-MDP), equipped with a neural case-selection policy to guide action decisions. Past experiences are stored in an episodic memory, either differentiable or non-parametric. The policy is continually updated based on environmental feedback through a memory rewriting mechanism, whereas policy improvement is achieved through efficient memory reading (retrieval). We instantiate our agent model in the deep research setting, namely \\emph{Memento}, which attains top-1 on GAIA validation ($87.88\\%$ Pass@$3$) and $79.40\\%$ on the test set. It reaches $66.6\\%$ F1 and $80.4\\%$ PM on the DeepResearcher dataset, outperforming the state-of-the-art training-based method, while case-based memory adds $4.7\\%$ to $9.6\\%$ absolute points on out-of-distribution tasks. Our approach offers a scalable and efficient pathway for developing generalist LLM agents capable of continuous, real-time learning without gradient updates, advancing machine learning towards open-ended skill acquisition and deep research scenarios. The code is available at https://github.com/Agent-on-the-Fly/Memento.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "4d5d951742d101e78646269a45f2573a597d54d6",
+    "externalIds": {
+      "ArXiv": "2508.07407",
+      "DBLP": "journals/corr/abs-2508-07407",
+      "DOI": "10.48550/arXiv.2508.07407",
+      "CorpusId": 280566335
+    },
+    "url": "https://www.semanticscholar.org/paper/4d5d951742d101e78646269a45f2573a597d54d6",
+    "title": "A Comprehensive Survey of Self-Evolving AI Agents: A New Paradigm Bridging Foundation Models and Lifelong Agentic Systems",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 102,
+    "influentialCitationCount": 9,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.07407, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "1384241384",
+        "name": "Jinyuan Fang"
+      },
+      {
+        "authorId": "2110929465",
+        "name": "Yan Peng"
+      },
+      {
+        "authorId": "2315445110",
+        "name": "Xi Zhang"
+      },
+      {
+        "authorId": "2201606868",
+        "name": "Yingxu Wang"
+      },
+      {
+        "authorId": "2313874751",
+        "name": "Xinhao Yi"
+      },
+      {
+        "authorId": "2410849235",
+        "name": "Guibin Zhang"
+      },
+      {
+        "authorId": "2110289371",
+        "name": "Yi Xu"
+      },
+      {
+        "authorId": "2187129580",
+        "name": "Bin Wu"
+      },
+      {
+        "authorId": "2336874290",
+        "name": "Siwei Liu"
+      },
+      {
+        "authorId": "2258698020",
+        "name": "Zihao Li"
+      },
+      {
+        "authorId": "2315457268",
+        "name": "Zhaochun Ren"
+      },
+      {
+        "authorId": "2408535299",
+        "name": "Nikos Aletras"
+      },
+      {
+        "authorId": null,
+        "name": "Xi Wang"
+      },
+      {
+        "authorId": "2111825271",
+        "name": "Han Zhou"
+      },
+      {
+        "authorId": "2315664370",
+        "name": "Zaiqiao Meng"
+      }
+    ],
+    "abstract": "Recent advances in large language models have sparked growing interest in AI agents capable of solving complex, real-world tasks. However, most existing agent systems rely on manually crafted configurations that remain static after deployment, limiting their ability to adapt to dynamic and evolving environments. To this end, recent research has explored agent evolution techniques that aim to automatically enhance agent systems based on interaction data and environmental feedback. This emerging direction lays the foundation for self-evolving AI agents, which bridge the static capabilities of foundation models with the continuous adaptability required by lifelong agentic systems. In this survey, we provide a comprehensive review of existing techniques for self-evolving agentic systems. Specifically, we first introduce a unified conceptual framework that abstracts the feedback loop underlying the design of self-evolving agentic systems. The framework highlights four key components: System Inputs, Agent System, Environment, and Optimisers, serving as a foundation for understanding and comparing different strategies. Based on this framework, we systematically review a wide range of self-evolving techniques that target different components of the agent system. We also investigate domain-specific evolution strategies developed for specialised fields such as biomedicine, programming, and finance, where optimisation objectives are tightly coupled with domain constraints. In addition, we provide a dedicated discussion on the evaluation, safety, and ethical considerations for self-evolving agentic systems, which are critical to ensuring their effectiveness and reliability. This survey aims to provide researchers and practitioners with a systematic understanding of self-evolving AI agents, laying the foundation for the development of more adaptive, autonomous, and lifelong agentic systems.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "eda5889e6ebcdd761512d1b544c4adeccb9a1981",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2504-06821",
+      "ArXiv": "2504.06821",
+      "DOI": "10.48550/arXiv.2504.06821",
+      "CorpusId": 277634286
+    },
+    "url": "https://www.semanticscholar.org/paper/eda5889e6ebcdd761512d1b544c4adeccb9a1981",
+    "title": "Inducing Programmatic Skills for Agentic Tasks",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 48,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.06821, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2307569999",
+        "name": "Z. Wang"
+      },
+      {
+        "authorId": "2354334142",
+        "name": "Apurva Gandhi"
+      },
+      {
+        "authorId": "2337795179",
+        "name": "Graham Neubig"
+      },
+      {
+        "authorId": "2261278355",
+        "name": "Daniel Fried"
+      }
+    ],
+    "abstract": "To succeed in common digital tasks such as web navigation, agents must carry out a variety of specialized tasks such as searching for products or planning a travel route. To tackle these tasks, agents can bootstrap themselves by learning task-specific skills online through interaction with the web environment. In this work, we demonstrate that programs are an effective representation for skills. We propose agent skill induction (ASI), which allows agents to adapt themselves by inducing, verifying, and utilizing program-based skills on the fly. We start with an evaluation on the WebArena agent benchmark and show that ASI outperforms the static baseline agent and its text-skill counterpart by 23.5% and 11.3% in success rate, mainly thanks to the programmatic verification guarantee during the induction phase. ASI also improves efficiency by reducing 10.7-15.3% of the steps over baselines, by composing primitive actions (e.g., click) into higher-level skills (e.g., search product). We then highlight the efficacy of ASI in remaining efficient and accurate under scaled-up web activities. Finally, we examine the generalizability of induced skills when transferring between websites, and find that ASI can effectively reuse common skills, while also updating incompatible skills to versatile website changes.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "628f204c7f136f5328a5d2a5ccd89d0b834c5637",
+    "externalIds": {
+      "ArXiv": "2411.01747",
+      "DBLP": "journals/corr/abs-2411-01747",
+      "DOI": "10.48550/arXiv.2411.01747",
+      "CorpusId": 273811411
+    },
+    "url": "https://www.semanticscholar.org/paper/628f204c7f136f5328a5d2a5ccd89d0b834c5637",
+    "title": "DynaSaur: Large Language Agents Beyond Predefined Actions",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 24,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2411.01747, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2329343138",
+        "name": "Dang Nguyen"
+      },
+      {
+        "authorId": "1405279380",
+        "name": "Viet Dac Lai"
+      },
+      {
+        "authorId": "2110654003",
+        "name": "Seunghyun Yoon"
+      },
+      {
+        "authorId": "2238208116",
+        "name": "Ryan A. Rossi"
+      },
+      {
+        "authorId": "2286357082",
+        "name": "Handong Zhao"
+      },
+      {
+        "authorId": "2328020280",
+        "name": "Ruiyi Zhang"
+      },
+      {
+        "authorId": "2327337693",
+        "name": "Puneet Mathur"
+      },
+      {
+        "authorId": "1793409",
+        "name": "Nedim Lipka"
+      },
+      {
+        "authorId": "2328469713",
+        "name": "Yu Wang"
+      },
+      {
+        "authorId": "2265648617",
+        "name": "Trung Bui"
+      },
+      {
+        "authorId": "2257962368",
+        "name": "Franck Dernoncourt"
+      },
+      {
+        "authorId": "2309120076",
+        "name": "Tianyi Zhou"
+      }
+    ],
+    "abstract": "Existing LLM agent systems typically select actions from a fixed and predefined set at every step. While this approach is effective in closed, narrowly scoped environments, it presents two major challenges for real-world, open-ended scenarios: (1) it significantly restricts the planning and acting capabilities of LLM agents, and (2) it requires substantial human effort to enumerate and implement all possible actions, which is impractical in complex environments with a vast number of potential actions. To address these limitations, we propose an LLM agent framework that can dynamically create and compose actions as needed. In this framework, the agent interacts with its environment by generating and executing programs written in a general-purpose programming language. Moreover, generated actions are accumulated over time for future reuse. Our extensive experiments across multiple benchmarks show that this framework significantly improves flexibility and outperforms prior methods that rely on a fixed action set. Notably, it enables LLM agents to adapt and recover in scenarios where predefined actions are insufficient or fail due to unforeseen edge cases. Our code can be found in https://github.com/adobe-research/dynasaur.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "6398cb8f2af1c988a097ed1e1cefb380195edfb8",
+    "externalIds": {
+      "DOI": "10.2196/preprints.12431",
+      "CorpusId": 240011588
+    },
+    "url": "https://www.semanticscholar.org/paper/6398cb8f2af1c988a097ed1e1cefb380195edfb8",
+    "title": "(Preprint)",
+    "venue": "",
+    "year": 2018,
+    "citationCount": 4871,
+    "influentialCitationCount": 320,
+    "openAccessPdf": {
+      "url": "https://s3.ca-central-1.amazonaws.com/assets.jmir.org/assets/preprints/preprint-12429-submitted.pdf",
+      "status": "BRONZE",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.2196/preprints.12431?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.2196/preprints.12431, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": null,
+    "publicationTypes": [
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "39493329",
+        "name": "Sarah Verschueren"
+      },
+      {
+        "authorId": "147170082",
+        "name": "J. van Aalst"
+      },
+      {
+        "authorId": "41034197",
+        "name": "A. Bangels"
+      },
+      {
+        "authorId": "4333271",
+        "name": "J. Toelen"
+      },
+      {
+        "authorId": "6115635",
+        "name": "K. Allegaert"
+      },
+      {
+        "authorId": "13686669",
+        "name": "C. Buffel"
+      },
+      {
+        "authorId": "115642118",
+        "name": "G. Vander Stichele"
+      }
+    ],
+    "abstract": "\n BACKGROUND\n Increasing numbers of children undergo ambulatory surgery each year and a significant proportion experiences substantial preoperative anxiety and postoperative pain. The management of perioperative anxiety and pain remains challenging in children and is inadequate, which negatively impacts physical, psychosocial, and economic outcomes. Existing non-pharmacological interventions are costly, time consuming, vary in availability, and lack benefits. Therefore, there is a need for an evidence-based, accessible, non-pharmacological intervention as an adjunct to existing pharmacological alternatives to reduce perioperative anxiety and pain in children undergoing ambulatory surgery. Technology-enabled interventions have been proposed as a method to address the unmet need in this setting. In particular, serious games for health (SGHs) hold unique potential to change health beliefs and behaviors in children.\n \n \n OBJECTIVE\n The objective of this research was to describe the rationale, scientific evidence, design aspects, and features of CliniPup, an SGH aimed at reducing perioperative anxiety and pain in children undergoing ambulatory surgery.\n \n \n METHODS\n The SERES framework for SGH development was used to create the SGH, CliniPup. In particular, a mixed-methods approach was applied that consisted of a structured literature review supplemented with ethnographic research, such as expert interviews and a time-motion exercise. The resulting scientific evidence base was leveraged to ensure that the resulting SGH was relevant, realistic, and theory-driven. A participatory design approach was applied wherein clinical experts qualitatively reviewed several versions of the SGH and an iterative creative process was used to integrate the applicable feedback.\n \n \n RESULTS\n CliniPup, an SGH, was developed to incorporate (1) scientific evidence base from a structured literature review, (2) realistic content collected during ethnographic research such as expert interviews, (3) explicit pedagogical objectives from scientific literature, and (4) game mechanics and user interface design that address key aspects of the evidence.\n \n \n CONCLUSIONS\n This report details the systematic development of CliniPup, an SGH aimed at reducing perioperative anxiety and pain in children undergoing ambulatory surgery. Clinical experts validated CliniPup’s underlying scientific evidence base and design foundations, suggesting that it was well designed for preliminary evaluation in the target population. An evaluation plan is proposed and briefly described.\n",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Google DeepMind",
+    "venue": "storage",
+    "year": 2026,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "8c30fa1242bec1926693a647e6247f0e3b2dfed0",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2405-16247",
+      "DOI": "10.48550/arXiv.2405.16247",
+      "CorpusId": 270063765
+    },
+    "url": "https://www.semanticscholar.org/paper/8c30fa1242bec1926693a647e6247f0e3b2dfed0",
+    "title": "AutoManual: Generating Instruction Manuals by LLM Agents via Interactive Environmental Learning",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 13,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2405.16247?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2405.16247, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2276034736",
+        "name": "Minghao Chen"
+      },
+      {
+        "authorId": "2303406595",
+        "name": "Yihang Li"
+      },
+      {
+        "authorId": "2303415296",
+        "name": "Yanting Yang"
+      },
+      {
+        "authorId": "2304150758",
+        "name": "Shiyu Yu"
+      },
+      {
+        "authorId": "2258304162",
+        "name": "Binbin Lin"
+      },
+      {
+        "authorId": "2257432345",
+        "name": "Xiaofei He"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": ": Do agent skills actually help in",
+    "venue": "Swe-skills-bench",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Agentic skills – beyond tool use in",
+    "venue": "Sok:",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "NSF Grant IIS-2302730, and the Open Philanthropy Research Award. Tommi Jaakkola acknowledges the support from NSF Expeditions grant (award 1918839)",
+    "venue": "Understanding the World Through",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Anthropic. Claude opus 4.6 system card. 2026b",
+    "venue": "System card describing model capabilities, evaluations, and safety assessments",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "OpenAI",
+    "venue": "Openai codex",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Agent skills: A simple, open format for giving agents new capabilities",
+    "venue": "agentskills.io/home",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Harbor Framework Team",
+    "venue": "github",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Peter Steinberger and OpenClaw Contributors",
+    "venue": "Openclaw: Your own personal ai assistant",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": ": Measuring agent vulnerability to skill file",
+    "venue": "Skill-inject",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Experience-driven lifelong",
+    "venue": "Autoskill:",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Team Qwen",
+    "venue": "Qwen3 technical report",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Evolving agents via recursive",
+    "venue": "Skillrl:",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Adaptation of agentic",
+    "venue": "ai: A survey of post-training, memory, and skills",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  }
+]

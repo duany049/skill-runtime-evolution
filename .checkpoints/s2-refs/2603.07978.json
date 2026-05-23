@@ -1,0 +1,1969 @@
+[
+  {
+    "paperId": "b9b5338f512c544faef4651364054570a0deaf36",
+    "externalIds": {
+      "ArXiv": "2509.02544",
+      "DBLP": "journals/corr/abs-2509-02544",
+      "DOI": "10.48550/arXiv.2509.02544",
+      "CorpusId": 281079943
+    },
+    "url": "https://www.semanticscholar.org/paper/b9b5338f512c544faef4651364054570a0deaf36",
+    "title": "UI-TARS-2 Technical Report: Advancing GUI Agent with Multi-Turn Reinforcement Learning",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 118,
+    "influentialCitationCount": 9,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.02544, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2341173456",
+        "name": "Haoming Wang"
+      },
+      {
+        "authorId": "2284719949",
+        "name": "Haoyang Zou"
+      },
+      {
+        "authorId": "2334893634",
+        "name": "Huatong Song"
+      },
+      {
+        "authorId": "2379895455",
+        "name": "Jiazhan Feng"
+      },
+      {
+        "authorId": "2257383989",
+        "name": "Junjie Fang"
+      },
+      {
+        "authorId": "2351091423",
+        "name": "Junting Lu"
+      },
+      {
+        "authorId": "2341669513",
+        "name": "Longxiang Liu"
+      },
+      {
+        "authorId": "2287929551",
+        "name": "Qinyu Luo"
+      },
+      {
+        "authorId": "2242676146",
+        "name": "Shihao Liang"
+      },
+      {
+        "authorId": "2355659792",
+        "name": "Shijue Huang"
+      },
+      {
+        "authorId": "2290075391",
+        "name": "Wanjun Zhong"
+      },
+      {
+        "authorId": "2114059497",
+        "name": "Yining Ye"
+      },
+      {
+        "authorId": "2351717375",
+        "name": "Yujia Qin"
+      },
+      {
+        "authorId": "2357236039",
+        "name": "Yuwen Xiong"
+      },
+      {
+        "authorId": "2379212087",
+        "name": "Yuxin Song"
+      },
+      {
+        "authorId": "2376021824",
+        "name": "Zhiyong Wu"
+      },
+      {
+        "authorId": "2378632303",
+        "name": "Bo Li"
+      },
+      {
+        "authorId": "2325905678",
+        "name": "Chen Dun"
+      },
+      {
+        "authorId": "2361239096",
+        "name": "Chong Liu"
+      },
+      {
+        "authorId": "2360365723",
+        "name": "Fuxing Leng"
+      },
+      {
+        "authorId": "2351448552",
+        "name": "Han-rui Wang"
+      },
+      {
+        "authorId": "2378896259",
+        "name": "Hao Yu"
+      },
+      {
+        "authorId": "2256936674",
+        "name": "Haobin Chen"
+      },
+      {
+        "authorId": "2379012677",
+        "name": "Hongyi Guo"
+      },
+      {
+        "authorId": "2371109277",
+        "name": "Jing Su"
+      },
+      {
+        "authorId": "2361533210",
+        "name": "Jingjia Huang"
+      },
+      {
+        "authorId": "2143714764",
+        "name": "Kai Shen"
+      },
+      {
+        "authorId": "2334400499",
+        "name": "Kaiyu Shi"
+      },
+      {
+        "authorId": "2356792115",
+        "name": "Lin Yan"
+      },
+      {
+        "authorId": "2371254397",
+        "name": "Pei-Xiong Zhao"
+      },
+      {
+        "authorId": "2359106417",
+        "name": "Pengfei Liu"
+      },
+      {
+        "authorId": "2376155313",
+        "name": "Qinghao Ye"
+      },
+      {
+        "authorId": "2325879419",
+        "name": "Renjie Zheng"
+      },
+      {
+        "authorId": "2375951030",
+        "name": "Wayne Xin Zhao"
+      },
+      {
+        "authorId": "2356587938",
+        "name": "Wen Heng"
+      },
+      {
+        "authorId": "2239245627",
+        "name": "Wenhao Huang"
+      },
+      {
+        "authorId": "2356668908",
+        "name": "Wenqian Wang"
+      },
+      {
+        "authorId": "2312893671",
+        "name": "Xiao-jun Qin"
+      },
+      {
+        "authorId": "2415976668",
+        "name": "Yi Lin"
+      },
+      {
+        "authorId": "2333404861",
+        "name": "Youbing Wu"
+      },
+      {
+        "authorId": "2324675870",
+        "name": "Zehui Chen"
+      },
+      {
+        "authorId": "47196237",
+        "name": "Zihao Wang"
+      },
+      {
+        "authorId": "2355650284",
+        "name": "B. Zhong"
+      },
+      {
+        "authorId": "2293130054",
+        "name": "Xinchun Zhang"
+      },
+      {
+        "authorId": "2279672537",
+        "name": "Xujing Li"
+      },
+      {
+        "authorId": "2377243748",
+        "name": "YuanFang Li"
+      },
+      {
+        "authorId": "2355244769",
+        "name": "Zhongkai Zhao"
+      },
+      {
+        "authorId": "2305750714",
+        "name": "Chengquan Jiang"
+      },
+      {
+        "authorId": "2333458941",
+        "name": "Faming Wu"
+      },
+      {
+        "authorId": "2276178104",
+        "name": "Hao Zhou"
+      },
+      {
+        "authorId": "2378590537",
+        "name": "Jinlin Pang"
+      },
+      {
+        "authorId": "2358979468",
+        "name": "Li Han"
+      },
+      {
+        "authorId": "2291903132",
+        "name": "Qianli Ma"
+      },
+      {
+        "authorId": "2363006348",
+        "name": "Siyao Liu"
+      },
+      {
+        "authorId": "2296569727",
+        "name": "Songhua Cai"
+      },
+      {
+        "authorId": "2357369175",
+        "name": "Wenqi Fu"
+      },
+      {
+        "authorId": "2350663077",
+        "name": "Xin Liu"
+      },
+      {
+        "authorId": "2282665235",
+        "name": "Zhi Zhang"
+      },
+      {
+        "authorId": "2371153508",
+        "name": "Bo Zhou"
+      },
+      {
+        "authorId": "2330746507",
+        "name": "Guoliang Li"
+      },
+      {
+        "authorId": "2330099849",
+        "name": "Jiajun Shi"
+      },
+      {
+        "authorId": "2317709806",
+        "name": "Jiale Yang"
+      },
+      {
+        "authorId": "2339973774",
+        "name": "Jie Tang"
+      },
+      {
+        "authorId": "2317253322",
+        "name": "Li Li"
+      },
+      {
+        "authorId": "2383831584",
+        "name": "Taoran Lu"
+      },
+      {
+        "authorId": "2341574934",
+        "name": "Woyu Lin"
+      },
+      {
+        "authorId": "2370191662",
+        "name": "Xiao Tong"
+      },
+      {
+        "authorId": "2346272653",
+        "name": "Xinyao Li"
+      },
+      {
+        "authorId": "2372410553",
+        "name": "Yichi Zhang"
+      },
+      {
+        "authorId": "2342402525",
+        "name": "Yu Miao"
+      },
+      {
+        "authorId": "2289824606",
+        "name": "Zheng-Wang Jiang"
+      },
+      {
+        "authorId": "2193208802",
+        "name": "Zili Li"
+      },
+      {
+        "authorId": "2277807310",
+        "name": "Zi-Hao Zhao"
+      },
+      {
+        "authorId": "2376204519",
+        "name": "Chenxi Li"
+      },
+      {
+        "authorId": "2346935085",
+        "name": "Dehua Ma"
+      },
+      {
+        "authorId": "2365006756",
+        "name": "Feng Lin"
+      },
+      {
+        "authorId": "2355791005",
+        "name": "Ge Zhang"
+      },
+      {
+        "authorId": "2341718487",
+        "name": "Haihua Yang"
+      },
+      {
+        "authorId": "2307434316",
+        "name": "Hangyu Guo"
+      },
+      {
+        "authorId": "2367321824",
+        "name": "Hongda Zhu"
+      },
+      {
+        "authorId": "2294523552",
+        "name": "Jiaheng Liu"
+      },
+      {
+        "authorId": "2361300435",
+        "name": "Jun-Yan Du"
+      },
+      {
+        "authorId": "2341532207",
+        "name": "Kai Cai"
+      },
+      {
+        "authorId": "2342211812",
+        "name": "Kuanye Li"
+      },
+      {
+        "authorId": "2379196561",
+        "name": "Lichen Yuan"
+      },
+      {
+        "authorId": "2274727427",
+        "name": "Mei Han"
+      },
+      {
+        "authorId": "2341667371",
+        "name": "Minchao Wang"
+      },
+      {
+        "authorId": "2361869874",
+        "name": "Shuyu Guo"
+      },
+      {
+        "authorId": "2330153728",
+        "name": "Tianhao Cheng"
+      },
+      {
+        "authorId": "2378694783",
+        "name": "Xiaobo Ma"
+      },
+      {
+        "authorId": "2368443807",
+        "name": "Xiao Xiao"
+      },
+      {
+        "authorId": "2333321715",
+        "name": "Xiaolong Huang"
+      },
+      {
+        "authorId": "2378606274",
+        "name": "Xinjie Chen"
+      },
+      {
+        "authorId": "2357593233",
+        "name": "Yi-Zhen Du"
+      },
+      {
+        "authorId": "2344867615",
+        "name": "Yilin Chen"
+      },
+      {
+        "authorId": "2316007985",
+        "name": "Yiwen Wang"
+      },
+      {
+        "authorId": "2342494238",
+        "name": "Zhaojian Li"
+      },
+      {
+        "authorId": "2346316024",
+        "name": "Zhen Yang"
+      },
+      {
+        "authorId": "2345338864",
+        "name": "Zhiyuan Zeng"
+      },
+      {
+        "authorId": "2342473322",
+        "name": "Chaolin Jin"
+      },
+      {
+        "authorId": "2341650593",
+        "name": "Chen Li"
+      },
+      {
+        "authorId": "2322977057",
+        "name": "Haolin Chen"
+      },
+      {
+        "authorId": "2322977057",
+        "name": "Haolin Chen"
+      },
+      {
+        "authorId": "2311691346",
+        "name": "Jian Chen"
+      },
+      {
+        "authorId": "2243577700",
+        "name": "Qinghao Zhao"
+      },
+      {
+        "authorId": "2343036261",
+        "name": "Guang Shi"
+      }
+    ],
+    "abstract": "The development of autonomous agents for graphical user interfaces (GUIs) presents major challenges in artificial intelligence. While recent advances in native agent models have shown promise by unifying perception, reasoning, action, and memory through end-to-end learning, open problems remain in data scalability, multi-turn reinforcement learning (RL), the limitations of GUI-only operation, and environment stability. In this technical report, we present UI-TARS-2, a native GUI-centered agent model that addresses these challenges through a systematic training methodology: a data flywheel for scalable data generation, a stabilized multi-turn RL framework, a hybrid GUI environment that integrates file systems and terminals, and a unified sandbox platform for large-scale rollouts. Empirical evaluation demonstrates that UI-TARS-2 achieves significant improvements over its predecessor UI-TARS-1.5. On GUI benchmarks, it reaches 88.2 on Online-Mind2Web, 47.5 on OSWorld, 50.6 on WindowsAgentArena, and 73.3 on AndroidWorld, outperforming strong baselines such as Claude and OpenAI agents. In game environments, it attains a mean normalized score of 59.8 across a 15-game suite-roughly 60% of human-level performance-and remains competitive with frontier proprietary models (e.g., OpenAI o3) on LMGame-Bench. Additionally, the model can generalize to long-horizon information-seeking tasks and software engineering benchmarks, highlighting its robustness across diverse agent tasks. Detailed analyses of training dynamics further provide insights into achieving stability and efficiency in large-scale agent RL. These results underscore UI-TARS-2's potential to advance the state of GUI agents and exhibit strong generalization to real-world interactive scenarios.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "a33c1095a4202ec1333062f49026f5d9ab945f31",
+    "externalIds": {
+      "ArXiv": "2508.04482",
+      "DBLP": "journals/corr/abs-2508-04482",
+      "DOI": "10.48550/arXiv.2508.04482",
+      "CorpusId": 280536147
+    },
+    "url": "https://www.semanticscholar.org/paper/a33c1095a4202ec1333062f49026f5d9ab945f31",
+    "title": "OS Agents: A Survey on MLLM-based Agents for General Computing Devices Use",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 45,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.04482, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2278917214",
+        "name": "Xueyu Hu"
+      },
+      {
+        "authorId": "2371995140",
+        "name": "Tao Xiong"
+      },
+      {
+        "authorId": "2359631973",
+        "name": "Biao Yi"
+      },
+      {
+        "authorId": "2339228287",
+        "name": "Zishu Wei"
+      },
+      {
+        "authorId": "2371996031",
+        "name": "Ruixuan Xiao"
+      },
+      {
+        "authorId": "2346070456",
+        "name": "Yurun Chen"
+      },
+      {
+        "authorId": "2374381255",
+        "name": "Jiasheng Ye"
+      },
+      {
+        "authorId": "2335670697",
+        "name": "Meiling Tao"
+      },
+      {
+        "authorId": "2257107372",
+        "name": "Xiangxin Zhou"
+      },
+      {
+        "authorId": "2329047975",
+        "name": "Ziyu Zhao"
+      },
+      {
+        "authorId": "2372133311",
+        "name": "Yuhuai Li"
+      },
+      {
+        "authorId": "2345127372",
+        "name": "Shengze Xu"
+      },
+      {
+        "authorId": "2354687807",
+        "name": "Shenzhi Wang"
+      },
+      {
+        "authorId": "2339233611",
+        "name": "Xinchen Xu"
+      },
+      {
+        "authorId": "2371996072",
+        "name": "Shuofei Qiao"
+      },
+      {
+        "authorId": "2372245177",
+        "name": "Zhaokai Wang"
+      },
+      {
+        "authorId": "2316947831",
+        "name": "Kun Kuang"
+      },
+      {
+        "authorId": "2344835229",
+        "name": "Tieyong Zeng"
+      },
+      {
+        "authorId": "2374172543",
+        "name": "Liang Wang"
+      },
+      {
+        "authorId": "2372128161",
+        "name": "Jiwei Li"
+      },
+      {
+        "authorId": "2300851754",
+        "name": "Y. Jiang"
+      },
+      {
+        "authorId": "2284803168",
+        "name": "Wangchunshu Zhou"
+      },
+      {
+        "authorId": "2279157833",
+        "name": "Guoyin Wang"
+      },
+      {
+        "authorId": "2345921881",
+        "name": "Keting Yin"
+      },
+      {
+        "authorId": "2293625304",
+        "name": "Zhou Zhao"
+      },
+      {
+        "authorId": "2145952806",
+        "name": "Hongxia Yang"
+      },
+      {
+        "authorId": "2348388728",
+        "name": "Fan Wu"
+      },
+      {
+        "authorId": "2374344389",
+        "name": "Shengyu Zhang"
+      },
+      {
+        "authorId": "2165682072",
+        "name": "Fei Wu"
+      }
+    ],
+    "abstract": "The dream to create AI assistants as capable and versatile as the fictional J.A.R.V.I.S from Iron Man has long captivated imaginations. With the evolution of (multi-modal) large language models ((M)LLMs), this dream is closer to reality, as (M)LLM-based Agents using computing devices (e.g., computers and mobile phones) by operating within the environments and interfaces (e.g., Graphical User Interface (GUI)) provided by operating systems (OS) to automate tasks have significantly advanced. This paper presents a comprehensive survey of these advanced agents, designated as OS Agents. We begin by elucidating the fundamentals of OS Agents, exploring their key components including the environment, observation space, and action space, and outlining essential capabilities such as understanding, planning, and grounding. We then examine methodologies for constructing OS Agents, focusing on domain-specific foundation models and agent frameworks. A detailed review of evaluation protocols and benchmarks highlights how OS Agents are assessed across diverse tasks. Finally, we discuss current challenges and identify promising directions for future research, including safety and privacy, personalization and self-evolution. This survey aims to consolidate the state of OS Agents research, providing insights to guide both academic inquiry and industrial development. An open-source GitHub repository is maintained as a dynamic resource to foster further innovation in this field. We present a 9-page version of our work, accepted by ACL 2025, to provide a concise overview to the domain.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "c244200154abb5e5e45ff14f4e6202e1a42a678d",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2508-04700",
+      "ArXiv": "2508.04700",
+      "DOI": "10.48550/arXiv.2508.04700",
+      "CorpusId": 280536996
+    },
+    "url": "https://www.semanticscholar.org/paper/c244200154abb5e5e45ff14f4e6202e1a42a678d",
+    "title": "SEAgent: Self-Evolving Computer Use Agent with Autonomous Learning from Experience",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 33,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.04700, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2269789160",
+        "name": "Zeyi Sun"
+      },
+      {
+        "authorId": "2292942831",
+        "name": "Ziyu Liu"
+      },
+      {
+        "authorId": "12862495",
+        "name": "Yuhang Zang"
+      },
+      {
+        "authorId": "50206929",
+        "name": "Yuhang Cao"
+      },
+      {
+        "authorId": "2118187561",
+        "name": "Xiao-wen Dong"
+      },
+      {
+        "authorId": "2307034605",
+        "name": "Tong Wu"
+      },
+      {
+        "authorId": "2237734015",
+        "name": "Dahua Lin"
+      },
+      {
+        "authorId": "2267494294",
+        "name": "Jiaqi Wang"
+      }
+    ],
+    "abstract": "Repurposing large vision-language models (LVLMs) as computer use agents (CUAs) has led to substantial breakthroughs, primarily driven by human-labeled data. However, these models often struggle with novel and specialized software, particularly in scenarios lacking human annotations. To address this challenge, we propose SEAgent, an agentic self-evolving framework enabling CUAs to autonomously evolve through interactions with unfamiliar software. Specifically, SEAgent empowers computer-use agents to autonomously master novel software environments via experiential learning, where agents explore new software, learn through iterative trial-and-error, and progressively tackle auto-generated tasks organized from simple to complex. To achieve this goal, we design a World State Model for step-wise trajectory assessment, along with a Curriculum Generator that generates increasingly diverse and challenging tasks. The agent's policy is updated through experiential learning, comprised of adversarial imitation of failure actions and Group Relative Policy Optimization (GRPO) on successful ones. Furthermore, we introduce a specialist-to-generalist training strategy that integrates individual experiential insights from specialist agents, facilitating the development of a stronger generalist CUA capable of continuous autonomous evolution. This unified agent ultimately achieves performance surpassing ensembles of individual specialist agents on their specialized software. We validate the effectiveness of SEAgent across five novel software environments within OS-World. Our approach achieves a significant improvement of 23.2% in success rate, from 11.3% to 34.5%, over a competitive open-source CUA, i.e., UI-TARS.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2b9fec9ad8e2bcc5ebf00589b9cc8c202b06675e",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2506-16042",
+      "ArXiv": "2506.16042",
+      "DOI": "10.48550/arXiv.2506.16042",
+      "CorpusId": 279464630
+    },
+    "url": "https://www.semanticscholar.org/paper/2b9fec9ad8e2bcc5ebf00589b9cc8c202b06675e",
+    "title": "OSWorld-Human: Benchmarking the Efficiency of Computer-Use Agents",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 19,
+    "influentialCitationCount": 2,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.16042, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2217683047",
+        "name": "Reyna Abhyankar"
+      },
+      {
+        "authorId": "2367739272",
+        "name": "Qi Qi"
+      },
+      {
+        "authorId": "2244769765",
+        "name": "Yiying Zhang"
+      }
+    ],
+    "abstract": "Generative AI is being leveraged to solve a variety of computer-use tasks involving desktop applications. State-of-the-art systems have focused solely on improving accuracy on leading benchmarks. However, these systems are practically unusable due to extremely high end-to-end latency (e.g., tens of minutes) for tasks that typically take humans just a few minutes to complete. To understand the cause behind this and to guide future developments of computer agents, we conduct the first study on the temporal performance of computer-use agents on OSWorld, the flagship benchmark in computer-use AI. We find that large model calls for planning and reflection account for the majority of the overall latency, and as an agent uses more steps to complete a task, each successive step can take 3x longer than steps at the beginning of a task. We then construct OSWorld-Human, a manually annotated version of the original OSWorld dataset that contains a human-determined trajectory for each task. We evaluate 16 agents on their efficiency using OSWorld-Human and found that even the highest-scoring agents on OSWorld take 1.4-2.7x more steps than necessary.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "66d5f32b0a3ee6f619369f72c572da9046df21d2",
+    "externalIds": {
+      "ArXiv": "2506.04135",
+      "DBLP": "journals/corr/abs-2506-04135",
+      "DOI": "10.48550/arXiv.2506.04135",
+      "CorpusId": 279154472
+    },
+    "url": "https://www.semanticscholar.org/paper/66d5f32b0a3ee6f619369f72c572da9046df21d2",
+    "title": "macOSWorld: A Multilingual Interactive Benchmark for GUI Agents",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 14,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.04135, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2298053538",
+        "name": "Pei Yang"
+      },
+      {
+        "authorId": "2297766403",
+        "name": "Hai Ci"
+      },
+      {
+        "authorId": "2297767798",
+        "name": "Mike Zheng Shou"
+      }
+    ],
+    "abstract": "Graphical User Interface (GUI) agents show promising capabilities for automating computer-use tasks and facilitating accessibility, but existing interactive benchmarks are mostly English-only, covering web-use or Windows, Linux, and Android environments, but not macOS. macOS is a major OS with distinctive GUI patterns and exclusive applications. To bridge the gaps, we present macOSWorld, the first comprehensive benchmark for evaluating GUI agents on macOS. macOSWorld features 202 multilingual interactive tasks across 30 applications (28 macOS-exclusive), with task instructions and OS interfaces offered in 5 languages (English, Chinese, Arabic, Japanese, and Russian). As GUI agents are shown to be vulnerable to deception attacks, macOSWorld also includes a dedicated safety benchmarking subset. Our evaluation on six GUI agents reveals a dramatic gap: proprietary computer-use agents lead at above 30% success rate, while open-source lightweight research models lag at below 5\\%, highlighting the need for macOS domain adaptation. Multilingual benchmarks also expose common weaknesses, especially in Arabic, with a 28.8% average degradation compared to English. Results from safety benchmarking also highlight that deception attacks are more general and demand immediate attention. Project page: https://macos-world.github.io.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "076f059aa724619ad346503623c5ee57d4625c9d",
+    "externalIds": {
+      "DBLP": "conf/emnlp/FangZZMYMY25",
+      "ArXiv": "2504.21024",
+      "DOI": "10.48550/arXiv.2504.21024",
+      "CorpusId": 278208004
+    },
+    "url": "https://www.semanticscholar.org/paper/076f059aa724619ad346503623c5ee57d4625c9d",
+    "title": "WebEvolver: Enhancing Web Agent Self-Improvement with Coevolving World Model",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2025,
+    "citationCount": 36,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.21024, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2044202073",
+        "name": "Tianqing Fang"
+      },
+      {
+        "authorId": "2254831297",
+        "name": "Hongming Zhang"
+      },
+      {
+        "authorId": "2326349647",
+        "name": "Zhisong Zhang"
+      },
+      {
+        "authorId": "2311458574",
+        "name": "Kaixin Ma"
+      },
+      {
+        "authorId": "2265843326",
+        "name": "Wenhao Yu"
+      },
+      {
+        "authorId": "2238955130",
+        "name": "Haitao Mi"
+      },
+      {
+        "authorId": "2303999735",
+        "name": "Dong Yu"
+      }
+    ],
+    "abstract": "Agent self-improvement, where the backbone Large Language Model (LLM) of the agent are trained on trajectories sampled autonomously based on their own policies, has emerged as a promising approach for enhancing performance. Recent advancements, particularly in web environments, face a critical limitation: their performance will reach a stagnation point during autonomous learning cycles, hindering further improvement. We argue that this stems from limited exploration of the web environment and insufficient exploitation of pre-trained web knowledge in LLMs. To improve the performance of self-improvement, we propose a novel framework that introduces a co-evolving World Model LLM. This world model predicts the next observation based on the current observation and action within the web environment. Leveraging LLMs'pretrained knowledge of abundant web content, the World Model serves dual roles: (1) as a virtual web server generating self-instructed training data to continuously refine the agent's policy, and (2) as an imagination engine during inference, enabling look-ahead simulation to guide action selection for the agent LLM. Experiments in real-world web environments (Mind2Web-Live, WebVoyager, and GAIA-web) show a 10% performance gain over existing self-evolving agents, demonstrating the efficacy and generalizability of our approach, without using any distillation from more powerful close-sourced models. Our work establishes the necessity of integrating world models into autonomous agent frameworks to unlock sustained adaptability. Code is available at https://github.com/Tencent/SelfEvolvingAgent",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ff996cf4b98fa59d39966bbfbc756f2f22ba9c1d",
+    "externalIds": {
+      "ArXiv": "2504.00906",
+      "DBLP": "journals/corr/abs-2504-00906",
+      "DOI": "10.48550/arXiv.2504.00906",
+      "CorpusId": 277468360
+    },
+    "url": "https://www.semanticscholar.org/paper/ff996cf4b98fa59d39966bbfbc756f2f22ba9c1d",
+    "title": "Agent S2: A Compositional Generalist-Specialist Framework for Computer Use Agents",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 112,
+    "influentialCitationCount": 24,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.00906, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2081814989",
+        "name": "Saaket Agashe"
+      },
+      {
+        "authorId": "2354227241",
+        "name": "Kyle Wong"
+      },
+      {
+        "authorId": "2353079048",
+        "name": "Vincent Tu"
+      },
+      {
+        "authorId": "2325193568",
+        "name": "Jiachen Yang"
+      },
+      {
+        "authorId": "2325491830",
+        "name": "Ang Li"
+      },
+      {
+        "authorId": "2325785593",
+        "name": "X. Wang"
+      }
+    ],
+    "abstract": "Computer use agents automate digital tasks by directly interacting with graphical user interfaces (GUIs) on computers and mobile devices, offering significant potential to enhance human productivity by completing an open-ended space of user queries. However, current agents face significant challenges: imprecise grounding of GUI elements, difficulties with long-horizon task planning, and performance bottlenecks from relying on single generalist models for diverse cognitive tasks. To this end, we introduce Agent S2, a novel compositional framework that delegates cognitive responsibilities across various generalist and specialist models. We propose a novel Mixture-of-Grounding technique to achieve precise GUI localization and introduce Proactive Hierarchical Planning, dynamically refining action plans at multiple temporal scales in response to evolving observations. Evaluations demonstrate that Agent S2 establishes new state-of-the-art (SOTA) performance on three prominent computer use benchmarks. Specifically, Agent S2 achieves 18.9% and 32.7% relative improvements over leading baseline agents such as Claude Computer Use and UI-TARS on the OSWorld 15-step and 50-step evaluation. Moreover, Agent S2 generalizes effectively to other operating systems and applications, surpassing previous best methods by 52.8% on WindowsAgentArena and by 16.52% on AndroidWorld relatively. Code available at https://github.com/simular-ai/Agent-S.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "377d168e422d61d0269a79b565a562e1368efc60",
+    "externalIds": {
+      "ArXiv": "2503.07919",
+      "DBLP": "journals/corr/abs-2503-07919",
+      "DOI": "10.48550/arXiv.2503.07919",
+      "CorpusId": 276929324
+    },
+    "url": "https://www.semanticscholar.org/paper/377d168e422d61d0269a79b565a562e1368efc60",
+    "title": "BEARCUBS: A benchmark for computer-using web agents",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 17,
+    "influentialCitationCount": 2,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2503.07919, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "8280888",
+        "name": "Yixiao Song"
+      },
+      {
+        "authorId": "1972292021",
+        "name": "Katherine Thai"
+      },
+      {
+        "authorId": "2264486147",
+        "name": "Chau Minh Pham"
+      },
+      {
+        "authorId": "144455052",
+        "name": "Yapei Chang"
+      },
+      {
+        "authorId": "2349539778",
+        "name": "Mazin Nadaf"
+      },
+      {
+        "authorId": "2136562",
+        "name": "Mohit Iyyer"
+      }
+    ],
+    "abstract": "Modern web agents possess computer use abilities that allow them to interact with webpages by sending commands to a virtual keyboard and mouse. While such agents have considerable potential to assist human users with complex tasks, evaluating their capabilities in real-world settings poses a major challenge. To this end, we introduce BEARCUBS, a\"small but mighty\"benchmark of 111 information-seeking questions designed to evaluate a web agent's ability to search, browse, and identify factual information from the web. Unlike prior web agent benchmarks, solving BEARCUBS requires (1) accessing live web content rather than synthetic or simulated pages, which captures the unpredictability of real-world web interactions; and (2) performing a broad range of multimodal interactions (e.g., video understanding, 3D navigation) that cannot be bypassed via text-based workarounds. Each question in BEARCUBS has a corresponding short, unambiguous answer and a human-validated browsing trajectory, allowing for transparent evaluation of agent performance and strategies. A human study confirms that BEARCUBS questions are solvable but non-trivial (84.7% human accuracy), revealing domain knowledge gaps and overlooked details as common failure points. By contrast, state-of-the-art computer-using agents underperform, with the best-scoring system (OpenAI's Operator) reaching only 23.4% accuracy. These results highlight critical areas for improvement, including reliable source selection and more powerful multimodal capabilities. To facilitate future research, BEARCUBS will be updated periodically to replace invalid or contaminated questions, keeping the benchmark fresh for future generations of web agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "52babb057c4c6493bef95ae7a67984d7f365e2a8",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2501-11733",
+      "ArXiv": "2501.11733",
+      "DOI": "10.48550/arXiv.2501.11733",
+      "CorpusId": 275757225
+    },
+    "url": "https://www.semanticscholar.org/paper/52babb057c4c6493bef95ae7a67984d7f365e2a8",
+    "title": "Mobile-Agent-E: Self-Evolving Mobile Assistant for Complex Tasks",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 106,
+    "influentialCitationCount": 13,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.11733, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2052036545",
+        "name": "Zhenhailong Wang"
+      },
+      {
+        "authorId": "2341400186",
+        "name": "Haiyang Xu"
+      },
+      {
+        "authorId": "2261888736",
+        "name": "Junyang Wang"
+      },
+      {
+        "authorId": "2304527137",
+        "name": "Xi Zhang"
+      },
+      {
+        "authorId": "2114009661",
+        "name": "Mingshi Yan"
+      },
+      {
+        "authorId": "2281901929",
+        "name": "Ji Zhang"
+      },
+      {
+        "authorId": "2262080010",
+        "name": "Fei Huang"
+      },
+      {
+        "authorId": "2257039194",
+        "name": "Heng Ji"
+      }
+    ],
+    "abstract": "Smartphones have become indispensable in modern life, yet navigating complex tasks on mobile devices often remains frustrating. Recent advancements in large multimodal model (LMM)-based mobile agents have demonstrated the ability to perceive and act in mobile environments. However, current approaches face significant limitations: they fall short in addressing real-world human needs, struggle with reasoning-intensive and long-horizon tasks, and lack mechanisms to learn and improve from prior experiences. To overcome these challenges, we introduce Mobile-Agent-E, a hierarchical multi-agent framework capable of self-evolution through past experience. By hierarchical, we mean an explicit separation of high-level planning and low-level action execution. The framework comprises a Manager, responsible for devising overall plans by breaking down complex tasks into subgoals, and four subordinate agents--Perceptor, Operator, Action Reflector, and Notetaker--which handle fine-grained visual perception, immediate action execution, error verification, and information aggregation, respectively. Mobile-Agent-E also features a novel self-evolution module which maintains a persistent long-term memory comprising Tips and Shortcuts. Tips are general guidance and lessons learned from prior tasks on how to effectively interact with the environment. Shortcuts are reusable, executable sequences of atomic operations tailored for specific subroutines. The inclusion of Tips and Shortcuts facilitates continuous refinement in performance and efficiency. Alongside this framework, we introduce Mobile-Eval-E, a new benchmark featuring complex mobile tasks requiring long-horizon, multi-app interactions. Empirical results show that Mobile-Agent-E achieves a 22% absolute improvement over previous state-of-the-art approaches across three foundation model backbones. Project page: https://x-plug.github.io/MobileAgent.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "5e6799c927dd3ed46b338801da12115b8236746e",
+    "externalIds": {
+      "DBLP": "conf/iclr/AgasheHGYLW25",
+      "ArXiv": "2410.08164",
+      "DOI": "10.48550/arXiv.2410.08164",
+      "CorpusId": 273233533
+    },
+    "url": "https://www.semanticscholar.org/paper/5e6799c927dd3ed46b338801da12115b8236746e",
+    "title": "Agent S: An Open Agentic Framework that Uses Computers Like a Human",
+    "venue": "International Conference on Learning Representations",
+    "year": 2024,
+    "citationCount": 149,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2410.08164, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2081814989",
+        "name": "Saaket Agashe"
+      },
+      {
+        "authorId": "2133405108",
+        "name": "Jiuzhou Han"
+      },
+      {
+        "authorId": "2386608845",
+        "name": "Shuyu Gan"
+      },
+      {
+        "authorId": "2325193568",
+        "name": "Jiachen Yang"
+      },
+      {
+        "authorId": "2325491830",
+        "name": "Ang Li"
+      },
+      {
+        "authorId": "2325785593",
+        "name": "X. Wang"
+      }
+    ],
+    "abstract": "We present Agent S, an open agentic framework that enables autonomous interaction with computers through a Graphical User Interface (GUI), aimed at transforming human-computer interaction by automating complex, multi-step tasks. Agent S aims to address three key challenges in automating computer tasks: acquiring domain-specific knowledge, planning over long task horizons, and handling dynamic, non-uniform interfaces. To this end, Agent S introduces experience-augmented hierarchical planning, which learns from external knowledge search and internal experience retrieval at multiple levels, facilitating efficient task planning and subtask execution. In addition, it employs an Agent-Computer Interface (ACI) to better elicit the reasoning and control capabilities of GUI agents based on Multimodal Large Language Models (MLLMs). Evaluation on the OSWorld benchmark shows that Agent S outperforms the baseline by 9.37% on success rate (an 83.6% relative improvement) and achieves a new state-of-the-art. Comprehensive analysis highlights the effectiveness of individual components and provides insights for future improvements. Furthermore, Agent S demonstrates broad generalizability to different operating systems on a newly-released WindowsAgentArena benchmark. Code available at https://github.com/simular-ai/Agent-S.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "39c5b07079e3b92aca9629d7cce694f276b9d9c6",
+    "externalIds": {
+      "ArXiv": "2409.08264",
+      "DBLP": "journals/corr/abs-2409-08264",
+      "DOI": "10.48550/arXiv.2409.08264",
+      "CorpusId": 272600411
+    },
+    "url": "https://www.semanticscholar.org/paper/39c5b07079e3b92aca9629d7cce694f276b9d9c6",
+    "title": "Windows Agent Arena: Evaluating Multi-Modal OS Agents at Scale",
+    "venue": "International Conference on Machine Learning",
+    "year": 2024,
+    "citationCount": 141,
+    "influentialCitationCount": 20,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2409.08264, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2311886691",
+        "name": "Rogerio Bonatti"
+      },
+      {
+        "authorId": "2321049267",
+        "name": "Dan Zhao"
+      },
+      {
+        "authorId": "2320806613",
+        "name": "Francesco Bonacci"
+      },
+      {
+        "authorId": "2320803755",
+        "name": "Dillon Dupont"
+      },
+      {
+        "authorId": "2311883349",
+        "name": "Sara Abdali"
+      },
+      {
+        "authorId": "2312008139",
+        "name": "Yinheng Li"
+      },
+      {
+        "authorId": "2310270121",
+        "name": "Yadong Lu"
+      },
+      {
+        "authorId": "49710938",
+        "name": "Justin Wagle"
+      },
+      {
+        "authorId": "145733034",
+        "name": "K. Koishida"
+      },
+      {
+        "authorId": "2008679488",
+        "name": "A. Bucker"
+      },
+      {
+        "authorId": "2320803715",
+        "name": "Lawrence Jang"
+      },
+      {
+        "authorId": "2320805343",
+        "name": "Zack Hui"
+      }
+    ],
+    "abstract": "Large language models (LLMs) show remarkable potential to act as computer agents, enhancing human productivity and software accessibility in multi-modal tasks that require planning and reasoning. However, measuring agent performance in realistic environments remains a challenge since: (i) most benchmarks are limited to specific modalities or domains (e.g. text-only, web navigation, Q&A, coding) and (ii) full benchmark evaluations are slow (on order of magnitude of days) given the multi-step sequential nature of tasks. To address these challenges, we introduce the Windows Agent Arena: a reproducible, general environment focusing exclusively on the Windows operating system (OS) where agents can operate freely within a real Windows OS and use the same wide range of applications, tools, and web browsers available to human users when solving tasks. We adapt the OSWorld framework (Xie et al., 2024) to create 150+ diverse Windows tasks across representative domains that require agent abilities in planning, screen understanding, and tool usage. Our benchmark is scalable and can be seamlessly parallelized in Azure for a full benchmark evaluation in as little as 20 minutes. To demonstrate Windows Agent Arena's capabilities, we also introduce a new multi-modal agent, Navi. Our agent achieves a success rate of 19.5% in the Windows domain, compared to 74.5% performance of an unassisted human. Navi also demonstrates strong performance on another popular web-based benchmark, Mind2Web. We offer extensive quantitative and qualitative analysis of Navi's performance, and provide insights into the opportunities for future research in agent development and data generation using Windows Agent Arena. Webpage: https://microsoft.github.io/WindowsAgentArena Code: https://github.com/microsoft/WindowsAgentArena",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "09710b95adf178e6db154d1a54212d4b111b7a6a",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2407-19056",
+      "ArXiv": "2407.19056",
+      "DOI": "10.48550/arXiv.2407.19056",
+      "CorpusId": 271534070
+    },
+    "url": "https://www.semanticscholar.org/paper/09710b95adf178e6db154d1a54212d4b111b7a6a",
+    "title": "OfficeBench: Benchmarking Language Agents across Multiple Applications for Office Automation",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 30,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2407.19056, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2265487043",
+        "name": "Zilong Wang"
+      },
+      {
+        "authorId": "2313663312",
+        "name": "Yuedong Cui"
+      },
+      {
+        "authorId": "2287937401",
+        "name": "Li Zhong"
+      },
+      {
+        "authorId": "2362978787",
+        "name": "Zimin Zhang"
+      },
+      {
+        "authorId": "2290020893",
+        "name": "Da Yin"
+      },
+      {
+        "authorId": "2328296250",
+        "name": "B. Lin"
+      },
+      {
+        "authorId": "2310730051",
+        "name": "Jingbo Shang"
+      }
+    ],
+    "abstract": "Office automation significantly enhances human productivity by automatically finishing routine tasks in the workflow. Beyond the basic information extraction studied in much of the prior document AI literature, the office automation research should be extended to more realistic office tasks which require to integrate various information sources in the office system and produce outputs through a series of decision-making processes. We introduce OfficeBench, one of the first office automation benchmarks for evaluating current LLM agents' capability to address office tasks in realistic office workflows. OfficeBench requires LLM agents to perform feasible long-horizon planning, proficiently switch between applications in a timely manner, and accurately ground their actions within a large combined action space, based on the contextual demands of the workflow. Applying our customized evaluation methods on each task, we find that GPT-4 Omni achieves the highest pass rate of 47.00%, demonstrating a decent performance in handling office tasks. However, this is still far below the human performance and accuracy standards required by real-world office workflows. We further observe that most issues are related to operation redundancy and hallucinations, as well as limitations in switching between multiple applications, which may provide valuable insights for developing effective agent frameworks for office automation.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ff3e4f7c2481fb6df539f02be5945235101cbc19",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2404-07972",
+      "ArXiv": "2404.07972",
+      "DOI": "10.48550/arXiv.2404.07972",
+      "CorpusId": 269042918
+    },
+    "url": "https://www.semanticscholar.org/paper/ff3e4f7c2481fb6df539f02be5945235101cbc19",
+    "title": "OSWorld: Benchmarking Multimodal Agents for Open-Ended Tasks in Real Computer Environments",
+    "venue": "Neural Information Processing Systems",
+    "year": 2024,
+    "citationCount": 669,
+    "influentialCitationCount": 108,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.07972, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2057038673",
+        "name": "Tianbao Xie"
+      },
+      {
+        "authorId": "2118333",
+        "name": "Danyang Zhang"
+      },
+      {
+        "authorId": "2296064274",
+        "name": "Jixuan Chen"
+      },
+      {
+        "authorId": "2296227930",
+        "name": "Xiaochuan Li"
+      },
+      {
+        "authorId": "2243033718",
+        "name": "Siheng Zhao"
+      },
+      {
+        "authorId": "150273321",
+        "name": "Ruisheng Cao"
+      },
+      {
+        "authorId": "2258947427",
+        "name": "T. Hua"
+      },
+      {
+        "authorId": "2258309092",
+        "name": "Zhoujun Cheng"
+      },
+      {
+        "authorId": "2260644979",
+        "name": "Dongchan Shin"
+      },
+      {
+        "authorId": "2257004176",
+        "name": "Fangyu Lei"
+      },
+      {
+        "authorId": "2243302973",
+        "name": "Yitao Liu"
+      },
+      {
+        "authorId": "3032611",
+        "name": "Yiheng Xu"
+      },
+      {
+        "authorId": "2296439310",
+        "name": "Shuyan Zhou"
+      },
+      {
+        "authorId": "2238207181",
+        "name": "Silvio Savarese"
+      },
+      {
+        "authorId": "2256976968",
+        "name": "Caiming Xiong"
+      },
+      {
+        "authorId": "2243226284",
+        "name": "Victor Zhong"
+      },
+      {
+        "authorId": "2256865348",
+        "name": "Tao Yu"
+      }
+    ],
+    "abstract": "Autonomous agents that accomplish complex computer tasks with minimal human interventions have the potential to transform human-computer interaction, significantly enhancing accessibility and productivity. However, existing benchmarks either lack an interactive environment or are limited to environments specific to certain applications or domains, failing to reflect the diverse and complex nature of real-world computer use, thereby limiting the scope of tasks and agent scalability. To address this issue, we introduce OSWorld, the first-of-its-kind scalable, real computer environment for multimodal agents, supporting task setup, execution-based evaluation, and interactive learning across various operating systems such as Ubuntu, Windows, and macOS. OSWorld can serve as a unified, integrated computer environment for assessing open-ended computer tasks that involve arbitrary applications. Building upon OSWorld, we create a benchmark of 369 computer tasks involving real web and desktop apps in open domains, OS file I/O, and workflows spanning multiple applications. Each task example is derived from real-world computer use cases and includes a detailed initial state setup configuration and a custom execution-based evaluation script for reliable, reproducible evaluation. Extensive evaluation of state-of-the-art LLM/VLM-based agents on OSWorld reveals significant deficiencies in their ability to serve as computer assistants. While humans can accomplish over 72.36% of the tasks, the best model achieves only 12.24% success, primarily struggling with GUI grounding and operational knowledge. Comprehensive analysis using OSWorld provides valuable insights for developing multimodal generalist agents that were not possible with previous benchmarks. Our code, environment, baseline models, and data are publicly available at https://os-world.github.io.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "83b90f4a0ae4cc214eb3cc140ccfef9cd99fac05",
+    "externalIds": {
+      "DBLP": "conf/sosp/KwonLZ0ZY0ZS23",
+      "ArXiv": "2309.06180",
+      "DOI": "10.1145/3600006.3613165",
+      "CorpusId": 261697361
+    },
+    "url": "https://www.semanticscholar.org/paper/83b90f4a0ae4cc214eb3cc140ccfef9cd99fac05",
+    "title": "Efficient Memory Management for Large Language Model Serving with PagedAttention",
+    "venue": "Symposium on Operating Systems Principles",
+    "year": 2023,
+    "citationCount": 5877,
+    "influentialCitationCount": 819,
+    "openAccessPdf": {
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3600006.3613165",
+      "status": "HYBRID",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.06180, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "Book",
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2239096468",
+        "name": "Woosuk Kwon"
+      },
+      {
+        "authorId": "2141335450",
+        "name": "Zhuohan Li"
+      },
+      {
+        "authorId": "92721493",
+        "name": "Siyuan Zhuang"
+      },
+      {
+        "authorId": "2209360681",
+        "name": "Ying Sheng"
+      },
+      {
+        "authorId": "2149970173",
+        "name": "Lianmin Zheng"
+      },
+      {
+        "authorId": "17813719",
+        "name": "C. Yu"
+      },
+      {
+        "authorId": "49988044",
+        "name": "Joseph E. Gonzalez"
+      },
+      {
+        "authorId": "145140331",
+        "name": "Haotong Zhang"
+      },
+      {
+        "authorId": "2055174324",
+        "name": "Ion Stoica"
+      }
+    ],
+    "abstract": "High throughput serving of large language models (LLMs) requires batching sufficiently many requests at a time. However, existing systems struggle because the key-value cache (KV cache) memory for each request is huge and grows and shrinks dynamically. When managed inefficiently, this memory can be significantly wasted by fragmentation and redundant duplication, limiting the batch size. To address this problem, we propose PagedAttention, an attention algorithm inspired by the classical virtual memory and paging techniques in operating systems. On top of it, we build vLLM, an LLM serving system that achieves (1) near-zero waste in KV cache memory and (2) flexible sharing of KV cache within and across requests to further reduce memory usage. Our evaluations show that vLLM improves the throughput of popular LLMs by 2--4× with the same level of latency compared to the state-of-the-art systems, such as FasterTransformer and Orca. The improvement is more pronounced with longer sequences, larger models, and more complex decoding algorithms. vLLM's source code is publicly available at https://github.com/vllm-project/vllm.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "23525374cfd3af714f3ffb7a203b1ef3253333fe",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2207-01206",
+      "ArXiv": "2207.01206",
+      "DOI": "10.48550/arXiv.2207.01206",
+      "CorpusId": 250264533
+    },
+    "url": "https://www.semanticscholar.org/paper/23525374cfd3af714f3ffb7a203b1ef3253333fe",
+    "title": "WebShop: Towards Scalable Real-World Web Interaction with Grounded Language Agents",
+    "venue": "Neural Information Processing Systems",
+    "year": 2022,
+    "citationCount": 995,
+    "influentialCitationCount": 167,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2207.01206",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2207.01206, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2093302161",
+        "name": "Shunyu Yao"
+      },
+      {
+        "authorId": "2108271953",
+        "name": "Howard Chen"
+      },
+      {
+        "authorId": "2109727379",
+        "name": "John Yang"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      }
+    ],
+    "abstract": "Existing benchmarks for grounding language in interactive environments either lack real-world linguistic elements, or prove difficult to scale up due to substantial human involvement in the collection of data or feedback signals. To bridge this gap, we develop WebShop -- a simulated e-commerce website environment with $1.18$ million real-world products and $12,087$ crowd-sourced text instructions. Given a text instruction specifying a product requirement, an agent needs to navigate multiple types of webpages and issue diverse actions to find, customize, and purchase an item. WebShop provides several challenges for language grounding including understanding compositional instructions, query (re-)formulation, comprehending and acting on noisy text in webpages, and performing strategic exploration. We collect over $1,600$ human demonstrations for the task, and train and evaluate a diverse range of agents using reinforcement learning, imitation learning, and pre-trained image and language models. Our best model achieves a task success rate of $29\\%$, which outperforms rule-based heuristics ($9.6\\%$) but is far lower than human expert performance ($59\\%$). We also analyze agent and human trajectories and ablate various model components to provide insights for developing future agents with stronger language understanding and decision making abilities. Finally, we show that agents trained on WebShop exhibit non-trivial sim-to-real transfer when evaluated on amazon.com and ebay.com, indicating the potential value of WebShop in developing practical web-based agents that can operate in the wild.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "221d453c165aca6bc1a054289eb510e558a23dca",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-1909-05398",
+      "ArXiv": "1909.05398",
+      "MAG": "2972550240",
+      "DOI": "10.1609/AAAI.V34I05.6297",
+      "CorpusId": 202565447
+    },
+    "url": "https://www.semanticscholar.org/paper/221d453c165aca6bc1a054289eb510e558a23dca",
+    "title": "Interactive Fiction Games: A Colossal Adventure",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2019,
+    "citationCount": 246,
+    "influentialCitationCount": 42,
+    "openAccessPdf": {
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/6297/6153",
+      "status": "GOLD",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1909.05398, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "3308897",
+        "name": "Matthew J. Hausknecht"
+      },
+      {
+        "authorId": "19179135",
+        "name": "Prithviraj Ammanabrolu"
+      },
+      {
+        "authorId": "40638665",
+        "name": "Marc-Alexandre Côté"
+      },
+      {
+        "authorId": "2854297",
+        "name": "Xingdi Yuan"
+      }
+    ],
+    "abstract": "A hallmark of human intelligence is the ability to understand and communicate with language. Interactive Fiction games are fully text-based simulation environments where a player issues text commands to effect change in the environment and progress through the story. We argue that IF games are an excellent testbed for studying language-based autonomous agents. In particular, IF games combine challenges of combinatorial action spaces, language understanding, and commonsense reasoning. To facilitate rapid development of language-based agents, we introduce Jericho, a learning environment for man-made IF games and conduct a comprehensive study of text-agents across a rich set of games, highlighting directions in which agents can improve.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "89daae27e7df4a418b9610d307ce3df0e30fc8a2",
+    "externalIds": {
+      "DBLP": "conf/ijcai/CoteKYKBFMHAATT18",
+      "MAG": "2810346659",
+      "ArXiv": "1806.11532",
+      "DOI": "10.1007/978-3-030-24337-1_3",
+      "CorpusId": 49552345
+    },
+    "url": "https://www.semanticscholar.org/paper/89daae27e7df4a418b9610d307ce3df0e30fc8a2",
+    "title": "TextWorld: A Learning Environment for Text-based Games",
+    "venue": "CGW@IJCAI",
+    "year": 2018,
+    "citationCount": 460,
+    "influentialCitationCount": 64,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/1806.11532",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1806.11532, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Mathematics"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "40638665",
+        "name": "Marc-Alexandre Côté"
+      },
+      {
+        "authorId": "2828538",
+        "name": "Ákos Kádár"
+      },
+      {
+        "authorId": "2854297",
+        "name": "Xingdi Yuan"
+      },
+      {
+        "authorId": "1873720",
+        "name": "B. Kybartas"
+      },
+      {
+        "authorId": "48316034",
+        "name": "Tavian Barnes"
+      },
+      {
+        "authorId": "31464095",
+        "name": "Emery Fine"
+      },
+      {
+        "authorId": "2108564018",
+        "name": "James Moore"
+      },
+      {
+        "authorId": "3308897",
+        "name": "Matthew J. Hausknecht"
+      },
+      {
+        "authorId": "3349496",
+        "name": "Layla El Asri"
+      },
+      {
+        "authorId": "51172009",
+        "name": "Mahmoud Adada"
+      },
+      {
+        "authorId": "2055416626",
+        "name": "Wendy Tay"
+      },
+      {
+        "authorId": "3382568",
+        "name": "Adam Trischler"
+      }
+    ],
+    "abstract": "We introduce TextWorld, a sandbox learning environment for the training and evaluation of RL agents on text-based games. TextWorld is a Python library that handles interactive play-through of text games, as well as backend functions like state tracking and reward assignment. It comes with a curated list of games whose features and challenges we have analyzed. More significantly, it enables users to handcraft or automatically generate new games. Its generative mechanisms give precise control over the difficulty, scope, and language of constructed games, and can be used to relax challenges inherent to commercial text games like partial observability and sparse rewards. By generating sets of varied but similar games, TextWorld can also be used to study generalization and transfer learning. We cast text-based games in the Reinforcement Learning formalism, use our framework to develop a set of benchmark games, and evaluate several baseline agents on this set and the curated list.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "7dd8fc595afdd2097b43a5af9a8d9f5e97a65ec1",
+    "externalIds": {
+      "MAG": "2963888186",
+      "ArXiv": "1802.08802",
+      "DBLP": "journals/corr/abs-1802-08802",
+      "CorpusId": 3530344
+    },
+    "url": "https://www.semanticscholar.org/paper/7dd8fc595afdd2097b43a5af9a8d9f5e97a65ec1",
+    "title": "Reinforcement Learning on Web Interfaces Using Workflow-Guided Exploration",
+    "venue": "International Conference on Learning Representations",
+    "year": 2018,
+    "citationCount": 320,
+    "influentialCitationCount": 51,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1802.08802, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "7301007",
+        "name": "E. Liu"
+      },
+      {
+        "authorId": "2091768",
+        "name": "Kelvin Guu"
+      },
+      {
+        "authorId": "2616463",
+        "name": "Panupong Pasupat"
+      },
+      {
+        "authorId": "10238549",
+        "name": "Tianlin Shi"
+      },
+      {
+        "authorId": "145419642",
+        "name": "Percy Liang"
+      }
+    ],
+    "abstract": "Reinforcement learning (RL) agents improve through trial-and-error, but when reward is sparse and the agent cannot discover successful action sequences, learning stagnates. This has been a notable problem in training deep RL agents to perform web-based tasks, such as booking flights or replying to emails, where a single mistake can ruin the entire sequence of actions. A common remedy is to \"warm-start\" the agent by pre-training it to mimic expert demonstrations, but this is prone to overfitting. Instead, we propose to constrain exploration using demonstrations. From each demonstration, we induce high-level \"workflows\" which constrain the allowable actions at each time step to be similar to those in the demonstration (e.g., \"Step 1: click on a textbox; Step 2: enter some text\"). Our exploration policy then learns to identify successful workflows and samples actions that satisfy these workflows. Workflows prune out bad exploration directions and accelerate the agent's ability to discover rewards. We use our approach to train a novel neural policy designed to handle the semi-structured nature of websites, and evaluate on a suite of web tasks, including the recent World of Bits benchmark. We achieve new state-of-the-art results, and show that workflow-guided exploration improves sample efficiency over behavioral cloning by more than 100x.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "fc88281610b6fff31dbf6e2327ca2e156d341139",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2507-21046",
+      "DOI": "10.48550/arXiv.2507.21046",
+      "CorpusId": 284911878
+    },
+    "url": "https://www.semanticscholar.org/paper/fc88281610b6fff31dbf6e2327ca2e156d341139",
+    "title": "A Survey of Self-Evolving Agents: On Path to Artificial Super Intelligence",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 90,
+    "influentialCitationCount": 7,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2507.21046?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2507.21046, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2371219369",
+        "name": "Huan-ang Gao"
+      },
+      {
+        "authorId": "2326988525",
+        "name": "Jiayi Geng"
+      },
+      {
+        "authorId": "2382921358",
+        "name": "Wenyue Hua"
+      },
+      {
+        "authorId": "2364560731",
+        "name": "Mengkang Hu"
+      },
+      {
+        "authorId": "2350749410",
+        "name": "Xinzhe Juan"
+      },
+      {
+        "authorId": "2353419005",
+        "name": "Hongzhang Liu"
+      },
+      {
+        "authorId": "2364422768",
+        "name": "Shilong Liu"
+      },
+      {
+        "authorId": "2353709628",
+        "name": "J. Qiu"
+      },
+      {
+        "authorId": "2365433022",
+        "name": "Xuan Qi"
+      },
+      {
+        "authorId": "2115853457",
+        "name": "Yiran Wu"
+      },
+      {
+        "authorId": "22642319",
+        "name": "Hongru Wang"
+      },
+      {
+        "authorId": "2374195885",
+        "name": "Han Xiao"
+      },
+      {
+        "authorId": "2381407651",
+        "name": "Yuhan Zhou"
+      },
+      {
+        "authorId": "2116579935",
+        "name": "Shaokun Zhang"
+      },
+      {
+        "authorId": "2288348676",
+        "name": "Jiayi Zhang"
+      },
+      {
+        "authorId": "2325887081",
+        "name": "Jinyu Xiang"
+      },
+      {
+        "authorId": "2373538487",
+        "name": "Yixiong Fang"
+      },
+      {
+        "authorId": "2373639638",
+        "name": "Qiwen Zhao"
+      },
+      {
+        "authorId": "2288245418",
+        "name": "Dongrui Liu"
+      },
+      {
+        "authorId": "2363494601",
+        "name": "Qihan Ren"
+      },
+      {
+        "authorId": "2082473972",
+        "name": "Cheng Qian"
+      },
+      {
+        "authorId": "2052036545",
+        "name": "Zhenhailong Wang"
+      },
+      {
+        "authorId": "2249778653",
+        "name": "Minda Hu"
+      },
+      {
+        "authorId": "2257095799",
+        "name": "Huazheng Wang"
+      },
+      {
+        "authorId": "2359252053",
+        "name": "Qingyun Wu"
+      },
+      {
+        "authorId": "2375307513",
+        "name": "Heng Ji"
+      },
+      {
+        "authorId": "2327563557",
+        "name": "Mengdi Wang"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "b0b3426a0e1ec256f54ff30d60aaaf8decb1b8eb",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2510-02250",
+      "DOI": "10.48550/arXiv.2510.02250",
+      "CorpusId": 286975118
+    },
+    "url": "https://www.semanticscholar.org/paper/b0b3426a0e1ec256f54ff30d60aaaf8decb1b8eb",
+    "title": "The Unreasonable Effectiveness of Scaling Agents for Computer Use",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 22,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2510.02250?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2510.02250, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2288264860",
+        "name": "Gonzalo Gonzalez-Pumariega"
+      },
+      {
+        "authorId": "2353079048",
+        "name": "Vincent Tu"
+      },
+      {
+        "authorId": "2383938813",
+        "name": "Chih-Lun Lee"
+      },
+      {
+        "authorId": "2325193568",
+        "name": "Jiachen Yang"
+      },
+      {
+        "authorId": null,
+        "name": "Ang Li"
+      },
+      {
+        "authorId": "2325785593",
+        "name": "X. Wang"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "f554b22d2ccf786a6d61d5858f43024ba9115e15",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2401-13649",
+      "DOI": "10.48550/arXiv.2401.13649",
+      "CorpusId": 267199749
+    },
+    "url": "https://www.semanticscholar.org/paper/f554b22d2ccf786a6d61d5858f43024ba9115e15",
+    "title": "VisualWebArena: Evaluating Multimodal Agents on Realistic Visual Web Tasks",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2024,
+    "citationCount": 485,
+    "influentialCitationCount": 52,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2401.13649?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2401.13649, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "23978705",
+        "name": "Jing Yu Koh"
+      },
+      {
+        "authorId": "145250604",
+        "name": "Robert Lo"
+      },
+      {
+        "authorId": "2280901917",
+        "name": "L. Jang"
+      },
+      {
+        "authorId": "2223753659",
+        "name": "Vikram Duvvur"
+      },
+      {
+        "authorId": "2280879326",
+        "name": "Ming Chong Lim"
+      },
+      {
+        "authorId": "2281408098",
+        "name": "Po-Yu Huang"
+      },
+      {
+        "authorId": "1700325",
+        "name": "Graham Neubig"
+      },
+      {
+        "authorId": "2149163534",
+        "name": "Shuyan Zhou"
+      },
+      {
+        "authorId": "2280902225",
+        "name": "Ruslan Salakhutdinov"
+      },
+      {
+        "authorId": "2259931814",
+        "name": "Daniel Fried"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "computer-use-preview model (openai api documentation)",
+    "venue": "Technical documentation",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Coact-1: Computer-using agents with coding as actions",
+    "venue": "arXiv",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "multi-modal",
+    "venue": "Windows agent arena: Evaluating multi-modal",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Benchmark for multimodal gui-navigation",
+    "venue": "Osuniverse:",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Automatic knowledge",
+    "venue": "Ui-evol:",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Flow-based generative models as gui dexterous hands, 2025a",
+    "venue": "arxiv",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Don’t build agents, build skills instead",
+    "venue": "YouTube video (AI Engineer), December 2025",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Advanced agent for flexible mobile",
+    "venue": "Appagent v2:",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  }
+]

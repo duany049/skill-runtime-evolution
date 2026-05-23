@@ -1,0 +1,344 @@
+# Gap Map
+
+_Auto-generated open questions. Do not edit._
+
+- [paper/agent-workflow-memory] Can workflows be **revised** post-hoc when later evidence contradicts them (the LM evaluator was wrong, or a website changed)?
+- [paper/agent-workflow-memory] What is the right **retrieval policy** for a unified workflow library spanning many websites and tasks? Per-website grouping is a stopgap.
+- [paper/agent-workflow-memory] How does AWM compose with **action-space modifications** like SteP's hand-written skills — are induced workflows and authored skills additive or redundant?
+- [paper/agent-workflow-memory] What does the **scaling behavior** look like? AWM's curve plateaus on WebArena after ~40 queries; is that an artifact of test-set size or a real saturation?
+- [paper/agent-workflow-memory] Is there a principled **cross-domain transfer** signal for workflows, or does cross-domain success require always re-inducing from test queries (the online setting)?
+- [paper/agentic-memory-learning-unified-long-term] How does AgeMem behave under truly persistent multi-session deployment where LTM grows across many episodes and forgetting/consolidation become first-order concerns? The benchmarks here are within-episode long-horizon, not cross-session.
+- [paper/agentic-memory-learning-unified-long-term] Can the curriculum be applied without HotpotQA-style supporting-fact labels? The paper claims the three-stage structure only needs temporal separation between exposure and execution, but doesn't demonstrate this with a non-QA training source.
+- [paper/agentic-memory-learning-unified-long-term] Is the broadcast-advantage assumption (every step in a trajectory gets the same advantage) optimal for memory operations, or would a learned step-level credit-assignment scheme (e.g., counterfactual advantages over memory tool calls) improve LTM quality further?
+- [paper/agentic-memory-learning-unified-long-term] The Update tool is invoked very sparsely (0.13–0.34/episode after RL). Is this because Update is genuinely rarely useful, or because the reward function under-incentivizes it? The MQ metric doesn't directly probe this.
+- [paper/atommem-learnable-dynamic-agentic-memory-atomic] Can per-memory-entry credit assignment (vs uniform advantage) yield meaningfully better policies without bespoke RL algorithm design?
+- [paper/atommem-learnable-dynamic-agentic-memory-atomic] How does the learned CRUD policy behave under bounded memory capacity? The appendix hints frequencies shift, but the structure of the new policy and any failure modes are not characterized.
+- [paper/atommem-learnable-dynamic-agentic-memory-atomic] Does an AtomMem-style policy generalize across agent backbones (e.g., does the CRUD vocabulary transfer to a different base LLM without retraining), or is the learned policy backbone-coupled?
+- [paper/atommem-learnable-dynamic-agentic-memory-atomic] Are atomic CRUD operations the *minimal* useful set, or is a smaller/larger atomic set (e.g., merge `Update` and `Delete`, or split `Read` into deterministic and selective sub-actions) more learnable?
+- [paper/atommem-learnable-dynamic-agentic-memory-atomic] How does the approach interact with cross-task / lifelong memory (the paper deliberately resets `s_0^mem = ∅` per task, separating itself from Expel/Memp-style cross-task accumulation)?
+- [paper/autorefine-trajectories-reusable-expertise-continual-llm] Can pattern extraction be made symmetric between successes and failures rather than success-only?
+- [paper/autorefine-trajectories-reusable-expertise-continual-llm] Are the maintenance hyperparameters learnable from data (e.g., adapting $\theta_{\text{merge}}$ to repository density)?
+- [paper/autorefine-trajectories-reusable-expertise-continual-llm] Does the subagent abstraction scale to deeper hierarchies (sub-subagents) or hit a delegation-overhead wall?
+- [paper/autorefine-trajectories-reusable-expertise-continual-llm] How do repository quality and utilization rate co-evolve when the task distribution shifts (concept drift)?
+- [paper/autorefine-trajectories-reusable-expertise-continual-llm] The verifier agent that confirms actual pattern utilization is itself an LLM — what is the false-positive/negative rate, and how sensitive is the scoring loop to verifier errors?
+- [paper/cascade-cumulative-agentic-skill-creation-through] How to balance plasticity (continuous learning) against reliability (don't overwrite working skills) without manual schedules?
+- [paper/cascade-cumulative-agentic-skill-creation-through] What unit of procedural memory makes the strongest cross-task transfer signal — verbatim code snippets, summarized recipes, or graph-typed entities?
+- [paper/cascade-cumulative-agentic-skill-creation-through] Can the domain-agnostic design transfer to software engineering, biology, or robotics with the same tool surface but different memory seeds?
+- [paper/cascade-cumulative-agentic-skill-creation-through] How should the system price compute when difficulty is unknown — i.e., when to abort DeepSolver early versus continue debugging?
+- [paper/cascade-cumulative-agentic-skill-creation-through] Can self-reflection alone (without web search) be made strictly dominant on a wider range of tasks?
+- [paper/contextual-experience-replay-self-improvement-language] Can low-quality / random-exploration trajectories be salvaged via finer-grained filtering or trajectory segmentation?
+- [paper/contextual-experience-replay-self-improvement-language] How to design analogous dynamics representations for non-URL environments where state is harder to address atomically?
+- [paper/contextual-experience-replay-self-improvement-language] How does the buffer scale across many environments — does cross-domain experience transfer or interfere?
+- [paper/contextual-experience-replay-self-improvement-language] Is the stability–plasticity tradeoff stable as the buffer grows over thousands of tasks?
+- [paper/contextual-experience-replay-self-improvement-language] Can the distillation/retrieval modules themselves be trained or self-improved, rather than fixed prompts?
+- [paper/how-well-agentic-skills-work-wild] Can query-agnostic refinement match query-specific gains if the offline skill-improvement loop has access to the task *distribution* (not the specific query) — i.e. is there a useful middle ground?
+- [paper/how-well-agentic-skills-work-wild] How much of the gap between retrieved-w/o-curated and curated is closable purely by improving retrieval (e.g. higher Recall@k or learned reranking) without changing skill content?
+- [paper/how-well-agentic-skills-work-wild] What design properties of agent harnesses (Claude Code vs. Terminus-2 vs. Qwen-Code) explain Kimi's high skill-loading rate without translation into pass-rate gains?
+- [paper/how-well-agentic-skills-work-wild] Are there skill-collection-curation strategies (clustering, hierarchy, canonicalization) that reduce the realistic-vs-curated gap without per-query refinement at inference?
+- [paper/how-well-agentic-skills-work-wild] Does the multiplier-vs-generator characterization of refinement generalize to non-coding domains where "skill quality" may not be as cleanly defined?
+- [paper/jarvis-open-world-multi-task-agents] How should procedural memory be *consolidated* as it grows — are all 425 trajectories worth keeping, or do redundant entries dilute retrieval quality? The paper does not study eviction or compression.
+- [paper/jarvis-open-world-multi-task-agents] Can self-instruct curriculum quality be measured intrinsically (without downstream task evaluation) to make the loop fully autonomous?
+- [paper/jarvis-open-world-multi-task-agents] When should the system fold accumulated experience back into the LLM's parameters via finetuning vs. keep everything in-context indefinitely?
+- [paper/jarvis-open-world-multi-task-agents] How does memory generalize across agent backbones — does the same memory help both GPT-4 and a finetuned LLaMA?
+- [paper/jarvis-open-world-multi-task-agents] How robust is multimodal retrieval to distribution shift (e.g., new biomes, new mod packs) the agent has never seen during exploration?
+- [paper/just-time-reinforcement-learning-continual-learning] Can state abstraction be learned end-to-end rather than hand-engineered per environment?
+- [paper/just-time-reinforcement-learning-continual-learning] How does JitRL behave when the environment distribution shifts during deployment (non-stationary tasks vs non-stationary policy)? The convergence theorem assumes underlying-true-value stability across the retrieval neighborhood.
+- [paper/just-time-reinforcement-learning-continual-learning] What is the interaction between memory size `|M|`, retrieval `k`, and effective sample complexity — is there a regime where storing more hurts because retrieval becomes too noisy?
+- [paper/just-time-reinforcement-learning-continual-learning] Can the closed-form KL-constrained update be combined with parameter-efficient fine-tuning (e.g. LoRA) to get the best of both training-free and gradient-based approaches?
+- [paper/just-time-reinforcement-learning-continual-learning] How does JitRL compose with other test-time policies (Reflexion-style verbal feedback, AWM-style procedural memory) — are they additive?
+- [paper/legomem-modular-procedural-memory-multi-agent] Can procedural memory be learned *jointly* from successes and failures, with failure traces used to suppress wrong-tool-use patterns rather than discarded?
+- [paper/legomem-modular-procedural-memory-multi-agent] How does the orchestrator-memory dominance result change when the orchestrator itself is a small model — does subtask memory become primary?
+- [paper/legomem-modular-procedural-memory-multi-agent] Is there a principled way to choose retrieval granularity per task (full-task vs subtask) rather than fixing it at framework-design time?
+- [paper/legomem-modular-procedural-memory-multi-agent] How does memory placement interact with explicit skill-library structures (hierarchical, compositional procedures) instead of flat banks?
+- [paper/live-evo-online-evolution-agentic-memory] How does the system behave when feedback is delayed, biased, or partially observed (e.g. some week's labels are unavailable)? The current contrastive evaluation assumes prompt outcome resolution.
+- [paper/live-evo-online-evolution-agentic-memory] Can the verify-before-update threshold be made adaptive (e.g. tighter when the bank is small, looser when it is mature)?
+- [paper/live-evo-online-evolution-agentic-memory] Is the reinforcement-and-decay dynamic stable when the task distribution shifts abruptly rather than gradually (regime change, not drift)?
+- [paper/live-evo-online-evolution-agentic-memory] The meta-guideline bank itself has no explicit forgetting mechanism described — what stops $\mathcal{M}$ from accumulating stale meta-heuristics over very long horizons?
+- [paper/memento-skills-let-agents-design-agents] **Convergence rate.** Does the empirical $O(n^{-1/d})$ memory-coverage decay generalise, and is the asymptotic value gap tight under the SRDP bound?
+- [paper/memento-skills-let-agents-design-agents] **Scaling the skill library.** Does Parzen-kernel-style retrieval hold at 1M+ skills, or does another retrieval primitive become necessary?
+- [paper/memento-skills-let-agents-design-agents] **Cross-benchmark, cross-LLM transfer.** When the underlying LLM is swapped (Gemini → Claude → Qwen), does the same skill library still help, or does the behavioural signal embedded by the router collapse?
+- [paper/memento-skills-let-agents-design-agents] **Memory hygiene.** When does the library need pruning, retirement, or compaction? The paper has utility-driven discovery but no formal deprecation policy.
+- [paper/memento-skills-let-agents-design-agents] **Multi-agent reflective writes.** How is distributed credit assignment performed when Agent A writes a skill that Agent B later fails with?
+- [paper/memento-skills-let-agents-design-agents] **Trajectory-level reflection.** Without discrete episode boundaries, when should an agent pause to write?
+- [paper/memevolve-meta-evolution-agent-memory-systems] Does MemEvolve's "agentic-ization" trend (encode/retrieve becoming LLM-driven) generalize once backbones shift to non-frontier or open-weight smaller models, or does it collapse when the meta-operator LLM is weak?
+- [paper/memevolve-meta-evolution-agent-memory-systems] What is the marginal value of the *evolution* of architecture vs. simply picking the best single human-designed memory per task family? The Table 2 baselines suggest the gap is real but narrow (best baseline AWM matches MemEvolve on WebWalkerQA within 2.36 pp).
+- [paper/memevolve-meta-evolution-agent-memory-systems] The four-slot design space is taken as given. Are there memory affordances (e.g. typed multi-store hierarchies, episodic-semantic split, attention-style soft retrieval) that fundamentally don't fit `(E, U, R, G)` and are systematically excluded?
+- [paper/memevolve-meta-evolution-agent-memory-systems] Can the diagnose-and-design loop become self-improving — i.e. can the meta-operator itself be evolved, not just the memory it produces?
+- [paper/memevolve-meta-evolution-agent-memory-systems] How does negative transfer interact with the framework? When an evolved memory transfers to a new framework and *hurts* one sub-task while helping the aggregate, no mechanism is provided to detect that.
+- [paper/memp-exploring-agent-procedural-memory] How should retrieval interact with constraint satisfaction so that retrieved memories don't displace hard-constraint enforcement (the HC regression on TravelPlanner)?
+- [paper/memp-exploring-agent-procedural-memory] What governs the optimal number of retrieved memories per task — can it be predicted from task complexity rather than tuned empirically?
+- [paper/memp-exploring-agent-procedural-memory] Can the validation / adjustment update operators themselves be *learned* rather than hand-specified?
+- [paper/memp-exploring-agent-procedural-memory] For cross-model transfer, what properties of the procedural memory bank (format, abstraction level, key granularity) determine portability across heterogeneous backbones?
+- [paper/memp-exploring-agent-procedural-memory] How does Memp behave in environments without ground-truth reward — can an LLM-as-judge substitute reliably, as the authors speculate?
+- [paper/memskill-learning-evolving-memory-skills-self] How well do MemSkill-evolved skills transfer across modalities (e.g., from text dialogue to multi-modal or robotic memory)?
+- [paper/memskill-learning-evolving-memory-skills-self] Can skill-bank growth be regulated without an explicit max-edits cap—e.g., via consolidation or retirement policies analogous to those discussed in skill-library work?
+- [paper/memskill-learning-evolving-memory-skills-self] What is the marginal value of designer-driven evolution vs. a strong one-shot skill-generation baseline matched on compute?
+- [paper/memskill-learning-evolving-memory-skills-self] Does cross-user / cross-deployment skill aggregation (instead of single-trajectory evolution) yield further gains, and how should conflicting designer proposals be reconciled?
+- [paper/memskill-learning-evolving-memory-skills-self] How does MemSkill behave under adversarial / noisy memory traces designed to destabilize the controller or trigger pathological skill edits?
+- [paper/memweaver-weaving-hybrid-memories-traceable-long] How does memory-write quality degrade when the offline builder is a smaller / weaker model? Is the asymmetry between builder and backbone the actual driver of the small-backbone gains, or is it the structural decoupling?
+- [paper/memweaver-weaving-hybrid-memories-traceable-long] Can temporal normalization survive multi-timezone or fictional-time settings? The paper assumes the dialogue's timestamps are coherent.
+- [paper/memweaver-weaving-hybrid-memories-traceable-long] The session-level review step performs `add` / `update` / `deny`. What happens at very long horizons where deny accumulates faster than evidence — does the graph become brittle?
+- [paper/memweaver-weaving-hybrid-memories-traceable-long] How does the system handle conflicting facts that genuinely change over time (a user's preference shifting)? "Temporal grounding" implies the older fact should remain but be flagged as superseded; the paper does not elaborate the policy.
+- [paper/memweaver-weaving-hybrid-memories-traceable-long] ExpM is induced from clusters of similar dialogue units. What guarantees that the induced experience items capture *behavior patterns* rather than just topical repetition? The current coherence check is semantic-similarity-driven, not behavioral.
+- [paper/osexpert-computer-use-agents-learning-professional] Can the failed-skill labels in `K` be distinguished between *agent-policy failures* and *true environment infeasibility*? Otherwise the skill-boundary check risks ossifying weak-agent blind spots.
+- [paper/osexpert-computer-use-agents-learning-professional] The fast planner only emits planning sequences; per-step perception and action selection still call the base agent. What is the right unit of caching — plan, plan+action, or full trajectory?
+- [paper/osexpert-computer-use-agents-learning-professional] Composite skills are generated by the agent's own curriculum. How sensitive is downstream performance to curriculum quality, and how does it degrade with weaker exploration backbones?
+- [paper/osexpert-computer-use-agents-learning-professional] Can the database of fine-grained action primitives be discovered / induced from interaction rather than hand-curated?
+- [paper/osexpert-computer-use-agents-learning-professional] How well does the skill set transfer across application versions, themes, or sibling apps (Photoshop ↔ GIMP)? The paper measures only intra-environment reuse.
+- [paper/remember-me-refine-me-dynamic-procedural] Can the utility threshold $\beta$ be learned or adapted per task family instead of fixed at 0.5?
+- [paper/remember-me-refine-me-dynamic-procedural] The "memory-scaling effect" — does it hold for non-Qwen families and at larger scales (70B+)? Does it compound with parametric scaling, or saturate?
+- [paper/remember-me-refine-me-dynamic-procedural] How does the experience pool behave under deliberately adversarial / poisoned trajectories? Reflection-based addition could be exploited.
+- [paper/remember-me-refine-me-dynamic-procedural] Is keypoint-level distillation a transferable artifact (a `reme.library` paper-released dataset) or backbone-specific? The paper releases reme.library but does not stress-test cross-backbone reuse of stored experiences.
+- [paper/rethinking-agent-design-top-down-workflows] How can reinforcement-learning credit assignment over extended horizons supplement visual-diff implicit reward, so that defensive / long-term strategic skills are rewarded?
+- [paper/rethinking-agent-design-top-down-workflows] How can record-and-replay skills be lifted into callable, parameterized functions without reintroducing environment-specific priors?
+- [paper/rethinking-agent-design-top-down-workflows] Which decentralized consistency protocol (eventual consistency, versioned skills, trust-weighted refinement consensus) keeps the shared skill library coherent under massively parallel asynchronous edits?
+- [paper/rethinking-agent-design-top-down-workflows] Can transfer or memory-based generalization across similar environments cut the 2-2.5× exploration overhead?
+- [paper/rethinking-agent-design-top-down-workflows] What evaluation protocols allow controlled reset and reproducible comparison across open-ended games?
+- [paper/skill-pro-learning-reusable-skills-experience] Can `μ` (Skill selection) itself be learned by an analogous non-parametric mechanism, or must it be RL-trained?
+- [paper/skill-pro-learning-reusable-skills-experience] How does pool size `K` interact with task diversity? Section 4.2 reports K=5 / K=10 / K=20 only on Mastermind.
+- [paper/skill-pro-learning-reusable-skills-experience] Does the semantic-gradient framework transfer to non-decision-making tasks (e.g. coding, theorem proving) where "trajectories" are less natural?
+- [paper/skill-pro-learning-reusable-skills-experience] What is the right hybridisation with episodic memory: when should Skill-Pro fall back to RAG-style retrieval?
+- [paper/skillclaw-let-skills-evolve-collectively-agentic] Does collective skill evolution still help when users have **disjoint** task distributions, or does the shared pool degenerate into a lowest-common-denominator skill set?
+- [paper/skillclaw-let-skills-evolve-collectively-agentic] How does the **validator** scale when candidate-update volume grows? The current design re-runs candidate skills end-to-end overnight; this is O(candidates × tasks × steps) and may not stay feasible at platform scale.
+- [paper/skillclaw-let-skills-evolve-collectively-agentic] Can the **agentic evolver** itself be evolved? The paper fixes the evolver's harness; whether the harness rules should themselves be updated from accumulated meta-evidence is open.
+- [paper/skillclaw-let-skills-evolve-collectively-agentic] What is the **privacy contract** for cross-user trajectory aggregation in production? The framework as described assumes raw `prompt → action → feedback → response` traces are uploadable; many real deployments cannot do that.
+- [paper/skillclaw-let-skills-evolve-collectively-agentic] How does this interact with **forgetting / retirement**? The paper only describes additive updates (Refine, Create, Skip). Whether evolved skills should also be **deprecated** as task distributions drift, and what evidence triggers retirement, is not addressed.
+- [paper/skillclaw-let-skills-evolve-collectively-agentic] Is **monotonic deployment** truly safe? Accepting only updates that beat the current best on yesterday's task slice is a greedy criterion; a candidate could be locally rejected but globally better on tasks not present that day.
+- [paper/skillflow-benchmarking-lifelong-skill-discovery-evolution] What is the right unit for a *cross-family* skill? DAEF abstracts within a workflow; nothing in this benchmark abstracts across workflows.
+- [paper/skillflow-benchmarking-lifelong-skill-discovery-evolution] Can a model's skill-repair capability be induced by training signals (RL on patch quality, supervised data of bad-skill → good-skill diffs), or does it co-emerge with general reasoning capacity?
+- [paper/skillflow-benchmarking-lifelong-skill-discovery-evolution] What policy minimizes skill inflation without losing useful specialization? Patch-driven `delete_paths` is available but not learned.
+- [paper/skillflow-benchmarking-lifelong-skill-discovery-evolution] How robust is the **same workflow ⇒ same skill** assumption when domain grounding $\gamma$ is far from any seed in training distribution?
+- [paper/skillflow-benchmarking-lifelong-skill-discovery-evolution] Does the per-family library-size sweet spot scale with task difficulty, model size, or harness?
+- [paper/skilllearnbench-benchmarking-continual-learning-methods-agent] What skill *representations* (procedural, declarative, exemplar-based, mixed) most reliably yield high adoption by the solving agent? Skill Creator wins usage rate but loses outcome — what gap does that imply?
+- [paper/skilllearnbench-benchmarking-continual-learning-methods-agent] Can the recursive-drift failure mode of self-feedback be repaired by injecting weak external signals (e.g., automated verifier output) without a full teacher?
+- [paper/skilllearnbench-benchmarking-continual-learning-methods-agent] For open-ended tasks where rigid skills hurt, is the right move softer skills (guidelines instead of procedures), or learning *when not to invoke a skill*?
+- [paper/skilllearnbench-benchmarking-continual-learning-methods-agent] How does evaluating *generation methods* rather than *skills* scale to long-horizon continual settings where the library grows over hundreds of tasks?
+- [paper/ui-mem-self-evolving-experience-memory] Does the abstracted-template representation transfer to non-mobile GUIs (web, desktop), or are mobile-specific UI primitives baked into the workflows?
+- [paper/ui-mem-self-evolving-experience-memory] How does the memory behave under longer training horizons — does the failure-pattern store saturate? Does workflow drift hurt the agent once curriculum guidance is fully removed?
+- [paper/ui-mem-self-evolving-experience-memory] Can the self-evolving loop run without a separate frontier-scale reward model (Qwen2.5-VL-72B + DeepSeek-V3), e.g. with a self-judged setup, without collapsing extraction quality?
+- [paper/ui-mem-self-evolving-experience-memory] Is stratified group sampling beneficial outside the GUI setting (mathematical reasoning, code, tool use), or does it depend on the long-horizon + sparse-reward signature?
+- [paper/ui-mem-self-evolving-experience-memory] What is the right unit for a "skill" in $\Sigma$ — token-level action recipes, sub-screen abstractions, or longer compound primitives? The paper picks one but does not justify it against alternatives.
+- [paper/ui-voyager-self-evolving-gui-agent] Does GRSD generalize to environments where successful sibling trajectories are extremely rare or where state-equivalence is harder to measure (e.g., dense web pages, OSWorld)?
+- [paper/ui-voyager-self-evolving-gui-agent] Can fork-point detection be made robust enough to remove the screen-state-as-image assumption (e.g., language-only or DOM-based environments) without losing the dense-supervision benefit?
+- [paper/ui-voyager-self-evolving-gui-agent] How does GRSD interact with model scale — would a 30B base see the same headroom over GRPO/PPO, or does the gap close as the policy gets stronger?
+- [paper/ui-voyager-self-evolving-gui-agent] What is the right way to combine GRSD's step-level SFT with a value-based RL signal so the agent can still explore beyond the convex hull of its successful peers?
+- [paper/voyager-open-ended-embodied-agent-large] Can the skill library scale to thousands of skills without retrieval collapse or library bloat? The paper does not stress-test scaling.
+- [paper/voyager-open-ended-embodied-agent-large] Are the skills genuinely *evolved* (refined post-commit) or only *one-shot generated*? The library appends but does not appear to revise committed skills.
+- [paper/voyager-open-ended-embodied-agent-large] How does Voyager interact with open-weight LLMs that exhibit weaker code-generation? Can finetuning close the gap that GPT-4 currently fills?
+- [paper/voyager-open-ended-embodied-agent-large] What is a principled retirement / deduplication policy for the skill library as it grows? The paper acknowledges but does not study this.
+- [paper/voyager-open-ended-embodied-agent-large] How portable is the framework to non-game embodied domains where reward and feedback channels are noisier and partially observable?
+- [topic/agentic-memory] Coupling of short-term (context) and long-term (external store) management is mostly siloed; unified policies are emerging but unproven.
+- [topic/agentic-memory] Traceability of how a memory item influenced a decision is rarely engineered, making debugging and trust hard.
+- [topic/agentic-memory] Memory consolidation criteria (what is worth retaining) are typically heuristic.
+- [topic/agentic-memory] Evaluation often confounds *memory quality* with *retrieval quality*; few benchmarks decouple them.
+- [topic/agentic-memory] Long-horizon, multi-session evaluation is expensive and under-standardized.
+- [topic/continual-learning-evaluation] Most benchmarks fix the task family; cross-domain continual learning is largely uncovered.
+- [topic/continual-learning-evaluation] Negative transfer (skills that hurt new tasks) is rarely measured explicitly.
+- [topic/continual-learning-evaluation] Realistic deployment conditions (rate limits, latency, noisy environments) are usually absent from evaluation harnesses.
+- [topic/continual-learning-evaluation] Metrics often reward *any* skill invocation rather than *correct* invocation; calibration of skill-use credit assignment is open.
+- [topic/continual-learning-evaluation] Reproducibility across LLM backbones is limited because closed models change over time.
+- [topic/procedural-memory] Procedural memory often relies on hand-crafted extraction operators; learning extraction itself remains under-studied.
+- [topic/procedural-memory] Most systems treat the procedural library as flat; hierarchical / compositional procedural memory is largely open.
+- [topic/procedural-memory] Retrieval over procedural memory tends to use surface lexical or embedding match — task-state-conditioned retrieval is underdeveloped.
+- [topic/procedural-memory] Few benchmarks isolate procedural-memory contribution from base-model improvement.
+- [topic/procedural-memory] Long-horizon evaluation protocols are inconsistent across systems; comparability suffers.
+- [topic/skill-evolution] Cross-user skill sharing under privacy / heterogeneity constraints is barely studied.
+- [topic/skill-evolution] Retirement and deprecation policies are usually heuristic; principled approaches are missing.
+- [topic/skill-evolution] Conflict resolution between contradictory skill updates (from different trajectories or users) remains ad hoc.
+- [topic/skill-evolution] Most evaluations compare evolved-skills vs. no-skills; few isolate the marginal value of *evolution* vs. one-shot skill generation.
+- [topic/skill-evolution] Generalization across agent backbones is rarely measured: a skill that helps Claude may hurt Qwen.
+- [concept/agent-skill] How to balance specification *richness* (more detail = more coverage) against *adoptability* (longer / more rigid skills are more often ignored).
+- [concept/agent-skill] Whether skills should encode activation *probability* / *confidence* rather than binary conditions.
+- [concept/agent-skill] Cross-agent portability — a skill that helps Claude may hurt Gemini, as SkillLearnBench documents.
+- [concept/agentic-evolver] Whether the evolver's **harness** itself should be evolved from accumulated meta-evidence — currently fixed.
+- [concept/agentic-evolver] How to **calibrate** the evolver: when should it abstain (`Skip`) more aggressively?
+- [concept/agentic-evolver] Interaction with the **validator**: an evolver that anticipates the validator's accept/reject pattern could game it; this is unstudied.
+- [concept/agentic-evolver] Scaling: when candidate updates accumulate, how is the evolver's compute budget allocated across skill groups?
+- [concept/agentic-lifelong-learning] Designing variants that *do* mix families to test cross-DAEF transfer without confounding skill quality with retrieval quality.
+- [concept/agentic-lifelong-learning] Credit assignment: how much of the gain comes from the patch model versus the execution harness?
+- [concept/agentic-lifelong-learning] Optimal stopping: when should the agent stop patching and commit to its current library? No principled criterion exists.
+- [concept/agentic-lifelong-learning] Whether explicit skill repair can be trained for, rather than emerging as a side effect of base-model capacity.
+- [concept/agentic-skill] What metadata format maximizes retrievability without inflating skill files?
+- [concept/agentic-skill] Should skills carry versioning, dependency, or compatibility metadata?
+- [concept/agentic-skill] How does the optimal skill granularity (one-skill-per-workflow vs. composite) depend on task type?
+- [concept/agentic-skill] How should skills be retired or archived as the ecosystem grows?
+- [concept/automatic-curriculum] How does the curriculum behave with **weaker / open-source LLMs** that have less Minecraft prior — does diversity collapse?
+- [concept/automatic-curriculum] Can the diversity directive be **learned or adapted** over the course of a run rather than held fixed?
+- [concept/automatic-curriculum] How should the curriculum interact with **multi-agent or shared-skill** settings, where many agents draw from the same library?
+- [concept/automatic-curriculum] **Cross-domain transfer:** the prompt-template is Minecraft-specific (inventory, biome, blocks). What is the general schema for state in non-game embodied domains?
+- [concept/behaviour-aligned-skill-router] How to expand the training set with real-user query distribution without compromising judge quality.
+- [concept/behaviour-aligned-skill-router] Whether the soft $Q$-function interpretation can be extended to multi-step routing (when the answer requires composing several skills).
+- [concept/behaviour-aligned-skill-router] Curriculum design for hard-negative mining as the skill library grows.
+- [concept/bottom-up-agent-paradigm] Defining implicit reward that captures delayed and strategic effects, not just immediate visual change.
+- [concept/bottom-up-agent-paradigm] Lifting recorded skill sequences into parameterized, callable abstractions without reintroducing environment-specific priors.
+- [concept/bottom-up-agent-paradigm] Decentralized consistency protocols for shared skill libraries under massively parallel deployment.
+- [concept/bottom-up-agent-paradigm] Cross-environment skill transfer when visual semantics, action consequences, and UI layouts differ.
+- [concept/closed-loop-skill-evolution] How to make the designer's proposals less noisy so rollback becomes unnecessary—e.g., evidence-grounded edits, multi-step designer planning, verification before commit.
+- [concept/closed-loop-skill-evolution] Whether the same closed-loop structure transfers from memory to other agent subsystems (tool use, planning, retrieval policies).
+- [concept/closed-loop-skill-evolution] How to combine the loop with offline replay buffers from multiple agents / users.
+- [concept/collective-skill-evolution] How to combine collective evolution with **forgetting / retirement**: existing work emits Refine / Create / Skip but not Deprecate.
+- [concept/collective-skill-evolution] Whether the **evolver itself** should evolve from meta-evidence.
+- [concept/collective-skill-evolution] Validator scalability when candidate-update volume grows: re-running candidates end-to-end is O(candidates × tasks × steps).
+- [concept/collective-skill-evolution] Privacy-preserving aggregation: federated trajectory signal vs raw causal chains.
+- [concept/contextual-experience-replay] How to filter or segment low-quality trajectories so they contribute without poisoning the buffer.
+- [concept/contextual-experience-replay] Designing state-grounding analogues to "dynamics" for environments without natural addressable state.
+- [concept/contextual-experience-replay] Training-free buffer compression as the experience set grows beyond what retrieval can handle.
+- [concept/contextual-experience-replay] Generalizing distillation/retrieval modules across environments rather than per-domain prompts.
+- [concept/continual-skill-learning] What is the minimum *external signal* sufficient to break self-feedback drift? Verifier output, weak teacher hints, peer-agent disagreement?
+- [concept/continual-skill-learning] How should the library *forget* — when should an old skill be retired, merged, or specialized?
+- [concept/continual-skill-learning] Cross-task transfer: does a skill learned on task A help task B in the same sub-domain, and if so, how does the library encode that transitivity?
+- [concept/continual-skill-learning] Cost accounting: continual skill learning trades compute-now for compute-later; what is the right break-even metric?
+- [concept/domain-agnostic-execution-flow] Automatically inducing DAEFs from raw trajectories rather than from human annotation.
+- [concept/domain-agnostic-execution-flow] Quantifying when two DAEFs are "near-neighbors" (so partial skill transfer is plausible) versus disjoint.
+- [concept/domain-agnostic-execution-flow] DAEF as a retrieval key for procedural-memory lookup, instead of (or alongside) embedding similarity.
+- [concept/dual-evolution-loop] What is the right outer-loop horizon? Does the system saturate at `K_max = 3`, or do further iterations help?
+- [concept/dual-evolution-loop] Can the inner loop be amortized across generations by re-using memory state from the parent rather than restarting from ∅, without contaminating the fitness signal?
+- [concept/dual-evolution-loop] Should the meta-operator itself be evolved (a recursive meta-meta-loop), and if so, how is its fitness defined?
+- [concept/dual-evolution-loop] How does the dual-evolution loop interact with online distribution drift — i.e. when can outer-loop generations be triggered automatically by drift detection rather than on a fixed schedule?
+- [concept/dual-evolution-loop] Can the diagnose-and-design step's defect profile be quantitatively validated against an independent measure of slot-level failure (e.g. counterfactual ablation), rather than only against downstream success?
+- [concept/environment-learned-agent] Cross-environment skill transfer: a skill learned in LibreOffice Writer should partially seed Microsoft Word.
+- [concept/environment-learned-agent] Compact, queryable representations of large skill sets (the OSExpert version stores them as text + embeddings).
+- [concept/environment-learned-agent] Mixing autonomous exploration with sparse, opportunistic human supervision when failure modes are persistent.
+- [concept/executable-skill-library] **Skill refinement / evolution.** Should committed skills ever be rewritten after later failures expose bugs? The line between "edit existing skill" and "commit a new replacement" is unresolved.
+- [concept/executable-skill-library] **Library compaction.** Principled retirement, merging, and deduplication policies as the library reaches thousands of entries.
+- [concept/executable-skill-library] **Cross-agent transfer.** Voyager's ablation shows another agent (AutoGPT) can benefit from Voyager's library — but no general protocol exists for library hand-off across LLM backbones with different code idioms.
+- [concept/executable-skill-library] **Hierarchical indexing.** Flat embedding lookup wastes structure that explicit skill-call graphs would expose.
+- [concept/gui-dfs-exploration] Replacing the fixed retry budget `R` with a learned stopping criterion conditioned on the error attribution.
+- [concept/gui-dfs-exploration] Distinguishing exploration failures caused by the agent from those caused by the environment.
+- [concept/gui-dfs-exploration] Sharing partial exploration progress across application versions or sibling applications without redoing the full traversal.
+- [concept/hierarchical-experience-memory] Principled forgetting / compaction policies for each tier.
+- [concept/hierarchical-experience-memory] Whether the tiers should themselves be discovered (learned) rather than hand-designed.
+- [concept/hierarchical-experience-memory] Cross-domain reuse: does a workflow learned in mobile GUIs help web agents at all?
+- [concept/implicit-visual-reward] Extending the reward window beyond one-step visual diffs (e.g., trajectory-level reasoning, learned reward shaping with RL credit assignment).
+- [concept/implicit-visual-reward] Decoupling reward signal from VLM perception so that perception failures do not cascade into skill pruning.
+- [concept/implicit-visual-reward] Calibration / normalization so that scores from different skills, environments, and LLM versions are comparable.
+- [concept/implicit-visual-reward] Composing implicit visual reward with the unused `R_diversity` and `R_efficiency` terms so that the reward respects library health, not just per-skill alignment.
+- [concept/interactive-planning-with-self-check] Can self-check be **learned** rather than prompted — a separately trained verifier specialized to a domain's transition dynamics?
+- [concept/interactive-planning-with-self-check] How should self-check and self-explain **share information** across episodes — does a self-explain repair from one task generalize as a self-check rule for future tasks?
+- [concept/interactive-planning-with-self-check] How does the pattern **scale to environments without explicit preconditions** (open-ended robotics, natural-language tasks without enumerable sub-goals)?
+- [concept/iterative-prompting-environment-feedback] Can the **round budget be adaptive** based on the critic's confidence trajectory rather than fixed?
+- [concept/iterative-prompting-environment-feedback] How to **distill critic verdicts** into reusable lessons for future tasks (separate from the executable skill library)?
+- [concept/iterative-prompting-environment-feedback] **Multi-agent verification:** does using two critics in disagreement-detection mode catch the spider-string-style critic errors?
+- [concept/iterative-prompting-environment-feedback] How to **share refinement signal** across tasks — if iteration N fails because of an inventory-checking bug, can subsequent tasks pre-emptively guard against it?
+- [concept/kl-constrained-logit-update] Adaptive `β` schedules conditioned on confidence in `Â(s,a)`.
+- [concept/kl-constrained-logit-update] Multi-step extensions: can the same closed-form trick be applied to per-token advantages across a generated sequence?
+- [concept/kl-constrained-logit-update] Composition with other regularizers (entropy bonuses, length penalties).
+- [concept/llm-self-verification-critic] **Calibration:** how to align the critic's verdict distribution with downstream environmental ground truth without manually labeling success?
+- [concept/llm-self-verification-critic] **Critic-actor decorrelation:** would a critic from a different model family catch the same-model blind spots that Voyager's appendix documents?
+- [concept/llm-self-verification-critic] **Critic chains:** sequencing multiple specialized critics (one for safety, one for completion, one for efficiency) and aggregating their verdicts.
+- [concept/llm-self-verification-critic] **Online critic improvement:** can the critic learn from being wrong (cases where it accepted a failure or rejected a success that the environment later revealed)?
+- [concept/llm-self-verification-critic] **Critic for plans vs critic for code:** can the same critic role be re-targeted at planning failure (à la JARVIS-1's self-explain) and code-execution failure simultaneously?
+- [concept/llm-skill-acquisition-paradigm] How to **measure** cumulative skill acquisition — e.g., does the marginal value of the N-th skill scale, plateau, or decay?
+- [concept/llm-skill-acquisition-paradigm] How to share skills across **agents with different backbones** without negative transfer (a skill that helps Claude may hurt Qwen).
+- [concept/llm-skill-acquisition-paradigm] How to schedule **plasticity vs reliability** — i.e., when to acquire a new skill vs trust an existing one.
+- [concept/llm-skill-acquisition-paradigm] What the **right unit of a skill** is: a snippet, a workflow recipe, a typed sub-routine, a graph fragment.
+- [concept/memory-skill] How to measure semantic redundancy across memory skills and consolidate without losing coverage.
+- [concept/memory-skill] Cross-modality transfer: are memory skills learned on text dialogues reusable for multi-modal or embodied memory?
+- [concept/memory-skill] How to share / aggregate skill banks across deployments without conflict between contradictory edits.
+- [concept/memory-update-policies] Can the update operator itself be learned from data (e.g. via an off-policy bandit over update strategies)?
+- [concept/memory-update-policies] How should Adjustment behave when multiple retrieved memories collectively fail — is local in-place rewrite sufficient?
+- [concept/memory-update-policies] What is the right metric for memory-bank "health" beyond downstream task accuracy?
+- [concept/meta-guideline-bank] Pruning policy for $\mathcal{M}$: a meta-guideline that referenced a now-decayed experience set may itself need retiring.
+- [concept/meta-guideline-bank] Quantifying meta-guideline quality independently of the experiences they compile.
+- [concept/meta-guideline-bank] Whether $\mathcal{M}$ should be shared across agent instances / users, given that meta-heuristics are arguably more transferable than raw experiences.
+- [concept/meta-memory-evolution] Can the meta-operator be evolved alongside the memory it produces, so the diagnose-and-design machinery is itself self-improving?
+- [concept/meta-memory-evolution] How should the four-slot design space be augmented to admit memory affordances that don't fit `(E, U, R, G)` (typed multi-store hierarchies, episodic/semantic splits, attention-style soft retrieval)?
+- [concept/meta-memory-evolution] What is the marginal value of meta-evolution vs. simply selecting the best human-designed memory per task family? Strongest baselines on a given benchmark (e.g. AWM on WebWalkerQA) come within ~2 pp of the evolved system.
+- [concept/meta-memory-evolution] Detecting and reacting to negative transfer: when an evolved memory hurts one sub-task while helping the aggregate, the current loop has no mechanism to localize the regression.
+- [concept/meta-memory-evolution] Whether the recurring evolutionary signature ("agentic-ization" — encoding and retrieval shift from pre-defined pipelines to LLM-driven decisions) is a substantive design principle or an artifact of the LLM-based meta-operator.
+- [concept/modular-memory-design-space] Is there a principled way to *learn* the slot decomposition itself from a corpus of memory systems, rather than hand-fixing it at four?
+- [concept/modular-memory-design-space] How should the design space accommodate hierarchical memory (memory-of-memory, meta-guideline banks on top of experience banks) without inflating the slot count?
+- [concept/modular-memory-design-space] What is the right typing discipline so that slot mutations preserve correctness automatically, eliminating the need for executability checks during meta-evolution?
+- [concept/modular-memory-design-space] Whether the same decomposition transfers across task families (deep research → embodied → code execution) or whether each family demands its own slot palette.
+- [concept/multimodal-memory] How should the memory be **consolidated** as it grows — what's the equivalent of long-term-memory compression for raw multimodal trajectories?
+- [concept/multimodal-memory] Can retrieval be made **utility-calibrated** (retrieve what will help, not what looks similar)?
+- [concept/multimodal-memory] How does multimodal memory **transfer across embodiments** (different action spaces, different rendering engines)?
+- [concept/multimodal-memory] How should multimodal memory **interoperate with parametric updates** — when is in-context retrieval enough, when must accumulated experience be folded back into weights?
+- [concept/non-parametric-experience-memory] Learning state abstraction for retrieval rather than hand-crafting it.
+- [concept/non-parametric-experience-memory] Memory consolidation criteria — what is worth retaining beyond raw `(s, a, G)` triplets?
+- [concept/non-parametric-experience-memory] Cross-task generalization of stored procedural knowledge.
+- [concept/online-self-evolving-agentic-memory] Adaptive forgetting rates: the right decay schedule almost certainly depends on detected distribution shift, but principled methods for tying decay to drift signals are missing.
+- [concept/online-self-evolving-agentic-memory] Regime change vs. smooth drift: most current systems handle gradual drift; abrupt regime change (e.g. a market shock that invalidates a whole class of experiences at once) is not addressed.
+- [concept/online-self-evolving-agentic-memory] Joint evolution of $\mathcal{E}$ and $\mathcal{M}$: how should higher-level meta-guidelines themselves be pruned or invalidated as their underlying experiences are decayed out?
+- [concept/procedural-memory-framework] Can Update operators themselves be learned rather than hand-specified?
+- [concept/procedural-memory-framework] What determines the right number of retrieved memories per task?
+- [concept/procedural-memory-framework] How does the framework behave when reward signals are unavailable (real-world deployment)?
+- [concept/procedural-memory-transfer] What properties of the memory bank (format, abstraction level, key granularity) predict transfer success?
+- [concept/procedural-memory-transfer] Can transfer be improved by jointly optimizing Build for portability instead of for the donor's own use?
+- [concept/procedural-memory-transfer] How does transfer degrade across larger backbone gaps (e.g. GPT-4o → 1B-parameter model)?
+- [concept/procedural-memory] Learned vs. heuristic deletion thresholds — should $\alpha$, $\beta$ be tuned per task family or even per experience type?
+- [concept/procedural-memory] Hierarchical procedural memory: most current pools are flat; compositional/hierarchical structures remain largely open.
+- [concept/procedural-memory] Task-state-conditioned retrieval that adapts mid-execution, not just at task start.
+- [concept/procedural-memory] Principled isolation of procedural-memory contribution from base-model capability in evaluation harnesses.
+- [concept/procedural-skill] A principled story for *compositional* Procedural Skills: when should two Skills be merged into a higher-order one?
+- [concept/procedural-skill] Lifecycle management beyond online-score pruning: explicit Skill *retirement* policies tied to drift in the task distribution.
+- [concept/procedural-skill] Cross-agent transfer: how to detect that a Skill's activation condition is portable across backbones with different observation phrasing.
+- [concept/read-write-reflective-learning] **Multi-agent concurrent writes.** Race conditions when multiple agents try to rewrite the same skill artefact remain unsolved.
+- [concept/read-write-reflective-learning] **Continuous-time reflection.** Without discrete episode boundaries, when does an agent pause to write?
+- [concept/read-write-reflective-learning] **Retirement.** When utility drops persistently, should the system rewrite, deprecate, or delete? No principled policy exists.
+- [concept/reusable-workflow] What is the right **granularity** for a workflow — sub-task, sub-skill, primitive? AWM lands on sub-task by prompt design; a learned policy is open.
+- [concept/reusable-workflow] How should workflows be **revised** when later evidence contradicts the induced routine?
+- [concept/reusable-workflow] How does the workflow library **compose**? AWM shows workflows can chain ("find a place" → "get the zip code of a place"); the general composition operator is not formalized.
+- [concept/reusable-workflow] What **metadata** does a workflow need beyond (description, steps) to support better retrieval — provenance trajectories, success counts, applicability conditions?
+- [concept/self-instruct-exploration] How should **novelty pressure** be added to self-instruct without breaking capability-conditioning?
+- [concept/self-instruct-exploration] Can self-instruct **synthesize tasks** (rather than sample from a pool) in environments with no predefined task list?
+- [concept/self-instruct-exploration] What is the **right granularity** of capability assessment — per-sub-goal, per-task-family, or some learned latent space?
+- [concept/self-instruct-exploration] How does self-instruct **transfer across agents** of different capability profiles using the same memory?
+- [concept/semantic-gradient] A principled aggregation operator with quantifiable consistency guarantees.
+- [concept/semantic-gradient] Calibration: when should a step be "small" vs "large"? Currently encoded only through the surrounding PPO-Gate `ε` clipping.
+- [concept/semantic-gradient] Transfer outside decision-making (e.g. to code-edit policies, schema generation) where "trajectory" must be defined non-trivially.
+- [concept/skill-boundary-check] How to update failed entries when a stronger backbone, a UI patch, or a user hint plausibly invalidates the prior failure.
+- [concept/skill-boundary-check] Calibrating the check so it cuts latency without measurably hurting success rate.
+- [concept/skill-boundary-check] Disentangling failure attribution (agent policy vs. environment vs. UI ambiguity) inside the boundary check.
+- [concept/skill-conditioned-memory-construction] Whether composition order matters when multiple skills are passed in one call, and whether explicit ordering by the controller would help.
+- [concept/skill-conditioned-memory-construction] How to attribute downstream failures back to specific skills in the selected subset (credit assignment).
+- [concept/skill-conditioned-memory-construction] Adaptive span sizing tied to context content rather than a fixed token budget.
+- [concept/skill-dependent-task] Should `α` be task-adaptive? A 0.5 threshold is more permissive on easy tasks than on hard ones.
+- [concept/skill-dependent-task] Can skill-dependence be defined *probabilistically* rather than via thresholds on a fixed-`R` Bernoulli estimate?
+- [concept/skill-dependent-task] Can the filter be generalized to *continual* settings, where the agent's "without skill" baseline is itself drifting as the library grows?
+- [concept/skill-mdp] A version with co-evolving `μ` and `Ω` under a single non-parametric objective.
+- [concept/skill-mdp] Conditions under which `Ω*` converges (existence, uniqueness, stability across batches).
+- [concept/skill-mdp] How to incorporate trajectory-level structured rewards (not just scalar return-to-go) into Skill-pool optimisation.
+- [concept/skill-patch] Training signals (RL, supervised) that teach a model to write *deletion-aware* patches.
+- [concept/skill-patch] Patches that include test cases or assertions, allowing self-verification before application.
+- [concept/skill-patch] Patch quality metrics independent of downstream task success (so a patch can be judged on its own merits before being committed).
+- [concept/skill-refinement] Can query-agnostic refinement be made effective with access to the *task distribution* rather than the specific query?
+- [concept/skill-refinement] What self-evaluation signal is strong enough to trust without ground-truth (execution traces, unit-test-like checks, agent-internal confidence)?
+- [concept/skill-refinement] Does refinement value depend on the agent's harness, and how does a refined skill transfer across harnesses?
+- [concept/skill-refinement] Should refined skills be written back to the collection (closing an evolution loop), or kept ephemeral?
+- [concept/skill-retrieval] Learned reranking using skill-usage outcomes as supervision is largely unexplored.
+- [concept/skill-retrieval] Joint retrieval + selection optimization (instead of decomposed stages) could exploit signals lost at the ranking step.
+- [concept/skill-retrieval] Multi-task and multi-skill retrieval (the agent loads complementary skills that together cover the task) is under-formalized.
+- [concept/stability-plasticity-tradeoff] Principled buffer-update policies that explicitly target a stability-plasticity operating point rather than relying on prompt-engineered heuristics.
+- [concept/stability-plasticity-tradeoff] Benchmarks that decouple stability from plasticity in long-horizon multi-task agent evaluation.
+- [concept/stability-plasticity-tradeoff] How retrieval (rather than memory growth) affects the tradeoff in context-augmentation regimes like CER.
+- [concept/stateful-reflective-decision-process] Tight finite-sample bounds on the asymptotic value gap when $\mathcal{M}_t$ grows under a non-i.i.d. task distribution.
+- [concept/stateful-reflective-decision-process] Convergence behaviour when $\mathrm{Write}$ is approximate (i.e. an LLM-driven rewriter rather than an oracle update).
+- [concept/stateful-reflective-decision-process] Extension to multi-agent SRDP with shared memory and distributed credit assignment.
+- [concept/subagent-pattern] Should the skill / subagent boundary be a learned hyperparameter rather than an extraction-agent judgment?
+- [concept/subagent-pattern] Can subagents themselves invoke sub-subagents safely without context-budget blow-up?
+- [concept/subagent-pattern] How do subagent patterns survive concept drift in the task distribution — does maintenance prune them appropriately, or are they sticky?
+- [concept/subagent-pattern] Can subagent extraction be made to learn from failure trajectories as well as success, given that the current contrastive analysis is success-conditioned?
+- [concept/test-time-policy-optimization] Principled comparison of modulation channels (logit vs prompt vs verbal) on identical retrieval signals.
+- [concept/test-time-policy-optimization] Convergence rates under non-stationary task distributions.
+- [concept/test-time-policy-optimization] How to compose multiple test-time modulation channels safely.
+- [concept/tool-based-memory-operations] What is the right granularity for memory tools? More fine-grained operations (e.g., partial Update) might improve memory quality but expand the action space and complicate RL credit assignment.
+- [concept/tool-based-memory-operations] Can the tool set be *learned* rather than designed? E.g., the agent discovering new memory operations under a meta-objective.
+- [concept/tool-based-memory-operations] How do these tools interact with model-internal memory mechanisms (KV-cache reuse, recurrent state)?
+- [concept/tri-layer-memory-consolidation] Designing layer compositions for non-dialog horizons (agent trajectories, multi-document workflows).
+- [concept/tri-layer-memory-consolidation] Principled policies for when the experience layer should over-fire (more abstractions for richer reuse) vs under-fire (fewer, higher-confidence abstractions).
+- [concept/tri-layer-memory-consolidation] Conflict-resolution policies when temporally grounded facts genuinely change over time (preference drift) — should older triples be retained as superseded, demoted, or removed?
+- [concept/tri-layer-memory-consolidation] Cheap inference-side approximations of the dual-channel retrieval pipeline that preserve traceability.
+- [concept/trial-reasoning] Designing the recognition function so that delayed and strategic effects are captured (not just frame-to-frame visual diffs).
+- [concept/trial-reasoning] Reducing exploration overhead via skill priors transferred from similar environments or memory-based generalization.
+- [concept/trial-reasoning] Quantifying how much of the loop's competence is due to LLM reasoning vs. the visual-change filter (ablation suggests both matter, but their interaction is unclear).
+- [concept/unified-memory-management] Whether the curriculum and reward decomposition generalize to non-QA data sources (the paper claims yes but doesn't demonstrate).
+- [concept/unified-memory-management] How to extend to truly long-horizon, cross-session deployment where LTM grows beyond what fits in working sets.
+- [concept/unified-memory-management] Whether richer memory-typing (episodic vs. semantic vs. procedural) inside a unified policy yields further gains, or whether the typology is better left implicit.
+- [concept/verify-before-update] Adaptive thresholds: looser when the bank is small (cold-start) and tighter when mature.
+- [concept/verify-before-update] Verifying meta-guidelines as well as raw experiences; Live-Evo gates $\mathcal{E}$ writes but not $\mathcal{M}$ writes.
+- [concept/verify-before-update] Multi-trial / bootstrap-based verification that controls false-positive admissions under noisy evaluation.
+- [concept/workflow-induction] Can the *granularity* of induction be learned rather than prompted?
+- [concept/workflow-induction] What is the right policy for **workflow retirement** when induced routines turn out to be wrong or no longer apply?
+- [concept/workflow-induction] How does induction interact with retrieval? A large unified workflow library demands a smarter access policy than per-website partitioning.
+- [concept/workflow-induction] Can induction be coupled with **counter-example mining** so failed trajectories also contribute (as anti-patterns)?

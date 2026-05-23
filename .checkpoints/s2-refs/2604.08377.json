@@ -1,0 +1,2385 @@
+[
+  {
+    "paperId": "89648e6e3aa1d96b67311ea62b3903293e6e9a89",
+    "externalIds": {
+      "ArXiv": "2603.17187",
+      "CorpusId": 286638471
+    },
+    "url": "https://www.semanticscholar.org/paper/89648e6e3aa1d96b67311ea62b3903293e6e9a89",
+    "title": "MetaClaw: Just Talk -- An Agent That Meta-Learns and Evolves in the Wild",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 10,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.17187, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2261083308",
+        "name": "Peng Xia"
+      },
+      {
+        "authorId": "2409869810",
+        "name": "Jianwen Chen"
+      },
+      {
+        "authorId": "2284120415",
+        "name": "Xinyu Yang"
+      },
+      {
+        "authorId": "2239200170",
+        "name": "Haoqin Tu"
+      },
+      {
+        "authorId": "2384148523",
+        "name": "Jiaqi Liu"
+      },
+      {
+        "authorId": "2249539564",
+        "name": "Kai Xiong"
+      },
+      {
+        "authorId": "2283875337",
+        "name": "Siwei Han"
+      },
+      {
+        "authorId": "2325909382",
+        "name": "Shi Qiu"
+      },
+      {
+        "authorId": "2344415499",
+        "name": "Haonian Ji"
+      },
+      {
+        "authorId": "2253873141",
+        "name": "Yuyin Zhou"
+      },
+      {
+        "authorId": "2378598930",
+        "name": "Zeyu Zheng"
+      },
+      {
+        "authorId": "2385752257",
+        "name": "C. Xie"
+      },
+      {
+        "authorId": "2378212884",
+        "name": "Huaxiu Yao"
+      }
+    ],
+    "abstract": "Large language model (LLM) agents are increasingly used for complex tasks, yet deployed agents often remain static, failing to adapt as user needs evolve. This creates a tension between the need for continuous service and the necessity of updating capabilities to match shifting task distributions. On platforms like OpenClaw, which handle diverse workloads across 20+ channels, existing methods either store raw trajectories without distilling knowledge, maintain static skill libraries, or require disruptive downtime for retraining. We present MetaClaw, a continual meta-learning framework that jointly evolves a base LLM policy and a library of reusable behavioral skills. MetaClaw employs two complementary mechanisms. Skill-driven fast adaptation analyzes failure trajectories via an LLM evolver to synthesize new skills, enabling immediate improvement with zero downtime. Opportunistic policy optimization performs gradient-based updates via cloud LoRA fine-tuning and Reinforcement Learning with a Process Reward Model (RL-PRM). This is triggered during user-inactive windows by the Opportunistic Meta-Learning Scheduler (OMLS), which monitors system inactivity and calendar data. These mechanisms are mutually reinforcing: a refined policy generates better trajectories for skill synthesis, while richer skills provide higher-quality data for policy optimization. To prevent data contamination, a versioning mechanism separates support and query data. Built on a proxy-based architecture, MetaClaw scales to production-size LLMs without local GPUs. Experiments on MetaClaw-Bench and AutoResearchClaw show that skill-driven adaptation improves accuracy by up to 32% relative. The full pipeline advances Kimi-K2.5 accuracy from 21.4% to 40.6% and increases composite robustness by 18.3%. Code is available at https://github.com/aiming-lab/MetaClaw.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "a9c7ba60203bafc0f1c3da9813ca49f28434e981",
+    "externalIds": {
+      "ArXiv": "2603.10165",
+      "CorpusId": 286457252
+    },
+    "url": "https://www.semanticscholar.org/paper/a9c7ba60203bafc0f1c3da9813ca49f28434e981",
+    "title": "OpenClaw-RL: Train Any Agent Simply by Talking",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 30,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.10165, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2344087890",
+        "name": "Yinjie Wang"
+      },
+      {
+        "authorId": "2239164624",
+        "name": "Xuyang Chen"
+      },
+      {
+        "authorId": "2346309962",
+        "name": "Xiaolong Jin"
+      },
+      {
+        "authorId": "2325202622",
+        "name": "Mengdi Wang"
+      },
+      {
+        "authorId": "2325310340",
+        "name": "Ling Yang"
+      }
+    ],
+    "abstract": "Every agent interaction generates a next-state signal, namely the user reply, tool output, terminal or GUI state change that follows each action, yet no existing agentic RL system recovers it as a live, online learning source. We present OpenClaw-RL, a framework that employs next-state signals to optimize personal agents online through infrastructure and methodology innovations. On the infrastructure side, we extend existing RL systems to a server-client architecture where the RL server hosts the policy behind an inference API and user terminals stream interaction data back over HTTP. From each observed next state, the system extracts two complementary training signals, evaluative and directive, via a separate asynchronous server so that neither signal extraction nor optimization blocks inference. On the methodology side, we introduce a hybrid RL objective that unifies both signal types in a single update: directive signals provide richer, token-level supervision but are sparser, while evaluative signals are more broadly available. To stabilize distillation under teacher-student mismatch, we propose overlap-guided hint selection, which picks the hint whose induced teacher distribution maximally overlaps with the student's top-$k$ tokens, together with a log-probability-difference clip that bounds per-token advantages. Applied to personal agents, OpenClaw-RL enables an agent to improve simply by being used, recovering conversational signals from user re-queries, corrections, and explicit feedback. Applied to general agents, OpenClaw-RL is the first RL framework to unify real-world agent settings spanning terminal, GUI, SWE, and tool-call environments, where we additionally demonstrate the utility of next-state signals in long-horizon settings.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "7846e20ffd11f4b218020a1b84543a7dbcbf45d7",
+    "externalIds": {
+      "ArXiv": "2603.08561",
+      "CorpusId": 286377432
+    },
+    "url": "https://www.semanticscholar.org/paper/7846e20ffd11f4b218020a1b84543a7dbcbf45d7",
+    "title": "RetroAgent: From Solving to Evolving via Retrospective Dual Intrinsic Feedback",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 5,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.08561, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2351433544",
+        "name": "Xiaoying Zhang"
+      },
+      {
+        "authorId": "2117943295",
+        "name": "Zi-Yan Liu"
+      },
+      {
+        "authorId": "2398581836",
+        "name": "Yipeng Zhang"
+      },
+      {
+        "authorId": "2342889154",
+        "name": "Xia Hu"
+      },
+      {
+        "authorId": "2383313499",
+        "name": "Wenqi Shao"
+      }
+    ],
+    "abstract": "Standard reinforcement learning (RL) for large language model (LLM) agents typically optimizes extrinsic rewards, prioritizing isolated task completion over continual adaptation. Consequently, agents often converge to suboptimal policies due to limited exploration. Furthermore, accumulated experience remains implicitly trapped within model parameters, hindering its explicit reuse for guiding future decisions. Inspired by human retrospective self-improvement, we introduce RetroAgent, an online RL framework that trains agents to master complex interactive environments not only by solving tasks, but by evolving under the joint guidance of extrinsic task rewards and retrospective dual intrinsic feedback. Specifically, RetroAgent employs a hindsight self-reflection mechanism that generates two complementary signals: (1) intrinsic numerical feedback, which rewards promising exploration by tracking real-time incremental subtask progress relative to prior attempts; and (2) intrinsic language feedback, which enables explicit experience reuse by distilling reusable lessons into a memory buffer for subsequent decision-making. To effectively leverage these textual experiences, we propose Similarity&Utility-Aware Upper Confidence Bound (SimUtil-UCB), a retrieval strategy that balances relevance, historical utility, and exploration. Extensive experiments across four challenging agentic tasks show that RetroAgent achieves new state-of-the-art (SOTA) performance. Notably, it surpasses Group Relative Policy Optimization (GRPO) baselines by +18.3% on ALFWorld, +15.4% on WebShop, +27.1% on Sokoban, and +8.9% on MineSweeper, while exhibiting strong test-time adaptation and out-of-distribution generalization.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ce14734e615b845ec2471d9dc3f35d3d68dd5c22",
+    "externalIds": {
+      "ArXiv": "2603.02766",
+      "CorpusId": 286228833
+    },
+    "url": "https://www.semanticscholar.org/paper/ce14734e615b845ec2471d9dc3f35d3d68dd5c22",
+    "title": "EvoSkill: Automated Skill Discovery for Multi-Agent Systems",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 20,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.02766, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2186553606",
+        "name": "Salaheddin Alzubi"
+      },
+      {
+        "authorId": "2299428839",
+        "name": "N. Provenzano"
+      },
+      {
+        "authorId": "2421689239",
+        "name": "Jaydon Bingham"
+      },
+      {
+        "authorId": "2364826488",
+        "name": "Weiyuan Chen"
+      },
+      {
+        "authorId": "2274937078",
+        "name": "Tu Vu"
+      }
+    ],
+    "abstract": "Coding agents are increasingly used as general-purpose problem solvers, but their flexibility does not by itself confer the domain expertise needed for specialized tasks. Recent work addresses this through \\textit{agent skills}: reusable workflows, and code, that augment agents with domain-specific capabilities. Most skills today are hand-crafted, and existing evolutionary approaches optimize low-level artifacts (e.g. prompts \\&code) that are tightly coupled to specific models and tasks. We introduce \\textbf{EvoSkill}, a self-evolving framework that automatically discovers and refines agent skills through iterative failure analysis. EvoSkill analyzes execution failures, proposes new skills or edits to existing ones, and materializes them into structured, reusable skill folders. A Pareto frontier of agent programs governs selection, retaining only skills that improve held-out validation performance while the underlying model remains frozen. We evaluate EvoSkill on two benchmarks: OfficeQA, a grounded reasoning benchmark over U.S.\\ Treasury data, where it improves exact-match accuracy by \\textbf{7.3\\%} (60.6\\% $\\to$ 67.9\\%); and SealQA, a search-augmented QA benchmark with noisy retrieval, where it yields a \\textbf{12.1\\%} gain (26.6\\% $\\to$ 38.7\\%). We also investigate the zero-shot transfer capabilties of skills evolved on one task to the other; in particular: skills evolved from SealQA transfers zero-shot to BrowseComp, improving accuracy by \\textbf{5.3\\%} without modification demonstrating that skill-level optimization produces transferable capabilities beyond the training task.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2f1f09543f5d0e5e4a2fd99bba5b5d46a572ebda",
+    "externalIds": {
+      "ArXiv": "2603.01145",
+      "DBLP": "journals/corr/abs-2603-01145",
+      "DOI": "10.48550/arXiv.2603.01145",
+      "CorpusId": 286224498
+    },
+    "url": "https://www.semanticscholar.org/paper/2f1f09543f5d0e5e4a2fd99bba5b5d46a572ebda",
+    "title": "AutoSkill: Experience-Driven Lifelong Learning via Skill Self-Evolution",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 18,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.01145, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2303799141",
+        "name": "Yutao Yang"
+      },
+      {
+        "authorId": "2274071511",
+        "name": "Junsong Li"
+      },
+      {
+        "authorId": "2319606952",
+        "name": "Qianjun Pan"
+      },
+      {
+        "authorId": "2351814214",
+        "name": "Bihao Zhan"
+      },
+      {
+        "authorId": "2361505671",
+        "name": "Yuxuan Cai"
+      },
+      {
+        "authorId": "2363503498",
+        "name": "Linge Du"
+      },
+      {
+        "authorId": "2385272474",
+        "name": "Jie Zhou"
+      },
+      {
+        "authorId": "2384876160",
+        "name": "Kai Chen"
+      },
+      {
+        "authorId": "2256591571",
+        "name": "Qin Chen"
+      },
+      {
+        "authorId": "2385114760",
+        "name": "Xin Li"
+      },
+      {
+        "authorId": "2354452439",
+        "name": "Bo Zhang"
+      },
+      {
+        "authorId": "2384802294",
+        "name": "Liang He"
+      }
+    ],
+    "abstract": "In practical LLM applications, users repeatedly express stable preferences and requirements, such as reducing hallucinations, following institutional writing conventions, or avoiding overly technical wording, yet such interaction experience is seldom consolidated into reusable knowledge. Consequently, LLM agents often fail to accumulate personalized capabilities across sessions. We present AutoSkill, an experience-driven lifelong learning framework that enables LLM agents to automatically derive, maintain, and reuse skills from dialogue and interaction traces. AutoSkill abstracts skills from user experience, supports their continual self-evolution, and dynamically injects relevant skills into future requests without retraining the underlying model. Designed as a model-agnostic plugin layer, it is compatible with existing LLMs and introduces a standardized skill representation for sharing and transfer across agents, users, and tasks. In this way, AutoSkill turns ephemeral interaction experience into explicit, reusable, and composable capabilities. This paper describes the motivation, architecture, skill lifecycle, and implementation of AutoSkill, and positions it with respect to prior work on memory, retrieval, personalization, and agentic systems. AutoSkill highlights a practical and scalable path toward lifelong personalized agents and personal digital surrogates.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "eb636dedbce820f3cea34264dba85295099cd253",
+    "externalIds": {
+      "ArXiv": "2603.04448",
+      "CorpusId": 286256378
+    },
+    "url": "https://www.semanticscholar.org/paper/eb636dedbce820f3cea34264dba85295099cd253",
+    "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 15,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.04448, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2117874250",
+        "name": "Yuanying Liang"
+      },
+      {
+        "authorId": "2331943932",
+        "name": "R. Zhong"
+      },
+      {
+        "authorId": "2411443410",
+        "name": "Haoming Xu"
+      },
+      {
+        "authorId": "2115487132",
+        "name": "Chen Jiang"
+      },
+      {
+        "authorId": "2354999372",
+        "name": "Yi Zhong"
+      },
+      {
+        "authorId": "2278840339",
+        "name": "Runnan Fang"
+      },
+      {
+        "authorId": "2275750026",
+        "name": "Jiasheng Gu"
+      },
+      {
+        "authorId": "152931849",
+        "name": "Shumin Deng"
+      },
+      {
+        "authorId": "2325556345",
+        "name": "Yu-Zhe Yao"
+      },
+      {
+        "authorId": "2218346459",
+        "name": "Mengru Wang"
+      },
+      {
+        "authorId": "2190751119",
+        "name": "Shuofei Qiao"
+      },
+      {
+        "authorId": "2152775219",
+        "name": "Xin Xu"
+      },
+      {
+        "authorId": "1514917592",
+        "name": "Tongtong Wu"
+      },
+      {
+        "authorId": "2363281493",
+        "name": "Kun Wang"
+      },
+      {
+        "authorId": "2365077986",
+        "name": "Yang Liu"
+      },
+      {
+        "authorId": "2059276046",
+        "name": "Zhen Bi"
+      },
+      {
+        "authorId": "2363791123",
+        "name": "Jungang Lou"
+      },
+      {
+        "authorId": "2288037929",
+        "name": "Yuchen Jiang"
+      },
+      {
+        "authorId": "2115314543",
+        "name": "Han Zhu"
+      },
+      {
+        "authorId": "2344817018",
+        "name": "Gang Yu"
+      },
+      {
+        "authorId": "2421428786",
+        "name": "Hai-Xu Hong"
+      },
+      {
+        "authorId": "2292090586",
+        "name": "Longtao Huang"
+      },
+      {
+        "authorId": "2276435001",
+        "name": "Hui Xue"
+      },
+      {
+        "authorId": "2375339748",
+        "name": "Chenxi Wang"
+      },
+      {
+        "authorId": "2257347517",
+        "name": "Yijun Wang"
+      },
+      {
+        "authorId": "2406821430",
+        "name": "Zifei Shan"
+      },
+      {
+        "authorId": "2145309336",
+        "name": "Xi Chen"
+      },
+      {
+        "authorId": "2363558591",
+        "name": "Zhaopeng Tu"
+      },
+      {
+        "authorId": "2068169902",
+        "name": "Feiyu Xiong"
+      },
+      {
+        "authorId": "2110972563",
+        "name": "Xin Xie"
+      },
+      {
+        "authorId": "2307568041",
+        "name": "Peng Zhang"
+      },
+      {
+        "authorId": "2322445265",
+        "name": "Zhengke Gui"
+      },
+      {
+        "authorId": "2287559875",
+        "name": "Lei Liang"
+      },
+      {
+        "authorId": "2298948358",
+        "name": "Jun Zhou"
+      },
+      {
+        "authorId": "2312367218",
+        "name": "C. Wu"
+      },
+      {
+        "authorId": "2267105913",
+        "name": "Jin Shang"
+      },
+      {
+        "authorId": "2367547961",
+        "name": "Yuan Gong"
+      },
+      {
+        "authorId": "2362676884",
+        "name": "Jun Lin"
+      },
+      {
+        "authorId": "2373397855",
+        "name": "Changliang Xu"
+      },
+      {
+        "authorId": "2398720430",
+        "name": "Hongji Deng"
+      },
+      {
+        "authorId": "2277649590",
+        "name": "Wen Zhang"
+      },
+      {
+        "authorId": "2254282405",
+        "name": "Keyan Ding"
+      },
+      {
+        "authorId": "2346632177",
+        "name": "Qiang Zhang"
+      },
+      {
+        "authorId": "2384821462",
+        "name": "Fei Huang"
+      },
+      {
+        "authorId": "2382942499",
+        "name": "Ningyu Zhang"
+      },
+      {
+        "authorId": "2377275432",
+        "name": "Jeff Z. Pan"
+      },
+      {
+        "authorId": "2284686899",
+        "name": "Guilin Qi"
+      },
+      {
+        "authorId": "2309198652",
+        "name": "Haofen Wang"
+      },
+      {
+        "authorId": "2254343747",
+        "name": "Huajun Chen"
+      }
+    ],
+    "abstract": "Current AI agents can flexibly invoke tools and execute complex tasks, yet their long-term advancement is hindered by the lack of systematic accumulation and transfer of skills. Without a unified mechanism for skill consolidation, agents frequently ``reinvent the wheel'', rediscovering solutions in isolated contexts without leveraging prior strategies. To overcome this limitation, we introduce SkillNet, an open infrastructure designed to create, evaluate, and organize AI skills at scale. SkillNet structures skills within a unified ontology that supports creating skills from heterogeneous sources, establishing rich relational connections, and performing multi-dimensional evaluation across Safety, Completeness, Executability, Maintainability, and Cost-awareness. Our infrastructure integrates a repository of over 200,000 skills, an interactive platform, and a versatile Python toolkit. Experimental evaluations on ALFWorld, WebShop, and ScienceWorld demonstrate that SkillNet significantly enhances agent performance, improving average rewards by 40% and reducing execution steps by 30% across multiple backbone models. By formalizing skills as evolving, composable assets, SkillNet provides a robust foundation for agents to move from transient experience to durable mastery.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ae06bb0819ec521d45909b2cbf599ff36ea025e2",
+    "externalIds": {
+      "ArXiv": "2602.20867",
+      "DBLP": "journals/corr/abs-2602-20867",
+      "DOI": "10.48550/arXiv.2602.20867",
+      "CorpusId": 286001509
+    },
+    "url": "https://www.semanticscholar.org/paper/ae06bb0819ec521d45909b2cbf599ff36ea025e2",
+    "title": "SoK: Agentic Skills - Beyond Tool Use in LLM Agents",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 29,
+    "influentialCitationCount": 2,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.20867, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2216868030",
+        "name": "Yanna Jiang"
+      },
+      {
+        "authorId": "2405804499",
+        "name": "Delong Li"
+      },
+      {
+        "authorId": "2072971621",
+        "name": "Hai Deng"
+      },
+      {
+        "authorId": "66206985",
+        "name": "Baihe Ma"
+      },
+      {
+        "authorId": "2108599889",
+        "name": "Xu Wang"
+      },
+      {
+        "authorId": "2117899490",
+        "name": "Qin Wang"
+      },
+      {
+        "authorId": "2259676337",
+        "name": "Guangsheng Yu"
+      }
+    ],
+    "abstract": "Agentic systems increasingly rely on reusable procedural capabilities, \\textit{a.k.a., agentic skills}, to execute long-horizon workflows reliably. These capabilities are callable modules that package procedural knowledge with explicit applicability conditions, execution policies, termination criteria, and reusable interfaces. Unlike one-off plans or atomic tool calls, skills operate (and often do well) across tasks. This paper maps the skill layer across the full lifecycle (discovery, practice, distillation, storage, composition, evaluation, and update) and introduces two complementary taxonomies. The first is a system-level set of \\textbf{seven design patterns} capturing how skills are packaged and executed in practice, from metadata-driven progressive disclosure and executable code skills to self-evolving libraries and marketplace distribution. The second is an orthogonal \\textbf{representation $\\times$ scope} taxonomy describing what skills \\emph{are} (natural language, code, policy, hybrid) and what environments they operate over (web, OS, software engineering, robotics). We analyze the security and governance implications of skill-based agents, covering supply-chain risks, prompt injection via skill payloads, and trust-tiered execution, grounded by a case study of the ClawHavoc campaign in which nearly 1{,}200 malicious skills infiltrated a major agent marketplace, exfiltrating API keys, cryptocurrency wallets, and browser credentials at scale. We further survey deterministic evaluation approaches, anchored by recent benchmark evidence that curated skills can substantially improve agent success rates while self-generated skills may degrade them. We conclude with open challenges toward robust, verifiable, and certifiable skills for real-world autonomous agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2720819808f63f3803c30981acb22dd67bb02af2",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2602-19672",
+      "ArXiv": "2602.19672",
+      "DOI": "10.48550/arXiv.2602.19672",
+      "CorpusId": 285973511
+    },
+    "url": "https://www.semanticscholar.org/paper/2720819808f63f3803c30981acb22dd67bb02af2",
+    "title": "SkillOrchestra: Learning to Route Agents via Skill Transfer",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 6,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.19672, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2307984256",
+        "name": "Jiayu Wang"
+      },
+      {
+        "authorId": "2321601631",
+        "name": "Yifei Ming"
+      },
+      {
+        "authorId": "2321405223",
+        "name": "Zixuan Ke"
+      },
+      {
+        "authorId": "2313536726",
+        "name": "Shafiq Joty"
+      },
+      {
+        "authorId": "1893193",
+        "name": "Aws Albarghouthi"
+      },
+      {
+        "authorId": "2359148597",
+        "name": "Frederic Sala"
+      }
+    ],
+    "abstract": "Compound AI systems promise capabilities beyond those of individual models, yet their success depends critically on effective orchestration. Existing routing approaches face two limitations: (1) input-level routers make coarse query-level decisions that ignore evolving task requirements; (2) RL-trained orchestrators are expensive to adapt and often suffer from routing collapse, repeatedly invoking one strong but costly option in multi-turn scenarios. We introduce SkillOrchestra, a framework for skill-aware orchestration. Instead of directly learning a routing policy end-to-end, SkillOrchestra learns fine-grained skills from execution experience and models agent-specific competence and cost under those skills. At deployment, the orchestrator infers the skill demands of the current interaction and selects agents that best satisfy them under an explicit performance-cost trade-off. Extensive experiments across ten benchmarks demonstrate that SkillOrchestra outperforms SoTA RL-based orchestrators by up to 22.5% with 700x and 300x learning cost reduction compared to Router-R1 and ToolOrchestra, respectively. These results show that explicit skill modeling enables scalable, interpretable, and sample-efficient orchestration, offering a principled alternative to data-intensive RL-based approaches. The code is available at: https://github.com/jiayuww/SkillOrchestra.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1f09ae8491805852a18c386104ee2539d43e29d9",
+    "externalIds": {
+      "ArXiv": "2602.12670",
+      "DBLP": "journals/corr/abs-2602-12670",
+      "DOI": "10.48550/arXiv.2602.12670",
+      "CorpusId": 285606595
+    },
+    "url": "https://www.semanticscholar.org/paper/1f09ae8491805852a18c386104ee2539d43e29d9",
+    "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 58,
+    "influentialCitationCount": 14,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.12670, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2401740322",
+        "name": "Xiangyi Li"
+      },
+      {
+        "authorId": "2394918893",
+        "name": "Wenbo Chen"
+      },
+      {
+        "authorId": "2266692918",
+        "name": "Yiming Liu"
+      },
+      {
+        "authorId": "2412815574",
+        "name": "Shenghan Zheng"
+      },
+      {
+        "authorId": "2390523235",
+        "name": "Xiaokun Chen"
+      },
+      {
+        "authorId": "2118918598",
+        "name": "Yifeng He"
+      },
+      {
+        "authorId": "2321670634",
+        "name": "Yubo Li"
+      },
+      {
+        "authorId": "2321695163",
+        "name": "B. You"
+      },
+      {
+        "authorId": "2309001842",
+        "name": "Haotian Shen"
+      },
+      {
+        "authorId": "2282025",
+        "name": "Jiankai Sun"
+      },
+      {
+        "authorId": "2366778797",
+        "name": "Shuyi Wang"
+      },
+      {
+        "authorId": "2312269673",
+        "name": "Qunhong Zeng"
+      },
+      {
+        "authorId": "2392287472",
+        "name": "Di Wang"
+      },
+      {
+        "authorId": "150345512",
+        "name": "Xuandong Zhao"
+      },
+      {
+        "authorId": "2365268574",
+        "name": "Yuanli Wang"
+      },
+      {
+        "authorId": "2410891465",
+        "name": "Roey Ben Chaim"
+      },
+      {
+        "authorId": "2305804282",
+        "name": "Zonglin Di"
+      },
+      {
+        "authorId": "2352066300",
+        "name": "Yi Gao"
+      },
+      {
+        "authorId": "2158107521",
+        "name": "Junwei He"
+      },
+      {
+        "authorId": "2410951444",
+        "name": "Yizhuo He"
+      },
+      {
+        "authorId": "2322802696",
+        "name": "Liqiang Jing"
+      },
+      {
+        "authorId": "2282113123",
+        "name": "Luyang Kong"
+      },
+      {
+        "authorId": "2405714069",
+        "name": "Xin Lan"
+      },
+      {
+        "authorId": "2390751616",
+        "name": "Jiachen Li"
+      },
+      {
+        "authorId": "2118193548",
+        "name": "Songlin Li"
+      },
+      {
+        "authorId": "2324002240",
+        "name": "Yijiang Li"
+      },
+      {
+        "authorId": "2343774884",
+        "name": "Yue Lin"
+      },
+      {
+        "authorId": "2406389729",
+        "name": "Xinyi Liu"
+      },
+      {
+        "authorId": "2304618595",
+        "name": "Xuanqing Liu"
+      },
+      {
+        "authorId": "2324655329",
+        "name": "H. Lyu"
+      },
+      {
+        "authorId": "2373557412",
+        "name": "Zexiong Ma"
+      },
+      {
+        "authorId": "2299941552",
+        "name": "Bowei Wang"
+      },
+      {
+        "authorId": "2282000019",
+        "name": "Runhui Wang"
+      },
+      {
+        "authorId": "2395369608",
+        "name": "Tianyu Wang"
+      },
+      {
+        "authorId": "2385454847",
+        "name": "Wengao Ye"
+      },
+      {
+        "authorId": "2358449883",
+        "name": "Yue Zhang"
+      },
+      {
+        "authorId": "2325951260",
+        "name": "Hanwen Xing"
+      },
+      {
+        "authorId": "2313514190",
+        "name": "Y. Xue"
+      },
+      {
+        "authorId": "2333363742",
+        "name": "Steven Dillmann"
+      },
+      {
+        "authorId": "2215819170",
+        "name": "Han Lee"
+      }
+    ],
+    "abstract": "Agent Skills are structured packages of procedural knowledge that augment LLM agents at inference time. Despite rapid adoption, there is no standard way to measure whether they actually help. We present SkillsBench, a benchmark of 86 tasks across 11 domains paired with curated Skills and deterministic verifiers. Each task is evaluated under three conditions: no Skills, curated Skills, and self-generated Skills. We test 7 agent-model configurations over 7,308 trajectories. Curated Skills raise average pass rate by 16.2 percentage points(pp), but effects vary widely by domain (+4.5pp for Software Engineering to +51.9pp for Healthcare) and 16 of 84 tasks show negative deltas. Self-generated Skills provide no benefit on average, showing that models cannot reliably author the procedural knowledge they benefit from consuming. Focused Skills with 2--3 modules outperform comprehensive documentation, and smaller models with Skills can match larger models without them.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "370193afcb842f88f725af2e9fd0bfaeee1bf452",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2602-08234",
+      "ArXiv": "2602.08234",
+      "DOI": "10.48550/arXiv.2602.08234",
+      "CorpusId": 285452037
+    },
+    "url": "https://www.semanticscholar.org/paper/370193afcb842f88f725af2e9fd0bfaeee1bf452",
+    "title": "SkillRL: Evolving Agents via Recursive Skill-Augmented Reinforcement Learning",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 56,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.08234, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2261083308",
+        "name": "Peng Xia"
+      },
+      {
+        "authorId": "2409869810",
+        "name": "Jianwen Chen"
+      },
+      {
+        "authorId": "2313676961",
+        "name": "Han Wang"
+      },
+      {
+        "authorId": "2384148523",
+        "name": "Jiaqi Liu"
+      },
+      {
+        "authorId": "2371073432",
+        "name": "Kaide Zeng"
+      },
+      {
+        "authorId": "2316017010",
+        "name": "Yu Wang"
+      },
+      {
+        "authorId": "2283875337",
+        "name": "Siwei Han"
+      },
+      {
+        "authorId": "2250759613",
+        "name": "Yiyang Zhou"
+      },
+      {
+        "authorId": "2255325982",
+        "name": "Xujiang Zhao"
+      },
+      {
+        "authorId": "2204622281",
+        "name": "Haifeng Chen"
+      },
+      {
+        "authorId": "2378598930",
+        "name": "Zeyu Zheng"
+      },
+      {
+        "authorId": "2308424591",
+        "name": "Cihang Xie"
+      },
+      {
+        "authorId": "18307037",
+        "name": "Huaxiu Yao"
+      }
+    ],
+    "abstract": "Large Language Model (LLM) agents have shown stunning results in complex tasks, yet they often operate in isolation, failing to learn from past experiences. Existing memory-based methods primarily store raw trajectories, which are often redundant and noise-heavy. This prevents agents from extracting high-level, reusable behavioral patterns that are essential for generalization. In this paper, we propose SkillRL, a framework that bridges the gap between raw experience and policy improvement through automatic skill discovery and recursive evolution. Our approach introduces an experience-based distillation mechanism to build a hierarchical skill library SkillBank, an adaptive retrieval strategy for general and task-specific heuristics, and a recursive evolution mechanism that allows the skill library to co-evolve with the agent's policy during reinforcement learning. These innovations significantly reduce the token footprint while enhancing reasoning utility. Experimental results on ALFWorld, WebShop and seven search-augmented tasks demonstrate that SkillRL achieves state-of-the-art performance, outperforming strong baselines over 15.3% and maintaining robustness as task complexity increases. Code is available at this https://github.com/aiming-lab/SkillRL.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "3e63ce648f66f935c958a69364af65ee9734cd37",
+    "externalIds": {
+      "ArXiv": "2602.02474",
+      "DBLP": "journals/corr/abs-2602-02474",
+      "DOI": "10.48550/arXiv.2602.02474",
+      "CorpusId": 285269715
+    },
+    "url": "https://www.semanticscholar.org/paper/3e63ce648f66f935c958a69364af65ee9734cd37",
+    "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 39,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.02474, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2326070420",
+        "name": "Haozhen Zhang"
+      },
+      {
+        "authorId": "1500525090",
+        "name": "Quanyu Long"
+      },
+      {
+        "authorId": "2408596264",
+        "name": "Jianzhu Bao"
+      },
+      {
+        "authorId": "2409196803",
+        "name": "Tao Feng"
+      },
+      {
+        "authorId": "2408469859",
+        "name": "Weizhi Zhang"
+      },
+      {
+        "authorId": "2338889006",
+        "name": "Haodong Yue"
+      },
+      {
+        "authorId": "2329321386",
+        "name": "Wenya Wang"
+      }
+    ],
+    "abstract": "Most Large Language Model (LLM) agent memory systems rely on a small set of static, hand-designed operations for extracting memory. These fixed procedures hard-code human priors about what to store and how to revise memory, making them rigid under diverse interaction patterns and inefficient on long histories. To this end, we present \\textbf{MemSkill}, which reframes these operations as learnable and evolvable memory skills, structured and reusable routines for extracting, consolidating, and pruning information from interaction traces. Inspired by the design philosophy of agent skills, MemSkill employs a \\emph{controller} that learns to select a small set of relevant skills, paired with an LLM-based \\emph{executor} that produces skill-guided memories. Beyond learning skill selection, MemSkill introduces a \\emph{designer} that periodically reviews hard cases where selected skills yield incorrect or incomplete memories, and evolves the skill set by proposing refinements and new skills. Together, MemSkill forms a closed-loop procedure that improves both the skill-selection policy and the skill set itself. Experiments on LoCoMo, LongMemEval, HotpotQA, and ALFWorld demonstrate that MemSkill improves task performance over strong baselines and generalizes well across settings. Further analyses shed light on how skills evolve, offering insights toward more adaptive, self-evolving memory management for LLM agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "9e26d624ec91e778045d109e7da86bd00dc0b2f3",
+    "externalIds": {
+      "ArXiv": "2601.03192",
+      "DBLP": "journals/corr/abs-2601-03192",
+      "DOI": "10.48550/arXiv.2601.03192",
+      "CorpusId": 284512583
+    },
+    "url": "https://www.semanticscholar.org/paper/9e26d624ec91e778045d109e7da86bd00dc0b2f3",
+    "title": "MemRL: Self-Evolving Agents via Runtime Reinforcement Learning on Episodic Memory",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 33,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.03192, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2357216890",
+        "name": "Shengtao Zhang"
+      },
+      {
+        "authorId": "2374914625",
+        "name": "Jiaqian Wang"
+      },
+      {
+        "authorId": "2257377292",
+        "name": "Ruiwen Zhou"
+      },
+      {
+        "authorId": "2306757036",
+        "name": "Junwei Liao"
+      },
+      {
+        "authorId": "2362927104",
+        "name": "Yuchen Feng"
+      },
+      {
+        "authorId": "2315940339",
+        "name": "Weinan Zhang"
+      },
+      {
+        "authorId": "2289902495",
+        "name": "Ying Wen"
+      },
+      {
+        "authorId": "2268429641",
+        "name": "Zhiyu Li"
+      },
+      {
+        "authorId": "2268399953",
+        "name": "Feiyu Xiong"
+      },
+      {
+        "authorId": "2376151922",
+        "name": "Yutao Qi"
+      },
+      {
+        "authorId": "2268400606",
+        "name": "Bo Tang"
+      },
+      {
+        "authorId": "2111875607",
+        "name": "Muning Wen"
+      }
+    ],
+    "abstract": "The hallmark of human intelligence is the self-evolving ability to master new skills by learning from past experiences. However, current AI agents struggle to emulate this self-evolution: fine-tuning is computationally expensive and prone to catastrophic forgetting, while existing memory-based methods rely on passive semantic matching that often retrieves noise. To address these challenges, we propose MemRL, a non-parametric approach that evolves via reinforcement learning on episodic memory. By decoupling stable reasoning from plastic memory, MemRL employs a Two-Phase Retrieval mechanism to filter noise and identify high-utility strategies through environmental feedback. Extensive experiments on HLE, BigCodeBench, ALFWorld, and Lifelong Agent Bench demonstrate that MemRL significantly outperforms state-of-the-art baselines, confirming that MemRL effectively reconciles the stability-plasticity dilemma, enabling continuous runtime improvement without weight updates. Code is available at https://github.com/MemTensor/MemRL.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "473edf1acf5e21b7c3ccca548de1c0b860c54ba3",
+    "externalIds": {
+      "ArXiv": "2601.02553",
+      "DBLP": "journals/corr/abs-2601-02553",
+      "DOI": "10.48550/arXiv.2601.02553",
+      "CorpusId": 284512931
+    },
+    "url": "https://www.semanticscholar.org/paper/473edf1acf5e21b7c3ccca548de1c0b860c54ba3",
+    "title": "SimpleMem: Efficient Lifelong Memory for LLM Agents",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 42,
+    "influentialCitationCount": 6,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.02553, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2384148523",
+        "name": "Jiaqi Liu"
+      },
+      {
+        "authorId": "2364849554",
+        "name": "Yaofeng Su"
+      },
+      {
+        "authorId": "2261083308",
+        "name": "Peng Xia"
+      },
+      {
+        "authorId": "2283875337",
+        "name": "Siwei Han"
+      },
+      {
+        "authorId": "2378598930",
+        "name": "Zeyu Zheng"
+      },
+      {
+        "authorId": "2385752257",
+        "name": "C. Xie"
+      },
+      {
+        "authorId": "2333245174",
+        "name": "Mingyu Ding"
+      },
+      {
+        "authorId": "2378212884",
+        "name": "Huaxiu Yao"
+      }
+    ],
+    "abstract": "To support long-term interaction in complex environments, LLM agents require memory systems that manage historical experiences. Existing approaches either retain full interaction histories via passive context extension, leading to substantial redundancy, or rely on iterative reasoning to filter noise, incurring high token costs. To address this challenge, we introduce SimpleMem, an efficient memory framework based on semantic lossless compression. We propose a three-stage pipeline designed to maximize information density and token utilization: (1) Semantic Structured Compression, which distills unstructured interactions into compact, multi-view indexed memory units; (2) Online Semantic Synthesis, an intra-session process that instantly integrates related context into unified abstract representations to eliminate redundancy; and (3) Intent-Aware Retrieval Planning, which infers search intent to dynamically determine retrieval scope and construct precise context efficiently. Experiments on benchmark datasets show that our method consistently outperforms baseline approaches in accuracy, retrieval efficiency, and inference cost, achieving an average F1 improvement of 26.4% in LoCoMo while reducing inference-time token consumption by up to 30-fold, demonstrating a superior balance between performance and efficiency. Code is available at https://github.com/aiming-lab/SimpleMem.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "9b1bffb264997956dc3c89ad61b7c5cf33ea949d",
+    "externalIds": {
+      "ArXiv": "2512.23760",
+      "DBLP": "journals/corr/abs-2512-23760",
+      "DOI": "10.48550/arXiv.2512.23760",
+      "CorpusId": 284350534
+    },
+    "url": "https://www.semanticscholar.org/paper/9b1bffb264997956dc3c89ad61b7c5cf33ea949d",
+    "title": "Audited Skill-Graph Self-Improvement for Agentic LLMs via Verifiable Rewards, Experience Synthesis, and Continual Memory",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 2,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2512.23760, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2373596003",
+        "name": "Ken Huang"
+      },
+      {
+        "authorId": "2363500851",
+        "name": "Jerry Huang"
+      }
+    ],
+    "abstract": "Reinforcement learning is increasingly used to transform large language models into agentic systems that act over long horizons, invoke tools, and manage memory under partial observability. While recent work has demonstrated performance gains through tool learning, verifiable rewards, and continual training, deployed self-improving agents raise unresolved security and governance challenges: optimization pressure can incentivize reward hacking, behavioral drift is difficult to audit or reproduce, and improvements are often entangled in opaque parameter updates rather than reusable, verifiable artifacts. This paper proposes Audited Skill-Graph Self-Improvement (ASG-SI), a framework that treats self-improvement as iterative compilation of an agent into a growing, auditable skill graph. Each candidate improvement is extracted from successful trajectories, normalized into a skill with an explicit interface, and promoted only after passing verifier-backed replay and contract checks. Rewards are decomposed into reconstructible components derived from replayable evidence, enabling independent audit of promotion decisions and learning signals. ASG-SI further integrates experience synthesis for scalable stress testing and continual memory control to preserve long-horizon performance under bounded context. We present a complete system architecture, threat model, and security analysis, and provide a fully runnable reference implementation that demonstrates verifier-backed reward construction, skill compilation, audit logging, and measurable improvement under continual task streams. ASG-SI reframes agentic self-improvement as accumulation of verifiable, reusable capabilities, offering a practical path toward reproducible evaluation and operational governance of self-improving AI agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "fc6e9b47819d2f5cdfd8f47829f7894d37e2059c",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2512-18746",
+      "ArXiv": "2512.18746",
+      "DOI": "10.48550/arXiv.2512.18746",
+      "CorpusId": 284078455
+    },
+    "url": "https://www.semanticscholar.org/paper/fc6e9b47819d2f5cdfd8f47829f7894d37e2059c",
+    "title": "MemEvolve: Meta-Evolution of Agent Memory Systems",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 34,
+    "influentialCitationCount": 2,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2512.18746, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2385476833",
+        "name": "Guibin Zhang"
+      },
+      {
+        "authorId": "2282935379",
+        "name": "Haotian Ren"
+      },
+      {
+        "authorId": "2400139824",
+        "name": "Chong Zhan"
+      },
+      {
+        "authorId": "2354329261",
+        "name": "Zhen Zhou"
+      },
+      {
+        "authorId": "2378897041",
+        "name": "Junhao Wang"
+      },
+      {
+        "authorId": "2373267831",
+        "name": "He Zhu"
+      },
+      {
+        "authorId": "2322149547",
+        "name": "Wangchunshu Zhou"
+      },
+      {
+        "authorId": "2367752546",
+        "name": "Shuicheng Yan"
+      }
+    ],
+    "abstract": "Self-evolving memory systems are unprecedentedly reshaping the evolutionary paradigm of large language model (LLM)-based agents. Prior work has predominantly relied on manually engineered memory architectures to store trajectories, distill experience, and synthesize reusable tools, enabling agents to evolve on the fly within environment interactions. However, this paradigm is fundamentally constrained by the staticity of the memory system itself: while memory facilitates agent-level evolving, the underlying memory architecture cannot be meta-adapted to diverse task contexts. To address this gap, we propose MemEvolve, a meta-evolutionary framework that jointly evolves agents'experiential knowledge and their memory architecture, allowing agent systems not only to accumulate experience but also to progressively refine how they learn from it. To ground MemEvolve in prior research and foster openness in future self-evolving systems, we introduce EvolveLab, a unified self-evolving memory codebase that distills twelve representative memory systems into a modular design space (encode, store, retrieve, manage), providing both a standardized implementation substrate and a fair experimental arena. Extensive evaluations on four challenging agentic benchmarks demonstrate that MemEvolve achieves (I) substantial performance gains, improving frameworks such as SmolAgent and Flash-Searcher by up to $17.06\\%$; and (II) strong cross-task and cross-LLM generalization, designing memory architectures that transfer effectively across diverse benchmarks and backbone models.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1685e85a291920c7ab9e31849bc91a9e9bda9569",
+    "externalIds": {
+      "ArXiv": "2511.12997",
+      "DBLP": "journals/corr/abs-2511-12997",
+      "DOI": "10.48550/arXiv.2511.12997",
+      "CorpusId": 283072094
+    },
+    "url": "https://www.semanticscholar.org/paper/1685e85a291920c7ab9e31849bc91a9e9bda9569",
+    "title": "WebCoach: Self-Evolving Web Agents with Cross-Session Memory Guidance",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 5,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.12997, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2217570953",
+        "name": "Genglin Liu"
+      },
+      {
+        "authorId": "2295988909",
+        "name": "Shijie Geng"
+      },
+      {
+        "authorId": "2405778950",
+        "name": "Sha Li"
+      },
+      {
+        "authorId": "2393382483",
+        "name": "Hejie Cui"
+      },
+      {
+        "authorId": "2391989896",
+        "name": "Sarah Zhang"
+      },
+      {
+        "authorId": "2375283621",
+        "name": "Xin Liu"
+      },
+      {
+        "authorId": "2348862231",
+        "name": "Tianyi Liu"
+      }
+    ],
+    "abstract": "Multimodal LLM-powered agents have recently demonstrated impressive capabilities in web navigation, enabling agents to complete complex browsing tasks across diverse domains. However, current agents struggle with repetitive errors and lack the ability to learn from past experiences across sessions, limiting their long-term robustness and sample efficiency. We introduce WebCoach, a model-agnostic self-evolving framework that equips web browsing agents with persistent cross-session memory, enabling improved long-term planning, reflection, and continual learning without retraining. WebCoach consists of three key components: (1) a WebCondenser, which standardizes raw navigation logs into concise summaries; (2) an External Memory Store, which organizes complete trajectories as episodic experiences; and (3) a Coach, which retrieves relevant experiences based on similarity and recency, and decides whether to inject task-specific advice into the agent via runtime hooks. This design empowers web agents to access long-term memory beyond their native context window, improving robustness in complex browsing tasks. Moreover, WebCoach achieves self-evolution by continuously curating episodic memory from new navigation trajectories, enabling agents to improve over time without retraining. Evaluations on the WebVoyager benchmark demonstrate that WebCoach consistently improves the performance of browser-use agents across three different LLM backbones. With a 38B model, it increases task success rates from 47% to 61% while reducing or maintaining the average number of steps. Notably, smaller base models with WebCoach achieve performance comparable to the same web agent using GPT-4o.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "dde18f29056365d8d84460f8cd8a3532077b3137",
+    "externalIds": {
+      "ArXiv": "2511.10395",
+      "DBLP": "journals/corr/abs-2511-10395",
+      "DOI": "10.48550/arXiv.2511.10395",
+      "CorpusId": 282992095
+    },
+    "url": "https://www.semanticscholar.org/paper/dde18f29056365d8d84460f8cd8a3532077b3137",
+    "title": "AgentEvolver: Towards Efficient Self-Evolving Agent System",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 39,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2511.10395, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2354340288",
+        "name": "Yunpeng Zhai"
+      },
+      {
+        "authorId": "2364781892",
+        "name": "Shuchang Tao"
+      },
+      {
+        "authorId": "2366646181",
+        "name": "Cheng Chen"
+      },
+      {
+        "authorId": "2386607830",
+        "name": "Anni Zou"
+      },
+      {
+        "authorId": "2282652796",
+        "name": "Ziqian Chen"
+      },
+      {
+        "authorId": "2387893379",
+        "name": "Qingxu Fu"
+      },
+      {
+        "authorId": "2392262309",
+        "name": "Shinji Mai"
+      },
+      {
+        "authorId": "2392371709",
+        "name": "Li Yu"
+      },
+      {
+        "authorId": "2394258152",
+        "name": "Jiaji Deng"
+      },
+      {
+        "authorId": "2253004027",
+        "name": "Zouying Cao"
+      },
+      {
+        "authorId": "2386531463",
+        "name": "Zhaoyang Liu"
+      },
+      {
+        "authorId": "2375391270",
+        "name": "Bolin Ding"
+      },
+      {
+        "authorId": "2237499232",
+        "name": "Jingren Zhou"
+      }
+    ],
+    "abstract": "Autonomous agents powered by large language models (LLMs) have the potential to significantly enhance human productivity by reasoning, using tools, and executing complex tasks in diverse environments. However, current approaches to developing such agents remain costly and inefficient, as they typically require manually constructed task datasets and reinforcement learning (RL) pipelines with extensive random exploration. These limitations lead to prohibitively high data-construction costs, low exploration efficiency, and poor sample utilization. To address these challenges, we present AgentEvolver, a self-evolving agent system that leverages the semantic understanding and reasoning capabilities of LLMs to drive autonomous agent learning. AgentEvolver introduces three synergistic mechanisms: (i) self-questioning, which enables curiosity-driven task generation in novel environments, reducing dependence on handcrafted datasets; (ii) self-navigating, which improves exploration efficiency through experience reuse and hybrid policy guidance; and (iii) self-attributing, which enhances sample efficiency by assigning differentiated rewards to trajectory states and actions based on their contribution. By integrating these mechanisms into a unified framework, AgentEvolver enables scalable, cost-effective, and continual improvement of agent capabilities. Preliminary experiments indicate that AgentEvolver achieves more efficient exploration, better sample utilization, and faster adaptation compared to traditional RL-based baselines.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "26f887d7fd771f2e32ce52833a114d35df36aab2",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2510-16079",
+      "ArXiv": "2510.16079",
+      "DOI": "10.48550/arXiv.2510.16079",
+      "CorpusId": 282210254
+    },
+    "url": "https://www.semanticscholar.org/paper/26f887d7fd771f2e32ce52833a114d35df36aab2",
+    "title": "EvolveR: Self-Evolving LLM Agents through an Experience-Driven Lifecycle",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 45,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2510.16079, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2363400631",
+        "name": "Rong Wu"
+      },
+      {
+        "authorId": "2376089020",
+        "name": "Xiaoman Wang"
+      },
+      {
+        "authorId": "2106504583",
+        "name": "Jianbiao Mei"
+      },
+      {
+        "authorId": "26978261",
+        "name": "Pinlong Cai"
+      },
+      {
+        "authorId": "150967272",
+        "name": "Daocheng Fu"
+      },
+      {
+        "authorId": "2383101848",
+        "name": "Cheng Yang"
+      },
+      {
+        "authorId": "153109152",
+        "name": "Licheng Wen"
+      },
+      {
+        "authorId": "2265828805",
+        "name": "Xuemeng Yang"
+      },
+      {
+        "authorId": "2295796069",
+        "name": "Yufan Shen"
+      },
+      {
+        "authorId": "2344891171",
+        "name": "Yuxin Wang"
+      },
+      {
+        "authorId": "2278899936",
+        "name": "Botian Shi"
+      }
+    ],
+    "abstract": "Current Large Language Model (LLM) agents show strong performance in tool use, but lack the crucial capability to systematically learn from their own experiences. While existing frameworks mainly focus on mitigating external knowledge gaps, they fail to address a more fundamental limitation: the inability to iteratively refine problem-solving strategies. In this work, we introduce EvolveR, a framework designed to enable agent to self-improve through a complete, closed-loop experience lifecycle. This lifecycle comprises two key stages: (1) Offline Self-Distillation, where the agent's interaction trajectories are synthesized into a structured repository of abstract, reusable strategic principles; (2) Online Interaction, where the agent interacts with tasks and actively retrieves distilled principles to guide its decision-making, accumulating a diverse set of behavioral trajectories. This loop employs a policy reinforcement mechanism to iteratively update the agent based on its performance. We demonstrate the effectiveness of EvolveR on complex multi-hop question-answering benchmarks, where it achieves superior performance over strong agentic baselines. Our work presents a comprehensive blueprint for agents that learn not only from external data but also from the consequences of their own actions, paving the way for more autonomous and continuously improving systems. Code is available at https://github.com/Edaizi/EvolveR.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "9c03c7b9ae5bc182134edd736c6d48946f4aaaaf",
+    "externalIds": {
+      "ArXiv": "2509.25140",
+      "DBLP": "journals/corr/abs-2509-25140",
+      "DOI": "10.48550/arXiv.2509.25140",
+      "CorpusId": 281674540
+    },
+    "url": "https://www.semanticscholar.org/paper/9c03c7b9ae5bc182134edd736c6d48946f4aaaaf",
+    "title": "ReasoningBank: Scaling Agent Self-Evolving with Reasoning Memory",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 98,
+    "influentialCitationCount": 17,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.25140, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2260339714",
+        "name": "Siru Ouyang"
+      },
+      {
+        "authorId": "49781448",
+        "name": "Jun Yan"
+      },
+      {
+        "authorId": "2349535505",
+        "name": "I-Hung Hsu"
+      },
+      {
+        "authorId": "2258603407",
+        "name": "Yanfei Chen"
+      },
+      {
+        "authorId": "2349487162",
+        "name": "Ke Jiang"
+      },
+      {
+        "authorId": "2135785111",
+        "name": "Zifeng Wang"
+      },
+      {
+        "authorId": "2325953181",
+        "name": "Rujun Han"
+      },
+      {
+        "authorId": "2253355959",
+        "name": "Long T. Le"
+      },
+      {
+        "authorId": "2255862",
+        "name": "Samira Daruki"
+      },
+      {
+        "authorId": "2383027620",
+        "name": "Xiangru Tang"
+      },
+      {
+        "authorId": "2095118488",
+        "name": "Vishy Tirumalashetty"
+      },
+      {
+        "authorId": "2349554535",
+        "name": "George Lee"
+      },
+      {
+        "authorId": "2367313",
+        "name": "Mahsan Rofouei"
+      },
+      {
+        "authorId": null,
+        "name": "Hangfei Lin"
+      },
+      {
+        "authorId": "2361686403",
+        "name": "Jiawei Han"
+      },
+      {
+        "authorId": "2278969944",
+        "name": "Chen-Yu Lee"
+      },
+      {
+        "authorId": "2305619900",
+        "name": "Tomas Pfister"
+      }
+    ],
+    "abstract": "With the growing adoption of large language model agents in persistent real-world roles, they naturally encounter continuous streams of tasks. A key limitation, however, is their failure to learn from the accumulated interaction history, forcing them to discard valuable insights and repeat past errors. We propose ReasoningBank, a novel memory framework that distills generalizable reasoning strategies from an agent's self-judged successful and failed experiences. At test time, an agent retrieves relevant memories from ReasoningBank to inform its interaction and then integrates new learnings back, enabling it to become more capable over time. Building on this powerful experience learner, we further introduce memory-aware test-time scaling (MaTTS), which accelerates and diversifies this learning process by scaling up the agent's interaction experience. By allocating more compute to each task, the agent generates abundant, diverse experiences that provide rich contrastive signals for synthesizing higher-quality memory. The better memory in turn guides more effective scaling, establishing a powerful synergy between memory and test-time scaling. Across web browsing and software engineering benchmarks, ReasoningBank consistently outperforms existing memory mechanisms that store raw trajectories or only successful task routines, improving both effectiveness and efficiency; MaTTS further amplifies these gains. These findings establish memory-driven experience scaling as a new scaling dimension, enabling agents to self-evolve with emergent behaviors naturally arise. Our code can be found at https://github.com/google-research/reasoning-bank.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "7fdbdd7ffcd4f7e4ffbec33d079e4a2bcb80f275",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2509-03312",
+      "ArXiv": "2509.03312",
+      "DOI": "10.48550/arXiv.2509.03312",
+      "CorpusId": 281091991
+    },
+    "url": "https://www.semanticscholar.org/paper/7fdbdd7ffcd4f7e4ffbec33d079e4a2bcb80f275",
+    "title": "AgenTracer: Who Is Inducing Failure in the LLM Agentic Systems?",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 33,
+    "influentialCitationCount": 5,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.03312, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2340212538",
+        "name": "Gui-Min Zhang"
+      },
+      {
+        "authorId": "2378897041",
+        "name": "Junhao Wang"
+      },
+      {
+        "authorId": "2350754850",
+        "name": "Junjie Chen"
+      },
+      {
+        "authorId": "2322149547",
+        "name": "Wangchunshu Zhou"
+      },
+      {
+        "authorId": "2302315766",
+        "name": "Kun Wang"
+      },
+      {
+        "authorId": "2367752546",
+        "name": "Shuicheng Yan"
+      }
+    ],
+    "abstract": "Large Language Model (LLM)-based agentic systems, often comprising multiple models, complex tool invocations, and orchestration protocols, substantially outperform monolithic agents. Yet this very sophistication amplifies their fragility, making them more prone to system failure. Pinpointing the specific agent or step responsible for an error within long execution traces defines the task of agentic system failure attribution. Current state-of-the-art reasoning LLMs, however, remain strikingly inadequate for this challenge, with accuracy generally below 10%. To address this gap, we propose AgenTracer, the first automated framework for annotating failed multi-agent trajectories via counterfactual replay and programmed fault injection, producing the curated dataset TracerTraj. Leveraging this resource, we develop AgenTracer-8B, a lightweight failure tracer trained with multi-granular reinforcement learning, capable of efficiently diagnosing errors in verbose multi-agent interactions. On the Who&When benchmark, AgenTracer-8B outperforms giant proprietary LLMs like Gemini-2.5-Pro and Claude-4-Sonnet by up to 18.18%, setting a new standard in LLM agentic failure attribution. More importantly, AgenTracer-8B delivers actionable feedback to off-the-shelf multi-agent systems like MetaGPT and MaAS with 4.8-14.2% performance gains, empowering self-correcting and self-evolving agentic AI.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "e2d3e8abe0fad7210a16be02528370ea03299d64",
+    "externalIds": {
+      "ArXiv": "2508.06433",
+      "DBLP": "journals/corr/abs-2508-06433",
+      "DOI": "10.48550/arXiv.2508.06433",
+      "CorpusId": 280561810
+    },
+    "url": "https://www.semanticscholar.org/paper/e2d3e8abe0fad7210a16be02528370ea03299d64",
+    "title": "Memp: Exploring Agent Procedural Memory",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 29,
+    "influentialCitationCount": 6,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2508.06433, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2278840339",
+        "name": "Runnan Fang"
+      },
+      {
+        "authorId": "2354564031",
+        "name": "Yuan Liang"
+      },
+      {
+        "authorId": "2353949865",
+        "name": "Xiaobin Wang"
+      },
+      {
+        "authorId": "2363886446",
+        "name": "Jialong Wu"
+      },
+      {
+        "authorId": "2190751119",
+        "name": "Shuofei Qiao"
+      },
+      {
+        "authorId": "2326115683",
+        "name": "Pengjun Xie"
+      },
+      {
+        "authorId": "2276428076",
+        "name": "Fei Huang"
+      },
+      {
+        "authorId": "2144200945",
+        "name": "Huajun Chen"
+      },
+      {
+        "authorId": "2349639731",
+        "name": "Ningyu Zhang"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) based agents excel at diverse tasks, yet they suffer from brittle procedural memory that is manually engineered or entangled in static parameters. In this work, we investigate strategies to endow agents with a learnable, updatable, and lifelong procedural memory. We propose Memp that distills past agent trajectories into both fine-grained, step-by-step instructions and higher-level, script-like abstractions, and explore the impact of different strategies for Build, Retrieval, and Update of procedural memory. Coupled with a dynamic regimen that continuously updates, corrects, and deprecates its contents, this repository evolves in lockstep with new experience. Empirical evaluation on TravelPlanner and ALFWorld shows that as the memory repository is refined, agents achieve steadily higher success rates and greater efficiency on analogous tasks. Moreover, procedural memory built from a stronger model retains its value: migrating the procedural memory to a weaker model can also yield substantial performance gains. Code is available at https://github.com/zjunlp/MemP.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "d4b9917737a520c471a7dd0e0e80520b7508562a",
+    "externalIds": {
+      "ArXiv": "2507.06229",
+      "DBLP": "journals/corr/abs-2507-06229",
+      "DOI": "10.48550/arXiv.2507.06229",
+      "CorpusId": 280047833
+    },
+    "url": "https://www.semanticscholar.org/paper/d4b9917737a520c471a7dd0e0e80520b7508562a",
+    "title": "Agent KB: Leveraging Cross-Domain Experience for Agentic Problem Solving",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 46,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2507.06229, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "47274259",
+        "name": "Xiangru Tang"
+      },
+      {
+        "authorId": "2366567233",
+        "name": "Tianrui Qin"
+      },
+      {
+        "authorId": "2367741262",
+        "name": "Tianhao Peng"
+      },
+      {
+        "authorId": "2373773549",
+        "name": "Ziyang Zhou"
+      },
+      {
+        "authorId": "2308941736",
+        "name": "Yanjun Shao"
+      },
+      {
+        "authorId": "2276847133",
+        "name": "TingTing Du"
+      },
+      {
+        "authorId": "2217579583",
+        "name": "Xinming Wei"
+      },
+      {
+        "authorId": "2261083308",
+        "name": "Peng Xia"
+      },
+      {
+        "authorId": "2284292287",
+        "name": "Fang Wu"
+      },
+      {
+        "authorId": "2373267831",
+        "name": "He Zhu"
+      },
+      {
+        "authorId": "2366560952",
+        "name": "Ge Zhang"
+      },
+      {
+        "authorId": "2294523552",
+        "name": "Jiaheng Liu"
+      },
+      {
+        "authorId": "2349629533",
+        "name": "Xingyao Wang"
+      },
+      {
+        "authorId": "2004160930",
+        "name": "Sirui Hong"
+      },
+      {
+        "authorId": "2326297106",
+        "name": "Chenglin Wu"
+      },
+      {
+        "authorId": "2292343983",
+        "name": "Hao Cheng"
+      },
+      {
+        "authorId": "2372478439",
+        "name": "Chi Wang"
+      },
+      {
+        "authorId": "2284803168",
+        "name": "Wangchunshu Zhou"
+      }
+    ],
+    "abstract": "AI agent frameworks operate in isolation, forcing agents to rediscover solutions and repeat mistakes across different systems. Despite valuable problem-solving experiences accumulated by frameworks like smolagents, OpenHands, and OWL, this knowledge remains trapped within individual systems, preventing the emergence of collective intelligence. Current memory systems focus on individual agents or framework-specific demonstrations, failing to enable cross-architecture knowledge transfer. We introduce AGENT KB, a universal memory infrastructure enabling seamless experience sharing across heterogeneous agent frameworks without retraining. AGENT KB aggregates trajectories into a structured knowledge base and serves lightweight APIs. At inference time, hybrid retrieval operates through two stages: planning seeds agents with cross-domain workflows, while feedback applies targeted diagnostic fixes. A disagreement gate ensures retrieved knowledge enhances rather than disrupts reasoning, addressing knowledge interference in cross-framework transfer. We validate AGENT KB across major frameworks on GAIA, Humanity's Last Exam, GPQA, and SWE-bench. Results show substantial improvements across diverse model families: compared to baseline pass@1, smolagents with AGENT KB achieve up to 18.7pp gains at pass@3 (55.2% ->73.9%), while OpenHands improves 4.0pp on SWE-bench pass@1 (24.3% ->28.3%). Similar improvements are observed across all base model families. Ablations confirm that hybrid retrieval and feedback stages are essential, with automatically generated experiences matching manual curation. This establishes the foundation for collective agent intelligence through shared memory infrastructures.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "204246f01e8870d7244450e5042a32c560263089",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2506-06698",
+      "ArXiv": "2506.06698",
+      "DOI": "10.48550/arXiv.2506.06698",
+      "CorpusId": 279250810
+    },
+    "url": "https://www.semanticscholar.org/paper/204246f01e8870d7244450e5042a32c560263089",
+    "title": "Contextual Experience Replay for Self-Improvement of Language Agents",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2025,
+    "citationCount": 25,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2506.06698, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2308814467",
+        "name": "Yitao Liu"
+      },
+      {
+        "authorId": "152358188",
+        "name": "Chenglei Si"
+      },
+      {
+        "authorId": "2360305970",
+        "name": "Karthik R. Narasimhan"
+      },
+      {
+        "authorId": "2256984659",
+        "name": "Shunyu Yao"
+      }
+    ],
+    "abstract": "Large language model (LLM) agents have been applied to sequential decision-making tasks such as web navigation, but without any environment-specific experiences, they often fail in these complex tasks. Moreover, current LLM agents are not designed to continually learn from past experiences during inference time, which could be crucial for them to gain these environment-specific experiences. To address this, we propose Contextual Experience Replay (CER), a training-free framework to enable efficient self-improvement for language agents in their context window. Specifically, CER accumulates and synthesizes past experiences into a dynamic memory buffer. These experiences encompass environment dynamics and common decision-making patterns, allowing the agents to retrieve and augment themselves with relevant knowledge in new tasks, enhancing their adaptability in complex environments. We evaluate CER on the challenging WebArena and VisualWebArena benchmarks. On VisualWebArena, CER achieves a competitive performance of 31.9%. On WebArena, CER also gets a competitive average success rate of 36.7%, relatively improving the success rate of the GPT-4o agent baseline by 51.0%. We also conduct a comprehensive analysis on it to prove its efficiency, validity and understand it better.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1d9c21a0fdb1cc16a32c5d490ebaf98436a23382",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2504-19413",
+      "ArXiv": "2504.19413",
+      "DOI": "10.48550/arXiv.2504.19413",
+      "CorpusId": 278165315
+    },
+    "url": "https://www.semanticscholar.org/paper/1d9c21a0fdb1cc16a32c5d490ebaf98436a23382",
+    "title": "Mem0: Building Production-Ready AI Agents with Scalable Long-Term Memory",
+    "venue": "European Conference on Artificial Intelligence",
+    "year": 2025,
+    "citationCount": 317,
+    "influentialCitationCount": 53,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.19413, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "1416534710",
+        "name": "P. Chhikara"
+      },
+      {
+        "authorId": "2357971314",
+        "name": "Dev Khant"
+      },
+      {
+        "authorId": "2344539330",
+        "name": "Saket Aryan"
+      },
+      {
+        "authorId": "2112769962",
+        "name": "Taranjeet Singh"
+      },
+      {
+        "authorId": "24508084",
+        "name": "Deshraj Yadav"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) have demonstrated remarkable prowess in generating contextually coherent responses, yet their fixed context windows pose fundamental challenges for maintaining consistency over prolonged multi-session dialogues. We introduce Mem0, a scalable memory-centric architecture that addresses this issue by dynamically extracting, consolidating, and retrieving salient information from ongoing conversations. Building on this foundation, we further propose an enhanced variant that leverages graph-based memory representations to capture complex relational structures among conversational elements. Through comprehensive evaluations on LOCOMO benchmark, we systematically compare our approaches against six baseline categories: (i) established memory-augmented systems, (ii) retrieval-augmented generation (RAG) with varying chunk sizes and k-values, (iii) a full-context approach that processes the entire conversation history, (iv) an open-source memory solution, (v) a proprietary model system, and (vi) a dedicated memory management platform. Empirical results show that our methods consistently outperform all existing memory systems across four question categories: single-hop, temporal, multi-hop, and open-domain. Notably, Mem0 achieves 26% relative improvements in the LLM-as-a-Judge metric over OpenAI, while Mem0 with graph memory achieves around 2% higher overall score than the base configuration. Beyond accuracy gains, we also markedly reduce computational overhead compared to full-context method. In particular, Mem0 attains a 91% lower p95 latency and saves more than 90% token cost, offering a compelling balance between advanced reasoning capabilities and practical deployment constraints. Our findings highlight critical role of structured, persistent memory mechanisms for long-term conversational coherence, paving the way for more reliable and efficient LLM-driven AI agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "076f059aa724619ad346503623c5ee57d4625c9d",
+    "externalIds": {
+      "DBLP": "conf/emnlp/FangZZMYMY25",
+      "ArXiv": "2504.21024",
+      "DOI": "10.48550/arXiv.2504.21024",
+      "CorpusId": 278208004
+    },
+    "url": "https://www.semanticscholar.org/paper/076f059aa724619ad346503623c5ee57d4625c9d",
+    "title": "WebEvolver: Enhancing Web Agent Self-Improvement with Coevolving World Model",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2025,
+    "citationCount": 36,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.21024, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2044202073",
+        "name": "Tianqing Fang"
+      },
+      {
+        "authorId": "2254831297",
+        "name": "Hongming Zhang"
+      },
+      {
+        "authorId": "2326349647",
+        "name": "Zhisong Zhang"
+      },
+      {
+        "authorId": "2311458574",
+        "name": "Kaixin Ma"
+      },
+      {
+        "authorId": "2265843326",
+        "name": "Wenhao Yu"
+      },
+      {
+        "authorId": "2238955130",
+        "name": "Haitao Mi"
+      },
+      {
+        "authorId": "2303999735",
+        "name": "Dong Yu"
+      }
+    ],
+    "abstract": "Agent self-improvement, where the backbone Large Language Model (LLM) of the agent are trained on trajectories sampled autonomously based on their own policies, has emerged as a promising approach for enhancing performance. Recent advancements, particularly in web environments, face a critical limitation: their performance will reach a stagnation point during autonomous learning cycles, hindering further improvement. We argue that this stems from limited exploration of the web environment and insufficient exploitation of pre-trained web knowledge in LLMs. To improve the performance of self-improvement, we propose a novel framework that introduces a co-evolving World Model LLM. This world model predicts the next observation based on the current observation and action within the web environment. Leveraging LLMs'pretrained knowledge of abundant web content, the World Model serves dual roles: (1) as a virtual web server generating self-instructed training data to continuously refine the agent's policy, and (2) as an imagination engine during inference, enabling look-ahead simulation to guide action selection for the agent LLM. Experiments in real-world web environments (Mind2Web-Live, WebVoyager, and GAIA-web) show a 10% performance gain over existing self-evolving agents, demonstrating the efficacy and generalizability of our approach, without using any distillation from more powerful close-sourced models. Our work establishes the necessity of integrating world models into autonomous agent frameworks to unlock sustained adaptability. Code is available at https://github.com/Tencent/SelfEvolvingAgent",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "69768fdcb8c2bbf5c658c737b33d9c95ea98f60f",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2504-07079",
+      "ArXiv": "2504.07079",
+      "DOI": "10.48550/arXiv.2504.07079",
+      "CorpusId": 277634081
+    },
+    "url": "https://www.semanticscholar.org/paper/69768fdcb8c2bbf5c658c737b33d9c95ea98f60f",
+    "title": "SkillWeaver: Web Agents can Self-Improve by Discovering and Honing Skills",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 62,
+    "influentialCitationCount": 5,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.07079, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2112670551",
+        "name": "Boyuan Zheng"
+      },
+      {
+        "authorId": "2192713722",
+        "name": "Michael Y. Fatemi"
+      },
+      {
+        "authorId": "2346309962",
+        "name": "Xiaolong Jin"
+      },
+      {
+        "authorId": "2307569999",
+        "name": "Z. Wang"
+      },
+      {
+        "authorId": "2354334142",
+        "name": "Apurva Gandhi"
+      },
+      {
+        "authorId": "2290031618",
+        "name": "Yueqi Song"
+      },
+      {
+        "authorId": "2022231256",
+        "name": "Yu Gu"
+      },
+      {
+        "authorId": "2089885442",
+        "name": "Jayanth Srinivasa"
+      },
+      {
+        "authorId": "2284307754",
+        "name": "Gaowen Liu"
+      },
+      {
+        "authorId": "2337795179",
+        "name": "Graham Neubig"
+      },
+      {
+        "authorId": "1758652",
+        "name": "Yu Su"
+      }
+    ],
+    "abstract": "To survive and thrive in complex environments, humans have evolved sophisticated self-improvement mechanisms through environment exploration, hierarchical abstraction of experiences into reuseable skills, and collaborative construction of an ever-growing skill repertoire. Despite recent advancements, autonomous web agents still lack crucial self-improvement capabilities, struggling with procedural knowledge abstraction, refining skills, and skill composition. In this work, we introduce SkillWeaver, a skill-centric framework enabling agents to self-improve by autonomously synthesizing reusable skills as APIs. Given a new website, the agent autonomously discovers skills, executes them for practice, and distills practice experiences into robust APIs. Iterative exploration continually expands a library of lightweight, plug-and-play APIs, significantly enhancing the agent's capabilities. Experiments on WebArena and real-world websites demonstrate the efficacy of SkillWeaver, achieving relative success rate improvements of 31.8% and 39.8%, respectively. Additionally, APIs synthesized by strong agents substantially enhance weaker agents through transferable skills, yielding improvements of up to 54.3% on WebArena. These results demonstrate the effectiveness of honing diverse website interactions into APIs, which can be seamlessly shared among various web agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "b25eff5b54a1145de6138f36da0cf1a961900ea3",
+    "externalIds": {
+      "DBLP": "conf/icml/NottinghamMM0CF24",
+      "ArXiv": "2402.03244",
+      "DOI": "10.48550/arXiv.2402.03244",
+      "CorpusId": 267412874
+    },
+    "url": "https://www.semanticscholar.org/paper/b25eff5b54a1145de6138f36da0cf1a961900ea3",
+    "title": "Skill Set Optimization: Reinforcing Language Model Behavior via Transferable Skills",
+    "venue": "International Conference on Machine Learning",
+    "year": 2024,
+    "citationCount": 19,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2402.03244, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "103596213",
+        "name": "Kolby Nottingham"
+      },
+      {
+        "authorId": "3165738",
+        "name": "Bodhisattwa Prasad Majumder"
+      },
+      {
+        "authorId": "40135250",
+        "name": "Bhavana Dalvi"
+      },
+      {
+        "authorId": "2299171638",
+        "name": "Sameer Singh"
+      },
+      {
+        "authorId": "2258709497",
+        "name": "Peter Clark"
+      },
+      {
+        "authorId": "2282541757",
+        "name": "Roy Fox"
+      }
+    ],
+    "abstract": "Large language models (LLMs) have recently been used for sequential decision making in interactive environments. However, leveraging environment reward signals for continual LLM actor improvement is not straightforward. We propose Skill Set Optimization (SSO) for improving LLM actor performance through constructing and refining sets of transferable skills. SSO constructs skills by extracting common subtrajectories with high rewards and generating subgoals and instructions to represent each skill. These skills are provided to the LLM actor in-context to reinforce behaviors with high rewards. Then, SSO further refines the skill set by pruning skills that do not continue to result in high rewards. We evaluate our method in the classic videogame NetHack and the text environment ScienceWorld to demonstrate SSO's ability to optimize a set of skills and perform in-context policy improvement. SSO outperforms baselines by 40% in our custom NetHack task and outperforms the previous state-of-the-art in ScienceWorld by 35%.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "b76fa45371734fdf912a9d66807e80a2c438527b",
+    "externalIds": {
+      "ArXiv": "2311.10538",
+      "DBLP": "journals/corr/abs-2311-10538",
+      "DOI": "10.48550/arXiv.2311.10538",
+      "CorpusId": 265281461
+    },
+    "url": "https://www.semanticscholar.org/paper/b76fa45371734fdf912a9d66807e80a2c438527b",
+    "title": "Testing Language Model Agents Safely in the Wild",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 47,
+    "influentialCitationCount": 5,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2311.10538, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2267247674",
+        "name": "Silen Naihin"
+      },
+      {
+        "authorId": "2294877299",
+        "name": "David Atkinson"
+      },
+      {
+        "authorId": "2111019653",
+        "name": "Marc Green"
+      },
+      {
+        "authorId": "2267245964",
+        "name": "Merwane Hamadi"
+      },
+      {
+        "authorId": "2267725655",
+        "name": "Craig Swift"
+      },
+      {
+        "authorId": "2267247601",
+        "name": "Douglas Schonholtz"
+      },
+      {
+        "authorId": "2186481",
+        "name": "A. Kalai"
+      },
+      {
+        "authorId": "144159726",
+        "name": "David Bau"
+      }
+    ],
+    "abstract": "A prerequisite for safe autonomy-in-the-wild is safe testing-in-the-wild. Yet real-world autonomous tests face several unique safety challenges, both due to the possibility of causing harm during a test, as well as the risk of encountering new unsafe agent behavior through interactions with real-world and potentially malicious actors. We propose a framework for conducting safe autonomous agent tests on the open internet: agent actions are audited by a context-sensitive monitor that enforces a stringent safety boundary to stop an unsafe test, with suspect behavior ranked and logged to be examined by humans. We design a basic safety monitor (AgentMonitor) that is flexible enough to monitor existing LLM agents, and, using an adversarial simulated agent, we measure its ability to identify and stop unsafe situations. Then we apply the AgentMonitor on a battery of real-world tests of AutoGPT, and we identify several limitations and challenges that will face the creation of safe in-the-wild tests as autonomous agents grow more capable.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "5e4597eb21a393b23e473cf66cb5ae8b27cab03e",
+    "externalIds": {
+      "DBLP": "conf/aaai/Zhao0XLLH24",
+      "ArXiv": "2308.10144",
+      "DOI": "10.48550/arXiv.2308.10144",
+      "CorpusId": 261048772
+    },
+    "url": "https://www.semanticscholar.org/paper/5e4597eb21a393b23e473cf66cb5ae8b27cab03e",
+    "title": "ExpeL: LLM Agents Are Experiential Learners",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2023,
+    "citationCount": 508,
+    "influentialCitationCount": 59,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2308.10144",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2308.10144, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2136104377",
+        "name": "Andrew Zhao"
+      },
+      {
+        "authorId": "46307329",
+        "name": "Daniel Huang"
+      },
+      {
+        "authorId": "2232847317",
+        "name": "Quentin Xu"
+      },
+      {
+        "authorId": "2036238525",
+        "name": "Matthieu Lin"
+      },
+      {
+        "authorId": "1679704",
+        "name": "Y. Liu"
+      },
+      {
+        "authorId": "2115218570",
+        "name": "Gao Huang"
+      }
+    ],
+    "abstract": "The recent surge in research interest in applying large language models (LLMs) to decision-making tasks has flourished by leveraging the extensive world knowledge embedded in LLMs. While there is a growing demand to tailor LLMs for custom decision-making tasks, finetuning them for specific tasks is resource-intensive and may diminish the model's generalization capabilities. Moreover, state-of-the-art language models like GPT-4 and Claude are primarily accessible through API calls, with their parametric weights remaining proprietary and unavailable to the public. This scenario emphasizes the growing need for new methodologies that allow learning from agent experiences without requiring parametric updates. To address these problems, we introduce the Experiential Learning (ExpeL) agent. Our agent autonomously gathers experiences and extracts knowledge using natural language from a collection of training tasks. At inference, the agent recalls its extracted insights and past experiences to make informed decisions. Our empirical results highlight the robust learning efficacy of the ExpeL agent, indicating a consistent enhancement in its performance as it accumulates experiences. We further explore the emerging capabilities and transfer learning potential of the ExpeL agent through qualitative observations and additional experiments.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "f197bf0fc2f228483f6af3285000d54d8d97f9eb",
+    "externalIds": {
+      "ArXiv": "2305.16291",
+      "DBLP": "journals/tmlr/WangX0MXZFA24",
+      "DOI": "10.48550/arXiv.2305.16291",
+      "CorpusId": 258887849
+    },
+    "url": "https://www.semanticscholar.org/paper/f197bf0fc2f228483f6af3285000d54d8d97f9eb",
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "venue": "Trans. Mach. Learn. Res.",
+    "year": 2023,
+    "citationCount": 1622,
+    "influentialCitationCount": 128,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.16291",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.16291, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "96374437",
+        "name": "Guanzhi Wang"
+      },
+      {
+        "authorId": "2218866691",
+        "name": "Yuqi Xie"
+      },
+      {
+        "authorId": "2171112793",
+        "name": "Yunfan Jiang"
+      },
+      {
+        "authorId": "49686756",
+        "name": "A. Mandlekar"
+      },
+      {
+        "authorId": "2723309",
+        "name": "Chaowei Xiao"
+      },
+      {
+        "authorId": "2117748",
+        "name": "Yuke Zhu"
+      },
+      {
+        "authorId": "3275727",
+        "name": "Linxi (Jim) Fan"
+      },
+      {
+        "authorId": "47627049",
+        "name": "Anima Anandkumar"
+      }
+    ],
+    "abstract": "We introduce Voyager, the first LLM-powered embodied lifelong learning agent in Minecraft that continuously explores the world, acquires diverse skills, and makes novel discoveries without human intervention. Voyager consists of three key components: 1) an automatic curriculum that maximizes exploration, 2) an ever-growing skill library of executable code for storing and retrieving complex behaviors, and 3) a new iterative prompting mechanism that incorporates environment feedback, execution errors, and self-verification for program improvement. Voyager interacts with GPT-4 via blackbox queries, which bypasses the need for model parameter fine-tuning. The skills developed by Voyager are temporally extended, interpretable, and compositional, which compounds the agent's abilities rapidly and alleviates catastrophic forgetting. Empirically, Voyager shows strong in-context lifelong learning capability and exhibits exceptional proficiency in playing Minecraft. It obtains 3.3x more unique items, travels 2.3x longer distances, and unlocks key tech tree milestones up to 15.3x faster than prior SOTA. Voyager is able to utilize the learned skill library in a new Minecraft world to solve novel tasks from scratch, while other techniques struggle to generalize. We open-source our full codebase and prompts at https://voyager.minedojo.org/.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "0671fd553dd670a4e820553a974bc48040ba0819",
+    "externalIds": {
+      "DBLP": "conf/nips/ShinnCGNY23",
+      "ArXiv": "2303.11366",
+      "DOI": "10.52202/075280-0377",
+      "CorpusId": 258833055
+    },
+    "url": "https://www.semanticscholar.org/paper/0671fd553dd670a4e820553a974bc48040ba0819",
+    "title": "Reflexion: language agents with verbal reinforcement learning",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 3441,
+    "influentialCitationCount": 280,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2303.11366, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2212367248",
+        "name": "Noah Shinn"
+      },
+      {
+        "authorId": "2197063831",
+        "name": "Federico Cassano"
+      },
+      {
+        "authorId": "2212367414",
+        "name": "Beck Labash"
+      },
+      {
+        "authorId": "2162047785",
+        "name": "A. Gopinath"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      },
+      {
+        "authorId": "47188964",
+        "name": "Shunyu Yao"
+      }
+    ],
+    "abstract": "Large language models (LLMs) have been increasingly used to interact with external environments (e.g., games, compilers, APIs) as goal-driven agents. However, it remains challenging for these language agents to quickly and efficiently learn from trial-and-error as traditional reinforcement learning methods require extensive training samples and expensive model fine-tuning. We propose Reflexion, a novel framework to reinforce language agents not by updating weights, but instead through linguistic feedback. Concretely, Reflexion agents verbally reflect on task feedback signals, then maintain their own reflective text in an episodic memory buffer to induce better decision-making in subsequent trials. Reflexion is flexible enough to incorporate various types (scalar values or free-form language) and sources (external or internally simulated) of feedback signals, and obtains significant improvements over a baseline agent across diverse tasks (sequential decision-making, coding, language reasoning). For example, Reflexion achieves a 91% pass@1 accuracy on the HumanEval coding benchmark, surpassing the previous state-of-the-art GPT-4 that achieves 80%. We also conduct ablation and analysis studies using different feedback signals, feedback incorporation methods, and agent types, and provide insights into how they affect performance.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "99832586d55f540f603637e458a292406a0ed75d",
+    "externalIds": {
+      "CorpusId": 252762395
+    },
+    "url": "https://www.semanticscholar.org/paper/99832586d55f540f603637e458a292406a0ed75d",
+    "title": "LANGUAGE MODELS",
+    "venue": "",
+    "year": 2023,
+    "citationCount": 7349,
+    "influentialCitationCount": 846,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2093302161",
+        "name": "Shunyu Yao"
+      },
+      {
+        "authorId": "2144551262",
+        "name": "Jeffrey Zhao"
+      },
+      {
+        "authorId": "150978762",
+        "name": "Dian Yu"
+      },
+      {
+        "authorId": "2140321952",
+        "name": "Nan Du"
+      },
+      {
+        "authorId": "1697494",
+        "name": "Izhak Shafran"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      },
+      {
+        "authorId": "145144022",
+        "name": "Yuan Cao"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Agents in the wild: Safety, security, and beyond",
+    "venue": "ICLR 2026 Workshop Proposals",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Anthropic",
+    "venue": "What are skills?",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "How to create a skill with claude through conversation",
+    "venue": "Claude Tutorials",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  }
+]

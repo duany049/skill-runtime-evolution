@@ -1,0 +1,4624 @@
+[
+  {
+    "paperId": "13d12b26db345f62e8e512db181b96a7f8763b47",
+    "externalIds": {
+      "DBLP": "conf/icml/HuangYMLLW0ZJ024",
+      "ArXiv": "2311.12871",
+      "DOI": "10.48550/arXiv.2311.12871",
+      "CorpusId": 265351495
+    },
+    "url": "https://www.semanticscholar.org/paper/13d12b26db345f62e8e512db181b96a7f8763b47",
+    "title": "An Embodied Generalist Agent in 3D World",
+    "venue": "International Conference on Machine Learning",
+    "year": 2023,
+    "citationCount": 365,
+    "influentialCitationCount": 36,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2311.12871, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2192712129",
+        "name": "Jiangyong Huang"
+      },
+      {
+        "authorId": "2183144395",
+        "name": "Silong Yong"
+      },
+      {
+        "authorId": "2242178224",
+        "name": "Xiaojian Ma"
+      },
+      {
+        "authorId": "2170539011",
+        "name": "Xiongkun Linghu"
+      },
+      {
+        "authorId": "2145015272",
+        "name": "Puhao Li"
+      },
+      {
+        "authorId": "2267823550",
+        "name": "Yan Wang"
+      },
+      {
+        "authorId": "2117895397",
+        "name": "Qing Li"
+      },
+      {
+        "authorId": "2254283518",
+        "name": "Song-Chun Zhu"
+      },
+      {
+        "authorId": "26663607",
+        "name": "Baoxiong Jia"
+      },
+      {
+        "authorId": "2239060852",
+        "name": "Siyuan Huang"
+      }
+    ],
+    "abstract": "Leveraging massive knowledge from large language models (LLMs), recent machine learning models show notable successes in general-purpose task solving in diverse domains such as computer vision and robotics. However, several significant challenges remain: (i) most of these models rely on 2D images yet exhibit a limited capacity for 3D input; (ii) these models rarely explore the tasks inherently defined in 3D world, e.g., 3D grounding, embodied reasoning and acting. We argue these limitations significantly hinder current models from performing real-world tasks and approaching general intelligence. To this end, we introduce LEO, an embodied multi-modal generalist agent that excels in perceiving, grounding, reasoning, planning, and acting in the 3D world. LEO is trained with a unified task interface, model architecture, and objective in two stages: (i) 3D vision-language (VL) alignment and (ii) 3D vision-language-action (VLA) instruction tuning. We collect large-scale datasets comprising diverse object-level and scene-level tasks, which require considerable understanding of and interaction with the 3D world. Moreover, we meticulously design an LLM-assisted pipeline to produce high-quality 3D VL data. Through extensive experiments, we demonstrate LEO's remarkable proficiency across a wide spectrum of tasks, including 3D captioning, question answering, embodied reasoning, navigation and manipulation. Our ablative studies and scaling analyses further provide valuable insights for developing future embodied generalist agents. Code and data are available on project page.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "d40986251df7569f1441762767605769b6bc15ea",
+    "externalIds": {
+      "ArXiv": "2310.08235",
+      "DBLP": "journals/corr/abs-2310-08235",
+      "DOI": "10.48550/arXiv.2310.08235",
+      "CorpusId": 263908999
+    },
+    "url": "https://www.semanticscholar.org/paper/d40986251df7569f1441762767605769b6bc15ea",
+    "title": "GROOT: Learning to Follow Instructions by Watching Gameplay Videos",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 44,
+    "influentialCitationCount": 8,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2310.08235",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2310.08235, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "1993661033",
+        "name": "Shaofei Cai"
+      },
+      {
+        "authorId": "2257373058",
+        "name": "Bowei Zhang"
+      },
+      {
+        "authorId": "47196237",
+        "name": "Zihao Wang"
+      },
+      {
+        "authorId": "2257636629",
+        "name": "Xiaojian Ma"
+      },
+      {
+        "authorId": "70097297",
+        "name": "Anji Liu"
+      },
+      {
+        "authorId": "2257367774",
+        "name": "Yitao Liang"
+      }
+    ],
+    "abstract": "We study the problem of building a controller that can follow open-ended instructions in open-world environments. We propose to follow reference videos as instructions, which offer expressive goal specifications while eliminating the need for expensive text-gameplay annotations. A new learning framework is derived to allow learning such instruction-following controllers from gameplay videos while producing a video instruction encoder that induces a structured goal space. We implement our agent GROOT in a simple yet effective encoder-decoder architecture based on causal transformers. We evaluate GROOT against open-world counterparts and human players on a proposed Minecraft SkillForge benchmark. The Elo ratings clearly show that GROOT is closing the human-machine gap as well as exhibiting a 70% winning rate over the best generalist agent baseline. Qualitative analysis of the induced goal space further demonstrates some interesting emergent properties, including the goal composition and complex gameplay behavior synthesis. The project page is available at https://craftjarvis-groot.github.io.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "d7d712e507c1c6273b05c773c825a668c5cf1504",
+    "externalIds": {
+      "DBLP": "conf/naacl/GongHMNDZTFGV24",
+      "ArXiv": "2309.09971",
+      "DOI": "10.48550/arXiv.2309.09971",
+      "CorpusId": 261898118
+    },
+    "url": "https://www.semanticscholar.org/paper/d7d712e507c1c6273b05c773c825a668c5cf1504",
+    "title": "MindAgent: Emergent Gaming Interaction",
+    "venue": "NAACL-HLT",
+    "year": 2023,
+    "citationCount": 100,
+    "influentialCitationCount": 7,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2309.09971",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.09971, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "48096046",
+        "name": "Ran Gong"
+      },
+      {
+        "authorId": "2242393161",
+        "name": "Qiuyuan Huang"
+      },
+      {
+        "authorId": "2242178224",
+        "name": "Xiaojian Ma"
+      },
+      {
+        "authorId": "2241542412",
+        "name": "Hoi Vo"
+      },
+      {
+        "authorId": "80726083",
+        "name": "Zane Durante"
+      },
+      {
+        "authorId": "2241619720",
+        "name": "Yusuke Noda"
+      },
+      {
+        "authorId": "49774254",
+        "name": "Zilong Zheng"
+      },
+      {
+        "authorId": "145380991",
+        "name": "Song-Chun Zhu"
+      },
+      {
+        "authorId": "1750924",
+        "name": "Demetri Terzopoulos"
+      },
+      {
+        "authorId": "2241788459",
+        "name": "Fei-Fei Li"
+      },
+      {
+        "authorId": "2257313530",
+        "name": "Jianfeng Gao"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) have the capacity of performing complex scheduling in a multi-agent system and can coordinate these agents into completing sophisticated tasks that require extensive collaboration. However, despite the introduction of numerous gaming frameworks, the community has insufficient benchmarks towards building general multi-agents collaboration infrastructure that encompass both LLM and human-NPCs collaborations. In this work, we propose a novel infrastructure - MindAgent - to evaluate planning and coordination emergent capabilities for gaming interaction. In particular, our infrastructure leverages existing gaming framework, to i) require understanding of the coordinator for a multi-agent system, ii) collaborate with human players via un-finetuned proper instructions, and iii) establish an in-context learning on few-shot prompt with feedback. Furthermore, we introduce CUISINEWORLD, a new gaming scenario and related benchmark that dispatch a multi-agent collaboration efficiency and supervise multiple agents playing the game simultaneously. We conduct comprehensive evaluations with new auto-metric CoS for calculating the collaboration efficiency. Finally, our infrastructure can be deployed into real-world gaming scenarios in a customized VR version of CUISINEWORLD and adapted in existing broader Minecraft gaming domain. We hope our findings on LLMs and the new infrastructure for general-purpose scheduling and coordination can help shed light on how such skills can be obtained by learning from large language corpora.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "3803d1f291e162bdaa4678a2c5a2bbcf63c050f4",
+    "externalIds": {
+      "ArXiv": "2309.07915",
+      "DBLP": "conf/iclr/ZhaoCSMA0LWHC24",
+      "DOI": "10.48550/arXiv.2309.07915",
+      "CorpusId": 261823391
+    },
+    "url": "https://www.semanticscholar.org/paper/3803d1f291e162bdaa4678a2c5a2bbcf63c050f4",
+    "title": "MMICL: Empowering Vision-language Model with Multi-Modal In-Context Learning",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 206,
+    "influentialCitationCount": 13,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2309.07915",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.07915, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2112675144",
+        "name": "Haozhe Zhao"
+      },
+      {
+        "authorId": "2117632647",
+        "name": "Zefan Cai"
+      },
+      {
+        "authorId": "2053739525",
+        "name": "Shuzheng Si"
+      },
+      {
+        "authorId": "2241105586",
+        "name": "Xiaojian Ma"
+      },
+      {
+        "authorId": "2240549884",
+        "name": "Kaikai An"
+      },
+      {
+        "authorId": "2146034504",
+        "name": "Liang Chen"
+      },
+      {
+        "authorId": "46271003",
+        "name": "Zixuan Liu"
+      },
+      {
+        "authorId": "47673176",
+        "name": "Sheng Wang"
+      },
+      {
+        "authorId": "2219388940",
+        "name": "Wenjuan Han"
+      },
+      {
+        "authorId": "39488576",
+        "name": "Baobao Chang"
+      }
+    ],
+    "abstract": "Since the resurgence of deep learning, vision-language models (VLMs) enhanced by large language models (LLMs) have grown exponentially in popularity. However, while LLMs can utilize extensive background knowledge and task information with in-context learning, most VLMs still struggle with understanding complex multi-modal prompts with multiple images, making VLMs less effective in downstream vision-language tasks. In this paper, we address the limitation above by 1) introducing vision-language Model with Multi-Modal In-Context Learning(MMICL), a new approach to allow the VLM to deal with multi-modal inputs efficiently; 2) proposing a novel context scheme to augment the in-context learning ability of the VLM; 3) constructing the Multi-modal In-Context Learning (MIC) dataset, designed to enhance the VLM's ability to understand complex multi-modal prompts. Our experiments confirm that MMICL achieves new state-of-the-art zero-shot performance on a wide range of general vision-language tasks, especially for complex benchmarks, including MME and MMBench. Our analysis demonstrates that MMICL effectively tackles the challenge of complex multi-modal prompt understanding and emerges the impressive ICL ability. Furthermore, we observe that MMICL successfully alleviates language bias in VLMs, a common issue for VLMs that often leads to hallucination when faced with extensive textual context. Our code, dataset, dataset tool, and model are available at https://github.com/PKUnlp-icler/MIC",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "9fbde8d0315f52e598c5b4a1409ed2aee215ace9",
+    "externalIds": {
+      "DBLP": "conf/aaai/ZhangYHWLSZZLZC24",
+      "ArXiv": "2308.11339",
+      "DOI": "10.1609/aaai.v38i16.29710",
+      "CorpusId": 261064959
+    },
+    "url": "https://www.semanticscholar.org/paper/9fbde8d0315f52e598c5b4a1409ed2aee215ace9",
+    "title": "ProAgent: Building Proactive Cooperative Agents with Large Language Models",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2023,
+    "citationCount": 143,
+    "influentialCitationCount": 7,
+    "openAccessPdf": {
+      "url": "https://ojs.aaai.org/index.php/AAAI/article/download/29710/31219",
+      "status": "GOLD",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2308.11339, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2000868582",
+        "name": "Ceyao Zhang"
+      },
+      {
+        "authorId": "2259902559",
+        "name": "Kaijie Yang"
+      },
+      {
+        "authorId": "4443613",
+        "name": "Siyi Hu"
+      },
+      {
+        "authorId": "47196237",
+        "name": "Zihao Wang"
+      },
+      {
+        "authorId": "2151299337",
+        "name": "Guanghe Li"
+      },
+      {
+        "authorId": "2350524145",
+        "name": "Yihang Sun"
+      },
+      {
+        "authorId": "145107889",
+        "name": "Chen Zhang"
+      },
+      {
+        "authorId": "2174174943",
+        "name": "Zhaowei Zhang"
+      },
+      {
+        "authorId": "70097297",
+        "name": "Anji Liu"
+      },
+      {
+        "authorId": "2148575818",
+        "name": "Song-Chun Zhu"
+      },
+      {
+        "authorId": "2232955435",
+        "name": "Xiaojun Chang"
+      },
+      {
+        "authorId": "2399229440",
+        "name": "Junge Zhang"
+      },
+      {
+        "authorId": "5951460",
+        "name": "F. Yin"
+      },
+      {
+        "authorId": "2397352",
+        "name": "Yitao Liang"
+      },
+      {
+        "authorId": "47796324",
+        "name": "Yaodong Yang"
+      }
+    ],
+    "abstract": "Building agents with adaptive behavior in cooperative tasks stands as a paramount goal in the realm of multi-agent systems. Current approaches to developing cooperative agents rely primarily on learning-based methods, whose policy generalization depends heavily on the diversity of teammates they interact with during the training phase. Such reliance, however, constrains the agents' capacity for strategic adaptation when cooperating with unfamiliar teammates, which becomes a significant challenge in zero-shot coordination scenarios. To address this challenge, we propose ProAgent, a novel framework that harnesses large language models (LLMs) to create proactive agents capable of dynamically adapting their behavior to enhance cooperation with teammates. ProAgent can analyze the present state, and infer the intentions of teammates from observations. It then updates its beliefs in alignment with the teammates' subsequent actual behaviors. Moreover, ProAgent exhibits a high degree of modularity and interpretability, making it easily integrated into various of coordination scenarios. Experimental evaluations conducted within the Overcooked-AI environment unveil the remarkable performance superiority of ProAgent, outperforming five methods based on self-play and population-based training when cooperating with AI agents. Furthermore, in partnered with human proxy models, its performance exhibits an average improvement exceeding 10% compared to the current state-of-the-art method. For more information about our project, please visit https://pku-proagent.github.io.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "38939304bb760473141c2aca0305e44fbe04e6e8",
+    "externalIds": {
+      "ArXiv": "2307.15818",
+      "DBLP": "conf/corl/ZitkovichYXXXXW23",
+      "DOI": "10.48550/arXiv.2307.15818",
+      "CorpusId": 260293142
+    },
+    "url": "https://www.semanticscholar.org/paper/38939304bb760473141c2aca0305e44fbe04e6e8",
+    "title": "RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control",
+    "venue": "Conference on Robot Learning",
+    "year": 2023,
+    "citationCount": 2983,
+    "influentialCitationCount": 176,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2307.15818",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2307.15818, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "118025075",
+        "name": "Anthony Brohan"
+      },
+      {
+        "authorId": "2161343011",
+        "name": "Noah Brown"
+      },
+      {
+        "authorId": "2196517336",
+        "name": "Justice Carbajal"
+      },
+      {
+        "authorId": "2527420",
+        "name": "Yevgen Chebotar"
+      },
+      {
+        "authorId": "1805203",
+        "name": "K. Choromanski"
+      },
+      {
+        "authorId": "95691186",
+        "name": "Tianli Ding"
+      },
+      {
+        "authorId": "2283848260",
+        "name": "Danny Driess"
+      },
+      {
+        "authorId": "89890133",
+        "name": "Kumar Avinava Dubey"
+      },
+      {
+        "authorId": "46881670",
+        "name": "Chelsea Finn"
+      },
+      {
+        "authorId": "47686265",
+        "name": "Peter R. Florence"
+      },
+      {
+        "authorId": "3430433",
+        "name": "Chuyuan Fu"
+      },
+      {
+        "authorId": "153134021",
+        "name": "Montse Gonzalez Arenas"
+      },
+      {
+        "authorId": "2161342233",
+        "name": "K. Gopalakrishnan"
+      },
+      {
+        "authorId": "2273880591",
+        "name": "Kehang Han"
+      },
+      {
+        "authorId": "1944801",
+        "name": "Karol Hausman"
+      },
+      {
+        "authorId": "1505793452",
+        "name": "Alexander Herzog"
+      },
+      {
+        "authorId": "2726592",
+        "name": "Jasmine Hsu"
+      },
+      {
+        "authorId": "2704814",
+        "name": "Brian Ichter"
+      },
+      {
+        "authorId": "17818078",
+        "name": "A. Irpan"
+      },
+      {
+        "authorId": "2052368480",
+        "name": "Nikhil J. Joshi"
+      },
+      {
+        "authorId": "144885996",
+        "name": "Ryan C. Julian"
+      },
+      {
+        "authorId": "48313860",
+        "name": "Dmitry Kalashnikov"
+      },
+      {
+        "authorId": "2161342687",
+        "name": "Yuheng Kuang"
+      },
+      {
+        "authorId": "2057988112",
+        "name": "Isabel Leal"
+      },
+      {
+        "authorId": "1736651",
+        "name": "S. Levine"
+      },
+      {
+        "authorId": "47407464",
+        "name": "H. Michalewski"
+      },
+      {
+        "authorId": "2080746",
+        "name": "Igor Mordatch"
+      },
+      {
+        "authorId": "31719101",
+        "name": "Karl Pertsch"
+      },
+      {
+        "authorId": "2251957",
+        "name": "Kanishka Rao"
+      },
+      {
+        "authorId": "2163522073",
+        "name": "Krista Reymann"
+      },
+      {
+        "authorId": "1766489",
+        "name": "M. Ryoo"
+      },
+      {
+        "authorId": "2196524735",
+        "name": "Grecia Salazar"
+      },
+      {
+        "authorId": "2840758",
+        "name": "Pannag R. Sanketi"
+      },
+      {
+        "authorId": "3142556",
+        "name": "P. Sermanet"
+      },
+      {
+        "authorId": "2196040785",
+        "name": "Jaspiar Singh"
+      },
+      {
+        "authorId": "2111007256",
+        "name": "Anikait Singh"
+      },
+      {
+        "authorId": "1737285",
+        "name": "Radu Soricut"
+      },
+      {
+        "authorId": "2195355151",
+        "name": "Huong Tran"
+      },
+      {
+        "authorId": "2657155",
+        "name": "Vincent Vanhoucke"
+      },
+      {
+        "authorId": "144579461",
+        "name": "Q. Vuong"
+      },
+      {
+        "authorId": "88728227",
+        "name": "Ayzaan Wahid"
+      },
+      {
+        "authorId": "69426588",
+        "name": "Stefan Welker"
+      },
+      {
+        "authorId": "3202367",
+        "name": "Paul Wohlhart"
+      },
+      {
+        "authorId": "9961095",
+        "name": "Ted Xiao"
+      },
+      {
+        "authorId": "10909315",
+        "name": "Tianhe Yu"
+      },
+      {
+        "authorId": "2196524598",
+        "name": "Brianna Zitkovich"
+      }
+    ],
+    "abstract": "We study how vision-language models trained on Internet-scale data can be incorporated directly into end-to-end robotic control to boost generalization and enable emergent semantic reasoning. Our goal is to enable a single end-to-end trained model to both learn to map robot observations to actions and enjoy the benefits of large-scale pretraining on language and vision-language data from the web. To this end, we propose to co-fine-tune state-of-the-art vision-language models on both robotic trajectory data and Internet-scale vision-language tasks, such as visual question answering. In contrast to other approaches, we propose a simple, general recipe to achieve this goal: in order to fit both natural language responses and robotic actions into the same format, we express the actions as text tokens and incorporate them directly into the training set of the model in the same way as natural language tokens. We refer to such category of models as vision-language-action models (VLA) and instantiate an example of such a model, which we call RT-2. Our extensive evaluation (6k evaluation trials) shows that our approach leads to performant robotic policies and enables RT-2 to obtain a range of emergent capabilities from Internet-scale training. This includes significantly improved generalization to novel objects, the ability to interpret commands not present in the robot training data (such as placing an object onto a particular number or icon), and the ability to perform rudimentary reasoning in response to user commands (such as picking up the smallest or largest object, or the one closest to another object). We further show that incorporating chain of thought reasoning allows RT-2 to perform multi-stage semantic reasoning, for example figuring out which object to pick up for use as an improvised hammer (a rock), or which type of drink is best suited for someone who is tired (an energy drink).",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "104b0bb1da562d53cbda87aec79ef6a2827d191a",
+    "externalIds": {
+      "ArXiv": "2307.09288",
+      "DBLP": "journals/corr/abs-2307-09288",
+      "CorpusId": 259950998
+    },
+    "url": "https://www.semanticscholar.org/paper/104b0bb1da562d53cbda87aec79ef6a2827d191a",
+    "title": "Llama 2: Open Foundation and Fine-Tuned Chat Models",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 16850,
+    "influentialCitationCount": 2139,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2307.09288, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2113243762",
+        "name": "Hugo Touvron"
+      },
+      {
+        "authorId": "143792623",
+        "name": "Louis Martin"
+      },
+      {
+        "authorId": "2059203763",
+        "name": "Kevin R. Stone"
+      },
+      {
+        "authorId": "2214809450",
+        "name": "Peter Albert"
+      },
+      {
+        "authorId": "2634674",
+        "name": "Amjad Almahairi"
+      },
+      {
+        "authorId": "2223764353",
+        "name": "Yasmine Babaei"
+      },
+      {
+        "authorId": "2223756247",
+        "name": "Niko-lay Bashlykov"
+      },
+      {
+        "authorId": "47505161",
+        "name": "Soumya Batra"
+      },
+      {
+        "authorId": "51229603",
+        "name": "Prajjwal Bhargava"
+      },
+      {
+        "authorId": "2116473",
+        "name": "Shruti Bhosale"
+      },
+      {
+        "authorId": "2023469",
+        "name": "D. Bikel"
+      },
+      {
+        "authorId": "2040305955",
+        "name": "Lukas Blecher"
+      },
+      {
+        "authorId": "66286536",
+        "name": "Cristian Canton Ferrer"
+      },
+      {
+        "authorId": "2108267192",
+        "name": "Moya Chen"
+      },
+      {
+        "authorId": "7153363",
+        "name": "Guillem Cucurull"
+      },
+      {
+        "authorId": "71039937",
+        "name": "David Esiobu"
+      },
+      {
+        "authorId": "2166312768",
+        "name": "Jude Fernandes"
+      },
+      {
+        "authorId": "2430465950",
+        "name": "Jeremy Fu"
+      },
+      {
+        "authorId": "2223742000",
+        "name": "Wenyin Fu"
+      },
+      {
+        "authorId": "2223748737",
+        "name": "Brian Fuller"
+      },
+      {
+        "authorId": "2107063269",
+        "name": "Cynthia Gao"
+      },
+      {
+        "authorId": "28554843",
+        "name": "Vedanuj Goswami"
+      },
+      {
+        "authorId": "39589154",
+        "name": "Naman Goyal"
+      },
+      {
+        "authorId": "4305645",
+        "name": "A. Hartshorn"
+      },
+      {
+        "authorId": "2195458",
+        "name": "Saghar Hosseini"
+      },
+      {
+        "authorId": "2132302721",
+        "name": "Rui Hou"
+      },
+      {
+        "authorId": "2065277797",
+        "name": "Hakan Inan"
+      },
+      {
+        "authorId": "2059886128",
+        "name": "Marcin Kardas"
+      },
+      {
+        "authorId": "2190957318",
+        "name": "Viktor Kerkez"
+      },
+      {
+        "authorId": "2072010",
+        "name": "Madian Khabsa"
+      },
+      {
+        "authorId": "2207049",
+        "name": "Isabel M. Kloumann"
+      },
+      {
+        "authorId": "2294453195",
+        "name": "A. Korenev"
+      },
+      {
+        "authorId": "2146367061",
+        "name": "Punit Singh Koura"
+      },
+      {
+        "authorId": "114952298",
+        "name": "M. Lachaux"
+      },
+      {
+        "authorId": "46183616",
+        "name": "Thibaut Lavril"
+      },
+      {
+        "authorId": "2223749565",
+        "name": "Jenya Lee"
+      },
+      {
+        "authorId": "2145259939",
+        "name": "Diana Liskovich"
+      },
+      {
+        "authorId": "1768032",
+        "name": "Yinghai Lu"
+      },
+      {
+        "authorId": "3375249",
+        "name": "Yuning Mao"
+      },
+      {
+        "authorId": "1490887583",
+        "name": "X. Martinet"
+      },
+      {
+        "authorId": "39980906",
+        "name": "Todor Mihaylov"
+      },
+      {
+        "authorId": "3047561",
+        "name": "Pushkar Mishra"
+      },
+      {
+        "authorId": "2322981055",
+        "name": "Igor Molybog"
+      },
+      {
+        "authorId": "40383658",
+        "name": "Yixin Nie"
+      },
+      {
+        "authorId": "38579672",
+        "name": "Andrew Poulton"
+      },
+      {
+        "authorId": "39906022",
+        "name": "J. Reizenstein"
+      },
+      {
+        "authorId": "150282885",
+        "name": "Rashi Rungta"
+      },
+      {
+        "authorId": "1859294",
+        "name": "Kalyan Saladi"
+      },
+      {
+        "authorId": "14279694",
+        "name": "A. Schelten"
+      },
+      {
+        "authorId": "2214818043",
+        "name": "Ruan Silva"
+      },
+      {
+        "authorId": "51324296",
+        "name": "Eric Michael Smith"
+      },
+      {
+        "authorId": "2066074360",
+        "name": "R. Subramanian"
+      },
+      {
+        "authorId": "2112782199",
+        "name": "Xia Tan"
+      },
+      {
+        "authorId": "71292072",
+        "name": "Binh Tang"
+      },
+      {
+        "authorId": "2110697298",
+        "name": "Ross Taylor"
+      },
+      {
+        "authorId": "2110032535",
+        "name": "Adina Williams"
+      },
+      {
+        "authorId": "2223770369",
+        "name": "Jian Xiang Kuan"
+      },
+      {
+        "authorId": "2214843767",
+        "name": "Puxin Xu"
+      },
+      {
+        "authorId": "14701107",
+        "name": "Zhengxu Yan"
+      },
+      {
+        "authorId": "121929334",
+        "name": "Iliyan Zarov"
+      },
+      {
+        "authorId": "2108473229",
+        "name": "Yuchen Zhang"
+      },
+      {
+        "authorId": "144270981",
+        "name": "Angela Fan"
+      },
+      {
+        "authorId": "2165660870",
+        "name": "M. Kambadur"
+      },
+      {
+        "authorId": "46617804",
+        "name": "Sharan Narang"
+      },
+      {
+        "authorId": "2166043087",
+        "name": "Aur'elien Rodriguez"
+      },
+      {
+        "authorId": "1962768",
+        "name": "Robert Stojnic"
+      },
+      {
+        "authorId": "2068070",
+        "name": "Sergey Edunov"
+      },
+      {
+        "authorId": "2073456043",
+        "name": "Thomas Scialom"
+      }
+    ],
+    "abstract": "In this work, we develop and release Llama 2, a collection of pretrained and fine-tuned large language models (LLMs) ranging in scale from 7 billion to 70 billion parameters. Our fine-tuned LLMs, called Llama 2-Chat, are optimized for dialogue use cases. Our models outperform open-source chat models on most benchmarks we tested, and based on our human evaluations for helpfulness and safety, may be a suitable substitute for closed-source models. We provide a detailed description of our approach to fine-tuning and safety improvements of Llama 2-Chat in order to enable the community to build on our work and contribute to the responsible development of LLMs.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "844b22bb025f485d85d00f1f61555a8ff0131658",
+    "externalIds": {
+      "ArXiv": "2306.00937",
+      "DBLP": "journals/corr/abs-2306-00937",
+      "DOI": "10.48550/arXiv.2306.00937",
+      "CorpusId": 258999563
+    },
+    "url": "https://www.semanticscholar.org/paper/844b22bb025f485d85d00f1f61555a8ff0131658",
+    "title": "STEVE-1: A Generative Model for Text-to-Behavior in Minecraft",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 108,
+    "influentialCitationCount": 21,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2306.00937",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2306.00937, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2093408777",
+        "name": "Shalev Lifshitz"
+      },
+      {
+        "authorId": "73775191",
+        "name": "Keiran Paster"
+      },
+      {
+        "authorId": "41228532",
+        "name": "Harris Chan"
+      },
+      {
+        "authorId": "2503659",
+        "name": "Jimmy Ba"
+      },
+      {
+        "authorId": "1683896",
+        "name": "Sheila A. McIlraith"
+      }
+    ],
+    "abstract": "Constructing AI models that respond to text instructions is challenging, especially for sequential decision-making tasks. This work introduces a methodology, inspired by unCLIP, for instruction-tuning generative models of behavior without relying on a large dataset of instruction-labeled trajectories. Using this methodology, we create an instruction-tuned Video Pretraining (VPT) model called STEVE-1, which can follow short-horizon open-ended text and visual instructions in Minecraft. STEVE-1 is trained in two steps: adapting the pretrained VPT model to follow commands in MineCLIP's latent space, then training a prior to predict latent codes from text. This allows us to finetune VPT through self-supervised behavioral cloning and hindsight relabeling, reducing the need for costly human text annotations, and all for only $60 of compute. By leveraging pretrained models like VPT and MineCLIP and employing best practices from text-conditioned image generation, STEVE-1 sets a new bar for open-ended instruction-following in Minecraft with low-level controls (mouse and keyboard) and raw pixel inputs, far outperforming previous baselines and robustly completing 12 of 13 tasks in our early-game evaluation suite. We provide experimental evidence highlighting key factors for downstream performance, including pretraining, classifier-free guidance, and data scaling. All resources, including our model weights, training scripts, and evaluation tools are made available for further research.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "8e37dc1215681aa153a51c07078ba8befd6a6e01",
+    "externalIds": {
+      "ArXiv": "2305.16653",
+      "DBLP": "conf/nips/SunZK0Z23",
+      "DOI": "10.48550/arXiv.2305.16653",
+      "CorpusId": 258947337
+    },
+    "url": "https://www.semanticscholar.org/paper/8e37dc1215681aa153a51c07078ba8befd6a6e01",
+    "title": "AdaPlanner: Adaptive Planning from Feedback with Language Models",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 214,
+    "influentialCitationCount": 25,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.16653",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.16653, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2118180896",
+        "name": "Haotian Sun"
+      },
+      {
+        "authorId": "8103389",
+        "name": "Yuchen Zhuang"
+      },
+      {
+        "authorId": "2865034",
+        "name": "Lingkai Kong"
+      },
+      {
+        "authorId": "2218437288",
+        "name": "Bo Dai"
+      },
+      {
+        "authorId": "145657504",
+        "name": "Chao Zhang"
+      }
+    ],
+    "abstract": "Large language models (LLMs) have recently demonstrated the potential in acting as autonomous agents for sequential decision-making tasks. However, most existing methods either take actions greedily without planning or rely on static plans that are not adaptable to environmental feedback. Consequently, the sequential decision-making performance of LLM agents degenerates with problem complexity and plan horizons increase. We propose a closed-loop approach, AdaPlanner, which allows the LLM agent to refine its self-generated plan adaptively in response to environmental feedback. In AdaPlanner, the LLM agent adaptively refines its plan from feedback with both in-plan and out-of-plan refinement strategies. To mitigate hallucination, we develop a code-style LLM prompt structure that facilitates plan generation across a variety of tasks, environments, and agent capabilities. Furthermore, we propose a skill discovery mechanism that leverages successful plans as few-shot exemplars, enabling the agent to plan and refine with fewer task demonstrations. Our experiments in the ALFWorld and MiniWoB++ environments demonstrate that AdaPlanner outperforms state-of-the-art baselines by 3.73% and 4.11% while utilizing 2x and 600x fewer samples, respectively.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "f197bf0fc2f228483f6af3285000d54d8d97f9eb",
+    "externalIds": {
+      "ArXiv": "2305.16291",
+      "DBLP": "journals/tmlr/WangX0MXZFA24",
+      "DOI": "10.48550/arXiv.2305.16291",
+      "CorpusId": 258887849
+    },
+    "url": "https://www.semanticscholar.org/paper/f197bf0fc2f228483f6af3285000d54d8d97f9eb",
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "venue": "Trans. Mach. Learn. Res.",
+    "year": 2023,
+    "citationCount": 1622,
+    "influentialCitationCount": 128,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.16291",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.16291, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "96374437",
+        "name": "Guanzhi Wang"
+      },
+      {
+        "authorId": "2218866691",
+        "name": "Yuqi Xie"
+      },
+      {
+        "authorId": "2171112793",
+        "name": "Yunfan Jiang"
+      },
+      {
+        "authorId": "49686756",
+        "name": "A. Mandlekar"
+      },
+      {
+        "authorId": "2723309",
+        "name": "Chaowei Xiao"
+      },
+      {
+        "authorId": "2117748",
+        "name": "Yuke Zhu"
+      },
+      {
+        "authorId": "3275727",
+        "name": "Linxi (Jim) Fan"
+      },
+      {
+        "authorId": "47627049",
+        "name": "Anima Anandkumar"
+      }
+    ],
+    "abstract": "We introduce Voyager, the first LLM-powered embodied lifelong learning agent in Minecraft that continuously explores the world, acquires diverse skills, and makes novel discoveries without human intervention. Voyager consists of three key components: 1) an automatic curriculum that maximizes exploration, 2) an ever-growing skill library of executable code for storing and retrieving complex behaviors, and 3) a new iterative prompting mechanism that incorporates environment feedback, execution errors, and self-verification for program improvement. Voyager interacts with GPT-4 via blackbox queries, which bypasses the need for model parameter fine-tuning. The skills developed by Voyager are temporally extended, interpretable, and compositional, which compounds the agent's abilities rapidly and alleviates catastrophic forgetting. Empirically, Voyager shows strong in-context lifelong learning capability and exhibits exceptional proficiency in playing Minecraft. It obtains 3.3x more unique items, travels 2.3x longer distances, and unlocks key tech tree milestones up to 15.3x faster than prior SOTA. Voyager is able to utilize the learned skill library in a new Minecraft world to solve novel tasks from scratch, while other techniques struggle to generalize. We open-source our full codebase and prompts at https://voyager.minedojo.org/.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "c695c4e68561347564ea0daa50dc339dff73d8c5",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2305-17144",
+      "ArXiv": "2305.17144",
+      "DOI": "10.48550/arXiv.2305.17144",
+      "CorpusId": 258959262
+    },
+    "url": "https://www.semanticscholar.org/paper/c695c4e68561347564ea0daa50dc339dff73d8c5",
+    "title": "Ghost in the Minecraft: Generally Capable Agents for Open-World Environments via Large Language Models with Text-based Knowledge and Memory",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 328,
+    "influentialCitationCount": 26,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.17144",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.17144, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2578924",
+        "name": "Xizhou Zhu"
+      },
+      {
+        "authorId": "2798406",
+        "name": "Yuntao Chen"
+      },
+      {
+        "authorId": "50007795",
+        "name": "Hao Tian"
+      },
+      {
+        "authorId": "150959424",
+        "name": "Chenxin Tao"
+      },
+      {
+        "authorId": "145499378",
+        "name": "Weijie Su"
+      },
+      {
+        "authorId": null,
+        "name": "Chenyu Yang"
+      },
+      {
+        "authorId": "2115218570",
+        "name": "Gao Huang"
+      },
+      {
+        "authorId": "2218579598",
+        "name": "Bin Li"
+      },
+      {
+        "authorId": "152309485",
+        "name": "Lewei Lu"
+      },
+      {
+        "authorId": "2137313794",
+        "name": "Xiaogang Wang"
+      },
+      {
+        "authorId": "145858545",
+        "name": "Y. Qiao"
+      },
+      {
+        "authorId": "2175272847",
+        "name": "Zhaoxiang Zhang"
+      },
+      {
+        "authorId": "3304536",
+        "name": "Jifeng Dai"
+      }
+    ],
+    "abstract": "The captivating realm of Minecraft has attracted substantial research interest in recent years, serving as a rich platform for developing intelligent agents capable of functioning in open-world environments. However, the current research landscape predominantly focuses on specific objectives, such as the popular\"ObtainDiamond\"task, and has not yet shown effective generalization to a broader spectrum of tasks. Furthermore, the current leading success rate for the\"ObtainDiamond\"task stands at around 20%, highlighting the limitations of Reinforcement Learning (RL) based controllers used in existing methods. To tackle these challenges, we introduce Ghost in the Minecraft (GITM), a novel framework integrates Large Language Models (LLMs) with text-based knowledge and memory, aiming to create Generally Capable Agents (GCAs) in Minecraft. These agents, equipped with the logic and common sense capabilities of LLMs, can skillfully navigate complex, sparse-reward environments with text-based interactions. We develop a set of structured actions and leverage LLMs to generate action plans for the agents to execute. The resulting LLM-based agent markedly surpasses previous methods, achieving a remarkable improvement of +47.5% in success rate on the\"ObtainDiamond\"task, demonstrating superior robustness compared to traditional RL-based controllers. Notably, our agent is the first to procure all items in the Minecraft Overworld technology tree, demonstrating its extensive capabilities. GITM does not need any GPU for training, but a single CPU node with 32 CPU cores is enough. This research shows the potential of LLMs in developing capable agents for handling long-horizon, complex tasks and adapting to uncertainties in open-world environments. See the project website at https://github.com/OpenGVLab/GITM.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "2f3822eb380b5e753a6d579f31dfc3ec4c4a0820",
+    "externalIds": {
+      "ArXiv": "2305.10601",
+      "DBLP": "journals/corr/abs-2305-10601",
+      "DOI": "10.48550/arXiv.2305.10601",
+      "CorpusId": 258762525
+    },
+    "url": "https://www.semanticscholar.org/paper/2f3822eb380b5e753a6d579f31dfc3ec4c4a0820",
+    "title": "Tree of Thoughts: Deliberate Problem Solving with Large Language Models",
+    "venue": "Neural Information Processing Systems",
+    "year": 2023,
+    "citationCount": 3971,
+    "influentialCitationCount": 274,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.10601",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.10601, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2093302161",
+        "name": "Shunyu Yao"
+      },
+      {
+        "authorId": "150978762",
+        "name": "Dian Yu"
+      },
+      {
+        "authorId": "2144551262",
+        "name": "Jeffrey Zhao"
+      },
+      {
+        "authorId": "1697494",
+        "name": "Izhak Shafran"
+      },
+      {
+        "authorId": "1799860",
+        "name": "T. Griffiths"
+      },
+      {
+        "authorId": "145144022",
+        "name": "Yuan Cao"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      }
+    ],
+    "abstract": "Language models are increasingly being deployed for general problem solving across a wide range of tasks, but are still confined to token-level, left-to-right decision-making processes during inference. This means they can fall short in tasks that require exploration, strategic lookahead, or where initial decisions play a pivotal role. To surmount these challenges, we introduce a new framework for language model inference, Tree of Thoughts (ToT), which generalizes over the popular Chain of Thought approach to prompting language models, and enables exploration over coherent units of text (thoughts) that serve as intermediate steps toward problem solving. ToT allows LMs to perform deliberate decision making by considering multiple different reasoning paths and self-evaluating choices to decide the next course of action, as well as looking ahead or backtracking when necessary to make global choices. Our experiments show that ToT significantly enhances language models' problem-solving abilities on three novel tasks requiring non-trivial planning or search: Game of 24, Creative Writing, and Mini Crosswords. For instance, in Game of 24, while GPT-4 with chain-of-thought prompting only solved 4% of tasks, our method achieved a success rate of 74%. Code repo with all prompts: https://github.com/princeton-nlp/tree-of-thought-llm.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "003ef1cd670d01af05afa0d3c72d72228f494432",
+    "externalIds": {
+      "ArXiv": "2304.11477",
+      "DBLP": "journals/corr/abs-2304-11477",
+      "DOI": "10.48550/arXiv.2304.11477",
+      "CorpusId": 258298051
+    },
+    "url": "https://www.semanticscholar.org/paper/003ef1cd670d01af05afa0d3c72d72228f494432",
+    "title": "LLM+P: Empowering Large Language Models with Optimal Planning Proficiency",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 612,
+    "influentialCitationCount": 51,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2304.11477",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2304.11477, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "145306564",
+        "name": "B. Liu"
+      },
+      {
+        "authorId": "48751979",
+        "name": "Yuqian Jiang"
+      },
+      {
+        "authorId": "2682457",
+        "name": "Xiaohan Zhang"
+      },
+      {
+        "authorId": "2155193246",
+        "name": "Qian Liu"
+      },
+      {
+        "authorId": "40295359",
+        "name": "Shiqi Zhang"
+      },
+      {
+        "authorId": "3045593",
+        "name": "Joydeep Biswas"
+      },
+      {
+        "authorId": "2113909888",
+        "name": "Peter Stone"
+      }
+    ],
+    "abstract": "Large language models (LLMs) have demonstrated remarkable zero-shot generalization abilities: state-of-the-art chatbots can provide plausible answers to many common questions that arise in daily life. However, so far, LLMs cannot reliably solve long-horizon planning problems. By contrast, classical planners, once a problem is given in a formatted way, can use efficient search algorithms to quickly identify correct, or even optimal, plans. In an effort to get the best of both worlds, this paper introduces LLM+P, the first framework that incorporates the strengths of classical planners into LLMs. LLM+P takes in a natural language description of a planning problem, then returns a correct (or optimal) plan for solving that problem in natural language. LLM+P does so by first converting the language description into a file written in the planning domain definition language (PDDL), then leveraging classical planners to quickly find a solution, and then translating the found solution back into natural language. Along with LLM+P, we define a diverse set of different benchmark problems taken from common planning scenarios. Via a comprehensive set of experiments on these benchmark problems, we find that LLM+P is able to provide optimal solutions for most problems, while LLMs fail to provide even feasible plans for most problems.\\footnote{The code and results are publicly available at https://github.com/Cranial-XIX/llm-pddl.git.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "f603b9dc81dfea56d437e967b724636d4d72d000",
+    "externalIds": {
+      "ArXiv": "2304.09349",
+      "DBLP": "journals/corr/abs-2304-09349",
+      "DOI": "10.48550/arXiv.2304.09349",
+      "CorpusId": 258212642
+    },
+    "url": "https://www.semanticscholar.org/paper/f603b9dc81dfea56d437e967b724636d4d72d000",
+    "title": "LLM as A Robotic Brain: Unifying Egocentric Memory and Control",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 52,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2304.09349",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2304.09349, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2005711751",
+        "name": "Jinjie Mai"
+      },
+      {
+        "authorId": "2153417252",
+        "name": "Jun Chen"
+      },
+      {
+        "authorId": "114486625",
+        "name": "Bing-chuan Li"
+      },
+      {
+        "authorId": "113143344",
+        "name": "Guocheng Qian"
+      },
+      {
+        "authorId": "1712479",
+        "name": "Mohamed Elhoseiny"
+      },
+      {
+        "authorId": "2931652",
+        "name": "Bernard Ghanem"
+      }
+    ],
+    "abstract": "Embodied AI focuses on the study and development of intelligent systems that possess a physical or virtual embodiment (i.e. robots) and are able to dynamically interact with their environment. Memory and control are the two essential parts of an embodied system and usually require separate frameworks to model each of them. In this paper, we propose a novel and generalizable framework called LLM-Brain: using Large-scale Language Model as a robotic brain to unify egocentric memory and control. The LLM-Brain framework integrates multiple multimodal language models for robotic tasks, utilizing a zero-shot learning approach. All components within LLM-Brain communicate using natural language in closed-loop multi-round dialogues that encompass perception, planning, control, and memory. The core of the system is an embodied LLM to maintain egocentric memory and control the robot. We demonstrate LLM-Brain by examining two downstream tasks: active exploration and embodied question answering. The active exploration tasks require the robot to extensively explore an unknown environment within a limited number of actions. Meanwhile, the embodied question answering tasks necessitate that the robot answers questions based on observations acquired during prior explorations.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "9e3c493fb09dcd61bb05e8c5659f23327b7b6340",
+    "externalIds": {
+      "ArXiv": "2304.05128",
+      "DBLP": "journals/corr/abs-2304-05128",
+      "DOI": "10.48550/arXiv.2304.05128",
+      "CorpusId": 258059885
+    },
+    "url": "https://www.semanticscholar.org/paper/9e3c493fb09dcd61bb05e8c5659f23327b7b6340",
+    "title": "Teaching Large Language Models to Self-Debug",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 1098,
+    "influentialCitationCount": 85,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2304.05128",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2304.05128, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "1425082935",
+        "name": "Xinyun Chen"
+      },
+      {
+        "authorId": "153698620",
+        "name": "Maxwell Lin"
+      },
+      {
+        "authorId": "3094520",
+        "name": "Nathanael Schärli"
+      },
+      {
+        "authorId": "65855107",
+        "name": "Denny Zhou"
+      }
+    ],
+    "abstract": "Large language models (LLMs) have achieved impressive performance on code generation. However, for complex programming tasks, generating the correct solution in one go becomes challenging, thus some prior works have designed program repair approaches to improve code generation performance. In this work, we propose Self-Debugging, which teaches a large language model to debug its predicted program via few-shot demonstrations. In particular, we demonstrate that Self-Debugging can teach the large language model to perform rubber duck debugging; i.e., without any human feedback on the code correctness or error messages, the model is able to identify its mistakes by investigating the execution results and explaining the generated code in natural language. Self-Debugging achieves the state-of-the-art performance on several code generation benchmarks, including the Spider dataset for text-to-SQL generation, TransCoder for C++-to-Python translation, and MBPP for text-to-Python generation. On the Spider benchmark where there are no unit tests to verify the correctness of predictions, Self-Debugging with code explanation consistently improves the baseline by 2-3%, and improves the prediction accuracy on problems of the hardest level by 9%. On TransCoder and MBPP where unit tests are available, Self-Debugging improves the baseline accuracy by up to 12%. Meanwhile, by leveraging feedback messages and reusing failed predictions, Self-Debugging notably improves sample efficiency, and can match or outperform baseline models that generate more than 10x candidate programs.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "5278a8eb2ba2429d4029745caf4e661080073c81",
+    "externalIds": {
+      "DBLP": "conf/uist/ParkOCMLB23",
+      "ArXiv": "2304.03442",
+      "DOI": "10.1145/3586183.3606763",
+      "CorpusId": 258040990
+    },
+    "url": "https://www.semanticscholar.org/paper/5278a8eb2ba2429d4029745caf4e661080073c81",
+    "title": "Generative Agents: Interactive Simulacra of Human Behavior",
+    "venue": "ACM Symposium on User Interface Software and Technology",
+    "year": 2023,
+    "citationCount": 4043,
+    "influentialCitationCount": 262,
+    "openAccessPdf": {
+      "url": "https://dl.acm.org/doi/pdf/10.1145/3586183.3606763",
+      "status": "BRONZE",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2304.03442, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "Book",
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2116649486",
+        "name": "J. Park"
+      },
+      {
+        "authorId": "2213764034",
+        "name": "Joseph O'Brien"
+      },
+      {
+        "authorId": "145941081",
+        "name": "Carrie J. Cai"
+      },
+      {
+        "authorId": "144844426",
+        "name": "M. Morris"
+      },
+      {
+        "authorId": "145419642",
+        "name": "Percy Liang"
+      },
+      {
+        "authorId": "145879842",
+        "name": "Michael S. Bernstein"
+      }
+    ],
+    "abstract": "Believable proxies of human behavior can empower interactive applications ranging from immersive environments to rehearsal spaces for interpersonal communication to prototyping tools. In this paper, we introduce generative agents: computational software agents that simulate believable human behavior. Generative agents wake up, cook breakfast, and head to work; artists paint, while authors write; they form opinions, notice each other, and initiate conversations; they remember and reflect on days past as they plan the next day. To enable generative agents, we describe an architecture that extends a large language model to store a complete record of the agent’s experiences using natural language, synthesize those memories over time into higher-level reflections, and retrieve them dynamically to plan behavior. We instantiate generative agents to populate an interactive sandbox environment inspired by The Sims, where end users can interact with a small town of twenty-five agents using natural language. In an evaluation, these generative agents produce believable individual and emergent social behaviors. For example, starting with only a single user-specified notion that one agent wants to throw a Valentine’s Day party, the agents autonomously spread invitations to the party over the next two days, make new acquaintances, ask each other out on dates to the party, and coordinate to show up for the party together at the right time. We demonstrate through ablation that the components of our agent architecture—observation, planning, and reflection—each contribute critically to the believability of agent behavior. By fusing large language models with computational interactive agents, this work introduces architectural and interaction patterns for enabling believable simulations of human behavior.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "8f2d4758e6d525509ae36bb30224dc9259027e6b",
+    "externalIds": {
+      "DBLP": "journals/arobots/LinAMPB23",
+      "ArXiv": "2303.12153",
+      "DOI": "10.1007/s10514-023-10131-7",
+      "CorpusId": 257663442
+    },
+    "url": "https://www.semanticscholar.org/paper/8f2d4758e6d525509ae36bb30224dc9259027e6b",
+    "title": "Text2Motion: from natural language instructions to feasible plans",
+    "venue": "Autonomous Robots",
+    "year": 2023,
+    "citationCount": 396,
+    "influentialCitationCount": 9,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2303.12153",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2303.12153, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "143786724",
+        "name": "Kevin Lin"
+      },
+      {
+        "authorId": "1742185866",
+        "name": "Christopher Agia"
+      },
+      {
+        "authorId": "2178889",
+        "name": "Toki Migimatsu"
+      },
+      {
+        "authorId": "1696085",
+        "name": "M. Pavone"
+      },
+      {
+        "authorId": "1775407",
+        "name": "Jeannette Bohg"
+      }
+    ],
+    "abstract": "We propose Text2Motion, a language-based planning framework enabling robots to solve sequential manipulation tasks that require long-horizon reasoning. Given a natural language instruction, our framework constructs both a task- and motion-level plan that is verified to reach inferred symbolic goals. Text2Motion uses feasibility heuristics encoded in Q-functions of a library of skills to guide task planning with Large Language Models. Whereas previous language-based planners only consider the feasibility of individual skills, Text2Motion actively resolves geometric dependencies spanning skill sequences by performing geometric feasibility planning during its search. We evaluate our method on a suite of problems that require long-horizon reasoning, interpretation of abstract goals, and handling of partial affordance perception. Our experiments show that Text2Motion can solve these challenging problems with a success rate of 82%, while prior state-of-the-art language-based planning methods only achieve 13%. Text2Motion thus provides promising generalization characteristics to semantically diverse sequential manipulation tasks with geometric dependencies between skills. Qualitative results are made available at https://sites.google.com/stanford.edu/text2motion.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2029349c55c1dba3493c5b3bd25152f18ba21ae2",
+    "externalIds": {
+      "ArXiv": "2302.07842",
+      "DBLP": "journals/tmlr/MialonDLNPRRSDC23",
+      "CorpusId": 256868474
+    },
+    "url": "https://www.semanticscholar.org/paper/2029349c55c1dba3493c5b3bd25152f18ba21ae2",
+    "title": "Augmented Language Models: a Survey",
+    "venue": "Trans. Mach. Learn. Res.",
+    "year": 2023,
+    "citationCount": 549,
+    "influentialCitationCount": 14,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2302.07842, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "51888120",
+        "name": "G. Mialon"
+      },
+      {
+        "authorId": "145188261",
+        "name": "Roberto Dessì"
+      },
+      {
+        "authorId": "3376175",
+        "name": "M. Lomeli"
+      },
+      {
+        "authorId": "31434304",
+        "name": "Christoforos Nalmpantis"
+      },
+      {
+        "authorId": "10721120",
+        "name": "Ramakanth Pasunuru"
+      },
+      {
+        "authorId": "48647153",
+        "name": "R. Raileanu"
+      },
+      {
+        "authorId": "3361236",
+        "name": "Baptiste Rozière"
+      },
+      {
+        "authorId": "32246932",
+        "name": "Timo Schick"
+      },
+      {
+        "authorId": "2173509991",
+        "name": "Jane Dwivedi-Yu"
+      },
+      {
+        "authorId": "1709797",
+        "name": "Asli Celikyilmaz"
+      },
+      {
+        "authorId": "3024698",
+        "name": "Edouard Grave"
+      },
+      {
+        "authorId": "1688882",
+        "name": "Yann LeCun"
+      },
+      {
+        "authorId": "90745780",
+        "name": "Thomas Scialom"
+      }
+    ],
+    "abstract": "This survey reviews works in which language models (LMs) are augmented with reasoning skills and the ability to use tools. The former is defined as decomposing a potentially complex task into simpler subtasks while the latter consists in calling external modules such as a code interpreter. LMs can leverage these augmentations separately or in combination via heuristics, or learn to do so from demonstrations. While adhering to a standard missing tokens prediction objective, such augmented LMs can use various, possibly non-parametric external modules to expand their context processing ability, thus departing from the pure language modeling paradigm. We therefore refer to them as Augmented Language Models (ALMs). The missing token objective allows ALMs to learn to reason, use tools, and even act, while still performing standard natural language tasks and even outperforming most regular LMs on several benchmarks. In this work, after reviewing current advance in ALMs, we conclude that this new research direction has the potential to address common limitations of traditional LMs such as interpretability, consistency, and scalability issues.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "e3ec55e9e6720194a0ed5d4033d93a941c8a4f99",
+    "externalIds": {
+      "DBLP": "conf/iclr/KeSLKK023",
+      "ArXiv": "2302.03241",
+      "CorpusId": 258079422
+    },
+    "url": "https://www.semanticscholar.org/paper/e3ec55e9e6720194a0ed5d4033d93a941c8a4f99",
+    "title": "Continual Pre-training of Language Models",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 222,
+    "influentialCitationCount": 15,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2302.03241, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "9623089",
+        "name": "Zixuan Ke"
+      },
+      {
+        "authorId": "74175857",
+        "name": "Yijia Shao"
+      },
+      {
+        "authorId": "2257447835",
+        "name": "Haowei Lin"
+      },
+      {
+        "authorId": "145243274",
+        "name": "Tatsuya Konishi"
+      },
+      {
+        "authorId": "1576168416",
+        "name": "Gyuhak Kim"
+      },
+      {
+        "authorId": "47655556",
+        "name": "Bin Liu"
+      }
+    ],
+    "abstract": "Language models (LMs) have been instrumental for the rapid advance of natural language processing. This paper studies continual pre-training of LMs, in particular, continual domain-adaptive pre-training (or continual DAP-training). Existing research has shown that further pre-training an LM using a domain corpus to adapt the LM to the domain can improve the end-task performance in the domain. This paper proposes a novel method to continually DAP-train an LM with a sequence of unlabeled domain corpora to adapt the LM to these domains to improve their end-task performances. The key novelty of our method is a soft-masking mechanism that directly controls the update to the LM. A novel proxy is also proposed to preserve the general knowledge in the original LM. Additionally, it contrasts the representations of the previously learned domain knowledge (including the general knowledge in the pre-trained LM) and the knowledge from the current full network to achieve knowledge integration. The method not only overcomes catastrophic forgetting, but also achieves knowledge transfer to improve end-task performances. Empirical evaluation demonstrates the effectiveness of the proposed method.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ccb1ccc4deacc4fb18000f0e1ce24329548963ae",
+    "externalIds": {
+      "ArXiv": "2302.01560",
+      "DBLP": "journals/corr/abs-2302-01560",
+      "DOI": "10.48550/arXiv.2302.01560",
+      "CorpusId": 256598146
+    },
+    "url": "https://www.semanticscholar.org/paper/ccb1ccc4deacc4fb18000f0e1ce24329548963ae",
+    "title": "Describe, Explain, Plan and Select: Interactive Planning with Large Language Models Enables Open-World Multi-Task Agents",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 469,
+    "influentialCitationCount": 35,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2302.01560",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2302.01560, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "47196237",
+        "name": "Zihao Wang"
+      },
+      {
+        "authorId": "1993661033",
+        "name": "Shaofei Cai"
+      },
+      {
+        "authorId": "70097297",
+        "name": "Anji Liu"
+      },
+      {
+        "authorId": "121875989",
+        "name": "Xiaojian Ma"
+      },
+      {
+        "authorId": "2397352",
+        "name": "Yitao Liang"
+      }
+    ],
+    "abstract": "We investigate the challenge of task planning for multi-task embodied agents in open-world environments. Two main difficulties are identified: 1) executing plans in an open-world environment (e.g., Minecraft) necessitates accurate and multi-step reasoning due to the long-term nature of tasks, and 2) as vanilla planners do not consider how easy the current agent can achieve a given sub-task when ordering parallel sub-goals within a complicated plan, the resulting plan could be inefficient or even infeasible. To this end, we propose\"$\\underline{D}$escribe, $\\underline{E}$xplain, $\\underline{P}$lan and $\\underline{S}$elect\"($\\textbf{DEPS}$), an interactive planning approach based on Large Language Models (LLMs). DEPS facilitates better error correction on initial LLM-generated $\\textit{plan}$ by integrating $\\textit{description}$ of the plan execution process and providing self-$\\textit{explanation}$ of feedback when encountering failures during the extended planning phases. Furthermore, it includes a goal $\\textit{selector}$, which is a trainable module that ranks parallel candidate sub-goals based on the estimated steps of completion, consequently refining the initial plan. Our experiments mark the milestone of the first zero-shot multi-task agent that can robustly accomplish 70+ Minecraft tasks and nearly double the overall performances. Further testing reveals our method's general effectiveness in popularly adopted non-open-ended domains as well (i.e., ALFWorld and tabletop manipulation). The ablation and exploratory studies detail how our design beats the counterparts and provide a promising update on the $\\texttt{ObtainDiamond}$ grand challenge with our approach. The code is released at https://github.com/CraftJarvis/MC-Planner.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "102e4c860e39a2bfd7bf3f03b9ad69aac7bf3b5f",
+    "externalIds": {
+      "ArXiv": "2302.00763",
+      "DBLP": "journals/corr/abs-2302-00763",
+      "DOI": "10.48550/arXiv.2302.00763",
+      "CorpusId": 253180684
+    },
+    "url": "https://www.semanticscholar.org/paper/102e4c860e39a2bfd7bf3f03b9ad69aac7bf3b5f",
+    "title": "Collaborating with language models for embodied reasoning",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 88,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2302.00763",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2302.00763, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "46745316",
+        "name": "Ishita Dasgupta"
+      },
+      {
+        "authorId": "1403585268",
+        "name": "Christine Kaeser-Chen"
+      },
+      {
+        "authorId": "35789996",
+        "name": "Kenneth Marino"
+      },
+      {
+        "authorId": "37968006",
+        "name": "Arun Ahuja"
+      },
+      {
+        "authorId": "2189420976",
+        "name": "Sheila Babayan"
+      },
+      {
+        "authorId": "145783676",
+        "name": "Felix Hill"
+      },
+      {
+        "authorId": "2276554",
+        "name": "R. Fergus"
+      }
+    ],
+    "abstract": "Reasoning in a complex and ambiguous environment is a key goal for Reinforcement Learning (RL) agents. While some sophisticated RL agents can successfully solve difficult tasks, they require a large amount of training data and often struggle to generalize to new unseen environments and new tasks. On the other hand, Large Scale Language Models (LSLMs) have exhibited strong reasoning ability and the ability to to adapt to new tasks through in-context learning. However, LSLMs do not inherently have the ability to interrogate or intervene on the environment. In this work, we investigate how to combine these complementary abilities in a single system consisting of three parts: a Planner, an Actor, and a Reporter. The Planner is a pre-trained language model that can issue commands to a simple embodied agent (the Actor), while the Reporter communicates with the Planner to inform its next command. We present a set of tasks that require reasoning, test this system's ability to generalize zero-shot and investigate failure cases, and demonstrate how components of this system can be trained with reinforcement-learning to improve performance.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "9285b7898f9d8140dbcfc22d34e6bc4c1ecd3d2e",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2301-10034",
+      "ArXiv": "2301.10034",
+      "DOI": "10.1109/CVPR52729.2023.01320",
+      "CorpusId": 256194112
+    },
+    "url": "https://www.semanticscholar.org/paper/9285b7898f9d8140dbcfc22d34e6bc4c1ecd3d2e",
+    "title": "Open-World Multi-Task Control Through Goal-Aware Representation Learning and Adaptive Horizon Prediction",
+    "venue": "Computer Vision and Pattern Recognition",
+    "year": 2023,
+    "citationCount": 50,
+    "influentialCitationCount": 6,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2301.10034",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2301.10034, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "1993661033",
+        "name": "Shaofei Cai"
+      },
+      {
+        "authorId": "47196237",
+        "name": "Zihao Wang"
+      },
+      {
+        "authorId": "121875989",
+        "name": "Xiaojian Ma"
+      },
+      {
+        "authorId": "70097297",
+        "name": "Anji Liu"
+      },
+      {
+        "authorId": "2397352",
+        "name": "Yitao Liang"
+      }
+    ],
+    "abstract": "We study the problem of learning goal-conditioned policies in Minecraft, a popular, widely accessible yet challenging open-ended environment for developing human-level multi-task agents. We first identify two main challenges of learning such policies: 1) the indistinguishability of tasks from the state distribution, due to the vast scene diversity, and 2) the non-stationary nature of environment dynamics caused by partial observability. To tackle the first challenge, we propose Goal-Sensitive Backbone (GSB) for the policy to encourage the emergence of goal-relevant visual state representations. To tackle the second challenge, the policy is further fueled by an adaptive horizon prediction module that helps alleviate the learning uncertainty brought by the non-stationary dynamics. Experiments on 20 Minecraft tasks show that our method significantly outperforms the best baseline so far; in many of them, we double the performance. Our ablation and exploratory studies then explain how our approach beat the counterparts and also unveil the surprising bonus of zero-shot generalization to new scenes (biomes). We hope our agent could help shed some light on learning goal-conditioned, multi-task agents in challenging, open-ended environments like Minecraft. The code is released at https://github.com/CraftJarvis/MC-Controller.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "e65b346d442e9962a4276dc1c1af2956d9d5f1eb",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2212-10560",
+      "ArXiv": "2212.10560",
+      "ACL": "2023.acl-long.754",
+      "DOI": "10.48550/arXiv.2212.10560",
+      "CorpusId": 254877310
+    },
+    "url": "https://www.semanticscholar.org/paper/e65b346d442e9962a4276dc1c1af2956d9d5f1eb",
+    "title": "Self-Instruct: Aligning Language Models with Self-Generated Instructions",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2022,
+    "citationCount": 3193,
+    "influentialCitationCount": 272,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2212.10560",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2212.10560, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "1705260",
+        "name": "Yizhong Wang"
+      },
+      {
+        "authorId": "2156538832",
+        "name": "Yeganeh Kordi"
+      },
+      {
+        "authorId": "1817207",
+        "name": "Swaroop Mishra"
+      },
+      {
+        "authorId": "94500147",
+        "name": "Alisa Liu"
+      },
+      {
+        "authorId": "144365875",
+        "name": "Noah A. Smith"
+      },
+      {
+        "authorId": "1783281",
+        "name": "Daniel Khashabi"
+      },
+      {
+        "authorId": "2548384",
+        "name": "Hannaneh Hajishirzi"
+      }
+    ],
+    "abstract": "Large “instruction-tuned” language models (i.e., finetuned to respond to instructions) have demonstrated a remarkable ability to generalize zero-shot to new tasks. Nevertheless, they depend heavily on human-written instruction data that is often limited in quantity, diversity, and creativity, therefore hindering the generality of the tuned model. We introduce Self-Instruct, a framework for improving the instruction-following capabilities of pretrained language models by bootstrapping off their own generations. Our pipeline generates instructions, input, and output samples from a language model, then filters invalid or similar ones before using them to finetune the original model. Applying our method to the vanilla GPT3, we demonstrate a 33% absolute improvement over the original model on Super-NaturalInstructions, on par with the performance of InstructGPT-001, which was trained with private user data and human annotations. For further evaluation, we curate a set of expert-written instructions for novel tasks, and show through human evaluation that tuning GPT3 with Self-Instruct outperforms using existing public instruction datasets by a large margin, leaving only a 5% absolute gap behind InstructGPT-001. Self-Instruct provides an almost annotation-free method for aligning pre-trained language models with instructions, and we release our large synthetic dataset to facilitate future studies on instruction tuning.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "fd1cf28a2b8caf2fe29af5e7fa9191cecfedf84d",
+    "externalIds": {
+      "ArXiv": "2212.06817",
+      "DBLP": "conf/rss/BrohanBCCDFGHHH23",
+      "DOI": "10.48550/arXiv.2212.06817",
+      "CorpusId": 254591260
+    },
+    "url": "https://www.semanticscholar.org/paper/fd1cf28a2b8caf2fe29af5e7fa9191cecfedf84d",
+    "title": "RT-1: Robotics Transformer for Real-World Control at Scale",
+    "venue": "Robotics: Science and Systems",
+    "year": 2022,
+    "citationCount": 2159,
+    "influentialCitationCount": 179,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2212.06817",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2212.06817, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "118025075",
+        "name": "Anthony Brohan"
+      },
+      {
+        "authorId": "2161343011",
+        "name": "Noah Brown"
+      },
+      {
+        "authorId": "2196517336",
+        "name": "Justice Carbajal"
+      },
+      {
+        "authorId": "2527420",
+        "name": "Yevgen Chebotar"
+      },
+      {
+        "authorId": "2196517328",
+        "name": "Joseph Dabis"
+      },
+      {
+        "authorId": "46881670",
+        "name": "Chelsea Finn"
+      },
+      {
+        "authorId": "2161342233",
+        "name": "K. Gopalakrishnan"
+      },
+      {
+        "authorId": "1944801",
+        "name": "Karol Hausman"
+      },
+      {
+        "authorId": "1505793452",
+        "name": "Alexander Herzog"
+      },
+      {
+        "authorId": "2726592",
+        "name": "Jasmine Hsu"
+      },
+      {
+        "authorId": "46920727",
+        "name": "Julian Ibarz"
+      },
+      {
+        "authorId": "2704814",
+        "name": "Brian Ichter"
+      },
+      {
+        "authorId": "17818078",
+        "name": "A. Irpan"
+      },
+      {
+        "authorId": "2175779811",
+        "name": "Tomas Jackson"
+      },
+      {
+        "authorId": "2161341920",
+        "name": "Sally Jesmonth"
+      },
+      {
+        "authorId": "2052368480",
+        "name": "Nikhil J. Joshi"
+      },
+      {
+        "authorId": "144885996",
+        "name": "Ryan C. Julian"
+      },
+      {
+        "authorId": "48313860",
+        "name": "Dmitry Kalashnikov"
+      },
+      {
+        "authorId": "2161342687",
+        "name": "Yuheng Kuang"
+      },
+      {
+        "authorId": "2057988112",
+        "name": "Isabel Leal"
+      },
+      {
+        "authorId": "2145145412",
+        "name": "Kuang-Huei Lee"
+      },
+      {
+        "authorId": "1736651",
+        "name": "S. Levine"
+      },
+      {
+        "authorId": "2161346119",
+        "name": "Yao Lu"
+      },
+      {
+        "authorId": "51225879",
+        "name": "U. Malla"
+      },
+      {
+        "authorId": "2064295888",
+        "name": "D. Manjunath"
+      },
+      {
+        "authorId": "2080746",
+        "name": "Igor Mordatch"
+      },
+      {
+        "authorId": "7624658",
+        "name": "Ofir Nachum"
+      },
+      {
+        "authorId": "2057314286",
+        "name": "Carolina Parada"
+      },
+      {
+        "authorId": "2195951533",
+        "name": "Jodilyn Peralta"
+      },
+      {
+        "authorId": "2125121323",
+        "name": "Emily Perez"
+      },
+      {
+        "authorId": "31719101",
+        "name": "Karl Pertsch"
+      },
+      {
+        "authorId": "2161342191",
+        "name": "Jornell Quiambao"
+      },
+      {
+        "authorId": "2251957",
+        "name": "Kanishka Rao"
+      },
+      {
+        "authorId": "1766489",
+        "name": "M. Ryoo"
+      },
+      {
+        "authorId": "2196524735",
+        "name": "Grecia Salazar"
+      },
+      {
+        "authorId": "2840758",
+        "name": "Pannag R. Sanketi"
+      },
+      {
+        "authorId": "2196510642",
+        "name": "Kevin Sayed"
+      },
+      {
+        "authorId": "2196040785",
+        "name": "Jaspiar Singh"
+      },
+      {
+        "authorId": "34365421",
+        "name": "S. Sontakke"
+      },
+      {
+        "authorId": "2056868723",
+        "name": "Austin Stone"
+      },
+      {
+        "authorId": "2161386250",
+        "name": "Clayton Tan"
+      },
+      {
+        "authorId": "2195355151",
+        "name": "Huong Tran"
+      },
+      {
+        "authorId": "2657155",
+        "name": "Vincent Vanhoucke"
+      },
+      {
+        "authorId": "2195627101",
+        "name": "Steve Vega"
+      },
+      {
+        "authorId": "144579461",
+        "name": "Q. Vuong"
+      },
+      {
+        "authorId": "144956443",
+        "name": "F. Xia"
+      },
+      {
+        "authorId": "9961095",
+        "name": "Ted Xiao"
+      },
+      {
+        "authorId": "2153917744",
+        "name": "Peng Xu"
+      },
+      {
+        "authorId": "3068504",
+        "name": "Sichun Xu"
+      },
+      {
+        "authorId": "10909315",
+        "name": "Tianhe Yu"
+      },
+      {
+        "authorId": "2196524598",
+        "name": "Brianna Zitkovich"
+      }
+    ],
+    "abstract": "By transferring knowledge from large, diverse, task-agnostic datasets, modern machine learning models can solve specific downstream tasks either zero-shot or with small task-specific datasets to a high level of performance. While this capability has been demonstrated in other fields such as computer vision, natural language processing or speech recognition, it remains to be shown in robotics, where the generalization capabilities of the models are particularly critical due to the difficulty of collecting real-world robotic data. We argue that one of the keys to the success of such general robotic models lies with open-ended task-agnostic training, combined with high-capacity architectures that can absorb all of the diverse, robotic data. In this paper, we present a model class, dubbed Robotics Transformer, that exhibits promising scalable model properties. We verify our conclusions in a study of different model classes and their ability to generalize as a function of the data size, model size, and data diversity based on a large-scale data collection on real robots performing real-world tasks. The project's website and videos can be found at robotics-transformer1.github.io",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "d8e9f8c8a37cb4cd26b92ad0d942d641cd512644",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2211-17192",
+      "ArXiv": "2211.17192",
+      "DOI": "10.48550/arXiv.2211.17192",
+      "CorpusId": 254096365
+    },
+    "url": "https://www.semanticscholar.org/paper/d8e9f8c8a37cb4cd26b92ad0d942d641cd512644",
+    "title": "Fast Inference from Transformers via Speculative Decoding",
+    "venue": "International Conference on Machine Learning",
+    "year": 2022,
+    "citationCount": 1518,
+    "influentialCitationCount": 259,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2211.17192",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2211.17192, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2188067081",
+        "name": "Yaniv Leviathan"
+      },
+      {
+        "authorId": "21605105",
+        "name": "Matan Kalman"
+      },
+      {
+        "authorId": "1745572",
+        "name": "Yossi Matias"
+      }
+    ],
+    "abstract": "Inference from large autoregressive models like Transformers is slow - decoding K tokens takes K serial runs of the model. In this work we introduce speculative decoding - an algorithm to sample from autoregressive models faster without any changes to the outputs, by computing several tokens in parallel. At the heart of our approach lie the observations that (1) hard language-modeling tasks often include easier subtasks that can be approximated well by more efficient models, and (2) using speculative execution and a novel sampling method, we can make exact decoding from the large models faster, by running them in parallel on the outputs of the approximation models, potentially generating several tokens concurrently, and without changing the distribution. Our method can accelerate existing off-the-shelf models without retraining or architecture changes. We demonstrate it on T5-XXL and show a 2X-3X acceleration compared to the standard T5X implementation, with identical outputs.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "e053be7f36a0772b68eaaa14f15650c14071e4ab",
+    "externalIds": {
+      "ACL": "2022.emnlp-main.695",
+      "DBLP": "conf/emnlp/KeLS0SL22",
+      "ArXiv": "2210.05549",
+      "DOI": "10.48550/arXiv.2210.05549",
+      "CorpusId": 252815848
+    },
+    "url": "https://www.semanticscholar.org/paper/e053be7f36a0772b68eaaa14f15650c14071e4ab",
+    "title": "Continual Training of Language Models for Few-Shot Learning",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2022,
+    "citationCount": 43,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2210.05549",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2210.05549, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "9623089",
+        "name": "Zixuan Ke"
+      },
+      {
+        "authorId": "2257447835",
+        "name": "Haowei Lin"
+      },
+      {
+        "authorId": "74175857",
+        "name": "Yijia Shao"
+      },
+      {
+        "authorId": "33464127",
+        "name": "Hu Xu"
+      },
+      {
+        "authorId": "145142456",
+        "name": "Lei Shu"
+      },
+      {
+        "authorId": "47655556",
+        "name": "Bin Liu"
+      }
+    ],
+    "abstract": "Recent work on applying large language models (LMs) achieves impressive performance in many NLP applications. Adapting or posttraining an LM using an unlabeled domain corpus can produce even better performance for end-tasks in the domain. This paper proposes the problem of continually extending an LM by incrementally post-train the LM with a sequence of unlabeled domain corpora to expand its knowledge without forgetting its previous skills. The goal is to improve the few-shot end-task learning in these domains. The resulting system is called CPT (Continual PostTraining), which to our knowledge, is the first continual post-training system. Experimental results verify its effectiveness.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "c03fa01fbb9c77fe3d10609ba5f1dee33a723867",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2209-11302",
+      "ArXiv": "2209.11302",
+      "DOI": "10.1109/ICRA48891.2023.10161317",
+      "CorpusId": 252519594
+    },
+    "url": "https://www.semanticscholar.org/paper/c03fa01fbb9c77fe3d10609ba5f1dee33a723867",
+    "title": "ProgPrompt: Generating Situated Robot Task Plans using Large Language Models",
+    "venue": "IEEE International Conference on Robotics and Automation",
+    "year": 2022,
+    "citationCount": 970,
+    "influentialCitationCount": 53,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2209.11302",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2209.11302, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "144399662",
+        "name": "Ishika Singh"
+      },
+      {
+        "authorId": "32481910",
+        "name": "Valts Blukis"
+      },
+      {
+        "authorId": "3040583",
+        "name": "A. Mousavian"
+      },
+      {
+        "authorId": "47989608",
+        "name": "Ankit Goyal"
+      },
+      {
+        "authorId": "2068265",
+        "name": "Danfei Xu"
+      },
+      {
+        "authorId": "31943350",
+        "name": "Jonathan Tremblay"
+      },
+      {
+        "authorId": "145197953",
+        "name": "D. Fox"
+      },
+      {
+        "authorId": "2665873",
+        "name": "Jesse Thomason"
+      },
+      {
+        "authorId": "1873736",
+        "name": "Animesh Garg"
+      }
+    ],
+    "abstract": "Task planning can require defining myriad domain knowledge about the world in which a robot needs to act. To ameliorate that effort, large language models (LLMs) can be used to score potential next actions during task planning, and even generate action sequences directly, given an instruction in natural language with no additional domain information. However, such methods either require enumerating all possible next steps for scoring, or generate free-form text that may contain actions not possible on a given robot in its current context. We present a programmatic LLM prompt structure that enables plan generation functional across situated environments, robot capabilities, and tasks. Our key insight is to prompt the LLM with program-like specifications of the available actions and objects in an environment, as well as with example programs that can be executed. We make concrete recommendations about prompt structure and generation constraints through ablation experiments, demonstrate state of the art success rates in VirtualHome household tasks, and deploy our method on a physical robot arm for tabletop tasks. Website at progprompt.github.io",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "91deaf9d324c8feafc189da0da03e60a60287bca",
+    "externalIds": {
+      "ArXiv": "2209.07753",
+      "DBLP": "conf/icra/LiangHXXHIFZ23",
+      "DOI": "10.1109/ICRA48891.2023.10160591",
+      "CorpusId": 252355542
+    },
+    "url": "https://www.semanticscholar.org/paper/91deaf9d324c8feafc189da0da03e60a60287bca",
+    "title": "Code as Policies: Language Model Programs for Embodied Control",
+    "venue": "IEEE International Conference on Robotics and Automation",
+    "year": 2022,
+    "citationCount": 1507,
+    "influentialCitationCount": 107,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2209.07753",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2209.07753, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "6454541",
+        "name": "Jacky Liang"
+      },
+      {
+        "authorId": "2158105356",
+        "name": "Wenlong Huang"
+      },
+      {
+        "authorId": "144956443",
+        "name": "F. Xia"
+      },
+      {
+        "authorId": "2153917744",
+        "name": "Peng Xu"
+      },
+      {
+        "authorId": "1944801",
+        "name": "Karol Hausman"
+      },
+      {
+        "authorId": "2704814",
+        "name": "Brian Ichter"
+      },
+      {
+        "authorId": "47686265",
+        "name": "Peter R. Florence"
+      },
+      {
+        "authorId": "38591293",
+        "name": "Andy Zeng"
+      }
+    ],
+    "abstract": "Large language models (LLMs) trained on code-completion have been shown to be capable of synthesizing simple Python programs from docstrings [1]. We find that these code-writing LLMs can be re-purposed to write robot policy code, given natural language commands. Specifically, policy code can express functions or feedback loops that process perception outputs (e.g., from object detectors [2], [3]) and parameterize control primitive APIs. When provided as input several example language commands (formatted as comments) followed by corresponding policy code (via few-shot prompting), LLMs can take in new commands and autonomously re-compose API calls to generate new policy code respectively. By chaining classic logic structures and referencing third-party libraries (e.g., NumPy, Shapely) to perform arithmetic, LLMs used in this way can write robot policies that (i) exhibit spatial-geometric reasoning, (ii) generalize to new instructions, and (iii) prescribe precise values (e.g., velocities) to ambiguous descriptions (‘faster’) depending on context (i.e., behavioral commonsense). This paper presents Code as Policies: a robot-centric formulation of language model generated programs (LMPs) that can represent reactive policies (e.g., impedance controllers), as well as waypoint-based policies (vision-based pick and place, trajectory-based control), demonstrated across multiple real robot platforms. Central to our approach is prompting hierarchical code-gen (recursively defining undefined functions), which can write more complex code and also improves state-of-the-art to solve 39.8% of problems on the HumanEval [1] benchmark. Code and videos are available at https://code-as-policies.github.io",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "f3cf71c51b882fe3111d71c4bf104297d38197f8",
+    "externalIds": {
+      "ArXiv": "2207.05608",
+      "DBLP": "conf/corl/HuangXXCLFZTMCS22",
+      "DOI": "10.48550/arXiv.2207.05608",
+      "CorpusId": 250451569
+    },
+    "url": "https://www.semanticscholar.org/paper/f3cf71c51b882fe3111d71c4bf104297d38197f8",
+    "title": "Inner Monologue: Embodied Reasoning through Planning with Language Models",
+    "venue": "Conference on Robot Learning",
+    "year": 2022,
+    "citationCount": 1336,
+    "influentialCitationCount": 67,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2207.05608",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2207.05608, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2158105356",
+        "name": "Wenlong Huang"
+      },
+      {
+        "authorId": "144956443",
+        "name": "F. Xia"
+      },
+      {
+        "authorId": "9961095",
+        "name": "Ted Xiao"
+      },
+      {
+        "authorId": "41228532",
+        "name": "Harris Chan"
+      },
+      {
+        "authorId": "6454541",
+        "name": "Jacky Liang"
+      },
+      {
+        "authorId": "47686265",
+        "name": "Peter R. Florence"
+      },
+      {
+        "authorId": "38591293",
+        "name": "Andy Zeng"
+      },
+      {
+        "authorId": "2704494",
+        "name": "Jonathan Tompson"
+      },
+      {
+        "authorId": "2080746",
+        "name": "Igor Mordatch"
+      },
+      {
+        "authorId": "2527420",
+        "name": "Yevgen Chebotar"
+      },
+      {
+        "authorId": "3142556",
+        "name": "P. Sermanet"
+      },
+      {
+        "authorId": "2161343011",
+        "name": "Noah Brown"
+      },
+      {
+        "authorId": "2175779811",
+        "name": "Tomas Jackson"
+      },
+      {
+        "authorId": "13219952",
+        "name": "Linda Luu"
+      },
+      {
+        "authorId": "1736651",
+        "name": "S. Levine"
+      },
+      {
+        "authorId": "1944801",
+        "name": "Karol Hausman"
+      },
+      {
+        "authorId": "2704814",
+        "name": "Brian Ichter"
+      }
+    ],
+    "abstract": "Recent works have shown how the reasoning capabilities of Large Language Models (LLMs) can be applied to domains beyond natural language processing, such as planning and interaction for robots. These embodied problems require an agent to understand many semantic aspects of the world: the repertoire of skills available, how these skills influence the world, and how changes to the world map back to the language. LLMs planning in embodied environments need to consider not just what skills to do, but also how and when to do them - answers that change over time in response to the agent's own choices. In this work, we investigate to what extent LLMs used in such embodied contexts can reason over sources of feedback provided through natural language, without any additional training. We propose that by leveraging environment feedback, LLMs are able to form an inner monologue that allows them to more richly process and plan in robotic control scenarios. We investigate a variety of sources of feedback, such as success detection, scene description, and human interaction. We find that closed-loop language feedback significantly improves high-level instruction completion on three domains, including simulated and real table top rearrangement tasks and long-horizon mobile manipulation tasks in a kitchen environment in the real world.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "65fc1f1c567801fee3788974e753cdbf934f07e9",
+    "externalIds": {
+      "DBLP": "conf/nips/BakerAZHTEHSC22",
+      "ArXiv": "2206.11795",
+      "DOI": "10.48550/arXiv.2206.11795",
+      "CorpusId": 249953673
+    },
+    "url": "https://www.semanticscholar.org/paper/65fc1f1c567801fee3788974e753cdbf934f07e9",
+    "title": "Video PreTraining (VPT): Learning to Act by Watching Unlabeled Online Videos",
+    "venue": "Neural Information Processing Systems",
+    "year": 2022,
+    "citationCount": 403,
+    "influentialCitationCount": 71,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2206.11795",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2206.11795, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "40566201",
+        "name": "Bowen Baker"
+      },
+      {
+        "authorId": "2258629",
+        "name": "Ilge Akkaya"
+      },
+      {
+        "authorId": "6985635",
+        "name": "P. Zhokhov"
+      },
+      {
+        "authorId": "39378983",
+        "name": "Joost Huizinga"
+      },
+      {
+        "authorId": "2148911990",
+        "name": "Jie Tang"
+      },
+      {
+        "authorId": "66821245",
+        "name": "Adrien Ecoffet"
+      },
+      {
+        "authorId": "103681415",
+        "name": "Brandon Houghton"
+      },
+      {
+        "authorId": "2076161792",
+        "name": "Raul Sampedro"
+      },
+      {
+        "authorId": "2552141",
+        "name": "J. Clune"
+      }
+    ],
+    "abstract": "Pretraining on noisy, internet-scale datasets has been heavily studied as a technique for training models with broad, general capabilities for text, images, and other modalities. However, for many sequential decision domains such as robotics, video games, and computer use, publicly available data does not contain the labels required to train behavioral priors in the same way. We extend the internet-scale pretraining paradigm to sequential decision domains through semi-supervised imitation learning wherein agents learn to act by watching online unlabeled videos. Specifically, we show that with a small amount of labeled data we can train an inverse dynamics model accurate enough to label a huge unlabeled source of online data -- here, online videos of people playing Minecraft -- from which we can then train a general behavioral prior. Despite using the native human interface (mouse and keyboard at 20Hz), we show that this behavioral prior has nontrivial zero-shot capabilities and that it can be fine-tuned, with both imitation learning and reinforcement learning, to hard-exploration tasks that are impossible to learn from scratch via reinforcement learning. For many tasks our models exhibit human-level performance, and we are the first to report computer agents that can craft diamond tools, which can take proficient humans upwards of 20 minutes (24,000 environment actions) of gameplay to accomplish.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "32c9b3859086d15184989454eb878638659e64c6",
+    "externalIds": {
+      "DBLP": "conf/nips/FanWJMYZTHZA22",
+      "ArXiv": "2206.08853",
+      "DOI": "10.48550/arXiv.2206.08853",
+      "CorpusId": 249848263
+    },
+    "url": "https://www.semanticscholar.org/paper/32c9b3859086d15184989454eb878638659e64c6",
+    "title": "MineDojo: Building Open-Ended Embodied Agents with Internet-Scale Knowledge",
+    "venue": "Neural Information Processing Systems",
+    "year": 2022,
+    "citationCount": 548,
+    "influentialCitationCount": 81,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2206.08853",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2206.08853, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "3275727",
+        "name": "Linxi (Jim) Fan"
+      },
+      {
+        "authorId": "96374437",
+        "name": "Guanzhi Wang"
+      },
+      {
+        "authorId": "2171112793",
+        "name": "Yunfan Jiang"
+      },
+      {
+        "authorId": "49686756",
+        "name": "A. Mandlekar"
+      },
+      {
+        "authorId": "2178644022",
+        "name": "Yuncong Yang"
+      },
+      {
+        "authorId": "2171155650",
+        "name": "Haoyi Zhu"
+      },
+      {
+        "authorId": "2309480619",
+        "name": "Andy Tang"
+      },
+      {
+        "authorId": "38485317",
+        "name": "De-An Huang"
+      },
+      {
+        "authorId": "2117748",
+        "name": "Yuke Zhu"
+      },
+      {
+        "authorId": "47627049",
+        "name": "Anima Anandkumar"
+      }
+    ],
+    "abstract": "Autonomous agents have made great strides in specialist domains like Atari games and Go. However, they typically learn tabula rasa in isolated environments with limited and manually conceived objectives, thus failing to generalize across a wide spectrum of tasks and capabilities. Inspired by how humans continually learn and adapt in the open world, we advocate a trinity of ingredients for building generalist agents: 1) an environment that supports a multitude of tasks and goals, 2) a large-scale database of multimodal knowledge, and 3) a flexible and scalable agent architecture. We introduce MineDojo, a new framework built on the popular Minecraft game that features a simulation suite with thousands of diverse open-ended tasks and an internet-scale knowledge base with Minecraft videos, tutorials, wiki pages, and forum discussions. Using MineDojo's data, we propose a novel agent learning algorithm that leverages large pre-trained video-language models as a learned reward function. Our agent is able to solve a variety of open-ended tasks specified in free-form language without any manually designed dense shaping reward. We open-source the simulation suite, knowledge bases, algorithm implementation, and pretrained models (https://minedojo.org) to promote research towards the goal of generally capable embodied agents.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "5922f437512158970c417f4413bface021df5f78",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2205-06175",
+      "ArXiv": "2205.06175",
+      "DOI": "10.48550/arXiv.2205.06175",
+      "CorpusId": 248722148
+    },
+    "url": "https://www.semanticscholar.org/paper/5922f437512158970c417f4413bface021df5f78",
+    "title": "A Generalist Agent",
+    "venue": "Trans. Mach. Learn. Res.",
+    "year": 2022,
+    "citationCount": 1060,
+    "influentialCitationCount": 75,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2205.06175",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2205.06175, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "145577281",
+        "name": "S. Reed"
+      },
+      {
+        "authorId": "7912420",
+        "name": "Konrad Zolna"
+      },
+      {
+        "authorId": "3166516",
+        "name": "Emilio Parisotto"
+      },
+      {
+        "authorId": "2016840",
+        "name": "Sergio Gomez Colmenarejo"
+      },
+      {
+        "authorId": "2050212830",
+        "name": "Alexander Novikov"
+      },
+      {
+        "authorId": "1403998955",
+        "name": "Gabriel Barth-Maron"
+      },
+      {
+        "authorId": "2047713067",
+        "name": "Mai Giménez"
+      },
+      {
+        "authorId": "1390139201",
+        "name": "Yury Sulsky"
+      },
+      {
+        "authorId": "2059147422",
+        "name": "Jackie Kay"
+      },
+      {
+        "authorId": "2060551",
+        "name": "Jost Tobias Springenberg"
+      },
+      {
+        "authorId": "3241600",
+        "name": "Tom Eccles"
+      },
+      {
+        "authorId": "12139064",
+        "name": "Jake Bruce"
+      },
+      {
+        "authorId": "143653164",
+        "name": "Ali Razavi"
+      },
+      {
+        "authorId": "48779623",
+        "name": "Ashley D. Edwards"
+      },
+      {
+        "authorId": "2801204",
+        "name": "N. Heess"
+      },
+      {
+        "authorId": "2275897",
+        "name": "Yutian Chen"
+      },
+      {
+        "authorId": "2315504",
+        "name": "R. Hadsell"
+      },
+      {
+        "authorId": "1689108",
+        "name": "O. Vinyals"
+      },
+      {
+        "authorId": "46232775",
+        "name": "Mahyar Bordbar"
+      },
+      {
+        "authorId": "1737568",
+        "name": "Nando de Freitas"
+      }
+    ],
+    "abstract": "Inspired by progress in large-scale language modeling, we apply a similar approach towards building a single generalist agent beyond the realm of text outputs. The agent, which we refer to as Gato, works as a multi-modal, multi-task, multi-embodiment generalist policy. The same network with the same weights can play Atari, caption images, chat, stack blocks with a real robot arm and much more, deciding based on its context whether to output text, joint torques, button presses, or other tokens. In this report we describe the model and the data, and document the current capabilities of Gato.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "26218bdcc3945c7edae7aa2adbfba4cd820a2df3",
+    "externalIds": {
+      "DBLP": "conf/nips/AlayracDLMBHLMM22",
+      "ArXiv": "2204.14198",
+      "DOI": "10.52202/068431-1723",
+      "CorpusId": 248476411
+    },
+    "url": "https://www.semanticscholar.org/paper/26218bdcc3945c7edae7aa2adbfba4cd820a2df3",
+    "title": "Flamingo: a Visual Language Model for Few-Shot Learning",
+    "venue": "Neural Information Processing Systems",
+    "year": 2022,
+    "citationCount": 5761,
+    "influentialCitationCount": 394,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2204.14198, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2285263",
+        "name": "Jean-Baptiste Alayrac"
+      },
+      {
+        "authorId": "7408951",
+        "name": "Jeff Donahue"
+      },
+      {
+        "authorId": "152831141",
+        "name": "Pauline Luc"
+      },
+      {
+        "authorId": "19200186",
+        "name": "Antoine Miech"
+      },
+      {
+        "authorId": "2159207795",
+        "name": "Iain Barr"
+      },
+      {
+        "authorId": "66535271",
+        "name": "Yana Hasson"
+      },
+      {
+        "authorId": "3257286",
+        "name": "Karel Lenc"
+      },
+      {
+        "authorId": "1697879",
+        "name": "Arthur Mensch"
+      },
+      {
+        "authorId": "2143434227",
+        "name": "Katie Millican"
+      },
+      {
+        "authorId": "47447264",
+        "name": "Malcolm Reynolds"
+      },
+      {
+        "authorId": "81387328",
+        "name": "Roman Ring"
+      },
+      {
+        "authorId": "2143538252",
+        "name": "Eliza Rutherford"
+      },
+      {
+        "authorId": "12159303",
+        "name": "Serkan Cabi"
+      },
+      {
+        "authorId": "22237490",
+        "name": "Tengda Han"
+      },
+      {
+        "authorId": "48398849",
+        "name": "Zhitao Gong"
+      },
+      {
+        "authorId": "2412073",
+        "name": "Sina Samangooei"
+      },
+      {
+        "authorId": "49601928",
+        "name": "Marianne Monteiro"
+      },
+      {
+        "authorId": "10698483",
+        "name": "Jacob Menick"
+      },
+      {
+        "authorId": "148016269",
+        "name": "Sebastian Borgeaud"
+      },
+      {
+        "authorId": "2065040422",
+        "name": "Andy Brock"
+      },
+      {
+        "authorId": "3208081",
+        "name": "Aida Nematzadeh"
+      },
+      {
+        "authorId": "7782886",
+        "name": "Sahand Sharifzadeh"
+      },
+      {
+        "authorId": "9961753",
+        "name": "Mikolaj Binkowski"
+      },
+      {
+        "authorId": "2026369796",
+        "name": "Ricardo Barreira"
+      },
+      {
+        "authorId": "1689108",
+        "name": "O. Vinyals"
+      },
+      {
+        "authorId": "1688869",
+        "name": "Andrew Zisserman"
+      },
+      {
+        "authorId": "34838386",
+        "name": "K. Simonyan"
+      }
+    ],
+    "abstract": "Building models that can be rapidly adapted to novel tasks using only a handful of annotated examples is an open challenge for multimodal machine learning research. We introduce Flamingo, a family of Visual Language Models (VLM) with this ability. We propose key architectural innovations to: (i) bridge powerful pretrained vision-only and language-only models, (ii) handle sequences of arbitrarily interleaved visual and textual data, and (iii) seamlessly ingest images or videos as inputs. Thanks to their flexibility, Flamingo models can be trained on large-scale multimodal web corpora containing arbitrarily interleaved text and images, which is key to endow them with in-context few-shot learning capabilities. We perform a thorough evaluation of our models, exploring and measuring their ability to rapidly adapt to a variety of image and video tasks. These include open-ended tasks such as visual question-answering, where the model is prompted with a question which it has to answer; captioning tasks, which evaluate the ability to describe a scene or an event; and close-ended tasks such as multiple-choice visual question-answering. For tasks lying anywhere on this spectrum, a single Flamingo model can achieve a new state of the art with few-shot learning, simply by prompting the model with task-specific examples. On numerous benchmarks, Flamingo outperforms models fine-tuned on thousands of times more task-specific data.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "cb5e3f085caefd1f3d5e08637ab55d39e61234fc",
+    "externalIds": {
+      "DBLP": "conf/corl/IchterBCFHHHIIJ22",
+      "ArXiv": "2204.01691",
+      "CorpusId": 247939706
+    },
+    "url": "https://www.semanticscholar.org/paper/cb5e3f085caefd1f3d5e08637ab55d39e61234fc",
+    "title": "Do As I Can, Not As I Say: Grounding Language in Robotic Affordances",
+    "venue": "Conference on Robot Learning",
+    "year": 2022,
+    "citationCount": 3071,
+    "influentialCitationCount": 194,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2204.01691, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2106194123",
+        "name": "Michael Ahn"
+      },
+      {
+        "authorId": "118025075",
+        "name": "Anthony Brohan"
+      },
+      {
+        "authorId": "2161343011",
+        "name": "Noah Brown"
+      },
+      {
+        "authorId": "2527420",
+        "name": "Yevgen Chebotar"
+      },
+      {
+        "authorId": "2161341260",
+        "name": "Omar Cortes"
+      },
+      {
+        "authorId": "2131683144",
+        "name": "Byron David"
+      },
+      {
+        "authorId": "46881670",
+        "name": "Chelsea Finn"
+      },
+      {
+        "authorId": "2161342233",
+        "name": "K. Gopalakrishnan"
+      },
+      {
+        "authorId": "1944801",
+        "name": "Karol Hausman"
+      },
+      {
+        "authorId": "1505793452",
+        "name": "Alexander Herzog"
+      },
+      {
+        "authorId": "2056459339",
+        "name": "Daniel Ho"
+      },
+      {
+        "authorId": "2726592",
+        "name": "Jasmine Hsu"
+      },
+      {
+        "authorId": "46920727",
+        "name": "Julian Ibarz"
+      },
+      {
+        "authorId": "2704814",
+        "name": "Brian Ichter"
+      },
+      {
+        "authorId": "17818078",
+        "name": "A. Irpan"
+      },
+      {
+        "authorId": "145116380",
+        "name": "Eric Jang"
+      },
+      {
+        "authorId": "2161341254",
+        "name": "Rosario M Jauregui Ruano"
+      },
+      {
+        "authorId": "2294363149",
+        "name": "Kyle Jeffrey"
+      },
+      {
+        "authorId": "2161341920",
+        "name": "Sally Jesmonth"
+      },
+      {
+        "authorId": "2641664",
+        "name": "N. Joshi"
+      },
+      {
+        "authorId": "144885996",
+        "name": "Ryan C. Julian"
+      },
+      {
+        "authorId": "48313860",
+        "name": "Dmitry Kalashnikov"
+      },
+      {
+        "authorId": "2161342687",
+        "name": "Yuheng Kuang"
+      },
+      {
+        "authorId": "2145145412",
+        "name": "Kuang-Huei Lee"
+      },
+      {
+        "authorId": "1736651",
+        "name": "S. Levine"
+      },
+      {
+        "authorId": "2161346119",
+        "name": "Yao Lu"
+      },
+      {
+        "authorId": "13219952",
+        "name": "Linda Luu"
+      },
+      {
+        "authorId": "2057314286",
+        "name": "Carolina Parada"
+      },
+      {
+        "authorId": "143970835",
+        "name": "P. Pastor"
+      },
+      {
+        "authorId": "2161342191",
+        "name": "Jornell Quiambao"
+      },
+      {
+        "authorId": "2251957",
+        "name": "Kanishka Rao"
+      },
+      {
+        "authorId": "2161341616",
+        "name": "Jarek Rettinghouse"
+      },
+      {
+        "authorId": "48674590",
+        "name": "D. Reyes"
+      },
+      {
+        "authorId": "3142556",
+        "name": "P. Sermanet"
+      },
+      {
+        "authorId": "2153300433",
+        "name": "Nicolas Sievers"
+      },
+      {
+        "authorId": "2161386250",
+        "name": "Clayton Tan"
+      },
+      {
+        "authorId": "1726415",
+        "name": "Alexander Toshev"
+      },
+      {
+        "authorId": "2657155",
+        "name": "Vincent Vanhoucke"
+      },
+      {
+        "authorId": "144956443",
+        "name": "F. Xia"
+      },
+      {
+        "authorId": "9961095",
+        "name": "Ted Xiao"
+      },
+      {
+        "authorId": "2153917744",
+        "name": "Peng Xu"
+      },
+      {
+        "authorId": "3068504",
+        "name": "Sichun Xu"
+      },
+      {
+        "authorId": "3235234",
+        "name": "Mengyuan Yan"
+      }
+    ],
+    "abstract": "Large language models can encode a wealth of semantic knowledge about the world. Such knowledge could be extremely useful to robots aiming to act upon high-level, temporally extended instructions expressed in natural language. However, a significant weakness of language models is that they lack real-world experience, which makes it difficult to leverage them for decision making within a given embodiment. For example, asking a language model to describe how to clean a spill might result in a reasonable narrative, but it may not be applicable to a particular agent, such as a robot, that needs to perform this task in a particular environment. We propose to provide real-world grounding by means of pretrained skills, which are used to constrain the model to propose natural language actions that are both feasible and contextually appropriate. The robot can act as the language model's\"hands and eyes,\"while the language model supplies high-level semantic knowledge about the task. We show how low-level skills can be combined with large language models so that the language model provides high-level knowledge about the procedures for performing complex and temporally-extended instructions, while value functions associated with these skills provide the grounding necessary to connect this knowledge to a particular physical environment. We evaluate our method on a number of real-world robotic tasks, where we show the need for real-world grounding and that this approach is capable of completing long-horizon, abstract, natural language instructions on a mobile manipulator. The project's website and the video can be found at https://say-can.github.io/.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ada81a4de88a6ce474df2e2446ad11fea480616e",
+    "externalIds": {
+      "ArXiv": "2204.00598",
+      "DBLP": "journals/corr/abs-2204-00598",
+      "CorpusId": 247922520
+    },
+    "url": "https://www.semanticscholar.org/paper/ada81a4de88a6ce474df2e2446ad11fea480616e",
+    "title": "Socratic Models: Composing Zero-Shot Multimodal Reasoning with Language",
+    "venue": "International Conference on Learning Representations",
+    "year": 2022,
+    "citationCount": 719,
+    "influentialCitationCount": 42,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2204.00598, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "38591293",
+        "name": "Andy Zeng"
+      },
+      {
+        "authorId": "153873821",
+        "name": "Adrian S. Wong"
+      },
+      {
+        "authorId": "69426588",
+        "name": "Stefan Welker"
+      },
+      {
+        "authorId": "1805203",
+        "name": "K. Choromanski"
+      },
+      {
+        "authorId": "2321408252",
+        "name": "Federico Tombari"
+      },
+      {
+        "authorId": "3187602",
+        "name": "Aveek Purohit"
+      },
+      {
+        "authorId": "1766489",
+        "name": "M. Ryoo"
+      },
+      {
+        "authorId": "1808676",
+        "name": "Vikas Sindhwani"
+      },
+      {
+        "authorId": "2108488231",
+        "name": "Johnny Lee"
+      },
+      {
+        "authorId": "2657155",
+        "name": "Vincent Vanhoucke"
+      },
+      {
+        "authorId": "47686265",
+        "name": "Peter R. Florence"
+      }
+    ],
+    "abstract": "Large pretrained (e.g.,\"foundation\") models exhibit distinct capabilities depending on the domain of data they are trained on. While these domains are generic, they may only barely overlap. For example, visual-language models (VLMs) are trained on Internet-scale image captions, but large language models (LMs) are further trained on Internet-scale text with no images (e.g., spreadsheets, SAT questions, code). As a result, these models store different forms of commonsense knowledge across different domains. In this work, we show that this diversity is symbiotic, and can be leveraged through Socratic Models (SMs): a modular framework in which multiple pretrained models may be composed zero-shot i.e., via multimodal-informed prompting, to exchange information with each other and capture new multimodal capabilities, without requiring finetuning. With minimal engineering, SMs are not only competitive with state-of-the-art zero-shot image captioning and video-to-text retrieval, but also enable new applications such as (i) answering free-form questions about egocentric video, (ii) engaging in multimodal assistive dialogue with people (e.g., for cooking recipes) by interfacing with external APIs and databases (e.g., web search), and (iii) robot perception and planning.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "d766bffc357127e0dc86dd69561d5aeb520d6f4c",
+    "externalIds": {
+      "ArXiv": "2203.02155",
+      "DBLP": "journals/corr/abs-2203-02155",
+      "DOI": "10.52202/068431-2011",
+      "CorpusId": 246426909
+    },
+    "url": "https://www.semanticscholar.org/paper/d766bffc357127e0dc86dd69561d5aeb520d6f4c",
+    "title": "Training language models to follow instructions with human feedback",
+    "venue": "Neural Information Processing Systems",
+    "year": 2022,
+    "citationCount": 20680,
+    "influentialCitationCount": 2205,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2203.02155, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "31793034",
+        "name": "Long Ouyang"
+      },
+      {
+        "authorId": "49387725",
+        "name": "Jeff Wu"
+      },
+      {
+        "authorId": "2115903168",
+        "name": "Xu Jiang"
+      },
+      {
+        "authorId": "2061137049",
+        "name": "Diogo Almeida"
+      },
+      {
+        "authorId": "2064084601",
+        "name": "Carroll L. Wainwright"
+      },
+      {
+        "authorId": "2051714782",
+        "name": "Pamela Mishkin"
+      },
+      {
+        "authorId": null,
+        "name": "Chong Zhang"
+      },
+      {
+        "authorId": "144517868",
+        "name": "S. Agarwal"
+      },
+      {
+        "authorId": "2117680841",
+        "name": "Katarina Slama"
+      },
+      {
+        "authorId": "2064770039",
+        "name": "Alex Ray"
+      },
+      {
+        "authorId": "47971768",
+        "name": "John Schulman"
+      },
+      {
+        "authorId": "2052366271",
+        "name": "Jacob Hilton"
+      },
+      {
+        "authorId": "2151735262",
+        "name": "Fraser Kelton"
+      },
+      {
+        "authorId": "2142365973",
+        "name": "Luke E. Miller"
+      },
+      {
+        "authorId": "2151735251",
+        "name": "M. Simens"
+      },
+      {
+        "authorId": "119609682",
+        "name": "Amanda Askell"
+      },
+      {
+        "authorId": "2930640",
+        "name": "Peter Welinder"
+      },
+      {
+        "authorId": "145791315",
+        "name": "P. Christiano"
+      },
+      {
+        "authorId": "2990741",
+        "name": "Jan Leike"
+      },
+      {
+        "authorId": "49407415",
+        "name": "Ryan J. Lowe"
+      }
+    ],
+    "abstract": "Making language models bigger does not inherently make them better at following a user's intent. For example, large language models can generate outputs that are untruthful, toxic, or simply not helpful to the user. In other words, these models are not aligned with their users. In this paper, we show an avenue for aligning language models with user intent on a wide range of tasks by fine-tuning with human feedback. Starting with a set of labeler-written prompts and prompts submitted through the OpenAI API, we collect a dataset of labeler demonstrations of the desired model behavior, which we use to fine-tune GPT-3 using supervised learning. We then collect a dataset of rankings of model outputs, which we use to further fine-tune this supervised model using reinforcement learning from human feedback. We call the resulting models InstructGPT. In human evaluations on our prompt distribution, outputs from the 1.3B parameter InstructGPT model are preferred to outputs from the 175B GPT-3, despite having 100x fewer parameters. Moreover, InstructGPT models show improvements in truthfulness and reductions in toxic output generation while having minimal performance regressions on public NLP datasets. Even though InstructGPT still makes simple mistakes, our results show that fine-tuning with human feedback is a promising direction for aligning language models with human intent.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "6b7bf6cf5d0e1004d4468edfac4e8f81c0d0c50d",
+    "externalIds": {
+      "ArXiv": "2202.10583",
+      "DBLP": "journals/corr/abs-2202-10583",
+      "CorpusId": 247025644
+    },
+    "url": "https://www.semanticscholar.org/paper/6b7bf6cf5d0e1004d4468edfac4e8f81c0d0c50d",
+    "title": "MineRL Diamond 2021 Competition: Overview, Results, and Lessons Learned",
+    "venue": "Neural Information Processing Systems",
+    "year": 2022,
+    "citationCount": 35,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2202.10583, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "3469155",
+        "name": "A. Kanervisto"
+      },
+      {
+        "authorId": "144177520",
+        "name": "Stephanie Milani"
+      },
+      {
+        "authorId": "25072106",
+        "name": "Karolis Ramanauskas"
+      },
+      {
+        "authorId": "34887814",
+        "name": "Nicholay Topin"
+      },
+      {
+        "authorId": "41123614",
+        "name": "Zichuan Lin"
+      },
+      {
+        "authorId": "1723423332",
+        "name": "Junyou Li"
+      },
+      {
+        "authorId": "2117868795",
+        "name": "Jianing Shi"
+      },
+      {
+        "authorId": "2055648566",
+        "name": "Deheng Ye"
+      },
+      {
+        "authorId": "2091914469",
+        "name": "Qiang Fu"
+      },
+      {
+        "authorId": "2005150594",
+        "name": "Wei Yang"
+      },
+      {
+        "authorId": "2114947718",
+        "name": "Weijun Hong"
+      },
+      {
+        "authorId": "102992587",
+        "name": "Zhong-Hao Huang"
+      },
+      {
+        "authorId": "2042696382",
+        "name": "Haicheng Chen"
+      },
+      {
+        "authorId": "2022732",
+        "name": "Guangjun Zeng"
+      },
+      {
+        "authorId": "8708059",
+        "name": "Yue Lin"
+      },
+      {
+        "authorId": "1491750155",
+        "name": "Vincent Micheli"
+      },
+      {
+        "authorId": "144370326",
+        "name": "Eloi Alonso"
+      },
+      {
+        "authorId": "116272138",
+        "name": "Franccois Fleuret"
+      },
+      {
+        "authorId": "2155646949",
+        "name": "Alexander Nikulin"
+      },
+      {
+        "authorId": "2106191576",
+        "name": "Yury Belousov"
+      },
+      {
+        "authorId": "1434552251",
+        "name": "Oleg Svidchenko"
+      },
+      {
+        "authorId": "35431760",
+        "name": "A. Shpilman"
+      }
+    ],
+    "abstract": "Reinforcement learning competitions advance the field by providing appropriate scope and support to develop solutions toward a specific problem. To promote the development of more broadly applicable methods, organizers need to enforce the use of general techniques, the use of sample-efficient methods, and the reproducibility of the results. While beneficial for the research community, these restrictions come at a cost -- increased difficulty. If the barrier for entry is too high, many potential participants are demoralized. With this in mind, we hosted the third edition of the MineRL ObtainDiamond competition, MineRL Diamond 2021, with a separate track in which we permitted any solution to promote the participation of newcomers. With this track and more extensive tutorials and support, we saw an increased number of submissions. The participants of this easier track were able to obtain a diamond, and the participants of the harder track progressed the generalizable solutions in the same task.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "1b6e810ce0afd0dd093f789d2b2742d047e316d5",
+    "externalIds": {
+      "DBLP": "conf/nips/Wei0SBIXCLZ22",
+      "ArXiv": "2201.11903",
+      "DOI": "10.52202/068431-1800",
+      "CorpusId": 246411621
+    },
+    "url": "https://www.semanticscholar.org/paper/1b6e810ce0afd0dd093f789d2b2742d047e316d5",
+    "title": "Chain of Thought Prompting Elicits Reasoning in Large Language Models",
+    "venue": "Neural Information Processing Systems",
+    "year": 2022,
+    "citationCount": 18149,
+    "influentialCitationCount": 1272,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2201.11903, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "119640649",
+        "name": "Jason Wei"
+      },
+      {
+        "authorId": "2275277634",
+        "name": "Xuezhi Wang"
+      },
+      {
+        "authorId": "1714772",
+        "name": "Dale Schuurmans"
+      },
+      {
+        "authorId": "40377863",
+        "name": "Maarten Bosma"
+      },
+      {
+        "authorId": "2226805",
+        "name": "Ed H. Chi"
+      },
+      {
+        "authorId": "144956443",
+        "name": "F. Xia"
+      },
+      {
+        "authorId": "1998340269",
+        "name": "Quoc Le"
+      },
+      {
+        "authorId": "65855107",
+        "name": "Denny Zhou"
+      }
+    ],
+    "abstract": "We explore how generating a chain of thought -- a series of intermediate reasoning steps -- significantly improves the ability of large language models to perform complex reasoning. In particular, we show how such reasoning abilities emerge naturally in sufficiently large language models via a simple method called chain of thought prompting, where a few chain of thought demonstrations are provided as exemplars in prompting. Experiments on three large language models show that chain of thought prompting improves performance on a range of arithmetic, commonsense, and symbolic reasoning tasks. The empirical gains can be striking. For instance, prompting a 540B-parameter language model with just eight chain of thought exemplars achieves state of the art accuracy on the GSM8K benchmark of math word problems, surpassing even finetuned GPT-3 with a verifier.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "92a8f7f09f3705cb5a6009a42220a6f01ea084e8",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2201-07207",
+      "ArXiv": "2201.07207",
+      "CorpusId": 246035276
+    },
+    "url": "https://www.semanticscholar.org/paper/92a8f7f09f3705cb5a6009a42220a6f01ea084e8",
+    "title": "Language Models as Zero-Shot Planners: Extracting Actionable Knowledge for Embodied Agents",
+    "venue": "International Conference on Machine Learning",
+    "year": 2022,
+    "citationCount": 1550,
+    "influentialCitationCount": 97,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2201.07207, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2158105356",
+        "name": "Wenlong Huang"
+      },
+      {
+        "authorId": "1689992",
+        "name": "P. Abbeel"
+      },
+      {
+        "authorId": "2004879394",
+        "name": "Deepak Pathak"
+      },
+      {
+        "authorId": "2080746",
+        "name": "Igor Mordatch"
+      }
+    ],
+    "abstract": "Can world knowledge learned by large language models (LLMs) be used to act in interactive environments? In this paper, we investigate the possibility of grounding high-level tasks, expressed in natural language (e.g.\"make breakfast\"), to a chosen set of actionable steps (e.g.\"open fridge\"). While prior work focused on learning from explicit step-by-step examples of how to act, we surprisingly find that if pre-trained LMs are large enough and prompted appropriately, they can effectively decompose high-level tasks into mid-level plans without any further training. However, the plans produced naively by LLMs often cannot map precisely to admissible actions. We propose a procedure that conditions on existing demonstrations and semantically translates the plans to admissible actions. Our evaluation in the recent VirtualHome environment shows that the resulting method substantially improves executability over the LLM baseline. The conducted human evaluation reveals a trade-off between executability and correctness but shows a promising sign towards extracting actionable knowledge from language models. Website at https://huangwl18.github.io/language-planner",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "51517d5d900a7c0cd33e210c48cb27ef3b96e5a9",
+    "externalIds": {
+      "ArXiv": "2112.04907",
+      "DBLP": "conf/ijcai/LinLSYF022",
+      "DOI": "10.24963/ijcai.2022/452",
+      "CorpusId": 245005779
+    },
+    "url": "https://www.semanticscholar.org/paper/51517d5d900a7c0cd33e210c48cb27ef3b96e5a9",
+    "title": "JueWu-MC: Playing Minecraft with Sample-efficient Hierarchical Reinforcement Learning",
+    "venue": "International Joint Conference on Artificial Intelligence",
+    "year": 2021,
+    "citationCount": 41,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "https://www.ijcai.org/proceedings/2022/0452.pdf",
+      "status": "BRONZE",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2112.04907, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "41123614",
+        "name": "Zichuan Lin"
+      },
+      {
+        "authorId": "1723423332",
+        "name": "Junyou Li"
+      },
+      {
+        "authorId": "31648033",
+        "name": "Jianing Shi"
+      },
+      {
+        "authorId": "2055648566",
+        "name": "Deheng Ye"
+      },
+      {
+        "authorId": "2091914469",
+        "name": "Qiang Fu"
+      },
+      {
+        "authorId": "2005150594",
+        "name": "Wei Yang"
+      }
+    ],
+    "abstract": "Learning rational behaviors in open-world games like Minecraft remains to be challenging for Reinforcement Learning (RL) research due to the compound challenge of partial observability, high-dimensional visual perception and delayed reward. To address this, we propose JueWu-MC, a sample-efficient hierarchical RL approach equipped with representation learning and imitation learning to deal with perception and exploration. Specifically, our approach includes two levels of hierarchy, where the high-level controller learns a policy to control over options and the low-level workers learn to solve each sub-task. To boost the learning of sub-tasks, we propose a combination of techniques including 1) action-aware representation learning which captures underlying relations between action and representation, 2) discriminator-based self-imitation learning for efficient exploration, and 3) ensemble behavior cloning with consistency filtering for policy robustness. Extensive experiments show that JueWu-MC significantly improves sample efficiency and outperforms a set of baselines by a large margin. Notably, we won the championship of the NeurIPS MineRL 2021 research competition and achieved the highest performance score ever.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "faae7fa490fec902f999c67edb5d7f4cdbf92c34",
+    "externalIds": {
+      "ArXiv": "2111.08857",
+      "DBLP": "conf/dai2/MaoWHMLWHLT21",
+      "DOI": "10.1007/978-3-030-94662-3_3",
+      "CorpusId": 244270319
+    },
+    "url": "https://www.semanticscholar.org/paper/faae7fa490fec902f999c67edb5d7f4cdbf92c34",
+    "title": "SEIHAI: A Sample-efficient Hierarchical AI for the MineRL Competition",
+    "venue": "International Conference on Distributed Artificial Intelligence",
+    "year": 2021,
+    "citationCount": 30,
+    "influentialCitationCount": 2,
+    "openAccessPdf": {
+      "url": "",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2111.08857, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Engineering"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "8595845",
+        "name": "Hangyu Mao"
+      },
+      {
+        "authorId": "2144448125",
+        "name": "Chao Wang"
+      },
+      {
+        "authorId": "1491630925",
+        "name": "Xiaotian Hao"
+      },
+      {
+        "authorId": "2087640445",
+        "name": "Yihuan Mao"
+      },
+      {
+        "authorId": "2141537546",
+        "name": "Yiming Lu"
+      },
+      {
+        "authorId": "3144577",
+        "name": "Chengjie Wu"
+      },
+      {
+        "authorId": "2069718816",
+        "name": "Jianye Hao"
+      },
+      {
+        "authorId": "2108821147",
+        "name": "Dong Li"
+      },
+      {
+        "authorId": "34198278",
+        "name": "Pingzhong Tang"
+      }
+    ],
+    "abstract": "The MineRL competition is designed for the development of reinforcement learning and imitation learning algorithms that can efficiently leverage human demonstrations to drastically reduce the number of environment interactions needed to solve the complex \\emph{ObtainDiamond} task with sparse rewards. To address the challenge, in this paper, we present \\textbf{SEIHAI}, a \\textbf{S}ample-\\textbf{e}ff\\textbf{i}cient \\textbf{H}ierarchical \\textbf{AI}, that fully takes advantage of the human demonstrations and the task structure. Specifically, we split the task into several sequentially dependent subtasks, and train a suitable agent for each subtask using reinforcement learning and imitation learning. We further design a scheduler to select different agents for different subtasks automatically. SEIHAI takes the first place in the preliminary and final of the NeurIPS-2020 MineRL competition.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "49214c3b99c9874a7e0b9cb210b1a653d77fa18c",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2101-11071",
+      "ArXiv": "2101.11071",
+      "CorpusId": 128358759
+    },
+    "url": "https://www.semanticscholar.org/paper/49214c3b99c9874a7e0b9cb210b1a653d77fa18c",
+    "title": "The MineRL 2020 Competition on Sample Efficient Reinforcement Learning using Human Priors",
+    "venue": "arXiv.org",
+    "year": 2021,
+    "citationCount": 72,
+    "influentialCitationCount": 7,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2101.11071, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Mathematics"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "39121861",
+        "name": "William H. Guss"
+      },
+      {
+        "authorId": "104300088",
+        "name": "Cayden R. Codel"
+      },
+      {
+        "authorId": "145186674",
+        "name": "Katja Hofmann"
+      },
+      {
+        "authorId": "103681415",
+        "name": "Brandon Houghton"
+      },
+      {
+        "authorId": "67230338",
+        "name": "Noburu Kuno"
+      },
+      {
+        "authorId": "144177520",
+        "name": "Stephanie Milani"
+      },
+      {
+        "authorId": "24178944",
+        "name": "S. Mohanty"
+      },
+      {
+        "authorId": "2717017",
+        "name": "Diego Perez Liebana"
+      },
+      {
+        "authorId": "145124475",
+        "name": "R. Salakhutdinov"
+      },
+      {
+        "authorId": "34887814",
+        "name": "Nicholay Topin"
+      },
+      {
+        "authorId": "1956361",
+        "name": "M. Veloso"
+      },
+      {
+        "authorId": "2108692541",
+        "name": "Phillip Wang"
+      }
+    ],
+    "abstract": "Although deep reinforcement learning has led to breakthroughs in many difficult domains, these successes have required an ever-increasing number of samples, affording only a shrinking segment of the AI community access to their development. Resolution of these limitations requires new, sample-efficient methods. To facilitate research in this direction, we propose this second iteration of the MineRL Competition. The primary goal of the competition is to foster the development of algorithms which can efficiently leverage human demonstrations to drastically reduce the number of samples needed to solve complex, hierarchical, and sparse environments. To that end, participants compete under a limited environment sample-complexity budget to develop systems which solve the MineRL ObtainDiamond task in Minecraft, a sequential decision making environment requiring long-term planning, hierarchical control, and efficient exploration methods. The competition is structured into two rounds in which competitors are provided several paired versions of the dataset and environment with different game textures and shaders. At the end of each round, competitors submit containerized versions of their learning algorithms to the AIcrowd platform where they are trained from scratch on a hold-out dataset-environment pair for a total of 4-days on a pre-specified hardware platform. In this follow-up iteration to the NeurIPS 2019 MineRL Competition, we implement new features to expand the scale and reach of the competition. In response to the feedback of the previous participants, we introduce a second minor track focusing on solutions without access to environment interactions of any kind except during test-time. Further we aim to prompt domain agnostic submissions by implementing several novel competition mechanics including action-space randomization and desemantization of observations and actions.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "a64fbcf815a4f7e4d8b2d97be86451dca0a10d2f",
+    "externalIds": {
+      "DBLP": "conf/acl/MaoHLSG0C20",
+      "MAG": "3087273879",
+      "ArXiv": "2009.08553",
+      "ACL": "2021.acl-long.316",
+      "DOI": "10.18653/v1/2021.acl-long.316",
+      "CorpusId": 221802772
+    },
+    "url": "https://www.semanticscholar.org/paper/a64fbcf815a4f7e4d8b2d97be86451dca0a10d2f",
+    "title": "Generation-Augmented Retrieval for Open-Domain Question Answering",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2020,
+    "citationCount": 309,
+    "influentialCitationCount": 30,
+    "openAccessPdf": {
+      "url": "https://aclanthology.org/2021.acl-long.316.pdf",
+      "status": "HYBRID",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2009.08553, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "3375249",
+        "name": "Yuning Mao"
+      },
+      {
+        "authorId": "2107782398",
+        "name": "Pengcheng He"
+      },
+      {
+        "authorId": "2108860856",
+        "name": "Xiaodong Liu"
+      },
+      {
+        "authorId": "1752875",
+        "name": "Yelong Shen"
+      },
+      {
+        "authorId": "1800422",
+        "name": "Jianfeng Gao"
+      },
+      {
+        "authorId": "153034701",
+        "name": "Jiawei Han"
+      },
+      {
+        "authorId": "2109136147",
+        "name": "Weizhu Chen"
+      }
+    ],
+    "abstract": "We propose Generation-Augmented Retrieval (GAR) for answering open-domain questions, which augments a query through text generation of heuristically discovered relevant contexts without external resources as supervision. We demonstrate that the generated contexts substantially enrich the semantics of the queries and GAR with sparse representations (BM25) achieves comparable or better performance than state-of-the-art dense retrieval methods such as DPR. We show that generating diverse contexts for a query is beneficial as fusing their results consistently yields better retrieval accuracy. Moreover, as sparse and dense representations are often complementary, GAR can be easily combined with DPR to achieve even better performance. GAR achieves state-of-the-art performance on Natural Questions and TriviaQA datasets under the extractive QA setup when equipped with an extractive reader, and consistently outperforms other retrieval methods when the same generative reader is used.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+    "externalIds": {
+      "ArXiv": "2005.14165",
+      "DBLP": "conf/nips/BrownMRSKDNSSAA20",
+      "MAG": "3030163527",
+      "CorpusId": 218971783
+    },
+    "url": "https://www.semanticscholar.org/paper/90abbc2cf38462b954ae1b772fac9532e2ccd8b0",
+    "title": "Language Models are Few-Shot Learners",
+    "venue": "Neural Information Processing Systems",
+    "year": 2020,
+    "citationCount": 57998,
+    "influentialCitationCount": 5199,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2005.14165, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "31035595",
+        "name": "Tom B. Brown"
+      },
+      {
+        "authorId": "2056658938",
+        "name": "Benjamin Mann"
+      },
+      {
+        "authorId": "39849748",
+        "name": "Nick Ryder"
+      },
+      {
+        "authorId": "2065894334",
+        "name": "Melanie Subbiah"
+      },
+      {
+        "authorId": "152724169",
+        "name": "J. Kaplan"
+      },
+      {
+        "authorId": "6515819",
+        "name": "Prafulla Dhariwal"
+      },
+      {
+        "authorId": "2072676",
+        "name": "Arvind Neelakantan"
+      },
+      {
+        "authorId": "67311962",
+        "name": "Pranav Shyam"
+      },
+      {
+        "authorId": "144864359",
+        "name": "G. Sastry"
+      },
+      {
+        "authorId": "119609682",
+        "name": "Amanda Askell"
+      },
+      {
+        "authorId": "144517868",
+        "name": "S. Agarwal"
+      },
+      {
+        "authorId": "1404060687",
+        "name": "Ariel Herbert-Voss"
+      },
+      {
+        "authorId": "2064404342",
+        "name": "Gretchen Krueger"
+      },
+      {
+        "authorId": "103143311",
+        "name": "T. Henighan"
+      },
+      {
+        "authorId": "48422824",
+        "name": "R. Child"
+      },
+      {
+        "authorId": "1992922591",
+        "name": "A. Ramesh"
+      },
+      {
+        "authorId": "2052152920",
+        "name": "Daniel M. Ziegler"
+      },
+      {
+        "authorId": "49387725",
+        "name": "Jeff Wu"
+      },
+      {
+        "authorId": "2059411355",
+        "name": "Clemens Winter"
+      },
+      {
+        "authorId": "144239765",
+        "name": "Christopher Hesse"
+      },
+      {
+        "authorId": "2108828435",
+        "name": "Mark Chen"
+      },
+      {
+        "authorId": "2064673055",
+        "name": "Eric Sigler"
+      },
+      {
+        "authorId": "1380985420",
+        "name": "Ma-teusz Litwin"
+      },
+      {
+        "authorId": "145565184",
+        "name": "Scott Gray"
+      },
+      {
+        "authorId": "1490681878",
+        "name": "Benjamin Chess"
+      },
+      {
+        "authorId": "2115193883",
+        "name": "Jack Clark"
+      },
+      {
+        "authorId": "133740015",
+        "name": "Christopher Berner"
+      },
+      {
+        "authorId": "52238703",
+        "name": "Sam McCandlish"
+      },
+      {
+        "authorId": "38909097",
+        "name": "Alec Radford"
+      },
+      {
+        "authorId": "1701686",
+        "name": "I. Sutskever"
+      },
+      {
+        "authorId": "2698777",
+        "name": "Dario Amodei"
+      }
+    ],
+    "abstract": "Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "659bf9ce7175e1ec266ff54359e2bd76e0b7ff31",
+    "externalIds": {
+      "DBLP": "conf/nips/LewisPPPKGKLYR020",
+      "MAG": "3027879771",
+      "ArXiv": "2005.11401",
+      "CorpusId": 218869575
+    },
+    "url": "https://www.semanticscholar.org/paper/659bf9ce7175e1ec266ff54359e2bd76e0b7ff31",
+    "title": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
+    "venue": "Neural Information Processing Systems",
+    "year": 2020,
+    "citationCount": 13782,
+    "influentialCitationCount": 1296,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2005.11401, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "145222654",
+        "name": "Patrick Lewis"
+      },
+      {
+        "authorId": "3439053",
+        "name": "Ethan Perez"
+      },
+      {
+        "authorId": "1716179427",
+        "name": "Aleksandara Piktus"
+      },
+      {
+        "authorId": "40052301",
+        "name": "F. Petroni"
+      },
+      {
+        "authorId": "2067091563",
+        "name": "Vladimir Karpukhin"
+      },
+      {
+        "authorId": "39589154",
+        "name": "Naman Goyal"
+      },
+      {
+        "authorId": "103131985",
+        "name": "Heinrich Kuttler"
+      },
+      {
+        "authorId": "35084211",
+        "name": "M. Lewis"
+      },
+      {
+        "authorId": "144105277",
+        "name": "Wen-tau Yih"
+      },
+      {
+        "authorId": "2620211",
+        "name": "Tim Rocktäschel"
+      },
+      {
+        "authorId": "48662861",
+        "name": "Sebastian Riedel"
+      },
+      {
+        "authorId": "1743722",
+        "name": "Douwe Kiela"
+      }
+    ],
+    "abstract": "Large pre-trained language models have been shown to store factual knowledge in their parameters, and achieve state-of-the-art results when fine-tuned on downstream NLP tasks. However, their ability to access and precisely manipulate knowledge is still limited, and hence on knowledge-intensive tasks, their performance lags behind task-specific architectures. Additionally, providing provenance for their decisions and updating their world knowledge remain open research problems. Pre-trained models with a differentiable access mechanism to explicit non-parametric memory can overcome this issue, but have so far been only investigated for extractive downstream tasks. We explore a general-purpose fine-tuning recipe for retrieval-augmented generation (RAG) -- models which combine pre-trained parametric and non-parametric memory for language generation. We introduce RAG models where the parametric memory is a pre-trained seq2seq model and the non-parametric memory is a dense vector index of Wikipedia, accessed with a pre-trained neural retriever. We compare two RAG formulations, one which conditions on the same retrieved passages across the whole generated sequence, the other can use different passages per token. We fine-tune and evaluate our models on a wide range of knowledge-intensive NLP tasks and set the state-of-the-art on three open domain QA tasks, outperforming parametric seq2seq models and task-specific retrieve-and-extract architectures. For language generation tasks, we find that RAG models generate more specific, diverse and factual language than a state-of-the-art parametric-only seq2seq baseline.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2c87b6b48dba6315a6581098861f8bf2994799f6",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-1907-13440",
+      "MAG": "2965559017",
+      "ArXiv": "1907.13440",
+      "DOI": "10.24963/ijcai.2019/339",
+      "CorpusId": 199000710
+    },
+    "url": "https://www.semanticscholar.org/paper/2c87b6b48dba6315a6581098861f8bf2994799f6",
+    "title": "MineRL: A Large-Scale Dataset of Minecraft Demonstrations",
+    "venue": "International Joint Conference on Artificial Intelligence",
+    "year": 2019,
+    "citationCount": 289,
+    "influentialCitationCount": 41,
+    "openAccessPdf": {
+      "url": "https://www.ijcai.org/proceedings/2019/0339.pdf",
+      "status": "BRONZE",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1907.13440, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Mathematics"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "39121861",
+        "name": "William H. Guss"
+      },
+      {
+        "authorId": "103681415",
+        "name": "Brandon Houghton"
+      },
+      {
+        "authorId": "34887814",
+        "name": "Nicholay Topin"
+      },
+      {
+        "authorId": "2108692541",
+        "name": "Phillip Wang"
+      },
+      {
+        "authorId": "104300088",
+        "name": "Cayden R. Codel"
+      },
+      {
+        "authorId": "1956361",
+        "name": "M. Veloso"
+      },
+      {
+        "authorId": "145124475",
+        "name": "R. Salakhutdinov"
+      }
+    ],
+    "abstract": "The sample inefficiency of standard deep reinforcement learning methods precludes their application to many real-world problems. Methods which leverage human demonstrations require fewer samples but have been researched less. As demonstrated in the computer vision and natural language processing communities, large-scale datasets have the capacity to facilitate research by serving as an experimental and benchmarking platform for new methods. However, existing datasets compatible with reinforcement learning simulators do not have sufficient scale, structure, and quality to enable the further development and evaluation of methods focused on using human examples. Therefore, we introduce a comprehensive, large-scale, simulator-paired dataset of human demonstrations: MineRL. The dataset consists of over 60 million automatically annotated state-action pairs across a variety of related tasks in Minecraft, a dynamic, 3D, open-world environment. We present a novel data collection scheme which allows for the ongoing introduction of new tasks and the gathering of complete state information suitable for a variety of methods. We demonstrate the hierarchality, diversity, and scale of the MineRL dataset. Further, we show the difficulty of the Minecraft domain along with the potential of MineRL in developing techniques to solve key research challenges within it.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "8e08789b299e252674873fa898da5e7da67bb703",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-1904-10079",
+      "MAG": "2941355526",
+      "ArXiv": "1904.10079",
+      "CorpusId": 263795047
+    },
+    "url": "https://www.semanticscholar.org/paper/8e08789b299e252674873fa898da5e7da67bb703",
+    "title": "The MineRL Competition on Sample Efficient Reinforcement Learning using Human Priors",
+    "venue": "arXiv.org",
+    "year": 2019,
+    "citationCount": 71,
+    "influentialCitationCount": 4,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1904.10079, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Mathematics"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "39121861",
+        "name": "William H. Guss"
+      },
+      {
+        "authorId": "104300088",
+        "name": "Cayden R. Codel"
+      },
+      {
+        "authorId": "2256702356",
+        "name": "Katja Hofmann"
+      },
+      {
+        "authorId": "103681415",
+        "name": "Brandon Houghton"
+      },
+      {
+        "authorId": "67230338",
+        "name": "Noburu Kuno"
+      },
+      {
+        "authorId": "144177520",
+        "name": "Stephanie Milani"
+      },
+      {
+        "authorId": "24178944",
+        "name": "S. Mohanty"
+      },
+      {
+        "authorId": "2717017",
+        "name": "Diego Perez Liebana"
+      },
+      {
+        "authorId": "145124475",
+        "name": "R. Salakhutdinov"
+      },
+      {
+        "authorId": "34887814",
+        "name": "Nicholay Topin"
+      },
+      {
+        "authorId": "2285981900",
+        "name": "Manuela M. Veloso"
+      },
+      {
+        "authorId": "2108692541",
+        "name": "Phillip Wang"
+      }
+    ],
+    "abstract": "Though deep reinforcement learning has led to breakthroughs in many difficult domains, these successes have required an ever-increasing number of samples. As state-of-the-art reinforcement learning (RL) systems require an exponentially increasing number of samples, their development is restricted to a continually shrinking segment of the AI community. Likewise, many of these systems cannot be applied to real-world problems, where environment samples are expensive. Resolution of these limitations requires new, sample-efficient methods. To facilitate research in this direction, we introduce the MineRL Competition on Sample Efficient Reinforcement Learning using Human Priors. \nThe primary goal of the competition is to foster the development of algorithms which can efficiently leverage human demonstrations to drastically reduce the number of samples needed to solve complex, hierarchical, and sparse environments. To that end, we introduce: (1) the Minecraft ObtainDiamond task, a sequential decision making environment requiring long-term planning, hierarchical control, and efficient exploration methods; and (2) the MineRL-v0 dataset, a large-scale collection of over 60 million state-action pairs of human demonstrations that can be resimulated into embodied trajectories with arbitrary modifications to game state and visuals. \nParticipants will compete to develop systems which solve the ObtainDiamond task with a limited number of samples from the environment simulator, Malmo. The competition is structured into two rounds in which competitors are provided several paired versions of the dataset and environment with different game textures. At the end of each round, competitors will submit containerized versions of their learning algorithms and they will then be trained/evaluated from scratch on a hold-out dataset-environment pair for a total of 4-days on a prespecified hardware platform.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "12fcadd19ca4652934997ac537b071a4b6b221d2",
+    "externalIds": {
+      "MAG": "2887671224",
+      "DBLP": "conf/icml/AbelJGKL18",
+      "CorpusId": 46996931
+    },
+    "url": "https://www.semanticscholar.org/paper/12fcadd19ca4652934997ac537b071a4b6b221d2",
+    "title": "Policy and Value Transfer in Lifelong Reinforcement Learning",
+    "venue": "International Conference on Machine Learning",
+    "year": 2018,
+    "citationCount": 82,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "152422014",
+        "name": "David Abel"
+      },
+      {
+        "authorId": "3387240",
+        "name": "Yuu Jinnai"
+      },
+      {
+        "authorId": "1390575736",
+        "name": "Yue (Sophie) Guo"
+      },
+      {
+        "authorId": "1765407",
+        "name": "G. Konidaris"
+      },
+      {
+        "authorId": "144885169",
+        "name": "M. Littman"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "3f4c70c93c30352ed2b0259307ac51b5b6ffd478",
+    "externalIds": {
+      "DBLP": "conf/icml/AbelALL18",
+      "MAG": "2803178532",
+      "CorpusId": 46995658
+    },
+    "url": "https://www.semanticscholar.org/paper/3f4c70c93c30352ed2b0259307ac51b5b6ffd478",
+    "title": "State Abstractions for Lifelong Reinforcement Learning",
+    "venue": "International Conference on Machine Learning",
+    "year": 2018,
+    "citationCount": 136,
+    "influentialCitationCount": 7,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "152422014",
+        "name": "David Abel"
+      },
+      {
+        "authorId": "34544888",
+        "name": "Dilip Arumugam"
+      },
+      {
+        "authorId": "39251318",
+        "name": "Lucas Lehnert"
+      },
+      {
+        "authorId": "144885169",
+        "name": "M. Littman"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "30834ae1497c35d362eea14857d93c28d2d12b57",
+    "externalIds": {
+      "MAG": "2620290674",
+      "ArXiv": "1706.05064",
+      "DBLP": "conf/icml/OhSLK17",
+      "CorpusId": 11974467
+    },
+    "url": "https://www.semanticscholar.org/paper/30834ae1497c35d362eea14857d93c28d2d12b57",
+    "title": "Zero-Shot Task Generalization with Multi-Task Deep Reinforcement Learning",
+    "venue": "International Conference on Machine Learning",
+    "year": 2017,
+    "citationCount": 285,
+    "influentialCitationCount": 11,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/1706.05064, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2894414",
+        "name": "Junhyuk Oh"
+      },
+      {
+        "authorId": "1699868",
+        "name": "Satinder Singh"
+      },
+      {
+        "authorId": "1697141",
+        "name": "Honglak Lee"
+      },
+      {
+        "authorId": "143967473",
+        "name": "Pushmeet Kohli"
+      }
+    ],
+    "abstract": "As a step towards developing zero-shot task generalization capabilities in reinforcement learning (RL), we introduce a new RL problem where the agent should learn to execute sequences of instructions after learning useful skills that solve subtasks. In this problem, we consider two types of generalizations: to previously unseen instructions and to longer sequences of instructions. For generalization over unseen instructions, we propose a new objective which encourages learning correspondences between similar subtasks by making analogies. For generalization over sequential instructions, we present a hierarchical architecture where a meta controller learns to use the acquired skills for executing the instructions. To deal with delayed reward, we propose a new neural architecture in the meta controller that learns when to update the subtask, which makes learning more efficient. Experimental results on a stochastic 3D domain show that the proposed ideas are crucial for generalization to longer instructions as well as unseen instructions.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2d1ad38d83a5b8a6bb47630972ada82b62ea4aac",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2303-16563",
+      "DOI": "10.48550/arXiv.2303.16563",
+      "CorpusId": 257805102
+    },
+    "url": "https://www.semanticscholar.org/paper/2d1ad38d83a5b8a6bb47630972ada82b62ea4aac",
+    "title": "Plan4MC: Skill Reinforcement Learning and Planning for Open-World Minecraft Tasks",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 88,
+    "influentialCitationCount": 6,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2303.16563",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2303.16563?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2303.16563, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "1429192914",
+        "name": "Haoqi Yuan"
+      },
+      {
+        "authorId": "2115811509",
+        "name": "Chi Zhang"
+      },
+      {
+        "authorId": "2157834018",
+        "name": "Hongchen Wang"
+      },
+      {
+        "authorId": "2152182031",
+        "name": "Feiyang Xie"
+      },
+      {
+        "authorId": "2139688739",
+        "name": "Penglin Cai"
+      },
+      {
+        "authorId": "47866340",
+        "name": "Hao Dong"
+      },
+      {
+        "authorId": "2258676670",
+        "name": "Zongqing Lu"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "99832586d55f540f603637e458a292406a0ed75d",
+    "externalIds": {
+      "CorpusId": 252762395
+    },
+    "url": "https://www.semanticscholar.org/paper/99832586d55f540f603637e458a292406a0ed75d",
+    "title": "LANGUAGE MODELS",
+    "venue": "",
+    "year": 2023,
+    "citationCount": 7349,
+    "influentialCitationCount": 846,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2093302161",
+        "name": "Shunyu Yao"
+      },
+      {
+        "authorId": "2144551262",
+        "name": "Jeffrey Zhao"
+      },
+      {
+        "authorId": "150978762",
+        "name": "Dian Yu"
+      },
+      {
+        "authorId": "2140321952",
+        "name": "Nan Du"
+      },
+      {
+        "authorId": "1697494",
+        "name": "Izhak Shafran"
+      },
+      {
+        "authorId": "144958935",
+        "name": "Karthik Narasimhan"
+      },
+      {
+        "authorId": "145144022",
+        "name": "Yuan Cao"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "46299fee72ca833337b3882ae1d8316f44b32b3c",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2303-11366",
+      "CorpusId": 257636839
+    },
+    "url": "https://www.semanticscholar.org/paper/46299fee72ca833337b3882ae1d8316f44b32b3c",
+    "title": "Reflexion: an autonomous agent with dynamic memory and self-reflection",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 333,
+    "influentialCitationCount": 27,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2212367248",
+        "name": "Noah Shinn"
+      },
+      {
+        "authorId": "2212367414",
+        "name": "Beck Labash"
+      },
+      {
+        "authorId": "2162047785",
+        "name": "A. Gopinath"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "bd7e29e806cfa8cee017702c477debd6283a19ca",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2305-15486",
+      "DOI": "10.48550/arXiv.2305.15486",
+      "CorpusId": 271693858
+    },
+    "url": "https://www.semanticscholar.org/paper/bd7e29e806cfa8cee017702c477debd6283a19ca",
+    "title": "SPRING: GPT-4 Out-performs RL Algorithms by Studying Papers and Reasoning",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 25,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.15486",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2305.15486?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2305.15486, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2253837062",
+        "name": "Yue Wu"
+      },
+      {
+        "authorId": "9358910",
+        "name": "Shrimai Prabhumoye"
+      },
+      {
+        "authorId": "2008204295",
+        "name": "So Yeon Min"
+      },
+      {
+        "authorId": "3312309",
+        "name": "Yonatan Bisk"
+      },
+      {
+        "authorId": "2256996419",
+        "name": "Ruslan Salakhutdinov"
+      },
+      {
+        "authorId": "1746466",
+        "name": "A. Azaria"
+      },
+      {
+        "authorId": "2253469786",
+        "name": "Tom M. Mitchell"
+      },
+      {
+        "authorId": "2256011166",
+        "name": "Yuanzhi Li"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "8f0051c2fe31e542904b85198aaf97aee5eac0e0",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2309-17176",
+      "DOI": "10.48550/arXiv.2309.17176",
+      "CorpusId": 277633682
+    },
+    "url": "https://www.semanticscholar.org/paper/8f0051c2fe31e542904b85198aaf97aee5eac0e0",
+    "title": "RLAdapter: Bridging Large Language Models to Reinforcement Learning in Open Worlds",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 8,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2309.17176",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2309.17176?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2309.17176, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2324490975",
+        "name": "Wanpeng Zhang"
+      },
+      {
+        "authorId": "2258676670",
+        "name": "Zongqing Lu"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "81943619df503fca2d3f4976f60fd7d22146403a",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2303-10571",
+      "DOI": "10.48550/arXiv.2303.10571",
+      "CorpusId": 277633699
+    },
+    "url": "https://www.semanticscholar.org/paper/81943619df503fca2d3f4976f60fd7d22146403a",
+    "title": "CLIP4MC: An RL-Friendly Vision-Language Model for Minecraft",
+    "venue": "arXiv.org",
+    "year": 2023,
+    "citationCount": 5,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2303.10571",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.48550/arXiv.2303.10571?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.48550/arXiv.2303.10571, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "1742314398",
+        "name": "Ziluo Ding"
+      },
+      {
+        "authorId": "2199828096",
+        "name": "Hao Luo"
+      },
+      {
+        "authorId": "2408722241",
+        "name": "Ke Li"
+      },
+      {
+        "authorId": "2290003920",
+        "name": "Junpeng Yue"
+      },
+      {
+        "authorId": "2354947376",
+        "name": "Tiejun Huang"
+      },
+      {
+        "authorId": "2258676670",
+        "name": "Zongqing Lu"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Mcu: A task-centric framework for open-ended agent evaluation in minecraft",
+    "venue": "arXiv preprint",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "I want to mine 3 logs. Mining logs do not require tools. My inventory will has 3 logs",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "My current inventory has nothing",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "craft(obj = {\"stick\":4}, materials = {\"planks\":2}, tool = None) # step 3: craft 4 sticks from 2 planks",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "User:Mycurrent inventory has nothing. I current locate in plains.",
+    "venue": "How to obtain 1",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "The code for obtaining 1 wooden_pickaxe",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "I want to craft 4 stick from 2 planks. 2 planks can produce 4 planks",
+    "venue": "My inventory will add 4 stick and delete",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Failed Action: craft({\"stone_pickaxe\":1}, {\"cobblestone\":3, \"stick\":2}, \" crafting_table\")",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "JARVIS-1: Open-world Multi-task Agents with Memory-Augmented Multimodal Language Models",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  }
+]

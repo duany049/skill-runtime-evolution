@@ -1,0 +1,265 @@
+{
+  "status": "ok",
+  "sources": [
+    {
+      "candidate_id": "local:papers-2604-17308-skillflow-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2604-17308-skillflow-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2604-17308-skillflow-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2604.17308_SkillFlow.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 1
+    },
+    {
+      "candidate_id": "local:papers-2505-17673-bottom-up-agent",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2505-17673-bottom-up-agent-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2505-17673-bottom-up-agent-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2505.17673_Bottom-Up-Agent.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 2
+    },
+    {
+      "candidate_id": "local:papers-2604-04323-how-well-skills",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2604-04323-how-well-skills-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2604-04323-how-well-skills-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2604.04323_How-Well-Skills-Wild.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 3
+    },
+    {
+      "candidate_id": "local:papers-2604-20087-skilllearnbench-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2604-20087-skilllearnbench-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2604-20087-skilllearnbench-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2604.20087_SkillLearnBench.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 4
+    },
+    {
+      "candidate_id": "local:papers-2603-07978-osexpert-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2603-07978-osexpert-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2603-07978-osexpert-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2603.07978_OSExpert.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 5
+    },
+    {
+      "candidate_id": "local:papers-2602-02474-memskill-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2602-02474-memskill-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2602-02474-memskill-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2602.02474_MemSkill.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 6
+    },
+    {
+      "candidate_id": "local:papers-2311-05997-jarvis-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2311-05997-jarvis-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2311-05997-jarvis-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2311.05997_JARVIS-1.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 7
+    },
+    {
+      "candidate_id": "local:papers-2512-23880-cascade-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2512-23880-cascade-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2512-23880-cascade-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2512.23880_CASCADE.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 8
+    },
+    {
+      "candidate_id": "local:papers-2409-07429-awm-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2409-07429-awm-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2409-07429-awm-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2409.07429_AWM.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 9
+    },
+    {
+      "candidate_id": "local:papers-2506-06698-cer-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2506-06698-cer-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2506-06698-cer-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2506.06698_CER.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 10
+    },
+    {
+      "candidate_id": "local:papers-2510-04851-legomem-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2510-04851-legomem-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2510-04851-legomem-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2510.04851_LEGOMem.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 11
+    },
+    {
+      "candidate_id": "local:papers-2601-01885-agentic-memory-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2601-01885-agentic-memory-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2601-01885-agentic-memory-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2601.01885_Agentic-Memory.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 12
+    },
+    {
+      "candidate_id": "local:papers-2601-08323-atommem-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2601-08323-atommem-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2601-08323-atommem-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2601.08323_AtomMem.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 13
+    },
+    {
+      "candidate_id": "local:papers-2601-18204-memweaver-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2601-18204-memweaver-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2601-18204-memweaver-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2601.18204_MemWeaver.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 14
+    },
+    {
+      "candidate_id": "local:papers-2602-05832-ui-mem-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2602-05832-ui-mem-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2602-05832-ui-mem-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2602.05832_UI-Mem.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 15
+    },
+    {
+      "candidate_id": "local:papers-2602-02369-live-evo-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2602-02369-live-evo-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2602-02369-live-evo-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2602.02369_Live-Evo.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 16
+    },
+    {
+      "candidate_id": "local:papers-2305-16291-voyager-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2305-16291-voyager-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2305-16291-voyager-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2305.16291_Voyager.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 17
+    },
+    {
+      "candidate_id": "local:papers-2603-18743-memento-skills-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2603-18743-memento-skills-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2603-18743-memento-skills-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2603.18743_Memento-Skills.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 18
+    },
+    {
+      "candidate_id": "local:papers-2604-08377-skillclaw-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2604-08377-skillclaw-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2604-08377-skillclaw-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2604.08377_SkillClaw.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 19
+    },
+    {
+      "candidate_id": "local:papers-2512-10696-reme-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2512-10696-reme-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2512-10696-reme-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2512.10696_ReMe.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 20
+    },
+    {
+      "candidate_id": "local:papers-2512-18746-memevolve-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2512-18746-memevolve-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2512-18746-memevolve-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2512.18746_MemEvolve.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 21
+    },
+    {
+      "candidate_id": "local:papers-2601-22758-autorefine-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2601-22758-autorefine-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2601-22758-autorefine-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2601.22758_AutoRefine.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 22
+    },
+    {
+      "candidate_id": "local:papers-2508-06433-memp-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2508-06433-memp-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2508-06433-memp-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2508.06433_Memp.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 23
+    },
+    {
+      "candidate_id": "local:papers-2603-24533-ui-voyager-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2603-24533-ui-voyager-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2603-24533-ui-voyager-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2603.24533_UI-Voyager.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 24
+    },
+    {
+      "candidate_id": "local:papers-2602-01869-procmem-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2602-01869-procmem-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2602-01869-procmem-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2602.01869_ProcMEM.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 25
+    },
+    {
+      "candidate_id": "local:papers-2601-18510-jitrl-pdf",
+      "origin": "user_local",
+      "canonical_ingest_path": "raw\\tmp\\papers\\papers-2601-18510-jitrl-pdf-arxiv-src",
+      "prepared_path": "raw\\tmp\\papers\\papers-2601-18510-jitrl-pdf-arxiv-src",
+      "discovered_path": null,
+      "source_path": "raw\\papers\\2601.18510_JitRL.pdf",
+      "ingest_format": "directory",
+      "shortlist_rank": 26
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "raw/papers/2305.16291_Voyager.pdf": {
+    "title": "VOYAGER: An Open-Ended Embodied Agent with Large Language Models",
+    "arxiv_id": "2305.16291"
+  },
+  "raw/papers/2311.05997_JARVIS-1.pdf": {
+    "title": "JARVIS-1: Open-world Multi-task Agents with Memory-Augmented Multimodal Language Models",
+    "arxiv_id": "2311.05997"
+  },
+  "raw/papers/2409.07429_AWM.pdf": {
+    "title": "Agent Workflow Memory",
+    "arxiv_id": "2409.07429"
+  },
+  "raw/papers/2505.17673_Bottom-Up-Agent.pdf": {
+    "title": "Rethinking Agent Design: From Top-Down Workflows to Bottom-Up Skill Evolution",
+    "arxiv_id": "2505.17673"
+  },
+  "raw/papers/2506.06698_CER.pdf": {
+    "title": "Contextual Experience Replay for Self-Improvement of Language Agents",
+    "arxiv_id": "2506.06698"
+  },
+  "raw/papers/2508.06433_Memp.pdf": {
+    "title": "Memp: Exploring Agent Procedural Memory",
+    "arxiv_id": "2508.06433"
+  },
+  "raw/papers/2510.04851_LEGOMem.pdf": {
+    "title": "LEGOMem: Modular Procedural Memory for Multi-agent LLM Systems for Workflow Automation",
+    "arxiv_id": "2510.04851"
+  },
+  "raw/papers/2512.10696_ReMe.pdf": {
+    "title": "Remember Me, Refine Me: A Dynamic Procedural Memory Framework for Experience-Driven Agent Evolution",
+    "arxiv_id": "2512.10696"
+  },
+  "raw/papers/2512.18746_MemEvolve.pdf": {
+    "title": "MemEvolve: Meta-Evolution of Agent Memory Systems",
+    "arxiv_id": "2512.18746"
+  },
+  "raw/papers/2512.23880_CASCADE.pdf": {
+    "title": "CASCADE: Cumulative Agentic Skill Creation through Autonomous Development and Evolution",
+    "arxiv_id": "2512.23880"
+  },
+  "raw/papers/2601.01885_Agentic-Memory.pdf": {
+    "title": "Agentic Memory: Learning Unified Long-Term and Short-Term Memory Management for Large Language Model Agents",
+    "arxiv_id": "2601.01885"
+  },
+  "raw/papers/2601.08323_AtomMem.pdf": {
+    "title": "AtomMem: Learnable Dynamic Agentic Memory with Atomic Memory Operation",
+    "arxiv_id": "2601.08323"
+  },
+  "raw/papers/2601.18204_MemWeaver.pdf": {
+    "title": "MemWeaver: Weaving Hybrid Memories for Traceable Long-Horizon Agentic Reasoning",
+    "arxiv_id": "2601.18204"
+  },
+  "raw/papers/2601.18510_JitRL.pdf": {
+    "title": "Just-In-Time Reinforcement Learning: Continual Learning in LLM Agents Without Gradient Updates",
+    "arxiv_id": "2601.18510"
+  },
+  "raw/papers/2601.22758_AutoRefine.pdf": {
+    "title": "AutoRefine: From Trajectories to Reusable Expertise for Continual LLM Agent Refinement",
+    "arxiv_id": "2601.22758"
+  },
+  "raw/papers/2602.01869_ProcMEM.pdf": {
+    "title": "Skill-Pro: Learning Reusable Skills from Experience via Non-Parametric PPO for LLM Agents",
+    "arxiv_id": "2602.01869"
+  },
+  "raw/papers/2602.02369_Live-Evo.pdf": {
+    "title": "Live-Evo: Online Evolution of Agentic Memory from Continuous Feedback",
+    "arxiv_id": "2602.02369"
+  },
+  "raw/papers/2602.02474_MemSkill.pdf": {
+    "title": "MemSkill: Learning and Evolving Memory Skills for Self-Evolving Agents",
+    "arxiv_id": "2602.02474"
+  },
+  "raw/papers/2602.05832_UI-Mem.pdf": {
+    "title": "UI-Mem: Self-Evolving Experience Memory for Online Reinforcement Learning in Mobile GUI Agents",
+    "arxiv_id": "2602.05832"
+  },
+  "raw/papers/2603.07978_OSExpert.pdf": {
+    "title": "OSExpert: Computer-Use Agents Learning Professional Skills via Exploration",
+    "arxiv_id": "2603.07978"
+  },
+  "raw/papers/2603.18743_Memento-Skills.pdf": {
+    "title": "Memento-Skills: Let Agents Design Agents",
+    "arxiv_id": "2603.18743"
+  },
+  "raw/papers/2603.24533_UI-Voyager.pdf": {
+    "title": "UI-Voyager: A Self-Evolving GUI Agent Learning via Failed Experience",
+    "arxiv_id": "2603.24533"
+  },
+  "raw/papers/2604.04323_How-Well-Skills-Wild.pdf": {
+    "title": "How Well Do Agentic Skills Work in the Wild: Benchmarking LLM Skill Usage in Realistic Settings",
+    "arxiv_id": "2604.04323"
+  },
+  "raw/papers/2604.08377_SkillClaw.pdf": {
+    "title": "SkillClaw: Let Skills Evolve Collectively with Agentic Evolver",
+    "arxiv_id": "2604.08377"
+  },
+  "raw/papers/2604.17308_SkillFlow.pdf": {
+    "title": "SkillFlow: Benchmarking Lifelong Skill Discovery and Evolution for Autonomous Agents",
+    "arxiv_id": "2604.17308"
+  },
+  "raw/papers/2604.20087_SkillLearnBench.pdf": {
+    "title": "SkillLearnBench: Benchmarking Continual Learning Methods for Agent Skill Generation on Real-World Tasks",
+    "arxiv_id": "2604.20087"
+  }
+}

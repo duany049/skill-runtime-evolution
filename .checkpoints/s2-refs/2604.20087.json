@@ -1,0 +1,2568 @@
+[
+  {
+    "paperId": "8b02872a17028c037e214fef695304494c809411",
+    "externalIds": {
+      "ArXiv": "2603.25158",
+      "CorpusId": 286789995
+    },
+    "url": "https://www.semanticscholar.org/paper/8b02872a17028c037e214fef695304494c809411",
+    "title": "Trace2Skill: Distill Trajectory-Local Lessons into Transferable Agent Skills",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 15,
+    "influentialCitationCount": 5,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.25158, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2046974354",
+        "name": "Jingwei Ni"
+      },
+      {
+        "authorId": "2348795216",
+        "name": "Yihao Liu"
+      },
+      {
+        "authorId": "2376283956",
+        "name": "Xinpeng Liu"
+      },
+      {
+        "authorId": "2305734621",
+        "name": "Yutao Sun"
+      },
+      {
+        "authorId": "2410047889",
+        "name": "Mengyu Zhou"
+      },
+      {
+        "authorId": "2317015031",
+        "name": "Pengyu Cheng"
+      },
+      {
+        "authorId": "2362359364",
+        "name": "Dexin Wang"
+      },
+      {
+        "authorId": "2367008861",
+        "name": "Xiaoxi Jiang"
+      },
+      {
+        "authorId": "2366578182",
+        "name": "Guanjun Jiang"
+      }
+    ],
+    "abstract": "Equipping Large Language Model (LLM) agents with domain-specific skills is critical for tackling complex tasks. Yet, manual authoring creates a severe scalability bottleneck. Conversely, automated skill generation often yields fragile or fragmented results because it either relies on shallow parametric knowledge or sequentially overfits to non-generalizable trajectory-local lessons. To overcome this, we introduce Trace2Skill, a framework that mirrors how human experts author skills: by holistically analyzing broad execution experience before distilling it into a single, comprehensive guide. Instead of reacting sequentially to individual trajectories, Trace2Skill dispatches a parallel fleet of sub-agents to analyze a diverse pool of executions. It extracts trajectory-specific lessons and hierarchically consolidates them into a unified, conflict-free skill directory via inductive reasoning. Trace2Skill supports both deepening existing human-written skills and creating new ones from scratch. Experiments in challenging domains, such as spreadsheet, VisionQA and math reasoning, show that Trace2Skill significantly improves upon strong baselines, including Anthropic's official xlsx skills. Crucially, this trajectory-grounded evolution does not merely memorize task instances or model-specific quirks: evolved skills transfer across LLM scales and generalize to OOD settings. For example, skills evolved by Qwen3.5-35B on its own trajectories improved a Qwen3.5-122B agent by up to 57.65 absolute percentage points on WikiTableQuestions. Ultimately, our results demonstrate that complex agent experience can be packaged into highly transferable, declarative skills -- requiring no parameter updates, no external retrieval modules, and utilizing open-source models as small as 35B parameters.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2859af8b7e04397e65e78bf77ad7651e02a8726a",
+    "externalIds": {
+      "ArXiv": "2603.18743",
+      "CorpusId": 286673350
+    },
+    "url": "https://www.semanticscholar.org/paper/2859af8b7e04397e65e78bf77ad7651e02a8726a",
+    "title": "Memento-Skills: Let Agents Design Agents",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 10,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.18743, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2392193416",
+        "name": "Huichi Zhou"
+      },
+      {
+        "authorId": "2110835903",
+        "name": "Siyuan Guo"
+      },
+      {
+        "authorId": "2366662171",
+        "name": "Anji Liu"
+      },
+      {
+        "authorId": "2362872269",
+        "name": "Zhongwei Yu"
+      },
+      {
+        "authorId": "2290488048",
+        "name": "Ziqin Gong"
+      },
+      {
+        "authorId": "2323011620",
+        "name": "Bowen Zhao"
+      },
+      {
+        "authorId": "2284733788",
+        "name": "Zhixun Chen"
+      },
+      {
+        "authorId": "2307275479",
+        "name": "Menglong Zhang"
+      },
+      {
+        "authorId": "2370956570",
+        "name": "Yihang Chen"
+      },
+      {
+        "authorId": "2144499335",
+        "name": "Jinsong Li"
+      },
+      {
+        "authorId": "2244597119",
+        "name": "Runyu Yang"
+      },
+      {
+        "authorId": "2360392959",
+        "name": "Qiang Liu"
+      },
+      {
+        "authorId": "2392624228",
+        "name": "Xinle Yu"
+      },
+      {
+        "authorId": "2386641738",
+        "name": "Jianming Zhou"
+      },
+      {
+        "authorId": "2357977273",
+        "name": "Na Wang"
+      },
+      {
+        "authorId": "2118330396",
+        "name": "Chunyang Sun"
+      },
+      {
+        "authorId": "2376553213",
+        "name": "Jun Wang"
+      }
+    ],
+    "abstract": "We introduce \\emph{Memento-Skills}, a generalist, continually-learnable LLM agent system that functions as an \\emph{agent-designing agent}: it autonomously constructs, adapts, and improves task-specific agents through experience. The system is built on a memory-based reinforcement learning framework with \\emph{stateful prompts}, where reusable skills (stored as structured markdown files) serve as persistent, evolving memory. These skills encode both behaviour and context, enabling the agent to carry forward knowledge across interactions. Starting from simple elementary skills (like Web search and terminal operations), the agent continually improves via the \\emph{Read--Write Reflective Learning} mechanism introduced in \\emph{Memento~2}~\\cite{wang2025memento2}. In the \\emph{read} phase, a behaviour-trainable skill router selects the most relevant skill conditioned on the current stateful prompt; in the \\emph{write} phase, the agent updates and expands its skill library based on new experience. This closed-loop design enables \\emph{continual learning without updating LLM parameters}, as all adaptation is realised through the evolution of externalised skills and prompts. Unlike prior approaches that rely on human-designed agents, Memento-Skills enables a generalist agent to \\emph{design agents end-to-end} for new tasks. Through iterative skill generation and refinement, the system progressively improves its own capabilities. Experiments on the \\emph{General AI Assistants} benchmark and \\emph{Humanity's Last Exam} demonstrate sustained gains, achieving 26.2\\% and 116.2\\% relative improvements in overall accuracy, respectively. Code is available at https://github.com/Memento-Teams/Memento-Skills.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "9336f87bd96208dd0d43f19b087e507fdc64032c",
+    "externalIds": {
+      "ArXiv": "2603.13173",
+      "CorpusId": 286519985
+    },
+    "url": "https://www.semanticscholar.org/paper/9336f87bd96208dd0d43f19b087e507fdc64032c",
+    "title": "Semantic Invariance in Agentic AI",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 1,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.13173, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2157860770",
+        "name": "I. D. Zarzà"
+      },
+      {
+        "authorId": "40978371",
+        "name": "J. Curtò"
+      },
+      {
+        "authorId": "2280065086",
+        "name": "Jordi Cabot"
+      },
+      {
+        "authorId": "2286401139",
+        "name": "Pietro Manzoni"
+      },
+      {
+        "authorId": "1706042",
+        "name": "C. Calafate"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) increasingly serve as autonomous reasoning agents in decision support, scientific problem-solving, and multi-agent coordination systems. However, deploying LLM agents in consequential applications requires assurance that their reasoning remains stable under semantically equivalent input variations, a property we term semantic invariance. Standard benchmark evaluations, which assess accuracy on fixed, canonical problem formulations, fail to capture this critical reliability dimension. To address this shortcoming, in this paper we present a metamorphic testing framework for systematically assessing the robustness of LLM reasoning agents, applying eight semantic-preserving transformations (identity, paraphrase, fact reordering, expansion, contraction, academic context, business context, and contrastive formulation) across seven foundation models spanning four distinct architectural families: Hermes (70B, 405B), Qwen3 (30B-A3B, 235B-A22B), DeepSeek-R1, and gpt-oss (20B, 120B). Our evaluation encompasses 19 multi-step reasoning problems across eight scientific domains. The results reveal that model scale does not predict robustness: the smaller Qwen3-30B-A3B achieves the highest stability (79.6% invariant responses, semantic similarity 0.91), while larger models exhibit greater fragility.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "fd326439dd7b6d539f21bb087436a895e25fe52c",
+    "externalIds": {
+      "ArXiv": "2603.09002",
+      "CorpusId": 286424088
+    },
+    "url": "https://www.semanticscholar.org/paper/fd326439dd7b6d539f21bb087436a895e25fe52c",
+    "title": "Security Considerations for Multi-agent Systems",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 4,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.09002, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2241428388",
+        "name": "Tam n. Nguyen"
+      },
+      {
+        "authorId": "2377584122",
+        "name": "M. Ndebugre"
+      },
+      {
+        "authorId": "2285717158",
+        "name": "Dheeraj Arremsetty"
+      }
+    ],
+    "abstract": "Multi-agent artificial intelligence systems or MAS are systems of autonomous agents that exercise delegated tool authority, share persistent memory, and coordinate via inter-agent communication. MAS introduces qualitatively distinct security vulnerabilities from those documented for singular AI models. Existing security and governance frameworks were not designed for these emerging attack surfaces. This study systematically characterizes the threat landscape of MAS and quantitatively evaluates 16 security frameworks for AI against it. A four-phase methodology is proposed: constructing a deep technical knowledge base of production multi-agent architectures; conducting generative AI-assisted threat modeling scoped to MAS cybersecurity risks and validated by domain experts; structuring survey plans at individual-threat granularity; and scoring each framework on a three-point scale against the cybersecurity risks. The risks were organized into 193 distinct main threat items across nine risk categories. The expected minimal average score is 2. No reviewed framework achieves majority coverage of any single category. Non-Determinism (mean score 1.231 across all 16 frameworks) and Data Leakage (1.340) are the most under-addressed domains. The OWASP Agentic Security Initiative leads overall at 65.3\\% coverage and in the design phase; the CDAO Generative AI Responsible AI Toolkit leads in development and operational coverage. These results provide the first empirical cross-framework comparison for MAS security and offer evidence-based guidance for framework selection. Please check back for information on the published journal version.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "ce14734e615b845ec2471d9dc3f35d3d68dd5c22",
+    "externalIds": {
+      "ArXiv": "2603.02766",
+      "CorpusId": 286228833
+    },
+    "url": "https://www.semanticscholar.org/paper/ce14734e615b845ec2471d9dc3f35d3d68dd5c22",
+    "title": "EvoSkill: Automated Skill Discovery for Multi-Agent Systems",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 20,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.02766, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2186553606",
+        "name": "Salaheddin Alzubi"
+      },
+      {
+        "authorId": "2299428839",
+        "name": "N. Provenzano"
+      },
+      {
+        "authorId": "2421689239",
+        "name": "Jaydon Bingham"
+      },
+      {
+        "authorId": "2364826488",
+        "name": "Weiyuan Chen"
+      },
+      {
+        "authorId": "2274937078",
+        "name": "Tu Vu"
+      }
+    ],
+    "abstract": "Coding agents are increasingly used as general-purpose problem solvers, but their flexibility does not by itself confer the domain expertise needed for specialized tasks. Recent work addresses this through \\textit{agent skills}: reusable workflows, and code, that augment agents with domain-specific capabilities. Most skills today are hand-crafted, and existing evolutionary approaches optimize low-level artifacts (e.g. prompts \\&code) that are tightly coupled to specific models and tasks. We introduce \\textbf{EvoSkill}, a self-evolving framework that automatically discovers and refines agent skills through iterative failure analysis. EvoSkill analyzes execution failures, proposes new skills or edits to existing ones, and materializes them into structured, reusable skill folders. A Pareto frontier of agent programs governs selection, retaining only skills that improve held-out validation performance while the underlying model remains frozen. We evaluate EvoSkill on two benchmarks: OfficeQA, a grounded reasoning benchmark over U.S.\\ Treasury data, where it improves exact-match accuracy by \\textbf{7.3\\%} (60.6\\% $\\to$ 67.9\\%); and SealQA, a search-augmented QA benchmark with noisy retrieval, where it yields a \\textbf{12.1\\%} gain (26.6\\% $\\to$ 38.7\\%). We also investigate the zero-shot transfer capabilties of skills evolved on one task to the other; in particular: skills evolved from SealQA transfers zero-shot to BrowseComp, improving accuracy by \\textbf{5.3\\%} without modification demonstrating that skill-level optimization produces transferable capabilities beyond the training task.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "2f1f09543f5d0e5e4a2fd99bba5b5d46a572ebda",
+    "externalIds": {
+      "ArXiv": "2603.01145",
+      "DBLP": "journals/corr/abs-2603-01145",
+      "DOI": "10.48550/arXiv.2603.01145",
+      "CorpusId": 286224498
+    },
+    "url": "https://www.semanticscholar.org/paper/2f1f09543f5d0e5e4a2fd99bba5b5d46a572ebda",
+    "title": "AutoSkill: Experience-Driven Lifelong Learning via Skill Self-Evolution",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 18,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.01145, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2303799141",
+        "name": "Yutao Yang"
+      },
+      {
+        "authorId": "2274071511",
+        "name": "Junsong Li"
+      },
+      {
+        "authorId": "2319606952",
+        "name": "Qianjun Pan"
+      },
+      {
+        "authorId": "2351814214",
+        "name": "Bihao Zhan"
+      },
+      {
+        "authorId": "2361505671",
+        "name": "Yuxuan Cai"
+      },
+      {
+        "authorId": "2363503498",
+        "name": "Linge Du"
+      },
+      {
+        "authorId": "2385272474",
+        "name": "Jie Zhou"
+      },
+      {
+        "authorId": "2384876160",
+        "name": "Kai Chen"
+      },
+      {
+        "authorId": "2256591571",
+        "name": "Qin Chen"
+      },
+      {
+        "authorId": "2385114760",
+        "name": "Xin Li"
+      },
+      {
+        "authorId": "2354452439",
+        "name": "Bo Zhang"
+      },
+      {
+        "authorId": "2384802294",
+        "name": "Liang He"
+      }
+    ],
+    "abstract": "In practical LLM applications, users repeatedly express stable preferences and requirements, such as reducing hallucinations, following institutional writing conventions, or avoiding overly technical wording, yet such interaction experience is seldom consolidated into reusable knowledge. Consequently, LLM agents often fail to accumulate personalized capabilities across sessions. We present AutoSkill, an experience-driven lifelong learning framework that enables LLM agents to automatically derive, maintain, and reuse skills from dialogue and interaction traces. AutoSkill abstracts skills from user experience, supports their continual self-evolution, and dynamically injects relevant skills into future requests without retraining the underlying model. Designed as a model-agnostic plugin layer, it is compatible with existing LLMs and introduces a standardized skill representation for sharing and transfer across agents, users, and tasks. In this way, AutoSkill turns ephemeral interaction experience into explicit, reusable, and composable capabilities. This paper describes the motivation, architecture, skill lifecycle, and implementation of AutoSkill, and positions it with respect to prior work on memory, retrieval, personalization, and agentic systems. AutoSkill highlights a practical and scalable path toward lifelong personalized agents and personal digital surrogates.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "eb636dedbce820f3cea34264dba85295099cd253",
+    "externalIds": {
+      "ArXiv": "2603.04448",
+      "CorpusId": 286256378
+    },
+    "url": "https://www.semanticscholar.org/paper/eb636dedbce820f3cea34264dba85295099cd253",
+    "title": "SkillNet: Create, Evaluate, and Connect AI Skills",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 15,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2603.04448, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2117874250",
+        "name": "Yuanying Liang"
+      },
+      {
+        "authorId": "2331943932",
+        "name": "R. Zhong"
+      },
+      {
+        "authorId": "2411443410",
+        "name": "Haoming Xu"
+      },
+      {
+        "authorId": "2115487132",
+        "name": "Chen Jiang"
+      },
+      {
+        "authorId": "2354999372",
+        "name": "Yi Zhong"
+      },
+      {
+        "authorId": "2278840339",
+        "name": "Runnan Fang"
+      },
+      {
+        "authorId": "2275750026",
+        "name": "Jiasheng Gu"
+      },
+      {
+        "authorId": "152931849",
+        "name": "Shumin Deng"
+      },
+      {
+        "authorId": "2325556345",
+        "name": "Yu-Zhe Yao"
+      },
+      {
+        "authorId": "2218346459",
+        "name": "Mengru Wang"
+      },
+      {
+        "authorId": "2190751119",
+        "name": "Shuofei Qiao"
+      },
+      {
+        "authorId": "2152775219",
+        "name": "Xin Xu"
+      },
+      {
+        "authorId": "1514917592",
+        "name": "Tongtong Wu"
+      },
+      {
+        "authorId": "2363281493",
+        "name": "Kun Wang"
+      },
+      {
+        "authorId": "2365077986",
+        "name": "Yang Liu"
+      },
+      {
+        "authorId": "2059276046",
+        "name": "Zhen Bi"
+      },
+      {
+        "authorId": "2363791123",
+        "name": "Jungang Lou"
+      },
+      {
+        "authorId": "2288037929",
+        "name": "Yuchen Jiang"
+      },
+      {
+        "authorId": "2115314543",
+        "name": "Han Zhu"
+      },
+      {
+        "authorId": "2344817018",
+        "name": "Gang Yu"
+      },
+      {
+        "authorId": "2421428786",
+        "name": "Hai-Xu Hong"
+      },
+      {
+        "authorId": "2292090586",
+        "name": "Longtao Huang"
+      },
+      {
+        "authorId": "2276435001",
+        "name": "Hui Xue"
+      },
+      {
+        "authorId": "2375339748",
+        "name": "Chenxi Wang"
+      },
+      {
+        "authorId": "2257347517",
+        "name": "Yijun Wang"
+      },
+      {
+        "authorId": "2406821430",
+        "name": "Zifei Shan"
+      },
+      {
+        "authorId": "2145309336",
+        "name": "Xi Chen"
+      },
+      {
+        "authorId": "2363558591",
+        "name": "Zhaopeng Tu"
+      },
+      {
+        "authorId": "2068169902",
+        "name": "Feiyu Xiong"
+      },
+      {
+        "authorId": "2110972563",
+        "name": "Xin Xie"
+      },
+      {
+        "authorId": "2307568041",
+        "name": "Peng Zhang"
+      },
+      {
+        "authorId": "2322445265",
+        "name": "Zhengke Gui"
+      },
+      {
+        "authorId": "2287559875",
+        "name": "Lei Liang"
+      },
+      {
+        "authorId": "2298948358",
+        "name": "Jun Zhou"
+      },
+      {
+        "authorId": "2312367218",
+        "name": "C. Wu"
+      },
+      {
+        "authorId": "2267105913",
+        "name": "Jin Shang"
+      },
+      {
+        "authorId": "2367547961",
+        "name": "Yuan Gong"
+      },
+      {
+        "authorId": "2362676884",
+        "name": "Jun Lin"
+      },
+      {
+        "authorId": "2373397855",
+        "name": "Changliang Xu"
+      },
+      {
+        "authorId": "2398720430",
+        "name": "Hongji Deng"
+      },
+      {
+        "authorId": "2277649590",
+        "name": "Wen Zhang"
+      },
+      {
+        "authorId": "2254282405",
+        "name": "Keyan Ding"
+      },
+      {
+        "authorId": "2346632177",
+        "name": "Qiang Zhang"
+      },
+      {
+        "authorId": "2384821462",
+        "name": "Fei Huang"
+      },
+      {
+        "authorId": "2382942499",
+        "name": "Ningyu Zhang"
+      },
+      {
+        "authorId": "2377275432",
+        "name": "Jeff Z. Pan"
+      },
+      {
+        "authorId": "2284686899",
+        "name": "Guilin Qi"
+      },
+      {
+        "authorId": "2309198652",
+        "name": "Haofen Wang"
+      },
+      {
+        "authorId": "2254343747",
+        "name": "Huajun Chen"
+      }
+    ],
+    "abstract": "Current AI agents can flexibly invoke tools and execute complex tasks, yet their long-term advancement is hindered by the lack of systematic accumulation and transfer of skills. Without a unified mechanism for skill consolidation, agents frequently ``reinvent the wheel'', rediscovering solutions in isolated contexts without leveraging prior strategies. To overcome this limitation, we introduce SkillNet, an open infrastructure designed to create, evaluate, and organize AI skills at scale. SkillNet structures skills within a unified ontology that supports creating skills from heterogeneous sources, establishing rich relational connections, and performing multi-dimensional evaluation across Safety, Completeness, Executability, Maintainability, and Cost-awareness. Our infrastructure integrates a repository of over 200,000 skills, an interactive platform, and a versatile Python toolkit. Experimental evaluations on ALFWorld, WebShop, and ScienceWorld demonstrate that SkillNet significantly enhances agent performance, improving average rewards by 40% and reducing execution steps by 30% across multiple backbone models. By formalizing skills as evolving, composable assets, SkillNet provides a robust foundation for agents to move from transient experience to durable mastery.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "1f09ae8491805852a18c386104ee2539d43e29d9",
+    "externalIds": {
+      "ArXiv": "2602.12670",
+      "DBLP": "journals/corr/abs-2602-12670",
+      "DOI": "10.48550/arXiv.2602.12670",
+      "CorpusId": 285606595
+    },
+    "url": "https://www.semanticscholar.org/paper/1f09ae8491805852a18c386104ee2539d43e29d9",
+    "title": "SkillsBench: Benchmarking How Well Agent Skills Work Across Diverse Tasks",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 58,
+    "influentialCitationCount": 14,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.12670, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2401740322",
+        "name": "Xiangyi Li"
+      },
+      {
+        "authorId": "2394918893",
+        "name": "Wenbo Chen"
+      },
+      {
+        "authorId": "2266692918",
+        "name": "Yiming Liu"
+      },
+      {
+        "authorId": "2412815574",
+        "name": "Shenghan Zheng"
+      },
+      {
+        "authorId": "2390523235",
+        "name": "Xiaokun Chen"
+      },
+      {
+        "authorId": "2118918598",
+        "name": "Yifeng He"
+      },
+      {
+        "authorId": "2321670634",
+        "name": "Yubo Li"
+      },
+      {
+        "authorId": "2321695163",
+        "name": "B. You"
+      },
+      {
+        "authorId": "2309001842",
+        "name": "Haotian Shen"
+      },
+      {
+        "authorId": "2282025",
+        "name": "Jiankai Sun"
+      },
+      {
+        "authorId": "2366778797",
+        "name": "Shuyi Wang"
+      },
+      {
+        "authorId": "2312269673",
+        "name": "Qunhong Zeng"
+      },
+      {
+        "authorId": "2392287472",
+        "name": "Di Wang"
+      },
+      {
+        "authorId": "150345512",
+        "name": "Xuandong Zhao"
+      },
+      {
+        "authorId": "2365268574",
+        "name": "Yuanli Wang"
+      },
+      {
+        "authorId": "2410891465",
+        "name": "Roey Ben Chaim"
+      },
+      {
+        "authorId": "2305804282",
+        "name": "Zonglin Di"
+      },
+      {
+        "authorId": "2352066300",
+        "name": "Yi Gao"
+      },
+      {
+        "authorId": "2158107521",
+        "name": "Junwei He"
+      },
+      {
+        "authorId": "2410951444",
+        "name": "Yizhuo He"
+      },
+      {
+        "authorId": "2322802696",
+        "name": "Liqiang Jing"
+      },
+      {
+        "authorId": "2282113123",
+        "name": "Luyang Kong"
+      },
+      {
+        "authorId": "2405714069",
+        "name": "Xin Lan"
+      },
+      {
+        "authorId": "2390751616",
+        "name": "Jiachen Li"
+      },
+      {
+        "authorId": "2118193548",
+        "name": "Songlin Li"
+      },
+      {
+        "authorId": "2324002240",
+        "name": "Yijiang Li"
+      },
+      {
+        "authorId": "2343774884",
+        "name": "Yue Lin"
+      },
+      {
+        "authorId": "2406389729",
+        "name": "Xinyi Liu"
+      },
+      {
+        "authorId": "2304618595",
+        "name": "Xuanqing Liu"
+      },
+      {
+        "authorId": "2324655329",
+        "name": "H. Lyu"
+      },
+      {
+        "authorId": "2373557412",
+        "name": "Zexiong Ma"
+      },
+      {
+        "authorId": "2299941552",
+        "name": "Bowei Wang"
+      },
+      {
+        "authorId": "2282000019",
+        "name": "Runhui Wang"
+      },
+      {
+        "authorId": "2395369608",
+        "name": "Tianyu Wang"
+      },
+      {
+        "authorId": "2385454847",
+        "name": "Wengao Ye"
+      },
+      {
+        "authorId": "2358449883",
+        "name": "Yue Zhang"
+      },
+      {
+        "authorId": "2325951260",
+        "name": "Hanwen Xing"
+      },
+      {
+        "authorId": "2313514190",
+        "name": "Y. Xue"
+      },
+      {
+        "authorId": "2333363742",
+        "name": "Steven Dillmann"
+      },
+      {
+        "authorId": "2215819170",
+        "name": "Han Lee"
+      }
+    ],
+    "abstract": "Agent Skills are structured packages of procedural knowledge that augment LLM agents at inference time. Despite rapid adoption, there is no standard way to measure whether they actually help. We present SkillsBench, a benchmark of 86 tasks across 11 domains paired with curated Skills and deterministic verifiers. Each task is evaluated under three conditions: no Skills, curated Skills, and self-generated Skills. We test 7 agent-model configurations over 7,308 trajectories. Curated Skills raise average pass rate by 16.2 percentage points(pp), but effects vary widely by domain (+4.5pp for Software Engineering to +51.9pp for Healthcare) and 16 of 84 tasks show negative deltas. Self-generated Skills provide no benefit on average, showing that models cannot reliably author the procedural knowledge they benefit from consuming. Focused Skills with 2--3 modules outperform comprehensive documentation, and smaller models with Skills can match larger models without them.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "370193afcb842f88f725af2e9fd0bfaeee1bf452",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2602-08234",
+      "ArXiv": "2602.08234",
+      "DOI": "10.48550/arXiv.2602.08234",
+      "CorpusId": 285452037
+    },
+    "url": "https://www.semanticscholar.org/paper/370193afcb842f88f725af2e9fd0bfaeee1bf452",
+    "title": "SkillRL: Evolving Agents via Recursive Skill-Augmented Reinforcement Learning",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 56,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.08234, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2261083308",
+        "name": "Peng Xia"
+      },
+      {
+        "authorId": "2409869810",
+        "name": "Jianwen Chen"
+      },
+      {
+        "authorId": "2313676961",
+        "name": "Han Wang"
+      },
+      {
+        "authorId": "2384148523",
+        "name": "Jiaqi Liu"
+      },
+      {
+        "authorId": "2371073432",
+        "name": "Kaide Zeng"
+      },
+      {
+        "authorId": "2316017010",
+        "name": "Yu Wang"
+      },
+      {
+        "authorId": "2283875337",
+        "name": "Siwei Han"
+      },
+      {
+        "authorId": "2250759613",
+        "name": "Yiyang Zhou"
+      },
+      {
+        "authorId": "2255325982",
+        "name": "Xujiang Zhao"
+      },
+      {
+        "authorId": "2204622281",
+        "name": "Haifeng Chen"
+      },
+      {
+        "authorId": "2378598930",
+        "name": "Zeyu Zheng"
+      },
+      {
+        "authorId": "2308424591",
+        "name": "Cihang Xie"
+      },
+      {
+        "authorId": "18307037",
+        "name": "Huaxiu Yao"
+      }
+    ],
+    "abstract": "Large Language Model (LLM) agents have shown stunning results in complex tasks, yet they often operate in isolation, failing to learn from past experiences. Existing memory-based methods primarily store raw trajectories, which are often redundant and noise-heavy. This prevents agents from extracting high-level, reusable behavioral patterns that are essential for generalization. In this paper, we propose SkillRL, a framework that bridges the gap between raw experience and policy improvement through automatic skill discovery and recursive evolution. Our approach introduces an experience-based distillation mechanism to build a hierarchical skill library SkillBank, an adaptive retrieval strategy for general and task-specific heuristics, and a recursive evolution mechanism that allows the skill library to co-evolve with the agent's policy during reinforcement learning. These innovations significantly reduce the token footprint while enhancing reasoning utility. Experimental results on ALFWorld, WebShop and seven search-augmented tasks demonstrate that SkillRL achieves state-of-the-art performance, outperforming strong baselines over 15.3% and maintaining robustness as task complexity increases. Code is available at this https://github.com/aiming-lab/SkillRL.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "4599ac88745282b67902586acdf8530ed4a8e2cc",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2602-08004",
+      "ArXiv": "2602.08004",
+      "DOI": "10.48550/arXiv.2602.08004",
+      "CorpusId": 285453033
+    },
+    "url": "https://www.semanticscholar.org/paper/4599ac88745282b67902586acdf8530ed4a8e2cc",
+    "title": "Agent Skills: A Data-Driven Analysis of Claude Skills for Extending Large Language Model Functionality",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 14,
+    "influentialCitationCount": 2,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2602.08004, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "48229884",
+        "name": "G. Ling"
+      },
+      {
+        "authorId": "2053866242",
+        "name": "Shan Zhong"
+      },
+      {
+        "authorId": "2275839133",
+        "name": "R. Huang"
+      }
+    ],
+    "abstract": "Agent skills extend large language model (LLM) agents with reusable, program-like modules that define triggering conditions, procedural logic, and tool interactions. As these skills proliferate in public marketplaces, it is unclear what types are available, how users adopt them, and what risks they pose. To answer these questions, we conduct a large-scale, data-driven analysis of 40,285 publicly listed skills from a major marketplace. Our results show that skill publication tends to occur in short bursts that track shifts in community attention. We also find that skill content is highly concentrated in software engineering workflows, while information retrieval and content creation account for a substantial share of adoption. Beyond content trends, we uncover a pronounced supply-demand imbalance across categories, and we show that most skills remain within typical prompt budgets despite a heavy-tailed length distribution. Finally, we observe strong ecosystem homogeneity, with widespread intent-level redundancy, and we identify non-trivial safety risks, including skills that enable state-changing or system-level actions. Overall, our findings provide a quantitative snapshot of agent skills as an emerging infrastructure layer for agents and inform future work on skill reuse, standardization, and safety-aware design.",
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": "8f66f06304829890f83c428fb4677a54c91d9fbd",
+    "externalIds": {
+      "ArXiv": "2601.18491",
+      "CorpusId": 285051714
+    },
+    "url": "https://www.semanticscholar.org/paper/8f66f06304829890f83c428fb4677a54c91d9fbd",
+    "title": "AgentDoG: A Diagnostic Guardrail Framework for AI Agent Safety and Security",
+    "venue": "",
+    "year": 2026,
+    "citationCount": 10,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.18491, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": null,
+    "authors": [
+      {
+        "authorId": "2288245418",
+        "name": "Dongrui Liu"
+      },
+      {
+        "authorId": "2363494601",
+        "name": "Qihan Ren"
+      },
+      {
+        "authorId": "2407260385",
+        "name": "Chen Qian"
+      },
+      {
+        "authorId": "2364786854",
+        "name": "Shuai Shao"
+      },
+      {
+        "authorId": "2363802560",
+        "name": "Yuejin Xie"
+      },
+      {
+        "authorId": "2407503655",
+        "name": "Yu Li"
+      },
+      {
+        "authorId": "2345877810",
+        "name": "Zhonghao Yang"
+      },
+      {
+        "authorId": "2405758511",
+        "name": "Haoyu Luo"
+      },
+      {
+        "authorId": "2348580801",
+        "name": "Peng Wang"
+      },
+      {
+        "authorId": "2261365427",
+        "name": "Qingyu Liu"
+      },
+      {
+        "authorId": "2367737592",
+        "name": "Bin Hu"
+      },
+      {
+        "authorId": "2406050336",
+        "name": "Ling Tang"
+      },
+      {
+        "authorId": "2395769581",
+        "name": "Jilin Mei"
+      },
+      {
+        "authorId": "2406335070",
+        "name": "Dadi Guo"
+      },
+      {
+        "authorId": "2293366903",
+        "name": "Lei Yuan"
+      },
+      {
+        "authorId": "2403718571",
+        "name": "Junyao Yang"
+      },
+      {
+        "authorId": "2345009161",
+        "name": "Guanxu Chen"
+      },
+      {
+        "authorId": "2374114378",
+        "name": "Qihao Lin"
+      },
+      {
+        "authorId": "2390300742",
+        "name": "Yi Yu"
+      },
+      {
+        "authorId": "2379769297",
+        "name": "Bo Zhang"
+      },
+      {
+        "authorId": "2374348773",
+        "name": "Jiaxuan Guo"
+      },
+      {
+        "authorId": "2343537232",
+        "name": "Jie Zhang"
+      },
+      {
+        "authorId": "2395557290",
+        "name": "Wenqi Shao"
+      },
+      {
+        "authorId": "13689700",
+        "name": "Huiqi Deng"
+      },
+      {
+        "authorId": "2406843194",
+        "name": "Zhiheng Xi"
+      },
+      {
+        "authorId": "2408862789",
+        "name": "Wenjie Wang"
+      },
+      {
+        "authorId": "2305450295",
+        "name": "Wenxuan Wang"
+      },
+      {
+        "authorId": "2407397648",
+        "name": "Wen Shen"
+      },
+      {
+        "authorId": "2406097379",
+        "name": "Zhikai Chen"
+      },
+      {
+        "authorId": "2315760132",
+        "name": "Haoyu Xie"
+      },
+      {
+        "authorId": "2331150719",
+        "name": "Jialing Tao"
+      },
+      {
+        "authorId": "2371265188",
+        "name": "Juntao Dai"
+      },
+      {
+        "authorId": "2375167399",
+        "name": "Jiaming Ji"
+      },
+      {
+        "authorId": "36890675",
+        "name": "Zhongjie Ba"
+      },
+      {
+        "authorId": "2359205673",
+        "name": "Linfeng Zhang"
+      },
+      {
+        "authorId": "2406731429",
+        "name": "Yong Liu"
+      },
+      {
+        "authorId": "2278625639",
+        "name": "Quanshi Zhang"
+      },
+      {
+        "authorId": "2297722817",
+        "name": "Lei Zhu"
+      },
+      {
+        "authorId": "2372378604",
+        "name": "Zhihua Wei"
+      },
+      {
+        "authorId": "2407044970",
+        "name": "Hui Xue"
+      },
+      {
+        "authorId": "2373571619",
+        "name": "Chaochao Lu"
+      },
+      {
+        "authorId": "2384028213",
+        "name": "Jing Shao"
+      },
+      {
+        "authorId": "2393812515",
+        "name": "Xia Hu"
+      }
+    ],
+    "abstract": "The rise of AI agents introduces complex safety and security challenges arising from autonomous tool use and environmental interactions. Current guardrail models lack agentic risk awareness and transparency in risk diagnosis. To introduce an agentic guardrail that covers complex and numerous risky behaviors, we first propose a unified three-dimensional taxonomy that orthogonally categorizes agentic risks by their source (where), failure mode (how), and consequence (what). Guided by this structured and hierarchical taxonomy, we introduce a new fine-grained agentic safety benchmark (ATBench) and a Diagnostic Guardrail framework for agent safety and security (AgentDoG). AgentDoG provides fine-grained and contextual monitoring across agent trajectories. More Crucially, AgentDoG can diagnose the root causes of unsafe actions and seemingly safe but unreasonable actions, offering provenance and transparency beyond binary labels to facilitate effective agent alignment. AgentDoG variants are available in three sizes (4B, 7B, and 8B parameters) across Qwen and Llama model families. Extensive experimental results demonstrate that AgentDoG achieves state-of-the-art performance in agentic safety moderation in diverse and complex interactive scenarios. All models and datasets are openly released.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "d68f4ce9fe1184e74e6cb59493f8cb3ec2265f98",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2601-10156",
+      "ArXiv": "2601.10156",
+      "DOI": "10.48550/arXiv.2601.10156",
+      "CorpusId": 284738170
+    },
+    "url": "https://www.semanticscholar.org/paper/d68f4ce9fe1184e74e6cb59493f8cb3ec2265f98",
+    "title": "ToolSafe: Enhancing Tool Invocation Safety of LLM-based agents via Proactive Step-level Guardrail and Feedback",
+    "venue": "arXiv.org",
+    "year": 2026,
+    "citationCount": 12,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2601.10156, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2322501032",
+        "name": "Yutao Mou"
+      },
+      {
+        "authorId": "2406339162",
+        "name": "Zhangchi Xue"
+      },
+      {
+        "authorId": "2280261471",
+        "name": "Lijun Li"
+      },
+      {
+        "authorId": "31349067",
+        "name": "Peiyang Liu"
+      },
+      {
+        "authorId": "1705434",
+        "name": "Shikun Zhang"
+      },
+      {
+        "authorId": "145235149",
+        "name": "Wei Ye"
+      },
+      {
+        "authorId": "2405078690",
+        "name": "Jing Shao"
+      }
+    ],
+    "abstract": "While LLM-based agents can interact with environments via invoking external tools, their expanded capabilities also amplify security risks. Monitoring step-level tool invocation behaviors in real time and proactively intervening before unsafe execution is critical for agent deployment, yet remains under-explored. In this work, we first construct TS-Bench, a novel benchmark for step-level tool invocation safety detection in LLM agents. We then develop a guardrail model, TS-Guard, using multi-task reinforcement learning. The model proactively detects unsafe tool invocation actions before execution by reasoning over the interaction history. It assesses request harmfulness and action-attack correlations, producing interpretable and generalizable safety judgments and feedback. Furthermore, we introduce TS-Flow, a guardrail-feedback-driven reasoning framework for LLM agents, which reduces harmful tool invocations of ReAct-style agents by 65 percent on average and improves benign task completion by approximately 10 percent under prompt injection attacks.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "50bc6725b958e720005da3f383daae71fff20647",
+    "externalIds": {
+      "ArXiv": "2512.15163",
+      "DBLP": "journals/corr/abs-2512-15163",
+      "DOI": "10.48550/arXiv.2512.15163",
+      "CorpusId": 283920063
+    },
+    "url": "https://www.semanticscholar.org/paper/50bc6725b958e720005da3f383daae71fff20647",
+    "title": "MCP-SafetyBench: A Benchmark for Safety Evaluation of Large Language Models with Real-World MCP Servers",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 15,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2512.15163, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2327912477",
+        "name": "Xuan Zong"
+      },
+      {
+        "authorId": "2325243068",
+        "name": "Zhiqi Shen"
+      },
+      {
+        "authorId": "2260837117",
+        "name": "Lei Wang"
+      },
+      {
+        "authorId": "2285688334",
+        "name": "Yunshi Lan"
+      },
+      {
+        "authorId": "2237838716",
+        "name": "Chao Yang"
+      }
+    ],
+    "abstract": "Large language models (LLMs) are evolving into agentic systems that reason, plan, and operate external tools. The Model Context Protocol (MCP) is a key enabler of this transition, offering a standardized interface for connecting LLMs with heterogeneous tools and services. Yet MCP's openness and multi-server workflows introduce new safety risks that existing benchmarks fail to capture, as they focus on isolated attacks or lack real-world coverage. We present MCP-SafetyBench, a comprehensive benchmark built on real MCP servers that supports realistic multi-turn evaluation across five domains: browser automation, financial analysis, location navigation, repository management, and web search. It incorporates a unified taxonomy of 20 MCP attack types spanning server, host, and user sides, and includes tasks requiring multi-step reasoning and cross-server coordination under uncertainty. Using MCP-SafetyBench, we systematically evaluate leading open- and closed-source LLMs, revealing that all models remain vulnerable to MCP attacks, with a notable safety-utility trade-off. Our results highlight the urgent need for stronger defenses and establish MCP-SafetyBench as a foundation for diagnosing and mitigating safety risks in real-world MCP deployments.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "08e807359d54024bdcce8662bba942ea2894243b",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2509-23864",
+      "ArXiv": "2509.23864",
+      "DOI": "10.1109/ASEW67777.2025.00023",
+      "CorpusId": 281674765
+    },
+    "url": "https://www.semanticscholar.org/paper/08e807359d54024bdcce8662bba942ea2894243b",
+    "title": "AgentGuard: Runtime Verification of AI Agents",
+    "venue": "2025 40th IEEE/ACM International Conference on Automated Software Engineering Workshops (ASEW)",
+    "year": 2025,
+    "citationCount": 12,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2509.23864, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2316557134",
+        "name": "Roham Koohestani"
+      }
+    ],
+    "abstract": "The rapid evolution to autonomous, agentic AI systems introduces significant risks due to their inherent unpredictability and emergent behaviors; this also renders traditional verification methods inadequate and necessitates a shift towards probabilistic guarantees where the question is no longer if a system will fail, but the probability of its failure within given constraints. This paper presents AgentGuard, a framework for runtime verification of Agentic AI systems that provides continuous, quantitative assurance through a new paradigm called Dynamic Probabilistic Assurance. AgentGuard operates as an inspection layer that observes an agent’s raw I/O and abstracts it into formal events corresponding to transitions in a state model. It then uses online learning to dynamically build and update a Markov Decision Process (MDP) that formally models the agent’s emergent behavior. Using probabilistic model checking, the framework then verifies quantitative properties in real-time.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "8a8249936da1f4fbebd878244a317829968db3f6",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2505-20286",
+      "ArXiv": "2505.20286",
+      "DOI": "10.48550/arXiv.2505.20286",
+      "CorpusId": 278911023
+    },
+    "url": "https://www.semanticscholar.org/paper/8a8249936da1f4fbebd878244a317829968db3f6",
+    "title": "Alita: Generalist Agent Enabling Scalable Agentic Reasoning with Minimal Predefinition and Maximal Self-Evolution",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 95,
+    "influentialCitationCount": 8,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.20286, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2279349525",
+        "name": "Jiahao Qiu"
+      },
+      {
+        "authorId": "2365433022",
+        "name": "Xuan Qi"
+      },
+      {
+        "authorId": "2363808929",
+        "name": "Tongcheng Zhang"
+      },
+      {
+        "authorId": "2350749410",
+        "name": "Xinzhe Juan"
+      },
+      {
+        "authorId": "2319146416",
+        "name": "Jiacheng Guo"
+      },
+      {
+        "authorId": "2327002550",
+        "name": "Yifu Lu"
+      },
+      {
+        "authorId": "2355330920",
+        "name": "Yiming Wang"
+      },
+      {
+        "authorId": "2356822616",
+        "name": "Zixin Yao"
+      },
+      {
+        "authorId": "2363494601",
+        "name": "Qihan Ren"
+      },
+      {
+        "authorId": "2356369370",
+        "name": "Xun Jiang"
+      },
+      {
+        "authorId": "2373728681",
+        "name": "Xin Zhou"
+      },
+      {
+        "authorId": "2288245418",
+        "name": "Dongrui Liu"
+      },
+      {
+        "authorId": "2336829232",
+        "name": "Ling Yang"
+      },
+      {
+        "authorId": "2326341284",
+        "name": "Yue Wu"
+      },
+      {
+        "authorId": "2242535459",
+        "name": "Kaixuan Huang"
+      },
+      {
+        "authorId": "2364422768",
+        "name": "Shilong Liu"
+      },
+      {
+        "authorId": "22642319",
+        "name": "Hongru Wang"
+      },
+      {
+        "authorId": "2327563557",
+        "name": "Mengdi Wang"
+      }
+    ],
+    "abstract": "Recent advances in large language models (LLMs) have enabled agents to autonomously perform complex, open-ended tasks. However, many existing frameworks depend heavily on manually predefined tools and workflows, which hinder their adaptability, scalability, and generalization across domains. In this work, we introduce Alita--a generalist agent designed with the principle of\"Simplicity is the ultimate sophistication,\"enabling scalable agentic reasoning through minimal predefinition and maximal self-evolution. For minimal predefinition, Alita is equipped with only one component for direct problem-solving, making it much simpler and neater than previous approaches that relied heavily on hand-crafted, elaborate tools and workflows. This clean design enhances its potential to generalize to challenging questions, without being limited by tools. For Maximal self-evolution, we enable the creativity of Alita by providing a suite of general-purpose components to autonomously construct, refine, and reuse external capabilities by generating task-related model context protocols (MCPs) from open source, which contributes to scalable agentic reasoning. Notably, Alita achieves 75.15% pass@1 and 87.27% pass@3 accuracy, which is top-ranking among general-purpose agents, on the GAIA benchmark validation dataset, 74.00% and 52.00% pass@1, respectively, on Mathvista and PathVQA, outperforming many agent systems with far greater complexity. More details will be updated at $\\href{https://github.com/CharlesQ9/Alita}{https://github.com/CharlesQ9/Alita}$.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "d44ff975b27dbfbf748ebb8fa815cb423c6fe53f",
+    "externalIds": {
+      "ArXiv": "2505.19253",
+      "DBLP": "journals/corr/abs-2505-19253",
+      "DOI": "10.48550/arXiv.2505.19253",
+      "CorpusId": 278905384
+    },
+    "url": "https://www.semanticscholar.org/paper/d44ff975b27dbfbf748ebb8fa815cb423c6fe53f",
+    "title": "DeepResearchGym: A Free, Transparent, and Reproducible Evaluation Sandbox for Deep Research",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 32,
+    "influentialCitationCount": 10,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2505.19253, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2295512058",
+        "name": "João Coelho"
+      },
+      {
+        "authorId": "2363497397",
+        "name": "Jingjie Ning"
+      },
+      {
+        "authorId": "2329357611",
+        "name": "Jingyuan He"
+      },
+      {
+        "authorId": "2363495867",
+        "name": "Kangrui Mao"
+      },
+      {
+        "authorId": "2283501463",
+        "name": "Abhijay Paladugu"
+      },
+      {
+        "authorId": "2363497330",
+        "name": "P. Setlur"
+      },
+      {
+        "authorId": "2363690794",
+        "name": "Jiahe Jin"
+      },
+      {
+        "authorId": "2310820252",
+        "name": "James P. Callan"
+      },
+      {
+        "authorId": "2283772665",
+        "name": "João Magalhães"
+      },
+      {
+        "authorId": "2283771934",
+        "name": "Bruno Martins"
+      },
+      {
+        "authorId": "2295512254",
+        "name": "Chenyan Xiong"
+      }
+    ],
+    "abstract": "Deep research systems represent an emerging class of agentic information retrieval methods that generate comprehensive and well-supported reports to complex queries. However, most existing frameworks rely on dynamic commercial search APIs, which pose reproducibility and transparency challenges in addition to their cost. To address these limitations, we introduce \\textsc{DeepResearchGym} as an open-source sandbox that combines a reproducible search API with a rigorous evaluation protocol for benchmarking deep research systems. The API indexes large-scale public web corpora, namely ClueWeb22 and FineWeb, using a state-of-the-art dense retriever and approximate nearest neighbor search via DiskANN. It achieves lower latency than popular commercial APIs while ensuring stable document rankings across runs, and is free for research use. To evaluate deep research systems'outputs, we extend the Researchy Questions benchmark with automatic metrics through LLM-as-a-judge to measure alignment with users'information needs, retrieval faithfulness, and report quality. Experimental results show that systems integrated with~\\textsc{DeepResearchGym} achieve performance comparable to those using commercial APIs, with performance rankings remaining consistent across evaluation metrics. A case study on short-answer search agents further demonstrates the sandbox's utility for cost-effective training, showing that models trained within the sandbox can generalize to commercial search.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "eda5889e6ebcdd761512d1b544c4adeccb9a1981",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2504-06821",
+      "ArXiv": "2504.06821",
+      "DOI": "10.48550/arXiv.2504.06821",
+      "CorpusId": 277634286
+    },
+    "url": "https://www.semanticscholar.org/paper/eda5889e6ebcdd761512d1b544c4adeccb9a1981",
+    "title": "Inducing Programmatic Skills for Agentic Tasks",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 48,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.06821, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2307569999",
+        "name": "Z. Wang"
+      },
+      {
+        "authorId": "2354334142",
+        "name": "Apurva Gandhi"
+      },
+      {
+        "authorId": "2337795179",
+        "name": "Graham Neubig"
+      },
+      {
+        "authorId": "2261278355",
+        "name": "Daniel Fried"
+      }
+    ],
+    "abstract": "To succeed in common digital tasks such as web navigation, agents must carry out a variety of specialized tasks such as searching for products or planning a travel route. To tackle these tasks, agents can bootstrap themselves by learning task-specific skills online through interaction with the web environment. In this work, we demonstrate that programs are an effective representation for skills. We propose agent skill induction (ASI), which allows agents to adapt themselves by inducing, verifying, and utilizing program-based skills on the fly. We start with an evaluation on the WebArena agent benchmark and show that ASI outperforms the static baseline agent and its text-skill counterpart by 23.5% and 11.3% in success rate, mainly thanks to the programmatic verification guarantee during the induction phase. ASI also improves efficiency by reducing 10.7-15.3% of the steps over baselines, by composing primitive actions (e.g., click) into higher-level skills (e.g., search product). We then highlight the efficacy of ASI in remaining efficient and accurate under scaled-up web activities. Finally, we examine the generalizability of induced skills when transferring between websites, and find that ASI can effectively reuse common skills, while also updating incompatible skills to versatile website changes.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "69768fdcb8c2bbf5c658c737b33d9c95ea98f60f",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2504-07079",
+      "ArXiv": "2504.07079",
+      "DOI": "10.48550/arXiv.2504.07079",
+      "CorpusId": 277634081
+    },
+    "url": "https://www.semanticscholar.org/paper/69768fdcb8c2bbf5c658c737b33d9c95ea98f60f",
+    "title": "SkillWeaver: Web Agents can Self-Improve by Discovering and Honing Skills",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 62,
+    "influentialCitationCount": 5,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2504.07079, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2112670551",
+        "name": "Boyuan Zheng"
+      },
+      {
+        "authorId": "2192713722",
+        "name": "Michael Y. Fatemi"
+      },
+      {
+        "authorId": "2346309962",
+        "name": "Xiaolong Jin"
+      },
+      {
+        "authorId": "2307569999",
+        "name": "Z. Wang"
+      },
+      {
+        "authorId": "2354334142",
+        "name": "Apurva Gandhi"
+      },
+      {
+        "authorId": "2290031618",
+        "name": "Yueqi Song"
+      },
+      {
+        "authorId": "2022231256",
+        "name": "Yu Gu"
+      },
+      {
+        "authorId": "2089885442",
+        "name": "Jayanth Srinivasa"
+      },
+      {
+        "authorId": "2284307754",
+        "name": "Gaowen Liu"
+      },
+      {
+        "authorId": "2337795179",
+        "name": "Graham Neubig"
+      },
+      {
+        "authorId": "1758652",
+        "name": "Yu Su"
+      }
+    ],
+    "abstract": "To survive and thrive in complex environments, humans have evolved sophisticated self-improvement mechanisms through environment exploration, hierarchical abstraction of experiences into reuseable skills, and collaborative construction of an ever-growing skill repertoire. Despite recent advancements, autonomous web agents still lack crucial self-improvement capabilities, struggling with procedural knowledge abstraction, refining skills, and skill composition. In this work, we introduce SkillWeaver, a skill-centric framework enabling agents to self-improve by autonomously synthesizing reusable skills as APIs. Given a new website, the agent autonomously discovers skills, executes them for practice, and distills practice experiences into robust APIs. Iterative exploration continually expands a library of lightweight, plug-and-play APIs, significantly enhancing the agent's capabilities. Experiments on WebArena and real-world websites demonstrate the efficacy of SkillWeaver, achieving relative success rate improvements of 31.8% and 39.8%, respectively. Additionally, APIs synthesized by strong agents substantially enhance weaker agents through transferable skills, yielding improvements of up to 54.3% on WebArena. These results demonstrate the effectiveness of honing diverse website interactions into APIs, which can be seamlessly shared among various web agents.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "aa52e7a225c53f40e28a84626a369e25b3bc37a3",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2502-11090",
+      "ArXiv": "2502.11090",
+      "DOI": "10.48550/arXiv.2502.11090",
+      "CorpusId": 276408695
+    },
+    "url": "https://www.semanticscholar.org/paper/aa52e7a225c53f40e28a84626a369e25b3bc37a3",
+    "title": "SafeDialBench: A Fine-Grained Safety Benchmark for Large Language Models in Multi-Turn Dialogues with Diverse Jailbreak Attacks",
+    "venue": "arXiv.org",
+    "year": 2025,
+    "citationCount": 26,
+    "influentialCitationCount": 7,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2502.11090, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2259943602",
+        "name": "Hongye Cao"
+      },
+      {
+        "authorId": "2345859557",
+        "name": "Yanming Wang"
+      },
+      {
+        "authorId": "2363766118",
+        "name": "Sijia Jing"
+      },
+      {
+        "authorId": "2348072253",
+        "name": "Ziyue Peng"
+      },
+      {
+        "authorId": "2345836336",
+        "name": "Zhixin Bai"
+      },
+      {
+        "authorId": "2345895060",
+        "name": "Zhe Cao"
+      },
+      {
+        "authorId": "2345699513",
+        "name": "Meng Fang"
+      },
+      {
+        "authorId": "2345696555",
+        "name": "Fan Feng"
+      },
+      {
+        "authorId": "2345871361",
+        "name": "Boyan Wang"
+      },
+      {
+        "authorId": "2346051111",
+        "name": "Jiaheng Liu"
+      },
+      {
+        "authorId": "2345855784",
+        "name": "Tianpei Yang"
+      },
+      {
+        "authorId": "2055851838",
+        "name": "Jing Huo"
+      },
+      {
+        "authorId": "2345891695",
+        "name": "Yang Gao"
+      },
+      {
+        "authorId": "2346812940",
+        "name": "Fanyu Meng"
+      },
+      {
+        "authorId": "2345859584",
+        "name": "Xi Yang"
+      },
+      {
+        "authorId": "2237426629",
+        "name": "Chao Deng"
+      },
+      {
+        "authorId": "2144086553",
+        "name": "Junlan Feng"
+      }
+    ],
+    "abstract": "With the rapid advancement of Large Language Models (LLMs), the safety of LLMs has been a critical concern requiring precise assessment. Current benchmarks primarily concentrate on single-turn dialogues or a single jailbreak attack method to assess the safety. Additionally, these benchmarks have not taken into account the LLM's capability of identifying and handling unsafe information in detail. To address these issues, we propose a fine-grained benchmark SafeDialBench for evaluating the safety of LLMs across various jailbreak attacks in multi-turn dialogues. Specifically, we design a two-tier hierarchical safety taxonomy that considers 6 safety dimensions and generates more than 4000 multi-turn dialogues in both Chinese and English under 22 dialogue scenarios. We employ 7 jailbreak attack strategies, such as reference attack and purpose reverse, to enhance the dataset quality for dialogue generation. Notably, we construct an innovative assessment framework of LLMs, measuring capabilities in detecting, and handling unsafe information and maintaining consistency when facing jailbreak attacks. Experimental results across 17 LLMs reveal that Yi-34B-Chat and GLM4-9B-Chat demonstrate superior safety performance, while Llama3.1-8B-Instruct and o3-mini exhibit safety vulnerabilities.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "7ec9a50b9a91b2d0ec60a335396d0d2daedb5c6b",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2501-15147",
+      "ArXiv": "2501.15147",
+      "DOI": "10.1109/TPAMI.2025.3539433",
+      "CorpusId": 275921533,
+      "PubMed": "40031783"
+    },
+    "url": "https://www.semanticscholar.org/paper/7ec9a50b9a91b2d0ec60a335396d0d2daedb5c6b",
+    "title": "A Causality-Aware Paradigm for Evaluating Creativity of Multimodal Large Language Models",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "year": 2025,
+    "citationCount": 15,
+    "influentialCitationCount": 0,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2501.15147, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Medicine"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2109670338",
+        "name": "Zhongzhan Huang"
+      },
+      {
+        "authorId": "2053866242",
+        "name": "Shan Zhong"
+      },
+      {
+        "authorId": "2272787003",
+        "name": "Pan Zhou"
+      },
+      {
+        "authorId": "2269765109",
+        "name": "Shanghua Gao"
+      },
+      {
+        "authorId": "2095762",
+        "name": "M. Zitnik"
+      },
+      {
+        "authorId": "2280319348",
+        "name": "Liang Lin"
+      }
+    ],
+    "abstract": "Recently, numerous benchmarks have been developed to evaluate the logical reasoning abilities of large language models (LLMs). However, assessing the equally important creative capabilities of LLMs is challenging due to the subjective, diverse, and data-scarce nature of creativity, especially in multimodal scenarios. In this paper, we consider the comprehensive pipeline for evaluating the creativity of multimodal LLMs, with a focus on suitable evaluation platforms and methodologies. First, we find the Oogiri game—a creativity-driven task requiring humor, associative thinking, and the ability to produce unexpected responses to text, images, or both. This game aligns well with the input-output structure of modern multimodal LLMs and benefits from a rich repository of high-quality, human-annotated creative responses, making it an ideal platform for studying LLM creativity. Next, beyond using the Oogiri game for standard evaluations like ranking and selection, we propose LoTbench, an interactive, causality-aware evaluation framework, to further address some intrinsic risks in standard evaluations, such as information leakage and limited interpretability. The proposed LoTbench not only quantifies LLM creativity more effectively but also visualizes the underlying creative thought processes. Our results show that while most LLMs exhibit constrained creativity, the performance gap between LLMs and humans is not insurmountable. Furthermore, we observe a strong correlation between results from the multimodal cognition benchmark MMMU and LoTbench, but only a weak connection with traditional creativity metrics. This suggests that LoTbench better aligns with human cognitive theories, highlighting cognition as a critical foundation in the early stages of creativity and enabling the bridging of diverse concepts. Project Page.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "7d11400eeb317ebee278f49e108226a4f8555dda",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2412-14470",
+      "ArXiv": "2412.14470",
+      "DOI": "10.48550/arXiv.2412.14470",
+      "CorpusId": 274859514
+    },
+    "url": "https://www.semanticscholar.org/paper/7d11400eeb317ebee278f49e108226a4f8555dda",
+    "title": "Agent-SafetyBench: Evaluating the Safety of LLM Agents",
+    "venue": "arXiv.org",
+    "year": 2024,
+    "citationCount": 165,
+    "influentialCitationCount": 13,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2412.14470, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "2307018580",
+        "name": "Zhexin Zhang"
+      },
+      {
+        "authorId": "2309479442",
+        "name": "Shiyao Cui"
+      },
+      {
+        "authorId": "2287817232",
+        "name": "Yida Lu"
+      },
+      {
+        "authorId": "2336082821",
+        "name": "Jingzhuo Zhou"
+      },
+      {
+        "authorId": "2266814346",
+        "name": "Junxiao Yang"
+      },
+      {
+        "authorId": "2253869803",
+        "name": "Hongning Wang"
+      },
+      {
+        "authorId": "2254009342",
+        "name": "Minlie Huang"
+      }
+    ],
+    "abstract": "As large language models (LLMs) are increasingly deployed as agents, their integration into interactive environments and tool use introduce new safety challenges beyond those associated with the models themselves. However, the absence of comprehensive benchmarks for evaluating agent safety presents a significant barrier to effective assessment and further improvement. In this paper, we introduce Agent-SafetyBench, a comprehensive benchmark designed to evaluate the safety of LLM agents. Agent-SafetyBench encompasses 349 interaction environments and 2,000 test cases, evaluating 8 categories of safety risks and covering 10 common failure modes frequently encountered in unsafe interactions. Our evaluation of 16 popular LLM agents reveals a concerning result: none of the agents achieves a safety score above 60%. This highlights significant safety challenges in LLM agents and underscores the considerable need for improvement. Through failure mode and helpfulness analysis, we summarize two fundamental safety defects in current LLM agents: lack of robustness and lack of risk awareness. Furthermore, our findings suggest that reliance on defense prompts alone may be insufficient to address these safety issues, emphasizing the need for more advanced and robust strategies. To drive progress in this area, Agent-SafetyBench has been released at https://github.com/thu-coai/Agent-SafetyBench/ to facilitate further research in agent safety evaluation and improvement.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "c68cc84ec7808d7bbd5686a6bd1393752a9d8e8d",
+    "externalIds": {
+      "ArXiv": "2409.07429",
+      "DBLP": "conf/icml/WangMFN25",
+      "DOI": "10.48550/arXiv.2409.07429",
+      "CorpusId": 272592995
+    },
+    "url": "https://www.semanticscholar.org/paper/c68cc84ec7808d7bbd5686a6bd1393752a9d8e8d",
+    "title": "Agent Workflow Memory",
+    "venue": "International Conference on Machine Learning",
+    "year": 2024,
+    "citationCount": 147,
+    "influentialCitationCount": 15,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2409.07429, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2307569999",
+        "name": "Z. Wang"
+      },
+      {
+        "authorId": "2323437497",
+        "name": "Jiayuan Mao"
+      },
+      {
+        "authorId": "2261278355",
+        "name": "Daniel Fried"
+      },
+      {
+        "authorId": "2265547593",
+        "name": "Graham Neubig"
+      }
+    ],
+    "abstract": "Despite the potential of language model-based agents to solve real-world tasks such as web navigation, current methods still struggle with long-horizon tasks with complex action trajectories. In contrast, humans can flexibly solve complex tasks by learning reusable task workflows from past experiences and using them to guide future actions. To build agents that can similarly benefit from this process, we introduce Agent Workflow Memory (AWM), a method for inducing commonly reused routines, i.e., workflows, and selectively providing workflows to the agent to guide subsequent generations. AWM flexibly applies to both offline and online scenarios, where agents induce workflows from training examples beforehand or from test queries on the fly. We experiment on two major web navigation benchmarks -- Mind2Web and WebArena -- that collectively cover 1000+ tasks from 200+ domains across travel, shopping, and social media, among others. AWM substantially improves the baseline results by 24.6% and 51.1% relative success rate on Mind2Web and WebArena while reducing the number of steps taken to solve WebArena tasks successfully. Furthermore, online AWM robustly generalizes in cross-task, website, and domain evaluations, surpassing baselines from 8.9 to 14.0 absolute points as train-test task distribution gaps widen.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "7d09c6c8ef1e1c0c447cb8910c27a7acf1dd96af",
+    "externalIds": {
+      "DBLP": "journals/csur/ShiXWQWWWEW26",
+      "ArXiv": "2404.16789",
+      "DOI": "10.1145/3735633",
+      "CorpusId": 269362836
+    },
+    "url": "https://www.semanticscholar.org/paper/7d09c6c8ef1e1c0c447cb8910c27a7acf1dd96af",
+    "title": "Continual Learning of Large Language Models: A Comprehensive Survey",
+    "venue": "ACM Computing Surveys",
+    "year": 2024,
+    "citationCount": 252,
+    "influentialCitationCount": 11,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2404.16789",
+      "status": "GREEN",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2404.16789, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Review"
+    ],
+    "authors": [
+      {
+        "authorId": "2260379784",
+        "name": "Haizhou Shi"
+      },
+      {
+        "authorId": "2298402141",
+        "name": "Zihao Xu"
+      },
+      {
+        "authorId": "2298494612",
+        "name": "Hengyi Wang"
+      },
+      {
+        "authorId": "2298275515",
+        "name": "Weiyi Qin"
+      },
+      {
+        "authorId": "2298410609",
+        "name": "Wenyuan Wang"
+      },
+      {
+        "authorId": "2108824774",
+        "name": "Yibin Wang"
+      },
+      {
+        "authorId": "2135785111",
+        "name": "Zifeng Wang"
+      },
+      {
+        "authorId": "2260437769",
+        "name": "Hao Wang"
+      }
+    ],
+    "abstract": "The challenge of effectively and efficiently adapting statically pre-trained Large Language Models (LLMs) to ever-evolving data distributions remains predominant. When tailored for specific needs, pre-trained LLMs often suffer from significant performance degradation in previous knowledge domains—a phenomenon known as “catastrophic forgetting”. While extensively studied in the Continual Learning (CL) community, this problem presents new challenges in the context of LLMs. In this survey, we provide a comprehensive overview and detailed discussion of the current research progress on LLMs within the context of CL. Besides the introduction of the preliminary knowledge, this survey is structured into four main sections: we first describe an overview of continually learning LLMs, consisting of two directions of continuity: vertical continuity (or vertical continual learning), i.e., continual adaptation from general to specific capabilities, and horizontal continuity (or horizontal continual learning), i.e., continual adaptation across time and domains (Section 3). Following vertical continuity, we summarize three stages of learning LLMs in the context of modern CL: Continual Pre-Training (CPT), Domain-Adaptive Pre-training (DAP), and Continual Fine-Tuning (CFT) (Section 4). We then provide an overview of evaluation protocols for continual learning with LLMs, along with currently available data sources (Section 5). Finally, we discuss intriguing questions related to continual learning for LLMs (Section 6). This survey sheds light on the relatively understudied domain of continually pre-training, adapting, and fine-tuning large language models, suggesting the necessity for greater attention from the community. Key areas requiring immediate focus include the development of practical and accessible evaluation benchmarks, along with methodologies specifically designed to counter forgetting and enable knowledge transfer within the evolving landscape of LLM learning paradigms. The full list of articles examined in this survey is available at https://github.com/Wang-ML-Lab/llm-continual-learning-survey.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "d06e65f74715e071678bf8ccdcf9d52004a10280",
+    "externalIds": {
+      "DBLP": "journals/tosem/WeyssowKZS26",
+      "ArXiv": "2403.09032",
+      "DOI": "10.1145/3736407",
+      "CorpusId": 268385144
+    },
+    "url": "https://www.semanticscholar.org/paper/d06e65f74715e071678bf8ccdcf9d52004a10280",
+    "title": "CodeUltraFeedback: An LLM-as-a-Judge Dataset for Aligning Large Language Models to Coding Preferences",
+    "venue": "ACM Transactions on Software Engineering and Methodology",
+    "year": 2024,
+    "citationCount": 68,
+    "influentialCitationCount": 6,
+    "openAccessPdf": {
+      "url": "",
+      "status": null,
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2403.09032, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "1820831988",
+        "name": "M. Weyssow"
+      },
+      {
+        "authorId": "2291138166",
+        "name": "Aton Kamanda"
+      },
+      {
+        "authorId": "2148928671",
+        "name": "Xin Zhou"
+      },
+      {
+        "authorId": "9460712",
+        "name": "H. Sahraoui"
+      }
+    ],
+    "abstract": "Evaluating the alignment of large language models (LLMs) with user-defined coding preferences is a challenging endeavor that requires a deep assessment of LLMs’ outputs. Existing methods and benchmarks rely primarily on automated metrics and static analysis tools, which often fail to capture the nuances of user instructions and LLM outputs. To address this gap, we introduce the LLM-as-a-Judge evaluation framework and present CodeUltraFeedback, a comprehensive dataset for assessing and improving LLM alignment with coding preferences. CodeUltraFeedback consists of 10,000 coding instructions, each annotated with four responses generated from a diverse pool of 14 LLMs. These responses are annotated using GPT-3.5 as a judge, with both ranking-based scores and detailed textual feedback across five distinct coding preferences. Our analysis reveals that responses from GPT-3.5 and GPT-4 are consistently rated higher than those from open-weight models, underscoring substantial alignment gaps between closed- and open-weight LLMs. In turn, we explore the usage of CodeUltraFeedback as feedback data to fine-tune and align CodeLlama-7B-Instruct using supervised fine-tuning (SFT) and reinforcement learning from AI feedback (RLAIF) with direct preference optimization (DPO). The resulting aligned model achieves an average alignment improvement of 22.7% and 29.7% when evaluated with GPT-3.5 and GPT-4 judges, respectively. Notably, our aligned CodeLlama-7B-Instruct surpasses much larger models, such as CodeLlama-13B and 34B, in alignment with coding preferences. Despite not being explicitly trained for functional correctness, it also achieves a 10.5% and 26.6% relative improvement in Pass@1 and Pass@10 on the HumanEval+ benchmark. Our contributions demonstrate the practical value of preference tuning in code generation and set the stage for further progress in model alignment and RLAIF for automated software engineering.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "9b9a4fa3ed510fc6eb1bf831979235f3d9f8b556",
+    "externalIds": {
+      "ArXiv": "2309.07045",
+      "DBLP": "conf/acl/ZhangLWSHL0L0H24",
+      "DOI": "10.48550/arXiv.2309.07045",
+      "CorpusId": 261706197
+    },
+    "url": "https://www.semanticscholar.org/paper/9b9a4fa3ed510fc6eb1bf831979235f3d9f8b556",
+    "title": "SafetyBench: Evaluating the Safety of Large Language Models with Multiple Choice Questions",
+    "venue": "Annual Meeting of the Association for Computational Linguistics",
+    "year": 2023,
+    "citationCount": 217,
+    "influentialCitationCount": 12,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2309.07045",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2309.07045, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "101371510",
+        "name": "Zhexin Zhang"
+      },
+      {
+        "authorId": "2239889447",
+        "name": "Leqi Lei"
+      },
+      {
+        "authorId": "2239424207",
+        "name": "Lindong Wu"
+      },
+      {
+        "authorId": "2348497144",
+        "name": "Rui Sun"
+      },
+      {
+        "authorId": "2239394827",
+        "name": "Yongkang Huang"
+      },
+      {
+        "authorId": "2386966372",
+        "name": "Chong Long"
+      },
+      {
+        "authorId": "2111312892",
+        "name": "Xiao Liu"
+      },
+      {
+        "authorId": "2181283109",
+        "name": "Xuanyu Lei"
+      },
+      {
+        "authorId": "2260595820",
+        "name": "Jie Tang"
+      },
+      {
+        "authorId": "1730108",
+        "name": "Minlie Huang"
+      }
+    ],
+    "abstract": "With the rapid development of Large Language Models (LLMs), increasing attention has been paid to their safety concerns. Consequently, evaluating the safety of LLMs has become an essential task for facilitating the broad applications of LLMs. Nevertheless, the absence of comprehensive safety evaluation benchmarks poses a significant impediment to effectively assess and enhance the safety of LLMs. In this work, we present SafetyBench, a comprehensive benchmark for evaluating the safety of LLMs, which comprises 11,435 diverse multiple choice questions spanning across 7 distinct categories of safety concerns. Notably, SafetyBench also incorporates both Chinese and English data, facilitating the evaluation in both languages. Our extensive tests over 25 popular Chinese and English LLMs in both zero-shot and few-shot settings reveal a substantial performance advantage for GPT-4 over its counterparts, and there is still significant room for improving the safety of current LLMs. We also demonstrate that the measured safety understanding abilities in SafetyBench are correlated with safety generation abilities. Data and evaluation guidelines are available at \\url{https://github.com/thu-coai/SafetyBench}{https://github.com/thu-coai/SafetyBench}. Submission entrance and leaderboard are available at \\url{https://llmbench.ai/safety}{https://llmbench.ai/safety}.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "5e4597eb21a393b23e473cf66cb5ae8b27cab03e",
+    "externalIds": {
+      "DBLP": "conf/aaai/Zhao0XLLH24",
+      "ArXiv": "2308.10144",
+      "DOI": "10.48550/arXiv.2308.10144",
+      "CorpusId": 261048772
+    },
+    "url": "https://www.semanticscholar.org/paper/5e4597eb21a393b23e473cf66cb5ae8b27cab03e",
+    "title": "ExpeL: LLM Agents Are Experiential Learners",
+    "venue": "AAAI Conference on Artificial Intelligence",
+    "year": 2023,
+    "citationCount": 508,
+    "influentialCitationCount": 59,
+    "openAccessPdf": {
+      "url": "https://arxiv.org/pdf/2308.10144",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2308.10144, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2136104377",
+        "name": "Andrew Zhao"
+      },
+      {
+        "authorId": "46307329",
+        "name": "Daniel Huang"
+      },
+      {
+        "authorId": "2232847317",
+        "name": "Quentin Xu"
+      },
+      {
+        "authorId": "2036238525",
+        "name": "Matthieu Lin"
+      },
+      {
+        "authorId": "1679704",
+        "name": "Y. Liu"
+      },
+      {
+        "authorId": "2115218570",
+        "name": "Gao Huang"
+      }
+    ],
+    "abstract": "The recent surge in research interest in applying large language models (LLMs) to decision-making tasks has flourished by leveraging the extensive world knowledge embedded in LLMs. While there is a growing demand to tailor LLMs for custom decision-making tasks, finetuning them for specific tasks is resource-intensive and may diminish the model's generalization capabilities. Moreover, state-of-the-art language models like GPT-4 and Claude are primarily accessible through API calls, with their parametric weights remaining proprietary and unavailable to the public. This scenario emphasizes the growing need for new methodologies that allow learning from agent experiences without requiring parametric updates. To address these problems, we introduce the Experiential Learning (ExpeL) agent. Our agent autonomously gathers experiences and extracts knowledge using natural language from a collection of training tasks. At inference, the agent recalls its extracted insights and past experiences to make informed decisions. Our empirical results highlight the robust learning efficacy of the ExpeL agent, indicating a consistent enhancement in its performance as it accumulates experiences. We further explore the emerging capabilities and transfer learning potential of the ExpeL agent through qualitative observations and additional experiments.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "32dcd0887537cece54e214f531d2c384470b023f",
+    "externalIds": {
+      "DBLP": "journals/corr/abs-2305-17126",
+      "ArXiv": "2305.17126",
+      "DOI": "10.48550/arXiv.2305.17126",
+      "CorpusId": 258947222
+    },
+    "url": "https://www.semanticscholar.org/paper/32dcd0887537cece54e214f531d2c384470b023f",
+    "title": "Large Language Models as Tool Makers",
+    "venue": "International Conference on Learning Representations",
+    "year": 2023,
+    "citationCount": 286,
+    "influentialCitationCount": 15,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.17126",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.17126, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Mathematics"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "123970124",
+        "name": "Tianle Cai"
+      },
+      {
+        "authorId": "2275277634",
+        "name": "Xuezhi Wang"
+      },
+      {
+        "authorId": "2114186424",
+        "name": "Tengyu Ma"
+      },
+      {
+        "authorId": "1425082935",
+        "name": "Xinyun Chen"
+      },
+      {
+        "authorId": "65855107",
+        "name": "Denny Zhou"
+      }
+    ],
+    "abstract": "Recent research has highlighted the potential of large language models (LLMs) to improve their problem-solving capabilities with the aid of suitable external tools. In our work, we further advance this concept by introducing a closed-loop framework, referred to as LLMs A s Tool Makers (LATM), where LLMs create their own reusable tools for problem-solving. Our approach consists of two phases: 1) tool making: an LLM acts as the tool maker that crafts tools for a set of tasks. 2) tool using: another LLM acts as the tool user, which applies the tool built by the tool maker for problem-solving. On the problem-solving server side, tool-making enables continual tool generation and caching as new requests emerge. This framework enables subsequent requests to access cached tools via their corresponding APIs, enhancing the efficiency of task resolution. Recognizing that tool-making requires more sophisticated capabilities, we assign this task to a powerful, albeit resource-intensive, model. Conversely, the simpler tool-using phase is delegated to a lightweight model. This strategic division of labor allows the once-off cost of tool-making to be spread over multiple instances of tool-using, significantly reducing average costs while maintaining strong performance. Furthermore, our method offers a functional cache through the caching and reuse of tools, which stores the functionality of a class of requests instead of the natural language responses from LLMs, thus extending the applicability of the conventional cache mechanism. We evaluate our approach across various complex reasoning tasks, including Big-Bench tasks. With GPT-4 as the tool maker and GPT-3.5 as the tool user, LATM demonstrates performance equivalent to using GPT-4 for both roles, but with a significantly reduced inference cost.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "f197bf0fc2f228483f6af3285000d54d8d97f9eb",
+    "externalIds": {
+      "ArXiv": "2305.16291",
+      "DBLP": "journals/tmlr/WangX0MXZFA24",
+      "DOI": "10.48550/arXiv.2305.16291",
+      "CorpusId": 258887849
+    },
+    "url": "https://www.semanticscholar.org/paper/f197bf0fc2f228483f6af3285000d54d8d97f9eb",
+    "title": "Voyager: An Open-Ended Embodied Agent with Large Language Models",
+    "venue": "Trans. Mach. Learn. Res.",
+    "year": 2023,
+    "citationCount": 1622,
+    "influentialCitationCount": 128,
+    "openAccessPdf": {
+      "url": "http://arxiv.org/pdf/2305.16291",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.16291, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "96374437",
+        "name": "Guanzhi Wang"
+      },
+      {
+        "authorId": "2218866691",
+        "name": "Yuqi Xie"
+      },
+      {
+        "authorId": "2171112793",
+        "name": "Yunfan Jiang"
+      },
+      {
+        "authorId": "49686756",
+        "name": "A. Mandlekar"
+      },
+      {
+        "authorId": "2723309",
+        "name": "Chaowei Xiao"
+      },
+      {
+        "authorId": "2117748",
+        "name": "Yuke Zhu"
+      },
+      {
+        "authorId": "3275727",
+        "name": "Linxi (Jim) Fan"
+      },
+      {
+        "authorId": "47627049",
+        "name": "Anima Anandkumar"
+      }
+    ],
+    "abstract": "We introduce Voyager, the first LLM-powered embodied lifelong learning agent in Minecraft that continuously explores the world, acquires diverse skills, and makes novel discoveries without human intervention. Voyager consists of three key components: 1) an automatic curriculum that maximizes exploration, 2) an ever-growing skill library of executable code for storing and retrieving complex behaviors, and 3) a new iterative prompting mechanism that incorporates environment feedback, execution errors, and self-verification for program improvement. Voyager interacts with GPT-4 via blackbox queries, which bypasses the need for model parameter fine-tuning. The skills developed by Voyager are temporally extended, interpretable, and compositional, which compounds the agent's abilities rapidly and alleviates catastrophic forgetting. Empirically, Voyager shows strong in-context lifelong learning capability and exhibits exceptional proficiency in playing Minecraft. It obtains 3.3x more unique items, travels 2.3x longer distances, and unlocks key tech tree milestones up to 15.3x faster than prior SOTA. Voyager is able to utilize the learned skill library in a new Minecraft world to solve novel tasks from scratch, while other techniques struggle to generalize. We open-source our full codebase and prompts at https://voyager.minedojo.org/.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "8da9b1436212b233fc49c7daf1ba15c22874ff5a",
+    "externalIds": {
+      "DBLP": "conf/emnlp/QianH0Q0J23",
+      "ArXiv": "2305.14318",
+      "DOI": "10.18653/v1/2023.findings-emnlp.462",
+      "CorpusId": 258841653
+    },
+    "url": "https://www.semanticscholar.org/paper/8da9b1436212b233fc49c7daf1ba15c22874ff5a",
+    "title": "CREATOR: Tool Creation for Disentangling Abstract and Concrete Reasoning of Large Language Models",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "citationCount": 74,
+    "influentialCitationCount": 9,
+    "openAccessPdf": {
+      "url": "https://aclanthology.org/2023.findings-emnlp.462.pdf",
+      "status": "HYBRID",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2305.14318, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2082473972",
+        "name": "Cheng Qian"
+      },
+      {
+        "authorId": "2118642562",
+        "name": "Chi Han"
+      },
+      {
+        "authorId": "51135899",
+        "name": "Y. Fung"
+      },
+      {
+        "authorId": "50625437",
+        "name": "Yujia Qin"
+      },
+      {
+        "authorId": "2146374807",
+        "name": "Zhiyuan Liu"
+      },
+      {
+        "authorId": "2072975661",
+        "name": "Heng Ji"
+      }
+    ],
+    "abstract": "Large Language Models (LLMs) have made significant progress in utilizing tools, but their ability is limited by API availability and the instability of implicit reasoning, particularly when both planning and execution are involved. To overcome these limitations, we propose CREATOR, a novel framework that enables LLMs to create their own tools using documentation and code realization. CREATOR disentangles abstract tool creation and concrete decision execution, resulting in improved performance. We evaluate CREATOR on MATH and TabMWP benchmarks, respectively consisting of challenging math competition problems and diverse tabular contents. Remarkably, CREATOR outperforms existing chain-of-thought, program-of-thought, and tool-using baselines. Additionally, we introduce the Creation Challenge dataset, featuring 2K diverse questions, to emphasize the necessity and benefits of LLMs' tool creation ability. Further research demonstrates that leveraging LLMs as tool creators facilitates knowledge transfer, and LLMs exhibit varying levels of tool creation abilities, enabling them to adapt to diverse situations. The tool creation ability revolutionizes the LLM's problem-solving paradigm, driving us closer to the next frontier of artificial intelligence. All the codes and data are released.",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "381ab7a640f5b46b62f7e08d1af4a8e0d3eadd55",
+    "externalIds": {
+      "DBLP": "conf/emnlp/LiuIXWXZ23",
+      "ArXiv": "2303.16634",
+      "DOI": "10.18653/v1/2023.emnlp-main.153",
+      "CorpusId": 257804696
+    },
+    "url": "https://www.semanticscholar.org/paper/381ab7a640f5b46b62f7e08d1af4a8e0d3eadd55",
+    "title": "G-Eval: NLG Evaluation using GPT-4 with Better Human Alignment",
+    "venue": "Conference on Empirical Methods in Natural Language Processing",
+    "year": 2023,
+    "citationCount": 2322,
+    "influentialCitationCount": 336,
+    "openAccessPdf": {
+      "url": "https://aclanthology.org/2023.emnlp-main.153.pdf",
+      "status": "HYBRID",
+      "license": "CCBY",
+      "disclaimer": "Notice: Paper or abstract available at https://arxiv.org/abs/2303.16634, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "2152797401",
+        "name": "Yang Liu"
+      },
+      {
+        "authorId": "3310951",
+        "name": "Dan Iter"
+      },
+      {
+        "authorId": "2110197273",
+        "name": "Yichong Xu"
+      },
+      {
+        "authorId": "2146294891",
+        "name": "Shuo Wang"
+      },
+      {
+        "authorId": "8233965",
+        "name": "Ruochen Xu"
+      },
+      {
+        "authorId": "8652308",
+        "name": "Chenguang Zhu"
+      }
+    ],
+    "abstract": "The quality of texts generated by natural language generation (NLG) systems is hard to measure automatically. Conventional reference-based metrics, such as BLEU and ROUGE, have been shown to have relatively low correlation with human judgments, especially for tasks that require creativity and diversity. Recent studies suggest using large language models (LLMs) as reference-free metrics for NLG evaluation, which have the benefit of being applicable to new tasks that lack human references. However, these LLM-based evaluators still have lower human correspondence than medium-size neural evaluators. In this work, we present G-Eval, a framework of using large language models with chain-of-thoughts (CoT) and a form-filling paradigm, to assess the quality of NLG outputs. We experiment with two generation tasks, text summarization and dialogue generation. We show that G-Eval with GPT-4 as the backbone model achieves a Spearman correlation of 0.514 with human on summarization task, outperforming all previous methods by a large margin. We also propose preliminary analysis on the behavior of LLM-based evaluators, and highlight the potential issue of LLM-based evaluators having a bias towards the LLM-generated texts. The code is at https://github.com/nlpyang/geval",
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "72d15d2a4a2ab9bc00b30ec5a85f88a2890037ab",
+    "externalIds": {
+      "DBLP": "conf/monterey/Berry07",
+      "MAG": "2179916386",
+      "DOI": "10.1007/978-3-540-89778-1_1",
+      "CorpusId": 41821280
+    },
+    "url": "https://www.semanticscholar.org/paper/72d15d2a4a2ab9bc00b30ec5a85f88a2890037ab",
+    "title": "Ambiguity in Natural Language Requirements Documents",
+    "venue": "Monterey Workshop",
+    "year": 2008,
+    "citationCount": 57,
+    "influentialCitationCount": 3,
+    "openAccessPdf": {
+      "url": "",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1007/978-3-540-89778-1_1?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1007/978-3-540-89778-1_1, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science"
+    ],
+    "publicationTypes": [
+      "JournalArticle"
+    ],
+    "authors": [
+      {
+        "authorId": "1684228",
+        "name": "D. Berry"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": "24e2f510dbf8ad3e9c092b5fa58076f01bf60485",
+    "externalIds": {
+      "MAG": "2167922733",
+      "DBLP": "conf/icse/FrakesBPMS91",
+      "DOI": "10.1109/ICSE.1991.130623",
+      "CorpusId": 9940154
+    },
+    "url": "https://www.semanticscholar.org/paper/24e2f510dbf8ad3e9c092b5fa58076f01bf60485",
+    "title": "Software reuse: is it delivering?",
+    "venue": "[1991 Proceedings] 13th International Conference on Software Engineering",
+    "year": 1991,
+    "citationCount": 29,
+    "influentialCitationCount": 1,
+    "openAccessPdf": {
+      "url": "",
+      "status": "CLOSED",
+      "license": null,
+      "disclaimer": "Notice: The following paper fields have been elided by the publisher: {'abstract'}. Paper or abstract available at https://api.unpaywall.org/v2/10.1109/ICSE.1991.130623?email=<INSERT_YOUR_EMAIL> or https://doi.org/10.1109/ICSE.1991.130623, which is subject to the license by the author or copyright owner provided with this content. Please go to the source to verify the license and copyright information for your use."
+    },
+    "fieldsOfStudy": [
+      "Computer Science",
+      "Engineering"
+    ],
+    "publicationTypes": [
+      "JournalArticle",
+      "Conference"
+    ],
+    "authors": [
+      {
+        "authorId": "3163834",
+        "name": "W. Frakes"
+      },
+      {
+        "authorId": "3291165",
+        "name": "T. Biggerstaff"
+      },
+      {
+        "authorId": "1398958577",
+        "name": "R. Prieto-Díaz"
+      },
+      {
+        "authorId": "2065743046",
+        "name": "Kazuo Matsumura"
+      },
+      {
+        "authorId": "1723762",
+        "name": "Wilhelm Schäfer"
+      }
+    ],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Evaluating skills",
+    "venue": "https:/",
+    "year": 2026,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Procmem: Learning reusable procedural memory from experience via non-parametric ppo for llm agents",
+    "venue": "arXiv preprint",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": true
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Agent skills from the perspective of procedural memory: A survey",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "From Q2 to Q3, What are the top 5 stocks received increased investment by Warren Buffett's Berkshire Hathaway, ranked by dollar value increase? Answer",
+    "venue": "stock CUSIPs",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "All markdown in the injected skill user message, plus any file contents actually pasted into the trajectory after the worker followed references from that skill,",
+    "venue": "count as human-authored skill content for extraction and quoting",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Anthropic",
+    "venue": "Agent skills overview",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "you need to obtain two accession numbers for Berkshire Hathaway, one for Q2 and one for Q3 (accession numbers will change in reporting seasons)",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Task-essential only Only include points that matter for successful completion of this task.",
+    "venue": "Exclude background explanations, motivational text, optional tips, and generic advice",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Agent skills: A simple, open format for giving agents new capabilities and expertise",
+    "venue": "agentskills.io",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "How to build a production-ready claude code skill",
+    "venue": "Towards Data Science",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "19: Examples of instruction-level modifications, where task-specific parameters or constraints are altered, leading to different valid solutions while preserving the task structure",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  },
+  {
+    "paperId": null,
+    "externalIds": null,
+    "url": null,
+    "title": "Then understand the task goal using the task instruction and the task verifier",
+    "venue": "",
+    "year": null,
+    "citationCount": null,
+    "influentialCitationCount": null,
+    "openAccessPdf": null,
+    "fieldsOfStudy": null,
+    "publicationTypes": null,
+    "authors": [],
+    "abstract": null,
+    "_is_influential_edge": false
+  }
+]
